@@ -74,26 +74,36 @@ def load_api_key() -> str:
 # Response cleaning — extract Cree from model output
 # ---------------------------------------------------------------------------
 
-# Common English reasoning prefixes that models emit before the Cree
+# Common English reasoning prefixes that models emit before translation output
 _ENGLISH_REASONING_PATTERNS = [
     "let me", "now ", "perfect", "based on", "i need", "i'll ",
     "the ", "for ", "here ", "so ", "first", "next", "this ",
     "using ", "since ", "checking", "looking", "translat",
+    "sure", "of course", "certainly", "okay", "alright",
 ]
 
 
 def clean_response(content: str) -> str:
-    """Extract the Cree translation from a model response.
+    """Extract the translation from a model response.
 
-    Handles responses where the model includes English reasoning
-    before or after the actual Cree output. Skips English lines
-    and returns the first line that looks like Cree.
+    Language-agnostic strategy:
+        1. Strip markdown formatting (bold, backticks, quotes)
+        2. If single line, return it
+        3. If multi-line, skip lines that look like English reasoning
+           and return the first non-reasoning line
+        4. Fall back to the last line
+
+    This is intentionally conservative — if your target language uses
+    Latin script, some reasoning lines may leak through. Register a
+    custom TranslationProcess for fine-grained control.
     """
     if not content:
         return ""
     content = content.strip().strip('"').strip("'").strip("`")
+    # Strip markdown bold wrapping
     if content.startswith("**") and content.endswith("**"):
         content = content[2:-2].strip()
+    # Strip trailing period (common LLM artifact)
     if content.endswith("."):
         content = content[:-1].strip()
     lines = [l.strip() for l in content.split("\n") if l.strip()]
@@ -102,19 +112,16 @@ def clean_response(content: str) -> str:
     if len(lines) == 1:
         return lines[0]
 
-    # Multiple lines: skip English reasoning, return first Cree-looking line
+    # Multi-line: skip English reasoning, return first non-reasoning line
     for line in lines:
         low = line.lower().strip()
         if not low:
             continue
-        # Lines with SRO diacritics are almost certainly Cree
-        if any(c in line for c in "êâîôē"):
-            return line
-        # Lines NOT starting with known English patterns are likely Cree
+        # Skip lines that look like English meta-commentary
         if not any(low.startswith(p) for p in _ENGLISH_REASONING_PATTERNS):
             return line
 
-    # All lines look English — fall back to last line
+    # All lines look like reasoning — fall back to last line
     return lines[-1]
 
 
@@ -295,7 +302,7 @@ async def call_openrouter(
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://crk-translate.dev",
+        "HTTP-Referer": "https://github.com/gamedaysuits/gds-mt-eval-harness",
     }
 
     payload: dict[str, Any] = {

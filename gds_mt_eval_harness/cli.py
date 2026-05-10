@@ -133,8 +133,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     )
     parser.add_argument(
         "--target-field",
-        default="cree_sro",
-        help="Field name for reference translation in corpus. Default: cree_sro",
+        default="target",
+        help="Field name for reference translation in corpus. Default: target",
     )
 
     # Model
@@ -258,7 +258,7 @@ def args_to_config(args) -> RunConfig:
         entry_ids=entry_ids,
         corpus_path=args.corpus if hasattr(args, "corpus") else None,
         source_field=args.source_field if hasattr(args, "source_field") else "english",
-        target_field=args.target_field if hasattr(args, "target_field") else "cree_sro",
+        target_field=args.target_field if hasattr(args, "target_field") else "target",
         model=args.model,
         max_tokens=args.max_tokens,
         tools_enabled=args.tools if hasattr(args, "tools") else False,

@@ -43,21 +43,26 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
     for r in reports:
         config = r.get("config", {})
         overall = r.get("overall", {})
-        comparison_rows.append({
+        row = {
             "run_id": r.get("run_id", "?"),
             "model": config.get("model", "?"),
             "prompt": config.get("prompt_version", "?"),
             "tools": config.get("tools_enabled", False),
-            "fst_gate": config.get("fst_gate_enabled", False),
             "batch_size": config.get("batch_size", 1),
             "entries": overall.get("evaluated", 0),
             "exact_match": overall.get("exact_match_rate", 0),
-            "equivalent": overall.get("equivalent_match_rate", 0),
             "corpus_chrf": overall.get("corpus_chrf", 0),
-            "avg_fst_validity": overall.get("avg_fst_validity", 0),
             "total_cost": overall.get("total_cost_usd", 0),
             "avg_latency": overall.get("avg_latency_s", 0),
-        })
+        }
+        # Dynamically include plugin aggregate metrics
+        plugin_metrics = overall.get("plugin_metrics", {})
+        for plugin_name, plugin_data in plugin_metrics.items():
+            if isinstance(plugin_data, dict):
+                for k, v in plugin_data.items():
+                    if isinstance(v, (int, float)):
+                        row[f"{plugin_name}.{k}"] = v
+        comparison_rows.append(row)
 
     # --- Per-entry diff (first vs last run) ---
     first_entries = {e["id"]: e for e in reports[0].get("entries", [])}
@@ -71,9 +76,9 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
         first = first_entries[eid]
         last = last_entries[eid]
 
-        # Check if match status changed
-        first_match = first.get("exact_match") or first.get("equivalent_match")
-        last_match = last.get("exact_match") or last.get("equivalent_match")
+        # Check if match status changed (exact match or any plugin-reported match)
+        first_match = first.get("exact_match") or first.get("match")
+        last_match = last.get("exact_match") or last.get("match")
 
         if first_match and not last_match:
             regressions.append({
@@ -145,29 +150,47 @@ def run_compare(
     print("=" * 80)
 
     rows = comparison["overall_comparison"]
-    print(f"\n  {'Run ID':40s} {'Model':18s} {'Exact':>7s} {'Equiv':>7s} "
-          f"{'chrF++':>7s} {'FST%':>6s} {'Cost':>8s}")
-    print(f"  {'-'*40} {'-'*18} {'-----':>7s} {'-----':>7s} "
-          f"{'------':>7s} {'----':>6s} {'----':>8s}")
+
+    # Build column headers dynamically from core + any plugin metrics
+    core_cols = ["Run ID", "Model", "Exact", "chrF++", "Cost"]
+    # Find all plugin metric keys across all rows
+    extra_keys = []
+    for r in rows:
+        for k in r:
+            if "." in k and k not in extra_keys:
+                extra_keys.append(k)
+
+    header = f"  {'Run ID':40s} {'Model':18s} {'Exact':>7s} {'chrF++':>7s} {'Cost':>8s}"
+    separator = f"  {'-'*40} {'-'*18} {'-----':>7s} {'------':>7s} {'----':>8s}"
+    for ek in extra_keys:
+        short = ek.split(".")[-1][:10]
+        header += f" {short:>10s}"
+        separator += f" {'-'*10}"
+
+    print(header)
+    print(separator)
 
     for r in rows:
         flags = []
         if r["tools"]:
             flags.append("T")
-        if r["fst_gate"]:
-            flags.append("G")
         flag_str = f" [{','.join(flags)}]" if flags else ""
 
-        print(
+        line = (
             f"  {r['run_id'][:40]:40s} "
             f"{r['model']:18s} "
             f"{r['exact_match']:>6.1%} "
-            f"{r['equivalent']:>6.1%} "
             f"{r['corpus_chrf']:>7.1f} "
-            f"{r['avg_fst_validity']:>5.1%} "
             f"${r['total_cost']:>7.4f}"
-            f"{flag_str}"
         )
+        for ek in extra_keys:
+            val = r.get(ek, 0)
+            if isinstance(val, float) and val <= 1.0:
+                line += f" {val:>9.1%}"
+            else:
+                line += f" {val:>10}"
+        line += flag_str
+        print(line)
 
     # Regressions and improvements
     regs = comparison["regressions"]

@@ -174,7 +174,7 @@ async def _translate_single(
     semaphore: asyncio.Semaphore,
 ) -> dict:
     """Translate a single entry using direct LLM call (no tools)."""
-    source_text = entry.get(config.source_field, entry.get("english", ""))
+    source_text = entry.get(config.source_field, "")
     messages = [
         build_system_message(system_prompt),
         {"role": "user", "content": source_text},
@@ -212,7 +212,7 @@ async def _translate_batch(
 ) -> list[dict]:
     """Translate a batch of entries in one API call using numbered list format."""
     n = len(entries)
-    source_texts = [e.get(config.source_field, e.get("english", "")) for e in entries]
+    source_texts = [e.get(config.source_field, "") for e in entries]
 
     numbered = "\n".join(f"{i+1}. {s}" for i, s in enumerate(source_texts))
     user_msg = (
@@ -287,7 +287,7 @@ async def _translate_with_tools(
     from gds_mt_eval_harness.api import call_openrouter as api_call
 
     tool_schemas = tool_provider.get_schemas(config)
-    source_text = entry.get(config.source_field, entry.get("english", ""))
+    source_text = entry.get(config.source_field, "")
 
     user_msg = (
         f"Translate this text to the target language:\n\n"
@@ -641,8 +641,8 @@ async def execute_run(
 
         enriched.append({
             "id": result["id"],
-            "english": entry.get(config.source_field, entry.get("english", "")),
-            "expected": entry.get(config.target_field, entry.get("cree_sro", "")),
+            "english": entry.get(config.source_field, ""),
+            "expected": entry.get(config.target_field, ""),
             "predicted": result.get("predicted", ""),
             "segment": entry.get("segment", ""),
             "difficulty": entry.get("difficulty", 0),

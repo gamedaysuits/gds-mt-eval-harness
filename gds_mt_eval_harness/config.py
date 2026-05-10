@@ -130,7 +130,7 @@ class RunConfig:
     # --- Source / target field names ---
     # Override these for non-English source languages
     source_field: str = "english"  # The field name for source text in corpus
-    target_field: str = "cree_sro"  # The field name for reference translation
+    target_field: str = "target"  # The field name for reference translation
 
     # --- Segment names ---
     # The valid segment names in your corpus (for dataset filtering)

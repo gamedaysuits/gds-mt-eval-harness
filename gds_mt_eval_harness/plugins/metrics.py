@@ -2,26 +2,26 @@
 MetricPlugin Protocol — Register custom evaluation metrics.
 
 The test harness ships with generic metrics (exact match, chrF++, BLEU).
-Language-specific metrics (FST validity, morphological linting, semantic
+Language-specific metrics (morphological validation, linting, semantic
 overlap) are registered as MetricPlugin instances by the consuming project.
 
 Example:
-    class FSTValidityMetric:
-        name = "fst_validity"
+    class MorphologyMetric:
+        name = "morphology"
 
         def compute(self, entry: dict) -> dict:
             predicted = entry.get("predicted", "")
             words = predicted.split()
-            valid = sum(1 for w in words if my_fst.analyze(w))
+            valid = sum(1 for w in words if my_analyzer.check(w))
             return {
-                "fst_total_words": len(words),
-                "fst_valid_words": valid,
-                "fst_validity_rate": valid / max(len(words), 1),
+                "morph_total_words": len(words),
+                "morph_valid_words": valid,
+                "morph_validity_rate": valid / max(len(words), 1),
             }
 
         def aggregate(self, entry_results: list[dict]) -> dict:
-            rates = [r["fst_validity_rate"] for r in entry_results]
-            return {"avg_fst_validity": sum(rates) / max(len(rates), 1)}
+            rates = [r["morph_validity_rate"] for r in entry_results]
+            return {"avg_morph_validity": sum(rates) / max(len(rates), 1)}
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ class MetricPlugin(Protocol):
     """
 
     name: str
-    """Unique identifier for this metric (e.g. 'fst_validity')."""
+    """Unique identifier for this metric (e.g. 'morphology')."""
 
     def compute(self, entry: dict) -> dict:
         """Compute metrics for a single entry.
