@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "gds-mt-eval-harness"
+version = "0.1.0"
+description = "A configurable, language-agnostic evaluation harness for machine translation pipelines."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [
+    { name = "Curtis Forbes" },
+]
+keywords = ["machine-translation", "evaluation", "nlp", "low-resource-languages", "benchmarking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "aiohttp>=3.9",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+metrics = [
+    "sacrebleu>=2.3",
+]
+all = [
+    "sacrebleu>=2.3",
+]
+
+[project.scripts]
+gds-mt-eval = "gds_mt_eval_harness.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gamedaysuits/gds-mt-eval-harness"
+Repository = "https://github.com/gamedaysuits/gds-mt-eval-harness"
+Issues = "https://github.com/gamedaysuits/gds-mt-eval-harness/issues"
+
+[tool.setuptools.packages.find]
+include = ["gds_mt_eval_harness*"]
