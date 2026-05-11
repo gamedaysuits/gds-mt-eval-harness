@@ -1,0 +1,806 @@
+{
+  "harness_version": "0.1.0",
+  "run_id": "run_20260511_034802_gemini31pro_custom_all_demo_pro",
+  "config": {
+    "dataset": "all",
+    "entry_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "corpus_path": "../eval/datasets/master_corpus.json",
+    "source_field": "english",
+    "target_field": "cree_sro",
+    "segment_names": [
+      "gold_standard",
+      "textbook_sample",
+      "phase1_test",
+      "textbook_remainder"
+    ],
+    "model": "gemini-3.1-pro",
+    "max_tokens": 13680,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": true,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 1,
+    "concurrency": 8,
+    "prompt_version": "custom",
+    "custom_prompt_path": "/tmp/crk_prompt.txt",
+    "post_hooks": [],
+    "output_dir": "eval_demo",
+    "run_name": "demo_pro",
+    "temperature": 0.0,
+    "dry_run": false,
+    "process_name": null,
+    "_model_id": "google/gemini-3.1-pro-preview",
+    "_effective_temperature": 0.0,
+    "_config_hash": "7dda6445a5b8"
+  },
+  "timestamp_start": "2026-05-11T03:47:43.541309+00:00",
+  "timestamp_end": "2026-05-11T03:48:02.019945+00:00",
+  "elapsed_s": 18.5,
+  "total_entries": 20,
+  "cache_hits": 0,
+  "total_cost_usd": 0.0568,
+  "results": [
+    {
+      "id": 0,
+      "english": "I see him",
+      "expected": "niwâpamâw",
+      "predicted": "niwâpamâw",
+      "segment": "gold_standard",
+      "difficulty": 2,
+      "latency_s": 6.358,
+      "usage": {
+        "prompt_tokens": 43,
+        "completion_tokens": 382,
+        "total_tokens": 425,
+        "cost": 0.00467,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00467,
+          "upstream_inference_prompt_cost": 8.6e-05,
+          "upstream_inference_completions_cost": 0.004584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 376,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00467,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 1,
+      "english": "he works",
+      "expected": "atoskêw",
+      "predicted": "atoskêw",
+      "segment": "gold_standard",
+      "difficulty": 2,
+      "latency_s": 4.734,
+      "usage": {
+        "prompt_tokens": 42,
+        "completion_tokens": 288,
+        "total_tokens": 330,
+        "cost": 0.00354,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00354,
+          "upstream_inference_prompt_cost": 8.4e-05,
+          "upstream_inference_completions_cost": 0.003456
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 284,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00354,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 2,
+      "english": "dog",
+      "expected": "atim",
+      "predicted": "atim",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.594,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 109,
+        "total_tokens": 150,
+        "cost": 0.00139,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00139,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001308
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 108,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00139,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 3,
+      "english": "house",
+      "expected": "wâskahikan",
+      "predicted": "wâskahikan",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.411,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 196,
+        "total_tokens": 237,
+        "cost": 0.002434,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002434,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002352
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 191,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002434,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 4,
+      "english": "hello",
+      "expected": "tânisi",
+      "predicted": "tânisi",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.331,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 122,
+        "total_tokens": 163,
+        "cost": 0.001546,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001546,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001464
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 119,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001546,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 5,
+      "english": "bear",
+      "expected": "maskwa",
+      "predicted": "maskwa",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.639,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 132,
+        "total_tokens": 173,
+        "cost": 0.001666,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001666,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001666,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 6,
+      "english": "my grandfather",
+      "expected": "nimosôm",
+      "predicted": "nimosôm",
+      "segment": "gold_standard",
+      "difficulty": 2,
+      "latency_s": 5.397,
+      "usage": {
+        "prompt_tokens": 42,
+        "completion_tokens": 373,
+        "total_tokens": 415,
+        "cost": 0.00456,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00456,
+          "upstream_inference_prompt_cost": 8.4e-05,
+          "upstream_inference_completions_cost": 0.004476
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 370,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00456,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 7,
+      "english": "I saw him",
+      "expected": "nikî-wâpamâw",
+      "predicted": "nikî-wâpamâw",
+      "segment": "gold_standard",
+      "difficulty": 3,
+      "latency_s": 5.122,
+      "usage": {
+        "prompt_tokens": 43,
+        "completion_tokens": 429,
+        "total_tokens": 472,
+        "cost": 0.005234,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.005234,
+          "upstream_inference_prompt_cost": 8.6e-05,
+          "upstream_inference_completions_cost": 0.005148
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 421,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.005234,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 8,
+      "english": "I will see him",
+      "expected": "nika-wâpamâw",
+      "predicted": "nika-wâpamâw",
+      "segment": "gold_standard",
+      "difficulty": 3,
+      "latency_s": 5.321,
+      "usage": {
+        "prompt_tokens": 44,
+        "completion_tokens": 566,
+        "total_tokens": 610,
+        "cost": 0.00688,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00688,
+          "upstream_inference_prompt_cost": 8.8e-05,
+          "upstream_inference_completions_cost": 0.006792
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 559,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00688,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 9,
+      "english": "dogs",
+      "expected": "atimwak",
+      "predicted": "atimwak",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.459,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 309,
+        "total_tokens": 350,
+        "cost": 0.00379,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00379,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.003708
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 307,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00379,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 10,
+      "english": "and",
+      "expected": "êkwa",
+      "predicted": "êkwa",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.2,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 157,
+        "total_tokens": 198,
+        "cost": 0.001966,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001966,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001884
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 154,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001966,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 11,
+      "english": "water",
+      "expected": "nipiy",
+      "predicted": "nipiy",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.26,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 132,
+        "total_tokens": 173,
+        "cost": 0.001666,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001666,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001666,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 12,
+      "english": "woman",
+      "expected": "iskwêw",
+      "predicted": "iskwêw",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.578,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 163,
+        "total_tokens": 204,
+        "cost": 0.002038,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002038,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001956
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 159,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002038,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 13,
+      "english": "man",
+      "expected": "nâpêw",
+      "predicted": "nâpêw",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.898,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 153,
+        "total_tokens": 194,
+        "cost": 0.001918,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001918,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001836
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 148,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001918,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 14,
+      "english": "child",
+      "expected": "awâsis",
+      "predicted": "awâsis",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.082,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 212,
+        "total_tokens": 253,
+        "cost": 0.002626,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002626,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002544
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 209,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002626,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 15,
+      "english": "no",
+      "expected": "namôya",
+      "predicted": "namôya",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 3.969,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 182,
+        "total_tokens": 223,
+        "cost": 0.002266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002266,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002184
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 179,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002266,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 16,
+      "english": "yes",
+      "expected": "âha",
+      "predicted": "âha",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.193,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 141,
+        "total_tokens": 182,
+        "cost": 0.001774,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001774,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.001692
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 139,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001774,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 17,
+      "english": "also",
+      "expected": "mîna",
+      "predicted": "mîna",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.913,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 174,
+        "total_tokens": 215,
+        "cost": 0.00217,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00217,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002088
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 171,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00217,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 18,
+      "english": "book",
+      "expected": "masinahikan",
+      "predicted": "masinahikan",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 3.985,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 182,
+        "total_tokens": 223,
+        "cost": 0.002266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002266,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002184
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 179,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002266,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    },
+    {
+      "id": 19,
+      "english": "wolf",
+      "expected": "mahihkan",
+      "predicted": "mahihkan",
+      "segment": "gold_standard",
+      "difficulty": 1,
+      "latency_s": 4.493,
+      "usage": {
+        "prompt_tokens": 41,
+        "completion_tokens": 196,
+        "total_tokens": 237,
+        "cost": 0.002434,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002434,
+          "upstream_inference_prompt_cost": 8.2e-05,
+          "upstream_inference_completions_cost": 0.002352
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 192,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002434,
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "error": null,
+      "metadata": {}
+    }
+  ]
+}

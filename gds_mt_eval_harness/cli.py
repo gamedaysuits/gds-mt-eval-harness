@@ -35,6 +35,7 @@ Usage examples:
 
 import argparse
 import asyncio
+import os
 import sys
 
 from gds_mt_eval_harness.config import (
@@ -87,11 +88,22 @@ def build_parser() -> argparse.ArgumentParser:
 
     # --- DASHBOARD command ---
     dash_p = sub.add_parser("dashboard", help="Generate interactive HTML dashboard")
-    dash_p.add_argument("log_paths", nargs="+", help="Paths to RunLog JSON files")
+    dash_p.add_argument("log_paths", nargs="+", help="Paths to RunLog JSON files or directories")
     dash_p.add_argument(
         "-o", "--output",
         default="dashboard_output.html",
         help="Output HTML file path",
+    )
+    dash_p.add_argument(
+        "--watch",
+        action="store_true",
+        help="Watch directory for new/changed reports and auto-regenerate",
+    )
+    dash_p.add_argument(
+        "--interval",
+        type=float,
+        default=5.0,
+        help="Watch polling interval in seconds. Default: 5",
     )
 
     # --- LIST command ---
@@ -314,8 +326,21 @@ def main():
         return
 
     if args.command == "dashboard":
-        from gds_mt_eval_harness.dashboard import generate
-        generate(args.log_paths, args.output)
+        if getattr(args, "watch", False):
+            # Watch mode — poll directory and regenerate on changes
+            from gds_mt_eval_harness.watch import watch
+            # For watch mode, use first path as directory
+            watch(args.log_paths[0], args.output, args.interval)
+            return
+
+        from gds_mt_eval_harness.dashboard import load_reports, generate
+        reports = load_reports(args.log_paths)
+        if not reports:
+            print("No report files found.")
+            sys.exit(1)
+        out = generate(reports, args.output)
+        print(f"  Dashboard written to: {out}")
+        print(f"  Open in browser: file://{os.path.abspath(out)}")
         return
 
     # Default: run
