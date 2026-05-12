@@ -1,6 +1,6 @@
 # gds-mt-eval-harness
 
-**A configurable, language-agnostic evaluation harness for machine translation pipelines.**
+**A configurable evaluation harness for machine translation pipelines.** Battle-tested on Plains Cree, configurable for any language pair.
 
 Run any translation method — LLM prompting, rule-based systems, custom agent pipelines — through a standardized evaluation framework to get research-grade, reproducible metrics.
 
@@ -55,12 +55,12 @@ Your corpus is a JSON array. Required fields: `id` (int). Everything else is con
 
 ```json
 [
-  {"id": 0, "english": "I see a dog.", "cree_sro": "niwâpahtên atim.", "segment": "basic", "difficulty": 1},
-  {"id": 1, "english": "She is running.", "cree_sro": "pimipahtâw.", "segment": "basic", "difficulty": 1}
+  {"id": 0, "source": "I see a dog.", "target": "Je vois un chien.", "segment": "basic", "difficulty": 1},
+  {"id": 1, "source": "She is running.", "target": "Elle court.", "segment": "basic", "difficulty": 1}
 ]
 ```
 
-Configure `--source-field` and `--target-field` to match your column names.
+Configure `--source-field` and `--target-field` if your corpus uses different column names (e.g., `--source-field english --target-field cree_sro`).
 
 ## Documentation
 

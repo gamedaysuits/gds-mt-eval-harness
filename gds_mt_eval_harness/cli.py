@@ -4,6 +4,9 @@ CLI Entry Point — Command-line interface for gds-mt-eval-harness.
 Provides a clean CLI that maps arguments to RunConfig fields.
 Every config parameter is exposed as a CLI flag.
 
+The 'export' subcommand packages completed evaluations as rosetta
+method plugins (method.json + coaching data).
+
 Usage examples:
     # Basic run with defaults
     gds-mt-eval run --corpus data/corpus.json
@@ -31,6 +34,9 @@ Usage examples:
 
     # List available models
     gds-mt-eval list models
+
+    # Export a TestReport as a rosetta method plugin
+    gds-mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached --locales crk
 """
 
 import argparse
@@ -58,6 +64,7 @@ def build_parser() -> argparse.ArgumentParser:
             "  compare   Compare multiple run logs\n"
             "  dashboard Generate interactive HTML dashboard\n"
             "  list      List available models, prompts, datasets\n"
+            "  export    Package a TestReport as a rosetta method plugin\n"
         ),
     )
 
@@ -114,6 +121,13 @@ def build_parser() -> argparse.ArgumentParser:
         help="What to list",
     )
 
+    # --- EXPORT command ---
+    export_p = sub.add_parser(
+        "export",
+        help="Package a TestReport as a rosetta method plugin",
+    )
+    _add_export_args(export_p)
+
     return parser
 
 
@@ -140,8 +154,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     # Source/target fields
     parser.add_argument(
         "--source-field",
-        default="english",
-        help="Field name for source text in corpus. Default: english",
+        default="source",
+        help="Field name for source text in corpus. Default: source",
     )
     parser.add_argument(
         "--target-field",
@@ -269,7 +283,7 @@ def args_to_config(args) -> RunConfig:
         dataset=args.dataset,
         entry_ids=entry_ids,
         corpus_path=args.corpus if hasattr(args, "corpus") else None,
-        source_field=args.source_field if hasattr(args, "source_field") else "english",
+        source_field=args.source_field if hasattr(args, "source_field") else "source",
         target_field=args.target_field if hasattr(args, "target_field") else "target",
         model=args.model,
         max_tokens=args.max_tokens,
@@ -304,6 +318,99 @@ def cmd_list(what: str):
         print("  naive    Minimal translation instruction")
         print("  custom   Load from a .txt file (--custom-prompt)")
         print("\n  Register PromptProvider plugins for language-specific prompts.")
+
+
+def _add_export_args(parser: argparse.ArgumentParser):
+    """Add export-specific arguments to the export subcommand parser."""
+    # Required
+    parser.add_argument(
+        "--report",
+        required=True,
+        help="Path to TestReport JSON file (from 'gds-mt-eval test')",
+    )
+    parser.add_argument(
+        "--name",
+        required=True,
+        help="Plugin name in kebab-case (e.g., 'crk-coached-v1')",
+    )
+    parser.add_argument(
+        "--type",
+        required=True,
+        choices=["llm", "llm-coached", "api", "google-translate"],
+        help="Method type (must match rosetta's valid types)",
+    )
+    parser.add_argument(
+        "--locales",
+        required=True,
+        help="Comma-separated target locale codes (e.g., 'crk' or 'fr,de,es')",
+    )
+
+    # Optional
+    parser.add_argument(
+        "--description",
+        default="",
+        help="Human-readable plugin description",
+    )
+    parser.add_argument(
+        "--author",
+        default="GDS Research",
+        help="Plugin author. Default: 'GDS Research'",
+    )
+    parser.add_argument(
+        "--register",
+        default="",
+        help="Target language register/tone (e.g., 'Standard written register')",
+    )
+    parser.add_argument(
+        "--coaching-dir",
+        help="Path to coaching data directory to bundle (e.g., '.rosetta/coaching')",
+    )
+    parser.add_argument(
+        "-o", "--output-dir",
+        default=".",
+        help="Output directory for the plugin. Default: current directory",
+    )
+    parser.add_argument(
+        "--version",
+        dest="plugin_version",
+        default="1.0.0",
+        help="Semver version string. Default: '1.0.0'",
+    )
+    parser.add_argument(
+        "--commercial-ready",
+        action="store_true",
+        help=(
+            "Mark this plugin as licensed and cleared for publishing. "
+            "Default: false (license-unclear). Set when the method's "
+            "resources have been verified for commercial distribution."
+        ),
+    )
+
+
+def cmd_export(args):
+    """Handle the 'export' subcommand."""
+    from gds_mt_eval_harness.exporter import ExportConfig, export_plugin
+
+    locales = [l.strip() for l in args.locales.split(",")]
+
+    config = ExportConfig(
+        name=args.name,
+        method_type=args.type,
+        locales=locales,
+        version=args.plugin_version,
+        description=args.description,
+        author=args.author,
+        register=args.register,
+        coaching_dir=args.coaching_dir,
+        output_dir=args.output_dir,
+        commercial_ready=args.commercial_ready,
+    )
+
+    try:
+        export_plugin(args.report, config)
+    except (FileNotFoundError, ValueError) as e:
+        print(f"ERROR: {e}")
+        sys.exit(1)
 
 
 def main():
@@ -341,6 +448,10 @@ def main():
         out = generate(reports, args.output)
         print(f"  Dashboard written to: {out}")
         print(f"  Open in browser: file://{os.path.abspath(out)}")
+        return
+
+    if args.command == "export":
+        cmd_export(args)
         return
 
     # Default: run

@@ -75,6 +75,17 @@ def load_corpus(config: RunConfig) -> list[dict]:
 
     corpus = json.loads(corpus_path.read_text(encoding="utf-8"))
 
+    # Auto-detect segment names from corpus if not explicitly configured.
+    # This makes the harness zero-config for new language pairs — just
+    # point it at a corpus and it discovers the available segments.
+    segment_names = config.segment_names
+    if not segment_names:
+        segment_names = sorted({
+            e.get("segment", "") for e in corpus if e.get("segment")
+        })
+        if segment_names:
+            print(f"  Auto-detected segments: {', '.join(segment_names)}")
+
     # Explicit entry IDs take precedence
     if config.entry_ids is not None:
         id_set = set(config.entry_ids)
@@ -90,8 +101,8 @@ def load_corpus(config: RunConfig) -> list[dict]:
     if dataset == "all":
         return corpus
 
-    # Check for segment name
-    if dataset in config.segment_names:
+    # Check for segment name (uses auto-detected names if config was empty)
+    if dataset in segment_names:
         return [e for e in corpus if e.get("segment") == dataset]
 
     # Check for ID range (e.g., "0-61")
@@ -110,9 +121,10 @@ def load_corpus(config: RunConfig) -> list[dict]:
     except ValueError:
         pass
 
+    available = ', '.join(segment_names) if segment_names else 'none detected'
     raise ValueError(
         f"Unknown dataset filter: '{config.dataset}'. "
-        f"Use 'all', a segment name ({', '.join(config.segment_names)}), "
+        f"Use 'all', a segment name ({available}), "
         f"an ID range ('0-61'), or a single ID."
     )
 
@@ -521,7 +533,7 @@ async def execute_run(
 
             async def _process_entry_tools(entry):
                 nonlocal done_count, cache_hits
-                source_text = entry.get(config.source_field, entry.get("english", ""))
+                source_text = entry.get(config.source_field, "")
 
                 cached = cache.get(source_text)
                 if cached is not None:
@@ -559,7 +571,7 @@ async def execute_run(
 
             for batch in batches:
                 source_texts = [
-                    e.get(config.source_field, e.get("english", ""))
+                    e.get(config.source_field, "")
                     for e in batch
                 ]
 
@@ -598,7 +610,7 @@ async def execute_run(
 
             async def _process_entry_single(entry):
                 nonlocal done_count, cache_hits
-                source_text = entry.get(config.source_field, entry.get("english", ""))
+                source_text = entry.get(config.source_field, "")
 
                 cached = cache.get(source_text)
                 if cached is not None:
@@ -641,7 +653,7 @@ async def execute_run(
 
         enriched.append({
             "id": result["id"],
-            "english": entry.get(config.source_field, ""),
+            "source": entry.get(config.source_field, ""),
             "expected": entry.get(config.target_field, ""),
             "predicted": result.get("predicted", ""),
             "segment": entry.get("segment", ""),

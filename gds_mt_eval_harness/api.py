@@ -54,19 +54,34 @@ RETRY_BASE_DELAY = 2.0
 # ---------------------------------------------------------------------------
 
 def load_api_key() -> str:
-    """Load OpenRouter API key from environment or .env.local file."""
+    """Load OpenRouter API key from environment or .env / .env.local file.
+
+    Search order:
+        1. OPENROUTER_API_KEY environment variable
+        2. .env.local in current directory or any parent
+        3. .env in current directory or any parent
+    """
     key = os.environ.get("OPENROUTER_API_KEY")
     if key:
         return key
-    env_path = Path(__file__).parent.parent.parent / ".env.local"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line.startswith("OPENROUTER_API_KEY="):
-                return line.split("=", 1)[1].strip()
+
+    # Use python-dotenv to search from CWD upward
+    try:
+        from dotenv import dotenv_values
+        for filename in (".env.local", ".env"):
+            from dotenv import find_dotenv
+            env_path = find_dotenv(filename=filename, usecwd=True)
+            if env_path:
+                values = dotenv_values(env_path)
+                key = values.get("OPENROUTER_API_KEY")
+                if key:
+                    return key
+    except ImportError:
+        pass
+
     raise RuntimeError(
         "OPENROUTER_API_KEY not found. "
-        "Set it as an environment variable or in .env.local"
+        "Set it as an environment variable or in .env / .env.local"
     )
 
 
@@ -74,8 +89,9 @@ def load_api_key() -> str:
 # Response cleaning — extract Cree from model output
 # ---------------------------------------------------------------------------
 
-# Common English reasoning prefixes that models emit before translation output
-_ENGLISH_REASONING_PATTERNS = [
+# Default English reasoning prefixes that models emit before translation output.
+# Override by passing reasoning_patterns to clean_response().
+_DEFAULT_REASONING_PATTERNS = [
     "let me", "now ", "perfect", "based on", "i need", "i'll ",
     "the ", "for ", "here ", "so ", "first", "next", "this ",
     "using ", "since ", "checking", "looking", "translat",
@@ -83,15 +99,21 @@ _ENGLISH_REASONING_PATTERNS = [
 ]
 
 
-def clean_response(content: str) -> str:
+def clean_response(content: str, reasoning_patterns: list[str] | None = None) -> str:
     """Extract the translation from a model response.
 
     Language-agnostic strategy:
         1. Strip markdown formatting (bold, backticks, quotes)
         2. If single line, return it
-        3. If multi-line, skip lines that look like English reasoning
+        3. If multi-line, skip lines that look like source-language reasoning
            and return the first non-reasoning line
         4. Fall back to the last line
+
+    Args:
+        content: Raw model response text.
+        reasoning_patterns: Optional list of lowercase prefixes to filter
+            as reasoning lines. Defaults to English patterns. Pass an
+            empty list to disable reasoning filtering entirely.
 
     This is intentionally conservative — if your target language uses
     Latin script, some reasoning lines may leak through. Register a
@@ -103,22 +125,20 @@ def clean_response(content: str) -> str:
     # Strip markdown bold wrapping
     if content.startswith("**") and content.endswith("**"):
         content = content[2:-2].strip()
-    # Strip trailing period (common LLM artifact)
-    if content.endswith("."):
-        content = content[:-1].strip()
     lines = [l.strip() for l in content.split("\n") if l.strip()]
     if not lines:
         return content
     if len(lines) == 1:
         return lines[0]
 
-    # Multi-line: skip English reasoning, return first non-reasoning line
+    # Multi-line: skip reasoning, return first non-reasoning line
+    patterns = reasoning_patterns if reasoning_patterns is not None else _DEFAULT_REASONING_PATTERNS
     for line in lines:
         low = line.lower().strip()
         if not low:
             continue
-        # Skip lines that look like English meta-commentary
-        if not any(low.startswith(p) for p in _ENGLISH_REASONING_PATTERNS):
+        # Skip lines that look like source-language meta-commentary
+        if not any(low.startswith(p) for p in patterns):
             return line
 
     # All lines look like reasoning — fall back to last line

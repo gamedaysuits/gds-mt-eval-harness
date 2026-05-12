@@ -247,7 +247,7 @@ JS = r"""
         const idMap = new Map();
         R.forEach((r, ri) => {
             (r.entries || []).forEach(e => {
-                if (!idMap.has(e.id)) idMap.set(e.id, { id: e.id, english: e.english, expected: e.expected, segment: e.segment, runs: {} });
+                if (!idMap.has(e.id)) idMap.set(e.id, { id: e.id, source: e.source, expected: e.expected, segment: e.segment, runs: {} });
                 idMap.get(e.id).runs[ri] = e;
             });
         });
@@ -257,7 +257,7 @@ JS = r"""
         const q = ($('sbs-search').value || '').toLowerCase();
         const sf = $('sbs-filter-seg').value;
         const mf = $('sbs-filter-match').value;
-        if (q) allEntries = allEntries.filter(e => e.english?.toLowerCase().includes(q) || e.expected?.toLowerCase().includes(q));
+        if (q) allEntries = allEntries.filter(e => e.source?.toLowerCase().includes(q) || e.expected?.toLowerCase().includes(q));
         if (sf) allEntries = allEntries.filter(e => e.segment === sf);
         if (mf === 'disagree') {
             allEntries = allEntries.filter(e => {
@@ -288,7 +288,7 @@ JS = r"""
 
         show.forEach(e => {
             h += `<tr><td class="num">${e.id}</td>`;
-            h += `<td class="sbs-src">${esc(e.english)}</td>`;
+            h += `<td class="sbs-src">${esc(e.source)}</td>`;
             h += `<td class="sbs-exp">${esc(e.expected)}</td>`;
             R.forEach((r, ri) => {
                 const entry = e.runs[ri];
@@ -325,7 +325,7 @@ JS = r"""
         const seg = $('filter-seg').value;
         const mf = $('filter-match').value;
         let filtered = entries.filter(e => {
-            if (q && !e.english?.toLowerCase().includes(q) && !e.predicted?.toLowerCase().includes(q) && !e.expected?.toLowerCase().includes(q)) return false;
+            if (q && !e.source?.toLowerCase().includes(q) && !e.predicted?.toLowerCase().includes(q) && !e.expected?.toLowerCase().includes(q)) return false;
             if (seg && e.segment !== seg) return false;
             if (mf === 'exact' && !e.exact_match) return false;
             if (mf === 'miss' && (e.exact_match || e.error)) return false;
@@ -362,7 +362,7 @@ JS = r"""
                 });
             });
             h += `<div class="entry" onclick="this.classList.toggle('open')"><div class="entry-top">`;
-            h += `<span class="e-id">#${e.id}</span><span class="e-src">${esc(e.english)}</span>`;
+            h += `<span class="e-id">#${e.id}</span><span class="e-src">${esc(e.source)}</span>`;
             h += `<span class="e-chrf">${f1(e.chrf_score)}</span>${badge}</div>`;
             h += `<div class="entry-detail"><div class="d-grid">`;
             h += `<span class="d-label">Expected</span><span class="d-val">${esc(e.expected)}</span>`;

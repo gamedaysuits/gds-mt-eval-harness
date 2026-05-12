@@ -46,7 +46,7 @@ except ImportError:
 class EntryMetrics:
     """Per-entry analysis results."""
     id: int = 0
-    english: str = ""   # Source text (kept as 'english' for schema compat)
+    source: str = ""   # Source text (matches runner.py enrichment key)
     expected: str = ""  # Reference translation
     predicted: str = "" # Model output
     segment: str = ""
@@ -165,7 +165,7 @@ def analyze_run(
     for r in results:
         em = EntryMetrics(
             id=r["id"],
-            english=r.get("english", ""),
+            source=r.get("source", ""),
             expected=r.get("expected", ""),
             predicted=r.get("predicted", ""),
             segment=r.get("segment", ""),
@@ -207,7 +207,7 @@ def analyze_run(
         # --- Plugin metrics ---
         entry_dict = {
             "id": em.id,
-            "english": em.english,
+            "source": em.source,
             "expected": em.expected,
             "predicted": em.predicted,
             "segment": em.segment,

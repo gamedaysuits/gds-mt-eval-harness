@@ -83,7 +83,7 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
         if first_match and not last_match:
             regressions.append({
                 "id": eid,
-                "english": first.get("english", ""),
+                "source": first.get("source", ""),
                 "expected": first.get("expected", ""),
                 "first_predicted": first.get("predicted", ""),
                 "last_predicted": last.get("predicted", ""),
@@ -91,7 +91,7 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
         elif not first_match and last_match:
             improvements.append({
                 "id": eid,
-                "english": first.get("english", ""),
+                "source": first.get("source", ""),
                 "expected": first.get("expected", ""),
                 "first_predicted": first.get("predicted", ""),
                 "last_predicted": last.get("predicted", ""),
@@ -199,14 +199,14 @@ def run_compare(
     if imps:
         print(f"\n  IMPROVEMENTS ({len(imps)} entries now correct):")
         for item in imps[:10]:
-            print(f"    #{item['id']:3d}: {item['english'][:50]}")
+            print(f"    #{item['id']:3d}: {item['source'][:50]}")
             print(f"         was: {item['first_predicted'][:50]}")
             print(f"         now: {item['last_predicted'][:50]}")
 
     if regs:
         print(f"\n  REGRESSIONS ({len(regs)} entries now wrong):")
         for item in regs[:10]:
-            print(f"    #{item['id']:3d}: {item['english'][:50]}")
+            print(f"    #{item['id']:3d}: {item['source'][:50]}")
             print(f"         was: {item['first_predicted'][:50]}")
             print(f"         now: {item['last_predicted'][:50]}")
 
