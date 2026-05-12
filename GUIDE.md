@@ -42,7 +42,8 @@ Open `results.html` in your browser. Done. You have exact match rates, chrF++ sc
 9. [Caching Strategy](#9-caching-strategy)
 10. [Cost Management](#10-cost-management)
 11. [Integration Guide](#11-integration-guide)
-12. [Troubleshooting](#12-troubleshooting)
+12. [Rosetta Plugin Export](#12-rosetta-plugin-export)
+13. [Troubleshooting](#13-troubleshooting)
 
 ---
 
@@ -139,8 +140,8 @@ Your corpus is a JSON array of objects. The only **required** field is `id` (int
 
 ```json
 [
-  {"id": 0, "english": "Hello.", "french": "Bonjour."},
-  {"id": 1, "english": "Thank you.", "french": "Merci."}
+  {"id": 0, "source": "Hello.", "target": "Bonjour."},
+  {"id": 1, "source": "Thank you.", "target": "Merci."}
 ]
 ```
 
@@ -154,11 +155,14 @@ Your corpus is a JSON array of objects. The only **required** field is `id` (int
     "cree_sro": "niwâpahtên atim.",
     "segment": "gold_standard",
     "difficulty": 1,
-    "source": "Wolvengrey (2001)",
+    "citation": "Wolvengrey (2001)",
     "notes": "Basic transitive sentence"
   }
 ]
 ```
+
+> **Note:** This corpus uses `english` and `cree_sro` as field names.
+> Tell the harness with `--source-field english --target-field cree_sro`.
 
 ### Field mapping
 
@@ -210,8 +214,8 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
 | `corpus_path` | `--corpus` | `None` | Path to corpus JSON file (required) |
-| `source_field` | `--source-field` | `"english"` | Field name for source text |
-| `target_field` | `--target-field` | `"cree_sro"` | Field name for reference translation |
+| `source_field` | `--source-field` | `"source"` | Field name for source text |
+| `target_field` | `--target-field` | `"target"` | Field name for reference translation |
 
 ### Model
 
@@ -565,8 +569,8 @@ from gds_mt_eval_harness.tester import analyze_run
 async def evaluate():
     config = RunConfig(
         corpus_path="data/corpus.json",
-        source_field="english",
-        target_field="target_language",
+        source_field="source",
+        target_field="target",
         model="gemini-3.1-pro",
     )
     run_log = await execute_run(config)
@@ -609,7 +613,116 @@ await execute_run(config, process=MyPipeline())
 
 ---
 
-## 12. Troubleshooting
+## 12. Rosetta Plugin Export
+
+The harness can package a completed evaluation as a **method plugin** for
+[i18n-rosetta](https://github.com/gamedaysuits/i18n-rosetta). This bridges
+the gap between research (harness) and production (rosetta).
+
+### What gets exported
+
+The export produces a directory with this structure:
+
+```
+<plugin-name>/
+  method.json             # Manifest: name, type, config, benchmarks, provenance
+  coaching/
+    <locale>.json          # Optional: grammar rules, dictionary, style notes
+```
+
+This is strictly **data-only output**. The export NEVER includes:
+- Python source code
+- API keys or environment variables
+- Harness configuration (prompts, tools, hooks)
+- RunLog entries or raw translations
+
+### CLI usage
+
+```bash
+# 1. Run your translation experiment
+gds-mt-eval run --corpus data/corpus.json --model gemini-3.1-pro
+
+# 2. Analyze the results
+gds-mt-eval test eval/logs/harness/run_*.json
+
+# 3. Export as a rosetta plugin
+gds-mt-eval export \
+  --report eval/logs/harness/run_*_report.json \
+  --name crk-coached-v1 \
+  --type llm-coached \
+  --locales crk \
+  --description "Plains Cree with grammar coaching and FST validation" \
+  --register "Standard written register (SRO)" \
+  --coaching-dir .rosetta/coaching \
+  --output-dir ./exported_plugins
+```
+
+### Programmatic usage
+
+```python
+from gds_mt_eval_harness import ExportConfig, export_plugin
+
+config = ExportConfig(
+    name="crk-coached-v1",
+    method_type="llm-coached",
+    locales=["crk"],
+    description="Plains Cree with grammar coaching",
+    coaching_dir=".rosetta/coaching",
+    output_dir="./exported_plugins",
+)
+
+plugin_dir = export_plugin("eval/logs/harness/my_report.json", config)
+```
+
+### Installing the plugin in rosetta
+
+Copy the exported directory into your rosetta project:
+
+```bash
+cp -r ./exported_plugins/crk-coached-v1 <project>/.rosetta/methods/
+```
+
+Then reference it in `i18n-rosetta.config.json`:
+
+```json
+{
+  "pairs": {
+    "en→crk": {
+      "methodPlugin": "crk-coached-v1"
+    }
+  }
+}
+```
+
+### Provenance and licensing
+
+Exported plugins default to `commercialReady: false` with a `"license-unclear"`
+flag. Plugins can bundle coaching data, FST gate configs, decomposition
+pipelines, and other resources whose licensing status the exporter cannot
+determine automatically.
+
+When a method's licensing has been verified and it's ready for distribution
+(published to an API endpoint or as a remotely installable plugin), set the
+flag explicitly:
+
+```bash
+gds-mt-eval export ... --commercial-ready
+```
+
+This clears the `"license-unclear"` flag and marks the plugin as ready
+to publish.
+
+### Benchmarks
+
+The export includes ALL metrics from the TestReport in the benchmarks block:
+- Standard: `exact_match_rate`, `corpus_chrf`, `corpus_bleu`
+- Plugin-specific: any custom metrics from harness plugins (e.g., FST validity)
+
+Rosetta ignores unknown metric fields, so this is strictly additive.
+
+---
+
+## 13. Troubleshooting
 
 ### "OPENROUTER_API_KEY not found"
 

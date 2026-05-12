@@ -85,9 +85,9 @@ class TranslationProcess(Protocol):
         """Translate a batch of entries.
 
         Args:
-            entries: List of dicts with at least 'english' and 'id' keys.
-                     ('english' is the source text key by convention —
-                      adjust for your language pair.)
+            entries: List of dicts with at least the source field and 'id' keys.
+                     (The source text key is determined by config.source_field,
+                      which defaults to 'source'.)
             config: The full run configuration for context.
 
         Returns:
@@ -128,19 +128,18 @@ class RunConfig:
     corpus_path: str | None = None
 
     # --- Source / target field names ---
-    # Override these for non-English source languages
-    source_field: str = "english"  # The field name for source text in corpus
+    # These map to the JSON keys in your corpus file.
+    source_field: str = "source"  # The field name for source text in corpus
     target_field: str = "target"  # The field name for reference translation
 
     # --- Segment names ---
-    # The valid segment names in your corpus (for dataset filtering)
-    segment_names: list[str] = field(default_factory=lambda: [
-        "gold_standard", "textbook_sample", "phase1_test", "textbook_remainder",
-    ])
+    # The valid segment names in your corpus (for dataset filtering).
+    # Leave empty to auto-detect from the corpus at load time.
+    segment_names: list[str] = field(default_factory=list)
 
     # --- Model ---
     model: str = DEFAULT_MODEL  # Short name, resolved via MODEL_REGISTRY
-    max_tokens: int = 13680     # Per user spec; reasoning models need headroom
+    max_tokens: int = 4096      # Override for models that need more headroom
 
     # --- Tool calling ---
     # Individual toggles for each tool (None = all available tools)

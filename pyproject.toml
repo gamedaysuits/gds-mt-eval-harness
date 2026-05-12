@@ -16,7 +16,6 @@ keywords = ["machine-translation", "evaluation", "nlp", "low-resource-languages"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -36,6 +35,10 @@ metrics = [
 ]
 all = [
     "sacrebleu>=2.3",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
 ]
 
 [project.scripts]
