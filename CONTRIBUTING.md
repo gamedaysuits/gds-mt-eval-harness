@@ -1,4 +1,4 @@
-# Contributing to gds-mt-eval-harness
+# Contributing to mt-eval-harness
 
 Thank you for your interest in contributing! This project exists to give
 researchers and developers a reliable, language-agnostic framework for
@@ -11,7 +11,7 @@ plugins and evaluation strategies.
 | Resource | Path |
 |---|---|
 | Architecture & usage guide | [`GUIDE.md`](GUIDE.md) |
-| Plugin protocol definitions | [`gds_mt_eval_harness/plugins/`](gds_mt_eval_harness/plugins/) |
+| Plugin protocol definitions | [`mt_eval_harness/plugins/`](mt_eval_harness/plugins/) |
 | Example: basic run | [`examples/basic_run/`](examples/basic_run/) |
 | Example: custom pipeline | [`examples/custom_pipeline/`](examples/custom_pipeline/) |
 
@@ -21,8 +21,8 @@ plugins and evaluation strategies.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/gamedaysuits/gds-mt-eval-harness.git
-cd gds-mt-eval-harness
+git clone https://github.com/gamedaysuits/mt-eval-harness.git
+cd mt-eval-harness
 
 # 2. Create a virtual environment
 python -m venv .venv
@@ -41,7 +41,7 @@ cp .env.example .env
 ## Project Structure
 
 ```
-gds_mt_eval_harness/
+mt_eval_harness/
 ├── __init__.py          # Public API exports
 ├── __main__.py          # python -m entry point
 ├── config.py            # RunConfig dataclass
@@ -115,7 +115,7 @@ for full protocol documentation. Here's a summary:
 Adds custom evaluation metrics (e.g., FST validity, semantic overlap).
 
 ```python
-from gds_mt_eval_harness import MetricPlugin
+from mt_eval_harness import MetricPlugin
 
 class MyMetric:
     name = "my_metric"
@@ -164,7 +164,7 @@ Open an issue first to discuss.
    configuration options.
 4. **Run the linter** before submitting:
    ```bash
-   python -m py_compile gds_mt_eval_harness/your_file.py
+   python -m py_compile mt_eval_harness/your_file.py
    ```
 5. **Open a PR** with a clear description of what changed and why.
 

@@ -7,7 +7,7 @@ Validates that the config module enforces language-agnostic defaults:
     - max_tokens defaults to a reasonable general-purpose value
 """
 
-from gds_mt_eval_harness.config import RunConfig
+from mt_eval_harness.config import RunConfig
 
 
 class TestRunConfigDefaults:

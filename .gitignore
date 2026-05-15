@@ -23,13 +23,18 @@ env/
 .DS_Store
 Thumbs.db
 
-# Environment
+# Environment — API keys must never be committed
 .env
+.env.local
 
-# Harness outputs (generated, not tracked)
+# Harness outputs (generated at runtime, not tracked)
 eval/cache/
 eval/logs/
 
-# Dashboard output
-*.html
-!examples/**/*.html
+# Dashboard output (generated HTML)
+dashboard_output.html
+dashboard.html
+
+# Type checking
+.mypy_cache/
+.pytest_cache/

@@ -1,5 +1,5 @@
 """
-CLI Entry Point — Command-line interface for gds-mt-eval-harness.
+CLI Entry Point — Command-line interface for mt-eval-harness.
 
 Provides a clean CLI that maps arguments to RunConfig fields.
 Every config parameter is exposed as a CLI flag.
@@ -9,34 +9,40 @@ method plugins (method.json + coaching data).
 
 Usage examples:
     # Basic run with defaults
-    gds-mt-eval run --corpus data/corpus.json
+    mt-eval run --corpus data/corpus.json
 
     # Gold standard segment only
-    gds-mt-eval run --corpus data/corpus.json --dataset gold_standard
+    mt-eval run --corpus data/corpus.json --dataset gold_standard
 
     # Batch mode, different model
-    gds-mt-eval run --corpus data/corpus.json --model claude-sonnet-4 --batch-size 5
+    mt-eval run --corpus data/corpus.json --model claude-sonnet-4 --batch-size 5
 
     # Specific entries only
-    gds-mt-eval run --corpus data/corpus.json --ids 0,1,2,3,4
+    mt-eval run --corpus data/corpus.json --ids 0,1,2,3,4
 
     # Dry run to validate config
-    gds-mt-eval run --corpus data/corpus.json --dry-run
+    mt-eval run --corpus data/corpus.json --dry-run
 
     # Run the test harness on a completed run
-    gds-mt-eval test logs/run_20260509_*.json
+    mt-eval test logs/run_20260509_*.json
 
     # Compare two runs
-    gds-mt-eval compare log1.json log2.json
+    mt-eval compare log1.json log2.json
 
     # Generate dashboard HTML
-    gds-mt-eval dashboard logs/run_*.json
+    mt-eval dashboard logs/run_*.json
 
     # List available models
-    gds-mt-eval list models
+    mt-eval list models
 
     # Export a TestReport as a rosetta method plugin
-    gds-mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached --locales crk
+    mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached --locales crk
+
+    # Same thing using the generate-plugin alias
+    mt-eval generate-plugin --report eval/logs/report.json --name crk-v1 --type llm --locales crk
+
+    # List models with live OpenRouter catalog
+    mt-eval list models --live
 """
 
 import argparse
@@ -44,7 +50,7 @@ import asyncio
 import os
 import sys
 
-from gds_mt_eval_harness.config import (
+from mt_eval_harness.config import (
     RunConfig,
     DEFAULT_MODEL,
     MODEL_REGISTRY,
@@ -54,17 +60,18 @@ from gds_mt_eval_harness.config import (
 def build_parser() -> argparse.ArgumentParser:
     """Build the argument parser with all harness options."""
     parser = argparse.ArgumentParser(
-        prog="gds-mt-eval",
-        description="GDS MT Eval Harness — Execute and evaluate translation experiments",
+        prog="mt-eval",
+        description="MT Eval Harness — Execute and evaluate translation experiments",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "SUBCOMMANDS:\n"
-            "  run       Execute a translation run (default)\n"
-            "  test      Analyze a completed run log\n"
-            "  compare   Compare multiple run logs\n"
-            "  dashboard Generate interactive HTML dashboard\n"
-            "  list      List available models, prompts, datasets\n"
-            "  export    Package a TestReport as a rosetta method plugin\n"
+            "  run              Execute a translation run (default)\n"
+            "  test             Analyze a completed run log\n"
+            "  compare          Compare multiple run logs\n"
+            "  dashboard        Generate interactive HTML dashboard\n"
+            "  list             List available models, prompts, datasets\n"
+            "  export           Package a TestReport as a rosetta method plugin\n"
+            "  generate-plugin  Alias for 'export'\n"
         ),
     )
 
@@ -120,6 +127,11 @@ def build_parser() -> argparse.ArgumentParser:
         choices=["models", "prompts"],
         help="What to list",
     )
+    list_p.add_argument(
+        "--live",
+        action="store_true",
+        help="Fetch live model catalog from OpenRouter (requires API key)",
+    )
 
     # --- EXPORT command ---
     export_p = sub.add_parser(
@@ -127,6 +139,13 @@ def build_parser() -> argparse.ArgumentParser:
         help="Package a TestReport as a rosetta method plugin",
     )
     _add_export_args(export_p)
+
+    # --- GENERATE-PLUGIN alias (maps to export) ---
+    gp_p = sub.add_parser(
+        "generate-plugin",
+        help="Alias for 'export' — package a TestReport as a rosetta method plugin",
+    )
+    _add_export_args(gp_p)
 
     return parser
 
@@ -304,14 +323,17 @@ def args_to_config(args) -> RunConfig:
     )
 
 
-def cmd_list(what: str):
+def cmd_list(what: str, live: bool = False):
     """Handle the 'list' subcommand."""
     if what == "models":
-        print("\nAvailable models:")
+        print("\nAvailable models (registry shortcuts):")
         for short, full in sorted(MODEL_REGISTRY.items()):
             default = " (default)" if short == DEFAULT_MODEL else ""
             print(f"  {short:25s} → {full}{default}")
         print("\n  You can also pass any full OpenRouter model ID directly.")
+
+        if live:
+            cmd_list_live()
 
     elif what == "prompts":
         print("\nBuilt-in prompt versions:")
@@ -320,13 +342,82 @@ def cmd_list(what: str):
         print("\n  Register PromptProvider plugins for language-specific prompts.")
 
 
+def cmd_list_live():
+    """Fetch and display live model catalog from OpenRouter.
+
+    Queries the OpenRouter /api/v1/models endpoint and displays
+    all available models with their pricing. Requires an API key
+    (via OPENROUTER_API_KEY env var or .env file).
+    """
+    import asyncio
+
+    try:
+        import aiohttp
+    except ImportError:
+        print("\n  aiohttp is required for live model listing.")
+        print("  Install: pip install aiohttp")
+        return
+
+    from mt_eval_harness.api import load_api_key, OPENROUTER_MODELS_URL
+
+    try:
+        api_key = load_api_key()
+    except RuntimeError as e:
+        print(f"\n  Cannot fetch live models: {e}")
+        return
+
+    async def _fetch():
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+        async with aiohttp.ClientSession() as session:
+            async with session.get(
+                OPENROUTER_MODELS_URL,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=15),
+            ) as resp:
+                if resp.status != 200:
+                    print(f"\n  OpenRouter API returned {resp.status}")
+                    return
+                data = await resp.json()
+                models = data.get("data", [])
+
+                # Filter to text-capable models, sort by ID
+                text_models = [
+                    m for m in models
+                    if "text" in str(m.get("architecture", {}).get("modality", ""))
+                    or "chat" in str(m.get("architecture", {}).get("modality", ""))
+                    or not m.get("architecture", {}).get("modality")  # Permissive fallback
+                ]
+                text_models.sort(key=lambda m: m.get("id", ""))
+
+                print(f"\n  Live catalog — {len(text_models)} models available on OpenRouter:")
+                print(f"  {'Model ID':55s} {'Input $/1M':>10s} {'Output $/1M':>11s}")
+                print(f"  {'-'*55} {'-'*10} {'-'*11}")
+
+                for m in text_models:
+                    mid = m.get("id", "?")
+                    pricing = m.get("pricing", {})
+                    try:
+                        inp = float(pricing.get("prompt", "0")) * 1_000_000
+                        out = float(pricing.get("completion", "0")) * 1_000_000
+                        print(f"  {mid:55s} ${inp:>8.2f} ${out:>9.2f}")
+                    except (ValueError, TypeError):
+                        print(f"  {mid:55s} {'?':>10s} {'?':>11s}")
+
+                print(f"\n  Pass any model ID above with: mt-eval run -m <model-id>")
+
+    asyncio.run(_fetch())
+
+
 def _add_export_args(parser: argparse.ArgumentParser):
     """Add export-specific arguments to the export subcommand parser."""
     # Required
     parser.add_argument(
         "--report",
         required=True,
-        help="Path to TestReport JSON file (from 'gds-mt-eval test')",
+        help="Path to TestReport JSON file (from 'mt-eval test')",
     )
     parser.add_argument(
         "--name",
@@ -353,8 +444,8 @@ def _add_export_args(parser: argparse.ArgumentParser):
     )
     parser.add_argument(
         "--author",
-        default="GDS Research",
-        help="Plugin author. Default: 'GDS Research'",
+        default="",
+        help="Plugin author (e.g., 'Your Name or Org')",
     )
     parser.add_argument(
         "--register",
@@ -389,7 +480,7 @@ def _add_export_args(parser: argparse.ArgumentParser):
 
 def cmd_export(args):
     """Handle the 'export' subcommand."""
-    from gds_mt_eval_harness.exporter import ExportConfig, export_plugin
+    from mt_eval_harness.exporter import ExportConfig, export_plugin
 
     locales = [l.strip() for l in args.locales.split(",")]
 
@@ -419,28 +510,28 @@ def main():
     args = parser.parse_args()
 
     if args.command == "list":
-        cmd_list(args.what)
+        cmd_list(args.what, live=getattr(args, "live", False))
         return
 
     if args.command == "test":
-        from gds_mt_eval_harness.tester import run_test
+        from mt_eval_harness.tester import run_test
         run_test(args.log_path, args.output)
         return
 
     if args.command == "compare":
-        from gds_mt_eval_harness.compare import run_compare
+        from mt_eval_harness.compare import run_compare
         run_compare(args.log_paths, args.output)
         return
 
     if args.command == "dashboard":
         if getattr(args, "watch", False):
             # Watch mode — poll directory and regenerate on changes
-            from gds_mt_eval_harness.watch import watch
+            from mt_eval_harness.watch import watch
             # For watch mode, use first path as directory
             watch(args.log_paths[0], args.output, args.interval)
             return
 
-        from gds_mt_eval_harness.dashboard import load_reports, generate
+        from mt_eval_harness.dashboard import load_reports, generate
         reports = load_reports(args.log_paths)
         if not reports:
             print("No report files found.")
@@ -450,7 +541,7 @@ def main():
         print(f"  Open in browser: file://{os.path.abspath(out)}")
         return
 
-    if args.command == "export":
+    if args.command in ("export", "generate-plugin"):
         cmd_export(args)
         return
 
@@ -459,12 +550,23 @@ def main():
 
     if not config.corpus_path:
         print("ERROR: --corpus is required for the run command.")
-        print("  Usage: gds-mt-eval run --corpus <path_to_corpus.json>")
+        print("  Usage: mt-eval run --corpus <path_to_corpus.json>")
         sys.exit(1)
 
-    from gds_mt_eval_harness.runner import execute_run
+    from mt_eval_harness.runner import execute_run
     asyncio.run(execute_run(config))
 
 
 if __name__ == "__main__":
+    main()
+
+
+def generate_plugin():
+    """Standalone entry point for the 'generate-plugin' command.
+
+    Injects 'generate-plugin' as the subcommand so users can invoke
+    this as a bare shell command: `generate-plugin --report ...`
+    instead of `mt-eval generate-plugin --report ...`.
+    """
+    sys.argv = ["mt-eval", "generate-plugin"] + sys.argv[1:]
     main()

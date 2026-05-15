@@ -154,9 +154,9 @@ endpoint returns it.
     }
   },
   "provenance": {
-    "resources": [{ "name": "User coaching data", "license": "project-local", "type": "dictionary" }],
-    "commercialReady": true,
-    "flags": []
+    "resources": [],
+    "commercialReady": false,
+    "flags": ["license-unclear"]
   }
 }
 ```

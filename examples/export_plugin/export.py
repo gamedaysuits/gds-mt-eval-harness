@@ -27,7 +27,7 @@ CLI equivalent:
 
 from pathlib import Path
 
-from gds_mt_eval_harness import ExportConfig, export_plugin
+from mt_eval_harness import ExportConfig, export_plugin
 
 
 def main():

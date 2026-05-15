@@ -1,10 +1,12 @@
 """
-Dashboard Generator — produces a self-contained, branded HTML evaluation dashboard.
+Dashboard Generator — produces a self-contained HTML evaluation dashboard.
 
 Architecture:
-  - CSS/JS live in _dashboard_css.py and _dashboard_js.py for maintainability
-  - GDS logo is embedded as a base64 PNG (64px, ~9KB)
+  - CSS lives in _dashboard_css.py (neutral design tokens, dark/light mode)
+  - Chart builders live in _dashboard_charts.py (Chart.js wrappers)
+  - Core JS lives in _dashboard_js.py (rendering, export, drag-drop, keyboard)
   - All report data is embedded as JSON so the file works offline
+  - Chart.js and Google Fonts loaded via CDN links
   - The generator supports both individual report files and directory scanning
 
 Directory mode (dynamic):
@@ -15,26 +17,13 @@ Directory mode (dynamic):
 import json
 import os
 import sys
-import base64
 import glob
 from pathlib import Path
+from datetime import datetime
 
 from ._dashboard_css import CSS
+from ._dashboard_charts import CHART_JS
 from ._dashboard_js import JS
-
-
-# ── Logo ─────────────────────────────────────────────────────────────────────
-# The GDS suit logo, pre-encoded as base64 PNG.
-# Generated from the brand vector at 64x64px for minimal file overhead.
-LOGO_PATH = Path(__file__).parent / "assets" / "gds_logo_64.png"
-
-
-def _load_logo_b64() -> str:
-    """Load logo from assets dir and return base64 string, or empty string."""
-    if LOGO_PATH.exists():
-        with open(LOGO_PATH, "rb") as f:
-            return base64.b64encode(f.read()).decode("ascii")
-    return ""
 
 
 # ── Report Loading ───────────────────────────────────────────────────────────
@@ -74,7 +63,6 @@ def _load_one(path: str) -> dict:
     # Inject the run name from config if available, or derive from filename
     config = data.get("config", {})
     if not config.get("run_name"):
-        # Derive from filename: run_YYYYMMDD_..._name_report.json -> extract name
         base = os.path.basename(path).replace("_report.json", "")
         config["run_name"] = base
         data["config"] = config
@@ -89,13 +77,6 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
 
     Returns the output path for caller convenience.
     """
-    logo_b64 = _load_logo_b64()
-    logo_img = (
-        f'<img src="data:image/png;base64,{logo_b64}" class="header-logo" alt="GDS">'
-        if logo_b64
-        else '<div class="header-logo" style="background:var(--gds-royal);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;color:#fff">GDS</div>'
-    )
-
     # Read version from pyproject.toml
     version = "0.1.0"
     pyproject = Path(__file__).parent.parent / "pyproject.toml"
@@ -105,9 +86,9 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
                 version = line.split("=")[1].strip().strip('"').strip("'")
                 break
 
-    # Determine generation timestamp
-    from datetime import datetime
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+    run_count = len(reports)
+    run_label = f"{run_count} run{'s' if run_count != 1 else ''}"
 
     # Build the report JSON payload
     data_json = json.dumps(reports, ensure_ascii=False, separators=(",", ":"))
@@ -117,18 +98,23 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GDS MT Eval Dashboard</title>
+<meta name="description" content="MT Eval Harness — evaluation dashboard for machine translation experiments">
+<title>MT Eval Dashboard — {run_label}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 <style>{CSS}</style>
 </head>
 <body>
 
 <!-- ── Header ──────────────────────────────────────── -->
 <div class="header">
-    {logo_img}
     <div class="header-text">
-        <div class="header-title">MT Eval Harness <span style="font-size:0.7rem;opacity:0.5">v{version}</span></div>
-        <div class="header-sub">Game Day Suits · {len(reports)} run{"s" if len(reports) != 1 else ""} · {ts}</div>
+        <div class="header-title">MT Eval Harness<span class="version">v{version}</span></div>
+        <div class="header-sub">{run_label} · {ts}</div>
     </div>
+    <button id="theme-btn" class="theme-toggle" title="Toggle dark/light mode">☀️</button>
 </div>
 
 <div class="main">
@@ -151,10 +137,20 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
     <div class="section-body" style="overflow-x:auto"><div id="compare-table"></div></div>
 </div>
 
-<!-- ── SVG Bar Chart (multi-run) ─────────────────── -->
+<!-- ── Performance Bar Chart (Chart.js) ──────────── -->
 <div class="section" id="barchart-section">
     <div class="section-head"><span class="section-title">Performance Overview</span></div>
-    <div class="section-body"><div id="barchart" class="chart-wrap"></div></div>
+    <div class="section-body">
+        <div class="chart-container"><canvas id="bar-canvas"></canvas></div>
+    </div>
+</div>
+
+<!-- ── Radar Chart (Chart.js) ────────────────────── -->
+<div class="section" id="radar-section">
+    <div class="section-head"><span class="section-title">Multi-Metric Radar</span></div>
+    <div class="section-body">
+        <div class="chart-container"><canvas id="radar-canvas"></canvas></div>
+    </div>
 </div>
 
 <!-- ── Segment Breakdown ─────────────────────────── -->
@@ -169,10 +165,12 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
     <div class="section-body" style="overflow-x:auto"><div id="seg-compare-table"></div></div>
 </div>
 
-<!-- ── chrF++ Distribution ───────────────────────── -->
+<!-- ── chrF++ Distribution Histogram (Chart.js) ──── -->
 <div class="section" id="histogram-section">
     <div class="section-head"><span class="section-title">chrF++ Distribution</span></div>
-    <div class="section-body"><div id="histogram" class="chart-wrap"></div></div>
+    <div class="section-body">
+        <div class="chart-container"><canvas id="hist-canvas"></canvas></div>
+    </div>
 </div>
 
 <!-- ── View Toggle ───────────────────────────────── -->
@@ -218,20 +216,39 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
     <div id="sbs-table-wrap" class="sbs-wrap"></div>
 </div>
 
+<!-- ── Export Toolbar ─────────────────────────────── -->
+<div class="section">
+    <div class="export-bar">
+        <button id="export-json" class="export-btn">⬇ JSON</button>
+        <button id="export-csv" class="export-btn">⬇ CSV</button>
+        <button id="export-copy" class="export-btn">📋 Copy</button>
+    </div>
+</div>
+
 </div><!-- /main -->
 
+<!-- ── Drag-Drop Overlay ─────────────────────────── -->
+<div id="drop-overlay" class="drop-overlay">
+    <div class="drop-box">
+        Drop report JSON files here
+        <div class="drop-box-sub">Files will be added as new runs for comparison</div>
+    </div>
+</div>
+
+<!-- ── Toast ──────────────────────────────────────── -->
+<div id="toast" class="toast"></div>
+
 <div class="footer">
-    <div>GDS MT Eval Harness v{version} · Apache-2.0 License</div>
-    <div class="license-bar">
-        <span><a href="https://github.com/gamedaysuits/gds-mt-eval-harness" target="_blank">GitHub</a></span>
-        <span>·</span>
-        <span><a href="https://gamedaysuits.ca" target="_blank">gamedaysuits.ca</a></span>
+    <div>MT Eval Harness v{version} · Apache-2.0 License</div>
+    <div class="footer-links">
+        <span><a href="https://github.com/gamedaysuits/mt-eval-harness" target="_blank">GitHub</a></span>
         <span>·</span>
         <span>Generated {ts}</span>
     </div>
 </div>
 
 <script>window.__REPORTS = {data_json};</script>
+<script>{CHART_JS}</script>
 <script>{JS}</script>
 
 </body>
@@ -246,7 +263,7 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
 
 # ── CLI Entry Point (standalone usage) ───────────────────────────────────────
 def main():
-    """Usage: python -m gds_mt_eval_harness.dashboard <report_or_dir> [...] [-o out.html]"""
+    """Usage: python -m mt_eval_harness.dashboard <report_or_dir> [...] [-o out.html]"""
     args = sys.argv[1:]
     output = "dashboard.html"
     paths = []

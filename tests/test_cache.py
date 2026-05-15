@@ -13,8 +13,8 @@ from pathlib import Path
 
 import pytest
 
-from gds_mt_eval_harness.cache import ResultCache
-from gds_mt_eval_harness.config import RunConfig
+from mt_eval_harness.cache import ResultCache
+from mt_eval_harness.config import RunConfig
 
 
 class TestCacheBasics:

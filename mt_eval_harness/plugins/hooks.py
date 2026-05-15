@@ -24,7 +24,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any, Callable, Coroutine, Protocol, runtime_checkable
 
 if TYPE_CHECKING:
-    from gds_mt_eval_harness.config import RunConfig
+    from mt_eval_harness.config import RunConfig
 
 
 @runtime_checkable

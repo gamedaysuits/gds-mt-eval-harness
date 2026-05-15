@@ -12,9 +12,9 @@ import asyncio
 import time
 from pathlib import Path
 
-from gds_mt_eval_harness.config import RunConfig
-from gds_mt_eval_harness.runner import execute_run
-from gds_mt_eval_harness.plugins.metrics import MetricPlugin
+from mt_eval_harness.config import RunConfig
+from mt_eval_harness.runner import execute_run
+from mt_eval_harness.plugins.metrics import MetricPlugin
 
 
 # ---------------------------------------------------------------------------
@@ -115,7 +115,7 @@ async def main():
     print(f"\nRun complete! {run_log['total_entries']} entries processed.")
 
     # Now analyze the results
-    from gds_mt_eval_harness.tester import analyze_run
+    from mt_eval_harness.tester import analyze_run
     output_dir = Path(config.output_dir)
     log_files = list(output_dir.glob("*.json"))
     if log_files:
