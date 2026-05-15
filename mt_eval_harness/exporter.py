@@ -29,7 +29,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from gds_mt_eval_harness import __version__
+from mt_eval_harness import __version__
 
 
 # ---------------------------------------------------------------------------
@@ -81,7 +81,7 @@ class ExportConfig:
     # --- Optional with defaults ---
     version: str = "1.0.0"
     description: str = ""
-    author: str = "GDS Research"
+    author: str = ""
     register: str = ""
     coaching_dir: str | None = None
     output_dir: str = "."
@@ -220,7 +220,7 @@ def _build_manifest(report: dict, config: ExportConfig) -> dict:
         "name": config.name,
         "type": config.method_type,
         "version": config.version,
-        "description": config.description or f"Exported from gds-mt-eval-harness v{__version__}",
+        "description": config.description or f"Exported from mt-eval-harness v{__version__}",
         "author": config.author,
         "config": method_config,
         "locales": config.locales,
@@ -322,7 +322,7 @@ def _validate_report(report: dict) -> None:
         if "results" in report:
             raise ValueError(
                 "This looks like a RunLog, not a TestReport. "
-                "Run 'gds-mt-eval test <runlog>' first to generate a TestReport, "
+                "Run 'mt-eval test <runlog>' first to generate a TestReport, "
                 "then export the report."
             )
         raise ValueError(

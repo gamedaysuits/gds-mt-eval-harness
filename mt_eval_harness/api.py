@@ -86,17 +86,27 @@ def load_api_key() -> str:
 
 
 # ---------------------------------------------------------------------------
-# Response cleaning — extract Cree from model output
+# Response cleaning — language-agnostic output extraction
 # ---------------------------------------------------------------------------
 
-# Default English reasoning prefixes that models emit before translation output.
-# Override by passing reasoning_patterns to clean_response().
-_DEFAULT_REASONING_PATTERNS = [
+# English reasoning prefixes that models may emit before translation output.
+# NOT used by default — callers must opt in by passing these to clean_response().
+#
+# WARNING: These patterns will silently strip legitimate translations in
+# any Latin-script target language where translations commonly start with
+# "the", "for", "this", etc. Only use for non-Latin target languages
+# (e.g., Plains Cree syllabics, Arabic, CJK) where English prefixes are
+# unambiguously model reasoning, not translation output.
+ENGLISH_REASONING_PATTERNS = [
     "let me", "now ", "perfect", "based on", "i need", "i'll ",
     "the ", "for ", "here ", "so ", "first", "next", "this ",
     "using ", "since ", "checking", "looking", "translat",
     "sure", "of course", "certainly", "okay", "alright",
 ]
+
+# Default: no reasoning filtering. Markdown cleanup only.
+# This prevents silent data corruption for Latin-script target languages.
+_DEFAULT_REASONING_PATTERNS: list[str] = []
 
 
 def clean_response(content: str, reasoning_patterns: list[str] | None = None) -> str:
@@ -105,19 +115,23 @@ def clean_response(content: str, reasoning_patterns: list[str] | None = None) ->
     Language-agnostic strategy:
         1. Strip markdown formatting (bold, backticks, quotes)
         2. If single line, return it
-        3. If multi-line, skip lines that look like source-language reasoning
-           and return the first non-reasoning line
-        4. Fall back to the last line
+        3. If multi-line and reasoning_patterns provided, skip lines
+           matching those patterns and return the first non-reasoning line
+        4. If no reasoning patterns (default), return the first line
+        5. Fall back to the last line
 
     Args:
         content: Raw model response text.
         reasoning_patterns: Optional list of lowercase prefixes to filter
-            as reasoning lines. Defaults to English patterns. Pass an
-            empty list to disable reasoning filtering entirely.
+            as reasoning lines. Defaults to empty (no filtering).
+            Pass ENGLISH_REASONING_PATTERNS for non-Latin targets.
+            Pass a custom list for your specific source language.
 
-    This is intentionally conservative — if your target language uses
-    Latin script, some reasoning lines may leak through. Register a
-    custom TranslationProcess for fine-grained control.
+    Note: Reasoning filtering is the caller's responsibility. The default
+    behavior is safe for all script systems. If your target language uses
+    a non-Latin script, you can safely pass ENGLISH_REASONING_PATTERNS.
+    For Latin-script targets, implement filtering as a PostTranslationHook
+    with language-specific logic.
     """
     if not content:
         return ""
@@ -251,18 +265,20 @@ async def fetch_pricing(
 def estimate_cost(
     usage: dict,
     model_id: str,
-    pricing: dict[str, dict[str, float]],
+    pricing: dict[str, dict[str, float]] | None = None,
 ) -> float:
     """Estimate API cost in USD from token usage and pricing data.
 
     Args:
         usage: Token usage dict from OpenRouter response.
         model_id: The full OpenRouter model ID.
-        pricing: Pricing table from fetch_pricing().
+        pricing: Pricing table from fetch_pricing(). Can be None.
 
     Returns:
         Estimated cost in USD.
     """
+    if pricing is None:
+        pricing = _FALLBACK_PRICING
     model_price = pricing.get(model_id, _FALLBACK_PRICING.get(model_id, {}))
     if not model_price:
         return 0.0
@@ -322,7 +338,7 @@ async def call_openrouter(
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/gamedaysuits/gds-mt-eval-harness",
+        "HTTP-Referer": "https://github.com/gamedaysuits/mt-eval-harness",
     }
 
     payload: dict[str, Any] = {

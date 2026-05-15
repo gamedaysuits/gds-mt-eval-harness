@@ -155,7 +155,7 @@ def analyze_run(
         print(f"  Active plugins: {', '.join(p.name for p in plugins)}")
     if not HAS_SACREBLEU:
         print("  NOTE: sacrebleu not installed — chrF++/BLEU scores will be 0")
-        print("  Install with: pip install gds-mt-eval-harness[metrics]")
+        print("  Install with: pip install mt-eval-harness[metrics]")
 
     # --- Per-entry analysis ---
     entry_metrics: list[EntryMetrics] = []

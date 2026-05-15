@@ -11,7 +11,7 @@ import json
 
 import pytest
 
-from gds_mt_eval_harness.tester import EntryMetrics, analyze_run
+from mt_eval_harness.tester import EntryMetrics, analyze_run
 
 
 class TestEntryMetricsSchema:

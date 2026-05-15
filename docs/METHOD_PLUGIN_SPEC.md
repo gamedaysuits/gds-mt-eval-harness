@@ -60,15 +60,9 @@ A method plugin is a single JSON file (`method.json`) with optional coaching dat
   },
 
   "provenance": {
-    "resources": [
-      {
-        "name": "User-provided coaching data",
-        "license": "project-local",
-        "type": "dictionary/grammar"
-      }
-    ],
-    "commercialReady": true,
-    "flags": []
+    "resources": [],
+    "commercialReady": false,
+    "flags": ["license-unclear"]
   },
 
   "coaching": {
@@ -82,7 +76,7 @@ A method plugin is a single JSON file (`method.json`) with optional coaching dat
 | Field | Type | Required | Description |
 |---|---|---|---|
 | `name` | string | ✅ | Unique method identifier (kebab-case) |
-| `type` | string | ✅ | Rosetta method type to use. One of: `llm`, `llm-coached`, `script-converter` |
+| `type` | string | ✅ | Rosetta method type. One of: `llm`, `llm-coached`, `api`, `google-translate` |
 | `version` | string | ✅ | Semver version of this method export |
 | `description` | string | ✅ | Human-readable description |
 | `author` | string | ✅ | Who developed/tested this method |
@@ -108,6 +102,43 @@ A method plugin is a single JSON file (`method.json`) with optional coaching dat
 | `harness_version` | string | ✅ | Version of gds-mt-eval-harness used |
 
 ---
+
+### Provenance Object
+
+The provenance block communicates the licensing status of the plugin's
+bundled resources. Plugins can contain coaching data, FST gate configs,
+decomposition pipelines, and other assets whose licensing status varies.
+
+| Field | Type | Default | Description |
+|---|---|---|---|
+| `resources` | object[] | `[]` | List of bundled resources with `name`, `license`, and `type` |
+| `commercialReady` | boolean | `false` | Whether the plugin is cleared for commercial distribution |
+| `flags` | string[] | `["license-unclear"]` | Machine-readable status flags |
+
+**Default state** — exported plugins ship with `commercialReady: false` and
+`flags: ["license-unclear"]`. This tells downstream consumers to check with
+the method provider before using commercially.
+
+**Cleared state** — when the method's licensing has been verified and it's
+ready for publishing (to an API or as an installable plugin), set
+`commercialReady: true` and clear the flags.
+
+```json
+// Default: just exported, licensing not yet verified
+"provenance": {
+  "resources": [],
+  "commercialReady": false,
+  "flags": ["license-unclear"]
+}
+
+// Cleared: verified and ready to publish
+"provenance": {
+  "resources": [],
+  "commercialReady": true,
+  "flags": []
+}
+```
+
 
 ## Coaching Data Format
 

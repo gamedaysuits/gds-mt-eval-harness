@@ -6,9 +6,9 @@ Uses simple polling (no external dependencies like watchdog).
 Check interval defaults to 5 seconds.
 
 Usage:
-    python -m gds_mt_eval_harness.watch eval_demo/ -o eval_demo/dashboard.html
+    python -m mt_eval_harness.watch eval_demo/ -o eval_demo/dashboard.html
     # or via CLI:
-    gds-mt-eval dashboard eval_demo/ -o eval_demo/dashboard.html --watch
+    mt-eval dashboard eval_demo/ -o eval_demo/dashboard.html --watch
 """
 
 import os

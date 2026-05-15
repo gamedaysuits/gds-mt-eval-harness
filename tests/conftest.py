@@ -1,4 +1,4 @@
-"""Shared test fixtures for gds-mt-eval-harness."""
+"""Shared test fixtures for mt-eval-harness."""
 
 import json
 import tempfile

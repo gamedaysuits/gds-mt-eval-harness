@@ -12,17 +12,17 @@
 **How fast can I get results?**
 
 ```bash
-pip install git+https://github.com/gamedaysuits/gds-mt-eval-harness.git
+pip install git+https://github.com/gamedaysuits/mt-eval-harness.git
 export OPENROUTER_API_KEY=sk-or-v1-your-key-here
 
-gds-mt-eval run \
+mt-eval run \
   --corpus my_sentences.json \
   --source-field english \
   --target-field french \
   --model gemini-3.1-pro
 
-gds-mt-eval test logs/run_*.json
-gds-mt-eval dashboard logs/*_report.json -o results.html
+mt-eval test logs/run_*.json
+mt-eval dashboard logs/*_report.json -o results.html
 ```
 
 Open `results.html` in your browser. Done. You have exact match rates, chrF++ scores, per-segment breakdowns, and a searchable entry explorer.
@@ -93,20 +93,20 @@ All four are optional. The harness works out of the box with built-in defaults.
 ### From Git (recommended)
 
 ```bash
-pip install git+https://github.com/gamedaysuits/gds-mt-eval-harness.git
+pip install git+https://github.com/gamedaysuits/mt-eval-harness.git
 ```
 
 ### With metrics support (chrF++, BLEU)
 
 ```bash
-pip install "gds-mt-eval-harness[metrics] @ git+https://github.com/gamedaysuits/gds-mt-eval-harness.git"
+pip install "mt-eval-harness[metrics] @ git+https://github.com/gamedaysuits/mt-eval-harness.git"
 ```
 
 ### For development
 
 ```bash
-git clone https://github.com/gamedaysuits/gds-mt-eval-harness.git
-cd gds-mt-eval-harness
+git clone https://github.com/gamedaysuits/mt-eval-harness.git
+cd mt-eval-harness
 pip install -e ".[all]"
 ```
 
@@ -170,10 +170,10 @@ Use `--source-field` and `--target-field` to tell the harness which columns cont
 
 ```bash
 # English → French
-gds-mt-eval run --corpus data.json --source-field english --target-field french
+mt-eval run --corpus data.json --source-field english --target-field french
 
 # Spanish → Quechua
-gds-mt-eval run --corpus data.json --source-field spanish --target-field quechua
+mt-eval run --corpus data.json --source-field spanish --target-field quechua
 ```
 
 ### Optional fields used by the harness
@@ -267,45 +267,45 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 
 ## 5. CLI Reference
 
-### `gds-mt-eval run`
+### `mt-eval run`
 
 Execute a translation run.
 
 ```bash
-gds-mt-eval run --corpus data/corpus.json [options]
+mt-eval run --corpus data/corpus.json [options]
 ```
 
-### `gds-mt-eval test`
+### `mt-eval test`
 
 Analyze a completed RunLog.
 
 ```bash
-gds-mt-eval test path/to/run_log.json [-o output.json]
+mt-eval test path/to/run_log.json [-o output.json]
 ```
 
-### `gds-mt-eval compare`
+### `mt-eval compare`
 
 Compare multiple TestReports side by side.
 
 ```bash
-gds-mt-eval compare report1.json report2.json [-o comparison.json]
+mt-eval compare report1.json report2.json [-o comparison.json]
 ```
 
-### `gds-mt-eval dashboard`
+### `mt-eval dashboard`
 
 Generate an interactive HTML dashboard.
 
 ```bash
-gds-mt-eval dashboard report1.json report2.json -o dashboard.html
+mt-eval dashboard report1.json report2.json -o dashboard.html
 ```
 
-### `gds-mt-eval list`
+### `mt-eval list`
 
 List available resources.
 
 ```bash
-gds-mt-eval list models    # Show available model shortcuts
-gds-mt-eval list prompts   # Show available prompt versions
+mt-eval list models    # Show available model shortcuts
+mt-eval list prompts   # Show available prompt versions
 ```
 
 ---
@@ -316,7 +316,7 @@ gds-mt-eval list prompts   # Show available prompt versions
 
 ```bash
 # 1. Run translation
-gds-mt-eval run \
+mt-eval run \
   --corpus data/test_set.json \
   --source-field source \
   --target-field reference \
@@ -324,17 +324,17 @@ gds-mt-eval run \
   --prompt naive
 
 # 2. Analyze
-gds-mt-eval test eval/logs/harness/run_*.json
+mt-eval test eval/logs/harness/run_*.json
 
 # 3. Dashboard
-gds-mt-eval dashboard eval/logs/harness/*_report.json -o report.html
+mt-eval dashboard eval/logs/harness/*_report.json -o report.html
 ```
 
 ### Model comparison: Gemini vs Claude vs GPT
 
 ```bash
 for model in gemini-3.1-pro claude-sonnet-4 gpt-5.5; do
-  gds-mt-eval run \
+  mt-eval run \
     --corpus data/test_set.json \
     --model $model \
     --name "${model}_comparison"
@@ -342,24 +342,24 @@ done
 
 # Analyze all
 for f in eval/logs/harness/run_*.json; do
-  gds-mt-eval test "$f"
+  mt-eval test "$f"
 done
 
 # Compare
-gds-mt-eval dashboard eval/logs/harness/*_report.json -o comparison.html
+mt-eval dashboard eval/logs/harness/*_report.json -o comparison.html
 ```
 
 ### Batching: Cost optimization
 
 ```bash
 # Batch 5 entries per call (cheaper, slightly less accurate)
-gds-mt-eval run \
+mt-eval run \
   --corpus data/test_set.json \
   --batch-size 5 \
   --name "batch5"
 
 # Compare against single-entry baseline
-gds-mt-eval compare eval/logs/harness/*single*_report.json eval/logs/harness/*batch5*_report.json
+mt-eval compare eval/logs/harness/*single*_report.json eval/logs/harness/*batch5*_report.json
 ```
 
 ### Custom prompt: Load from file
@@ -367,7 +367,7 @@ gds-mt-eval compare eval/logs/harness/*single*_report.json eval/logs/harness/*ba
 ```bash
 echo "You are an expert French translator..." > my_prompt.txt
 
-gds-mt-eval run \
+mt-eval run \
   --corpus data/test_set.json \
   --prompt custom \
   --custom-prompt my_prompt.txt
@@ -380,7 +380,7 @@ gds-mt-eval run \
 ### MetricPlugin — Custom evaluation metrics
 
 ```python
-from gds_mt_eval_harness.plugins.metrics import MetricPlugin
+from mt_eval_harness.plugins.metrics import MetricPlugin
 
 class WordCountMetric:
     """Count words in predicted vs reference."""
@@ -402,14 +402,14 @@ class WordCountMetric:
         }
 
 # Usage:
-from gds_mt_eval_harness.tester import analyze_run
+from mt_eval_harness.tester import analyze_run
 report = analyze_run("run_log.json", metric_plugins=[WordCountMetric()])
 ```
 
 ### PromptProvider — Language-specific prompts
 
 ```python
-from gds_mt_eval_harness.plugins.prompts import PromptProvider
+from mt_eval_harness.plugins.prompts import PromptProvider
 
 class FrenchPrompts:
     def list_versions(self) -> list[str]:
@@ -422,14 +422,14 @@ class FrenchPrompts:
             return "You are a professional French translator. Use formal register..."
 
 # Usage:
-from gds_mt_eval_harness.runner import execute_run
+from mt_eval_harness.runner import execute_run
 await execute_run(config, prompt_providers=[FrenchPrompts()])
 ```
 
 ### PostTranslationHook — Corrective loops
 
 ```python
-from gds_mt_eval_harness.plugins.hooks import PostTranslationHook
+from mt_eval_harness.plugins.hooks import PostTranslationHook
 
 class SpellCheckHook:
     name = "spell_check"
@@ -450,7 +450,7 @@ await execute_run(config, post_hooks=[SpellCheckHook()])
 ### ToolProvider — LLM tool-calling
 
 ```python
-from gds_mt_eval_harness.plugins.tools import ToolProvider
+from mt_eval_harness.plugins.tools import ToolProvider
 
 class DictionaryTools:
     def get_schemas(self, config):
@@ -493,7 +493,7 @@ Features:
 - Plugin metric display
 
 ```bash
-gds-mt-eval dashboard report1.json report2.json -o results.html
+mt-eval dashboard report1.json report2.json -o results.html
 open results.html
 ```
 
@@ -522,7 +522,7 @@ The harness caches translation results to avoid re-running identical queries.
 Change any config parameter that affects translation output and the cache auto-invalidates. To force a fresh run:
 
 ```bash
-gds-mt-eval run --no-cache ...
+mt-eval run --no-cache ...
 ```
 
 ---
@@ -544,7 +544,7 @@ The harness pulls live pricing from OpenRouter and calculates per-entry and tota
 Validate your config without any API calls:
 
 ```bash
-gds-mt-eval run --corpus data.json --dry-run
+mt-eval run --corpus data.json --dry-run
 ```
 
 ---
@@ -555,16 +555,16 @@ gds-mt-eval run --corpus data.json --dry-run
 
 ```bash
 # In your project's requirements.txt or pyproject.toml:
-pip install git+https://github.com/gamedaysuits/gds-mt-eval-harness.git
+pip install git+https://github.com/gamedaysuits/mt-eval-harness.git
 ```
 
 ### Programmatic usage
 
 ```python
 import asyncio
-from gds_mt_eval_harness.config import RunConfig
-from gds_mt_eval_harness.runner import execute_run
-from gds_mt_eval_harness.tester import analyze_run
+from mt_eval_harness.config import RunConfig
+from mt_eval_harness.runner import execute_run
+from mt_eval_harness.tester import analyze_run
 
 async def evaluate():
     config = RunConfig(
@@ -640,13 +640,13 @@ This is strictly **data-only output**. The export NEVER includes:
 
 ```bash
 # 1. Run your translation experiment
-gds-mt-eval run --corpus data/corpus.json --model gemini-3.1-pro
+mt-eval run --corpus data/corpus.json --model gemini-3.1-pro
 
 # 2. Analyze the results
-gds-mt-eval test eval/logs/harness/run_*.json
+mt-eval test eval/logs/harness/run_*.json
 
 # 3. Export as a rosetta plugin
-gds-mt-eval export \
+mt-eval export \
   --report eval/logs/harness/run_*_report.json \
   --name crk-coached-v1 \
   --type llm-coached \
@@ -660,7 +660,7 @@ gds-mt-eval export \
 ### Programmatic usage
 
 ```python
-from gds_mt_eval_harness import ExportConfig, export_plugin
+from mt_eval_harness import ExportConfig, export_plugin
 
 config = ExportConfig(
     name="crk-coached-v1",
@@ -706,7 +706,7 @@ When a method's licensing has been verified and it's ready for distribution
 flag explicitly:
 
 ```bash
-gds-mt-eval export ... --commercial-ready
+mt-eval export ... --commercial-ready
 ```
 
 This clears the `"license-unclear"` flag and marks the plugin as ready
@@ -740,7 +740,7 @@ The `--corpus` flag requires an absolute or relative path to a JSON file.
 chrF++ and BLEU scores require the optional `sacrebleu` dependency:
 
 ```bash
-pip install "gds-mt-eval-harness[metrics] @ git+https://github.com/gamedaysuits/gds-mt-eval-harness.git"
+pip install "mt-eval-harness[metrics] @ git+https://github.com/gamedaysuits/mt-eval-harness.git"
 ```
 
 ### Rate limiting (429 errors)
@@ -757,10 +757,10 @@ The harness automatically retries with exponential backoff. If you're still hitt
 
 ### "Unknown model"
 
-Either use a short name from `gds-mt-eval list models` or pass the full OpenRouter model ID:
+Either use a short name from `mt-eval list models` or pass the full OpenRouter model ID:
 
 ```bash
-gds-mt-eval run --model anthropic/claude-sonnet-4 ...
+mt-eval run --model anthropic/claude-sonnet-4 ...
 ```
 
 ---

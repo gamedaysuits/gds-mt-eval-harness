@@ -11,8 +11,8 @@ Usage:
 import asyncio
 from pathlib import Path
 
-from gds_mt_eval_harness.config import RunConfig
-from gds_mt_eval_harness.runner import execute_run
+from mt_eval_harness.config import RunConfig
+from mt_eval_harness.runner import execute_run
 
 
 async def main():

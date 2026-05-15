@@ -1,10 +1,11 @@
-"""Tests for api.py — load_api_key() and clean_response().
+"""Tests for api.py -- load_api_key() and clean_response().
 
 Key behaviors validated:
     - load_api_key() reads from env var first, then .env.local, then .env
     - load_api_key() raises RuntimeError when no key found
     - clean_response() does NOT strip trailing periods (data integrity)
-    - clean_response() filters reasoning lines by configurable patterns
+    - clean_response() returns first line by default (no reasoning filter)
+    - clean_response() filters reasoning lines ONLY with explicit patterns
     - clean_response() accepts custom reasoning_patterns parameter
 """
 
@@ -13,7 +14,7 @@ from unittest.mock import patch
 
 import pytest
 
-from gds_mt_eval_harness.api import clean_response, load_api_key
+from mt_eval_harness.api import clean_response, load_api_key, ENGLISH_REASONING_PATTERNS
 
 
 # ---------------------------------------------------------------------------
@@ -82,15 +83,25 @@ class TestCleanResponse:
     def test_strips_backticks(self):
         assert clean_response("`Bonjour`") == "Bonjour"
 
-    def test_multiline_skips_reasoning(self):
-        """Multi-line: first non-reasoning line should be returned."""
+    def test_multiline_default_returns_first_line(self):
+        """P0 Fix: Default behavior returns first line — no implicit filtering.
+
+        The old behavior silently filtered lines matching English reasoning
+        patterns, which caused data corruption for Latin-script target
+        languages (e.g., stripping 'the ' from legitimate translations).
+        """
         content = "Let me translate this.\nBonjour."
-        assert clean_response(content) == "Bonjour."
+        assert clean_response(content) == "Let me translate this."
+
+    def test_multiline_with_english_patterns_skips_reasoning(self):
+        """With ENGLISH_REASONING_PATTERNS, reasoning lines ARE filtered."""
+        content = "Let me translate this.\nBonjour."
+        assert clean_response(content, reasoning_patterns=ENGLISH_REASONING_PATTERNS) == "Bonjour."
 
     def test_multiline_all_reasoning_returns_last(self):
-        """If all lines look like reasoning, return the last line."""
+        """With patterns: if all lines look like reasoning, return last line."""
         content = "Let me think about this.\nFirst, I need to consider...\nThe answer is complex."
-        result = clean_response(content)
+        result = clean_response(content, reasoning_patterns=ENGLISH_REASONING_PATTERNS)
         assert result == "The answer is complex."
 
     def test_custom_reasoning_patterns(self):

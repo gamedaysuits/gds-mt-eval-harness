@@ -14,8 +14,8 @@ import json
 
 import pytest
 
-from gds_mt_eval_harness.config import RunConfig
-from gds_mt_eval_harness.runner import load_corpus
+from mt_eval_harness.config import RunConfig
+from mt_eval_harness.runner import load_corpus
 
 
 class TestCorpusLoading:
