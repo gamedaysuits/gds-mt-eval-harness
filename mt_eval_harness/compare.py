@@ -14,13 +14,26 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from dataclasses import asdict
+
+from mt_eval_harness.significance import (
+    run_significance_tests,
+    format_significance_table,
+    SignificanceResult,
+)
 
 
-def compare_reports(report_paths: list[str | Path]) -> dict:
+def compare_reports(
+    report_paths: list[str | Path],
+    significance: bool = False,
+    n_bootstrap: int = 1000,
+) -> dict:
     """Load and compare multiple TestReport files.
 
     Args:
         report_paths: Paths to TestReport JSON files (from tester.py).
+        significance: If True, run paired bootstrap significance tests.
+        n_bootstrap: Number of bootstrap iterations for significance testing.
 
     Returns:
         Comparison dict with overall metrics, per-entry diffs, etc.
@@ -97,6 +110,32 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
                 "last_predicted": last.get("predicted", ""),
             })
 
+
+    # --- Significance testing (optional) ---
+    sig_data = None
+    if significance and len(reports) >= 2:
+        if len(reports) == 2:
+            # Direct pairwise test
+            results = run_significance_tests(
+                reports[0], reports[1], n_bootstrap=n_bootstrap
+            )
+            sig_data = [asdict(r) for r in results]
+        else:
+            # All pairwise combinations
+            sig_data = []
+            for i in range(len(reports)):
+                for j in range(i + 1, len(reports)):
+                    pair_results = run_significance_tests(
+                        reports[i], reports[j], n_bootstrap=n_bootstrap
+                    )
+                    sig_data.append({
+                        "pair": [
+                            reports[i].get("run_id", f"run_{i}"),
+                            reports[j].get("run_id", f"run_{j}"),
+                        ],
+                        "tests": [asdict(r) for r in pair_results],
+                    })
+
     comparison = {
         "run_count": len(reports),
         "overall_comparison": comparison_rows,
@@ -106,12 +145,17 @@ def compare_reports(report_paths: list[str | Path]) -> dict:
         "improvement_count": len(improvements),
     }
 
+    if sig_data is not None:
+        comparison["significance"] = sig_data
+
     return comparison
 
 
 def run_compare(
     log_paths: list[str],
     output_path: str | None = None,
+    significance: bool = False,
+    n_bootstrap: int = 1000,
 ):
     """CLI entry point for the compare subcommand.
 
@@ -142,7 +186,11 @@ def run_compare(
         print("  Need at least 2 reports to compare. Run 'test' on your logs first.")
         return
 
-    comparison = compare_reports(report_paths)
+    comparison = compare_reports(
+        report_paths,
+        significance=significance,
+        n_bootstrap=n_bootstrap,
+    )
 
     # Print comparison table
     print("\n" + "=" * 80)
@@ -209,6 +257,21 @@ def run_compare(
             print(f"    #{item['id']:3d}: {item['source'][:50]}")
             print(f"         was: {item['first_predicted'][:50]}")
             print(f"         now: {item['last_predicted'][:50]}")
+
+    # Significance tests
+    if "significance" in comparison:
+        sig = comparison["significance"]
+        if sig and isinstance(sig[0], dict) and "metric_name" in sig[0]:
+            # Direct pairwise results (2 reports)
+            results = [SignificanceResult(**d) for d in sig]
+            print(format_significance_table(results))
+        elif sig and isinstance(sig[0], dict) and "pair" in sig[0]:
+            # Multiple pairwise comparisons (>2 reports)
+            for pair_data in sig:
+                pair_ids = pair_data["pair"]
+                print(f"\n  --- {pair_ids[0]} vs {pair_ids[1]} ---")
+                results = [SignificanceResult(**d) for d in pair_data["tests"]]
+                print(format_significance_table(results))
 
     # Write output
     if output_path is None:

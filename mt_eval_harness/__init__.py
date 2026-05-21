@@ -22,6 +22,7 @@ from mt_eval_harness.plugins.metrics import MetricPlugin
 from mt_eval_harness.plugins.prompts import PromptProvider
 from mt_eval_harness.plugins.hooks import PostTranslationHook
 from mt_eval_harness.plugins.tools import ToolProvider
+from mt_eval_harness.significance import SignificanceResult, paired_bootstrap
 
 __all__ = [
     "RunConfig",
@@ -31,4 +32,6 @@ __all__ = [
     "PromptProvider",
     "PostTranslationHook",
     "ToolProvider",
+    "SignificanceResult",
+    "paired_bootstrap",
 ]

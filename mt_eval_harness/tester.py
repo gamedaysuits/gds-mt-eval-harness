@@ -17,7 +17,7 @@ Design decisions:
     - Language-specific metrics (FST validity, morphological linting,
       semantic validation) are registered as MetricPlugin instances,
       NOT hardcoded into this module.
-    - Dependencies: sacrebleu (optional). Everything else is plugin.
+    - Dependencies: sacrebleu. Everything else is plugin.
     - Output is a TestReport JSON file alongside the RunLog.
 """
 
@@ -30,12 +30,7 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any
 
-# Optional: sacrebleu for chrF++ and BLEU
-try:
-    from sacrebleu.metrics import CHRF, BLEU
-    HAS_SACREBLEU = True
-except ImportError:
-    HAS_SACREBLEU = False
+from sacrebleu.metrics import CHRF, BLEU
 
 
 # ---------------------------------------------------------------------------
@@ -147,15 +142,13 @@ def analyze_run(
     print(f"  Analyzing {len(results)} entries from {log_path.name}")
 
     # Setup sacrebleu metrics if available
-    chrf_metric = CHRF(word_order=2) if HAS_SACREBLEU else None
-    bleu_metric = BLEU() if HAS_SACREBLEU else None
+    chrf_metric = CHRF(word_order=2)
+    bleu_metric = BLEU()
 
     plugins = metric_plugins or []
     if plugins:
         print(f"  Active plugins: {', '.join(p.name for p in plugins)}")
-    if not HAS_SACREBLEU:
-        print("  NOTE: sacrebleu not installed — chrF++/BLEU scores will be 0")
-        print("  Install with: pip install mt-eval-harness[metrics]")
+
 
     # --- Per-entry analysis ---
     entry_metrics: list[EntryMetrics] = []
@@ -187,7 +180,7 @@ def analyze_run(
         em.exact_match = (expected_norm == predicted_norm) and bool(predicted_norm)
 
         # --- chrF++ ---
-        if chrf_metric and em.expected and em.predicted:
+        if em.expected and em.predicted:
             try:
                 em.chrf_score = chrf_metric.corpus_score(
                     [em.predicted], [[em.expected]]
@@ -196,7 +189,7 @@ def analyze_run(
                 em.chrf_score = 0.0
 
         # --- BLEU ---
-        if bleu_metric and em.expected and em.predicted:
+        if em.expected and em.predicted:
             try:
                 em.bleu_score = bleu_metric.corpus_score(
                     [em.predicted], [[em.expected]]
@@ -234,27 +227,25 @@ def analyze_run(
     overall = _compute_overall(entry_metrics)
 
     # --- Corpus-level chrF++ and BLEU ---
-    if chrf_metric:
-        all_preds = [em.predicted for em in entry_metrics if not em.error]
-        all_refs = [em.expected for em in entry_metrics if not em.error]
-        if all_preds and all_refs:
-            try:
-                overall["corpus_chrf"] = round(
-                    chrf_metric.corpus_score(all_preds, [all_refs]).score, 2
-                )
-            except Exception:
-                pass
+    all_preds = [em.predicted for em in entry_metrics if not em.error]
+    all_refs = [em.expected for em in entry_metrics if not em.error]
+    if all_preds and all_refs:
+        try:
+            overall["corpus_chrf"] = round(
+                chrf_metric.corpus_score(all_preds, [all_refs]).score, 2
+            )
+        except Exception:
+            pass
 
-    if bleu_metric:
-        all_preds = [em.predicted for em in entry_metrics if not em.error]
-        all_refs = [em.expected for em in entry_metrics if not em.error]
-        if all_preds and all_refs:
-            try:
-                overall["corpus_bleu"] = round(
-                    bleu_metric.corpus_score(all_preds, [all_refs]).score, 2
-                )
-            except Exception:
-                pass
+    all_preds = [em.predicted for em in entry_metrics if not em.error]
+    all_refs = [em.expected for em in entry_metrics if not em.error]
+    if all_preds and all_refs:
+        try:
+            overall["corpus_bleu"] = round(
+                bleu_metric.corpus_score(all_preds, [all_refs]).score, 2
+            )
+        except Exception:
+            pass
 
     # --- Plugin aggregates ---
     plugin_overall = {}

@@ -99,6 +99,17 @@ def build_parser() -> argparse.ArgumentParser:
         "-o", "--output",
         help="Output path for comparison report",
     )
+    cmp_p.add_argument(
+        "--significance",
+        action="store_true",
+        help="Run paired bootstrap significance tests between runs",
+    )
+    cmp_p.add_argument(
+        "--n-bootstrap",
+        type=int,
+        default=1000,
+        help="Number of bootstrap iterations for significance testing. Default: 1000",
+    )
 
     # --- DASHBOARD command ---
     dash_p = sub.add_parser("dashboard", help="Generate interactive HTML dashboard")
@@ -520,7 +531,12 @@ def main():
 
     if args.command == "compare":
         from mt_eval_harness.compare import run_compare
-        run_compare(args.log_paths, args.output)
+        run_compare(
+            args.log_paths,
+            args.output,
+            significance=getattr(args, "significance", False),
+            n_bootstrap=getattr(args, "n_bootstrap", 1000),
+        )
         return
 
     if args.command == "dashboard":
