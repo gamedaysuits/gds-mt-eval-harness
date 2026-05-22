@@ -16,7 +16,13 @@ apple-to-apple comparison. See GUIDE.md for full documentation.
 __version__ = "0.1.0"
 
 # Public API — importable from the top-level package
-from mt_eval_harness.config import RunConfig
+from mt_eval_harness.config import (
+    RunConfig,
+    load_registry,
+    resolve_dataset,
+    load_method_card,
+    validate_method_card,
+)
 from mt_eval_harness.exporter import ExportConfig, export_plugin
 from mt_eval_harness.plugins.metrics import MetricPlugin
 from mt_eval_harness.plugins.prompts import PromptProvider
@@ -34,4 +40,8 @@ __all__ = [
     "ToolProvider",
     "SignificanceResult",
     "paired_bootstrap",
+    "load_registry",
+    "resolve_dataset",
+    "load_method_card",
+    "validate_method_card",
 ]

@@ -32,8 +32,9 @@ Usage examples:
     # Generate dashboard HTML
     mt-eval dashboard logs/run_*.json
 
-    # List available models
+    # List available models or datasets
     mt-eval list models
+    mt-eval list datasets
 
     # Export a TestReport as a rosetta method plugin
     mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached --locales crk
@@ -54,6 +55,8 @@ from mt_eval_harness.config import (
     RunConfig,
     DEFAULT_MODEL,
     MODEL_REGISTRY,
+    format_registry_table,
+    load_method_card,
 )
 
 
@@ -135,7 +138,7 @@ def build_parser() -> argparse.ArgumentParser:
     list_p = sub.add_parser("list", help="List available models, prompts, datasets")
     list_p.add_argument(
         "what",
-        choices=["models", "prompts"],
+        choices=["models", "prompts", "datasets"],
         help="What to list",
     )
     list_p.add_argument(
@@ -294,6 +297,13 @@ def _add_run_args(parser: argparse.ArgumentParser):
         help="Validate config without making API calls",
     )
 
+    # Method card
+    parser.add_argument(
+        "--method-card",
+        help="Path to a method card JSON file (see docs/method-card-spec.md). "
+             "Embeds the method description in the run card for leaderboard display.",
+    )
+
 
 def args_to_config(args) -> RunConfig:
     """Convert parsed CLI args to a RunConfig."""
@@ -351,6 +361,9 @@ def cmd_list(what: str, live: bool = False):
         print("  naive    Minimal translation instruction")
         print("  custom   Load from a .txt file (--custom-prompt)")
         print("\n  Register PromptProvider plugins for language-specific prompts.")
+
+    elif what == "datasets":
+        print(format_registry_table())
 
 
 def cmd_list_live():

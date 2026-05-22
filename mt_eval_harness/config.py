@@ -21,6 +21,240 @@ from typing import Any, Protocol, runtime_checkable
 
 
 # ---------------------------------------------------------------------------
+# Dataset registry — discover and resolve evaluation datasets
+# ---------------------------------------------------------------------------
+
+# Path to the bundled registry file (relative to package root)
+_PACKAGE_DIR = Path(__file__).parent
+_REGISTRY_PATH = _PACKAGE_DIR.parent / "datasets" / "registry.json"
+
+
+def load_registry(registry_path: Path | None = None) -> dict:
+    """Load the dataset registry from disk.
+
+    Args:
+        registry_path: Path to registry.json. Defaults to the bundled
+            registry shipped with the harness package.
+
+    Returns:
+        Parsed registry dict with 'registry_version' and 'datasets' keys.
+
+    Raises:
+        FileNotFoundError: If the registry file does not exist.
+    """
+    path = registry_path or _REGISTRY_PATH
+    if not path.exists():
+        raise FileNotFoundError(f"Dataset registry not found: {path}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
+    """Resolve a dataset identifier to a local file path.
+
+    Accepts either:
+        - A filesystem path (absolute or relative) → returned directly
+        - A registry dataset ID (e.g. 'edtekla-dev-v1') → looked up in
+          the registry. If the registry entry has a URL, the dataset is
+          downloaded and cached. If url is null, raises with instructions.
+
+    Args:
+        id_or_path: Filesystem path or registry dataset ID.
+        registry_path: Optional override for the registry file location.
+
+    Returns:
+        Path to the local dataset JSON file.
+
+    Raises:
+        FileNotFoundError: If the path doesn't exist and the ID isn't in the registry.
+        ValueError: If the registry entry has no download URL (private dataset).
+    """
+    # First, check if it's a path that exists
+    candidate = Path(id_or_path)
+    if candidate.exists():
+        return candidate
+
+    # Not a local path — try the registry
+    try:
+        registry = load_registry(registry_path)
+    except FileNotFoundError:
+        raise FileNotFoundError(
+            f"'{id_or_path}' is not a local file and no dataset registry "
+            f"was found. Provide a valid file path or install the registry."
+        )
+
+    datasets = registry.get("datasets", [])
+    match = next((d for d in datasets if d["id"] == id_or_path), None)
+    if not match:
+        available = ", ".join(d["id"] for d in datasets) or "(none)"
+        raise FileNotFoundError(
+            f"Dataset '{id_or_path}' not found in registry. "
+            f"Available: {available}. Or provide a local file path."
+        )
+
+    url = match.get("url")
+    if not url:
+        # Private dataset — no URL available
+        access = match.get("access", "unknown")
+        notes = match.get("notes", "")
+        raise ValueError(
+            f"Dataset '{id_or_path}' is {access} and has no download URL.\n"
+            f"  {notes}\n"
+            f"  Provide the local path with --corpus instead."
+        )
+
+    # URL is set — download and cache
+    cache_dir = Path.home() / ".cache" / "gds-mt-eval" / "datasets"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    # Use sha256 of URL as cache filename
+    url_hash = hashlib.sha256(url.encode()).hexdigest()[:16]
+    cached = cache_dir / f"{match['id']}_{url_hash}.json"
+
+    if cached.exists():
+        return cached
+
+    # Download synchronously (simple, no async needed for a single file)
+    import urllib.request
+    print(f"  📥 Downloading dataset '{match['id']}' from {url}...")
+    urllib.request.urlretrieve(url, cached)
+
+    # Verify sha256 if provided
+    expected_hash = match.get("sha256")
+    if expected_hash:
+        actual_hash = hashlib.sha256(cached.read_bytes()).hexdigest()
+        if actual_hash != expected_hash:
+            cached.unlink()
+            raise ValueError(
+                f"SHA-256 mismatch for '{match['id']}':\n"
+                f"  Expected: {expected_hash}\n"
+                f"  Got:      {actual_hash}\n"
+                f"  The cached file has been deleted. Try again or report this."
+            )
+
+    print(f"  📦 Cached to {cached}")
+    return cached
+
+
+def format_registry_table(registry_path: Path | None = None) -> str:
+    """Format the dataset registry as a human-readable table.
+
+    Returns:
+        Formatted string with dataset info, suitable for terminal output.
+    """
+    registry = load_registry(registry_path)
+    datasets = registry.get("datasets", [])
+
+    if not datasets:
+        return "  No datasets registered."
+
+    # Column widths
+    lines = [
+        "",
+        "  Available Evaluation Datasets:",
+        "",
+        f"  {'ID':25s} {'Name':35s} {'Pair':10s} {'Size':>5s} {'Access':8s}",
+        f"  {'-'*25} {'-'*35} {'-'*10} {'-'*5} {'-'*8}",
+    ]
+    for d in datasets:
+        pair_info = d.get("language_pair", {})
+        pair = f"{pair_info.get('source', '?')}→{pair_info.get('target', '?')}"
+        lines.append(
+            f"  {d['id']:25s} {d.get('name', ''):35s} {pair:10s} "
+            f"{d.get('size', '?'):>5} {d.get('access', '?'):8s}"
+        )
+
+    lines.append("")
+    lines.append("  Use: mt-eval run --corpus <local_path.json>")
+    lines.append("  Or:  mt-eval run --corpus <dataset-id>  (if URL is set in registry)")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Method card — author-provided method description
+# ---------------------------------------------------------------------------
+
+# Valid method classes (must match the schema in docs/method-card-spec.md)
+VALID_METHOD_CLASSES = frozenset({
+    "raw-llm", "coached-llm", "pipeline", "custom-plugin", "api", "human",
+})
+
+
+def load_method_card(path: str | Path) -> dict:
+    """Load and validate a method card JSON file.
+
+    Args:
+        path: Path to the method card JSON file.
+
+    Returns:
+        Validated method card dict.
+
+    Raises:
+        FileNotFoundError: If the file doesn't exist.
+        ValueError: If required fields are missing or invalid.
+    """
+    path = Path(path)
+    if not path.exists():
+        raise FileNotFoundError(f"Method card not found: {path}")
+
+    card = json.loads(path.read_text(encoding="utf-8"))
+    errors = validate_method_card(card)
+    if errors:
+        raise ValueError(
+            f"Invalid method card ({path}):\n" +
+            "\n".join(f"  - {e}" for e in errors)
+        )
+    return card
+
+
+def validate_method_card(card: dict) -> list[str]:
+    """Validate a method card dict against the schema.
+
+    Args:
+        card: Method card dictionary to validate.
+
+    Returns:
+        List of error messages (empty if valid).
+    """
+    errors = []
+
+    # Required fields
+    for required in ("method_id", "name", "class"):
+        if required not in card:
+            errors.append(f"Missing required field: '{required}'")
+
+    # method_id format
+    method_id = card.get("method_id", "")
+    if method_id:
+        import re
+        if not re.match(r"^[a-z0-9][a-z0-9-]*$", method_id):
+            errors.append(
+                f"method_id '{method_id}' must be kebab-case "
+                f"(lowercase alphanumeric + hyphens, starting with a letter or digit)"
+            )
+
+    # class enum
+    method_class = card.get("class", "")
+    if method_class and method_class not in VALID_METHOD_CLASSES:
+        errors.append(
+            f"Invalid class '{method_class}'. "
+            f"Must be one of: {', '.join(sorted(VALID_METHOD_CLASSES))}"
+        )
+
+    # Type checks for optional fields
+    if "tools_used" in card and not isinstance(card["tools_used"], list):
+        errors.append("'tools_used' must be an array of strings")
+
+    if "supported_pairs" in card and not isinstance(card["supported_pairs"], list):
+        errors.append("'supported_pairs' must be an array of strings")
+
+    for bool_field in ("open_source", "prompt_published"):
+        if bool_field in card and not isinstance(card[bool_field], bool):
+            errors.append(f"'{bool_field}' must be a boolean")
+
+    return errors
+
+
+# ---------------------------------------------------------------------------
 # Model registry — maps short names to OpenRouter model IDs
 # ---------------------------------------------------------------------------
 # This is a convenience lookup. You can always pass a full OpenRouter
