@@ -140,7 +140,7 @@ endpoint returns it.
   "description": "Formally-tuned French with terminology enforcement",
   "locales": ["fr"],
   "config": {
-    "model": "openai/gpt-4o-mini",
+    "model": "google/gemini-3.5-flash",
     "register": "formal",
     "batchSize": 30
   },

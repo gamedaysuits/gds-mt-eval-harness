@@ -31,6 +31,32 @@ def _chunk(items: list, size: int) -> list[list]:
     return [items[i:i + size] for i in range(0, len(items), size)]
 
 
+def _split_usage(usage: dict, n: int) -> dict:
+    """Divide a batch-level usage dict across n entries.
+
+    The API returns one usage dict per batch call (tokens, cost).
+    We divide numeric fields by n so that summing across entries
+    gives the correct total, not total × batch_size.
+    """
+    if not usage or n <= 1:
+        return usage
+
+    split = {}
+    for key, val in usage.items():
+        if isinstance(val, bool):
+            # bool is a subclass of int — check first to avoid dividing
+            split[key] = val
+        elif isinstance(val, (int, float)):
+            split[key] = val / n
+        elif isinstance(val, dict):
+            # Recurse into nested dicts (e.g. prompt_tokens_details,
+            # completion_tokens_details, cost_details)
+            split[key] = _split_usage(val, n)
+        else:
+            # Non-numeric fields (e.g. is_byok) pass through unchanged
+            split[key] = val
+    return split
+
 class BatchStrategy:
     """Translate entries in batches using numbered-list format.
 
@@ -81,8 +107,11 @@ class BatchStrategy:
             numbered = "\n".join(
                 f"{i+1}. {s}" for i, s in enumerate(source_texts)
             )
+            # Use the explicit target language name if configured, otherwise
+            # fall back to generic wording (matches system prompt behavior)
+            lang_label = config.target_lang or "the target language"
             user_msg = (
-                f"Translate each of these {n} phrases to the target language.\n\n"
+                f"Translate each of these {n} phrases to {lang_label}.\n\n"
                 f"{numbered}\n\n"
                 f"Reply with EXACTLY {n} numbered lines. Each line: just the number "
                 f"and the translation. No explanations, no extra text."
@@ -104,33 +133,38 @@ class BatchStrategy:
             )
 
             if result["error"]:
-                # All entries in this batch get the same error
+                # All entries in this batch get the same error.
+                # Divide usage across entries so cost aggregation is correct.
+                per_usage = _split_usage(result["usage"], n)
                 results = [
                     {
                         "id": e["id"],
                         "predicted": f"[ERROR: {result['error']}]",
                         "latency_s": round(result["latency_s"] / n, 3),
-                        "usage": result["usage"],
+                        "usage": per_usage,
                         "tool_calls": [],
                         "tool_call_count": 0,
                         "error": result["error"],
-                        "metadata": {"batch_index": i},
+                        "metadata": {"batch_index": i, "batch_usage": result["usage"]},
                     }
                     for i, e in enumerate(batch)
                 ]
             else:
                 translations = parse_numbered_response(result["content"], n)
                 per_latency = round(result["latency_s"] / n, 3)
+                # Divide usage across entries so cost aggregation is correct.
+                # The undivided batch_usage is preserved in metadata for auditing.
+                per_usage = _split_usage(result["usage"], n)
                 results = [
                     {
                         "id": batch[i]["id"],
                         "predicted": clean_response(translations[i]),
                         "latency_s": per_latency,
-                        "usage": result["usage"],
+                        "usage": per_usage,
                         "tool_calls": [],
                         "tool_call_count": 0,
                         "error": None,
-                        "metadata": {"batch_index": i},
+                        "metadata": {"batch_index": i, "batch_usage": result["usage"]},
                     }
                     for i in range(n)
                 ]

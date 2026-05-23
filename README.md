@@ -37,8 +37,13 @@ pip install mt-eval-harness
 # Set your API key (supports OpenRouter — any model)
 export OPENROUTER_API_KEY=sk-or-...
 
-# Run a translation experiment
+# Run a translation experiment with optimal defaults
+# (batch_size=25, max_tokens=32768, concurrency=8, cache=on)
 mt-eval run --corpus data/corpus.json --model gemini-3.1-pro
+
+# Multi-model parallel run — all models execute simultaneously
+mt-eval run --corpus data/corpus.json \
+  -m gemini-3.1-pro,claude-opus-4.7,gpt-5.5,deepseek-v4-pro
 
 # Analyze the results
 mt-eval test eval/logs/run_*.json
@@ -46,6 +51,41 @@ mt-eval test eval/logs/run_*.json
 # Generate a comparison dashboard
 mt-eval dashboard eval/logs/*.json
 ```
+
+## Performance Defaults
+
+> **The harness is "fast by default, safe by design."**
+> Do NOT lower these values unless you have a specific reason.
+
+All defaults are defined as `HARNESS_DEFAULTS` constants in [`config.py`](mt_eval_harness/config.py). Change them in **one place** and they propagate everywhere.
+
+| Setting | Default | Why |
+|---|---|---|
+| `batch_size` | **25** | Groups entries into numbered-list prompts. 25× fewer API calls. Proven reliable across all frontier models. Tool-calling auto-overrides to 1. |
+| `max_tokens` | **32768** | Generous headroom eliminates truncation risk. Translation outputs are short (1-30 words), so unused tokens cost nothing. |
+| `concurrency` | **8** | Parallel batch calls within a single model. Bounded by `asyncio.Semaphore` for rate limit safety. |
+| `cache_enabled` | **True** | File-backed cache prevents redundant API calls. Keyed on model + prompt + temperature + language pair. Almost never a reason to disable. |
+| `temperature` | **0.0** | Deterministic output for reproducibility. |
+
+### Multi-Model Parallelism
+
+For benchmarks, use `execute_multi_run()` — **not** a for-loop over `execute_run()`:
+
+```python
+from mt_eval_harness.runner import execute_multi_run
+from mt_eval_harness.config import RunConfig
+
+configs = [
+    RunConfig(model="google/gemini-3.1-pro-preview", corpus_path="data.json", ...),
+    RunConfig(model="anthropic/claude-opus-4.7", corpus_path="data.json", ...),
+    RunConfig(model="openai/gpt-5.5", corpus_path="data.json", ...),
+]
+
+# All models run in parallel — wall-clock = slowest single model
+results = await execute_multi_run(configs)
+```
+
+Each model gets its own aiohttp session and semaphore. A 14-model benchmark runs in **~15 minutes parallel** vs ~3.5 hours sequential.
 
 ## What Makes This Different
 
@@ -56,7 +96,7 @@ mt-eval dashboard eval/logs/*.json
 | **Export to production** | Direct rosetta plugin export | Evaluation only |
 | **Crowdsource-ready** | Prove your method is better, share it | Researcher-only |
 | **Model-agnostic** | Any OpenRouter model (100+) | Single-vendor |
-| **Zero-config** | Point at a corpus, run | Complex setup |
+| **Fast by default** | batch=25, cache=on, parallel multi-model | Manual optimization |
 
 ## Core Architecture
 

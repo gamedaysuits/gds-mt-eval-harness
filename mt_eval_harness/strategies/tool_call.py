@@ -112,8 +112,10 @@ class ToolCallStrategy:
         tool_schemas = self._tool_provider.get_schemas(config)
         source_text = entry.get(config.source_field, "")
 
+        # Use the explicit target language name if configured
+        lang_label = config.target_lang or "the target language"
         user_msg = (
-            f"Translate this text to the target language:\n\n"
+            f"Translate this text to {lang_label}:\n\n"
             f"{source_text}\n\n"
             f"Use your tools to verify your work. Output ONLY the translation."
         )

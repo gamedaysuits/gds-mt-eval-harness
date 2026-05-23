@@ -221,18 +221,22 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
-| `model` | `--model`, `-m` | `"gemini-3.1-pro"` | Model short name or full OpenRouter ID |
-| `max_tokens` | `--max-tokens` | `13680` | Max tokens per API call |
+| `model` | `--model`, `-m` | `"gemini-3.1-pro"` | Model short name, full OpenRouter ID, or comma-separated list for parallel multi-model runs |
+| `max_tokens` | `--max-tokens` | `32768` | Max tokens per API call. Set high to eliminate truncation risk; unused tokens cost nothing |
 | `temperature` | `--temperature` | `0.0` | Sampling temperature (0 = deterministic) |
 
 ### Execution
 
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
-| `batch_size` | `--batch-size`, `-b` | `1` | Entries per API call |
-| `concurrency` | `--concurrency`, `-c` | `8` | Parallel API calls |
-| `cache_enabled` | `--no-cache` | `True` | Enable/disable result caching |
+| `batch_size` | `--batch-size`, `-b` | `25` | Entries per API call. 25× fewer calls. Auto-overrides to 1 when tools enabled |
+| `concurrency` | `--concurrency`, `-c` | `8` | Parallel API calls per model. For multi-model parallelism, use `execute_multi_run()` |
+| `cache_enabled` | `--no-cache` | `True` | Enable/disable result caching. Almost never disable this |
 | `cache_dir` | `--cache-dir` | `"eval/cache/harness"` | Cache directory path |
+
+> **⚠️ These defaults are intentionally aggressive.**
+> All defaults are defined as `HARNESS_DEFAULTS` constants in `config.py`.
+> Change them in ONE place. Do NOT lower them without a specific reason.
 
 ### Tool-Calling
 
@@ -269,11 +273,37 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 
 ### `mt-eval run`
 
-Execute a translation run.
+Execute a translation run. Defaults are optimized for throughput — see Section 4 for the full config table.
 
 ```bash
-mt-eval run --corpus data/corpus.json [options]
+# Basic (optimal defaults: batch=25, tokens=32k, cache=on)
+mt-eval run --corpus data/corpus.json
+
+# Multi-model parallel run (recommended for benchmarks)
+mt-eval run --corpus data/corpus.json \
+  -m gemini-3.1-pro,claude-opus-4.7,gpt-5.5
+
+# With target language (critical for low-resource languages)
+mt-eval run --corpus data/corpus.json \
+  --target-lang "Plains Cree (nêhiyawêwin, SRO)"
+
+# Tool-calling mode (batch_size auto-overrides to 1)
+mt-eval run --corpus data/corpus.json --tools
+
+# Dry run (validate config, no API calls)
+mt-eval run --corpus data/corpus.json --dry-run
 ```
+
+Key flags:
+
+| Flag | Default | Notes |
+|---|---|---|
+| `-m, --model` | `gemini-3.1-pro` | Comma-separated for parallel multi-model |
+| `-b, --batch-size` | `25` | Auto-overrides to 1 with `--tools` |
+| `--max-tokens` | `32768` | Generous headroom, no truncation |
+| `-c, --concurrency` | `8` | Per-model parallel batches |
+| `--no-cache` | off | Almost never use this |
+| `--target-lang` | `""` | Set this for non-obvious target languages |
 
 ### `mt-eval test`
 
@@ -304,8 +334,10 @@ mt-eval dashboard report1.json report2.json -o dashboard.html
 List available resources.
 
 ```bash
-mt-eval list models    # Show available model shortcuts
-mt-eval list prompts   # Show available prompt versions
+mt-eval list models          # Show registry shortcuts
+mt-eval list models --live   # Fetch live catalog from OpenRouter
+mt-eval list prompts         # Show available prompt versions
+mt-eval list datasets        # Show registered evaluation datasets
 ```
 
 ---
@@ -332,13 +364,14 @@ mt-eval dashboard eval/logs/harness/*_report.json -o report.html
 
 ### Model comparison: Gemini vs Claude vs GPT
 
+Use comma-separated models for parallel execution (recommended):
+
 ```bash
-for model in gemini-3.1-pro claude-sonnet-4 gpt-5.5; do
-  mt-eval run \
-    --corpus data/test_set.json \
-    --model $model \
-    --name "${model}_comparison"
-done
+# All three models run simultaneously — wall-clock = slowest single model
+mt-eval run \
+  --corpus data/test_set.json \
+  -m gemini-3.1-pro,claude-sonnet-4,gpt-5.5 \
+  --name "model_comparison"
 
 # Analyze all
 for f in eval/logs/harness/run_*.json; do
@@ -349,17 +382,16 @@ done
 mt-eval dashboard eval/logs/harness/*_report.json -o comparison.html
 ```
 
-### Batching: Cost optimization
+### Batching: The default is already optimal
+
+Batch size defaults to 25 (entries per API call). This is 25× cheaper than `batch_size=1` with negligible accuracy difference across all tested frontier models.
 
 ```bash
-# Batch 5 entries per call (cheaper, slightly less accurate)
+# Override to 1 only if you need per-entry isolation for debugging
 mt-eval run \
   --corpus data/test_set.json \
-  --batch-size 5 \
-  --name "batch5"
-
-# Compare against single-entry baseline
-mt-eval compare eval/logs/harness/*single*_report.json eval/logs/harness/*batch5*_report.json
+  --batch-size 1 \
+  --name "single_entry_debug"
 ```
 
 ### Custom prompt: Load from file
@@ -534,10 +566,11 @@ The harness pulls live pricing from OpenRouter and calculates per-entry and tota
 ### Cost optimization tips
 
 1. **Start small**: Test on 5-10 entries first (`--ids 0,1,2,3,4`)
-2. **Use caching**: Cached results cost $0 on re-runs
-3. **Batch when possible**: `--batch-size 5` is roughly 5x cheaper per entry
+2. **Use caching**: Cached results cost $0 on re-runs (default: on)
+3. **Keep batch_size=25**: Already the default — 25× cheaper than batch_size=1
 4. **Use Flash models for iteration**: `--model gemini-3-flash` for prompt development
 5. **Reserve Pro models for final benchmarks**: `--model gemini-3.1-pro` for publication
+6. **Run models in parallel**: Use comma-separated `-m` for multi-model — same wall-clock time as a single model
 
 ### Dry run
 
@@ -558,7 +591,7 @@ mt-eval run --corpus data.json --dry-run
 pip install git+https://github.com/gamedaysuits/mt-eval-harness.git
 ```
 
-### Programmatic usage
+### Programmatic usage — single model
 
 ```python
 import asyncio
@@ -572,6 +605,8 @@ async def evaluate():
         source_field="source",
         target_field="target",
         model="gemini-3.1-pro",
+        # Defaults are already optimal:
+        # batch_size=25, max_tokens=32768, concurrency=8, cache=on
     )
     run_log = await execute_run(config)
 
@@ -582,6 +617,32 @@ async def evaluate():
     return report
 
 asyncio.run(evaluate())
+```
+
+### Programmatic usage — multi-model parallel (recommended for benchmarks)
+
+```python
+import asyncio
+from mt_eval_harness.config import RunConfig
+from mt_eval_harness.runner import execute_multi_run
+
+async def benchmark():
+    # Create one config per model — all other settings shared
+    models = ["gemini-3.1-pro", "claude-opus-4.7", "gpt-5.5", "deepseek-v4-pro"]
+    configs = [
+        RunConfig(
+            corpus_path="data/corpus.json",
+            model=m,
+            target_lang="Plains Cree (nêhiyawêwin, SRO)",
+        )
+        for m in models
+    ]
+
+    # All models run in parallel — wall-clock = slowest single model
+    results = await execute_multi_run(configs)
+    return results
+
+asyncio.run(benchmark())
 ```
 
 ### Wrapping an existing pipeline
