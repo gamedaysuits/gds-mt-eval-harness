@@ -115,15 +115,13 @@ def analyze_run(
     output_path: str | None = None,
     metric_plugins: list | None = None,
 ) -> dict:
-    """Analyze a RunLog and produce a TestReport.
+    """Analyze a RunLog file and produce a TestReport.
 
     Args:
         log_path: Path to the RunLog JSON file.
         output_path: Optional output path for the TestReport.
                      Defaults to log_path with _report.json suffix.
         metric_plugins: Optional list of MetricPlugin instances.
-                        Each plugin's compute() is called per entry,
-                        and aggregate() is called for overall metrics.
 
     Returns:
         Complete TestReport dict.
@@ -133,13 +131,47 @@ def analyze_run(
         raise FileNotFoundError(f"RunLog not found: {log_path}")
 
     run_log = json.loads(log_path.read_text(encoding="utf-8"))
+
+    if output_path is None:
+        output_path = log_path.with_name(log_path.stem + "_report.json")
+
+    return _analyze(run_log, output_path=output_path, metric_plugins=metric_plugins)
+
+
+def analyze_run_log(
+    run_log: dict,
+    output_path: str | Path | None = None,
+    metric_plugins: list | None = None,
+) -> dict:
+    """Analyze an in-memory RunLog dict and produce a TestReport.
+
+    Called automatically at the end of execute_run() so users
+    don't need a separate 'mt-eval test' step.
+
+    Args:
+        run_log: The RunLog dict (as returned by build_run_log).
+        output_path: Optional output path for the TestReport.
+        metric_plugins: Optional list of MetricPlugin instances.
+
+    Returns:
+        Complete TestReport dict.
+    """
+    return _analyze(run_log, output_path=output_path, metric_plugins=metric_plugins)
+
+
+def _analyze(
+    run_log: dict,
+    output_path: str | Path | None = None,
+    metric_plugins: list | None = None,
+) -> dict:
+    """Core analysis logic shared by file-based and in-memory entry points."""
     results = run_log.get("results", [])
 
     if not results:
         print("  WARNING: RunLog contains no results")
         return {"error": "No results in RunLog"}
 
-    print(f"  Analyzing {len(results)} entries from {log_path.name}")
+    print(f"  Analyzing {len(results)} entries")
 
     # Setup sacrebleu metrics if available
     chrf_metric = CHRF(word_order=2)
@@ -262,7 +294,6 @@ def analyze_run(
 
     # --- Build report ---
     report = {
-        "source_log": str(log_path),
         "run_id": run_log.get("run_id", "unknown"),
         "config": run_log.get("config", {}),
         "overall": overall,
@@ -272,15 +303,12 @@ def analyze_run(
     }
 
     # --- Write output ---
-    if output_path is None:
-        output_path = log_path.with_name(log_path.stem + "_report.json")
-    else:
+    if output_path is not None:
         output_path = Path(output_path)
-
-    output_path.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+        output_path.write_text(
+            json.dumps(report, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
 
     # --- Print summary ---
     _print_summary(overall, segments, difficulties, output_path)
@@ -441,7 +469,8 @@ def _print_summary(
                     else:
                         print(f"      {k}: {v}")
 
-    print(f"\n  Report written to: {output_path}")
+    if output_path:
+        print(f"\n  Report:       {output_path}")
     print("=" * 60)
 
 

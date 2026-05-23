@@ -9,6 +9,22 @@ loading its config snapshot.
 The TranslationProcess protocol defines the plugin interface: any
 callable that takes structured input and returns structured output
 can be registered as a translation method.
+
+┌──────────────────────────────────────────────────────────────────┐
+│  PERFORMANCE DEFAULTS — "Fast by default, safe by design"       │
+│                                                                  │
+│  The harness ships with aggressive defaults because:             │
+│    • batch_size=25 cuts API calls by 25×                         │
+│    • max_tokens=32768 eliminates truncation risk entirely        │
+│    • concurrency=8 maximizes throughput per model                │
+│    • cache=on prevents redundant API calls                       │
+│                                                                  │
+│  For multi-model runs, use execute_multi_run() to run all        │
+│  models in parallel. Each gets its own session and semaphore.    │
+│                                                                  │
+│  All defaults are defined as constants below (search for         │
+│  HARNESS_DEFAULTS). Change them in ONE place.                    │
+└──────────────────────────────────────────────────────────────────┘
 """
 
 from __future__ import annotations
@@ -254,6 +270,44 @@ def validate_method_card(card: dict) -> list[str]:
     return errors
 
 
+# ===========================================================================
+# HARNESS_DEFAULTS — Single source of truth for all default values.
+#
+# Change a default here and it propagates to RunConfig, CLI, docs, and
+# scripts. No need to hunt across files. Agents: USE THESE, don't
+# override them unless you have a specific reason.
+# ===========================================================================
+
+# Batching: entries per API call. 25 is proven reliable across all frontier
+# models. Cuts API calls by 25×. Tool-calling auto-overrides to 1.
+DEFAULT_BATCH_SIZE = 25
+
+# Max tokens: generous headroom prevents truncation. Translation outputs
+# are short (1-30 words typically), so unused tokens cost nothing.
+# Set high to eliminate any risk of null/truncated output.
+DEFAULT_MAX_TOKENS = 32768
+
+# Concurrency: parallel batch calls within a single model run.
+# Bounded by asyncio.Semaphore. 8 is safe for all providers.
+# For multi-model parallelism, use execute_multi_run() instead.
+DEFAULT_CONCURRENCY = 8
+
+# Caching: file-backed, keyed on model + prompt + temperature + lang pair.
+# Prevents re-calling the API for already-translated entries.
+# There is almost never a reason to turn this off.
+DEFAULT_CACHE_ENABLED = True
+DEFAULT_CACHE_DIR = "eval/cache/harness"
+
+# Temperature: 0 for deterministic output. Recorded in run cards.
+DEFAULT_TEMPERATURE = 0.0
+
+# Output directory for RunLog JSON files.
+DEFAULT_OUTPUT_DIR = "eval/logs/harness"
+
+# Tool-calling safety cap: max rounds per entry before giving up.
+DEFAULT_MAX_TOOL_ROUNDS = 8
+
+
 # ---------------------------------------------------------------------------
 # Model registry — maps short names to OpenRouter model IDs
 # ---------------------------------------------------------------------------
@@ -348,11 +402,30 @@ class RunConfig:
 
     Every knob that affects execution is captured here. The full config
     is serialized into the RunLog so any result can be reproduced exactly.
+
+    ┌──────────────────────────────────────────────────────────────┐
+    │  DEFAULTS ARE INTENTIONALLY AGGRESSIVE                      │
+    │                                                              │
+    │  • batch_size  = 25     → 25× fewer API calls               │
+    │  • max_tokens  = 32768  → zero truncation risk               │
+    │  • concurrency = 8      → parallel batches per model         │
+    │  • cache       = on     → no redundant API calls             │
+    │                                                              │
+    │  These defaults come from HARNESS_DEFAULTS constants above.  │
+    │  Do NOT lower them without a specific reason.                │
+    │                                                              │
+    │  For multi-model runs, use execute_multi_run() to run all    │
+    │  models in parallel — each gets its own session/semaphore.   │
+    │  DO NOT loop sequentially over execute_run().                │
+    └──────────────────────────────────────────────────────────────┘
     """
 
     # --- Dataset selection ---
     # "all" = full corpus, or segment name, or "0-61" range
     dataset: str = "all"
+    # Human-readable dataset ID for run cards and the leaderboard.
+    # Auto-populated from corpus metadata if not set explicitly.
+    dataset_id: str = ""
     # Explicit entry IDs override dataset if provided
     entry_ids: list[int] | None = None
 
@@ -363,8 +436,15 @@ class RunConfig:
 
     # --- Source / target field names ---
     # These map to the JSON keys in your corpus file.
-    source_field: str = "source"  # The field name for source text in corpus
-    target_field: str = "target"  # The field name for reference translation
+    source_field: str = "source"       # The field name for source text in corpus
+    target_field: str = "reference"    # The field name for gold-standard translation
+
+    # --- Language pair ---
+    # Human-readable language names used in prompts and run cards.
+    # The naive prompt interpolates target_lang to tell the model WHAT
+    # language to translate into. Without this, models guess randomly.
+    source_lang: str = "English"
+    target_lang: str = ""  # e.g. "Plains Cree (nêhiyawêwin, SRO)"
 
     # --- Segment names ---
     # The valid segment names in your corpus (for dataset filtering).
@@ -373,7 +453,7 @@ class RunConfig:
 
     # --- Model ---
     model: str = DEFAULT_MODEL  # Short name, resolved via MODEL_REGISTRY
-    max_tokens: int = 4096      # Override for models that need more headroom
+    max_tokens: int = DEFAULT_MAX_TOKENS
 
     # --- Tool calling ---
     # Individual toggles for each tool (None = all available tools)
@@ -381,21 +461,23 @@ class RunConfig:
     # List of individual tool names to enable, e.g. ["fst_validate", "fst_generate"]
     # None means all tools. Only used when tools_enabled is True.
     tools_list: list[str] | None = None
-    max_tool_rounds: int = 8    # Safety cap on tool-calling rounds per entry
+    max_tool_rounds: int = DEFAULT_MAX_TOOL_ROUNDS
 
     # --- Caching ---
-    cache_enabled: bool = True
-    cache_dir: str = "eval/cache/harness"
+    cache_enabled: bool = DEFAULT_CACHE_ENABLED
+    cache_dir: str = DEFAULT_CACHE_DIR
 
     # --- Batching ---
-    # Entries per API call. 1 = individual, >1 = numbered list format.
-    # Tool-calling requires batch_size=1 (enforced at validation time).
-    batch_size: int = 1
+    # Entries per API call. >1 = numbered list format.
+    # Tool-calling auto-overrides to 1 (each entry needs its own
+    # conversation loop). See validate() for the override logic.
+    batch_size: int = DEFAULT_BATCH_SIZE
 
     # --- Concurrency ---
-    # Number of parallel API calls. The harness will handle rate limit
-    # backoff automatically; set this to whatever the provider allows.
-    concurrency: int = 8
+    # Number of parallel API calls within a single model run.
+    # Bounded by asyncio.Semaphore for rate limit safety.
+    # For multi-model parallelism, use execute_multi_run().
+    concurrency: int = DEFAULT_CONCURRENCY
 
     # --- System prompt ---
     # Built-in versions: "naive", "custom"
@@ -409,11 +491,11 @@ class RunConfig:
     post_hooks: list[str] = field(default_factory=list)
 
     # --- Output ---
-    output_dir: str = "eval/logs/harness"
+    output_dir: str = DEFAULT_OUTPUT_DIR
     run_name: str | None = None  # Optional human-readable label
 
     # --- Misc ---
-    temperature: float = 0.0   # 0 for determinism
+    temperature: float = DEFAULT_TEMPERATURE
     dry_run: bool = False      # Validate config without API calls
 
     # --- Process plugin ---
@@ -439,12 +521,17 @@ class RunConfig:
                 f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4')."
             )
 
-        # Tool-calling requires batch_size=1
+        # Tool-calling requires batch_size=1 — auto-override with warning
+        # instead of erroring, so the default batch_size=25 doesn't block
+        # tool-calling runs.
         if self.tools_enabled and self.batch_size > 1:
-            errors.append(
-                f"Tool-calling requires batch_size=1, got {self.batch_size}. "
-                f"Each tool-calling entry needs its own conversation loop."
+            import sys
+            print(
+                f"  ⚠ batch_size={self.batch_size} auto-overridden to 1 "
+                f"(tool-calling requires individual entry conversations)",
+                file=sys.stderr,
             )
+            self.batch_size = 1
 
         # Prompt version validation
         available = prompt_versions or ["naive", "custom"]
@@ -504,6 +591,10 @@ class RunConfig:
             "post_hooks": sorted(self.post_hooks),
             "temperature": self.effective_temperature,
             "process_name": self.process_name,
+            # Language pair affects prompts, so it must affect cache keys.
+            # Otherwise switching target_lang would serve stale translations.
+            "source_lang": self.source_lang,
+            "target_lang": self.target_lang,
         }
         raw = json.dumps(relevant, sort_keys=True)
         return hashlib.sha256(raw.encode()).hexdigest()[:12]

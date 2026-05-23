@@ -7,15 +7,24 @@ Every config parameter is exposed as a CLI flag.
 The 'export' subcommand packages completed evaluations as rosetta
 method plugins (method.json + coaching data).
 
+┌──────────────────────────────────────────────────────────────┐
+│  DEFAULT BEHAVIOR — The harness is "fast by default":           │
+│    batch_size=25, max_tokens=32768, concurrency=8, cache=on    │
+│                                                                │
+│  For multi-model runs, pass comma-separated models:            │
+│    mt-eval run --corpus data.json -m model1,model2,model3      │
+│  All models run in parallel via asyncio.gather.                │
+└──────────────────────────────────────────────────────────────┘
+
 Usage examples:
-    # Basic run with defaults
+    # Basic run with optimal defaults (batch=25, cache=on, tokens=32k)
     mt-eval run --corpus data/corpus.json
+
+    # Multi-model parallel run
+    mt-eval run --corpus data/corpus.json -m gemini-3.1-pro,claude-opus-4.7,gpt-5.5
 
     # Gold standard segment only
     mt-eval run --corpus data/corpus.json --dataset gold_standard
-
-    # Batch mode, different model
-    mt-eval run --corpus data/corpus.json --model claude-sonnet-4 --batch-size 5
 
     # Specific entries only
     mt-eval run --corpus data/corpus.json --ids 0,1,2,3,4
@@ -39,9 +48,6 @@ Usage examples:
     # Export a TestReport as a rosetta method plugin
     mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached --locales crk
 
-    # Same thing using the generate-plugin alias
-    mt-eval generate-plugin --report eval/logs/report.json --name crk-v1 --type llm --locales crk
-
     # List models with live OpenRouter catalog
     mt-eval list models --live
 """
@@ -54,6 +60,12 @@ import sys
 from mt_eval_harness.config import (
     RunConfig,
     DEFAULT_MODEL,
+    DEFAULT_BATCH_SIZE,
+    DEFAULT_MAX_TOKENS,
+    DEFAULT_CONCURRENCY,
+    DEFAULT_CACHE_DIR,
+    DEFAULT_OUTPUT_DIR,
+    DEFAULT_MAX_TOOL_ROUNDS,
     MODEL_REGISTRY,
     format_registry_table,
     load_method_card,
@@ -70,11 +82,13 @@ def build_parser() -> argparse.ArgumentParser:
             "SUBCOMMANDS:\n"
             "  run              Execute a translation run (default)\n"
             "  test             Analyze a completed run log\n"
+            "  publish          Submit a TestReport to the leaderboard\n"
             "  compare          Compare multiple run logs\n"
             "  dashboard        Generate interactive HTML dashboard\n"
             "  list             List available models, prompts, datasets\n"
             "  export           Package a TestReport as a rosetta method plugin\n"
             "  generate-plugin  Alias for 'export'\n"
+            "  logout           Remove stored auth credentials\n"
         ),
     )
 
@@ -147,6 +161,26 @@ def build_parser() -> argparse.ArgumentParser:
         help="Fetch live model catalog from OpenRouter (requires API key)",
     )
 
+    # --- PUBLISH command ---
+    pub_p = sub.add_parser(
+        "publish",
+        help="Submit a TestReport to the leaderboard",
+    )
+    pub_p.add_argument(
+        "report_path",
+        help="Path to a TestReport JSON file (output of 'mt-eval test')",
+    )
+    pub_p.add_argument(
+        "--method-card",
+        help="Path to a method card JSON file to attach to the submission",
+    )
+
+    # --- LOGOUT command ---
+    sub.add_parser(
+        "logout",
+        help="Remove stored authentication credentials",
+    )
+
     # --- EXPORT command ---
     export_p = sub.add_parser(
         "export",
@@ -192,29 +226,44 @@ def _add_run_args(parser: argparse.ArgumentParser):
     )
     parser.add_argument(
         "--target-field",
-        default="target",
-        help="Field name for reference translation in corpus. Default: target",
+        default="reference",
+        help="Field name for reference translation in corpus. Default: reference",
+    )
+
+    # Language pair — used in prompts and run cards
+    parser.add_argument(
+        "--source-lang",
+        default="English",
+        help="Source language name (used in prompt). Default: English",
+    )
+    parser.add_argument(
+        "--target-lang",
+        default="",
+        help="Target language name (used in prompt). e.g. 'Plains Cree (nêhiyawêwin, SRO)'",
     )
 
     # Model
     parser.add_argument(
         "-m", "--model",
         default=DEFAULT_MODEL,
-        help=f"Model short name or full OpenRouter ID. Default: {DEFAULT_MODEL}. "
-             f"Available shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}",
+        help=f"Model short name, full OpenRouter ID, or comma-separated list "
+             f"for parallel multi-model runs. Default: {DEFAULT_MODEL}. "
+             f"Shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}",
     )
     parser.add_argument(
         "--max-tokens",
         type=int,
-        default=13680,
-        help="Max tokens per API call. Default: 13680",
+        default=DEFAULT_MAX_TOKENS,
+        help=f"Max tokens per API call. Default: {DEFAULT_MAX_TOKENS} "
+             f"(generous headroom — translation outputs are short, "
+             f"unused tokens cost nothing).",
     )
 
     # Tools
     parser.add_argument(
         "--tools",
         action="store_true",
-        help="Enable tool-calling (requires batch_size=1)",
+        help="Enable tool-calling (batch_size auto-overrides to 1)",
     )
     parser.add_argument(
         "--tools-list",
@@ -223,8 +272,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     parser.add_argument(
         "--max-tool-rounds",
         type=int,
-        default=8,
-        help="Max tool-calling rounds per entry. Default: 8",
+        default=DEFAULT_MAX_TOOL_ROUNDS,
+        help=f"Max tool-calling rounds per entry. Default: {DEFAULT_MAX_TOOL_ROUNDS}",
     )
 
     # Post-hooks
@@ -237,28 +286,31 @@ def _add_run_args(parser: argparse.ArgumentParser):
     parser.add_argument(
         "--no-cache",
         action="store_true",
-        help="Disable caching (re-run all entries)",
+        help="Disable caching (re-run all entries). NOT recommended.",
     )
     parser.add_argument(
         "--cache-dir",
-        default="eval/cache/harness",
-        help="Cache directory. Default: eval/cache/harness",
+        default=DEFAULT_CACHE_DIR,
+        help=f"Cache directory. Default: {DEFAULT_CACHE_DIR}",
     )
 
     # Batching
     parser.add_argument(
         "-b", "--batch-size",
         type=int,
-        default=1,
-        help="Entries per API call. Default: 1",
+        default=DEFAULT_BATCH_SIZE,
+        help=f"Entries per API call. Default: {DEFAULT_BATCH_SIZE} "
+             f"(25× fewer API calls than batch_size=1). "
+             f"Auto-overrides to 1 when --tools is set.",
     )
 
     # Concurrency
     parser.add_argument(
         "-c", "--concurrency",
         type=int,
-        default=8,
-        help="Parallel API calls. Default: 8",
+        default=DEFAULT_CONCURRENCY,
+        help=f"Parallel API calls per model. Default: {DEFAULT_CONCURRENCY}. "
+             f"For multi-model parallelism, pass multiple models with -m.",
     )
 
     # Prompt
@@ -276,8 +328,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     # Output
     parser.add_argument(
         "-o", "--output-dir",
-        default="eval/logs/harness",
-        help="Output directory for RunLog. Default: eval/logs/harness",
+        default=DEFAULT_OUTPUT_DIR,
+        help=f"Output directory for RunLog. Default: {DEFAULT_OUTPUT_DIR}",
     )
     parser.add_argument(
         "-n", "--name",
@@ -324,20 +376,22 @@ def args_to_config(args) -> RunConfig:
         entry_ids=entry_ids,
         corpus_path=args.corpus if hasattr(args, "corpus") else None,
         source_field=args.source_field if hasattr(args, "source_field") else "source",
-        target_field=args.target_field if hasattr(args, "target_field") else "target",
+        target_field=args.target_field if hasattr(args, "target_field") else "reference",
+        source_lang=args.source_lang if hasattr(args, "source_lang") else "English",
+        target_lang=args.target_lang if hasattr(args, "target_lang") else "",
         model=args.model,
         max_tokens=args.max_tokens,
         tools_enabled=args.tools if hasattr(args, "tools") else False,
         tools_list=tools_list,
-        max_tool_rounds=args.max_tool_rounds if hasattr(args, "max_tool_rounds") else 8,
+        max_tool_rounds=args.max_tool_rounds if hasattr(args, "max_tool_rounds") else DEFAULT_MAX_TOOL_ROUNDS,
         cache_enabled=not (args.no_cache if hasattr(args, "no_cache") else False),
-        cache_dir=args.cache_dir if hasattr(args, "cache_dir") else "eval/cache/harness",
-        batch_size=args.batch_size if hasattr(args, "batch_size") else 1,
-        concurrency=args.concurrency if hasattr(args, "concurrency") else 8,
+        cache_dir=args.cache_dir if hasattr(args, "cache_dir") else DEFAULT_CACHE_DIR,
+        batch_size=args.batch_size if hasattr(args, "batch_size") else DEFAULT_BATCH_SIZE,
+        concurrency=args.concurrency if hasattr(args, "concurrency") else DEFAULT_CONCURRENCY,
         prompt_version=args.prompt if hasattr(args, "prompt") else "naive",
         custom_prompt_path=args.custom_prompt if hasattr(args, "custom_prompt") else None,
         post_hooks=post_hooks,
-        output_dir=args.output_dir if hasattr(args, "output_dir") else "eval/logs/harness",
+        output_dir=args.output_dir if hasattr(args, "output_dir") else DEFAULT_OUTPUT_DIR,
         run_name=args.name if hasattr(args, "name") else None,
         temperature=args.temperature if hasattr(args, "temperature") else 0.0,
         dry_run=args.dry_run if hasattr(args, "dry_run") else False,
@@ -540,6 +594,19 @@ def main():
     if args.command == "test":
         from mt_eval_harness.tester import run_test
         run_test(args.log_path, args.output)
+        return
+
+    if args.command == "publish":
+        from mt_eval_harness.publish import publish_to_supabase
+        publish_to_supabase(
+            args.report_path,
+            method_card_path=getattr(args, "method_card", None),
+        )
+        return
+
+    if args.command == "logout":
+        from mt_eval_harness.auth import logout
+        logout()
         return
 
     if args.command == "compare":

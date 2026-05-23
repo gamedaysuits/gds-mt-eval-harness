@@ -11,6 +11,19 @@ The runner delegates actual translation to strategy modules
 (mt_eval_harness.strategies), keeping this file focused on
 orchestration and coordination.
 
+┌──────────────────────────────────────────────────────────────┐
+│  HOW TO RUN MULTI-MODEL BENCHMARKS:                            │
+│                                                                │
+│  Use execute_multi_run(configs) — NOT a for-loop over           │
+│  execute_run(). Each model gets its own aiohttp session and     │
+│  semaphore, so different providers don't compete for rate       │
+│  limits. A 14-model benchmark runs in ~15 minutes parallel     │
+│  vs ~3.5 hours sequential.                                     │
+│                                                                │
+│  Defaults come from HARNESS_DEFAULTS in config.py.             │
+│  batch_size=25, max_tokens=32768, concurrency=8, cache=on.     │
+└──────────────────────────────────────────────────────────────┘
+
 Design decisions:
     - Strategies are resolved via a factory, not if/elif dispatch.
       Each mode is independently testable and extensible.
@@ -71,6 +84,24 @@ def load_corpus(config: RunConfig) -> list[dict]:
 
     corpus = json.loads(corpus_path.read_text(encoding="utf-8"))
 
+    # Support both formats:
+    #   - Flat list: [{"source": ..., "reference": ...}, ...]
+    #   - Wrapped:   {"dataset": {...}, "entries": [...]}
+    if isinstance(corpus, dict) and "entries" in corpus:
+        dataset_meta = corpus.get("dataset", {})
+        corpus = corpus["entries"]
+
+        # Auto-populate config from corpus metadata when not set explicitly.
+        # This means users can just --corpus <file> without extra flags.
+        if not config.dataset_id and dataset_meta.get("id"):
+            config.dataset_id = dataset_meta["id"]
+            print(f"  Dataset ID:  {config.dataset_id} (from corpus metadata)")
+
+        lang_pair = dataset_meta.get("language_pair", {})
+        if not config.target_lang.strip() and lang_pair.get("target_name"):
+            config.target_lang = lang_pair["target_name"]
+            print(f"  Target lang: {config.target_lang} (from corpus metadata)")
+
     # Auto-detect segment names from corpus if not explicitly configured.
     # This makes the harness zero-config for new language pairs — just
     # point it at a corpus and it discovers the available segments.
@@ -125,15 +156,36 @@ def load_corpus(config: RunConfig) -> list[dict]:
     )
 
 
-# ---------------------------------------------------------------------------
-# Prompt loading — built-in + plugin providers
-# ---------------------------------------------------------------------------
+# Minimal default prompt — projects should register their own via PromptProvider.
+# Accepts target_lang to tell the model WHAT language to translate into.
+# Without a target language, models guess based on vibes — which leads to
+# Japanese, Spanish, or "please specify the target language" responses.
+DEFAULT_NAIVE_PROMPT_TEMPLATE = (
+    "You are a translator. Translate the given {source_lang} text to {target_lang}. "
+    "Output ONLY the translation, nothing else. No explanations, no notes."
+)
 
-# Minimal default prompt — projects should register their own via PromptProvider
-DEFAULT_NAIVE_PROMPT = (
+# Legacy fallback for callers that don't set target_lang
+DEFAULT_NAIVE_PROMPT_GENERIC = (
     "You are a translator. Translate the given text to the target language. "
     "Output ONLY the translation, nothing else. No explanations, no notes."
 )
+
+
+def build_naive_prompt(config: RunConfig) -> str:
+    """Build the naive system prompt, interpolating language pair if set.
+
+    If config.target_lang is set, produces a specific prompt like:
+        "Translate the given English text to Plains Cree (nêhiyawêwin, SRO)."
+    If not set, falls back to the generic "target language" wording.
+    """
+    if config.target_lang:
+        source = config.source_lang or "source"
+        return DEFAULT_NAIVE_PROMPT_TEMPLATE.format(
+            source_lang=source,
+            target_lang=config.target_lang,
+        )
+    return DEFAULT_NAIVE_PROMPT_GENERIC
 
 
 def load_system_prompt(
@@ -149,7 +201,7 @@ def load_system_prompt(
 
     # Built-in: naive
     if version == "naive":
-        return DEFAULT_NAIVE_PROMPT
+        return build_naive_prompt(config)
 
     # Built-in: custom file
     if version == "custom":
@@ -167,6 +219,7 @@ def load_system_prompt(
         f"Built-in: naive, custom. "
         f"Register a PromptProvider plugin for custom versions."
     )
+
 
 
 # ---------------------------------------------------------------------------
@@ -241,6 +294,43 @@ async def execute_run(
     corpus = load_corpus(config)
     print(f"\n  Loaded {len(corpus)} entries")
 
+    # --- Post-load validation ---
+    # Catch field name mismatches before burning money on API calls.
+    ref_count = sum(1 for e in corpus if e.get(config.target_field))
+    if ref_count == 0:
+        print(
+            f"\n  ❌ ERROR: No entries have a '{config.target_field}' field."
+            f"\n  Your corpus uses different field names."
+            f"\n  Available fields: {sorted(corpus[0].keys())}"
+            f"\n  Set --target-field to the correct field name, or fix the corpus."
+        )
+        raise SystemExit(1)
+    elif ref_count < len(corpus):
+        print(f"  ⚠ WARNING: {len(corpus) - ref_count}/{len(corpus)} entries "
+              f"are missing the '{config.target_field}' field.")
+
+    # Check for missing IDs — required for result tracking
+    id_count = sum(1 for e in corpus if "id" in e)
+    if id_count == 0:
+        print(
+            f"\n  ❌ ERROR: No entries have an 'id' field."
+            f"\n  Add sequential IDs to your corpus entries."
+        )
+        raise SystemExit(1)
+
+    # Target language is required — without it, models guess (often
+    # incorrectly) and the entire run is wasted money.
+    # Checked here (after load_corpus) because corpus metadata may
+    # auto-populate target_lang during loading.
+    if not config.target_lang.strip():
+        print(
+            "\n  ❌ ERROR: target_lang is required."
+            "\n  Set --target-lang 'Plains Cree (SRO)' or similar."
+            "\n  Without it, the model guesses the target language "
+            "and usually gets it wrong."
+        )
+        raise SystemExit(1)
+
     system_prompt = ""
     if process is None:
         system_prompt = load_system_prompt(config, prompt_providers)
@@ -309,8 +399,16 @@ async def execute_run(
     print(f"  Cache hits:   {cache_hits}")
     print(f"  Elapsed:      {elapsed:.1f}s")
     print(f"  Total cost:   ${total_cost:.4f}")
-    print(f"  Output:       {output_path}")
+    print(f"  Run log:      {output_path}")
     print("=" * 60)
+
+    # --- Auto-score ---
+    # Score the run immediately so users don't need a separate
+    # 'mt-eval test' step. The report is written alongside the run log.
+    from mt_eval_harness.tester import analyze_run_log
+
+    report_path = output_path.with_name(output_path.stem + "_report.json")
+    report = analyze_run_log(run_log, output_path=report_path)
 
     return run_log
 
@@ -322,7 +420,9 @@ async def execute_run(
 def _build_run_id(config: RunConfig) -> str:
     """Build a human-readable run ID from config."""
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    model_short = config.model.replace("-", "").replace(".", "")
+    # Sanitize model name: full slugs like "google/gemini-3.1-pro-preview"
+    # contain slashes that would create nested directories in the run log path
+    model_short = config.model.replace("/", "_").replace("-", "").replace(".", "")
     prompt = config.prompt_version.replace(".", "")
 
     parts = [f"run_{ts}_{model_short}_{prompt}_{config.dataset}"]
@@ -337,3 +437,51 @@ def _build_run_id(config: RunConfig) -> str:
         parts.append(config.run_name)
 
     return "_".join(parts)
+
+
+# ---------------------------------------------------------------------------
+# Multi-model parallel execution
+# ---------------------------------------------------------------------------
+
+async def execute_multi_run(
+    configs: list[RunConfig],
+) -> list[dict | None]:
+    """Execute multiple model runs in parallel.
+
+    THIS IS THE RECOMMENDED WAY TO RUN MULTI-MODEL BENCHMARKS.
+
+    Each config gets its own aiohttp session and concurrency semaphore,
+    so models on different providers (Google, Anthropic, OpenAI, etc.)
+    don't compete for rate limits. Wall-clock time = slowest single
+    model, not sum of all models.
+
+    Example:
+        configs = [
+            RunConfig(model="google/gemini-3.1-pro-preview", ...),
+            RunConfig(model="anthropic/claude-opus-4.7", ...),
+            RunConfig(model="openai/gpt-5.5", ...),
+        ]
+        results = await execute_multi_run(configs)
+        # results: [RunLog_dict, RunLog_dict, RunLog_dict]
+
+    Args:
+        configs: List of RunConfig objects, typically one per model.
+                 All other config fields (corpus, batch_size, etc.)
+                 can vary per model if needed.
+
+    Returns:
+        List of RunLog dicts, one per config. Failed runs return None.
+        Order matches the input configs list.
+    """
+    async def _safe_run(config: RunConfig) -> dict | None:
+        """Execute a single model, catching exceptions to avoid
+        killing the entire parallel batch on one failure."""
+        try:
+            return await execute_run(config)
+        except Exception as exc:
+            model_label = config.model_id
+            print(f"\n  ERROR [{model_label}]: {exc}")
+            return None
+
+    print(f"\n  Launching {len(configs)} models in parallel...")
+    return await asyncio.gather(*[_safe_run(c) for c in configs])
