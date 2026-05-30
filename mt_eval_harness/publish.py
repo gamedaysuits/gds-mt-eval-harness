@@ -730,7 +730,7 @@ def publish_to_supabase(
         raise SystemExit(1)
 
     print(f"\n  ✅ Published to leaderboard!")
-    print(f"     https://champollion.com/leaderboard")
+    print(f"     https://mtevalarena.org/leaderboard")
     print("=" * 60)
 
     return result
