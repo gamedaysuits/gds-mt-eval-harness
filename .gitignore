@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+
+# Node (website)
+node_modules/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment — API keys must never be committed
+.env
+.env.local
+
+# Harness outputs (generated at runtime, not tracked)
+eval/cache/
+eval/logs/
+
+# Demo outputs (may contain third-party corpus data — generate locally)
+eval_demo/
+
+# Dashboard output (generated HTML)
+dashboard_output.html
+dashboard.html
+
+# Type checking
+.mypy_cache/
+.pytest_cache/
+website/.docusaurus/

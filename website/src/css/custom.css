@@ -1,0 +1,147 @@
+/**
+ * MT Eval Arena — "Forge" theme
+ *
+ * Sibling to the Champollion "Obsidian" theme. Same violet palette,
+ * but with warmer accent tones (crimson/rose) to distinguish the
+ * Arena's competitive energy from the product site's developer calm.
+ */
+
+/* ---------- Light mode ---------- */
+:root {
+  /* Primary — violet (shared with Obsidian) */
+  --ifm-color-primary: #6C5CE7;
+  --ifm-color-primary-dark: #5A4BD1;
+  --ifm-color-primary-darker: #4E40C4;
+  --ifm-color-primary-darkest: #3D31A3;
+  --ifm-color-primary-light: #7D6FEC;
+  --ifm-color-primary-lighter: #8E82F0;
+  --ifm-color-primary-lightest: #A89BFE;
+
+  /* Accent — crimson (Arena-specific) */
+  --arena-accent: #E94560;
+  --arena-accent-soft: rgba(233, 69, 96, 0.08);
+
+  --ifm-background-color: #FAFAFA;
+  --ifm-background-surface-color: #F4F4F7;
+  --ifm-toc-border-color: #E2E2EA;
+  --ifm-font-color-base: #1A1A2E;
+  --ifm-font-color-secondary: #6E6E8A;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Inter', 'Noto Sans', system-ui, -apple-system, sans-serif;
+
+  --docusaurus-highlighted-code-line-bg: rgba(108, 92, 231, 0.08);
+}
+
+/* ---------- Dark mode ---------- */
+[data-theme='dark'] {
+  --ifm-color-primary: #A29BFE;
+  --ifm-color-primary-dark: #8B83F5;
+  --ifm-color-primary-darker: #7D75ED;
+  --ifm-color-primary-darkest: #6C5CE7;
+  --ifm-color-primary-light: #B3ADFE;
+  --ifm-color-primary-lighter: #C4BFFE;
+  --ifm-color-primary-lightest: #D5D2FF;
+
+  --arena-accent: #FF6B81;
+  --arena-accent-soft: rgba(255, 107, 129, 0.1);
+
+  --ifm-background-color: #0F0F14;
+  --ifm-background-surface-color: #1A1A24;
+  --ifm-toc-border-color: #2A2A3C;
+  --ifm-font-color-base: #E4E4F0;
+  --ifm-font-color-secondary: #8E8EA8;
+
+  --docusaurus-highlighted-code-line-bg: rgba(162, 155, 254, 0.1);
+}
+
+/* ---------- Typography ---------- */
+/* Inter for Latin scripts, Noto Sans for universal coverage (Thai, Arabic, CJK, etc.) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+/* ---------- Global refinements ---------- */
+
+/* Sidebar border */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Footer links */
+.footer__link-item {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+.footer__link-item:hover {
+  opacity: 1;
+}
+
+/* ---------- Code block copy button ---------- */
+.theme-code-block {
+  border-radius: 10px;
+  border: 1px solid var(--ifm-toc-border-color);
+}
+
+.clean-btn[class*="copyButton"] {
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.clean-btn[class*="copyButton"]:hover {
+  opacity: 1;
+  background: rgba(162, 155, 254, 0.15);
+}
+
+/* ---------- Admonitions ---------- */
+.admonition {
+  border-radius: 10px;
+  border-left-width: 4px;
+}
+
+/* danger admonitions use the arena accent color */
+.admonition-danger {
+  border-left-color: var(--arena-accent);
+}
+
+/* ---------- Tabs ---------- */
+.tabs__item--active {
+  border-bottom-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ---------- Sidebar active item ---------- */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 3px solid var(--ifm-color-primary);
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) - 3px);
+}
+
+/* ---------- Smooth scrolling ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- Table styling ---------- */
+table {
+  font-size: 0.92rem;
+}
+
+table thead th {
+  background: rgba(108, 92, 231, 0.06);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] table thead th {
+  background: rgba(162, 155, 254, 0.08);
+}

@@ -1,0 +1,319 @@
+/**
+ * Landing page styles — "Forge" theme
+ *
+ * Minimal but polished. Dark-first with the Arena's crimson accent
+ * for CTAs and interactive elements.
+ */
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1A1A2E 0%, #0F0F28 100%);
+  color: #E4E4F0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial glow behind the hero content */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(
+    ellipse,
+    rgba(162, 155, 254, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.heroInner {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #A29BFE, #D5D2FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroTagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #E94560;
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.heroSubtext {
+  font-size: 1.1rem;
+  color: #8E8EA8;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* ---------- CTA Buttons ---------- */
+
+.heroCta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #6C5CE7;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.ctaPrimary:hover {
+  background: #5A4BD1;
+  color: #fff;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: transparent;
+  color: #A29BFE;
+  border: 1px solid #2A2A3C;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.ctaSecondary:hover {
+  border-color: #A29BFE;
+  color: #A29BFE;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* ---------- Status Badge ---------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: rgba(233, 69, 96, 0.1);
+  border: 1px solid rgba(233, 69, 96, 0.25);
+  font-size: 0.85rem;
+}
+
+.badgeLabel {
+  font-weight: 600;
+  color: #E94560;
+}
+
+.badgeValue {
+  color: #8E8EA8;
+}
+
+/* ---------- Pitch Section ---------- */
+
+.pitch {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pitchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.pitchCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-toc-border-color);
+  background: var(--ifm-background-surface-color);
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.pitchCard:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+}
+
+.pitchIcon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.pitchTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.pitchDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- Benchmarks Section ---------- */
+
+.benchmarks {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.benchmarkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.benchmarkCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-toc-border-color);
+  background: var(--ifm-background-surface-color);
+}
+
+.benchmarkCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.benchmarkCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benchmarkCard li {
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-secondary);
+  padding: 0.25rem 0;
+}
+
+.benchmarkCard li strong {
+  color: var(--ifm-font-color-base);
+}
+
+/* ---------- Links Section ---------- */
+
+.links {
+  padding: 3rem 2rem 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.linkCard {
+  display: block;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--ifm-toc-border-color);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.linkCard:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* ---------- Light mode overrides ---------- */
+
+:global([data-theme='light']) .hero {
+  background: linear-gradient(135deg, #F4F4F7, #E8E8F0);
+  color: #1A1A2E;
+}
+
+:global([data-theme='light']) .heroTitle {
+  background: linear-gradient(135deg, #6C5CE7, #3D31A3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:global([data-theme='light']) .heroSubtext {
+  color: #6E6E8A;
+}
+
+:global([data-theme='light']) .ctaSecondary {
+  color: #6C5CE7;
+  border-color: #E2E2EA;
+}
+
+:global([data-theme='light']) .ctaSecondary:hover {
+  border-color: #6C5CE7;
+  color: #6C5CE7;
+}
+
+:global([data-theme='light']) .badgeValue {
+  color: #6E6E8A;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtext {
+    font-size: 1rem;
+  }
+
+  .heroCta {
+    flex-direction: column;
+    align-items: center;
+  }
+}

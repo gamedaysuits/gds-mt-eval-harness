@@ -1,0 +1,20 @@
+{
+  "registry_version": "1.0.0",
+  "datasets": [
+    {
+      "id": "edtekla-dev-v1",
+      "name": "EDTeKLA Development Set v1",
+      "version": "1.0.0",
+      "language_pair": {"source": "eng", "target": "crk"},
+      "size": 124,
+      "domain": "educational",
+      "url": null,
+      "sha256": null,
+      "access": "private",
+      "do_not_train": true,
+      "license": "research-only",
+      "source": "EDTeKLA project, University of Alberta",
+      "notes": "62 gold standard + 62 textbook entries. Obtain from the crk-translate repo (private)."
+    }
+  ]
+}
