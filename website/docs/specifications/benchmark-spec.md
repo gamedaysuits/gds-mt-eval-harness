@@ -38,6 +38,18 @@ We benchmark **methods**, not models. A model is one component. A method is the 
 
 Every benchmark result must be reproducible. The run card (§3) captures the complete configuration of an experiment. The fingerprint (§3.5) identifies the experimental setup. The run card hash (§3.6) verifies the integrity of the result. Anyone with the same method, corpus, and configuration should achieve scores within ±2% (accounting for LLM sampling non-determinism at temperature > 0).
 
+### 1.4 No Synthetic Data
+
+**This project does not generate, use, or endorse synthetic training or evaluation data.** All corpora must be sourced from genuine human-authored text — published translations, textbooks, bilingual documents, or elicited translations from fluent speakers.
+
+LLMs may assist with:
+- Sentence alignment (finding parallel passages in existing bilingual texts)
+- Format conversion (converting published materials into the corpus schema)
+- Metadata enrichment (suggesting difficulty tiers, register labels)
+- Proposing source sentences for human translation (§11.3 — the translation step is always human)
+
+LLMs must **never** generate reference translations or evaluation pairs. If a contest participant uses synthetic data in their *method*, that is their choice. We do not produce it, ship it, or include it in any corpus or dataset we distribute.
+
 ---
 
 ## 2. Corpus Schema
