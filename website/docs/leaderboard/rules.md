@@ -55,17 +55,12 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 | **License** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
 | **Provenance** | `gold_standard` (verified by speakers), `textbook` (published educational materials) |
 
-### FLORES+ Devtest
+### FLORES+ Devtest — Development Use Only
 
-A broad-coverage multilingual benchmark maintained by the [Open Language Data Initiative (OLDI)](https://huggingface.co/datasets/openlanguagedata/flores_plus).
+> [!WARNING]
+> **FLORES+ is available for development and debugging but is NOT used for official leaderboard evaluation.** FLORES+ (originally Meta FLORES-200) is a widely public benchmark dataset that frontier LLMs have almost certainly been trained on. Scores against FLORES+ do not reliably reflect real-world translation quality for LLM-based methods. Non-LLM methods (FST, rule-based, fine-tuned NMT) are less affected but FLORES+ scores are still not published to the leaderboard.
 
-| Property | Value |
-|----------|-------|
-| **Language pairs** | EN → 39 languages (all champollion registered languages) |
-| **Entry count** | 1,012 sentences per language |
-| **License** | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| **Source** | Originally Meta FLORES-200, now OLDI-maintained |
-| **Location** | Pre-extracted fixtures at `test/benchmark/fixtures/` in the main champollion repo |
+FLORES+ fixtures remain available in `test/benchmark/fixtures/` for pipeline smoke testing, cross-language validation, and development use. Official evaluation uses custom corpora built from human-authored text not publicly available in parallel form.
 
 See [Evaluation Datasets](/docs/leaderboard/datasets) for the full dataset schema, difficulty tiers, and how to create your own.
 
@@ -131,7 +126,7 @@ Verification tiers describe **who validated the result** — separate from the q
 
 ## Future Directions
 
-- **FLORES+ model comparison runs** — systematic evaluation of frontier models (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro, etc.) across all 39 champollion languages
+- **Comprehensive model comparison runs** — systematic evaluation of frontier models (GPT-4o, Claude, Gemini, etc.) across champollion languages using custom evaluation corpora (not public benchmarks)
 - **More language pairs** — Quechua, Inuktitut, and other low-resource languages as community-verified datasets become available
 - **Dataset import** — tooling to convert external evaluation datasets (WMT, Tatoeba, etc.) into the champollion evaluation format
 - **Automated re-runs** — detecting model version changes and re-running benchmarks to track score drift
