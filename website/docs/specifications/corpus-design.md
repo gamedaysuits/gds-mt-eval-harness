@@ -340,7 +340,7 @@ Every corpus entry follows the harness specification:
 |----------|-------|
 | **ID** | `edtekla-dev-v1` |
 | **Pair** | EN → CRK (Plains Cree, SRO) |
-| **Entries** | 124 |
+| **Entries** | 404 (`master_corpus.json`: 62 gold + 342 textbook); 548 total available |
 | **Domains** | Educational (100%) |
 | **Tiers** | 1–5 (distribution TBD per entry audit) |
 | **License** | CC BY-NC-SA 4.0 |

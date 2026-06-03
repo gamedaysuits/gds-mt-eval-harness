@@ -70,7 +70,7 @@ graph LR
 
 ### EDTeKLA Development Set v1
 - **Language pair:** English → Plains Cree (SRO)
-- **Entries:** 124 curated pairs
+- **Entries:** 548 curated pairs (486 textbook + 62 gold standard)
 - **License:** CC BY-NC-SA 4.0
 - **Source:** [EdTeKLA research group](https://spaces.facsci.ualberta.ca/edtekla/), University of Alberta
 

@@ -103,20 +103,22 @@ The [Benchmark Specification](/docs/specifications/benchmark) is the single sour
 **`dataset`** — Identifies which dataset was used, including its content hash so results are tied to a specific version:
 
 ```json
+// Example using master_corpus.json (62 gold + 342 textbook = 404)
 {
   "id": "edtekla-dev-v1",
   "version": "1.0",
   "language_pair": "EN→CRK",
   "sha256": "...",
-  "entry_count": 124
+  "entry_count": 404
 }
 ```
 
 **`scores`** — Aggregate metrics for the run:
 
 ```json
+// Counts reflect the dataset used (here: master_corpus.json, 404 entries)
 {
-  "total": 124,
+  "total": 404,
   "exact_matches": 12,
   "exact_match_rate": 0.0968,
   "fst_accepted": 87,

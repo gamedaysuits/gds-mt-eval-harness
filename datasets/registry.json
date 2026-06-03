@@ -2,8 +2,38 @@
   "registry_version": "1.0.0",
   "datasets": [
     {
+      "id": "edtekla-textbook",
+      "name": "EDTeKLA Textbook Corpus",
+      "version": "1.0.0",
+      "language_pair": {"source": "eng", "target": "crk"},
+      "size": 486,
+      "domain": "educational",
+      "url": null,
+      "sha256": null,
+      "access": "private",
+      "do_not_train": true,
+      "license": "CC BY-NC-SA 4.0",
+      "source": "EDTeKLA project, University of Alberta",
+      "notes": "Canonical textbook corpus: 486 entries (436 dev + 50 held-out) across difficulty tiers 1-5."
+    },
+    {
+      "id": "edtekla-master",
+      "name": "EDTeKLA Master Corpus (Merged)",
+      "version": "1.0.0",
+      "language_pair": {"source": "eng", "target": "crk"},
+      "size": 404,
+      "domain": "educational",
+      "url": null,
+      "sha256": null,
+      "access": "private",
+      "do_not_train": true,
+      "license": "research-only",
+      "source": "EDTeKLA project, University of Alberta",
+      "notes": "Derived merge: 62 gold standard (itwêwina) + 342 textbook entries = 404. Not the full textbook corpus (486). Obtain from crk-translate repo (private)."
+    },
+    {
       "id": "edtekla-dev-v1",
-      "name": "EDTeKLA Development Set v1",
+      "name": "EDTeKLA Development Subset v1",
       "version": "1.0.0",
       "language_pair": {"source": "eng", "target": "crk"},
       "size": 124,
@@ -14,7 +44,7 @@
       "do_not_train": true,
       "license": "research-only",
       "source": "EDTeKLA project, University of Alberta",
-      "notes": "62 gold standard + 62 textbook entries. Obtain from the crk-translate repo (private)."
+      "notes": "124-entry dev subset (62 gold standard + 62 textbook entries) for rapid iteration."
     }
   ]
 }

@@ -543,7 +543,7 @@ The harness produces a **run card** — a JSON file with your scores. Here's wha
   FST acceptance      94.4%
   Composite score     0.52  →  Functional ✓
 
-  124 entries · 47 retries · $0.18 total cost
+  404 entries (master_corpus.json) · 47 retries · $0.18 total cost
 ═══════════════════════════════════════════════════
 ```
 
@@ -731,7 +731,7 @@ Once your method has scores, package it so others can use it:
   "benchmarks": {
     "crk": {
       "date": "2026-06-01T00:00:00Z",
-      "corpus_size": 124,
+      "corpus_size": 404,
       "exact_match_rate": 0.12,
       "corpus_chrf": 48.7,
       "model": "google/gemini-2.5-pro",

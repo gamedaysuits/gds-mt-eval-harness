@@ -46,7 +46,7 @@ PARAMETER CHOICES:
 
 SMALL SAMPLE CONSIDERATIONS:
 ────────────────────────────
-With N < 100 entries (our EDTeKLA corpus has N=124), bootstrap CIs are
+With N < 100 entries (the EDTeKLA master corpus has N=404), bootstrap CIs are
 still valid but will be WIDE, correctly reflecting the high uncertainty.
 Per Koehn (2004), bootstrap resampling provides meaningful uncertainty
 estimates even at N ≈ 300. Below N=30, we emit a warning because:

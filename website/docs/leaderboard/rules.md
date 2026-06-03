@@ -51,7 +51,7 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 |----------|-------|
 | **ID** | `edtekla-dev-v1` |
 | **Language pair** | EN → CRK (Plains Cree, SRO orthography) |
-| **Entry count** | 124 |
+| **Entry count** | 404 (`master_corpus.json`: 62 gold + 342 textbook); 548 total available |
 | **License** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
 | **Provenance** | `gold_standard` (verified by speakers), `textbook` (published educational materials) |
 

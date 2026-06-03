@@ -5,7 +5,7 @@ title: Evaluation Datasets
 
 # Evaluation Datasets
 
-> **Executive Summary.** This page describes the evaluation datasets available for benchmarking, including the corpus entry schema, difficulty tiers (1–5), and provenance requirements. Currently available: EDTeKLA Dev v1 (Plains Cree, 124 entries) and FLORES+ Devtest (39 languages, 1,012 entries each).
+> **Executive Summary.** This page describes the evaluation datasets available for benchmarking, including the corpus entry schema, difficulty tiers (1–5), and provenance requirements. Currently available: EDTeKLA Dev v1 (Plains Cree, 548 total entries: 486 textbook + 62 gold standard) and FLORES+ Devtest (39 languages, 1,012 entries each).
 
 Datasets are the fixed targets that the harness runs against. Each dataset is a JSON file containing source→target pairs with gold-standard references. The harness scores model outputs against these references — it never modifies them.
 
@@ -96,7 +96,7 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 | **ID** | `edtekla-dev-v1` |
 | **Version** | `1.0` |
 | **Language pair** | EN → CRK (Plains Cree, SRO orthography) |
-| **Entry count** | 124 |
+| **Entry count** | 548 total (486 textbook + 62 gold standard). Current benchmark uses `master_corpus.json` (404 entries: 62 gold + 342 textbook subset). A 124-entry dev set (`edtekla_dev_124.json`) is also available for rapid iteration |
 | **Difficulty distribution** | Easy, Medium, Hard |
 | **Provenance** | `gold_standard` (verified by speakers), `textbook` (published educational materials) |
 | **License** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
@@ -110,8 +110,8 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 - Possessive paradigms
 - Complex sentence structures
 
-:::tip Why 124 entries?
-The dataset is deliberately small and curated. Each entry was verified by fluent speakers or sourced from published Cree language textbooks. A small, high-quality dataset with verified gold standards is more useful than a large, noisy one — especially for a low-resource language where "close enough" translations are often morphologically invalid.
+:::tip Corpus structure
+The full EdTeKLA collection has 548 curated entries: 486 from the textbook corpus (436 dev + 50 held-out) and 62 from the itwêwina gold standard. The current benchmark file `master_corpus.json` merges 62 gold + 342 textbook entries = 404 entries. Each entry was verified by fluent speakers or sourced from published Cree language textbooks. A smaller, high-quality dataset with verified gold standards is more useful than a large, noisy one — especially for a low-resource language where "close enough" translations are often morphologically invalid. A 124-entry working dev set (`edtekla_dev_124.json`) is available for rapid iteration during method development.
 :::
 
 ---

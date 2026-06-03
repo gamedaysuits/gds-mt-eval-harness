@@ -56,13 +56,14 @@ Identifies the evaluation dataset and pins it to a specific content version via 
 | `entry_count` | `number` | Number of entries in the dataset |
 
 ```json
+// Example using master_corpus.json (62 gold + 342 textbook = 404)
 {
   "dataset": {
     "id": "edtekla-dev-v1",
     "version": "1.0",
     "language_pair": "EN→CRK",
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "entry_count": 124
+    "entry_count": 404
   }
 }
 ```

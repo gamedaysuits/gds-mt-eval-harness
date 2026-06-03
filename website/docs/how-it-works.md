@@ -249,7 +249,7 @@ The OCAP® principles (Ownership, Control, Access, Possession), the CARE princip
 
 - **champollion** — Production-ready CLI tool. 10 translation methods, per-pair configuration, quality gates, 5 file formats. [Published on npm](https://www.npmjs.com/package/champollion).
 - **MT Eval Harness** — Working evaluation framework. chrF++, FST acceptance, and exact match metrics implemented. Run card schema finalized. Fingerprinting and integrity verification working.
-- **EDTeKLA Dev v1** — 124-entry Plains Cree evaluation corpus (CC BY-NC-SA 4.0), sourced from the University of Alberta's EdTeKLA research group.
+- **EDTeKLA Dev v1** — Plains Cree evaluation corpus (CC BY-NC-SA 4.0), sourced from the University of Alberta's EdTeKLA research group. The textbook corpus has 486 entries (436 dev + 50 held-out), plus 62 separate gold standard pairs from itwêwina (548 total). A 124-entry working dev set (`edtekla_dev_124.json`) is available for rapid iteration.
 - **FLORES+ Devtest** — 1,012 sentences × 39 languages (CC BY-SA 4.0).
 - **Arena website** — Docusaurus-based documentation site with leaderboard, specifications, tutorials, and sovereignty framework.
 - **Benchmark Specification** — [Canonical spec](/docs/specifications/benchmark) defining corpus schema, run card format, and evaluation protocol. For metric definitions, composite weights, and quality tiers, see [SCORING_SPEC.md](/docs/specifications/scoring).

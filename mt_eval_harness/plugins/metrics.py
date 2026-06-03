@@ -45,9 +45,9 @@ class MetricPlugin(Protocol):
 
         Args:
             entry: Dict containing at minimum:
-                - 'predicted': str — the model's translation
+                - 'source': str — the source text (normalized by pipeline)
                 - 'expected': str — the reference translation
-                - 'english': str — the source text
+                - 'predicted': str — the model's translation
                 Any additional fields from the corpus entry are also present.
 
         Returns:

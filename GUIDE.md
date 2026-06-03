@@ -429,12 +429,12 @@ Example output with CIs:
 TEST REPORT SUMMARY
 ============================================================
 
-  Total entries:    124
+  Total entries:    404
   Errors:           0
-  Evaluated:        124
+  Evaluated:        404
 
-  Exact match:      24/124 (19.4%)
-  Miss:             100/124 (80.6%)
+  Exact match:      78/404 (19.3%)
+  Miss:             326/404 (80.7%)
 
   Corpus chrF++:    42.96  [40.1 – 45.8]
   Corpus BLEU:      11.30  [9.2 – 13.4]

@@ -118,7 +118,7 @@ function CurrentBenchmarks() {
           <h3>EDTeKLA Dev Set v1</h3>
           <ul>
             <li><strong><Translate id="homepage.benchmarks.language">Language:</Translate></strong> <Translate id="homepage.benchmarks.edtekla.language">English → Plains Cree (SRO)</Translate></li>
-            <li><strong><Translate id="homepage.benchmarks.entries">Entries:</Translate></strong> <Translate id="homepage.benchmarks.edtekla.entries">124 curated pairs</Translate></li>
+            <li><strong><Translate id="homepage.benchmarks.entries">Entries:</Translate></strong> <Translate id="homepage.benchmarks.edtekla.entries">486+ curated pairs</Translate></li>
             <li><strong><Translate id="homepage.benchmarks.license">License:</Translate></strong> CC BY-NC-SA 4.0</li>
             <li><strong><Translate id="homepage.benchmarks.source">Source:</Translate></strong> <Translate id="homepage.benchmarks.edtekla.source">University of Alberta</Translate></li>
           </ul>
