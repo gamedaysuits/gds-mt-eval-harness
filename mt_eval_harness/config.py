@@ -330,6 +330,8 @@ MODEL_REGISTRY: dict[str, str] = {
     # DeepSeek
     "deepseek-v4-pro":   "deepseek/deepseek-v4-pro",
     "deepseek-r1":       "deepseek/deepseek-r1-0528",
+    # Qwen
+    "qwen3-235b":        "qwen/qwen3-235b-a22b",
 }
 
 DEFAULT_MODEL = "gemini-3.1-pro"

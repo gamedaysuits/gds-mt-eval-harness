@@ -116,6 +116,18 @@ GIELLALT_FST_REGISTRY: dict[str, dict[str, Any]] = {
         "maturity": "stub",  # 53KB — dev build, limited vocabulary
     },
     # -----------------------------------------------------------------------
+    # FORMAT: "manual" (pre-compiled from external project, no auto-download)
+    #   These FSTs were compiled from source outside the GiellaLT/Divvun
+    #   ecosystem and must be manually installed to ~/.mt-eval/fsts/{code}/.
+    # -----------------------------------------------------------------------
+    "que": {
+        "name": "Quechua (Cusco)",
+        "repo": "a-rios/squoia",
+        "format": "manual",
+        "maturity": "production",  # 1.1MB, full Cusco Quechua morphology
+        "notes": "Compiled from SQUOIA analyzeCuzco.fst (foma → hfst-invert → hfst-fst2fst -O)",
+    },
+    # -----------------------------------------------------------------------
     # FORMAT: "divvun" (legacy marker — no auto-install support yet)
     #   These languages have Divvun FSTs but no macOS .pkg with a usable
     #   acceptor has been verified. Users can manually install .hfstol files
