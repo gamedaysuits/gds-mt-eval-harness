@@ -50,13 +50,15 @@ Traditional ML research follows an extractive pattern:
 3. Researcher publishes a paper
 4. Community receives nothing
 
+This pattern now operates at industrial scale. Meta's OMT-1600 (March 2026) trained translation models for 1,600 languages — including Indigenous languages like Plains Cree — using web-scraped data and Bible translations. The models were trained without community consent protocols, the weights are not currently available for download, and the communities whose languages were modeled have no ownership stake, no governance role, and no revenue. The paper is the product. The community is the data source.
+
 The Arena inverts this:
 1. Researcher builds a method
-2. Arena validates it
+2. Arena validates it against community-curated corpora with morphological metrics
 3. Community receives ownership of the working code
 4. Community earns revenue from API usage
 
-This is not a theoretical framework — it is the operational pipeline for every Indigenous language method on the platform.
+**This is the fundamental difference between Champollion and every other LRL MT effort, including OMT-1600:** we don't just produce methods for communities — we transfer ownership of methods *to* communities. The code, the weights, the deployment infrastructure — it all becomes community property. This is not a theoretical framework — it is the operational pipeline for every Indigenous language method on the platform.
 
 ---
 

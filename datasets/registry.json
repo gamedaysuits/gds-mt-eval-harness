@@ -5,7 +5,10 @@
       "id": "edtekla-textbook",
       "name": "EDTeKLA Textbook Corpus",
       "version": "1.0.0",
-      "language_pair": {"source": "eng", "target": "crk"},
+      "language_pair": {
+        "source": "eng",
+        "target": "crk"
+      },
       "size": 486,
       "domain": "educational",
       "url": null,
@@ -17,34 +20,1191 @@
       "notes": "Canonical textbook corpus: 486 entries (436 dev + 50 held-out) across difficulty tiers 1-5."
     },
     {
-      "id": "edtekla-master",
-      "name": "EDTeKLA Master Corpus (Merged)",
+      "id": "edtekla-dev-v1",
+      "name": "EDTeKLA Development Corpus v1",
       "version": "1.0.0",
-      "language_pair": {"source": "eng", "target": "crk"},
-      "size": 404,
+      "language_pair": {
+        "source": "eng",
+        "target": "crk"
+      },
+      "size": 436,
       "domain": "educational",
       "url": null,
       "sha256": null,
       "access": "private",
       "do_not_train": true,
-      "license": "research-only",
+      "license": "CC BY-NC-SA 4.0",
       "source": "EDTeKLA project, University of Alberta",
-      "notes": "Derived merge: 62 gold standard (itwêwina) + 342 textbook entries = 404. Not the full textbook corpus (486). Obtain from crk-translate repo (private)."
+      "notes": "Full EDTeKLA textbook dev corpus: 436 entries across difficulty tiers 1-5 (from 486 total: 436 dev + 50 held-out test)."
     },
     {
-      "id": "edtekla-dev-v1",
-      "name": "EDTeKLA Development Subset v1",
-      "version": "1.0.0",
-      "language_pair": {"source": "eng", "target": "crk"},
-      "size": 124,
-      "domain": "educational",
+      "id": "tatoeba-spa-que-dev",
+      "name": "Tatoeba spa→que Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "spa",
+        "target": "que"
+      },
+      "size": 95,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 93,
+        "edu": 2
+      },
       "url": null,
       "sha256": null,
-      "access": "private",
+      "access": "local",
       "do_not_train": true,
-      "license": "research-only",
-      "source": "EDTeKLA project, University of Alberta",
-      "notes": "124-entry dev subset (62 gold standard + 62 textbook entries) for rapid iteration."
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/spa-que-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 95 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-haw-dev",
+      "name": "Tatoeba eng→haw Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "haw"
+      },
+      "size": 194,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 180,
+        "edu": 10,
+        "ui": 4
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-haw-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 194 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-ceb-dev",
+      "name": "Tatoeba eng→ceb Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "ceb"
+      },
+      "size": 132,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 132
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-ceb-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 132 entries, stratified across 1 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-ilo-dev",
+      "name": "Tatoeba eng→ilo Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "ilo"
+      },
+      "size": 105,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 101,
+        "support": 2,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-ilo-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 105 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-war-dev",
+      "name": "Tatoeba eng→war Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "war"
+      },
+      "size": 131,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 128,
+        "support": 2,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-war-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 131 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-hil-dev",
+      "name": "Tatoeba eng→hil Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "hil"
+      },
+      "size": 56,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 54,
+        "marketing": 1,
+        "edu": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-hil-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 56 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-pam-dev",
+      "name": "Tatoeba eng→pam Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "pam"
+      },
+      "size": 48,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 39,
+        "news": 1,
+        "support": 1,
+        "ui": 7
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-pam-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 48 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-pag-dev",
+      "name": "Tatoeba eng→pag Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "pag"
+      },
+      "size": 60,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 57,
+        "ui": 3
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-pag-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 60 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-yor-dev",
+      "name": "Tatoeba eng→yor Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "yor"
+      },
+      "size": 68,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 68
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-yor-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 1 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-hau-dev",
+      "name": "Tatoeba eng→hau Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "hau"
+      },
+      "size": 140,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 132,
+        "ecommerce": 3,
+        "support": 2,
+        "marketing": 1,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-hau-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 140 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-fra-hau-dev",
+      "name": "Tatoeba fra→hau Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "fra",
+        "target": "hau"
+      },
+      "size": 168,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 164,
+        "ui": 3,
+        "support": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/fra-hau-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-ibo-dev",
+      "name": "Tatoeba eng→ibo Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "ibo"
+      },
+      "size": 35,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 34,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-ibo-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 35 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-zul-dev",
+      "name": "Tatoeba eng→zul Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "zul"
+      },
+      "size": 112,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 101,
+        "edu": 6,
+        "support": 2,
+        "legal": 1,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-zul-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 112 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-xho-dev",
+      "name": "Tatoeba eng→xho Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "xho"
+      },
+      "size": 75,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 59,
+        "edu": 5,
+        "support": 4,
+        "ui": 7
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-xho-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 75 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-sna-dev",
+      "name": "Tatoeba eng→sna Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "sna"
+      },
+      "size": 47,
+      "domain": "mixed",
+      "domain_distribution": {
+        "religious": 1,
+        "conv": 46
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-sna-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-lug-dev",
+      "name": "Tatoeba eng→lug Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "lug"
+      },
+      "size": 183,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 174,
+        "ui": 3,
+        "edu": 5,
+        "religious": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-lug-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 183 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-tir-dev",
+      "name": "Tatoeba eng→tir Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "tir"
+      },
+      "size": 54,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 37,
+        "ecommerce": 1,
+        "edu": 3,
+        "gov": 3,
+        "legal": 1,
+        "religious": 1,
+        "support": 3,
+        "ui": 5
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tir-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 54 entries, stratified across 8 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-amh-dev",
+      "name": "Tatoeba eng→amh Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "amh"
+      },
+      "size": 73,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 47,
+        "ecommerce": 1,
+        "edu": 22,
+        "support": 1,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-amh-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 73 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-cym-dev",
+      "name": "Tatoeba eng→cym Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "cym"
+      },
+      "size": 47,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 44,
+        "ui": 2,
+        "support": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-cym-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-fra-eus-dev",
+      "name": "Tatoeba fra→eus Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "fra",
+        "target": "eus"
+      },
+      "size": 59,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 58,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/fra-eus-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-fra-cat-dev",
+      "name": "Tatoeba fra→cat Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "fra",
+        "target": "cat"
+      },
+      "size": 57,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 57
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/fra-cat-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 57 entries, stratified across 1 domain(s)."
+    },
+    {
+      "id": "tatoeba-por-glg-dev",
+      "name": "Tatoeba por→glg Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "por",
+        "target": "glg"
+      },
+      "size": 102,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 99,
+        "ecommerce": 1,
+        "tech": 1,
+        "support": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/por-glg-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 102 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-fra-ltz-dev",
+      "name": "Tatoeba fra→ltz Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "fra",
+        "target": "ltz"
+      },
+      "size": 196,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 194,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/fra-ltz-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 196 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-deu-ltz-dev",
+      "name": "Tatoeba deu→ltz Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "deu",
+        "target": "ltz"
+      },
+      "size": 179,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 176,
+        "ui": 1,
+        "ecommerce": 1,
+        "edu": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/deu-ltz-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 179 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-nld-fry-dev",
+      "name": "Tatoeba nld→fry Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "nld",
+        "target": "fry"
+      },
+      "size": 58,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 54,
+        "edu": 3,
+        "marketing": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/nld-fry-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-mlt-dev",
+      "name": "Tatoeba eng→mlt Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "mlt"
+      },
+      "size": 129,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 127,
+        "support": 1,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-mlt-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 129 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-ita-mlt-dev",
+      "name": "Tatoeba ita→mlt Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "ita",
+        "target": "mlt"
+      },
+      "size": 180,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 177,
+        "tech": 3
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/ita-mlt-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 180 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-dan-fao-dev",
+      "name": "Tatoeba dan→fao Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "dan",
+        "target": "fao"
+      },
+      "size": 168,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 167,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/dan-fao-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 2 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-sme-dev",
+      "name": "Tatoeba eng→sme Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "sme"
+      },
+      "size": 58,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 49,
+        "gov": 1,
+        "literary": 1,
+        "marketing": 1,
+        "support": 3,
+        "ui": 3
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-sme-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 6 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-tam-dev",
+      "name": "Tatoeba eng→tam Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "tam"
+      },
+      "size": 153,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 149,
+        "ecommerce": 1,
+        "support": 1,
+        "ui": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tam-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 153 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-tel-dev",
+      "name": "Tatoeba eng→tel Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "tel"
+      },
+      "size": 71,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 55,
+        "ecommerce": 3,
+        "edu": 7,
+        "support": 2,
+        "ui": 4
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tel-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 71 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-kan-dev",
+      "name": "Tatoeba eng→kan Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "kan"
+      },
+      "size": 61,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 52,
+        "ecommerce": 1,
+        "legal": 1,
+        "marketing": 2,
+        "support": 1,
+        "ui": 4
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-kan-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 6 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-mal-dev",
+      "name": "Tatoeba eng→mal Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "mal"
+      },
+      "size": 59,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 50,
+        "edu": 2,
+        "literary": 1,
+        "support": 3,
+        "ui": 3
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-mal-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-guj-dev",
+      "name": "Tatoeba eng→guj Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "guj"
+      },
+      "size": 165,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 153,
+        "ui": 11,
+        "tech": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-guj-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 165 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-pan-dev",
+      "name": "Tatoeba eng→pan Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "pan"
+      },
+      "size": 68,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 52,
+        "edu": 2,
+        "literary": 1,
+        "support": 3,
+        "tech": 1,
+        "ui": 9
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-pan-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 6 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-sin-dev",
+      "name": "Tatoeba eng→sin Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "sin"
+      },
+      "size": 69,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 67,
+        "support": 1,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-sin-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 69 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-urd-dev",
+      "name": "Tatoeba eng→urd Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "urd"
+      },
+      "size": 181,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 170,
+        "support": 3,
+        "religious": 1,
+        "ui": 5,
+        "ecommerce": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-urd-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 181 entries, stratified across 5 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-mya-dev",
+      "name": "Tatoeba eng→mya Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "mya"
+      },
+      "size": 77,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 77
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-mya-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 77 entries, stratified across 1 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-lao-dev",
+      "name": "Tatoeba eng→lao Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "lao"
+      },
+      "size": 68,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 46,
+        "ecommerce": 2,
+        "edu": 14,
+        "legal": 1,
+        "medical": 1,
+        "tech": 1,
+        "ui": 3
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-lao-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 7 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-zsm-dev",
+      "name": "Tatoeba eng→zsm Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "zsm"
+      },
+      "size": 148,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 139,
+        "ui": 4,
+        "ecommerce": 3,
+        "support": 2
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-zsm-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 148 entries, stratified across 4 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-mon-dev",
+      "name": "Tatoeba eng→mon Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "mon"
+      },
+      "size": 138,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 136,
+        "support": 1,
+        "ui": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-mon-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 138 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-kaz-dev",
+      "name": "Tatoeba eng→kaz Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "kaz"
+      },
+      "size": 113,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 105,
+        "support": 3,
+        "ui": 5
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-kaz-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 113 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-uzb-dev",
+      "name": "Tatoeba eng→uzb Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "uzb"
+      },
+      "size": 167,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 160,
+        "ui": 3,
+        "support": 4
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-uzb-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 167 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-rus-uzb-dev",
+      "name": "Tatoeba rus→uzb Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "rus",
+        "target": "uzb"
+      },
+      "size": 51,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 51
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/rus-uzb-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 51 entries, stratified across 1 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-bos-dev",
+      "name": "Tatoeba eng→bos Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "bos"
+      },
+      "size": 64,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 62,
+        "ui": 1,
+        "support": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-bos-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 64 entries, stratified across 3 domain(s)."
+    },
+    {
+      "id": "tatoeba-eng-sqi-dev",
+      "name": "Tatoeba eng→sqi Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "sqi"
+      },
+      "size": 61,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 57,
+        "ui": 3,
+        "religious": 1
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-sqi-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 3 domain(s)."
     }
   ]
 }

@@ -6,9 +6,9 @@ title: The MT Eval Arena
 
 # The MT Eval Arena
 
-> **Executive Summary.** The MT Eval Arena is an open benchmarking platform for machine translation methods, with a focus on languages that commercial services will never support. It provides standardized evaluation, a public leaderboard, and a deployment bridge to production via champollion. For Indigenous languages, proven methods transfer ownership to the community.
+> **Executive Summary.** The MT Eval Arena is an open benchmarking platform for machine translation methods, with a focus on languages where commercial MT either doesn't exist or hasn't been independently verified. It provides standardized evaluation, a public leaderboard, and a deployment bridge to production via champollion. For Indigenous languages, proven methods transfer ownership to the community.
 
-An open proving ground for machine translation methods — especially for languages that commercial services will never support.
+An open proving ground for machine translation methods — especially for languages where commercial MT either doesn't exist or hasn't been independently verified.
 
 Build a method. Benchmark it. Prove it works. If it wins, it gets deployed.
 
@@ -16,9 +16,9 @@ Build a method. Benchmark it. Prove it works. If it wins, it gets deployed.
 
 ## The Problem
 
-Google Translate supports ~130 languages. There are over 7,000 spoken on Earth. For thousands of languages — including many Indigenous languages with active speaker communities — no commercial translation API exists, no large parallel corpus has been assembled, and no pretrained model produces reliable output.
+Google Translate supports ~130 languages. Meta's NLLB-200 covers ~200, and OMT-1600 (March 2026) claims 1,600. There are over 7,000 spoken on Earth. For the ~1,300 languages at OMT-1600's lowest resource tiers, the model weights are not available, quality is below usable thresholds, and evaluation used Bible-domain text with standard machine metrics — no morphological validation, no independent testing, no community governance. For the remaining ~5,400 languages, no pretrained model produces any output at all.
 
-The economics of commercial MT don't reach these languages. The speakers who need translation tools the most are the same communities least likely to have them built.
+Big Tech is now investing in LRL coverage — but coverage without independent quality verification, morphological validation, or community governance is coverage without trust. The speakers who need translation tools the most are the same communities least likely to have them built.
 
 **The Arena exists to change that.** It provides the infrastructure to develop, evaluate, and deploy translation methods for any language — with reproducible scoring, open submission, and community governance over who controls the results.
 

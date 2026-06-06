@@ -1,0 +1,1741 @@
+{
+  "corpus_id": "tatoeba-eng-mal-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "mal"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:03:15.016657+00:00",
+  "entry_count": 59,
+  "domains": [
+    "conv",
+    "edu",
+    "literary",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_290445",
+      "source": "Did he go there?",
+      "reference": "അവൻ അവിടെ പോയോ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "290445",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "711693",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "290445",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/290445"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_436433",
+      "source": "I am sure.",
+      "reference": "എനിക്ക് ഉറപ്പാണ്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "800318",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436433"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2657541",
+      "source": "Truth alone triumphs.",
+      "reference": "സത്യം മാത്രം ജയിക്കും.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2657541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2727643",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2657541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2657541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_53014",
+      "source": "Judy dances very well.",
+      "reference": "ജൂഡി നന്നായി നൃത്തം ചെയ്യും.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53014",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "652225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53014",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53014"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2862873",
+      "source": "Long time no see.",
+      "reference": "വളരെ നാളായല്ലൊ കണ്ടിട്ട്",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2862873",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2862866",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2862873",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2862873"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4646731",
+      "source": "I was in Rome.",
+      "reference": "ഞാന്‍ റോമില്‍ പോയിട്ടുണ്ട്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4646731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "656093",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4646731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4646731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_6589067",
+      "source": "The finger is broken.",
+      "reference": "വിരൽ ഒടിഞ്ഞു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6589067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "10662455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6589067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6589067"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_388924",
+      "source": "She quit smoking.",
+      "reference": "അവൾ പുകവലി നിർത്തി.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "388924",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "781067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "388924",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/388924"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_53170",
+      "source": "Jack isn't here.",
+      "reference": "ജാക്ക് ഇവിടെയില്ല.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53170",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "765300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53170",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53170"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_461975",
+      "source": "I am American.",
+      "reference": "ഞാൻ ഒരു അമേരിക്കൻ ആണ്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "461975",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "5494550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "461975",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/461975"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_261906",
+      "source": "I want to live.",
+      "reference": "എനിക്ക് ജീവിക്കണം.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261906",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "655867",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261906",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261906"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_1646",
+      "source": "My name is Jack.",
+      "reference": "എൻറെ പേര് ജാക്ക് എന്നാണ്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2730713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_475766",
+      "source": "Will it rain tomorrow?",
+      "reference": "നാളെ മഴ പെയ്യുമോ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "475766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "765259",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "475766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/475766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_570843",
+      "source": "He quit smoking.",
+      "reference": "അവൾ പുകവലി നിർത്തി.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "570843",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "781067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "570843",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/570843"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_433652",
+      "source": "Don't touch it.",
+      "reference": "അത് തൊടരുത്",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433652",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "891371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433652",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433652"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1624935",
+      "source": "Count to one hundred.",
+      "reference": "നൂറ് വരെ എണ്ണൂ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1624935",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "1776835",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1624935",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1624935"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2434447",
+      "source": "Thou art That.",
+      "reference": "അത് നീയാകുന്നു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2434447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2226898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2434447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2434447"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2434448",
+      "source": "That thou art.",
+      "reference": "അത് നീയാകുന്നു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2434448",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2226898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2434448",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2434448"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_518553",
+      "source": "You may go.",
+      "reference": "നിനക്ക് വേണമെങ്കില്‍ പോകാം.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "518553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2226919",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "518553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/518553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_6951705",
+      "source": "Measure twice. Cut once.",
+      "reference": "രണ്ടു തവണ അളക്കൂ, ഒരു തവണ മുറിക്കൂ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6951705",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2186763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6951705",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6951705"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_6356346",
+      "source": "I really like swimming.",
+      "reference": "എനിക്ക് നീന്തൽ വളരെ ഇഷ്ടമാണ്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6356346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "781650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6356346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6356346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_650268",
+      "source": "Suddenly he saw me.",
+      "reference": "പെട്ടെന്ന് അവന്‍ എന്നെ കണ്ടു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "650268",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "650676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "650268",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/650268"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_392279",
+      "source": "This is not cool.",
+      "reference": "ഇത് തണുത്തതല്ല.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "392279",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "1233111",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "392279",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/392279"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_13682385",
+      "source": "She was born in Africa.",
+      "reference": "അവൻ ആഫ്രിക്കയിലാണ് ജനിച്ചത്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13682385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "759826",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13682385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13682385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_436815",
+      "source": "I need a hammer.",
+      "reference": "എനിക്കൊരു ചുറ്റിക വേണം.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436815",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "652202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436815",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436815"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_17421",
+      "source": "I believe you.",
+      "reference": "ഞാൻ നിന്നെ വിശ്വസിക്കുന്നു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17421",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "5494542",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17421",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17421"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_280931",
+      "source": "They hated each other.",
+      "reference": "അവര്‍ പരസ്പരം വെറുത്തു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "3712142",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280931"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_42863",
+      "source": "Its color is red.",
+      "reference": "ഇതിന്റെ നിറം ചുകപ്പാണ് .",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42863",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2226915",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42863",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42863"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1635411",
+      "source": "My clothes are there.",
+      "reference": "എന്റെ വസ്ത്രങ്ങൾ അവിടെയാണ്.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1635411",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "1776825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1635411",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1635411"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_6917622",
+      "source": "I cannot hear anything.",
+      "reference": "എനിക്ക് ഒന്നും കേള്കുന്നില്ല",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6917622",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2987838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6917622",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6917622"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_1112479",
+      "source": "The door is locked.",
+      "reference": "വാതില്‍ പൂട്ടിയിരിക്കുന്നു.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1112479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2296510",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1112479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1112479"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_433695",
+      "source": "Come along with us.",
+      "reference": "ഞങ്ങളുടെ കൂടെ വരൂ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433695",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "817283",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433695",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433695"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2861815",
+      "source": "She will do it.",
+      "reference": "അവൾ അത് ചെയ്യും.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2861815",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "10655887",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2861815",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2861815"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_7896068",
+      "source": "She is pretty.",
+      "reference": "അവൾ സുന്ദരിയാണ്‌.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7896068",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "3178043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7896068",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7896068"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2296177",
+      "source": "Who betrayed us?",
+      "reference": "ആരാണ് നമ്മളെ ചതിച്ചത്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2296177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2296440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2296177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2296177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1300817",
+      "source": "I went, too.",
+      "reference": "ഞാനും പോയി.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1300817",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "772211",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1300817",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1300817"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "reference": "നിങ്ങൾ ആരാണ്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "3665570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_54973",
+      "source": "Who broke this?",
+      "reference": "ആരാണിത് പൊട്ടിച്ചത്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54973",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "794024",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54973",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54973"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_16486",
+      "source": "Where were you?",
+      "reference": "നീ എവിടെയായിരുന്നു",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16486",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2073515",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16486",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16486"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2730409",
+      "source": "Where is my diary?",
+      "reference": "എൻറെ ഡയറി എവിടെയാണ്.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2730409",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2730720",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2730409",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2730409"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2123449",
+      "source": "Measure twice, cut once!",
+      "reference": "രണ്ടു തവണ അളക്കൂ, ഒരു തവണ മുറിക്കൂ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2123449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2186763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2123449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2123449"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_1963344",
+      "source": "Where is my newspaper?",
+      "reference": "എൻറെ വർത്തമാനപത്രം എവിടെയാണ്.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1963344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2730719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1963344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1963344"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1495693",
+      "source": "Measure twice, cut once.",
+      "reference": "രണ്ടു തവണ അളക്കൂ, ഒരു തവണ മുറിക്കൂ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1495693",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2186763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1495693",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1495693"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_873552",
+      "source": "Where is your brother?",
+      "reference": "നിന്റെ സഹോദരനെവിടെയാണ്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "873552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "950161",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "873552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/873552"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_417003",
+      "source": "Long time, no see.",
+      "reference": "വളരെ നാളായല്ലൊ കണ്ടിട്ട്",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "417003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2862866",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "417003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/417003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_416367",
+      "source": "Where are you going?",
+      "reference": "എവിടെ പോകുന്നു",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "416367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2766999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "416367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/416367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_370703",
+      "source": "Where are you from?",
+      "reference": "നീ എവിടുന്നാണ്",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "1384735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_251080",
+      "source": "Where is my car?",
+      "reference": "എന്റെ കാര്‍ എവിടെയാണ്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251080",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "655868",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251080",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251080"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_39875",
+      "source": "At last, he came.",
+      "reference": "അവസാനം, അവൻ വന്നു.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "766449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39875"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_37512",
+      "source": "Where does it hurt?",
+      "reference": "എവിടെയാണ് വേദനിക്കുന്നത്?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37512",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "652204",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37512",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37512"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2968334",
+      "source": "You're a teacher.",
+      "reference": "നിങ്ങൾ ഒരു അധ്യാപകനാണ്.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2968334",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "670455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2968334",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2968334"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_69155",
+      "source": "You are a teacher.",
+      "reference": "നിങ്ങൾ ഒരു അധ്യാപകനാണ്.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69155",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "670455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69155",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69155"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_259390",
+      "source": "I like short poems.",
+      "reference": "എനിക്ക് ചെറിയ കവിതകൾ ഇഷ്ടമാണ്.",
+      "domain": "literary",
+      "difficulty": 1,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259390",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "711699",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259390",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259390"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_255269",
+      "source": "I helped Tony.",
+      "reference": "ഞാന്‍ ടോണിയെ സഹായിച്ചു.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "652282",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255269"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_33256",
+      "source": "Bob helped me.",
+      "reference": "ബോബ് എന്നെ സഹായിച്ചു.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "652319",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33256"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8517735",
+      "source": "Tom doesn't want help.",
+      "reference": "ടോമിന് സഹായിക്കാൻ താത്പര്യം ഇല്ല.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8517735",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "10665958",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8517735",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8517735"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1071660",
+      "source": "I have no appetite.",
+      "reference": "എനിക്ക് വിശക്കുന്നില്ല.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1071660",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "2226878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1071660",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1071660"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_442957",
+      "source": "Please open the bottle.",
+      "reference": "ദയവായി ഈ കുപ്പി തുറക്കുക.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "442957",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "766345",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "442957",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/442957"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_274213",
+      "source": "Please open the window.",
+      "reference": "ദയവായി ആ ജനാല തുറക്കൂ",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "274213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mal",
+        "target_sentence_id": "653465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "274213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/274213"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

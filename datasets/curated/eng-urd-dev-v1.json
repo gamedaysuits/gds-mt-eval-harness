@@ -1,0 +1,5279 @@
+{
+  "corpus_id": "tatoeba-eng-urd-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "urd"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:07:40.256901+00:00",
+  "entry_count": 181,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "religious",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13835191",
+      "source": "We should work.",
+      "reference": "ہمیں کام کرنا چاہیے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13835191",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "13835193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13835191",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13835191"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_13545957",
+      "source": "That was special.",
+      "reference": "وہ خاص تھا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13545957",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "13545962",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13545957",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13545957"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_13388272",
+      "source": "We are pacifists.",
+      "reference": "ہم امن پسند لوگ ہیں",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388272",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4571969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388272",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388272"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_13388020",
+      "source": "Be more aggressive.",
+      "reference": "زیادہ جارحانہ انداز اختیار کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388020",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10781897",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388020",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388020"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_12484519",
+      "source": "Two colas, please.",
+      "reference": "دو کولا، براےٴ مہربانی",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12484519",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486661",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12484519",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12484519"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_12123405",
+      "source": "I am Alpha.",
+      "reference": "میں الفا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12123405",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12123470",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12123405",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12123405"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_12103456",
+      "source": "Ask again tomorrow.",
+      "reference": "کل صبح پوچھ لیجیےگا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12103456",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12103456",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12103456"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11260032",
+      "source": "Thank you, buddy.",
+      "reference": "شکریہ۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "9020893",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260032"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11260025",
+      "source": "Oh, thank you.",
+      "reference": "شکریہ۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "9020893",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_9839051",
+      "source": "Victory to Pakistan.",
+      "reference": "پاکستان زندہ باد۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9839051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "9018944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9839051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9839051"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_9839046",
+      "source": "Long live Pakistan.",
+      "reference": "پاکستان زندہ باد۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9839046",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "9018944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9839046",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9839046"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8416467",
+      "source": "Tom drinks water.",
+      "reference": "ٹام پانی پیتا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8416467",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12032754",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8416467",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8416467"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8229162",
+      "source": "Let me in!",
+      "reference": "مجھے اندر آنے دو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8229162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8229162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8229162"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_7591921",
+      "source": "Tom felt powerless.",
+      "reference": "ٹوم بے بسی محسوس کر رہا تھا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7591921",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10823906",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7591921",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7591921"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7590702",
+      "source": "This is unprecedented.",
+      "reference": "یہ بےمثال ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7590702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10814949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7590702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7590702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7587481",
+      "source": "I like sugar.",
+      "reference": "مجھے چینی پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7587481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10815015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7587481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7587481"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7428269",
+      "source": "I am playing.",
+      "reference": "میں کھیل رہا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7428269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812150",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7428269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7428269"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7264970",
+      "source": "Okay, you win.",
+      "reference": "ٹھیک، تم جیت گےٴ۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7264970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812209",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7264970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7264970"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7095890",
+      "source": "She is unstoppable!",
+      "reference": "اس کی روک تھام نہیں ہو سکتی ہے!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7095890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486664",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7095890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7095890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7067949",
+      "source": "I like peas.",
+      "reference": "مجھے مٹر اچھے لگتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7067949",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812515",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7067949",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7067949"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_6381553",
+      "source": "We are family.",
+      "reference": "ہم خاندان ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6381553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812136",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6381553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6381553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6145332",
+      "source": "Mary is cisgender.",
+      "reference": "میَری متوافق الجنس ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6145332",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486833",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6145332",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6145332"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6084291",
+      "source": "Layla started yelling.",
+      "reference": "لیلہ چیخنے لگی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6084291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6313740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6084291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6084291"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6034367",
+      "source": "Mosquitoes are insects.",
+      "reference": "مچھر کیڑے ہوتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6034367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812499",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6034367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6034367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_5690261",
+      "source": "Leaders serve society.",
+      "reference": "رہنما لوگ سماج کی خدمت کرتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5690261",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5690263",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5690261",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5690261"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "مجھے آپ سے پیار ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "510683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5065819",
+      "source": "We learn Arabic.",
+      "reference": "ہم عربی پرھتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5065819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1539314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5065819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5065819"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4927698",
+      "source": "Is he alright?",
+      "reference": "کیا وہ ٹھیک ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4927698",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5529370",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4927698",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4927698"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4667263",
+      "source": "Tom is strange.",
+      "reference": "ٹام عجیب ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4667263",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123956",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4667263",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4667263"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4265695",
+      "source": "Tom is fat.",
+      "reference": "ٹام موٹا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4265695",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4265695",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4265695"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_4006788",
+      "source": "Welcome to Tatoeba.",
+      "reference": "ٹاٹوئیبا پہ خوش آمدید۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4006788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1566613",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4006788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4006788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3950478",
+      "source": "I tried running.",
+      "reference": "میں نے بھاگنے کی کوشش کی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3950478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1677027",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3950478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3950478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3941705",
+      "source": "I want milk.",
+      "reference": "مجھے دودھ چاہئیے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3941705",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1505841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3941705",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3941705"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3921108",
+      "source": "Tom is weird.",
+      "reference": "ٹام عجیب ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3921108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123956",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3921108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3921108"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3918789",
+      "source": "I caught him.",
+      "reference": "میں نے اس کو پکڑا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3918789",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12032766",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3918789",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3918789"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3895188",
+      "source": "Nothing is working.",
+      "reference": "کچ بھی کام نہیں کر رہا",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3895188",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "3788621",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3895188",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3895188"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3577027",
+      "source": "Rooms are black.",
+      "reference": "کمرے سیاہ ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3577027",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "3254493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3577027",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3577027"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3570618",
+      "source": "Ajay is bad.",
+      "reference": "اجے غریب ہے.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3570618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "3341724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3570618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3570618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3524072",
+      "source": "I like coffee.",
+      "reference": "مجھے کافی پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3524072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4223650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3524072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3524072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3341721",
+      "source": "Ajay is poor.",
+      "reference": "اجے غریب ہے.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3341721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "3341724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3341721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3341721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3171312",
+      "source": "Tom is deaf.",
+      "reference": "ٹام بہرہ ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3171312",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123915",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3171312",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3171312"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2873638",
+      "source": "I threw one.",
+      "reference": "میں نے ایک پھینکا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2873638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4992376",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2873638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2873638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "جانا چاہتا ہوں.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "3336480",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2858997",
+      "source": "She loves art.",
+      "reference": "اسے آرٹ پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2858997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2858997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2858997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2808096",
+      "source": "She is Italian.",
+      "reference": "وہ اِطالوی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2808096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4992372",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2808096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2808096"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "reference": "مجھے مدد کی ضرورت ہے۔",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2722194",
+      "source": "OK, you win.",
+      "reference": "ٹھیک، تم جیت گےٴ۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2722194",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812209",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2722194",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2722194"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2663675",
+      "source": "Faith, unity, discipline.",
+      "reference": "ايمان، اتحاد، نظم.",
+      "domain": "religious",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2663675",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2663674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2663675",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2663675"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_2657541",
+      "source": "Truth alone triumphs.",
+      "reference": "سچائی ہی جیتتی ہے.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2657541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2657560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2657541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2657541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2650182",
+      "source": "Stop acting jealous.",
+      "reference": "جلنا بند کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2650182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4255514",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2650182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2650182"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2615709",
+      "source": "Tom has died.",
+      "reference": "ٹام مر گیا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2615709",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2615709",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2615709"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2396059",
+      "source": "Hurry up, please.",
+      "reference": "جلدی کرو۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2396059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1539319",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2396059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2396059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "مجھے آپ سے پیار ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "510683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2336608",
+      "source": "They eat meat.",
+      "reference": "وہ گوشت کھاتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2336608",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5055659",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2336608",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2336608"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2325171",
+      "source": "I enjoy chess.",
+      "reference": "میں مزے سے شطرنج کھیلتا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2325171",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12032644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2325171",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2325171"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2262444",
+      "source": "Tom is mad.",
+      "reference": "ٹام ناراض ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2262444",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2262444",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2262444"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2261159",
+      "source": "Tom is gone.",
+      "reference": "ٹام چلا گیا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2261159",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2261159",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2261159"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2252618",
+      "source": "There is silence.",
+      "reference": "خاموشی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2252618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6112962",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2252618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2252618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2249961",
+      "source": "Shut the book.",
+      "reference": "کتاب بند کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249961",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1580456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249961",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249961"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2249679",
+      "source": "Now go home.",
+      "reference": "اب گھر جاؤ۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249679",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6055407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249679",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249679"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2245894",
+      "source": "I have proof.",
+      "reference": "میری پاس ثبوت ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245894",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4992324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245894",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245894"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2245880",
+      "source": "I have evidence.",
+      "reference": "میری پاس ثبوت ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4992324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2245288",
+      "source": "Does that matter?",
+      "reference": "کیا کوئی فرق پڑتا ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4367347",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245288"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2241514",
+      "source": "We were wrong.",
+      "reference": "ہم غلط تھے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4992366",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2241427",
+      "source": "We needed help.",
+      "reference": "ہمیں مدد چاہیے تھی۔",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241427",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10823973",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241427",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241427"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2239840",
+      "source": "Tom was rich.",
+      "reference": "ٹام أمیر تھا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2239840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5127576",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2239840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2239840"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2237654",
+      "source": "Tom saw Mary.",
+      "reference": "ٹام نے مریم کو دیکھا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237654",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2078391",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237654",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237654"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2237338",
+      "source": "Tom looks unhappy.",
+      "reference": "ٹام ناخوش لگ رہا ہے۔",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4221873",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237338"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2236920",
+      "source": "Tom is well.",
+      "reference": "ٹام ٹھیک ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236920",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236920",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236920"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2236907",
+      "source": "Tom is up.",
+      "reference": "ٹام اٹھ چکا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236907",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236907",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236907"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2236724",
+      "source": "Tom is ill.",
+      "reference": "ٹام بیمار ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236724",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123954",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236724",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236724"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2236688",
+      "source": "Tom is fast.",
+      "reference": "ٹام تیز ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236688",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123919",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236688",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236688"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2236670",
+      "source": "Tom is drunk.",
+      "reference": "ٹام نشہ میں ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236670",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123918",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236670",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236670"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2203592",
+      "source": "Tom is young.",
+      "reference": "ٹام جوان ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123758",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2203574",
+      "source": "Tom is weak.",
+      "reference": "ٹام کمزور ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123977",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2203468",
+      "source": "Tom is trapped.",
+      "reference": "ٹام پھنسا ہوا ہے۔",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203468",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123975",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203468",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203468"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2203461",
+      "source": "Tom is tired.",
+      "reference": "ٹام تھکا ہوا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203461",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123973",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203461",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203461"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2203405",
+      "source": "Tom is strong.",
+      "reference": "ٹام طاقتور ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203405",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123957",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203405",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203405"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2203345",
+      "source": "Tom is shy.",
+      "reference": "ٹام شرمیلا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203345",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123953",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203345",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203345"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2203310",
+      "source": "Tom is safe.",
+      "reference": "ٹام محفوظ ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203310",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203310",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203310"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2203307",
+      "source": "Tom is sad.",
+      "reference": "ٹام اداس یے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2203295",
+      "source": "Tom is right.",
+      "reference": "ٹام صحیص ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2203295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2203295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2203295"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2202940",
+      "source": "Tom is here.",
+      "reference": "ٹام ادھر ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2202940",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123943",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2202940",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2202940"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2202889",
+      "source": "Tom is free.",
+      "reference": "ٹام آذاد ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2202889",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2202889",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2202889"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1877186",
+      "source": "Tom is hurt.",
+      "reference": "ٹام زخمی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1877186",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123945",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1877186",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1877186"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1868257",
+      "source": "Tom hates you.",
+      "reference": "ٹام تم سے نفرت کرتا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2116705",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868257"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1868217",
+      "source": "Tom is dead.",
+      "reference": "ٹام مر چکا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868217",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123914",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868217",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868217"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1868167",
+      "source": "Tom is scared.",
+      "reference": "ٹام ڈرا ہوا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1868002",
+      "source": "Tom ordered pizza.",
+      "reference": "ٹام نے پیزہ آرڈر کیا۔",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868002",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1946091",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868002",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868002"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1856044",
+      "source": "I love chocolate.",
+      "reference": "مجھے چاکلیٹ پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1856044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6682314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1856044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1856044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1844207",
+      "source": "Grab my hand.",
+      "reference": "میرا ہاتھ تھامو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1844207",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1844207",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1844207"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1780045",
+      "source": "This is nothing.",
+      "reference": "یہ تو کچھ نہیں ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1780045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5101115",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1780045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1780045"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1505462",
+      "source": "I hate working.",
+      "reference": "مجھے کام کرنے سے نفرت ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1505462",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1505829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1505462",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1505462"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1504448",
+      "source": "He respects me.",
+      "reference": "وہ میری عزت کرتا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1504448",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1505861",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1504448",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1504448"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1487691",
+      "source": "How is it?",
+      "reference": "کیسا ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1487691",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4272503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1487691",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1487691"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_1473574",
+      "source": "And now, what?",
+      "reference": "اور اب کیا؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1473574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1473831",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1473574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1473574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1468927",
+      "source": "Leave it behind.",
+      "reference": "چھوڑ دو اسے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1468927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1470346",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1468927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1468927"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1440754",
+      "source": "Nothing scares me.",
+      "reference": "مجھے کسی بھی چیز سے ڈر نہیں لگتا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1440754",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1440757",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1440754",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1440754"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1440369",
+      "source": "She won everything.",
+      "reference": "اس نے سب کچھ جیت لیا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1440369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1440773",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1440369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1440369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1440368",
+      "source": "He won everything.",
+      "reference": "اس نے سب کچھ جیت لیا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1440368",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1440773",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1440368",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1440368"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1369203",
+      "source": "My nose itches.",
+      "reference": "میرے ناک میں کھجلی ہو رہی یے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1369203",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812618",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1369203",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1369203"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1289095",
+      "source": "Is it raining?",
+      "reference": "بارش ہو رہی ہے کیا؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1289095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6112922",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1289095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1289095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1205289",
+      "source": "Welcome to Tatoeba!",
+      "reference": "ٹاٹوئیبا پہ خوش آمدید۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1205289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1566613",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1205289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1205289"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1108683",
+      "source": "See you tomorrow!",
+      "reference": "کل ملتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1108683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1918805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1108683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1108683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1076011",
+      "source": "This is Edward.",
+      "reference": "یہ ایڈورڈ ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1076011",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1604245",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1076011",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1076011"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1024872",
+      "source": "Tom is sick.",
+      "reference": "ٹام بیمار ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1024872",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123954",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1024872",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1024872"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1024870",
+      "source": "Tom is smart.",
+      "reference": "ٹام عقل مند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1024870",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123955",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1024870",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1024870"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1024739",
+      "source": "Tom is wrong.",
+      "reference": "ٹام غلط ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1024739",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1024739",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1024739"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_953106",
+      "source": "Are you OK?",
+      "reference": "کیا تم ٹھیک ہو؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953106",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953106",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953106"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_854432",
+      "source": "I am teaching.",
+      "reference": "میں پڑھا رہا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "854432",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1459183",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "854432",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/854432"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_679883",
+      "source": "Please choose wisely.",
+      "reference": "برائے مہربانی، دھیان سے فیصلہ کی جیئے گا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "679883",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1460351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "679883",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/679883"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_672099",
+      "source": "Is she sleeping?",
+      "reference": "کیا وہ سو رہی ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "672099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12449538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "672099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/672099"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_661572",
+      "source": "Today is Saturday.",
+      "reference": "آج ہفتے کا دن ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "661572",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "661572",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/661572"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_660541",
+      "source": "Believe you me.",
+      "reference": "مجھ پر بھروسہ کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "660541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1445816",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "660541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/660541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_635927",
+      "source": "Swans understand signs.",
+      "reference": "ہنس کو اشارے سمجھ آتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "635927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1445840",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "635927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/635927"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_630767",
+      "source": "Life is hard.",
+      "reference": "زندگی مشکل ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "630767",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "630767",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/630767"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_593244",
+      "source": "I dislike eggs.",
+      "reference": "مجھے انڈے پسند نہیں",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "593244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "593244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/593244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_582309",
+      "source": "I need help.",
+      "reference": "مجھے مدد کی ضرورت ہے۔",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "582309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "582309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/582309"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_569283",
+      "source": "How are things?",
+      "reference": "آپ کیسے ہیں؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "569283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "349990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "569283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/569283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_534970",
+      "source": "Thanks a lot!",
+      "reference": "بہت شکریہ!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "13243161",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534970"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_528455",
+      "source": "She woke up.",
+      "reference": "وہ اٹھ گئی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "528455",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1450617",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "528455",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/528455"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_526658",
+      "source": "Close your book.",
+      "reference": "کتاب بند کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "526658",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1580456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "526658",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/526658"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_521657",
+      "source": "I love movies.",
+      "reference": "مجھے فلمیں پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "521657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2608290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "521657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/521657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_512653",
+      "source": "She looked away.",
+      "reference": "اس نے نظریں جھکا لی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "512653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1505830",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "512653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/512653"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_497969",
+      "source": "See you tomorrow.",
+      "reference": "کل ملتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "497969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1918805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "497969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/497969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_488178",
+      "source": "I am married.",
+      "reference": "میں شادی شدہ ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "488178",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1481161",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "488178",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/488178"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_464470",
+      "source": "Weather changes often.",
+      "reference": "موسم ہر وقت بدلتا رہتا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2446867",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_464440",
+      "source": "We study Arabic.",
+      "reference": "ہم عربی پرھتے ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1539314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_462434",
+      "source": "Sign here, please.",
+      "reference": "برائے مہربانی، یہاں دستخط کرے۔",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "462434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1445856",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "462434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/462434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_457741",
+      "source": "I trust you.",
+      "reference": "مجھے تم پر بھروسہ ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "457741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123959",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "457741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/457741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_448299",
+      "source": "Woods burn easily.",
+      "reference": "لکڑی آرام سے جل جاتی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "448299",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4241529",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "448299",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/448299"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_444986",
+      "source": "I live here.",
+      "reference": "میں یہاں رہتا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "444986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123928",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "444986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/444986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_436427",
+      "source": "I am sick.",
+      "reference": "میں بیمار ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436427",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436427",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436427"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_436329",
+      "source": "I am divorced.",
+      "reference": "میں طلاق یافتہ ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1481164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_436275",
+      "source": "I am tall.",
+      "reference": "میں لمبا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436275",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6825104",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436275",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436275"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_435162",
+      "source": "I like sports.",
+      "reference": "مجھے کھیل پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "435162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4190795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "435162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/435162"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_403281",
+      "source": "Which tooth hurts?",
+      "reference": "کونسے دانت میں درد ہے؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403281",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123960",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403281",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403281"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "آپ کیسے ہو ؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_361350",
+      "source": "Happy New Year!",
+      "reference": "نیا سال مبارک۔",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "361350",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2116697",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "361350",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/361350"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_357653",
+      "source": "It looked cheap.",
+      "reference": "وہ سستا لگتا تھا۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "357653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123941",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "357653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/357653"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_355041",
+      "source": "Happy birthday, Muiriel!",
+      "reference": "سالگیرہ مبارک ہو موریال ۔",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "355041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849486",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "355041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/355041"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_323962",
+      "source": "It was night.",
+      "reference": "رات تھی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323962",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6055405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323962",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323962"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_320338",
+      "source": "Is everything OK?",
+      "reference": "کیا سب کچھ ٹھیک ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849446",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320338"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_319912",
+      "source": "Prices are rising.",
+      "reference": "قیمتیں بڑھ رہی ہیں۔",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "319912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1497750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "319912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/319912"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_314853",
+      "source": "She looks young.",
+      "reference": "وہ کافی جوان دکھ رہی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314853",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1918810",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314853",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314853"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_310255",
+      "source": "She talked childishly.",
+      "reference": "وہ بچگانہ انداز میں بولی۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "310255",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "10812139",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "310255",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/310255"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_305472",
+      "source": "They feared you.",
+      "reference": "وہ تجھ سے ڈرتے تھے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305472",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12902473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305472",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305472"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_302406",
+      "source": "Is he tall?",
+      "reference": "کیا وہ لمبا ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6825101",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302406"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_294660",
+      "source": "He lives comfortably.",
+      "reference": "وہ سکون سے رہ رہا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "294660",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4221877",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "294660",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/294660"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_282567",
+      "source": "Is it white?",
+      "reference": "کیا یہ سفید ہے؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "282567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123938",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "282567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/282567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_279516",
+      "source": "It is Saturday.",
+      "reference": "آج ہفتے کا دن ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "279516",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12486848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "279516",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/279516"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_278206",
+      "source": "Birds build nests.",
+      "reference": "چڑیاں گھونسلے بناتی ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "278206",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5149924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "278206",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/278206"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_277466",
+      "source": "Let me in.",
+      "reference": "مجھے اندر آنے دو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277466",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277466",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277466"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_274619",
+      "source": "No other way.",
+      "reference": "اور کوئی طریقہ نہیں ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "274619",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4269428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "274619",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/274619"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_273689",
+      "source": "Is everything okay?",
+      "reference": "کیا تم ٹھیک ہو؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273689"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_272548",
+      "source": "It may snow.",
+      "reference": "شاید برفباری ہو جائے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "272548",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "272548",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/272548"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_261221",
+      "source": "I love her.",
+      "reference": "میں اس سے پیار کرتا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261221",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123931",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261221",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261221"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_255939",
+      "source": "I love rock.",
+      "reference": "مجھے روک پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255939",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255939",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255939"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_255034",
+      "source": "I like chocolate.",
+      "reference": "مجھے چاکلیٹ پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6682314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255034"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_253293",
+      "source": "I like tea.",
+      "reference": "مجھے چائے پسند ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "253293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123926",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "253293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/253293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_245472",
+      "source": "Just finished it.",
+      "reference": "ابھی ختم کیا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245472",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2116724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245472",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245472"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_62478",
+      "source": "Ken is happy.",
+      "reference": "کین خوش ہے۔",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1812381",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62478"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_36153",
+      "source": "Love your neighbors.",
+      "reference": "امنے ہمسایوں سے بہترین سلوک کرو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "36153",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1463923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "36153",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/36153"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_32120",
+      "source": "Everyone loves Mac.",
+      "reference": "سب کو میک پسند ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "32120",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2097363",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "32120",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/32120"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_31892",
+      "source": "Mary is tall.",
+      "reference": "ماری لمبی ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31892",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "6825095",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31892",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31892"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_29868",
+      "source": "You all right?",
+      "reference": "تم ٹھیک ہو؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29868",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2849437",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29868",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29868"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_26887",
+      "source": "It may rain.",
+      "reference": "شاید بارش ہو جائے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123958",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_21033",
+      "source": "Familiarity breeds contempt.",
+      "reference": "گھر کی مرغی دال برابر۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21033",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1566721",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21033",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21033"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.33
+      }
+    },
+    {
+      "id": "tatoeba_17735",
+      "source": "I need you.",
+      "reference": "مجھے تمھاری ضرورت ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17735",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "2123936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17735",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17735"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_16491",
+      "source": "How about you?",
+      "reference": "آپ کیسے ہیں؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "349990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_16486",
+      "source": "Where were you?",
+      "reference": "آپ کہاں تھے؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16486",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "487493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16486",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16486"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1644",
+      "source": "You look stupid.",
+      "reference": "تم بیواقوف لگ رہے ہو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1604228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1644"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1436",
+      "source": "I am curious.",
+      "reference": "میں جاننا چاہتا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1436",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "13125628",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1436",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1436"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "مجھے آپ سے پیار ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "510683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_13666753",
+      "source": "He is drinking water.",
+      "reference": "وہ پانی پی رہا ہے۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13666753",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "5724068",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13666753",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13666753"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_13388273",
+      "source": "I am a widower.",
+      "reference": "میں رنڈوا ہوں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388273",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1481169",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388273",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388273"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_13388266",
+      "source": "Always have honest intentions.",
+      "reference": "ہمیشہ اپنی نیت صاف رکھو۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388266",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "4568240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388266",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388266"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_13388015",
+      "source": "Who do you fear?",
+      "reference": "کس سے تم ڈرتے ہو؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388015",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "12449548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388015",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388015"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_13388009",
+      "source": "His eyes are beautiful.",
+      "reference": "اس کی آنکھیں خوبصورت ہیں۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13388009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1434750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13388009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13388009"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_13387988",
+      "source": "The noise is unbearable.",
+      "reference": "شور ناقابل برداشت ہے",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13387988",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "1434700",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13387988",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13387988"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_13366901",
+      "source": "For fuck's sake.",
+      "reference": "بہن چود۔",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13366901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "urd",
+        "target_sentence_id": "13415655",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13366901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13366901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

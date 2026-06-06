@@ -62,7 +62,11 @@ FST_CACHE_ROOT = Path.home() / ".mt-eval" / "fsts"
 # ---------------------------------------------------------------------------
 
 GIELLALT_FST_REGISTRY: dict[str, dict[str, Any]] = {
-    # Languages with standalone FST zip releases (legacy format)
+    # -----------------------------------------------------------------------
+    # FORMAT: "legacy-zip"
+    #   Standalone FST zip releases on GitHub. Contains .hfstol files directly.
+    #   Download zip → extract .hfstol → cache.
+    # -----------------------------------------------------------------------
     "crk": {
         "name": "Plains Cree",
         "repo": "giellalt/lang-crk",
@@ -70,14 +74,53 @@ GIELLALT_FST_REGISTRY: dict[str, dict[str, Any]] = {
         "asset_pattern": "plains-cree-fsts-",
         "format": "legacy-zip",
     },
-    # Languages with Divvun-packaged FSTs (noted for guidance, not auto-install)
-    # These use speller-XXX/vN.N.N tags with .drb or .pkt.tar.zst assets.
-    # Users need the Divvun manager to extract .hfstol files from these.
+    # -----------------------------------------------------------------------
+    # FORMAT: "divvun-macos-pkg"
+    #   Divvun speller macOS .pkg releases. The .pkg is a xar archive
+    #   containing a Payload (gzip-compressed cpio) which contains a
+    #   .bundle with a speller.zhfst (zip) inside. The zhfst contains
+    #   acceptor.default.hfst — the morphological acceptor transducer.
+    #
+    #   Extraction chain:
+    #     .pkg → pkgutil --expand → Payload → gunzip | cpio → .zhfst → unzip → .hfst
+    #     Then: hfst-fst2fst -O → .hfstol (optimised lookup format)
+    #
+    #   Requires: pkgutil (macOS built-in), gzip, cpio, unzip
+    #   Optional: hfst-fst2fst for conversion (falls back to raw .hfst)
+    # -----------------------------------------------------------------------
     "sme": {
         "name": "Northern Sámi",
         "repo": "giellalt/lang-sme",
-        "format": "divvun",
+        "release_tag": "speller-sme/v4.5.2",
+        "asset_pattern": "_noarch-macos.pkg",
+        "bundle_pattern": "no.divvun.MacDivvun.se.bundle",
+        "format": "divvun-macos-pkg",
+        "maturity": "production",  # 29MB transducer, comprehensive coverage
     },
+    "amh": {
+        "name": "Amharic",
+        "repo": "giellalt/lang-amh",
+        "release_tag": "speller-amh/dev-latest",
+        "asset_pattern": "_noarch-macos.pkg",
+        "bundle_pattern": "no.divvun.MacDivvun.am.bundle",
+        "format": "divvun-macos-pkg",
+        "maturity": "stub",  # 11KB — dev build, essentially empty
+    },
+    "eus": {
+        "name": "Basque",
+        "repo": "giellalt/lang-eus",
+        "release_tag": "speller-eus/dev-latest",
+        "asset_pattern": "_noarch-macos.pkg",
+        "bundle_pattern": "no.divvun.MacDivvun.eu.bundle",
+        "format": "divvun-macos-pkg",
+        "maturity": "stub",  # 53KB — dev build, limited vocabulary
+    },
+    # -----------------------------------------------------------------------
+    # FORMAT: "divvun" (legacy marker — no auto-install support yet)
+    #   These languages have Divvun FSTs but no macOS .pkg with a usable
+    #   acceptor has been verified. Users can manually install .hfstol files
+    #   to ~/.mt-eval/fsts/{code}/ or use the Divvun manager.
+    # -----------------------------------------------------------------------
     "sma": {
         "name": "Southern Sámi",
         "repo": "giellalt/lang-sma",
@@ -248,33 +291,16 @@ def _download_legacy_zip(repo: str, tag: str, asset_pattern: str) -> bytes:
     return content
 
 
-def install_fst(lang_code: str) -> Path:
-    """Download and install the FST for a language.
-
-    Looks up the language in GIELLALT_FST_REGISTRY, downloads the
-    release zip, extracts .hfstol files, and writes provenance metadata.
+def _install_legacy_zip(lang_code: str, entry: dict) -> Path:
+    """Download and install an FST from a legacy-format GitHub zip release.
 
     Args:
         lang_code: ISO 639-3 language code (e.g. "crk")
+        entry: Registry entry dict with repo, tag, asset_pattern
 
     Returns:
         Path to the installed FST cache directory
-
-    Raises:
-        RuntimeError: If download or extraction fails
-        KeyError: If language not in registry
     """
-    if lang_code not in GIELLALT_FST_REGISTRY:
-        raise KeyError(f"No GiellaLT FST registered for '{lang_code}'")
-
-    entry = GIELLALT_FST_REGISTRY[lang_code]
-
-    if entry["format"] != "legacy-zip":
-        raise RuntimeError(
-            f"FST for {entry['name']} uses Divvun packaging, which requires "
-            f"the Divvun manager. Install from: https://divvun.no/"
-        )
-
     # Download the zip
     content = _download_legacy_zip(
         repo=entry["repo"],
@@ -305,10 +331,222 @@ def install_fst(lang_code: str) -> Path:
             )
 
     # Write provenance metadata
+    _write_provenance(install_dir, lang_code, entry, sha256)
+    return install_dir
+
+
+def _download_divvun_macos_pkg(
+    repo: str,
+    tag: str,
+    asset_pattern: str,
+    bundle_pattern: str,
+) -> bytes:
+    """Download a Divvun macOS .pkg and extract the acceptor .hfst from it.
+
+    Extraction chain:
+        1. Download macOS .pkg from GitHub release
+        2. pkgutil --expand to unpack the xar archive
+        3. gunzip + cpio to extract the Payload
+        4. Find the speller.zhfst inside the Divvun bundle
+        5. unzip to extract acceptor.default.hfst
+        6. Return the raw .hfst bytes (already in HFST optimised format)
+
+    Args:
+        repo: GitHub repo (e.g. "giellalt/lang-sme")
+        tag: Release tag (e.g. "speller-sme/v4.5.2")
+        asset_pattern: Suffix to match in asset names (e.g. "_noarch-macos.pkg")
+        bundle_pattern: Divvun bundle directory name inside Payload
+
+    Returns:
+        Raw bytes of the acceptor.default.hfst transducer
+
+    Raises:
+        RuntimeError: If any step of the extraction fails
+    """
+    import glob as glob_mod
+    import subprocess
+    import tempfile
+    import urllib.error
+    import urllib.request
+
+    # Step 1: Find the asset URL via GitHub API
+    # URL-encode the tag since it may contain '/' (e.g. "speller-sme/v4.5.2")
+    encoded_tag = urllib.request.quote(tag, safe="")
+    api_url = f"https://api.github.com/repos/{repo}/releases/tags/{encoded_tag}"
+    req = urllib.request.Request(
+        api_url,
+        headers={"Accept": "application/vnd.github.v3+json"},
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            release = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(
+            f"GitHub API returned {e.code} for {api_url}"
+        )
+
+    # Find the .pkg asset
+    pkg_asset = None
+    for asset in release.get("assets", []):
+        if asset["name"].endswith(asset_pattern):
+            pkg_asset = asset
+            break
+
+    if pkg_asset is None:
+        available = [a["name"] for a in release.get("assets", [])]
+        raise RuntimeError(
+            f"No .pkg asset matching '*{asset_pattern}' in release {tag}. "
+            f"Available: {available}"
+        )
+
+    # Step 2: Download the .pkg
+    download_url = pkg_asset["browser_download_url"]
+    size_mb = pkg_asset["size"] / 1024 / 1024
+    print(f"  Downloading {pkg_asset['name']} ({size_mb:.1f} MB)...")
+
+    with urllib.request.urlopen(download_url, timeout=120) as dl_resp:
+        pkg_bytes = dl_resp.read()
+
+    print(f"  Downloaded {len(pkg_bytes) / 1024 / 1024:.1f} MB")
+
+    # Step 3-6: Extract the acceptor in a temp directory
+    with tempfile.TemporaryDirectory(prefix="champollion-fst-") as tmpdir:
+        tmpdir = Path(tmpdir)
+        pkg_path = tmpdir / "speller.pkg"
+        pkg_path.write_bytes(pkg_bytes)
+
+        # Expand the .pkg (xar archive)
+        expanded_dir = tmpdir / "expanded"
+        result = subprocess.run(
+            ["pkgutil", "--expand", str(pkg_path), str(expanded_dir)],
+            capture_output=True, text=True, timeout=30,
+        )
+        if result.returncode != 0:
+            raise RuntimeError(
+                f"pkgutil --expand failed: {result.stderr}"
+            )
+
+        # Find the Payload file
+        payloads = list(expanded_dir.rglob("Payload"))
+        if not payloads:
+            raise RuntimeError(
+                f"No Payload found in expanded .pkg. "
+                f"Contents: {list(expanded_dir.rglob('*'))}"
+            )
+
+        # Extract the Payload (gzip-compressed cpio archive)
+        payload_dir = tmpdir / "payload_contents"
+        payload_dir.mkdir()
+        with open(payloads[0], "rb") as payload_f:
+            gunzip = subprocess.Popen(
+                ["gunzip"], stdin=payload_f, stdout=subprocess.PIPE,
+            )
+            cpio = subprocess.Popen(
+                ["cpio", "-id"],
+                stdin=gunzip.stdout, cwd=str(payload_dir),
+                capture_output=True,
+            )
+            gunzip.stdout.close()
+            cpio.communicate(timeout=30)
+
+        if cpio.returncode != 0:
+            raise RuntimeError(
+                f"cpio extraction failed: {cpio.stderr.decode()}"
+            )
+
+        # Find the speller.zhfst inside the bundle
+        zhfst_files = list(payload_dir.rglob("speller.zhfst"))
+        if not zhfst_files:
+            # Try finding any .zhfst
+            zhfst_files = list(payload_dir.rglob("*.zhfst"))
+        if not zhfst_files:
+            all_files = list(payload_dir.rglob("*"))
+            raise RuntimeError(
+                f"No .zhfst found in Payload. "
+                f"Files found: {[str(f) for f in all_files]}"
+            )
+
+        # Extract acceptor.default.hfst from the .zhfst (zip archive)
+        zhfst_extract_dir = tmpdir / "zhfst_contents"
+        zhfst_extract_dir.mkdir()
+        with zipfile.ZipFile(zhfst_files[0]) as zf:
+            # Look for acceptor .hfst file
+            acceptor_names = [
+                n for n in zf.namelist()
+                if "acceptor" in n and n.endswith(".hfst")
+            ]
+            if not acceptor_names:
+                raise RuntimeError(
+                    f"No acceptor .hfst in zhfst. "
+                    f"Contents: {zf.namelist()}"
+                )
+
+            acceptor_name = acceptor_names[0]
+            acceptor_bytes = zf.read(acceptor_name)
+            print(f"  Extracted: {acceptor_name} "
+                  f"({len(acceptor_bytes) / 1024:.0f} KB)")
+
+    return acceptor_bytes
+
+
+def _install_divvun_pkg(lang_code: str, entry: dict) -> Path:
+    """Download and install an FST from a Divvun macOS .pkg release.
+
+    The acceptor.default.hfst from the speller package is typically already
+    in HFST optimised lookup format and can be used directly with pyhfst.
+
+    Args:
+        lang_code: ISO 639-3 language code
+        entry: Registry entry dict with repo, tag, patterns
+
+    Returns:
+        Path to the installed FST cache directory
+    """
+    acceptor_bytes = _download_divvun_macos_pkg(
+        repo=entry["repo"],
+        tag=entry["release_tag"],
+        asset_pattern=entry["asset_pattern"],
+        bundle_pattern=entry.get("bundle_pattern", ""),
+    )
+
+    sha256 = hashlib.sha256(acceptor_bytes).hexdigest()
+
+    # Install to cache directory
+    install_dir = FST_CACHE_ROOT / lang_code
+    install_dir.mkdir(parents=True, exist_ok=True)
+
+    # Write the acceptor as analyser.hfstol
+    # The acceptor from Divvun spellers is already in optimised lookup format,
+    # but named .hfst instead of .hfstol — pyhfst reads both fine.
+    target = install_dir / "analyser.hfstol"
+    target.write_bytes(acceptor_bytes)
+    print(f"  Installed: analyser.hfstol ({len(acceptor_bytes) / 1024:.0f} KB)")
+
+    # Warn about stub/dev transducers
+    maturity = entry.get("maturity", "unknown")
+    if maturity == "stub":
+        print(f"  ⚠ Warning: {entry['name']} FST is a dev/stub build. "
+              f"Vocabulary coverage may be very limited.")
+
+    _write_provenance(install_dir, lang_code, entry, sha256)
+    return install_dir
+
+
+def _write_provenance(
+    install_dir: Path,
+    lang_code: str,
+    entry: dict,
+    sha256: str,
+) -> None:
+    """Write provenance metadata for an installed FST."""
     provenance = {
         "lang_code": lang_code,
-        "repo": entry["repo"],
-        "release_tag": entry["release_tag"],
+        "name": entry.get("name", lang_code),
+        "repo": entry.get("repo", ""),
+        "release_tag": entry.get("release_tag", ""),
+        "format": entry.get("format", ""),
+        "maturity": entry.get("maturity", "unknown"),
         "sha256": sha256,
         "installed_at": datetime.now(timezone.utc).isoformat(),
         "hfstol_files": [f.name for f in install_dir.glob("*.hfstol")],
@@ -317,7 +555,46 @@ def install_fst(lang_code: str) -> Path:
     provenance_path.write_text(json.dumps(provenance, indent=2))
     print(f"  Provenance: {provenance_path}")
 
-    return install_dir
+
+def install_fst(lang_code: str) -> Path:
+    """Download and install the FST for a language.
+
+    Supports multiple distribution formats:
+        - "legacy-zip": Standalone FST zip releases with .hfstol files
+        - "divvun-macos-pkg": Divvun speller macOS .pkg packages
+        - "divvun": Requires manual installation via Divvun manager
+
+    Args:
+        lang_code: ISO 639-3 language code (e.g. "crk", "sme")
+
+    Returns:
+        Path to the installed FST cache directory
+
+    Raises:
+        RuntimeError: If download or extraction fails
+        KeyError: If language not in registry
+    """
+    if lang_code not in GIELLALT_FST_REGISTRY:
+        raise KeyError(f"No GiellaLT FST registered for '{lang_code}'")
+
+    entry = GIELLALT_FST_REGISTRY[lang_code]
+    fmt = entry["format"]
+
+    if fmt == "legacy-zip":
+        return _install_legacy_zip(lang_code, entry)
+    elif fmt == "divvun-macos-pkg":
+        return _install_divvun_pkg(lang_code, entry)
+    elif fmt == "divvun":
+        raise RuntimeError(
+            f"FST for {entry['name']} uses Divvun packaging without a "
+            f"verified macOS .pkg. Install the Divvun manager from "
+            f"https://divvun.no/ and copy .hfstol files to "
+            f"~/.mt-eval/fsts/{lang_code}/"
+        )
+    else:
+        raise RuntimeError(
+            f"Unknown FST format '{fmt}' for {entry['name']}"
+        )
 
 
 # ---------------------------------------------------------------------------

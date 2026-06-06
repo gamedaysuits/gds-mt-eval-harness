@@ -1,0 +1,1797 @@
+{
+  "corpus_id": "tatoeba-eng-sqi-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "sqi"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:40:42.126807+00:00",
+  "entry_count": 61,
+  "domains": [
+    "conv",
+    "religious",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13207602",
+      "source": "She knows English.",
+      "reference": "Ajo di anglisht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13207602",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "13207716",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13207602",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13207602"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_12885107",
+      "source": "My cat died.",
+      "reference": "Macja më vdiq.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12885107",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "12887500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12885107",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12885107"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_12878307",
+      "source": "I was open.",
+      "reference": "Unë isha hapur.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12878307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8972197",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12878307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12878307"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_10006596",
+      "source": "Albanians love Jihad.",
+      "reference": "Shqiptarët e duan xhihadin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10006596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "10002957",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10006596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10006596"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10006594",
+      "source": "Kosovo is Albania.",
+      "reference": "Kosova është shqipëri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10006594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "10002948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10006594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10006594"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10006587",
+      "source": "Albanians are awake.",
+      "reference": "Shqiptarët janë të zgjuar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10006587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "10002977",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10006587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10006587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10006553",
+      "source": "Albanians are intelligent.",
+      "reference": "Shqiptarët janë inteligjencë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10006553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "10003074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10006553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10006553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_9131735",
+      "source": "Lord, have mercy!",
+      "reference": "Mëshiro, o Zot!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9131735",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9131736",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9131735",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9131735"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9116974",
+      "source": "All right then!",
+      "reference": "Sigurisht!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9116974",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9116974",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9116974"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9112746",
+      "source": "Christ has risen!",
+      "reference": "Krishti u ngjall!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9112746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "1533141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9112746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9112746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9014323",
+      "source": "You speak Albanian?",
+      "reference": "A flisni shqip?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9014323",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9004997",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9014323",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9014323"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_9014322",
+      "source": "You speak Mandarin?",
+      "reference": "A flisni kinezisht?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9014322",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9004995",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9014322",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9014322"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8995552",
+      "source": "This is Julia.",
+      "reference": "Kjo është Julia.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8995552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9004959",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8995552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8995552"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8973011",
+      "source": "I am careful.",
+      "reference": "Jam e kujdesshme.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8973011",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "7005601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8973011",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8973011"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8794857",
+      "source": "Call me, please.",
+      "reference": "Më telefono, të lutem.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8794857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6983358",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8794857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8794857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8477926",
+      "source": "He loves pasta.",
+      "reference": "I do makaronat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8477926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "13735338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8477926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8477926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8477703",
+      "source": "He denied that.",
+      "reference": "E mohoi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8477703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9023185",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8477703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8477703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8476425",
+      "source": "I visited him.",
+      "reference": "E vizitova.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8476425",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8971747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8476425",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8476425"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8475997",
+      "source": "He did this.",
+      "reference": "Bëri këtë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8475997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8475997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8475997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8406794",
+      "source": "Good morning, Tom!",
+      "reference": "Mirëmëngjes, Tom.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8406794",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8797914",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8406794",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8406794"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6981366",
+      "source": "Problems are problems.",
+      "reference": "Problemet janë probleme.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6981366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6981364",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6981366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6981366"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6978095",
+      "source": "They were organized.",
+      "reference": "Ata ishin të organizuar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6978095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6981442",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6978095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6978095"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_6963982",
+      "source": "What is truth?",
+      "reference": "Cila është e vërteta?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6963982",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6983114",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6963982",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6963982"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6957505",
+      "source": "Tom vowed revenge.",
+      "reference": "Tomi u betua për hakmarrje.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6957505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6983126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6957505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6957505"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6817041",
+      "source": "Everyone was laughing.",
+      "reference": "Të gjithë po qeshnin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6817041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8971793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6817041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6817041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6358470",
+      "source": "Tom usually wins.",
+      "reference": "Tomi zakonisht fiton.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6358470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6982742",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6358470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6358470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6203842",
+      "source": "Yesterday was Tuesday.",
+      "reference": "Dje ishte e martë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6203842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "7003412",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6203842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6203842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6168881",
+      "source": "He is impeccable.",
+      "reference": "Ai është i përsosur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6168881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6297058",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6168881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6168881"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6015388",
+      "source": "I am Ricardo.",
+      "reference": "Unë jam Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6015388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6824266",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6015388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6015388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5851649",
+      "source": "I sometimes stutter.",
+      "reference": "Ndonjehere me mbahet goja.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5851649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8793570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5851649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5851649"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_5528342",
+      "source": "Make something up.",
+      "reference": "Shpik ndonjë gjë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5528342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "5528346",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5528342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5528342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Të dashuroj.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "380263",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5126128",
+      "source": "Happy birthday, Muriel!",
+      "reference": "Gëzuar ditëlindjen Muriel!",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5126128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "380581",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5126128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5126128"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_4963061",
+      "source": "She is awake.",
+      "reference": "Ajo është zgjuar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4963061",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4963636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4963061",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4963061"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4877624",
+      "source": "Christ is risen.",
+      "reference": "Krishti u ngjall!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4877624",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "1533141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4877624",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4877624"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4788127",
+      "source": "Who likes them?",
+      "reference": "Të pëlqejnë kuajt?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4788127",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4788127",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4788127"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4758841",
+      "source": "Thank the Lord.",
+      "reference": "Shyqyr Zoti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4758841",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "380271",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4758841",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4758841"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4731139",
+      "source": "Society is divided.",
+      "reference": "Shoqëria është e ndarë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4731139",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731175",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4731139",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4731139"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_4731119",
+      "source": "They are fighting.",
+      "reference": "Ata po zihen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4731119",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4731119",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4731119"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4494922",
+      "source": "Family is important.",
+      "reference": "Familja është e rëndësishme.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4494922",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "7005596",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4494922",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4494922"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_4471276",
+      "source": "My tummy hurts.",
+      "reference": "Më dhemb stomaku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4471276",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6894533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4471276",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4471276"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4402239",
+      "source": "Sleep well, Timmy.",
+      "reference": "Gjumë të ëmbël, Timi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4402239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "380280",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4402239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4402239"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_4006788",
+      "source": "Welcome to Tatoeba.",
+      "reference": "Mirësevini në Tatoeba!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4006788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "5023777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4006788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4006788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3919268",
+      "source": "Nothing bothers him.",
+      "reference": "Asgjë nuk e shqetëson.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3919268",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8971817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3919268",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3919268"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3909540",
+      "source": "I shot him.",
+      "reference": "I gjojta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3909540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018341",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3909540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3909540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3904941",
+      "source": "I understand them.",
+      "reference": "Ju kuptoj.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3904941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8971650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3904941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3904941"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3668483",
+      "source": "Happy Birthday, Romania!",
+      "reference": "Gëzuar ditëlindjen, Rumani!",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3668483",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "6981483",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3668483",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3668483"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_3419705",
+      "source": "Tom seems artistic.",
+      "reference": "Tomi duket i keq.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3419705",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018443",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3419705",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3419705"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3319395",
+      "source": "I am Tom.",
+      "reference": "Unë jam Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3319395",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "3344403",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3319395",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3319395"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_3221065",
+      "source": "I am English.",
+      "reference": "Unë jam anglez.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3221065",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "3518952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3221065",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3221065"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3177296",
+      "source": "I hate milk.",
+      "reference": "Unë e urrej qumështin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3177296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "8973127",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3177296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3177296"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3100619",
+      "source": "The animals run.",
+      "reference": "Kafshët vrapojnë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3100619",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "3100653",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3100619",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3100619"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3043440",
+      "source": "Tom had fun.",
+      "reference": "Tom argëtohu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3043440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3043440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3043440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "Dua të shkoj.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "3335202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2868160",
+      "source": "Tom enjoyed himself.",
+      "reference": "Tom argëtohu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2868160",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2868160",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2868160"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2862593",
+      "source": "I told him.",
+      "reference": "Ia thashë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2862593",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731299",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2862593",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2862593"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2862589",
+      "source": "I told her.",
+      "reference": "Ia thashë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2862589",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731299",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2862589",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2862589"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2778806",
+      "source": "I am here.",
+      "reference": "Unë jam këtu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2778806",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "3100493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2778806",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2778806"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2751184",
+      "source": "He worships him.",
+      "reference": "Ai e adhuron atë.",
+      "domain": "religious",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2751184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "4731495",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2751184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2751184"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2691616",
+      "source": "Welcome to China!",
+      "reference": "Mirë se erdhe në Kinë.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2691616",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "9018456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2691616",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2691616"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2657766",
+      "source": "I will come.",
+      "reference": "Do të vij.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2657766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sqi",
+        "target_sentence_id": "2942663",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2657766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2657766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -1,0 +1,2782 @@
+{
+  "corpus_id": "tatoeba-spa-que-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "spa",
+    "target": "que"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:24:55.578056+00:00",
+  "entry_count": 95,
+  "domains": [
+    "conv",
+    "edu"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_1107288",
+      "source": "El gato es negro.",
+      "reference": "Michiqa yanam.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1107288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "3997935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1107288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1107288"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3069108",
+      "source": "Yo como carne.",
+      "reference": "Ñuqa aychatam mikuni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3069108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "6842570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3069108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3069108"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8359498",
+      "source": "¿Cuántos años tienen?",
+      "reference": "¿Hayk'a watayuqmi paykuna kanku?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8359498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "8359500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8359498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8359498"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_963095",
+      "source": "No te vayas.",
+      "reference": "Ama riychischu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "963095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773586",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "963095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/963095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1143627",
+      "source": "Te veo mañana.",
+      "reference": "Paqarinkama.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1143627",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1143627",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1143627"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1190137",
+      "source": "¿Tú eres médico?",
+      "reference": "Kanka hambinayuk kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1190137",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7254188",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1190137",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1190137"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2220698",
+      "source": "Ahí está lloviendo.",
+      "reference": "Parasan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2220698",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774881",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2220698",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2220698"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3666894",
+      "source": "¿Quién es usted?",
+      "reference": "Pitaq kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3666894",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3666894",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3666894"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5027460",
+      "source": "¿De dónde eres tú?",
+      "reference": "Imamantataq hamunki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5027460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5027460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5027460"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4742426",
+      "source": "¿Vos sos estadounidense?",
+      "reference": "Ustadus Unidusmanta hamusankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4742426",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4742426",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4742426"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_1509015",
+      "source": "Juanito tiene cuatro hermanas.",
+      "reference": "Juanitoqa tawa paninkunayuq kan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1509015",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773489",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1509015",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1509015"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_10664205",
+      "source": "¿Cuántos hijos tiene usted?",
+      "reference": "Hayka warmakunayuq kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10664205",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773383",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10664205",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10664205"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_7251980",
+      "source": "¿No me oye?",
+      "reference": "Mana uyarkankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248514",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_7258216",
+      "source": "¿Dónde te alojas?",
+      "reference": "Imapi tianki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7258216",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773469",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7258216",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7258216"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_4587004",
+      "source": "¡Nos vemos mañana!",
+      "reference": "Paqarinkama.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4587004",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4587004",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4587004"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1210062",
+      "source": "Está nevando aquí.",
+      "reference": "Ritimusan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1210062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1210062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1210062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1165945",
+      "source": "¡Te veo luego!",
+      "reference": "Huk ratukama!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1165945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773525",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1165945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1165945"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7251958",
+      "source": "Ella tiene tres hermanas.",
+      "reference": "Payka kimsa ñañakunata charin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251958",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251871",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251958",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251958"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_1310950",
+      "source": "Mi dinero fue robado.",
+      "reference": "Ñuka kullkita shuwarkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1310950",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251851",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1310950",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1310950"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_687369",
+      "source": "¿Cómo se llama usted?",
+      "reference": "Ima sutiyki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "687369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773466",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "687369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/687369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2874556",
+      "source": "Los aztecas hablaban náhuatl.",
+      "reference": "Mishikakunaqa Nawa simita rimarqanku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2874556",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2868671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2874556",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2874556"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_1327954",
+      "source": "Los veo mañana.",
+      "reference": "Paqarinkama.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1327954",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1327954",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1327954"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_962828",
+      "source": "Me gusta mi casa.",
+      "reference": "Munasani wasiyta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "962828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773444",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "962828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/962828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_11760618",
+      "source": "¿Cuántos hijos tienen ustedes?",
+      "reference": "Hayka warmakunayuq kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11760618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773383",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11760618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11760618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1210059",
+      "source": "Está nevando allí.",
+      "reference": "Ritisan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1210059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774882",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1210059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1210059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8011501",
+      "source": "¿De dónde es usted?",
+      "reference": "Imamantataq hamunki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8011501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8011501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8011501"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_943537",
+      "source": "Dos mujeres cantan.",
+      "reference": "Iskay warmikuna takisanku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "943537",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774856",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "943537",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/943537"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10055501",
+      "source": "Encantado de conocerlos.",
+      "reference": "Kusikusani reqsisuspay.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10055501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773541",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10055501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10055501"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_1989702",
+      "source": "¿Sabes hablar japonés?",
+      "reference": "Nihun shimita rimankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1989702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1989702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1989702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_1019890",
+      "source": "María tiene cuatro hermanos.",
+      "reference": "Maríaqa tawa turinkunayuq kan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1019890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1019890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1019890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_562079",
+      "source": "Hasta la vista.",
+      "reference": "Tupananchiskama!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "562079",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "562079",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/562079"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1615425",
+      "source": "Yo tengo una casa.",
+      "reference": "Noqapaq wasiy kasan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1615425",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1615425",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1615425"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2002086",
+      "source": "Me gusta comer.",
+      "reference": "Mikuyta munasani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2002086",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773318",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2002086",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2002086"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1206328",
+      "source": "Estoy encantado de conocerte.",
+      "reference": "Riqsinakuymanta anchatam kusikuni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1206328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1206328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1206328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_615650",
+      "source": "Encantada de conocerlo.",
+      "reference": "Riqsinakuymanta anchatam kusikuni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "615650",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "615650",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/615650"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_950306",
+      "source": "Tengo una casa grande.",
+      "reference": "Noqapaq hatun wasiy kasan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "950306",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "950306",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/950306"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1131089",
+      "source": "Yo soy de Holanda.",
+      "reference": "Holandamanta hamusani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1131089",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773438",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1131089",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1131089"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_436260",
+      "source": "¿Cómo te va?",
+      "reference": "Imanalla",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251858",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436260"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3885064",
+      "source": "Yo quiero pan.",
+      "reference": "Ñuqa t'antatam munani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3885064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "3881829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3885064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3885064"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_540310",
+      "source": "Compré un libro.",
+      "reference": "Huk liwruta rantirqani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "540310",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7209451",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "540310",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/540310"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_562035",
+      "source": "¿Cuántos hermanos tienes?",
+      "reference": "¿Hayk'an wawqiykikuna?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "562035",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "8359495",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "562035",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/562035"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_1083282",
+      "source": "Cuatro hombres cantan.",
+      "reference": "Tawa runakuna takisanku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1083282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774859",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1083282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1083282"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7251949",
+      "source": "House es médico.",
+      "reference": "House hambinayukmi kan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251949",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251885",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251949",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251949"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7255082",
+      "source": "Ulises ama a Penélope.",
+      "reference": "Uliseska Penelopetami kuyan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7255082",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255081",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7255082",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7255082"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2522313",
+      "source": "¿De dónde es?",
+      "reference": "Imamantataq hamunki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2522313",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2522313",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2522313"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_449153",
+      "source": "¿Cómo te llamas?",
+      "reference": "Ima shuti kanki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "449153",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "449153",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/449153"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4998452",
+      "source": "¿Es una llama?",
+      "reference": "Llamachu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4998452",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4998452",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4998452"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_854588",
+      "source": "Yo soy guapo.",
+      "reference": "Ñuqa k'acham.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "854588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "6166112",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "854588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/854588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_536849",
+      "source": "Encantado de conocerte.",
+      "reference": "Riqsinakuymanta anchatam kusikuni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "536849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "536849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/536849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_927348",
+      "source": "Un placer conocerte.",
+      "reference": "Riqsinakuymanta anchatam kusikuni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "927348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "927348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/927348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_5124516",
+      "source": "Me pica el bagre.",
+      "reference": "Yarqawachkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5124516",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "3493776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5124516",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5124516"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_550492",
+      "source": "No me acuerdo.",
+      "reference": "Mana yuyarinichu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "550492",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "550492",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/550492"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_562145",
+      "source": "¿Quién es aquel hombre?",
+      "reference": "Pitaq chay runa?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "562145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "562145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/562145"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_8666662",
+      "source": "¿Tú quién eres?",
+      "reference": "Pitaq kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8666662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8666662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8666662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_618952",
+      "source": "¿Cuándo te vas?",
+      "reference": "Haykaqtaq ripunki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "618952",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7757381",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "618952",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/618952"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2879289",
+      "source": "Odio las matemáticas.",
+      "reference": "Yupay yachayta chiqnini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2879289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2897924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2879289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2879289"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_436178",
+      "source": "¿Cuánto le debo?",
+      "reference": "Haykatataq manuyki?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436178",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7757382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436178",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436178"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2117893",
+      "source": "Perdí mi billetera.",
+      "reference": "Ñuka istallata ch'ingachirkani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2117893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255093",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2117893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2117893"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7251952",
+      "source": "Adele es cantante.",
+      "reference": "Adele takijmi kan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251952",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251952",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251952"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10261566",
+      "source": "No hablo tu idioma.",
+      "reference": "Ñukaka mana kanpak shimita rimanichu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10261566",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251846",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10261566",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10261566"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_7254177",
+      "source": "Ella es de Quito.",
+      "reference": "Payka Quitomantami kan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7254177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7254174",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7254177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7254177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_9990749",
+      "source": "Me peiné el pelo.",
+      "reference": "Ñuka ñakcharirkani.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9990749",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "10291964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9990749",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9990749"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_7251942",
+      "source": "-Mucho gusto. -Igualmente.",
+      "reference": "-Kushikuni. -Kushikunipish.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251942",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251942",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251942"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_1350944",
+      "source": "¿Cuántos niños tienes?",
+      "reference": "Hayka warmakunayuq kankichu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1350944",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773383",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1350944",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1350944"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_943539",
+      "source": "Dos mujeres están cantando.",
+      "reference": "Iskay warmikuna takisanku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "943539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774856",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "943539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/943539"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_1167675",
+      "source": "Vayámonos a casa.",
+      "reference": "Wasinchisman risun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1167675",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1167675",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1167675"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_670923",
+      "source": "Yo soy bonito.",
+      "reference": "Ñuqa k'acham.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "670923",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "6166112",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "670923",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/670923"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7255114",
+      "source": "Óyeme, por favor.",
+      "reference": "Uyapaway.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7255114",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255113",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7255114",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7255114"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7255110",
+      "source": "Oye, por favor.",
+      "reference": "Uyapay",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7255110",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255105",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7255110",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7255110"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7251970",
+      "source": "Buenas noches, papá.",
+      "reference": "Alli tuta, tayta.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251970"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2857728",
+      "source": "Por favor, siéntate.",
+      "reference": "Tiyaripay.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2857728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255133",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2857728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2857728"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1664902",
+      "source": "Sí, estoy casado.",
+      "reference": "Arí, warmiyuq kani.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1664902",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1664902",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1664902"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1664901",
+      "source": "Sí, estoy casada.",
+      "reference": "Arí, warmiyuq kani.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1664901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1664901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1664901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1508262",
+      "source": "¡Ayúdame, por favor!",
+      "reference": "Yanapaway!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1508262",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1508262",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1508262"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_859545",
+      "source": "¿Cómo estás, Mike?",
+      "reference": "Allillanchu, Mike?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "859545",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773460",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "859545",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/859545"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_859243",
+      "source": "Ven, por favor.",
+      "reference": "Shamupay.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "859243",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7255120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "859243",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/859243"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_803646",
+      "source": "Por favor, ayúdeme.",
+      "reference": "Yanapaway!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "803646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "803646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/803646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_620177",
+      "source": "Ayúdame, por favor.",
+      "reference": "Yanapaway!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "620177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7251854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "620177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/620177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7251978",
+      "source": "Este gorro, ¿cuánto vale?",
+      "reference": "Kay muchikuka mashna kan?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251978",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248516",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251978",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251978"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7251975",
+      "source": "Hola, amigos, ¿cómo están?",
+      "reference": "Imanalla, mashikuna.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251975",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248521",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251975",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251975"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7251974",
+      "source": "Amigo Guaman, ¿adónde vas?",
+      "reference": "Mashi Guaman, Mayman rigunki?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251974",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248522",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251974",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251974"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_7251971",
+      "source": "Buenos días, amiga Sandra.",
+      "reference": "Alli punlla, mashi Sandra.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7251971",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "7248526",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7251971",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7251971"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_6457203",
+      "source": "Por favor, ¿podría ayudarme?",
+      "reference": "Allichu yanapawankikumanchu?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6457203",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "6457207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6457203",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6457203"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_2843736",
+      "source": "Come feliz, duerme feliz.",
+      "reference": "Mikhuq kusikun puñuq kusikun.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2843736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2843736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2843736"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1979788",
+      "source": "¿Tienes un hermano, Pedro?",
+      "reference": "Wawkeyuq kankichu, Pidru?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1979788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1979788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1979788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_1210044",
+      "source": "Mientras canto, estoy caminando.",
+      "reference": "Puristin takisani.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1210044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "774924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1210044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1210044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.75
+      }
+    },
+    {
+      "id": "tatoeba_1173911",
+      "source": "¿Podrías ayudarme, por favor?",
+      "reference": "Allichu yanapawankikumanchu?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1173911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "6457207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1173911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1173911"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1071855",
+      "source": "Lucía, ¿tienes una hermana?",
+      "reference": "Ñañayuq kankichu, Lucia?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1071855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1071855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1071855"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1068761",
+      "source": "¿Tenés una hermana, Lucia?",
+      "reference": "Ñañayuq kankichu, Lucia?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1068761",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1068761",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1068761"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_849995",
+      "source": "\"¿Cómo estás?\" \"Bien, gracias.\"",
+      "reference": "\"Imaynallam kachkanki?\" \"Allillanmi, añayki.\"",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "849995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "2871446",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "849995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/849995"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_790021",
+      "source": "Ana, ¿tienes un hermano?",
+      "reference": "Turiyuq kankichu, Ana?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "790021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773471",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "790021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/790021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_730079",
+      "source": "¡Hola, John! ¿Cómo estás?",
+      "reference": "Rimaykullayki, John! Allillanchu?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "730079",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773401",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "730079",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/730079"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_578959",
+      "source": "Hasta la vista, Sayoko.",
+      "reference": "Tupananchiskama, Sayoko.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "578959",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "773400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "578959",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/578959"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_6701205",
+      "source": "Se lo agradezco.",
+      "reference": "Yupaychani.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6701205",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "9869854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6701205",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6701205"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_534195",
+      "source": "Te lo agradezco.",
+      "reference": "Yupaychani.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534195",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "spa",
+        "target_lang": "que",
+        "target_sentence_id": "9869854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534195",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534195"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

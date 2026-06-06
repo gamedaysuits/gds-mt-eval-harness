@@ -1,0 +1,2029 @@
+{
+  "corpus_id": "tatoeba-eng-sin-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "sin"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:06:32.996634+00:00",
+  "entry_count": 69,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_10043381",
+      "source": "Mary drinks milk.",
+      "reference": "මේ‍රි කිරි බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10043381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213146",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10043381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10043381"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8416467",
+      "source": "Tom drinks water.",
+      "reference": "ටොම්‍ වතුර බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8416467",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213137",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8416467",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8416467"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7932256",
+      "source": "I drink water.",
+      "reference": "මම වතුර බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7932256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213063",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7932256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7932256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7073209",
+      "source": "I eat rice.",
+      "reference": "මම බත් කනවා",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7073209",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "8385625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7073209",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7073209"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_6645817",
+      "source": "Tom drinks milk.",
+      "reference": "ටොම්‍ කිරි බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6645817",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213138",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6645817",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6645817"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "මං ඔයාට ආදරෙයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3304449",
+      "source": "I drink milk.",
+      "reference": "මම කිරි බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3304449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3304449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3304449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3120149",
+      "source": "You are welcome!",
+      "reference": "ආයුබෝවන්!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3120149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13211357",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3120149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3120149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "මං ඔයාට ආදරෙයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2244957",
+      "source": "Are you nuts?",
+      "reference": "මොලේ හොද නැද්ද？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244957",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244957",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244957"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1867478",
+      "source": "I eat bread.",
+      "reference": "මම පාන් කනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1867478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1867478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1867478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1770346",
+      "source": "I am tired!",
+      "reference": "මට මහන්සියි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1770346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1770346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1770346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1496819",
+      "source": "I hate you!",
+      "reference": "මට උඹ පේන්න බෑ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1496819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1496819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1496819"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1078147",
+      "source": "I am young.",
+      "reference": "මං තරුණයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1078147",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968401",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1078147",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1078147"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_827295",
+      "source": "I hate you.",
+      "reference": "මට උඹ පේන්න බෑ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "827295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "827295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/827295"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_801041",
+      "source": "I am right.",
+      "reference": "මං නිවැරැදියි. මම නිවැරැදියි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "801041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "801041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/801041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_773552",
+      "source": "I hear you.",
+      "reference": "මට ඔබ ඇහෙනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "773552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "773552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/773552"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_436423",
+      "source": "I am ready.",
+      "reference": "මං ලෑස්තියි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436423",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13207510",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436423",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436423"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_436273",
+      "source": "I am short.",
+      "reference": "මං කොටයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436273",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968403",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436273",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436273"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_397714",
+      "source": "I am tired.",
+      "reference": "මට මහන්සියි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "397714",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "397714",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/397714"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "කොහොමද?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13211387",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_261421",
+      "source": "I can jump.",
+      "reference": "මට පනින්න පුළුවන්.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261421",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261421",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261421"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_260935",
+      "source": "I help him.",
+      "reference": "මං ඔහුට උදවු කරනවා.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "260935",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968367",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "260935",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/260935"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_256178",
+      "source": "I can swim.",
+      "reference": "මට පිහිනීමට පුළුවනි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256178",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256178",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256178"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_252766",
+      "source": "I thank you.",
+      "reference": "ස්තූතියි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "10119274",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_35571",
+      "source": "Yes, she will.",
+      "reference": "ඔව්.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "10119244",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "මං ඔයාට ආදරෙයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_12878128",
+      "source": "My name's Mary.",
+      "reference": "මගේ නම මේ‍රි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12878128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213116",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12878128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12878128"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12421746",
+      "source": "You are my buddy.",
+      "reference": "උබ මගේ එකා හුත්තො.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12421746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12421746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12421746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_12421654",
+      "source": "We are best friends.",
+      "reference": "උබ මගේ එකා හුත්තො.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12421654",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12421654",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12421654"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12421653",
+      "source": "You're my buddy.",
+      "reference": "උබ මගේ එකා හුත්තො.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12421653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12421653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12421653"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11737169",
+      "source": "I am drinking water.",
+      "reference": "මම වතුර බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11737169",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213063",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11737169",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11737169"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11114181",
+      "source": "My name is Mary.",
+      "reference": "මගේ නම මේ‍රි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11114181",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213116",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11114181",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11114181"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8686574",
+      "source": "I'm having rice.",
+      "reference": "මම බත් කනවා",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8686574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "8385625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8686574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8686574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6873303",
+      "source": "I'm eating rice.",
+      "reference": "මම බත් කනවා",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6873303",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "8385625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6873303",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6873303"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6645799",
+      "source": "I'm called Tom.",
+      "reference": "මගේ‍ නම ටොම්‍.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6645799",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213106",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6645799",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6645799"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6602161",
+      "source": "Tom needs to think.",
+      "reference": "ටොම්ට හිතන්න ඕන.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6602161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "6602182",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6602161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6602161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6602144",
+      "source": "Is this your wallet?",
+      "reference": "මේ ඔබේ පසුම්බියද?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6602144",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "6602194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6602144",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6602144"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4864604",
+      "source": "I am eating bread.",
+      "reference": "මම පාන් කනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4864604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4864604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4864604"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3132269",
+      "source": "I'm drinking milk.",
+      "reference": "මම කිරි බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3132269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3132269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3132269"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2723491",
+      "source": "I'm eating bread.",
+      "reference": "මම පාන් කනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2723491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2723491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2723491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2649208",
+      "source": "My name's Tom.",
+      "reference": "මගේ‍ නම ටොම්‍.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2649208",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213106",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2649208",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2649208"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2273310",
+      "source": "Tom is my name.",
+      "reference": "මගේ‍ නම ටොම්‍.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2273310",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213106",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2273310",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2273310"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_1860497",
+      "source": "Don't do it.",
+      "reference": "එපා!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1860497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "10119271",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1860497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1860497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1661057",
+      "source": "I am drinking milk.",
+      "reference": "මම කිරි බොනවා.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1661057",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1661057",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1661057"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1285339",
+      "source": "How do you do?",
+      "reference": "කොහොමද?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1285339",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13211387",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1285339",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1285339"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_1173265",
+      "source": "My name is Tom.",
+      "reference": "මගේ‍ නම ටොම්‍.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1173265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13213106",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1173265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1173265"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_1110626",
+      "source": "Don't do it!",
+      "reference": "එපා!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1110626",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "10119271",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1110626",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1110626"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_378270",
+      "source": "Do you speak English?",
+      "reference": "ඔබ ඉංග්රිසි කථා කරනවාද?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "378270",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "13215650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "378270",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/378270"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_334464",
+      "source": "I am eating rice.",
+      "reference": "මම බත් කනවා",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "334464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "8385625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "334464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/334464"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_37894",
+      "source": "It doesn't matter.",
+      "reference": "ඕන පුකක්",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37894",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37894",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37894"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_37071",
+      "source": "Tom broke the window.",
+      "reference": "ටොම් කවුළුව කැඩුවා",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37071",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "7320268",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37071",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37071"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2323",
+      "source": "I don't care.",
+      "reference": "ඕන පුකක්",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2323",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2323",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2323"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2951847",
+      "source": "Everything was just so hard.",
+      "reference": "හැම දෙයක්ම හරිම අමාරුයි",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2951847",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "7320284",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2951847",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2951847"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_9091544",
+      "source": "I'm going to my place.",
+      "reference": "මම ගෙදර යනවා",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9091544",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "7320269",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9091544",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9091544"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_5388798",
+      "source": "You're the one I love.",
+      "reference": "මං ඔයාට ආදරෙයි.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5388798",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5388798",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5388798"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_3663249",
+      "source": "There are islands in the sea.",
+      "reference": "මුහුද මැද දූපතක් තියනව.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3703629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_935321",
+      "source": "Do you study any foreign language?",
+      "reference": "ඔබ මොකක් හරි විදේශ භාෂාවක් හදාරනවා ද?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "935321",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "2968402",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "935321",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/935321"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_433522",
+      "source": "It doesn't matter to me.",
+      "reference": "ඕන පුකක්",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433522"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_12461909",
+      "source": "I don't care if I die.",
+      "reference": "මැරුනත් නමක් නෑ",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12461909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "12421659",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12461909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12461909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3141835",
+      "source": "I don't need a hot bath.",
+      "reference": "මට උණුවතුර නාන්න ඕනේ නෑ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3141835",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3141999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3141835",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3141835"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2427963",
+      "source": "I'll be there in fifteen minutes.",
+      "reference": "මං විනාඩි පහළවෙන් ඔතන.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2427963",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3142013",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2427963",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2427963"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_578793",
+      "source": "Do you want to dance with me?",
+      "reference": "ඔබ මා සමඟ නටන්න කැමතිද?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "578793",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "11746102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "578793",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/578793"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_1654",
+      "source": "Would you like to dance with me?",
+      "reference": "ඔබ මා සමඟ නටන්න කැමතිද?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1654",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "11746102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1654",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1654"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_6602148",
+      "source": "I think I'll have one more ice cream cone.",
+      "reference": "මම හිතනවා මට තව අයිස්ක්‍රීම් කෝන් එකක් ඕන කියල.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6602148",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "6602193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6602148",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6602148"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4697783",
+      "source": "Currently Burj Khalifa is the tallest skyscraper in the world.",
+      "reference": "බර්ජ් කලීෆා දැනට ලෝකයේ උසම ගොඩනැගිල්ලට නැග ඇත.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4697783",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3744963",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4697783",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4697783"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1431310",
+      "source": "When you wake up, I won't be here anymore.",
+      "reference": "ඔයා ඇහැරිනකොට මං මෙහේ නෑ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1431310",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3142017",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1431310",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1431310"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_1399479",
+      "source": "Burj Khalifa is currently the tallest skyscraper in the world.",
+      "reference": "බර්ජ් කලීෆා දැනට ලෝකයේ උසම ගොඩනැගිල්ලට නැග ඇත.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1399479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "3744963",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1399479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1399479"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_31526",
+      "source": "I think I will have one more ice cream cone.",
+      "reference": "මම හිතනවා මට තව අයිස්ක්‍රීම් කෝන් එකක් ඕන කියල.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sin",
+        "target_sentence_id": "6602193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -467,6 +467,7 @@ def assemble_run_card(
             "quality_tier": quality_tier,
             "errors": overall.get("error_count", 0),
             "by_difficulty": report.get("by_difficulty", {}),
+            "by_domain": report.get("by_domain", {}),
             "by_provenance": {},                 # not yet tracked
             # Latency stats (§3.6)
             "avg_latency_seconds": avg_latency,
@@ -655,6 +656,10 @@ def publish_to_supabase(
         "chrf_ci_upper": cis.get("corpus_chrf", {}).get("ci_upper") if cis else None,
         "exact_match_ci_lower": cis.get("exact_match_rate", {}).get("ci_lower") if cis else None,
         "exact_match_ci_upper": cis.get("exact_match_rate", {}).get("ci_upper") if cis else None,
+        "fst_ci_lower": cis.get("fst_acceptance_rate", {}).get("ci_lower") if cis else None,
+        "fst_ci_upper": cis.get("fst_acceptance_rate", {}).get("ci_upper") if cis else None,
+        "composite_ci_lower": cis.get("composite_score", {}).get("ci_lower") if cis else None,
+        "composite_ci_upper": cis.get("composite_score", {}).get("ci_upper") if cis else None,
         # Cost + timing
         "total_cost_usd": totals["total_cost_usd"],
         "cost_per_entry_usd": totals.get("cost_per_entry_usd"),

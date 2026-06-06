@@ -21,11 +21,26 @@ FST QUALITY GATE:
     include morphological validation — the most important quality signal
     for these languages.
 
+BEHAVIORAL PLUGINS (language-agnostic):
+    Three behavioral metric plugins are loaded for ALL language pairs:
+    - CodeSwitchingPlugin: detects source-language word leakage (e.g. English
+      words in Cree output). Auto-detects target script.
+    - HallucinationPlugin: detects fabricated content via length ratio,
+      repetition, entity preservation, and echo detection heuristics.
+    - TerminologyPlugin: measures adherence to prescribed vocabulary when a
+      glossary is provided in config. Returns null metrics without a glossary
+      (harmlessly excluded from composite via re-normalization).
+
+    Scoring weights reference these metrics (code_switching_rate, hallucination_rate,
+    terminology_adherence), so they must be loaded for the composite to include them.
+
 DESIGN DECISIONS:
     - The FST gate applies only to languages in GIELLALT_FST_REGISTRY.
       Languages without known FSTs proceed normally without any gate.
     - CRK-specific plugins (linter, semantic) remain as additional
       language-specific enrichments on top of the generic FST plugin.
+    - Behavioral plugins load unconditionally — they're stdlib-only,
+      language-agnostic, and zero-config.
     - The --skip-fst flag exists for CI/automation where interactive
       prompts aren't possible, but it logs a clear warning.
 """
@@ -113,29 +128,82 @@ def _detect_lang_name(config: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def _try_load_crk_linter() -> object | None:
-    """Attempt to load CrkLinterMetric. Returns the plugin instance or None."""
+    """Attempt to load CrkLinterMetric. Returns the plugin instance or None.
+
+    CrkLinterMetric is an EXTERNAL plugin from the crk-translate package.
+    It is legitimately absent when crk-translate is not installed.
+    ImportError → None is correct here. Initialization errors are logged
+    as warnings because they indicate a broken installation.
+    """
     try:
         from eval.harness_plugins.metrics import CrkLinterMetric
         return CrkLinterMetric()
     except ImportError:
-        logger.debug("CrkLinterMetric not importable")
+        logger.debug("CrkLinterMetric not importable (crk-translate not installed)")
         return None
     except Exception as e:
-        logger.debug("CrkLinterMetric failed to initialize: %s", e)
+        logger.warning("CrkLinterMetric found but failed to initialize: %s", e)
         return None
 
 
 def _try_load_crk_semantic() -> object | None:
-    """Attempt to load CrkSemanticMetric. Returns the plugin instance or None."""
+    """Attempt to load CrkSemanticMetric. Returns the plugin instance or None.
+
+    Same rationale as _try_load_crk_linter — external plugin, legitimately
+    absent when crk-translate is not installed.
+    """
     try:
         from eval.harness_plugins.metrics import CrkSemanticMetric
         return CrkSemanticMetric()
     except ImportError:
-        logger.debug("CrkSemanticMetric not importable")
+        logger.debug("CrkSemanticMetric not importable (crk-translate not installed)")
         return None
     except Exception as e:
-        logger.debug("CrkSemanticMetric failed to initialize: %s", e)
+        logger.warning("CrkSemanticMetric found but failed to initialize: %s", e)
         return None
+
+
+# ---------------------------------------------------------------------------
+# Behavioral plugins (language-agnostic — apply to all language pairs)
+# ---------------------------------------------------------------------------
+
+def _load_code_switching() -> object:
+    """Load CodeSwitchingPlugin.
+
+    This plugin SHIPS WITH the harness — it is not an optional external
+    dependency. If it fails to import, something is broken and we must
+    crash loudly rather than silently omitting it from scoring.
+    """
+    from mt_eval_harness.plugins.code_switching import CodeSwitchingPlugin
+    return CodeSwitchingPlugin()
+
+
+def _load_hallucination() -> object:
+    """Load HallucinationPlugin.
+
+    This plugin SHIPS WITH the harness — it is not an optional external
+    dependency. If it fails to import, something is broken and we must
+    crash loudly.
+    """
+    from mt_eval_harness.plugins.hallucination import HallucinationPlugin
+    return HallucinationPlugin()
+
+
+def _load_terminology(config: dict) -> object:
+    """Load TerminologyPlugin with glossary from config.
+
+    This plugin SHIPS WITH the harness — it is not an optional external
+    dependency. If it fails to import, something is broken and we must
+    crash loudly.
+
+    If no glossary is provided in the config, the plugin still loads but
+    returns None for all terminology metrics — scoring.py treats None as
+    "metric unavailable" and excludes it from composite re-normalization.
+    This means loading it without a glossary is harmless.
+    """
+    from mt_eval_harness.plugins.terminology import TerminologyPlugin
+    glossary = config.get("glossary")
+    return TerminologyPlugin(glossary=glossary)
 
 
 # ---------------------------------------------------------------------------
@@ -172,6 +240,13 @@ def discover_metric_plugins(
     lang_name = _detect_lang_name(config)
 
     if lang_code is None:
+        logger.warning(
+            "Could not detect target language from config keys "
+            "'target_lang', 'target_language', or 'language_pair'. "
+            "No language-specific plugins will be loaded. "
+            "Config keys present: %s",
+            list(config.keys()),
+        )
         return plugins
 
     # --- FST quality gate ---
@@ -213,6 +288,26 @@ def discover_metric_plugins(
         if semantic:
             plugins.append(semantic)
             print("  Semantic: loaded (CrkSemanticMetric — semantic validation)")
+
+    # --- Behavioral plugins (language-agnostic, always loaded) ---
+    # These detect specific failure modes in translation output.
+    # They apply to all language pairs — no language-specific tools needed.
+    # Scoring weights reference these metrics (code_switching_rate: 0.05–0.10,
+    # hallucination_rate: 0.05, terminology_adherence: 0.05), so they must
+    # be loaded for the composite to include them.
+
+    cs_plugin = _load_code_switching()
+    plugins.append(cs_plugin)
+    print("  Code-switching: loaded (CodeSwitchingPlugin — source-language leakage)")
+
+    hall_plugin = _load_hallucination()
+    plugins.append(hall_plugin)
+    print("  Hallucination: loaded (HallucinationPlugin — fabricated content)")
+
+    term_plugin = _load_terminology(config)
+    plugins.append(term_plugin)
+    glossary_status = "with glossary" if config.get("glossary") else "no glossary (metric inactive)"
+    print(f"  Terminology: loaded (TerminologyPlugin — {glossary_status})")
 
     if plugins:
         print(f"  Auto-discovered {len(plugins)} metric plugin(s) for {lang_code}")

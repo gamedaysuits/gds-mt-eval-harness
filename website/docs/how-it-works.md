@@ -6,7 +6,7 @@ slug: '/how-it-works'
 
 # How It Works: Competitive Crowdsourcing for Machine Translation
 
-> **Executive Summary.** Machine translation for the world's 6,800+ underserved languages is not a model-training problem — it is an *infrastructure* problem. No single model, lab, or company will solve it. This document describes a platform architecture that turns the global community of ML engineers, linguists, and language speakers into a distributed research lab: anyone builds a translation method, the platform proves whether it works against sovereign evaluation data, and proven methods deploy to production with revenue flowing to the communities whose languages they serve. The mechanism is competitive crowdsourcing with cryptographic sovereignty — a combination that has not been attempted before.
+> **Executive Summary.** Machine translation for the world's underserved languages — including the ~1,300 that Meta's OMT-1600 claims to cover but at quality levels below any usable threshold — is not a model-training problem — it is an *infrastructure* problem. No single model, lab, or company will solve it. This document describes a platform architecture that turns the global community of ML engineers, linguists, and language speakers into a distributed research lab: anyone builds a translation method, the platform proves whether it works against sovereign evaluation data, and proven methods deploy to production with revenue flowing to the communities whose languages they serve. The mechanism is competitive crowdsourcing with cryptographic sovereignty — a combination that has not been attempted before.
 
 ---
 
@@ -16,15 +16,15 @@ Machine translation for low-resource languages (LRLs) is commonly framed as a ma
 
 ### 1.1 Why the ML Framing Fails
 
-The standard ML pipeline for MT requires three things: large parallel corpora, validated evaluation benchmarks, and a deployment path. For the ~130 languages served by Google Translate, all three exist. For the remaining 6,800+, none do.
+The standard ML pipeline for MT requires three things: large parallel corpora, validated evaluation benchmarks, and a deployment path. For the ~130 languages served by Google Translate and the ~200 covered by NLLB-200, all three exist. For the ~1,300 additional languages OMT-1600 claims to cover, evaluation data exists but quality is mostly below usable thresholds, the model weights are not publicly available, and there is no deployment pipeline. For the remaining ~5,400+, none exist at all.
 
-| Requirement | High-Resource Languages | Low-Resource Languages |
-|-------------|------------------------|----------------------|
-| **Parallel corpora** | Millions of sentence pairs (Europarl, UN Corpus, OpenSubtitles) | Hundreds to low thousands, if any |
-| **Evaluation benchmarks** | WMT, FLORES, NTREX — standardized, reproducible | No standard benchmarks; ad hoc evaluation |
-| **Deployment path** | Google Translate, DeepL, Azure — commercial APIs | Nothing. No API, no product, no market. |
+| Requirement | High-Resource Languages | OMT-1600 Coverage (~1,300 LRLs) | Remaining ~5,400 Languages |
+|-------------|------------------------|-------------------------------|---------------------------|
+| **Parallel corpora** | Millions of sentence pairs (Europarl, UN Corpus, OpenSubtitles) | Bible-domain bitext, web scrapes, synthetic backtranslation. No community-curated data. | Hundreds to low thousands, if any |
+| **Evaluation benchmarks** | WMT, FLORES, NTREX — standardized, reproducible | BOUQuET (Bible-domain), met-BOUQuET. No morphological validation. No independent evaluation. | No standard benchmarks; ad hoc evaluation |
+| **Deployment path** | Google Translate, DeepL, Azure — commercial APIs | Model weights not released. No CLI, no plugin system, no community-deployable API. | Nothing. No API, no product, no market. |
 
-The ML approach works when the data exists to train on and the market exists to deploy into. When neither condition holds, the problem isn't "we need a better model" — it's "we need a different mechanism entirely."
+The ML approach works when the data exists to train on and the market exists to deploy into. OMT-1600 has expanded the first condition significantly — but expansion without independent quality verification, morphological validation, or community governance is expansion without trust. The problem isn't just "we need a better model" — it's "we need infrastructure that proves the model works, on terms the community controls."
 
 ### 1.2 What MT for LRLs Actually Requires
 
@@ -67,7 +67,7 @@ The solution isn't a bigger model or more training data. It's **infrastructure t
 
 ### 2.1 Commercial MT
 
-Commercial translation services optimize for market volume. If a language has fewer than a million internet-connected speakers, the engineering investment doesn't justify the revenue. This is a structural incentive problem: the languages most in need of technology are precisely those the market will never serve.
+Commercial translation services have historically optimized for market volume. Meta's OMT-1600 (March 2026) represents a significant shift — 1,600 languages in one system. But for the ~1,300 at their lowest resource tiers, quality is below usable thresholds, the model weights are not available, and there is no deployment pipeline. The structural incentive problem has evolved: Big Tech can now build models for LRLs, but without independent evaluation, morphological validation, or community governance, coverage alone doesn't solve the problem.
 
 ### 2.2 Academic Research
 
@@ -235,7 +235,7 @@ Before 2023, building any MT capability for a polysynthetic language required si
 
 ### 6.3 The Open-Source Benchmarking Culture
 
-AI benchmarking has become its own culture. Leaderboards drive innovation. Competitions attract talent. The Chatbot Arena, LMSYS, Hugging Face Open LLM Leaderboard — these platforms demonstrate that competitive evaluation drives rapid progress. We take that energy and point it at translation for the 6,800+ languages that commercial MT will never serve.
+AI benchmarking has become its own culture. Leaderboards drive innovation. Competitions attract talent. The Chatbot Arena, LMSYS, Hugging Face Open LLM Leaderboard — these platforms demonstrate that competitive evaluation drives rapid progress. We take that energy and point it at translation for the thousands of languages where commercial MT either doesn't exist or hasn't been independently proven to work.
 
 ### 6.4 Indigenous Data Sovereignty Is Non-Negotiable
 
@@ -249,7 +249,7 @@ The OCAP® principles (Ownership, Control, Access, Possession), the CARE princip
 
 - **champollion** — Production-ready CLI tool. 10 translation methods, per-pair configuration, quality gates, 5 file formats. [Published on npm](https://www.npmjs.com/package/champollion).
 - **MT Eval Harness** — Working evaluation framework. chrF++, FST acceptance, and exact match metrics implemented. Run card schema finalized. Fingerprinting and integrity verification working.
-- **EDTeKLA Dev v1** — Plains Cree evaluation corpus (CC BY-NC-SA 4.0), sourced from the University of Alberta's EdTeKLA research group. The textbook corpus has 486 entries (436 dev + 50 held-out), plus 62 separate gold standard pairs from itwêwina (548 total). A 124-entry working dev set (`edtekla_dev_124.json`) is available for rapid iteration.
+- **EDTeKLA Dev v1** — Plains Cree evaluation corpus (CC BY-NC-SA 4.0), sourced from the University of Alberta's EdTeKLA research group. The textbook corpus has 486 entries (436 dev + 50 held-out), plus 62 separate gold standard pairs from itwêwina (548 total). The canonical dev corpus is `textbook_dev.json` with 436 entries — the full textbook dev split.
 - **FLORES+ Devtest** — 1,012 sentences × 39 languages (CC BY-SA 4.0).
 - **Arena website** — Docusaurus-based documentation site with leaderboard, specifications, tutorials, and sovereignty framework.
 - **Benchmark Specification** — [Canonical spec](/docs/specifications/benchmark) defining corpus schema, run card format, and evaluation protocol. For metric definitions, composite weights, and quality tiers, see [SCORING_SPEC.md](/docs/specifications/scoring).

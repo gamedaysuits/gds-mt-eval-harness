@@ -1,0 +1,1679 @@
+{
+  "corpus_id": "tatoeba-fra-cat-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "fra",
+    "target": "cat"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:47:04.501375+00:00",
+  "entry_count": 57,
+  "domains": [
+    "conv"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13720440",
+      "source": "« Bienvenue. » « Merci. »",
+      "reference": "\"Benvingut.\" \"Gràcies.\"",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13720440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13720435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13720440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13720440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_11536440",
+      "source": "Non, merci !",
+      "reference": "No, gràcies.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11536440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11536440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11536440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10735798",
+      "source": "Grand merci !",
+      "reference": "Moltes gràcies.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10735798",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465490",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10735798",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10735798"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10507703",
+      "source": "Au voleur !",
+      "reference": "Lladre!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10507703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13833980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10507703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10507703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9930007",
+      "source": "Parle espéranto !",
+      "reference": "Parla esperanto!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9930007",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "9722878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9930007",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9930007"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_9930003",
+      "source": "Parlez espéranto !",
+      "reference": "Parla esperanto!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9930003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "9722878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9930003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9930003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.5
+      }
+    },
+    {
+      "id": "tatoeba_8876309",
+      "source": "Mille mercis !",
+      "reference": "Moltes gràcies.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8876309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465490",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8876309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8876309"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_8732218",
+      "source": "Viens là !",
+      "reference": "Vine aquí!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8732218",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2130463",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8732218",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8732218"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8732217",
+      "source": "Venez là !",
+      "reference": "Veniu aquí!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8732217",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2130465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8732217",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8732217"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8304734",
+      "source": "Pauvre con !",
+      "reference": "Idiota!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8304734",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "780018",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8304734",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8304734"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_8304733",
+      "source": "Pauvre imbécile !",
+      "reference": "Idiota!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8304733",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "780018",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8304733",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8304733"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_8267435",
+      "source": "En route !",
+      "reference": "Au, anem!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8267435",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2239061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8267435",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8267435"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8095273",
+      "source": "Soyez vigilant !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8095273",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8095273",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8095273"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_8036577",
+      "source": "Bonjour, Tom !",
+      "reference": "Hola, Tom!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8036577",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465539",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8036577",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8036577"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7724349",
+      "source": "Fais chier !",
+      "reference": "Merda!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7724349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "855561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7724349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7724349"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_7336552",
+      "source": "Viens ici !",
+      "reference": "Vine aquí!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7336552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2130463",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7336552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7336552"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7097766",
+      "source": "Sors dehors !",
+      "reference": "Surtiu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7097766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "877459",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7097766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7097766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6774267",
+      "source": "Bonne continuation !",
+      "reference": "Bona sort.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6774267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "466794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6774267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6774267"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.5
+      }
+    },
+    {
+      "id": "tatoeba_6590235",
+      "source": "Il neige !",
+      "reference": "Està nevant!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6590235",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "6589231",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6590235",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6590235"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6154217",
+      "source": "Bonne route !",
+      "reference": "Bon viatge.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6154217",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465517",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6154217",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6154217"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4578477",
+      "source": "Des bêtises !",
+      "reference": "Quina ximpleria!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4578477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12358201",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4578477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4578477"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4366787",
+      "source": "Pas possible !",
+      "reference": "Mentida!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4366787",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12501178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4366787",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4366787"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4366784",
+      "source": "Tu déconnes !",
+      "reference": "Mentida!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4366784",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12501178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4366784",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4366784"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4320473",
+      "source": "Hé oh !",
+      "reference": "Hola!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4320473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "1502703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4320473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4320473"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_4320426",
+      "source": "Ça caille !",
+      "reference": "Quin fred!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4320426",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12501183",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4320426",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4320426"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4320335",
+      "source": "Bon courage !",
+      "reference": "Bona sort.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4320335",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "466794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4320335",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4320335"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3632285",
+      "source": "Des conneries !",
+      "reference": "Quina ximpleria!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3632285",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12358201",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3632285",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3632285"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3407486",
+      "source": "Quelle ordure !",
+      "reference": "quin trasto !",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3407486",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "853937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3407486",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3407486"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3401834",
+      "source": "Dieu merci !",
+      "reference": "Gràcies a Déu!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3401834",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13286862",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3401834",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3401834"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2491297",
+      "source": "Bel oiseau !",
+      "reference": "Bell ocell!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2491297",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2491480",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2491297",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2491297"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2436061",
+      "source": "Grand merci !",
+      "reference": "Moltes gràcies!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2436061",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2491578",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2436061",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2436061"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2350848",
+      "source": "Faites gaffe !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2350848",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2350848",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2350848"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2350845",
+      "source": "Fais gaffe !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2350845",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2350845",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2350845"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2271433",
+      "source": "Du balai !",
+      "reference": "Surtiu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2271433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "877459",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2271433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2271433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1973431",
+      "source": "Laissez tomber !",
+      "reference": "Abandoneu!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1973431",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "8892712",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1973431",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1973431"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1964302",
+      "source": "Oh putain !",
+      "reference": "Merda!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1964302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "855561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1964302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1964302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1951925",
+      "source": "Très bien !",
+      "reference": "Brillant!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1951925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13289302",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1951925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1951925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1850041",
+      "source": "Soyez prudente !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1850039",
+      "source": "Soyez prudent !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850039",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850039",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850039"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1850038",
+      "source": "Sois prudente !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850038",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850038",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850038"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1850037",
+      "source": "Sois prudent !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850037",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850037",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850037"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1846329",
+      "source": "Arrêtez ici !",
+      "reference": "Atura't aquí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1846329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12497307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1846329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1846329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1846328",
+      "source": "Arrête ici !",
+      "reference": "Atura't aquí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1846328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12497307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1846328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1846328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1845959",
+      "source": "Revenez ici !",
+      "reference": "Torna aquí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1845959",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13290920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1845959",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1845959"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1845958",
+      "source": "Reviens ici !",
+      "reference": "Torna aquí!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1845958",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13290917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1845958",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1845958"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1547021",
+      "source": "Pas vrai !",
+      "reference": "Increïble!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1547021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "9722959",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1547021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1547021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1483736",
+      "source": "Quelle merveille !",
+      "reference": "Meravellós!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1483736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13289300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1483736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1483736"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.5
+      }
+    },
+    {
+      "id": "tatoeba_1483733",
+      "source": "Prenez garde !",
+      "reference": "Alerta!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1483733",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "4934348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1483733",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1483733"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1391668",
+      "source": "Quelle chaleur !",
+      "reference": "Quina calor que fa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1391668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12503811",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1391668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1391668"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1275473",
+      "source": "Venez ici !",
+      "reference": "Veniu aquí!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1275473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2130465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1275473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1275473"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1158242",
+      "source": "Joyeuse année !",
+      "reference": "Bon any nou!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1158242",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "5160346",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1158242",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1158242"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1153662",
+      "source": "Je suis !",
+      "reference": "Jo sóc!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1153662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "2062087",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1153662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1153662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1143732",
+      "source": "Heureuse année !",
+      "reference": "Bon any nou!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1143732",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "5160346",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1143732",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1143732"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1143723",
+      "source": "Veuille écouter !",
+      "reference": "Escolteu!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1143723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "1529318",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1143723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1143723"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_1142712",
+      "source": "De rien !",
+      "reference": "De res.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1142712",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "12497425",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1142712",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1142712"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1108688",
+      "source": "À demain !",
+      "reference": "Fins demà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1108688",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "465536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1108688",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1108688"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1090707",
+      "source": "Nickel chrome !",
+      "reference": "Brillant!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1090707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "cat",
+        "target_sentence_id": "13289302",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1090707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1090707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

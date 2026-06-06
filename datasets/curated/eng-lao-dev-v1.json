@@ -1,0 +1,2004 @@
+{
+  "corpus_id": "tatoeba-eng-lao-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "lao"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:13:05.542111+00:00",
+  "entry_count": 68,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "legal",
+    "medical",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_6817059",
+      "source": "That isn't your knife.",
+      "reference": "ອັນນີ້ບໍ່ແມ່ນມີດຂອງເຈົ້າ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6817059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791447",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6817059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6817059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_8993580",
+      "source": "He is too fat.",
+      "reference": "ລາວຕຸ້ຍໂພດ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8993580",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8993579",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8993580",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8993580"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "ຂ້ອຍຮັກເຈົ້າ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_34911",
+      "source": "Can you play the piano?",
+      "reference": "ເຈົ້າຫຼີ້ນເປຍໂນເປັນບໍ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8990234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34911"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3322848",
+      "source": "He's a farmer.",
+      "reference": "ລາວເປັນຊາວນາ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3322848",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8980198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3322848",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3322848"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8051050",
+      "source": "This hotel is expensive.",
+      "reference": "ໂຮງແຮມນີ້ແພງ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8051050",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8981608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8051050",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8051050"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8477614",
+      "source": "He's very fat.",
+      "reference": "ລາວຕຸ້ຍຫຼາຍ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8477614",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8993577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8477614",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8477614"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8987873",
+      "source": "Can you eat durian?",
+      "reference": "ເຈົ້າກິນທຸລຽນໄດ້ບໍ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8987873",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8987872",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8987873",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8987873"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_9512305",
+      "source": "That's a mango.",
+      "reference": "ອັນນັ້ນແມ່ນໝາກມ່ວງ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9512305",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8977020",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9512305",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9512305"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1845477",
+      "source": "Tom named his dog Cookie.",
+      "reference": "ທອມຕັ້ງຊື່ໝາລາວວ່າຄຸກກີ້",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1845477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791443",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1845477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1845477"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8981605",
+      "source": "His younger sister is cute.",
+      "reference": "ນ້ອງສາວລາວໜ້າຮັກ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8981605",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8981604",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8981605",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8981605"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_16300",
+      "source": "Can you swim?",
+      "reference": "ເຈົ້າລອຍເປັນບໍ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16300",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8990235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16300",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16300"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8975834",
+      "source": "He doesn’t eat fruit.",
+      "reference": "ລາວບໍ່ກິນໝາກໄມ້.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975834",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975833",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975834",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975834"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_6874228",
+      "source": "We're not cold in the house.",
+      "reference": "ຢູ່ໃນເຮືອນພວກເຮົາບໍ່ໜາວ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6874228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6874228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6874228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8997047",
+      "source": "Is Malichanh young or old?",
+      "reference": "ມາລິຈັນໜຸ່ມຫຼືເຖົ້າ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997047",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997046",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997047",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997047"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_370706",
+      "source": "Where is your house?",
+      "reference": "ເຮືອນເຈົ້າຢູ່ໃສ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975845",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8990247",
+      "source": "Our family is eating dinner now.",
+      "reference": "ຄອບຄົວພວກຂ້ອຍກຳລັງກິນເຂົ້າແລງ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8990247",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8990246",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8990247",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8990247"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_71174",
+      "source": "I am delighted to meet you.",
+      "reference": "ດີໃຈທີ່ຮູ້ກັບເຈົ້າ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "71174",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "1897943",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "71174",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/71174"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_12921547",
+      "source": "She'll write a book on biology.",
+      "reference": "ນາງຈະຂຽນຫນັງສືກ່ຽວກັບຊີວະສາດ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12921547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "12930922",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12921547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12921547"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_8984939",
+      "source": "He sells fruit every day at the market.",
+      "reference": "ລາວຂາຍໝາກໄມ້ທຸກໆມື້ຢູ່ຕະຫຼາດ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984939",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8984938",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984939",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984939"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_8984925",
+      "source": "Her mother doesn’t like shopping at the market.",
+      "reference": "ແມ່ລາວບໍ່ມັກຊື້ເຄື່ອງຢູ່ຕະຫຼາດ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8984924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_8991659",
+      "source": "I don’t like watching television. I prefer listening to music.",
+      "reference": "ຂ້ອຍບໍ່ມັກເບິ່ງໂທລະທັດ.ຂ້ອຍມັກຟັງເພັງຫຼາຍກວ່າ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8991659",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8991658",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8991659",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8991659"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.1
+      }
+    },
+    {
+      "id": "tatoeba_8975748",
+      "source": "I'm going to be fat like this.",
+      "reference": "ຂ້ອຍຊິອ້ວນແບບນີ້.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_436989",
+      "source": "I think I lost my wallet.",
+      "reference": "ຂ້ອຍຄິດວ່າ ຂ້ອຍເສັຍກະເປົາເງິນ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436989",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "2863904",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436989",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436989"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_8977029",
+      "source": "I don’t want to buy that durian.",
+      "reference": "ຂ້ອຍບໍ່ຢາກຊື້ໝາກຖຸລຽນນັ້ນ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8977029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8977028",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8977029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8977029"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_7176614",
+      "source": "Tom knows that this will be difficult.",
+      "reference": "ທອມຮູ້ວ່າອັນນີ້ມັນຕ້ອງຍາກ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7176614",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791437",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7176614",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7176614"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_8990237",
+      "source": "Can you take a photo of me and my dog?",
+      "reference": "ເຈົ້າຖ່າຍຮູບຂ້ອຍແລະໝາຂ້ອຍໄດ້ບໍ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8990237",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8990236",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8990237",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8990237"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_8987891",
+      "source": "Can you go to the market and buy ten tomatoes before dinner?",
+      "reference": "ເຈົ້າໄປຕະຫຼາດແລະຊື້ໝາກເດັ່ນມາສິບໜ່ວຍໄດ້ບໍກ່ອນເຂົ້າແລງ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8987891",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8987889",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8987891",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8987891"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8997053",
+      "source": "Did you memorize by heart all the new words or not?",
+      "reference": "ເຈົ້າຈື່ຂຶ້ນໃຈຄໍາສັບໃໝ່ທັງໝົດແລ້ວຫຼືບໍ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997053",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997052",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997053",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997053"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.64
+      }
+    },
+    {
+      "id": "tatoeba_8997050",
+      "source": "Is Santa Claus thin or fat?",
+      "reference": "ຊານຕາຄລອດສຈ່ອຍຫຼືຕຸ້ຍ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997050",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997049",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997050",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997050"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1446104",
+      "source": "If that were true, what would you do?",
+      "reference": "ຖ້າຈິງ ທ່ານຈະເຮັດຫຍັງ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1446104",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791463",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1446104",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1446104"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8987896",
+      "source": "That hotel is very cheap and dirty. Can you really sleep there?",
+      "reference": "ໂຮງແຮມນັ້ນລາຄາຖືກແລະເປື້ອນຫຼາຍ.ເຈົ້າສາມາດນອນຢູ່ຫັນໄດ້ແທ້ບໍ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8987896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8987894",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8987896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8987896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_8984927",
+      "source": "I don’t eat at that restaurant because it’s expensive.",
+      "reference": "ຂ້ອຍບໍ່ກິນເຂົ້າຢູ່ຮ້ານອາຫານນັ້ນເພາະມັນແພງ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8984926",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984927"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8997055",
+      "source": "Do you prefer Thai dramas or Korean dramas?",
+      "reference": "ເຈົ້າມັກລະຄອນໄທຫຼືລະຄອນເກົາຫຼີຫຼາຍກວ່າ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997055",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997055",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997055"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_8986493",
+      "source": "She is fifty-five years old, right?",
+      "reference": "ລາວອາຍຸຫ້າສິບຫ້າປີ, ແມ່ນບໍ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8986493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8986492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8986493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8986493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8975842",
+      "source": "Where are you going to go today?",
+      "reference": "ມື້ນີ້ເຈົ້າຊິໄປໃສ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_8995294",
+      "source": "How long does it take to walk from your house to school?",
+      "reference": "ຍ່າງຈາກເຮືອນເຈົ້າໄປໂຮງຮຽນໃຊ້ເວລາດົນປານໃດ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8995294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8995293",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8995294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8995294"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8987888",
+      "source": "Can we make papaya salad with this papaya or is it too ripe?",
+      "reference": "ພວກເຮົາຕຳໝາກຫຸ່ງໜ່ວຍນີ້ໄດ້ບໍຫຼືມັນວ່າສຸກໂພດແລ້ວ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8987888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8987887",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8987888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8987888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_8986509",
+      "source": "No, she isn’t ten years old.",
+      "reference": "ບໍ່, ອາຍຸລາວບໍ່ແມ່ນສິບປີ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8986509",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8986508",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8986509",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8986509"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8997034",
+      "source": "Do you want to travel to London, Paris or New York?",
+      "reference": "ເຈົ້າຢາກເດີນທາງໄປລອນດອນ, ປາຣີສຫຼືນິວຢອກ?",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997033",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997034"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_8997039",
+      "source": "Please write your name in black or blue ink but not in red ink.",
+      "reference": "ກະລຸນາຂຽນຊື່ເຈົ້າດ້ວຍໝຶກດຳຫຼືໝຶກຟ້າແຕ່ບໍ່ແມ່ນໝຶກແດງ.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997039",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997038",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997039",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997039"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8997059",
+      "source": "I will send you a message tonight before I go to bed or tomorrow morning after I get up.",
+      "reference": "ຂ້ອຍຈະສົ່ງຂໍ້ຄວາມຫາເຈົ້າຄືນນີ້ກ່ອນຂ້ອຍເຂົ້ານອນຫຼື ມື້ອື່ນເຊົ້າຫລັງຈາກຂ້ອຍຕື່ນ.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997058",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.63
+      }
+    },
+    {
+      "id": "tatoeba_8984931",
+      "source": "He will sleep at a hotel in Pakse tonight but he will sleep in a guest house in Luang Prabang tomorrow night.",
+      "reference": "ລາວຈະນອນຢູ່ໂຮງແຮມຢູ່ປາກເຊຄືນມຶ້ນີ້ແຕ່ລາວຈະນອນຢູ່ເຮືອນພັກຢູ່ຫຼວງພະບາງຄືນມື້ອື່ນ.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8984930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984931"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.95
+      }
+    },
+    {
+      "id": "tatoeba_12394131",
+      "source": "The winners take home $7,500 for their school's science program and get a trip to a science-focused summer camp.",
+      "reference": "ຜູ້​ຊະ​ນະ​ເລີດ​ຈະ​ໄດ້​ຮັບ​ລາງວັນ​ກັບ​ບ້ານ 7,500 ໂດ​ລາ​ສຳ​ລັບ​ໂຄງ​ການ​ວິ​ທະ​ຍາ​ສາດ ໂຮງຮຽນຂອງເຂົາເຈົ້າ ແລະ ຈະໄດ້ເດີນທາງໄປຮ່ວມທັດສະນະລະດູຮ້ອນທີ່ເພັ່ງເລັງ ໃສ່ວິທະຍາສາດ.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12394131",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "12394134",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12394131",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12394131"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.89
+      }
+    },
+    {
+      "id": "tatoeba_338182",
+      "source": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "reference": "ມະນຸດທຸກຄົນເກີດມາມີກຽດສັກສີ, ສິດທິ, ເສຣີພາບແລະຄວາມສເມີພາບເທົ່າທຽມກັນ. ທຸກໆຄົນມີເຫດຜົນແລະຄວາມຄິດຄວາມເຫັນສ່ວນຕົວຂອງໃຜຂອງມັນ, ແຕ່ວ່າມະນຸດທຸກໆຄົນຄວນປະພຶດຕໍ່ກັນຄືກັນກັບເປັນອ້າຍນ້ອງກັນ.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "338182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "2699763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "338182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/338182"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 30,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.63
+      }
+    },
+    {
+      "id": "tatoeba_12220038",
+      "source": "The gel is injected as a liquid. In the brain, it reverts to a jelly-like substance and can be administered to specific areas impaired by Parkinson’s or a stroke. The stem cells can then be instructed to create replacement neurons.",
+      "reference": "ເຈລດັ່ງກ່າວແມ່ນຖືກສີດເຂົ້າໄປດັ່ງກັບຂອງແຫຼວ. ຢູ່ໃນສະໝອງ, ມັນຈະປ່ຽນເປັນສານທີ່ຄືກັບວຸ້ນ ແລະ ສາມາດສີດໃສ່ບໍລິເວນທີ່ສະເພາະເຈາະຈົງທີ່ຖືກທຳລາຍໂດຍໂຣກພາກິນສັນ ຫຼື ອຳມະພຶດ. ສເຕັມ ແຊລ ຫຼັງຈາກນັ້ນຈະສາມາດຖືກບັນຊາການເພື່ອສ້າງເຊລປະສາດແທນ.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12220038",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "12220040",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12220038",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12220038"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 40,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.7
+      }
+    },
+    {
+      "id": "tatoeba_8990239",
+      "source": "I want to buy this sinh. Can you give me a discount?",
+      "reference": "ຂ້ອຍຢາກຊື້ສິ້ນນີ້. ເຈົ້າຫຼຸດໃຫ້ຂ້ອຍໄດ້ບໍ?",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8990239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8990238",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8990239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8990239"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_8993594",
+      "source": "In a little while I am going shopping at the supermarket in order to buy meat and vegetables.",
+      "reference": "ຈັກໜ້ອຍຂ້ອຍຊິໄປຊື້ເຄື່ອງຢູ່ຮ້ານສັບພະສິນຄ້າເພື່ອຊື້ຊີ້ນກັບຜັກ.",
+      "domain": "ecommerce",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8993594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8993593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8993594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8993594"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_8975826",
+      "source": "The teacher comes from Salavan.",
+      "reference": "ອາຈານມາຈາກສາລະວັນ.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975826",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975826",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975826"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_2811861",
+      "source": "I am an English teacher.",
+      "reference": "ຂ້ອຍເປັນອາຈານສອນພາສາອັງກິດ.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2811861",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8980193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2811861",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2811861"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_8975828",
+      "source": "What’s the teacher’s name?",
+      "reference": "ອາຈານຊື່ຫຍັງ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975828"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_8975844",
+      "source": "Where is the university?",
+      "reference": "ມະຫາວິທະຍາໄລຢູ່ໃສ?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975844",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975844",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975844"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8993596",
+      "source": "The professor must understand his students.",
+      "reference": "ອາຈານຕ້ອງເຂົ້າໃຈນັກສຶກສາຂອງລາວ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8993596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8993595",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8993596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8993596"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.17
+      }
+    },
+    {
+      "id": "tatoeba_8980200",
+      "source": "They are university students in Vientiane.",
+      "reference": "ພວກເຂົາເປັນນັກສຶກສາມະຫາວິທະຍາໄລຢູ່ວຽງຈັນ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8980200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8980199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8980200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8980200"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8978778",
+      "source": "He is not my Lao teacher.",
+      "reference": "ລາວບໍ່ແມ່ນອາຈານສອນພາສາລາວຂ້ອຍ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8978778",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8978777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8978778",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8978778"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_8975816",
+      "source": "Today the students study at home.",
+      "reference": "ມື້ນີ້ນັກຮຽນຮຽນຢູ່ເຮືອນ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8975816",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8975815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8975816",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8975816"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_8981592",
+      "source": "That student is not my younger brother.",
+      "reference": "ນັກຮຽນຜູ້ນັ້ນບໍ່ແມ່ນນ້ອງຊາຍຂ້ອຍ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8981592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8981590",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8981592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8981592"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_8984937",
+      "source": "His son is a student in New York.",
+      "reference": "ລູກຊາຍລາວເປັນນັກສຶກສາຢູ່ນິວຢອກ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984937",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8984936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984937",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984937"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_8983151",
+      "source": "The students come to school to study English.",
+      "reference": "ນັກຮຽນມາໂຮງຮຽນເພື່ອຮຽນພາສາອັງກິດ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8983151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8983150",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8983151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8983151"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_8995284",
+      "source": "That intelligent student doesn’t need to study much.",
+      "reference": "ນັກຮຽນສະຫຼາດຜູ້ນັ້ນບໍ່ຕ້ອງການຮຽນຫຼາຍ.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8995284",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8995283",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8995284",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8995284"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_8997045",
+      "source": "Do you want to use this textbook or that one?",
+      "reference": "ເຈົ້າຢາກຈະໃຊ້ປຶ້ມແບບຮຽນຫົວນີ້ຫຼືຫົວນັ້ນບໍ?",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8997045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8997043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8997045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8997045"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8993602",
+      "source": "That lazy student must study diligently in order to enter the university.",
+      "reference": "ນັກຮຽນຂີ້ຄ້ານຜູ້ນັ້ນຕ້ອງຮຽນຢ່າງດຸໝັ່ນເພື່ອຈະເຂົ້າຮຽນມະຫາວິທະຍາໄລ.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8993602",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8993601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8993602",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8993602"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.08
+      }
+    },
+    {
+      "id": "tatoeba_8995301",
+      "source": "Does your son want to become a doctor or a lawyer?",
+      "reference": "ລູກຊາຍເຈົ້າຢາກເປັນໝໍຫຼືນັກກົດໝາຍ?",
+      "domain": "legal",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8995301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8995300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8995301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8995301"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_2252605",
+      "source": "Therapy didn't work.",
+      "reference": "ການປິ່ນປົວບໍ່ໄດ້ຜົນ",
+      "domain": "medical",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2252605",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "3791432",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2252605",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2252605"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_12225950",
+      "source": "At first glance, this writing may seem unremarkable, but it was written entirely through thought. As the participant imagined writing a letter or symbol, sensors implanted in his brain picked up on patterns of electrical activity, which an algorithm then interpreted to trace the path of an imaginary pen.",
+      "reference": "ເມື່ອ​ຫລຽວ​ເຫັນຕອນທໍາອິດ, ການຂຽນແບບນີ້ອາດຈະເບິ່ງຄືວ່າ ບໍ່ມີ​ຫຍັງ​ຫລວງ​ຫລາຍ, ແຕ່ທັງຫມົດນີ້​ມັນ​ໄດ້​ຖືກ​ຂຽນອອກ​ມາໂດຍຜ່ານການ​ໃຊ້ຄວາມຄິດທັງ​ນັ້ນ​. ໃນຂະນະທີ່ຜູ້ເຂົ້າຮ່ວມການ​ທົດ​ລອງວາດ​ພາບເບິ່ງການຂຽນໂຕ​ໜັງ​ສື ຫຼື ສັນຍາລັກຢູ່ນັ້ນ, ເຄື່ອງເຊັນເຊີ ຫລື​ເຄື່ອງ​ຈັບ​ສັນ​ຍານທີ່ຝັງຢູ່ໃນສະຫມອງ ຂອງລາວຈະຈັບເອົາຮູບແບບຂອງກິດຈະກໍາທາງໄຟຟ້າໄດ້, ເຊິ່ງຫຼັງຈາກນັ້ນ ລະບົບຄິດ​ໄລ່​ຂອງ​ເຄື່ອງ​ຄອມ​ພິວ​ເຕີກໍຕີຄວາມຫມາຍກິດ​ຈະ​ກຳ​ນັ້ນໆ ເພື່ອ ຕິດຕາມເບິ່ງບ່ອນ​ທີ່ປາຍປາກກາຢູ່​ໃນມະ​ໂນ​ພາບນັ້ນຂຽນ​ໄປ.",
+      "domain": "tech",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12225950",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "12225952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12225950",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12225950"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 49,
+        "difficulty_estimated_clauses": 8,
+        "difficulty_avg_word_length": 5.12
+      }
+    },
+    {
+      "id": "tatoeba_452809",
+      "source": "I love apples.",
+      "reference": "ຂ້ອຍຮັກແອບເປີ້ນ",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "452809",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8670349",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "452809",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/452809"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8978764",
+      "source": "This is not an apple. It is an orange.",
+      "reference": "ໜ່ວຍນີ້ບໍ່ແມ່ນໝາກແອັບເປິ້ນ. ມັນແມ່ນໝາກກ້ຽງ.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8978764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "8978763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8978764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8978764"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.11
+      }
+    },
+    {
+      "id": "tatoeba_12231798",
+      "source": "A video posted on social media showed people climbing out of windows on ropes made of bedsheets tied together, while others were seen sitting on air conditioning units installed outside the windows.",
+      "reference": "ພາບວີດີໂອທີ່ເຜີຍແຜ່ຢູ່ສື່ສັງຄົມ ໄດ້ສະແດງໃຫ້ເຫັນຄົນໃຊ້ເຊືອກທີ່ເຮັດດ້ວຍ ຜ້າປູບ່ອນນອນຈ່ອງປີນອອກຈາກປ່ອງຢ້ຽມ ໃນຂະນະທີ່ຄົນອື່ນໆໄດ້ເຫັນນັ່ງ ຢູ່ເທິງເຄື່ອງ​ປັບ​ອາ​ກາດທີ່ຕິດຕັ້ງຢູ່ນອກປ່ອງຢ້ຽມ.",
+      "domain": "ui",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12231798",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "lao",
+        "target_sentence_id": "12231800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12231798",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12231798"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 32,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.16
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -1,0 +1,1391 @@
+{
+  "corpus_id": "tatoeba-eng-cym-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "cym"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:43:04.579526+00:00",
+  "entry_count": 47,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13700980",
+      "source": "You too, Brutus?",
+      "reference": "A tithau, Brutus?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13700980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7364039",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13700980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13700980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_13248849",
+      "source": "Tom supports Swansea.",
+      "reference": "Mae Tom yn cefnogi Abertawe.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13248849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "13248850",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13248849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13248849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_12198267",
+      "source": "Many happy returns!",
+      "reference": "Penblwydd Hapus!",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12198267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "1494702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12198267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12198267"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_12039510",
+      "source": "He wants water.",
+      "reference": "Mae hi eisiau dŵr.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12039510",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "11473423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12039510",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12039510"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11868609",
+      "source": "Go help Mom.",
+      "reference": "Cer i helpu dy fam.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11868609",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8118075",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11868609",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11868609"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_11817309",
+      "source": "I am home.",
+      "reference": "'Dwi yn y tŷ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11817309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "3400885",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11817309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11817309"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_11472433",
+      "source": "She wants water.",
+      "reference": "Mae hi eisiau dŵr.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11472433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "11473423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11472433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11472433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10272369",
+      "source": "They meditate together.",
+      "reference": "Maen nhw'n myfyrio gyda'i gilydd.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10272369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10272368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10272369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10272369"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_10272327",
+      "source": "Mary advertises cars.",
+      "reference": "Mae Mary yn hysbysebu ceir.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10272327",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10272326",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10272327",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10272327"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10272324",
+      "source": "Tom advertises carrots.",
+      "reference": "Mae Tom yn hysbysebu moron.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10272324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10272323",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10272324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10272324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_10272183",
+      "source": "Enjoy your retirement!",
+      "reference": "Mwynhewch eich ymddeoliad!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10272183",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10272182",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10272183",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10272183"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_10271910",
+      "source": "We like butter.",
+      "reference": "Dyn ni'n hoffi menyn.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10271910",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10271909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10271910",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10271910"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10271898",
+      "source": "I enjoy vegetables.",
+      "reference": "Dw i'n mwynhau llysiau.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10271898",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10271897",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10271898",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10271898"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10271888",
+      "source": "Are you ironing?",
+      "reference": "Wyt ti'n smwddio?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10271888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10271887",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10271888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10271888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9182451",
+      "source": "We should stop.",
+      "reference": "Rhaid i ni stopio.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9182451",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8109600",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9182451",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9182451"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9112746",
+      "source": "Christ has risen!",
+      "reference": "Atgyfododd Crist!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9112746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "1533109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9112746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9112746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8820676",
+      "source": "I like kids.",
+      "reference": "Dw i'n hoffi plant.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8820676",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "6889976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8820676",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8820676"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8510108",
+      "source": "Tom hates everyone.",
+      "reference": "Mae Tom yn casáu pawb.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8510108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "1963691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8510108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8510108"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8476255",
+      "source": "He just came.",
+      "reference": "Mae o newydd gyrraedd.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8476255",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "1968596",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8476255",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8476255"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8475905",
+      "source": "He loves it.",
+      "reference": "Mae e'n ei charu hi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8475905",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "1551662",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8475905",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8475905"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8416689",
+      "source": "Tom is vile.",
+      "reference": "Mae Tomos yn fawddyn.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8416689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8781637",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8416689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8416689"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8269551",
+      "source": "Warning! Contains Asbestos.",
+      "reference": "Rhybudd! Cynnwys Asbestos.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8269551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8269550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8269551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8269551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_8269540",
+      "source": "Are you hydrated?",
+      "reference": "’R ydych yn hydradol?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8269540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8269539",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8269540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8269540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8269532",
+      "source": "You are here.",
+      "reference": "Rydych chi yma.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8269532",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8269531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8269532",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8269532"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8269496",
+      "source": "Wait for signal.",
+      "reference": "Arhoswch am yr arwydd.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8269496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8269495",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8269496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8269496"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8269470",
+      "source": "Keep locked shut.",
+      "reference": "Cadwer yng nghau ac ar glo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8269470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8269468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8269470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8269470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8049746",
+      "source": "Mennad can explain.",
+      "reference": "Gall Mennad esbonio.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8049746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8050269",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8049746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8049746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8045811",
+      "source": "Mennad is available.",
+      "reference": "Mae Mennad ar gael.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8045811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8657683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8045811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8045811"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_7932256",
+      "source": "I drink water.",
+      "reference": "Dw i'n yfed dŵr.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7932256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "12134233",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7932256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7932256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7896068",
+      "source": "She is pretty.",
+      "reference": "Mae hi'n brydferth.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7896068",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8118124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7896068",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7896068"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7825910",
+      "source": "Without a doubt.",
+      "reference": "Heb amau.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7825910",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7137435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7825910",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7825910"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7678233",
+      "source": "Happy new year.",
+      "reference": "Blwyddyn newydd dda.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7678233",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "11572611",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7678233",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7678233"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7420432",
+      "source": "Tinhinane loves Amayas.",
+      "reference": "Mae Tinhinane yn caru Amayas.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7420432",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7826963",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7420432",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7420432"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_7299149",
+      "source": "Sami wore jeans.",
+      "reference": "Gwisgodd Sami jîns.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7299149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7836713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7299149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7299149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7075945",
+      "source": "I like leeks.",
+      "reference": "Dw i'n hoffi cennin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7075945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7075944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7075945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7075945"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7075943",
+      "source": "I like sausages.",
+      "reference": "Dw i'n hoffi selsig.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7075943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7075942",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7075943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7075943"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7067949",
+      "source": "I like peas.",
+      "reference": "Dw i'n hoffi pys.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7067949",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7067948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7067949",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7067949"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7067947",
+      "source": "I drink tea.",
+      "reference": "Dw i'n yfed te.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7067947",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7067946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7067947",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7067947"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_6925137",
+      "source": "I like sausage.",
+      "reference": "Dw i'n hoffi selsig.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6925137",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7075942",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6925137",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6925137"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6892699",
+      "source": "Tom had worked.",
+      "reference": "Roedd Tom wedi gweithio.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6892699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "6892700",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6892699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6892699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6892299",
+      "source": "I dislike people.",
+      "reference": "Dw i ddim yn hoffi pobl.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6892299",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "6892523",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6892299",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6892299"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6885023",
+      "source": "No one knew.",
+      "reference": "Doedd neb yn gwybod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6885023",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "6890014",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6885023",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6885023"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_6586587",
+      "source": "Best of luck.",
+      "reference": "Pob lwc.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6586587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "11560711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6586587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6586587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6568741",
+      "source": "You think so?",
+      "reference": "Ydych chi'n meddwl felly?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6568741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "7351909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6568741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6568741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5859653",
+      "source": "I enjoy gardening.",
+      "reference": "Dw i'n mwynhau garddio",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5859653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "10182900",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5859653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5859653"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5839914",
+      "source": "I drink wine.",
+      "reference": "Dw i'n yfed gwin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5839914",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "8586079",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5839914",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5839914"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5829461",
+      "source": "She likes coffee.",
+      "reference": "Mae hi'n hoffi coffi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5829461",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cym",
+        "target_sentence_id": "6889972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5829461",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5829461"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -38,9 +38,9 @@ We benchmark **methods**, not models. A model is one component. A method is the 
 
 Every benchmark result must be reproducible. The run card (§3) captures the complete configuration of an experiment. The fingerprint (§3.5) identifies the experimental setup. The run card hash (§3.6) verifies the integrity of the result. Anyone with the same method, corpus, and configuration should achieve scores within ±2% (accounting for LLM sampling non-determinism at temperature > 0).
 
-### 1.4 No Synthetic Data
+### 1.4 No Synthetic Evaluation Data
 
-**This project does not generate, use, or endorse synthetic training or evaluation data.** All corpora must be sourced from genuine human-authored text — published translations, textbooks, bilingual documents, or elicited translations from fluent speakers.
+**This project does not generate, use, or endorse synthetic evaluation data.** All corpora must be sourced from genuine human-authored text — published translations, textbooks, bilingual documents, or elicited translations from fluent speakers.
 
 LLMs may assist with:
 - Sentence alignment (finding parallel passages in existing bilingual texts)
@@ -48,7 +48,11 @@ LLMs may assist with:
 - Metadata enrichment (suggesting difficulty tiers, register labels)
 - Proposing source sentences for human translation (§11.3 — the translation step is always human)
 
-LLMs must **never** generate reference translations or evaluation pairs. If a contest participant uses synthetic data in their *method*, that is their choice. We do not produce it, ship it, or include it in any corpus or dataset we distribute.
+LLMs must **never** generate reference translations or evaluation pairs.
+
+**We are development-neutral on training data.** If a method developer uses synthetic training data, backtranslation, or data augmentation in their method, that is their choice — we evaluate the output, not the training process. Meta's OMT-1600 uses approximately 270 million synthetic parallel sentences generated via backtranslation. We have no objection to methods trained this way. We test on human curation only.
+
+> **Why not Bible text for evaluation?** OMT-1600 evaluates 1,560 of 1,600 languages on Bible-domain text. Bible translations have archaic register, liturgical vocabulary, and formulaic sentence structure. Our evaluation corpora are sourced from community-curated, domain-diverse text — health, legal, educational, governmental, conversational, and technical domains (see §2.7). This is a deliberate design choice. Communities need translation for the domains where they actually live and work, not a single religious register. A method that scores well on Genesis 1:1 tells you almost nothing about its performance on a band council agenda or a clinic intake form.
 
 ---
 
@@ -117,6 +121,7 @@ Each entry in the corpus represents one translation challenge:
 | `provenance` | string | ✅ | Origin of this entry (see §2.5) |
 | `register` | string | ✅ | Register/formality level (see §2.6) |
 | `context` | string | ✅ | Communicative function (see §2.6) |
+| `domain` | string | ✅ | Use-case domain from the 16-code taxonomy (see §2.7). Must be one of: `conv`, `ecommerce`, `edu`, `financial`, `gov`, `legal`, `literary`, `marketing`, `medical`, `news`, `religious`, `scientific`, `subtitles`, `support`, `tech`, `ui`. Validated at construction time. |
 | `morphological_analysis` | string | ❌ | Gold-standard morphological breakdown |
 | `notes` | string | ❌ | Translator notes, dialectal variants, ambiguity flags |
 | `variant_class` | string | ❌ | Class label grouping acceptable translation variants |
@@ -192,6 +197,41 @@ Every entry must indicate its origin:
 | `label` | UI label, button text, or heading |
 | `error` | Error message or warning |
 
+### 2.7 Domain
+
+**Domain** describes the real-world use case — the type of content being translated. This is orthogonal to register and context:
+
+- **Register** answers: *How formal is this?*
+- **Context** answers: *What is this sentence doing?*
+- **Domain** answers: *What industry/use case is this for?*
+
+A legal contract (domain: `legal`) might be formal (register: `formal`) and contain a declaration (context: `declaration`). A legal chatbot transcript (domain: `legal`) might be conversational (register: `conversational`) and contain questions (context: `question`). Same domain, different register and context.
+
+| Domain Code | Description | Typical Consumers |
+|-------------|-------------|-------------------|
+| `ui` | Software interface strings | App developers, localization teams |
+| `legal` | Contracts, statutes, court filings, immigration documents | Law firms, courts, compliance teams, IP lawyers |
+| `medical` | Clinical notes, drug labels, patient communications, trial protocols | Hospitals, pharma, clinical trials, patient portals |
+| `financial` | Banking, insurance, regulatory filings, audit reports | Banks, insurers, regulators, auditors |
+| `edu` | Textbooks, curricula, lesson plans, academic materials | Schools, universities, textbook publishers |
+| `ecommerce` | Product descriptions, reviews, marketplace listings | Online retailers, marketplace sellers |
+| `marketing` | Ad copy, brand messaging, campaigns, slogans | Ad agencies, brand teams |
+| `gov` | Policy documents, regulations, public notices, legislation | Government agencies, compliance teams |
+| `scientific` | Research papers, abstracts, methodology, grant proposals | Researchers, journals, grant agencies |
+| `religious` | Scripture, liturgical texts, theological commentary | Faith communities, liturgical publishers |
+| `support` | FAQs, error messages, troubleshooting guides, chatbot scripts | SaaS companies, help desks |
+| `subtitles` | Film, TV, streaming, and gaming dialogue | Streaming platforms, studios, gaming companies |
+| `news` | Journalism, wire reports, editorial, press releases | Media organizations, wire services |
+| `literary` | Fiction, poetry, narrative, cultural texts | Publishers, cultural preservation orgs |
+| `conv` | Informal conversation, social media, messaging | Consumer apps, social platforms |
+| `tech` | API docs, manuals, engineering specifications, technical guides | Documentation teams, engineering orgs |
+
+> **Domain-specific benchmarks.** The general benchmark evaluates a method across all domains. But the Arena also supports **domain-filtered benchmarks** — where scores are computed only on entries tagged with a specific domain. This lets users answer: "Which method is best for translating legal documents into French?" vs. "Which method has the best overall French score?"
+>
+> Domain-filtered leaderboard rankings are a key product feature. Different methods will perform differently across domains — a method fine-tuned on legal terminology may crush legal benchmarks but underperform on conversational text. The Arena helps users find the solution that works best for their specific use case.
+
+> **Future: Arena Chatbot.** The Arena website will include a conversational assistant that helps users describe their MT use case (domain, language pair, quality requirements) and recommends the best community-validated method from the leaderboard. For example: "I need to translate clinical trial protocols from English to Japanese — which method scores highest on medical-domain EN→JA benchmarks?" This depends on having sufficient domain-tagged evaluation data and method diversity.
+
 ---
 
 ## 3. Run Card Schema
@@ -262,6 +302,7 @@ Aggregate metrics for the entire run. All quality metrics are **automated** — 
 | `scores.errors` | number | Entries that failed (API error, timeout, etc.) |
 | `scores.by_difficulty` | object | Scores broken down by difficulty tier |
 | `scores.by_provenance` | object | Scores broken down by provenance tag |
+| `scores.by_domain` | object | ✅ Implemented — Scores broken down by domain (§2.7). Enables domain-filtered leaderboard ranking. Computed by tester.py and passed through publish.py. |
 
 ### 3.5 Totals (Cost)
 
@@ -528,7 +569,7 @@ To serve as key custodian for a language benchmark:
 | **Control** (OCAP) | Governance org controls evaluation via sandboxed execution. They decide who submits and on what terms. |
 | **Access** (OCAP) | Community has unrestricted access to their own data, results, and methods developed against it. |
 | **Possession** (OCAP) | Test set never leaves governance infrastructure. Encryption at rest as backup. |
-| **Collective Benefit** (CARE) | Ownership transfer ensures methods benefit the community. Revenue model (90/10) sustains this. |
+| **Collective Benefit** (CARE) | Ownership transfer ensures methods benefit the community. Revenue model (10% throughbill margin; community retains ~90%) sustains this. |
 | **Authority to Control** (CARE) | Sandboxed execution is the technical implementation. |
 | **Responsibility** (CARE) | Developers accept responsibility through terms of participation. |
 | **Ethics** (CARE) | Community rights over researcher convenience. |

@@ -69,6 +69,8 @@ Structural metrics validate the linguistic well-formedness of the translation. T
 | `morphological_accuracy` | Morphological Accuracy | 🔲 Planned | 0.0–1.0 | Both | A word can be FST-valid but have the wrong inflection (right root, wrong suffix). This metric compares the FST analysis of the predicted word against the expected morphological features. Requires per-entry morphological annotations in the corpus. |
 | `orthographic_accuracy` | Orthographic Accuracy | 🔲 Planned | 0.0–1.0 | Both | Validates script-specific correctness: SRO macron/circumflex usage for Cree, diacritical marks for Inuktitut, vowel length markers for Ojibwe. Per-language rule sets. |
 
+> **Why structural metrics matter.** Meta's OMT-1600 — the largest MT system ever published (1,600 languages) — evaluates with ChrF++, xCOMET, MetricX, and BLASER 3. None of these validate morphological correctness. ChrF++ measures character n-gram overlap: it rewards strings that *look* like the target language. For polysynthetic languages, this means a morphologically invalid word that shares many characters with the reference scores well. Our FST acceptance metric is a binary structural test: the word is either a valid form in the language, or it is not. No other MT evaluation framework provides this at scale.
+
 ### 2.3 Semantic Metrics
 
 Semantic metrics measure meaning preservation using embeddings or learned models. They catch translations that are surface-different but meaning-equivalent, and flag translations that are surface-similar but semantically wrong.
@@ -86,9 +88,9 @@ Behavioral metrics detect specific failure modes in translation output. They don
 
 | ID | Metric | Status | Scale | Level | Implementation |
 |----|--------|--------|-------|-------|---------------|
-| `code_switching_rate` | Code-Switching Rate | 🔲 Planned | 0.0–1.0 (lower is better) | Both | Proportion of output words that are in the source language (typically English). Detected via Unicode script analysis and/or a source-language word list. Very common LLM failure mode: the model inserts English words when it doesn't know the target-language equivalent. |
-| `hallucination_rate` | Hallucination Rate | 🔲 Planned | 0.0–1.0 (lower is better) | Both | Proportion of output content that has no corresponding source content. Detected via word alignment or cross-lingual embedding overlap. Catches the model generating plausible-sounding but fabricated translations. |
-| `terminology_adherence` | Terminology Adherence | 🔲 Planned | 0.0–1.0 | Both | For coached methods: proportion of prescribed terminology terms that appear in the output. Requires coaching dictionary data. Measures whether the model respects expert-provided vocabulary. |
+| `code_switching_rate` | Code-Switching Rate | ✅ Implemented | 0.0–1.0 (lower is better) | Both | Proportion of output words that are in the source language (typically English). Detected via Unicode script analysis and/or a source-language word list. Very common LLM failure mode: the model inserts English words when it doesn't know the target-language equivalent. |
+| `hallucination_rate` | Hallucination Rate | ✅ Implemented | 0.0–1.0 (lower is better) | Both | Proportion of output content that has no corresponding source content. Detected via word alignment or cross-lingual embedding overlap. Catches the model generating plausible-sounding but fabricated translations. |
+| `terminology_adherence` | Terminology Adherence | ✅ Implemented | 0.0–1.0 | Both | For coached methods: proportion of prescribed terminology terms that appear in the output. Requires coaching dictionary data. Measures whether the model respects expert-provided vocabulary. |
 | `consistency_score` | Cross-Entry Consistency | 🔲 Planned | 0.0–1.0 | Corpus only | Does the model translate the same source term the same way across entries? Low consistency suggests the model is guessing rather than applying learned patterns. Requires repeated terms across corpus entries. |
 
 ### 2.5 Compliance Metrics
@@ -175,7 +177,7 @@ Metrics excluded from the composite (`bleu`, `comet_score`, `ter`, `length_ratio
 
 #### Profile A: Languages WITH FST Coverage
 
-For languages that have a GiellaLT finite-state transducer available. Structural metrics carry 50% of the composite, reflecting the primacy of morphological correctness for polysynthetic/agglutinative languages.
+For languages that have a GiellaLT finite-state transducer available. Structural metrics carry 40% of the composite (FST 0.25 + morphological accuracy 0.15), reflecting the primacy of morphological correctness for polysynthetic/agglutinative languages.
 
 | Metric | Target Weight | Rationale |
 |--------|--------------|-----------|
@@ -320,9 +322,9 @@ All key metrics support bootstrap confidence intervals (percentile method, n=100
 |--------|------------|
 | `chrf_plus_plus` | ✅ `chrf_ci_lower`, `chrf_ci_upper` |
 | `exact_match_rate` | ✅ `exact_match_ci_lower`, `exact_match_ci_upper` |
-| `fst_acceptance_rate` | 🔲 Planned |
+| `fst_acceptance_rate` | ✅ `fst_ci_lower`, `fst_ci_upper` (only computed when FST data exists) |
 | `comet_score` | 🔲 Planned (metric function exists in `metrics_comet.py` but not wired into `compute_all_cis()`) |
-| `composite` | 🔲 Planned |
+| `composite` | ✅ `composite_ci_lower`, `composite_ci_upper` (computed when chrF++ and exact_match are available) |
 
 ### 8.2 Paired Bootstrap Significance Tests
 
@@ -366,9 +368,9 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "comet_model":            "",           // model ID used for COMET
 
     // §2.4 Behavioral metrics
-    "code_switching_rate":    null,         // 🔲 planned (lower=better)
-    "hallucination_rate":     null,         // 🔲 planned (lower=better)
-    "terminology_adherence":  null,         // 🔲 planned
+    "code_switching_rate":    0.03,         // ✅ implemented (lower=better)
+    "hallucination_rate":     0.01,         // ✅ implemented (lower=better)
+    "terminology_adherence":  null,         // ✅ implemented (null when no glossary)
     "consistency_score":      null,         // 🔲 planned
 
     // §4 Composite

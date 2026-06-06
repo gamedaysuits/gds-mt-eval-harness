@@ -13,9 +13,9 @@ Plains Cree (nêhiyawêwin) support is currently under development. The tools, e
 
 ## The Unsolved Problem
 
-Google Translate supports ~130 languages. There are over 7,000 spoken on Earth. For thousands of languages — including many Indigenous languages with active speaker communities — no commercial translation API exists, no large parallel corpus has been assembled, and no pretrained model produces reliable output.
+Google Translate supports ~130 languages. Meta's OMT-1600 (March 2026) claims coverage for 1,600 — the largest MT system ever published. But for the ~1,300 languages at their lowest resource tiers, quality is below usable thresholds, training data is dominated by Bible text, the model weights are not available for download, and there is no independent evaluation or community governance framework. For the remaining ~5,400 languages, no pretrained model produces any output at all.
 
-This is not a gap that will close on its own. Low-resource languages are low-resource *because* the economics of commercial MT don't reach them. The speakers who need these tools the most are the same communities least likely to have them built for them.
+The landscape has shifted significantly — Big Tech is now investing in LRL coverage. But coverage is not quality, and quality without independent verification is not trust. Low-resource languages need more than a model that claims to cover them — they need independent evaluation with morphological validation, community-curated corpora, and sovereignty-respecting governance.
 
 **champollion was built to change that.**
 
@@ -44,9 +44,9 @@ The challenges compound:
 | **Animate/inanimate distinction** | Nouns are grammatically animate or inanimate — this affects verb conjugation, demonstratives, and pluralization. The classification doesn't always follow biological animacy (*askiy* "earth" is animate; *maskisin* "shoe" is animate too) |
 | **Obviation** | Third-person references are ranked by proximity/salience. The "proximate" and "obviative" distinction has no English equivalent |
 | **Sparse training data** | LLMs have seen very little Plains Cree text. What they have seen may mix dialects (Y-dialect, TH-dialect) or orthographies (SRO vs. syllabics) |
-| **No commercial baseline** | Google Translate returns nothing useful. There is no off-the-shelf API to compare against |
+| **Weak commercial baseline** | OMT-1600 includes CRK at R1 (Very Low Resource) tier with Bible-domain training and standard BPE tokenization. Google Translate does not support Cree. Independent evaluation with morphological metrics is what makes these baselines meaningful. |
 
-This is why translation of polysynthetic languages remains an **open research problem** — and why a scored, reproducible leaderboard matters.
+Translation of polysynthetic languages remains an **open research problem** — OMT-1600 includes polysynthetic languages but uses standard BPE tokenization (256K vocabulary) with no morphological awareness, meaning it shreds compositional words into meaningless byte fragments.
 
 ---
 

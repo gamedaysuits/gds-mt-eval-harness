@@ -1,0 +1,2259 @@
+{
+  "corpus_id": "tatoeba-eng-mya-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "mya"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:10:53.851340+00:00",
+  "entry_count": 77,
+  "domains": [
+    "conv"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_12364087",
+      "source": "He was beautiful.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12364087",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12364087",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12364087"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_12364086",
+      "source": "She was pretty.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12364086",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12364086",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12364086"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11260032",
+      "source": "Thank you, buddy.",
+      "reference": "ကျေးဇူးပဲ။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4456030",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260032"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11260025",
+      "source": "Oh, thank you.",
+      "reference": "ကျေးဇူးပဲ။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4456030",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8933169",
+      "source": "\"Thanks.\" \"My pleasure.\"",
+      "reference": "\"ကျေးဇူးတန်ပါတယ်။\" \"ရပါတယ်။\"",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8933169",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3189936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8933169",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8933169"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8479759",
+      "source": "He was swimming.",
+      "reference": "သူမ ရေကူးနေခဲ့တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8479759",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5042398",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8479759",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8479759"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7801526",
+      "source": "I am ill.",
+      "reference": "နေမကောင်းဘူး။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7801526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7801526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7801526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_7238997",
+      "source": "Tom loves bananas.",
+      "reference": "တွမ် ငှက်ပျောသီးကြိုက်တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7238997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "7239143",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7238997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7238997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7238996",
+      "source": "Monkeys love bananas.",
+      "reference": "မျောက်တွေက ငှက်ပျောသီးကြိုက်ကြတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7238996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "7239142",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7238996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7238996"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_6577258",
+      "source": "Not a chance!",
+      "reference": "မဖြစ်နိုင်တာ!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6577258",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8274010",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6577258",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6577258"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6399875",
+      "source": "It is beautiful.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6399875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6399875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6399875"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6176233",
+      "source": "Just a moment.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6176233",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6176233",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6176233"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5933037",
+      "source": "I am sleeping.",
+      "reference": "ကျနော်အိပ်နေတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5933037",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13686534",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5933037",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5933037"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5607234",
+      "source": "What is life?",
+      "reference": "ဘ၀ ဆိုတာ ဘာလဲ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5607234",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "6692698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5607234",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5607234"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4502799",
+      "source": "Wait one minute.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4502799",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4502799",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4502799"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4133570",
+      "source": "Please speak slower.",
+      "reference": "ကျေးဇူးပြုပြီး ဖြည်းဖြည်း ပြောပေးပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4133570",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4133570",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4133570"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3696774",
+      "source": "Wait a bit.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3696774",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3696774",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3696774"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3461477",
+      "source": "She was swimming.",
+      "reference": "သူမ ရေကူးနေခဲ့တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3461477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5042398",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3461477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3461477"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3392920",
+      "source": "Were you serious?",
+      "reference": "တကယ်ပြောတာလား?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3392920",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638007",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3392920",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3392920"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3125920",
+      "source": "He is handsome.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3125920",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3125920",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3125920"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2795777",
+      "source": "Break a leg!",
+      "reference": "ကံကောင်းပါစေ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795777",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8289599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795777",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795777"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2510763",
+      "source": "You are handsome.",
+      "reference": "မင်းက လှတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2510763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2510763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2510763"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2342355",
+      "source": "He looks nice.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2342355",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2342355",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2342355"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2253855",
+      "source": "Wait one moment.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2253855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2253855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2253855"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2253851",
+      "source": "Wait a while.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2253851",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2253851",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2253851"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2253850",
+      "source": "Wait a sec.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2253850",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2253850",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2253850"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2250076",
+      "source": "Tell me again.",
+      "reference": "ကျေးဇူးပြုပြီး ပြန်ပြောပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250076",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250076",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250076"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2249856",
+      "source": "Say it again.",
+      "reference": "ပြန်ပြော။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249856",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249856",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249856"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2247530",
+      "source": "I was upstairs.",
+      "reference": "ကျနော်က အပေါ်ထပ်မှာ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247530",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5172800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247530",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247530"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2238072",
+      "source": "No one came.",
+      "reference": "ဘယ်သူ မှ မလာ ဘူး။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2238072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8274006",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2238072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2238072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2205973",
+      "source": "How is life?",
+      "reference": "နေကောင်းရဲ့လား ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2205973",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2205973",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2205973"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2121992",
+      "source": "Wait a minute!",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2121992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2121992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2121992"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1996919",
+      "source": "This is correct.",
+      "reference": "မှန်တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1996919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13069407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1996919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1996919"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1871880",
+      "source": "This is incorrect.",
+      "reference": "မဟုတ်ပါဘူး။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1871880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3189903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1871880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1871880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1871567",
+      "source": "I am bored.",
+      "reference": "ပျင်းစရာကောင်းလိုက်တာ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1871567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10651159",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1871567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1871567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1850245",
+      "source": "Wait a second.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850245",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850245",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850245"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1850244",
+      "source": "Wait one second.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1850244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1850244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1850244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1841181",
+      "source": "Say that again.",
+      "reference": "ပြန်ပြော။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841181",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841181",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841181"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1770346",
+      "source": "I am tired!",
+      "reference": "အိပ်ချင်လိုက်တာ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1770346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638006",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1770346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1770346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1669996",
+      "source": "That is correct.",
+      "reference": "မှန်တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1669996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13069407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1669996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1669996"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1388971",
+      "source": "That is essential.",
+      "reference": "အဲ့ဒါက မရှိမဖြစ် လိုအပ်တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1388971",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5815242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1388971",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1388971"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1098092",
+      "source": "Butter is soft.",
+      "reference": "ထောပတ်ပြော့တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098092",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5661809",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098092",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098092"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_953106",
+      "source": "Are you OK?",
+      "reference": "နေကောင်းရဲ့လား ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953106",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953106",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953106"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_749202",
+      "source": "Speak slower, please.",
+      "reference": "ကျေးဇူးပြုပြီး ဖြည်းဖြည်း ပြောပေးပါ။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "749202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "749202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/749202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_697243",
+      "source": "Wait a minute.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "697243",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "697243",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/697243"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_611272",
+      "source": "Are you well?",
+      "reference": "နေကောင်းရဲ့လား ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "611272",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "611272",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/611272"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_607840",
+      "source": "Go to hell!",
+      "reference": "သေစမ်း‌!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "607840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638004",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "607840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/607840"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_531542",
+      "source": "Let it go!",
+      "reference": "စိတ်လျှော့။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "531542",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8289570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "531542",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/531542"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_464592",
+      "source": "What is that?",
+      "reference": "အဲဒါဘာလဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13114264",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_436427",
+      "source": "I am sick.",
+      "reference": "နေမကောင်းဘူး။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436427",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436427",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436427"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_436423",
+      "source": "I am ready.",
+      "reference": "ငါက အဆင်သင့်ပဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436423",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10630848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436423",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436423"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_433544",
+      "source": "This is true.",
+      "reference": "မှန်တယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433544",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13069407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433544",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433544"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_429795",
+      "source": "Just a moment ...",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "429795",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "429795",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/429795"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_428379",
+      "source": "Who is it?",
+      "reference": "ဘယ်သူ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "428379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10637999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "428379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/428379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_424901",
+      "source": "You like it?",
+      "reference": "ကြိုက်ရဲ့လား။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "424901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10630806",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "424901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/424901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_410597",
+      "source": "Wait a moment.",
+      "reference": "ခဏစောင့်ပါ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "410597",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "410597",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/410597"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_397714",
+      "source": "I am tired.",
+      "reference": "အိပ်ချင်လိုက်တာ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "397714",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638006",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "397714",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/397714"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_392210",
+      "source": "What is this?",
+      "reference": "အဲဒါဘာလဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "392210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13114264",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "392210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/392210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "နေကောင်းရဲ့လား ခင်ဗျား။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13115578",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_373215",
+      "source": "Are you serious?",
+      "reference": "တကယ်ပြောတာလား?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373215",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638007",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373215",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373215"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "reference": "ဘယ်သူ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10637999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_322153",
+      "source": "Is that true?",
+      "reference": "တကယ်ကြီး!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322153",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322153",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322153"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_306184",
+      "source": "They were swimming.",
+      "reference": "သူတို့ ရေကူးနေခဲ့ကြတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "306184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5042369",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "306184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/306184"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_296045",
+      "source": "He looks well.",
+      "reference": "သူက ကြည့်ကောင်းတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "296045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "296045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/296045"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_252766",
+      "source": "I thank you.",
+      "reference": "ကျေးဇူးပဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4456030",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_246336",
+      "source": "Do or die.",
+      "reference": "သေလျှင်မြေကြီး၊ ရှင်လျှင် ရွှေထီး။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "246336",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10630845",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "246336",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/246336"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_239444",
+      "source": "Rise and shine.",
+      "reference": "ထတော့။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "239444",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "4455711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "239444",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/239444"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_69480",
+      "source": "You are stupid.",
+      "reference": "နင်က ငတုံးပဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69480",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69480",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69480"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_65858",
+      "source": "I oppose it.",
+      "reference": "ငါ သဘောမတူဘူး။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "65858",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10638034",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "65858",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/65858"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_54399",
+      "source": "May you succeed!",
+      "reference": "ကံကောင်းပါစေ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54399",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8289599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54399",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54399"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_42849",
+      "source": "What is it?",
+      "reference": "အဲဒါဘာလဲ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13114264",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_35571",
+      "source": "Yes, she will.",
+      "reference": "ဟုတ်ကဲ့။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "5049813",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_31725",
+      "source": "Once more, please.",
+      "reference": "ကျေးဇူးပြုပြီး ပြန်ပြောပါ။",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31725",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "3190173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31725",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31725"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_31565",
+      "source": "I almost drowned.",
+      "reference": "နောက်ထပ်နည်းနည်းလောက်သာဆိုရင် ရေနစ်ပြီ။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10766047",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31565"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_24988",
+      "source": "What was that?",
+      "reference": "ဟမ်?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24988",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "13069404",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24988",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24988"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_20097",
+      "source": "You are beautiful.",
+      "reference": "မင်းက လှတယ်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20097",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "8273932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20097",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20097"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_15918",
+      "source": "You look bored.",
+      "reference": "ပျင်းနေတဲ့ပုံပဲနော်။",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "15918",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mya",
+        "target_sentence_id": "10651161",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "15918",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/15918"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -34,6 +34,9 @@ dependencies = [
 comet = [
     "unbabel-comet>=2.2",
 ]
+fst = [
+    "pyhfst>=1.4",
+]
 dev = [
     "pytest>=8.0",
     "pytest-asyncio>=0.23",
@@ -44,9 +47,9 @@ mt-eval = "mt_eval_harness.cli:main"
 generate-plugin = "mt_eval_harness.cli:generate_plugin"
 
 [project.urls]
-Homepage = "https://github.com/gamedaysuits/mt-eval-harness"
-Repository = "https://github.com/gamedaysuits/mt-eval-harness"
-Issues = "https://github.com/gamedaysuits/mt-eval-harness/issues"
+Homepage = "https://github.com/gamedaysuits/gds-mt-eval-harness"
+Repository = "https://github.com/gamedaysuits/gds-mt-eval-harness"
+Issues = "https://github.com/gamedaysuits/gds-mt-eval-harness/issues"
 
 [tool.setuptools.packages.find]
 include = ["mt_eval_harness*"]

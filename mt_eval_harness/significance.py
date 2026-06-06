@@ -188,6 +188,85 @@ def corpus_bleu(entries: list[dict]) -> float:
     return bleu.corpus_score(hyps, [refs]).score
 
 
+def fst_acceptance_rate(entries: list[dict]) -> float:
+    """Compute FST acceptance rate from a list of entry dicts.
+
+    Each entry may have plugin_metrics.crk_fst_validity.fst_validity
+    (a float 0.0–1.0 representing the proportion of FST-valid words in
+    that entry's output). We average these across entries that have FST
+    data and are not errors.
+
+    Returns 0.0 if no entries have FST data. This function is designed
+    for bootstrap resampling — it can be called on any subset of entries.
+    """
+    fst_values = []
+    for entry in entries:
+        if entry.get("error"):
+            continue
+        plugin_metrics = entry.get("plugin_metrics", {})
+        if not isinstance(plugin_metrics, dict):
+            continue
+        fst_data = plugin_metrics.get("crk_fst_validity", {})
+        if not isinstance(fst_data, dict):
+            continue
+        fst_val = fst_data.get("fst_validity")
+        if isinstance(fst_val, (int, float)):
+            fst_values.append(float(fst_val))
+    if not fst_values:
+        return 0.0
+    return sum(fst_values) / len(fst_values)
+
+
+def composite_score(entries: list[dict]) -> float:
+    """Compute composite score from a list of entry dicts.
+
+    For bootstrap resampling, we need to recompute all component metrics
+    on the resampled entries and then call compute_composite_score() from
+    scoring.py with the recomputed values.
+
+    This ensures the bootstrap correctly captures the variance in the
+    composite, including the correlation structure between its components.
+
+    Returns 0.0 if no composite can be computed (e.g., no valid entries).
+    """
+    # Import here to avoid circular imports at module level.
+    # scoring.py does not import significance.py.
+    from mt_eval_harness.scoring import compute_composite_score
+
+    non_error = [e for e in entries if not e.get("error")]
+    if not non_error:
+        return 0.0
+
+    # Recompute component metrics on this (possibly resampled) entry set.
+    # chrF++ in native sacrebleu scale (0–100); scoring.py normalizes it.
+    chrf_val = corpus_chrf(non_error)
+    em_val = exact_match_rate(non_error)
+    fst_val = fst_acceptance_rate(non_error)
+
+    # Determine whether FST data is present in this sample
+    has_fst = any(
+        isinstance(e.get("plugin_metrics", {}).get("crk_fst_validity", {}), dict)
+        and isinstance(
+            e.get("plugin_metrics", {}).get("crk_fst_validity", {}).get("fst_validity"),
+            (int, float),
+        )
+        for e in non_error
+    )
+
+    # Build the scores dict expected by compute_composite_score.
+    # Only include metrics that are actually available in the entries.
+    scores = {
+        "chrf_plus_plus": chrf_val,
+        "exact_match_rate": em_val,
+    }
+    if has_fst:
+        scores["fst_acceptance_rate"] = fst_val
+
+    result = compute_composite_score(scores, has_fst=has_fst)
+    # compute_composite_score returns None if no metrics are available
+    return result if result is not None else 0.0
+
+
 # ---------------------------------------------------------------------------
 # Convenience: run all standard significance tests
 # ---------------------------------------------------------------------------

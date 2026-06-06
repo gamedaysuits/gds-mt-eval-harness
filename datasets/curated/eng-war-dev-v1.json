@@ -1,0 +1,3827 @@
+{
+  "corpus_id": "tatoeba-eng-war-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "war"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:31:15.344720+00:00",
+  "entry_count": 131,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_12285948",
+      "source": "You resemble him.",
+      "reference": "Baga ka ha iya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12285948",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6389832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12285948",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12285948"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_11344828",
+      "source": "His candidate lost.",
+      "reference": "Napirdi an iya manok.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11344828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11344820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11344828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11344828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11285142",
+      "source": "Thanks anyway, Tom.",
+      "reference": "Salamat na la, Tom.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11285142",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11285142",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11285142"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_11284626",
+      "source": "Give me some!",
+      "reference": "Tagi ako!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11284626",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314130",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11284626",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11284626"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10689177",
+      "source": "I feel poorly.",
+      "reference": "Malain it ak pamatì.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10689177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4680067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10689177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10689177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8749158",
+      "source": "I am illiterate.",
+      "reference": "Diri ako nakakabasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8749158",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5170722",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8749158",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8749158"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8475938",
+      "source": "He went out.",
+      "reference": "Ginmawas hiya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8475938",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11341986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8475938",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8475938"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5936170",
+      "source": "He got arrested.",
+      "reference": "Gin-aresto hiyá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5936170",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5936170",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5936170"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5504569",
+      "source": "Who was he?",
+      "reference": "Hin-o hiya?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5504569",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5504569",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5504569"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Nahigugma akó ha imo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4654878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4683779",
+      "source": "We will run.",
+      "reference": "Madalagan kita.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4683779",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4683779",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4683779"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4264169",
+      "source": "Good night, everybody.",
+      "reference": "¡Maupay nga gab-i ha ngatanan!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4264169",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5171921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4264169",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4264169"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_4006788",
+      "source": "Welcome to Tatoeba.",
+      "reference": "Uswag kamo ha Tatoeba!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4006788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5020744",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4006788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4006788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3918873",
+      "source": "Someone called them.",
+      "reference": "May usá nga tinawag ha íra.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3918873",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5310839",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3918873",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3918873"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3636463",
+      "source": "Why is that?",
+      "reference": "Kay ano?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3636463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11311986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3636463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3636463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3601633",
+      "source": "Please help me!",
+      "reference": "Alayon pagbúlig ha akon.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3601633",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4652235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3601633",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3601633"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3442146",
+      "source": "Am I late?",
+      "reference": "¿Urhi na ak'?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3442146",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5310776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3442146",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3442146"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_3344474",
+      "source": "All or nothing.",
+      "reference": "Ngatanan o, waráy.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3344474",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5328822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3344474",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3344474"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3210168",
+      "source": "Swedish is easy.",
+      "reference": "Masayon iton Swedish.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3210168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6392936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3210168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3210168"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3120141",
+      "source": "I am sorry.",
+      "reference": "Pasaylo-a.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3120141",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11311953",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3120141",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3120141"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3069729",
+      "source": "They are hiding.",
+      "reference": "Nalook hira.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3069729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11360616",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3069729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3069729"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2931766",
+      "source": "You are ill.",
+      "reference": "Masakít hi ikaw.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2931766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708427",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2931766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2931766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2870898",
+      "source": "Nobody called him.",
+      "reference": "Waray tinmáwag ha iya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2870898",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708437",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2870898",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2870898"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2860333",
+      "source": "He earned it.",
+      "reference": "Nakuha it' niya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2860333",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5313818",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2860333",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2860333"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2549012",
+      "source": "Tom coughed again.",
+      "reference": "Hi Tom umubo na liwát.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2549012",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5313507",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2549012",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2549012"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2443065",
+      "source": "Your pen sucks.",
+      "reference": "Kamakangaralas hiton imo igsusurat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2443065",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5229271",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2443065",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2443065"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2419502",
+      "source": "Come back here!",
+      "reference": "Bálik nganhi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2419502",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5313845",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2419502",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2419502"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2396241",
+      "source": "It is possible.",
+      "reference": "Puyde.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2396241",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312863",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2396241",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2396241"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Nahigugma akó ha imo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4654878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2276564",
+      "source": "Japan is weird.",
+      "reference": "Wirdo it' násud Hapon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276564",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5320862",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276564",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276564"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2257557",
+      "source": "Tom will follow.",
+      "reference": "Masunod hi Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2257557",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5333416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2257557",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2257557"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2254986",
+      "source": "You fixed it.",
+      "reference": "Gin-ayád nímo itón.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5168590",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2254972",
+      "source": "You did it.",
+      "reference": "Nabúhat mo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4712942",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254972"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2250091",
+      "source": "Thanks very much.",
+      "reference": "¡Madamo nga salámat!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250091",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4652225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250091",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250091"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2249594",
+      "source": "Never say that.",
+      "reference": "Ayaw gud pagsiríng hitón.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4677194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249594"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2248890",
+      "source": "It was unavoidable.",
+      "reference": "Diri adto mapupudngan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6389761",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2245260",
+      "source": "Did you win?",
+      "reference": "Nagdaog ka?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245260"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2244935",
+      "source": "Are you cold?",
+      "reference": "Ginhahagkutan ka?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244935",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6389752",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244935",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244935"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2243225",
+      "source": "They look exhausted.",
+      "reference": "Kapoy na hira kitaun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243225",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5232635",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243225",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243225"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2243069",
+      "source": "They bother me.",
+      "reference": "Ginsisinamok hi akó nira.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708436",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243069"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2243050",
+      "source": "They arrested him.",
+      "reference": "Gindakop hiyá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243050",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243050",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243050"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2243049",
+      "source": "They arrested her.",
+      "reference": "Gindakop hiyá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243049",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243049",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243049"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2239711",
+      "source": "Tom wants evidence.",
+      "reference": "Karuyag ni Tom hin ebidensya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2239711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6455649",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2239711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2239711"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2238072",
+      "source": "No one came.",
+      "reference": "Waray may kumadto.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2238072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312913",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2238072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2238072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2236832",
+      "source": "Tom is reluctant.",
+      "reference": "Nag-aalang hi Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5229373",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236832"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2236714",
+      "source": "Tom is hesitant.",
+      "reference": "Nag-aalang hi Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236714",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5229373",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236714",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236714"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2183944",
+      "source": "Are you gay?",
+      "reference": "¿Bayot ka?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2183944",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5336002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2183944",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2183944"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1883036",
+      "source": "Please stop whistling.",
+      "reference": "Alayon huyo pagtinaghuyon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1883036",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5336303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1883036",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1883036"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_1867920",
+      "source": "Tom seems stressed.",
+      "reference": "Bagan kapoy hi Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1867920",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5226760",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1867920",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1867920"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1860748",
+      "source": "Come back here.",
+      "reference": "Bálik nganhi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1860748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5313845",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1860748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1860748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1658010",
+      "source": "He got caught.",
+      "reference": "Gin-aresto hiyá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1658010",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4708434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1658010",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1658010"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1617162",
+      "source": "Nobody does that.",
+      "reference": "Waray nagbubuhat hiton.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1617162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5813849",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1617162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1617162"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1606667",
+      "source": "Please move back.",
+      "reference": "Alayon atras daw.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1606667",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5310754",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1606667",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1606667"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1602189",
+      "source": "He murders English.",
+      "reference": "Ginbaboy niya an Ingles.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1602189",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5170832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1602189",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1602189"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1595135",
+      "source": "Two women sing.",
+      "reference": "Nakanta an duha nga babaye.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1595135",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5229362",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1595135",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1595135"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1553401",
+      "source": "Put it there.",
+      "reference": "Ikadto.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1553401",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5323018",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1553401",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1553401"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1520245",
+      "source": "I like it.",
+      "reference": "Karuyag ko 'ton.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1520245",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5328782",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1520245",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1520245"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_1457791",
+      "source": "Life is strange.",
+      "reference": "Iton kinabuhi baga lain la.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1457791",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6392735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1457791",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1457791"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1349238",
+      "source": "So am I!",
+      "reference": "Ako gihap!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1349238",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1349238",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1349238"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 1.67
+      }
+    },
+    {
+      "id": "tatoeba_1256854",
+      "source": "I lost everything.",
+      "reference": "Nawara ko tanan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1256854",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5849049",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1256854",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1256854"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1205289",
+      "source": "Welcome to Tatoeba!",
+      "reference": "Uswag kamo ha Tatoeba!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1205289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5020744",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1205289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1205289"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1141192",
+      "source": "Tom skipped lunch.",
+      "reference": "Waray maningudto hi Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1141192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6391685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1141192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1141192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1129728",
+      "source": "Look around you.",
+      "reference": "Panngita hit' imo palibot.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1129728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5311825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1129728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1129728"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1107984",
+      "source": "You got it.",
+      "reference": "Sakto ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1107984",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4677293",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1107984",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1107984"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1082673",
+      "source": "Good night, everybody!",
+      "reference": "¡Maupay nga gab-i ha ngatanan!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1082673",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5171921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1082673",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1082673"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1082672",
+      "source": "Good night, everyone!",
+      "reference": "¡Maupay nga gab-i ha ngatanan!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1082672",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5171921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1082672",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1082672"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_937748",
+      "source": "Please, forgive me.",
+      "reference": "Pasáyloa akó.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "937748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5867562",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "937748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/937748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_869091",
+      "source": "This is difficult.",
+      "reference": "Makuri ini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "869091",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312906",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "869091",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/869091"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_869088",
+      "source": "This is easy.",
+      "reference": "Masayon la ini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "869088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "869088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/869088"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_759379",
+      "source": "I feel sick.",
+      "reference": "Malain it ak pamatì.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "759379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4680067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "759379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/759379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_701897",
+      "source": "More coffee, please.",
+      "reference": "Kape pa, alayon.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "701897",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11310949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "701897",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/701897"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_687854",
+      "source": "Write it down!",
+      "reference": "Isurat daw!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "687854",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "687854",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/687854"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_619790",
+      "source": "Nothing had moved.",
+      "reference": "Waray may naglabot.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "619790",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312918",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "619790",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/619790"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_534970",
+      "source": "Thanks a lot!",
+      "reference": "¡Madamo nga salámat!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4652225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534970"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_456027",
+      "source": "Is it hot?",
+      "reference": "Mapaso ba?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456027",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456027",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456027"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_434242",
+      "source": "Are you hungry?",
+      "reference": "¿Gin-gútom ka?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "434242",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4677517",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "434242",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/434242"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_424901",
+      "source": "You like it?",
+      "reference": "¿Gusto mo bà?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "424901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4677523",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "424901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/424901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_419447",
+      "source": "All is illusion.",
+      "reference": "Ngatanan ilusyon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "419447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6390844",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "419447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/419447"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_415594",
+      "source": "Please sit down.",
+      "reference": "Alayon paglingkod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "415594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "415594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/415594"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_413058",
+      "source": "Are you married?",
+      "reference": "¿Inasaw-an ka ba?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "413058",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4677290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "413058",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/413058"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_376424",
+      "source": "Are you ready?",
+      "reference": "¿Ándam ka bà?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376424",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4682769",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376424",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376424"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "Kumusta?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312042",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_362618",
+      "source": "Must be nice...",
+      "reference": "Kinahanglan maupay.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "362618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5232605",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "362618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/362618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_361350",
+      "source": "Happy New Year!",
+      "reference": "Malipayon nga Bag-o nga Tuig!",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "361350",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11344770",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "361350",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/361350"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "reference": "¿Hin-o ka?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4660646",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_347331",
+      "source": "Who is he?",
+      "reference": "Hin-o hiya?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "347331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "347331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/347331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_320385",
+      "source": "I am constipated.",
+      "reference": "Gintutubol ako.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5226001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_315731",
+      "source": "Who is she?",
+      "reference": "Hin-o hiya?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "315731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "315731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/315731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_315182",
+      "source": "She is kind.",
+      "reference": "Buotan hiya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "315182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "315182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/315182"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_313387",
+      "source": "She bought chicken.",
+      "reference": "Pinmalit hiya hin manok.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "313387",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11344842",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "313387",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/313387"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_280432",
+      "source": "Make way, please.",
+      "reference": "Maagi la.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280432",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312894",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280432",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280432"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_262424",
+      "source": "Please help me.",
+      "reference": "Alayon pagbúlig ha akon.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262424",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4652235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262424",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262424"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_261221",
+      "source": "I love her.",
+      "reference": "Hinigugma ko hiya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261221",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11400478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261221",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261221"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_255212",
+      "source": "Where am I?",
+      "reference": "Hain ako?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255212",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312958",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255212",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255212"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_252766",
+      "source": "I thank you.",
+      "reference": "¡Salamat!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4660628",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_42149",
+      "source": "What a shame!",
+      "reference": "Kanugon!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312216",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_36041",
+      "source": "What pretty flowers!",
+      "reference": "Kahusay'n mga bukad!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "36041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6405414",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "36041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/36041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_29976",
+      "source": "What a nerve!",
+      "reference": "Alagad!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312219",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29976"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_26887",
+      "source": "It may rain.",
+      "reference": "Mauran ada.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5181272",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_24885",
+      "source": "What a pity!",
+      "reference": "Kanugon!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24885",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312216",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24885",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24885"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_20123",
+      "source": "You drink tea.",
+      "reference": "Nainóm hi ikaw hin tsaa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20123",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4680434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20123",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20123"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "Nahigugma akó ha imo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4654878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_11664316",
+      "source": "This cake is sugary.",
+      "reference": "Matám-is an keyk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11664316",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5325430",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11664316",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11664316"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11344827",
+      "source": "His cockfighting rooster lost.",
+      "reference": "Napirdi an iya manok.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11344827",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11344820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11344827",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11344827"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_11344783",
+      "source": "Filipinos call themselves \"Pinoy\".",
+      "reference": "\"Pinoy\" it tagaw hit mga Pilipino ha ira kalugaringon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11344783",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11344785",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11344783",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11344783"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_11314266",
+      "source": "She should be ashamed.",
+      "reference": "Angay hiya maawod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11314266",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314280",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11314266",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11314266"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_11284565",
+      "source": "He is a Muslim.",
+      "reference": "Muslim hiya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11284565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11314160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11284565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11284565"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_9799603",
+      "source": "That one is talkative.",
+      "reference": "Mayawit hiya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9799603",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11312946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9799603",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9799603"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_8634789",
+      "source": "The coffee's cold.",
+      "reference": "Matághum an kapé.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8634789",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5328971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8634789",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8634789"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7185660",
+      "source": "Sami loved my mom.",
+      "reference": "Gusto ni Sami an akon nanay.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7185660",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11340853",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7185660",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7185660"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6867702",
+      "source": "Why's Tom here?",
+      "reference": "Kay-ano aanhi hi Tom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6867702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5814092",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6867702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6867702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6684972",
+      "source": "Where are my socks?",
+      "reference": "Hain na an akon medyas?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6684972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "11310990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6684972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6684972"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6458149",
+      "source": "I can not read.",
+      "reference": "Diri ako nakakabasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6458149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5170722",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6458149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6458149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_6440582",
+      "source": "Who's that woman?",
+      "reference": "Hin-o iton nga babáyi?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6440582",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5867629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6440582",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6440582"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6430383",
+      "source": "Tom passed away Monday.",
+      "reference": "Namatay hi Tom han Lunes.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6430383",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5849255",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6430383",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6430383"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_6358322",
+      "source": "I'll sing today.",
+      "reference": "Makanta ako yana nga adlaw.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6358322",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6398320",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6358322",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6358322"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6220075",
+      "source": "No one does that.",
+      "reference": "Waray nagbubuhat hiton.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6220075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5813849",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6220075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6220075"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_6033539",
+      "source": "I am in love.",
+      "reference": "Nahigugma ako.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6033539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6392315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6033539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6033539"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_5975642",
+      "source": "I'm a speechwriter.",
+      "reference": "Usa ako nga speechwriter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5975642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6389880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5975642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5975642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_5614893",
+      "source": "You cannot outsmart destiny.",
+      "reference": "Diri nimo malilimbungan iton tadhana.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5614893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6454617",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5614893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5614893"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_5325748",
+      "source": "All planes have wings.",
+      "reference": "Ngatanan nga edro may-pako.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5325748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6455675",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5325748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5325748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5161640",
+      "source": "I'm missing you.",
+      "reference": "Guinmimingaw ako ha imo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5161640",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5161639",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5161640",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5161640"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5126496",
+      "source": "Australia is not Austria.",
+      "reference": "Iton Australia diri Austria.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5126496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5813834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5126496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5126496"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_5105746",
+      "source": "Tom decided to leave.",
+      "reference": "Nagdesisyon hi Tom nga lumakat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5105746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5168193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5105746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5105746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_5067995",
+      "source": "Australia isn't Austria.",
+      "reference": "Iton Australia diri Austria.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5067995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5813834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5067995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5067995"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_4787559",
+      "source": "I traveled to Paris.",
+      "reference": "Kumadto ako ha París.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4787559",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5181290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4787559",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4787559"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4702934",
+      "source": "That book is mine.",
+      "reference": "Akon iton nga libro.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4702934",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "6454615",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4702934",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4702934"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4682765",
+      "source": "I'm going, too.",
+      "reference": "Malakat gihap ak.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4682765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4682774",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4682765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4682765"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4655069",
+      "source": "Someone waits for me.",
+      "reference": "May naghulat ha akon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4655069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4649958",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4655069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4655069"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_4628986",
+      "source": "We became fast friends.",
+      "reference": "Madagmit kita nagkasángkay.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4628986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "5168549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4628986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4628986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_4625615",
+      "source": "We have a dog.",
+      "reference": "Mayda nam áyam.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4625615",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "war",
+        "target_sentence_id": "4650040",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4625615",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4625615"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

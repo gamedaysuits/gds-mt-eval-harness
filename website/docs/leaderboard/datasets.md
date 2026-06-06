@@ -96,7 +96,7 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 | **ID** | `edtekla-dev-v1` |
 | **Version** | `1.0` |
 | **Language pair** | EN → CRK (Plains Cree, SRO orthography) |
-| **Entry count** | 548 total (486 textbook + 62 gold standard). Current benchmark uses `master_corpus.json` (404 entries: 62 gold + 342 textbook subset). A 124-entry dev set (`edtekla_dev_124.json`) is also available for rapid iteration |
+| **Entry count** | 548 total (486 textbook + 62 gold standard). The canonical dev corpus is `textbook_dev.json` (436 entries — the full textbook dev split from 486 total: 436 dev + 50 held-out test) |
 | **Difficulty distribution** | Easy, Medium, Hard |
 | **Provenance** | `gold_standard` (verified by speakers), `textbook` (published educational materials) |
 | **License** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
@@ -111,7 +111,7 @@ The first evaluation dataset, built for English→Plains Cree (SRO) translation.
 - Complex sentence structures
 
 :::tip Corpus structure
-The full EdTeKLA collection has 548 curated entries: 486 from the textbook corpus (436 dev + 50 held-out) and 62 from the itwêwina gold standard. The current benchmark file `master_corpus.json` merges 62 gold + 342 textbook entries = 404 entries. Each entry was verified by fluent speakers or sourced from published Cree language textbooks. A smaller, high-quality dataset with verified gold standards is more useful than a large, noisy one — especially for a low-resource language where "close enough" translations are often morphologically invalid. A 124-entry working dev set (`edtekla_dev_124.json`) is available for rapid iteration during method development.
+The full EdTeKLA collection has 548 curated entries: 486 from the textbook corpus (436 dev + 50 held-out) and 62 from the itwêwina gold standard. The canonical dev corpus is `textbook_dev.json` with 436 entries — the full textbook dev split. Each entry was verified by fluent speakers or sourced from published Cree language textbooks. A smaller, high-quality dataset with verified gold standards is more useful than a large, noisy one — especially for a low-resource language where "close enough" translations are often morphologically invalid.
 :::
 
 ---

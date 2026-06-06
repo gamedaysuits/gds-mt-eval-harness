@@ -80,7 +80,13 @@ from __future__ import annotations
 import random
 from dataclasses import dataclass, asdict
 
-from mt_eval_harness.significance import corpus_chrf, corpus_bleu, exact_match_rate
+from mt_eval_harness.significance import (
+    corpus_chrf,
+    corpus_bleu,
+    exact_match_rate,
+    fst_acceptance_rate,
+    composite_score,
+)
 
 
 @dataclass
@@ -203,6 +209,27 @@ def bootstrap_ci(
     )
 
 
+def _entries_have_fst_data(entries: list[dict]) -> bool:
+    """Check if any entry has FST plugin data in plugin_metrics.
+
+    Returns True if at least one non-error entry has a numeric
+    fst_validity value under plugin_metrics.crk_fst_validity.
+    """
+    for entry in entries:
+        if entry.get("error"):
+            continue
+        pm = entry.get("plugin_metrics", {})
+        if not isinstance(pm, dict):
+            continue
+        fst_data = pm.get("crk_fst_validity", {})
+        if not isinstance(fst_data, dict):
+            continue
+        fst_val = fst_data.get("fst_validity")
+        if isinstance(fst_val, (int, float)):
+            return True
+    return False
+
+
 def compute_all_cis(
     entries: list[dict],
     n_bootstrap: int = DEFAULT_N_BOOTSTRAP,
@@ -214,6 +241,11 @@ def compute_all_cis(
     Returns a dict keyed by metric name, each value is a serialized
     ConfidenceInterval (suitable for JSON embedding in a TestReport).
 
+    Conditionally includes:
+        - fst_acceptance_rate: only when FST plugin data exists in entries
+        - composite_score: only when at least chrF++ and exact_match are
+          available (always true for non-error entries with expected/predicted)
+
     Args:
         entries: Per-entry result dicts (from TestReport["entries"]).
                  Entries with errors are filtered out for chrF++/BLEU.
@@ -222,7 +254,10 @@ def compute_all_cis(
         seed: RNG seed.
 
     Returns:
-        {"corpus_chrf": {...}, "corpus_bleu": {...}, "exact_match_rate": {...}}
+        {"corpus_chrf": {...}, "corpus_bleu": {...}, "exact_match_rate": {...},
+         "fst_acceptance_rate": {...},  # if FST data present
+         "composite_score": {...},      # if chrF++ and EM available
+        }
     """
     # Filter to non-error entries for metric computation
     # (Matches the filtering logic in tester.py)
@@ -231,6 +266,7 @@ def compute_all_cis(
     if not valid_entries:
         return {}
 
+    # --- Core metrics (always computed) ---
     results = {}
     for metric_fn, name in [
         (corpus_chrf, "corpus_chrf"),
@@ -246,6 +282,36 @@ def compute_all_cis(
             metric_name=name,
         )
         results[name] = asdict(ci)
+
+    # --- FST acceptance rate (only when FST data exists) ---
+    if _entries_have_fst_data(valid_entries):
+        ci = bootstrap_ci(
+            valid_entries,
+            metric_fn=fst_acceptance_rate,
+            n_bootstrap=n_bootstrap,
+            alpha=alpha,
+            seed=seed,
+            metric_name="fst_acceptance_rate",
+        )
+        results["fst_acceptance_rate"] = asdict(ci)
+
+    # --- Composite score (when chrF++ and exact_match are available) ---
+    # chrF++ and exact_match are always computable from valid entries that
+    # have expected/predicted text. We verify by checking that at least
+    # one entry has non-empty expected text.
+    has_text_data = any(
+        e.get("expected", "").strip() for e in valid_entries
+    )
+    if has_text_data:
+        ci = bootstrap_ci(
+            valid_entries,
+            metric_fn=composite_score,
+            n_bootstrap=n_bootstrap,
+            alpha=alpha,
+            seed=seed,
+            metric_name="composite_score",
+        )
+        results["composite_score"] = asdict(ci)
 
     return results
 

@@ -1,9 +1,9 @@
 # MT Eval Harness
 
 > Most translation tools evaluate Google Translate and DeepL.
-> This harness exists for the languages they ignore.
+> This harness exists for the languages they leave unverified.
 
-**MT Eval Harness** is an open-source evaluation framework for developing, benchmarking, and deploying novel machine translation methods — especially for low-resource languages where commercial tools don't exist.
+**MT Eval Harness** is an open-source evaluation framework for developing, benchmarking, and deploying novel machine translation methods — especially for low-resource languages where commercial tools either don't exist or claim coverage that hasn't been independently validated.
 
 Anyone who speaks both languages can contribute a translation method. Prove it works, export it, deploy it.
 
@@ -11,12 +11,12 @@ Anyone who speaks both languages can contribute a translation method. Prove it w
 
 ## Why This Exists
 
-There are ~7,000 living languages. Fewer than 200 have any MT support. For the other 6,800, translation technology doesn't exist — and it won't come from Google.
+There are ~7,000 living languages. Meta's OMT-1600 claims translation coverage for 1,600 of them — but for the ~1,300 at their lowest resource tiers, quality is below usable thresholds and the model weights are not currently available. For the remaining ~5,400, translation technology doesn't exist at all. Independent evaluation infrastructure is the missing piece.
 
 This harness provides the infrastructure to **crowdsource** that work:
 
 1. **Develop** a translation method — an LLM prompt, a coached pipeline, a deterministic process, or any combination
-2. **Benchmark** it against a reference corpus with standardized metrics (chrF++, BLEU, exact match)
+2. **Benchmark** it against a reference corpus with standardized metrics (chrF++, exact match, code-switching detection, hallucination detection, terminology adherence, FST acceptance for morphologically-rich languages)
 3. **Export** validated methods as [champollion](https://github.com/gamedaysuits/champollion) plugins
 4. **Deploy** to production websites via champollion's translation CLI
 
@@ -207,7 +207,7 @@ Visibility modes: `public` (anyone), `private` (invite-only, blind), `team` (org
 
 ## Currently In Development
 
-We're actively using this harness to develop a Plains Cree (crk) translation method — the first sentence-level English-to-Plains Cree MT system. The method isn't production-ready yet, but the harness is.
+We're actively using this harness to develop and evaluate Plains Cree (crk) translation methods — including our own FST-gated pipeline and external systems like Meta's OMT-1600 (which includes CRK at R1 tier). The harness provides independent evaluation with morphological validation that standard metrics cannot.
 
 ## License
 

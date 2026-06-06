@@ -1,0 +1,4466 @@
+{
+  "corpus_id": "tatoeba-eng-tam-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "tam"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:00:05.272246+00:00",
+  "entry_count": 153,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13011569",
+      "source": "The weekend begins!",
+      "reference": "வாரஇறுதி தொடங்குகிறது !",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13011569",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "13012263",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13011569",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13011569"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_13011420",
+      "source": "This is salty.",
+      "reference": "இது உவர்க்கிறது .",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13011420",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "13012287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13011420",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13011420"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10720916",
+      "source": "I like green.",
+      "reference": "எனக்கு பச்சை பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720916",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720915",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720916",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720916"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10720913",
+      "source": "I like orange.",
+      "reference": "எனக்கு ஆரஞ்சு பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720913",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720912",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720913",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720913"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10720911",
+      "source": "I like red.",
+      "reference": "எனக்கு சிவப்பு பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720910",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720911"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_10720840",
+      "source": "Growth is important.",
+      "reference": "வளர்ச்சி முக்கியம்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720839",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720840"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10720828",
+      "source": "I am her.",
+      "reference": "நான் அவள்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_10720826",
+      "source": "I am him.",
+      "reference": "நான் அவன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720826",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720826",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720826"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_10678547",
+      "source": "I like purple.",
+      "reference": "எனக்கு ஊதா பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10678547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720918",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10678547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10678547"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_9474751",
+      "source": "Go to sleep!",
+      "reference": "போய் தூங்கு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9474751",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9474751",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9474751"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7157279",
+      "source": "I will sleep.",
+      "reference": "நான் தூங்குவேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7157279",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "7157281",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7157279",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7157279"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5933037",
+      "source": "I am sleeping.",
+      "reference": "நான் தூங்குகிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5933037",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "7098314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5933037",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5933037"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "நான் உன்னை காதலிக்கிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "2632074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4650860",
+      "source": "I like yellow.",
+      "reference": "எனக்கு மஞ்சள் பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4650860",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720914",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4650860",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4650860"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4159903",
+      "source": "He is guided.",
+      "reference": "அவன் வழி காட்டப் படுகிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4159903",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4159904",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4159903",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4159903"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4159894",
+      "source": "He is guiding.",
+      "reference": "அவன் வழி காட்டிக் கொண்டு இருக்கிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4159894",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4159897",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4159894",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4159894"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4158745",
+      "source": "I am guided.",
+      "reference": "நான் ஒரு வழி காட்டப் படுகிறேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4158745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4158747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4158745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4158745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4153696",
+      "source": "I will guide.",
+      "reference": "நான் வழி காட்டுவேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4153696",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4153698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4153696",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4153696"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3826551",
+      "source": "Where are we?",
+      "reference": "நாம் எங்கே இருக்கிறோம்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3826551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3826551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3826551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3425642",
+      "source": "Everyone ran outside.",
+      "reference": "அனைவரும் வெளியே ஓடினர்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425726",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3425638",
+      "source": "Everyone hurried outside.",
+      "reference": "அனைவரும் அவசரமாக வெளியேறினர்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425739",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_3425636",
+      "source": "Everyone rushed outside.",
+      "reference": "அனைவரும் வெளியே விரைந்தனர்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425636",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425636",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425636"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_3177296",
+      "source": "I hate milk.",
+      "reference": "பால் நான் வெறுக்கிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3177296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3177290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3177296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3177296"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2649250",
+      "source": "Go to bed.",
+      "reference": "போய் தூங்கு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2649250",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2649250",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2649250"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2649248",
+      "source": "Talk to me.",
+      "reference": "என்னிடம் பேசு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2649248",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157451",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2649248",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2649248"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "நான் உன்னை காதலிக்கிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "2632074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2245933",
+      "source": "I like blue.",
+      "reference": "எனக்கு நீலம் பிடிக்கும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245933",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245933",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245933"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2164592",
+      "source": "Everybody ran outside.",
+      "reference": "அனைவரும் வெளியே ஓடினர்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2164592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425726",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2164592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2164592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_1898342",
+      "source": "Listen to this.",
+      "reference": "இதைக் கேள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1898342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157467",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1898342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1898342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_887215",
+      "source": "She hit him.",
+      "reference": "அவள் அவனைக் அடித்தாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887215",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267859",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887215",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887215"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_887002",
+      "source": "She bit him.",
+      "reference": "அவள் அவனைக் கடித்தாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887002",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267857",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887002",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887002"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_456651",
+      "source": "Raise your hand.",
+      "reference": "கையைத் தூக்கு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456651",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268481",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456651",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456651"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_453530",
+      "source": "Go to sleep.",
+      "reference": "போய் தூங்கு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "453530",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "453530",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/453530"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_451727",
+      "source": "He just arrived.",
+      "reference": "அவன் இப்பொழுதுதான் வந்தான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "451727",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267963",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "451727",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/451727"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "எப்படி இருக்கிறீர்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3179592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_347331",
+      "source": "Who is he?",
+      "reference": "அவன் யார்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "347331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "347331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/347331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_326314",
+      "source": "Keep in touch!",
+      "reference": "தொடர்பில் இரு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326314",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326314",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326314"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_320383",
+      "source": "Keep in touch.",
+      "reference": "தொடர்பில் இரு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320383",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320383",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320383"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_320369",
+      "source": "Talk to me!",
+      "reference": "என்னிடம் பேசு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157451",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_320075",
+      "source": "Listen to this!",
+      "reference": "இதைக் கேள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157467",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320075"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_315731",
+      "source": "Who is she?",
+      "reference": "அவள் யார்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "315731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267855",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "315731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/315731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_315182",
+      "source": "She is kind.",
+      "reference": "அவள் அன்பானவள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "315182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267861",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "315182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/315182"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_310214",
+      "source": "She is eight.",
+      "reference": "அவளுக்கு எட்டு வயது",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "310214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267866",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "310214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/310214"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_51404",
+      "source": "Beware of pickpockets.",
+      "reference": "ஜேப்படிகாரர்களிடம் ஜாக்கிரதையாக இருக்கவும்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51404",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4155152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51404",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51404"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_41717",
+      "source": "Pick it up.",
+      "reference": "அதை எடு.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "41717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "41717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/41717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_32635",
+      "source": "See you again.",
+      "reference": "மறுபடியும் சந்திப்போம்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "32635",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "32635",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/32635"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_26887",
+      "source": "It may rain.",
+      "reference": "மழை பெய்யலாம்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268480",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2168",
+      "source": "Where are you?",
+      "reference": "நீ எங்கே இருக்கிறாய்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2168"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "நான் உன்னை காதலிக்கிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "2632074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_13011565",
+      "source": "Twice 3 is 6.",
+      "reference": "3 இன் இருமடங்கு 6.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13011565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "13012267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13011565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13011565"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_10720909",
+      "source": "Why did you go?",
+      "reference": "நீ ஏன் போனாய்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720908",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_10720891",
+      "source": "The cat is hiding.",
+      "reference": "பூனை மறைகிறது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720891",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720890",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720891",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720891"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_10720874",
+      "source": "When should we leave?",
+      "reference": "எப்போ கிளம்பலாம்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720874",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720873",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720874",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720874"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_10720861",
+      "source": "I will return tomorrow.",
+      "reference": "நான் நாளைக்கு வரேன்.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720861",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720859",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720861",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720861"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_10720842",
+      "source": "Pick up the mango.",
+      "reference": "மாம்பழத்தை எடு.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10720842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10720842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10720842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_10666067",
+      "source": "His death was accidental.",
+      "reference": "அவரது மரணம் தற்செயலானது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10666067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "12410488",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10666067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10666067"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_9055943",
+      "source": "Yanni moved to Algeria.",
+      "reference": "யானி அல்ஜீரியாவுக்கு குடிபெயர்ந்தார்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9055943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "12410498",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9055943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9055943"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_8909470",
+      "source": "I'm a guide.",
+      "reference": "நான் ஒரு வழி காட்டி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8909470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4153496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8909470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8909470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8825711",
+      "source": "I like this movie.",
+      "reference": "நான் என்று படம் விரும்புகிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8825711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8825711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8825711"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8480381",
+      "source": "He's still here.",
+      "reference": "அவன் இன்னும் இருக்கிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8480381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8480381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8480381"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7808111",
+      "source": "Do you like songs?",
+      "reference": "உங்களுக்கு பாடல்கள் பிடிக்குமா?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7808111",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "11036737",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7808111",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7808111"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_7538349",
+      "source": "Your eyes are red.",
+      "reference": "உன் கண்ணு செகப்பா இருக்கு.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7538349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "11511711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7538349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7538349"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_7303598",
+      "source": "She kissed her baby.",
+      "reference": "அவள் குழந்தையை முத்தமிட்டாள்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7303598",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10722055",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7303598",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7303598"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7275061",
+      "source": "Sami had an intuition.",
+      "reference": "சாமிக்கு ஒரு உள்ளுணர்வு இருந்தது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7275061",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10722047",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7275061",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7275061"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_7098240",
+      "source": "Let him be calm.",
+      "reference": "அவன் அமைதியாக இருக்கட்டும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7098240",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "7098239",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7098240",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7098240"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5672926",
+      "source": "You are being guided.",
+      "reference": "நீ வழி காட்டப் பட்டுக் கொண்டு இருக்கிறாய்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5672926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4159917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5672926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5672926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_5228918",
+      "source": "I made a mistake!",
+      "reference": "நான் ஒரு தவறு செய்தேன்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5228918",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5228918",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5228918"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4271901",
+      "source": "He is not sleepy.",
+      "reference": "அவன் தூக்கக் கலக்கத்தில் இல்லை",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4271901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4271984",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4271901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4271901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4160005",
+      "source": "I am not guided.",
+      "reference": "நான் வழி காட்டப் பட வில்லை",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4160005",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4160007",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4160005",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4160005"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4159906",
+      "source": "You are a guide.",
+      "reference": "நீ ஒரு வழி காட்டி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4159906",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4159909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4159906",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4159906"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4159900",
+      "source": "He is being guided.",
+      "reference": "அவன் வழி காட்டப் பட்டுக் கொண்டு இருக்கிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4159900",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4159902",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4159900",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4159900"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_4158734",
+      "source": "I am being guided.",
+      "reference": "நான் ஒரு வழி காட்டப் பட்டுக் கொண்டு இருக்கிறேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4158734",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4158741",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4158734",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4158734"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4153492",
+      "source": "I am a guide.",
+      "reference": "நான் ஒரு வழி காட்டி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4153492",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4153496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4153492",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4153492"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_4083733",
+      "source": "How's your dad?",
+      "reference": "தங்களுடைய தந்தையார் எப்படி இருக்கிறார்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4083733",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4083733",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4083733"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3738718",
+      "source": "How late is it?",
+      "reference": "மணி என்ன?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738718",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4546240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738718",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738718"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_3608062",
+      "source": "I live in Malaysia.",
+      "reference": "நான் மலேசியாவில் வசிக்கிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3608062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3608062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3608062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3425686",
+      "source": "He sharpened the knives.",
+      "reference": "அவன் அந்தக் கத்திகளைத் தீட்டினான்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425686",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425686",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425686"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3425596",
+      "source": "Why don't you?",
+      "reference": "நீ ஏன் செய்யக்கூடாது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425596"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3425595",
+      "source": "Why can't you?",
+      "reference": "உன்னால் ஏன் முடியாது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3425595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425764",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3425595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3425595"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3424492",
+      "source": "These cows look bored.",
+      "reference": "இப்பசுக்கள் சலிப்படைந்து காணப்படுகின்றன.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3424492",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425798",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3424492",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3424492"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3354165",
+      "source": "She's getting old.",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3354165",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3354165",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3354165"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3354163",
+      "source": "She is getting old.",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3354163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3354163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3354163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3174720",
+      "source": "Friendship requires mutual trust.",
+      "reference": "நட்புக்குத் தேவை பரஸ்பர நம்பிக்கை",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3174720",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4271951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3174720",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3174720"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.25
+      }
+    },
+    {
+      "id": "tatoeba_3084165",
+      "source": "Keep to the right!",
+      "reference": "வலது பக்கத்தை கடைப் பிடி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3084165",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3084165",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3084165"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2837804",
+      "source": "Rack off, hairy legs!",
+      "reference": "போய் விடு!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2837804",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "11036704",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2837804",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2837804"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2648202",
+      "source": "Why did you leave?",
+      "reference": "நீ ஏன் போனாய்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2648202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720908",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2648202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2648202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2548475",
+      "source": "Where're you going?",
+      "reference": "நீங்கள் எங்கே போகிறீர்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548475",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174731",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548475",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548475"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2440964",
+      "source": "The boy started crying.",
+      "reference": "அந்த பையன் அழ ஆரம்பித்தான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2440964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2440964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2440964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_2376114",
+      "source": "I know that much.",
+      "reference": "எனக்கு அவ்வளவு தெரியும்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2376114",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "7157262",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2376114",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2376114"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2272881",
+      "source": "Tom is a survivor.",
+      "reference": "டாம் உயிர் பிழைத்தவர்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2272881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "12410502",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2272881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2272881"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2254571",
+      "source": "When's your birthday?",
+      "reference": "உங்கள் பிறந்த நாள் எப்போது ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2254136",
+      "source": "He's getting old.",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254136"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2241582",
+      "source": "We'll follow you.",
+      "reference": "நாங்கள் உன்னைத் பின்பற்றுவோம் (அ) தொடர்வோம்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241582",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "7157292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241582",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241582"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1887551",
+      "source": "I love that movie.",
+      "reference": "நான் என்று படம் விரும்புகிறேன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1887551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1887551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1887551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1725369",
+      "source": "I am getting old!",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1725369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1725369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1725369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1619683",
+      "source": "I'm getting old.",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1619683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1619683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1619683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1543624",
+      "source": "Shut up and listen.",
+      "reference": "வாயை மூடி கவனி",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1543624",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4240330",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1543624",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1543624"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1490282",
+      "source": "She said: \"Trust me\".",
+      "reference": "\"என்னை நம்பு\" என்று சொன்னாள்.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1490282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10722107",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1490282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1490282"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1285339",
+      "source": "How do you do?",
+      "reference": "எப்படி இருக்கிறீர்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1285339",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3179592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1285339",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1285339"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_1259876",
+      "source": "What is the time?",
+      "reference": "மணி என்ன ஆகிறது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1259876",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4546241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1259876",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1259876"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1125757",
+      "source": "When does it start?",
+      "reference": "இது எப்பொழுது ஆரம்பிக்கிறது?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1125757",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1125757",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1125757"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_953366",
+      "source": "I ate too much.",
+      "reference": "நான் நிறைய சாப்பிட்டேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268035",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953366"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_953331",
+      "source": "How is your dad?",
+      "reference": "தங்களுடைய தந்தையார் எப்படி இருக்கிறார்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_953176",
+      "source": "Did you say something?",
+      "reference": "என்ன?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953176",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "11036604",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953176",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953176"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_887059",
+      "source": "She danced with him.",
+      "reference": "அவள் அவனோடு நடனம் ஆடினாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267886",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_757376",
+      "source": "What's the time?",
+      "reference": "மணி என்ன ஆகிறது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "757376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4546241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "757376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/757376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_707328",
+      "source": "When will it begin?",
+      "reference": "இது எப்பொழுது ஆரம்பிக்கிறது?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "707328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "707328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/707328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_630617",
+      "source": "Give it to her.",
+      "reference": "அவளிடம் கொடு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "630617",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "630617",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/630617"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_630421",
+      "source": "He likes to run.",
+      "reference": "அவன் ஓட விருப்பப் படுகிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "630421",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "630421",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/630421"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_580774",
+      "source": "I'm a man.",
+      "reference": "நான் ஒரு மனிதன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "580774",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "580774",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/580774"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_579202",
+      "source": "It's nothing special.",
+      "reference": "ரொம்ப ஒன்னும் இல்ல.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "579202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "11036760",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "579202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/579202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_536145",
+      "source": "Does she play piano?",
+      "reference": "அவள் பியானோ வாசிக்கிறாளோ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "536145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267889",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "536145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/536145"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_456283",
+      "source": "Keep to the right.",
+      "reference": "வலது பக்கத்தை கடைப் பிடி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_437011",
+      "source": "I walk to school.",
+      "reference": "நான் பள்ளிக்கு நடந்து செல்கிறேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "437011",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4164689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "437011",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/437011"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_435255",
+      "source": "What's your age?",
+      "reference": "உங்களுக்கு எவ்வளவு வயது ஆகிறது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "435255",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3176118",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "435255",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/435255"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_434964",
+      "source": "He likes to swim.",
+      "reference": "அவனுக்கு நீச்சல் மீது பற்று உண்டு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "434964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4155270",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "434964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/434964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_433678",
+      "source": "I made a mistake.",
+      "reference": "நான் ஒரு தவறு செய்தேன்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433678"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_430778",
+      "source": "He has three sons.",
+      "reference": "அவருக்கு மூன்று மகன்கள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "430778",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268052",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "430778",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/430778"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_428402",
+      "source": "What time is it?",
+      "reference": "மணி என்ன?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "428402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4546240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "428402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/428402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_416367",
+      "source": "Where are you going?",
+      "reference": "நீங்கள் எங்கே போகிறீர்கள்?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "416367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174731",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "416367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/416367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_408293",
+      "source": "What's your name?",
+      "reference": "உங்க பேரு என்ன?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "408293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3371512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "408293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/408293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_389935",
+      "source": "What is your age?",
+      "reference": "உங்களுக்கு எவ்வளவு வயது ஆகிறது?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "389935",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3176118",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "389935",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/389935"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_386704",
+      "source": "I am a man.",
+      "reference": "நான் ஒரு மனிதன்.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "386704",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3425949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "386704",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/386704"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 1.75
+      }
+    },
+    {
+      "id": "tatoeba_383956",
+      "source": "Nobody speaks to me.",
+      "reference": "என் கூட யாரும் பேசுவதில்லை",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "383956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157655",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "383956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/383956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_376611",
+      "source": "I don't understand.",
+      "reference": "புரியவில்லை.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3176164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_376610",
+      "source": "I do not understand.",
+      "reference": "புரியவில்லை.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376610",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3176164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376610",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376610"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_325000",
+      "source": "Come and help us.",
+      "reference": "வா எங்களுக்கு உதவி செய்",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "325000",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4240324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "325000",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/325000"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_324771",
+      "source": "None of your business.",
+      "reference": "இது உங்களுக்கு சம்பந்தமில்லாத விஷயம்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4155251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_324516",
+      "source": "Come and see me.",
+      "reference": "என்னை வந்து பார்",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324516",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4240275",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324516",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324516"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_323684",
+      "source": "Shut up and listen!",
+      "reference": "வாயை மூடி கவனி",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323684",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4240330",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323684",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323684"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_323550",
+      "source": "Beware of the dog!",
+      "reference": "நாய் ஜாக்கிரதை!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323550",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4154884",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323550",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323550"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_322004",
+      "source": "When can we eat?",
+      "reference": "எப்பொழுது நம்மால் சாப்பிட முடியும்",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322004",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322004",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322004"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_321870",
+      "source": "I want to sleep.",
+      "reference": "நான் தூங்க விரும்புகிறேன்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321870",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157481",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321870",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321870"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_321526",
+      "source": "Walk ahead of me.",
+      "reference": "எனக்கு முன்னால் நட",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4153618",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_317391",
+      "source": "She boiled the eggs.",
+      "reference": "அவள் முட்டைகளை வேக வைத்தாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317391",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267891",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317391",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317391"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_313606",
+      "source": "She decided to go.",
+      "reference": "அவள் போகத் தீர்மானித்தாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "313606",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "313606",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/313606"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_312881",
+      "source": "She began to sing.",
+      "reference": "அவள் பாட ஆரம்பித்தாள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312881"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_304913",
+      "source": "He is getting old.",
+      "reference": "வயசு ஆகது.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "304913",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "10720843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "304913",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/304913"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_300899",
+      "source": "He began to run.",
+      "reference": "அவன் ஓட ஆரம்பித்தான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "300899",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157471",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "300899",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/300899"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_292828",
+      "source": "He is still here.",
+      "reference": "அவன் இன்னும் இருக்கிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "292828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "292828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/292828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_290213",
+      "source": "He came back soon.",
+      "reference": "அவன் சீக்கிரம் திரும்பி வந்தான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "290213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "290213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/290213"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_263273",
+      "source": "We started to walk.",
+      "reference": "நாங்கள் நடக்க ஆரம்பித்தோம்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "263273",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4157560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "263273",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/263273"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_72433",
+      "source": "Come home before six.",
+      "reference": "ஆறு மணிக்கு முன்பு வீட் டிற்கு வா",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268044",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_70623",
+      "source": "What is your name?",
+      "reference": "உங்க பேரு என்ன?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "70623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3371512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "70623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/70623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_67060",
+      "source": "That's our house.",
+      "reference": "அது எங்களுடைய வீடு",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "67060",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "67060",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/67060"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_67003",
+      "source": "Those are my CDs.",
+      "reference": "அவைகள் என்னுடைய CD கள்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "67003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268039",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "67003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/67003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_60349",
+      "source": "This apple is sweet.",
+      "reference": "இந்த ஆப்பிள் இனிப்பாக இருக்கிறது",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "60349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268470",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "60349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/60349"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_45025",
+      "source": "That's the way.",
+      "reference": "அந்த பக்கம்தான் வழி",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "45025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "45025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/45025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_42781",
+      "source": "When does it begin?",
+      "reference": "இது எப்பொழுது ஆரம்பிக்கிறது?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42781"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_38926",
+      "source": "How are you doing?",
+      "reference": "எப்படி இருக்கிறீர்கள்?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3179592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_37231",
+      "source": "Tom runs very fast.",
+      "reference": "டாம் ரொம்ப வேகமாக ஓடுகிறான்",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37231",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4267961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37231",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37231"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_35952",
+      "source": "The news quickly spread.",
+      "reference": "செய்தி வேகமாக பரவியது",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35952",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "4268478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35952",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35952"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_33211",
+      "source": "Bob was very happy.",
+      "reference": "பாப் மிகவும் மகிழ்ச்சியாக இருந்தது.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33211",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tam",
+        "target_sentence_id": "3174779",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33211",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33211"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

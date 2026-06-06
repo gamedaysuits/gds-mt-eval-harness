@@ -98,7 +98,7 @@ There's no single best model — it depends on the language pair, your budget, a
 |---------------|---------------------------|-----|
 | **High-resource** (French, Spanish, Japanese) | `google/gemini-2.5-flash` or `gpt-4o-mini` | Fast, cheap, strong baseline |
 | **Low-resource with some LLM coverage** (Quechua, Yoruba) | `google/gemini-2.5-pro` or `anthropic/claude-sonnet-4` | Larger models have better latent knowledge |
-| **Polysynthetic / very low-resource** (Plains Cree, Inuktitut) | `google/gemini-2.5-pro` with coaching | Coaching data matters more than model choice here |
+| **Polysynthetic / very low-resource** (Plains Cree, Inuktitut) | `google/gemini-2.5-pro` with coaching | Coaching data matters more than model choice. OMT-1600 includes some polysynthetic languages (e.g., CRK at R1 tier) but with standard BPE tokenization — benchmark it as a baseline in the Arena. |
 
 The eval harness uses OpenRouter, so any model available on OpenRouter can be benchmarked. Run `champollion models --method llm` to see available models.
 
@@ -116,7 +116,7 @@ Temperature is recorded in the run card, so different temperatures produce diffe
 
 ### Does coaching data help?
 
-Yes, significantly — for low-resource languages. Coaching data (grammar rules, dictionary entries, style notes) is injected into the LLM system prompt. For Plains Cree, coached methods consistently outperform raw LLM methods because the model has almost no Cree in its training data. The coaching data provides the linguistic context the model lacks.
+Yes, significantly — for low-resource languages. Coaching data (grammar rules, dictionary entries, style notes) is injected into the LLM system prompt. For Plains Cree, coached methods consistently outperform raw LLM methods for polysynthetic languages because general-purpose LLMs have limited polysynthetic exposure and no morphological awareness. Even OMT-1600, which was specifically trained for CRK, uses standard BPE tokenization that cannot represent polysynthetic morphology structurally. The coaching data provides the linguistic context the model lacks.
 
 For high-resource languages (French, Spanish), coaching has less impact because the model already has strong baseline knowledge.
 

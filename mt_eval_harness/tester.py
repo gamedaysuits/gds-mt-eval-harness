@@ -49,6 +49,7 @@ class EntryMetrics:
     predicted: str = "" # Model output
     segment: str = ""
     difficulty: int = 0
+    domain: str = ""
 
     # Core metrics (built-in)
     exact_match: bool = False
@@ -244,6 +245,7 @@ def _analyze(
             predicted=r.get("predicted", ""),
             segment=r.get("segment", ""),
             difficulty=r.get("difficulty", 0),
+            domain=r.get("domain", ""),
             latency_s=r.get("latency_s", 0),
             cost_usd=r.get("cost_usd", 0),
             tool_call_count=r.get("tool_call_count", 0),
@@ -304,6 +306,9 @@ def _analyze(
 
     # --- Aggregate by difficulty ---
     difficulties = _aggregate_difficulty_metrics(entry_metrics)
+
+    # --- Aggregate by domain ---
+    domains = _aggregate_domain_metrics(entry_metrics)
 
     # --- Overall metrics ---
     overall = _compute_overall(entry_metrics)
@@ -405,6 +410,7 @@ def _analyze(
         "overall": overall,
         "by_segment": {k: asdict(v) for k, v in segments.items()},
         "by_difficulty": {str(k): asdict(v) for k, v in sorted(difficulties.items())},
+        "by_domain": {k: asdict(v) for k, v in sorted(domains.items())},
         "entries": [asdict(em) for em in entry_metrics],
     }
 
@@ -426,7 +432,7 @@ def _analyze(
         )
 
     # --- Print summary ---
-    _print_summary(overall, segments, difficulties, output_path)
+    _print_summary(overall, segments, difficulties, domains, output_path)
 
     return report
 
@@ -456,6 +462,22 @@ def _aggregate_difficulty_metrics(entries: list[EntryMetrics]) -> dict[int, Segm
     result = {}
     for key, items in groups.items():
         result[key] = _aggregate_group(f"difficulty_{key}", items)
+    return result
+
+
+def _aggregate_domain_metrics(entries: list[EntryMetrics]) -> dict[str, SegmentMetrics]:
+    """Group entries by domain and compute aggregates.
+
+    Entries without a domain field go into the '' (empty string) group.
+    No silent fallback — missing domain stays empty, not a default code.
+    """
+    groups: dict[str, list[EntryMetrics]] = defaultdict(list)
+    for em in entries:
+        groups[em.domain].append(em)
+
+    result = {}
+    for key, items in groups.items():
+        result[key] = _aggregate_group(key or "(no domain)", items)
     return result
 
 
@@ -535,6 +557,7 @@ def _print_summary(
     overall: dict,
     segments: dict,
     difficulties: dict,
+    domains: dict,
     output_path: Path,
 ):
     """Print human-readable summary to console."""
@@ -591,6 +614,18 @@ def _print_summary(
         for name, sm in sorted(segments.items()):
             print(
                 f"  {name:<25s} "
+                f"{sm.exact_match_rate:>6.1%} "
+                f"{sm.avg_chrf:>7.1f}"
+            )
+
+    # Per-domain
+    if len(domains) > 1:
+        print(f"\n  {'Domain':<25s} {'Count':>6s} {'Exact':>7s} {'chrF++':>7s}")
+        print(f"  {'-'*25} {'-----':>6s} {'-----':>7s} {'------':>7s}")
+        for name, sm in sorted(domains.items()):
+            print(
+                f"  {(name or '(no domain)'):<25s} "
+                f"{sm.count:>6d} "
                 f"{sm.exact_match_rate:>6.1%} "
                 f"{sm.avg_chrf:>7.1f}"
             )
