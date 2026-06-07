@@ -432,7 +432,8 @@ def _analyze(
         )
 
     # --- Print summary ---
-    _print_summary(overall, segments, difficulties, domains, output_path)
+    _print_summary(overall, segments, difficulties, domains, output_path,
+                    config=run_log.get("config"))
 
     return report
 
@@ -559,11 +560,34 @@ def _print_summary(
     difficulties: dict,
     domains: dict,
     output_path: Path,
+    config: dict | None = None,
 ):
-    """Print human-readable summary to console."""
+    """Print human-readable summary to console.
+
+    Args:
+        config: Optional run config dict. When present, quality-affecting
+                parameters are printed at the top of the summary so users
+                can verify what settings produced these scores.
+    """
     print("\n" + "=" * 60)
     print("TEST REPORT SUMMARY")
     print("=" * 60)
+
+    # Surface quality-affecting parameters at the top of every report
+    # so there's never ambiguity about what produced these scores.
+    if config:
+        model = config.get("model", config.get("_model_id", "unknown"))
+        print(f"\n  Model:         {model}")
+        print(f"  Batch size:    {config.get('batch_size', '?')}")
+        print(f"  Temperature:   {config.get('_effective_temperature', config.get('temperature', '?'))}")
+        print(f"  Prompt:        {config.get('prompt_version', '?')}")
+        print(f"  Max tokens:    {config.get('max_tokens', '?')}")
+        tgt = config.get("target_lang", "")
+        src = config.get("source_lang", "")
+        if tgt:
+            print(f"  Target lang:   {tgt}")
+        if src:
+            print(f"  Source lang:   {src}")
 
     n = overall["evaluated"]
     print(f"\n  Total entries:    {overall['total_entries']}")

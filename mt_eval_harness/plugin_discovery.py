@@ -60,18 +60,26 @@ logger = logging.getLogger(__name__)
 # Used to resolve the target_lang field (which can be a human-readable name
 # like "Plains Cree (nêhiyawêwin, SRO)") to a code we can look up.
 _LANG_NAME_TO_CODE = {
+    # Polysynthetic / morphologically-complex
     "cree": "crk",
     "plains cree": "crk",
     "nêhiyawêwin": "crk",
+    "quechua": "que",
+    "cusco quechua": "que",
+    # Sámi family
     "northern sámi": "sme",
     "davvisámegiella": "sme",
     "southern sámi": "sma",
     "lule sámi": "smj",
     "inari sámi": "smn",
     "skolt sámi": "sms",
+    # Other FST-supported
     "finnish": "fin",
     "inuktitut": "iku",
     "norwegian bokmål": "nob",
+    "basque": "eus",
+    "amharic": "amh",
+    "welsh": "cym",
 }
 
 

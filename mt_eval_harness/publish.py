@@ -280,15 +280,20 @@ def assemble_run_card(
     fst_acceptance_rate = None
     fst_accepted_count = None
 
-    fst_data = plugin_metrics.get("crk_fst_validity", {})
-    if fst_data and not fst_data.get("error"):
-        fst_acceptance_rate = fst_data.get("avg_fst_validity")
-    else:
-        # Legacy fallback: check for fst_analyzer plugin
-        fst_data = plugin_metrics.get("fst_analyzer", {})
+    # Check multiple plugin names — the FST plugin was originally CRK-specific
+    # (crk_fst_validity) but is now generic (giellalt_fst_validity) for all
+    # languages with GiellaLT transducers.
+    for fst_key in ("giellalt_fst_validity", "crk_fst_validity", "fst_analyzer"):
+        fst_data = plugin_metrics.get(fst_key, {})
         if fst_data and not fst_data.get("error"):
-            fst_acceptance_rate = fst_data.get("acceptance_rate")
+            # giellalt_fst_validity and crk_fst_validity use avg_fst_validity;
+            # legacy fst_analyzer uses acceptance_rate
+            fst_acceptance_rate = (
+                fst_data.get("avg_fst_validity")
+                or fst_data.get("acceptance_rate")
+            )
             fst_accepted_count = fst_data.get("accepted")
+            break
 
     # If no FST data in TestReport, check for standalone _fst.json file
     # alongside the report (produced by crk-translate eval scripts)
@@ -425,17 +430,21 @@ def assemble_run_card(
         "elapsed_seconds": run_log.get("elapsed_s"),
 
         # §3.2 Method configuration
+        # All parameters that could affect translation quality are recorded
+        # here so that published results can be fully understood and compared.
         "model_slug": config.get("model", ""),
         "model_id": config.get("_model_id", config.get("model", "")),
         "condition": config.get("prompt_version", ""),
         "temperature": config.get("_effective_temperature",
                                   config.get("temperature", 0)),
+        "max_tokens": config.get("max_tokens"),
         "system_prompt_sha256": provenance.get("system_prompt_sha256", ""),
         "system_prompt_used": provenance.get("system_prompt_used", ""),
         "coaching_data_sha256": None,  # populated when coaching is used
         "fst_version": None,  # populated when FST plugin is registered
         "tools_enabled": config.get("tools_enabled", False),
         "batch_size": config.get("batch_size", 25),
+        "concurrency": config.get("concurrency"),
 
         # §3.3 Dataset reference
         "dataset": {
@@ -521,12 +530,18 @@ def assemble_run_card(
     # setup. Differences are due to API non-determinism or provider
     # model updates.
     # -------------------------------------------------------------------
+    # batch_size and tools_enabled are included because they materially
+    # affect output quality — a batch_size=25 run produces different
+    # translations than batch_size=1, and tool-augmented runs use a
+    # fundamentally different prompting strategy.
     fingerprint_components = {
         "dataset_sha256": run_card["dataset"]["sha256"],
         "model_slug": run_card["model_slug"],
         "condition": run_card["condition"],
         "system_prompt_sha256": run_card["system_prompt_sha256"],
         "temperature": run_card["temperature"],
+        "batch_size": run_card["batch_size"],
+        "tools_enabled": run_card["tools_enabled"],
         "harness_version": run_card["harness_version"],
     }
 
@@ -575,6 +590,7 @@ def _to_percentage(rate: float) -> float:
 def publish_to_supabase(
     report_path: str | Path,
     method_card_path: str | Path | None = None,
+    auto_confirm: bool = False,
 ) -> dict:
     """Authenticate, assemble a run card, and publish to the leaderboard.
 
@@ -583,6 +599,8 @@ def publish_to_supabase(
     Args:
         report_path: Path to the TestReport JSON file.
         method_card_path: Optional path to a method card JSON file.
+        auto_confirm: If True, skip the confirmation prompt (for
+                      scripted/batch publishing via --yes).
 
     Returns:
         The upserted Supabase row as a dict.
@@ -671,12 +689,21 @@ def publish_to_supabase(
         "fingerprint_hash": fingerprint_hash,
         "api_provider": "openrouter",
         "run_timestamp": run_card.get("timestamp"),
+        # Quality-affecting parameters as top-level columns for
+        # leaderboard filtering and sorting. These are also in
+        # the run_card JSON but top-level columns enable SQL queries.
+        "batch_size": run_card.get("batch_size"),
+        "temperature": run_card.get("temperature"),
+        "max_tokens": run_card.get("max_tokens"),
     }
 
     # --- Preview ---
     print(f"\n  Submitter:     {submitter}")
     print(f"  Model:         {run_card['model_slug']}")
     print(f"  Condition:     {run_card['condition']}")
+    print(f"  Batch size:    {run_card.get('batch_size', '?')}")
+    print(f"  Temperature:   {run_card.get('temperature', '?')}")
+    print(f"  Max tokens:    {run_card.get('max_tokens', '?')}")
     print(f"  Dataset:       {dataset['id']} ({scores.get('total', '?')} entries)")
     print(f"  chrF++:        {scores.get('chrf_plus_plus', 'N/A')}")
     if cis and cis.get("corpus_chrf"):
@@ -704,10 +731,13 @@ def publish_to_supabase(
     print(f"  UUID:          {card_id}")
 
     # --- Confirm ---
-    confirm = input("\n  Publish these results? [Y/n] ").strip().lower()
-    if confirm and confirm != "y":
-        print("  Cancelled.")
-        raise SystemExit(0)
+    if auto_confirm:
+        print("\n  Auto-confirmed (--yes)")
+    else:
+        confirm = input("\n  Publish these results? [Y/n] ").strip().lower()
+        if confirm and confirm != "y":
+            print("  Cancelled.")
+            raise SystemExit(0)
 
     # --- Upsert ---
     print("\n  Publishing...")

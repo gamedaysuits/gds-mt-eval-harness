@@ -194,6 +194,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--method-card",
         help="Path to a method card JSON file to attach to the submission",
     )
+    pub_p.add_argument(
+        "-y", "--yes",
+        action="store_true",
+        help="Skip confirmation prompt (required for scripted/batch publishing)",
+    )
 
     # --- LOGOUT command ---
     sub.add_parser(
@@ -680,6 +685,7 @@ def main():
         publish_to_supabase(
             args.report_path,
             method_card_path=getattr(args, "method_card", None),
+            auto_confirm=getattr(args, "yes", False),
         )
         return
 

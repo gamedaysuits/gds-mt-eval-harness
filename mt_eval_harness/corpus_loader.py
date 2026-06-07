@@ -256,15 +256,30 @@ def load_corpus(config: RunConfig) -> tuple[list[dict], dict]:
 
         # Auto-populate config from corpus metadata when not set explicitly.
         # This means users can just --corpus <file> without extra flags.
+        #
+        # language_pair can live in two places depending on corpus format:
+        #   - Inside dataset_meta (e.g. {"dataset": {"language_pair": {...}}})
+        #   - At the top level of the corpus JSON (Tatoeba corpora use this)
+        lang_pair = dataset_meta.get("language_pair", {})
+        if not lang_pair:
+            # Check top-level corpus object for language_pair
+            # (Tatoeba corpora store it at root, not inside dataset)
+            raw = json.loads(corpus_path.read_text(encoding="utf-8"))
+            if isinstance(raw, dict):
+                lang_pair = raw.get("language_pair", {})
+
         if dataset_meta:
             if not config.dataset_id and dataset_meta.get("id"):
                 config.dataset_id = dataset_meta["id"]
                 print(f"  Dataset ID:  {config.dataset_id} (from corpus metadata)")
 
-            lang_pair = dataset_meta.get("language_pair", {})
-            if not config.target_lang.strip() and lang_pair.get("target_name"):
-                config.target_lang = lang_pair["target_name"]
-                print(f"  Target lang: {config.target_lang} (from corpus metadata)")
+        if not config.target_lang.strip() and lang_pair.get("target_name"):
+            config.target_lang = lang_pair["target_name"]
+            print(f"  Target lang: {config.target_lang} (from corpus metadata)")
+
+        if not config.source_lang.strip() and lang_pair.get("source_name"):
+            config.source_lang = lang_pair["source_name"]
+            print(f"  Source lang: {config.source_lang} (from corpus metadata)")
 
     entries = _ensure_ids(entries)
     return _apply_filters(entries, config), dataset_meta

@@ -190,8 +190,10 @@ async def execute_run(
     print("=" * 60)
     print(f"  Model:       {config.model} → {config.model_id}")
     print(f"  Prompt:      {config.prompt_version}")
+    print(f"  Temperature: {config.effective_temperature}")
     print(f"  Dataset:     {config.dataset}")
     print(f"  Batch size:  {config.batch_size}")
+    print(f"  Max tokens:  {config.max_tokens}")
     print(f"  Concurrency: {config.concurrency}")
     print(f"  Tools:       {'enabled' if config.tools_enabled else 'disabled'}")
     if config.tools_enabled and config.tools_list:
