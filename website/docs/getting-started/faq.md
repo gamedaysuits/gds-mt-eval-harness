@@ -70,7 +70,7 @@ Your submission will be rejected or flagged if:
 
 1. **Your method was exposed to evaluation data.** If you trained, fine-tuned, few-shot-prompted, or otherwise used any entries from the evaluation dataset, your scores are artificially inflated. This includes using the reference translations in your prompt.
 2. **Your run card fails integrity checks.** The fingerprint must match the configuration. Tampered run cards are rejected.
-3. **Your method doesn't implement the TranslationProcess protocol.** The harness expects `translate(entries, config) → results`. Custom integrations that bypass the harness are not accepted.
+3. **Your method doesn't implement the TranslationMethod protocol.** The harness expects `translate(entries, config) → results`. Custom integrations that bypass the harness are not accepted.
 
 ### Can I submit multiple times?
 

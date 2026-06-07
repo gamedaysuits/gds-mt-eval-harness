@@ -134,6 +134,23 @@ export OPENROUTER_API_KEY=sk-or-v1-your-key-here
 - `python-dotenv` (installed automatically)
 - `sacrebleu` (installed automatically — provides chrF++/BLEU)
 
+### Setting up optional dependencies
+
+The harness ships lean. Optional capabilities (COMET, FSTs) install interactively:
+
+```bash
+# Interactive wizard — explains each option and installs on consent
+mt-eval setup
+
+# Install everything at once, no prompts
+mt-eval setup --all
+
+# Check what's currently installed
+mt-eval setup --status
+```
+
+If you skip setup, the harness will offer to install missing dependencies on-the-fly when they'd improve your evaluation. You never need to know specific pip commands.
+
 ### Optional: COMET neural metric
 
 COMET provides the best correlation with human quality judgments (WMT 2022 primary metric). It requires PyTorch and a ~2.3 GB model download:
@@ -143,6 +160,8 @@ pip install mt-eval-harness[comet]
 ```
 
 When installed, COMET scores are automatically computed during `mt-eval test`. No flag required. The model downloads on first use.
+
+> **AfriCOMET for African languages:** For 35 African languages (yor, hau, ibo, amh, swa, etc.), the harness auto-selects `masakhane/africomet-mtl` — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. This happens automatically via `resolve_comet_model()`. Override with `--comet-model <model_name>` if needed.
 
 > **Low-resource languages:** COMET uses XLM-R embeddings trained on ~100 languages. For languages like Plains Cree (crk) that are underrepresented in XLM-R training data, COMET scores are still computed but the harness emits a warning that scores should be interpreted as relative ranking signals, not absolute quality measures.
 
@@ -287,7 +306,7 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
-| `model` | `--model`, `-m` | `"gemini-3.1-pro"` | Model short name, full OpenRouter ID, or comma-separated list for parallel multi-model runs |
+| `model` | `--model`, `-m` | `"gemini-pro"` | Model alias, full OpenRouter ID, or comma-separated list for parallel multi-model runs. Aliases defined in `shared/model-aliases.json`. |
 | `max_tokens` | `--max-tokens` | `32768` | Max tokens per API call. Set high to eliminate truncation risk; unused tokens cost nothing |
 | `temperature` | `--temperature` | `0.0` | Sampling temperature (0 = deterministic) |
 
@@ -317,17 +336,35 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
 | `prompt_version` | `--prompt`, `-p` | `"naive"` | Prompt version. Built-in: `naive`, `custom`, `champollion` |
-| `custom_prompt_path` | `--custom-prompt` | `None` | Path to .txt file (with `--prompt custom`) |
+| `coaching_file_path` | `--coaching-file` | `None` | Path to coaching prompt .txt file |
+| `coaching_text` | `--coaching` | `None` | Inline coaching text (quoted string) |
 
-### Champollion Config Interop
+### Champollion Config Interop ("Test What You Ship")
 
-These flags enable config interchangeability with the production `champollion` CLI. When `--champollion-config` is provided, the harness reads your `champollion.config.json` and builds production-identical prompts with the correct register, gender guidance, and prompt context.
+These flags enable full config interchangeability with the production `champollion` CLI. When `--champollion-config` is provided, the harness reads your `champollion.config.json` and imports **all production settings** — not just prompts, but model, temperature, batchSize, and coaching file — so your evaluation uses the exact same configuration as production.
 
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
 | `champollion_config_path` | `--champollion-config` | `None` | Path to `champollion.config.json` |
 | `champollion_cards_dir` | `--champollion-cards-dir` | auto-detect | Path to language-cards directory |
 | `target_lang_code` | `--target-lang-code` | `""` | BCP-47 code for target language (e.g., `"fr"`, `"crk"`) |
+
+**What gets imported:**
+
+| Field | Source in champollion.config.json | Override with |
+|---|---|---|
+| Model | `model` (top-level or per-pair) | `--model` |
+| Temperature | `temperature` | `--temperature` |
+| Batch size | `batchSize` | `--batch-size` |
+| Coaching file | `coachingFile` | `--coaching-file` |
+| Register | From language card via `registerPreset` | — |
+| Prompt context | `promptContext` | — |
+
+Explicit CLI flags always override imported values. When importing, the harness logs what was picked up:
+
+```
+  ℹ Imported from champollion.config.json: model=google/gemini-3.5-flash, temperature=0.3, batchSize=80
+```
 
 > **Auto-set behavior:** When `--champollion-config` is provided without an explicit `--prompt`, the prompt version automatically sets to `champollion`. The target language name is auto-populated from the language card.
 
@@ -438,8 +475,19 @@ TEST REPORT SUMMARY
 
   Corpus chrF++:    42.96  [40.1 – 45.8]
   Corpus BLEU:      11.30  [9.2 – 13.4]
-  COMET:            0.7234
+  COMET:            0.7234  [0.71 – 0.74]
   Exact match CI:   [14.5 – 24.2%]
+
+  COMET model:      Unbabel/wmt22-comet-da
+
+  ── Per-Difficulty Breakdown ─────────────────────────────
+  Tier    Count   EM%     chrF++   BLEU    chrF++ CI
+  ─────── ─────── ─────── ──────── ─────── ─────────────
+  Easy      120    38.3    62.1     28.4    [58.2 – 66.0]
+  Medium    140    18.6    42.5     10.8    [38.1 – 46.9]
+  Hard       80     7.5    31.2      4.1    [26.4 – 36.0]
+  Expert     64     1.6    22.8      1.3    [17.5 – 28.1]
+  ─────────────────────────────────────────────────────────
 
   Total cost:       $0.0312
   Avg latency:      1.2s
@@ -462,12 +510,53 @@ Generate an interactive HTML dashboard.
 mt-eval dashboard report1.json report2.json -o dashboard.html
 ```
 
+### `mt-eval export-config`
+
+Generate a `champollion.config.json` snippet from a TestReport. This is the reverse of `--champollion-config` — after finding a winning configuration in the harness, export the exact settings needed to deploy it.
+
+```bash
+# Export to stdout
+mt-eval export-config \
+  --report eval/logs/harness/run_report.json \
+  --target-lang-code crk
+
+# Export to a file
+mt-eval export-config \
+  --report eval/logs/harness/run_report.json \
+  --target-lang-code fr \
+  -o config_snippet.json
+```
+
+The output uses the **canonical MethodConfig shape** — the same 8 fields used across every config surface:
+
+```json
+{
+  "model": "google/gemini-3.5-flash",
+  "temperature": 0.3,
+  "batchSize": 80,
+  "register": "Standard written register (SRO orthography)",
+  "coachingFile": "coaching/crk.txt",
+  "coachingPrompt": null,
+  "promptContext": "A language learning app",
+  "qualityTier": "high"
+}
+```
+
+All fields are always present. Unused values are `null`. The shape never changes whether it's:
+- Exported from the harness (`export-config`, `export`)
+- Published to the leaderboard (`publish`)
+- Installed from the leaderboard (`leaderboard --install`)
+- Read from `champollion.config.json` (`--champollion-config`)
+- Stored in a method plugin (`method.json`)
+
+> **Naming convention:** The canonical shape uses **camelCase** (JavaScript/JSON convention). The Python `RunConfig` dataclass uses **snake_case** internally (`batch_size`, `coaching_file`). The translation happens automatically at the import/export boundary. User-facing JSON always uses camelCase.
+
 ### `mt-eval list`
 
 List available resources.
 
 ```bash
-mt-eval list models          # Show registry shortcuts
+mt-eval list models          # Show aliases from shared/model-aliases.json
 mt-eval list models --live   # Fetch live catalog from OpenRouter
 mt-eval list prompts         # Show available prompt versions
 mt-eval list datasets        # Show registered evaluation datasets
@@ -527,15 +616,14 @@ mt-eval run \
   --name "single_entry_debug"
 ```
 
-### Custom prompt: Load from file
+### Coaching prompt: Load from file
 
 ```bash
 echo "You are an expert French translator..." > my_prompt.txt
 
 mt-eval run \
   --corpus data/test_set.json \
-  --prompt custom \
-  --custom-prompt my_prompt.txt
+  --coaching-file my_prompt.txt
 ```
 
 ---
@@ -815,7 +903,7 @@ asyncio.run(benchmark())
 
 ### Wrapping an existing pipeline
 
-Implement the `TranslationProcess` protocol:
+Implement the `TranslationMethod` protocol:
 
 ```python
 class MyPipeline:
@@ -837,7 +925,7 @@ class MyPipeline:
         return results
 
 # Evaluate it:
-await execute_run(config, process=MyPipeline())
+await execute_run(config, method=MyPipeline())
 ```
 
 ---
@@ -1137,7 +1225,7 @@ class BrandAlignmentMetric:
 # Run 5 models in parallel with your brand prompt
 mt-eval run --corpus brand_samples.json \
   -m gemini-3.1-pro,claude-sonnet-4,gpt-5.5,mistral-large,deepseek-v4 \
-  --custom-prompt brand_voice.txt \
+  --coaching-file brand_voice.txt \
   --name "brand_voice_benchmark"
 
 # Analyze with your custom metric

@@ -6,29 +6,37 @@ slug: '/specifications/scoring'
 
 # Scoring Specification
 
-> **Executive Summary.** This is the single source of truth for all evaluation metrics, composite scoring, quality tiers, and cost analysis in the Champollion MT evaluation ecosystem. Every metric computed by the harness, every weight in the composite formula, and every tier threshold is defined here — and only here. Code, documentation, and database schemas derive from this document. When they conflict, this document is authoritative.
+> **Executive Summary.** This is the single source of truth for all evaluation metrics, composite scoring, quality tiers, and cost analysis in the Champollion MT evaluation ecosystem. The language-specific evaluation metrics — FST morphological validity, linter equivalence classes, and deterministic semantic validation — are collectively named **LYSS** (Linguistically-informed Yield & Structural Scoring). Every metric computed by the harness, every weight in the composite formula, and every tier threshold is defined here — and only here. Code, documentation, and database schemas derive from this document. When they conflict, this document is authoritative.
 >
 > **Scope.** This document defines *what* we measure and *how we score it*. It does not define the run card schema (see BENCHMARK_SPEC §3), the benchmark protocol (BENCHMARK_SPEC §6), or the leaderboard rules (see arena docs). Those documents reference this one for metric definitions and scoring logic.
 >
-> Last updated: 2026-05-26
+> Last updated: 2026-06-07
 
 ---
 
 ## 1. Scoring Philosophy
 
-### 1.1 Automated Metrics Are Proxies
+### 1.1 Microeval Philosophy
+
+> *"If we only focus on what generalizes, we will inevitably forget about where it doesn't — and lose these languages and all their knowledge and wisdom."*
+
+This project practices **microeval development**: building evaluation metrics tailored to specific languages using the best available linguistic tools — finite-state transducers, bilingual dictionaries, morphological analyzers, linguist-curated equivalence rules. This is the opposite of the dominant paradigm in MT evaluation, which seeks universal metrics that work across all languages. Universal metrics are valuable, but they are weakest precisely where they are needed most: for languages with complex morphology, limited training data, and no representation in neural metric training sets.
+
+We are not making progress in machine translation for many of the world's languages not only because we lack corpora, but because **we don't even know what progress looks like** — we lack the automated evaluation tools to measure whether a translation system is improving. LYSS is our attempt to build those tools, language by language, using whatever linguistic resources exist.
+
+### 1.2 Automated Metrics Are Proxies
 
 Every metric defined here is machine-computed. They are useful for rapid iteration, systematic comparison, and detecting regressions. They are **not substitutes for human judgment**. The quality tiers in §5 are heuristic labels — only human review can confirm actual usability.
 
-### 1.2 Multi-Signal Design
+### 1.3 Multi-Signal Design
 
 No single metric captures translation quality. A translation can have perfect chrF++ overlap but fail morphological validation. It can pass FST checks but carry the wrong meaning. It can be semantically accurate but stylistically alien to the target language. The composite score in §4 aggregates multiple independent signals, each capturing a different dimension of quality.
 
-### 1.3 Extensibility
+### 1.4 Extensibility
 
-This metric inventory is not closed. New languages bring new requirements: tone accuracy for tonal languages, diacritical precision for Semitic scripts, syllabary correctness for Cree. The architecture (MetricPlugin protocol, weighted composite with re-normalization) is designed for metrics to be added without breaking existing scores.
+This metric inventory is not closed. New languages bring new requirements: tone accuracy for tonal languages, diacritical precision for Semitic scripts, syllabary correctness for Cree. The architecture (MetricPlugin protocol, weighted composite with re-normalization) is designed for metrics to be added without breaking existing scores. Language-specific metrics (e.g., CRK's linter and semantic validator) are provided by method plugins — the harness ships with generic behavioral metrics only (code-switching, hallucination, terminology).
 
-### 1.4 Three Dimensions of Evaluation
+### 1.5 Three Dimensions of Evaluation
 
 Every run card measures three independent dimensions:
 
@@ -39,6 +47,26 @@ Speed     — How fast does it run?           (speed metrics, §7)
 ```
 
 These are independent axes. A method can be high-quality but expensive, fast but inaccurate, or any combination. The leaderboard enables sorting by any dimension. The cost-adjusted score (§6.3) is the only metric that combines dimensions.
+
+### 1.6 Validation Status
+
+Every metric in this specification has a **validation status** distinct from its implementation status (§3). Implementation status tracks whether code exists. Validation status tracks whether the metric has been shown to correlate with human quality judgments.
+
+| Validation Level | Meaning | Current Metrics |
+|------------------|---------|----------------|
+| **✅ Externally validated** | Published human-correlation studies exist (WMT, academic papers) | `chrf_plus_plus`, `bleu`, `comet_score` |
+| **⚡ Proxy-validated** | Validated for high-resource languages; unvalidated for our target LRLs | `comet_score` (validated for EU pairs, not for CRK) |
+| **🔶 Engineering heuristic** | Designed from linguistic principles or observed failure modes; no human correlation data | `fst_acceptance_rate`, `equivalent_match_rate`, `semantic_score`, `code_switching_rate`, `hallucination_rate`, `terminology_adherence` |
+| **🔲 Unvalidated** | Not yet tested on any data | `morphological_accuracy`, `orthographic_accuracy`, `consistency_score` |
+
+> **What this means in practice.** The composite score (§4) aggregates metrics at all validation levels. This is an explicit design choice: we believe that a structurally-grounded engineering heuristic (FST acceptance) is more informative for polysynthetic languages than a neural metric validated only on European pairs (COMET). But we have not proven this. The composite score should be treated as an **engineering estimate**, not a validated quality measurement, until human correlation studies are completed for each target language.
+>
+> **Required validation experiments** (see `mt-evaluation-landscape.md` §6 and `speaker-validation.md`):
+> 1. Human judgment correlation study: 200+ sentence pairs rated by 3+ bilingual speakers
+> 2. FST false rejection rate measurement on a representative corpus
+> 3. Second-language port (North Sámi) to test generalization
+> 4. Direct comparison with COMET on the same data
+
 
 ---
 
@@ -53,7 +81,7 @@ Surface metrics compare the predicted translation to the reference translation a
 | ID | Metric | Status | Scale | Level | Implementation |
 |----|--------|--------|-------|-------|---------------|
 | `exact_match_rate` | Exact Match | ✅ Implemented | 0.0–1.0 | Both | Binary: does predicted == reference? Corpus rate = matches / total. |
-| `equivalent_match_rate` | Equivalent Match | ⚡ Partial | 0.0–1.0 | Both | Does the predicted output match any accepted variant? For CRK: implemented via `CrkLinterMetric` plugin using deterministic variant-class rules (word order, orthographic, optional particle, lemma synonym, progressive ambiguity). Generic cross-language implementation requires per-entry `variants[]` in corpus. |
+| `equivalent_match_rate` | Equivalent Match | ⚡ Partial | 0.0–1.0 | Both | Does the predicted output match any accepted variant? For CRK: implemented via the CRK method plugin's `CrkLinterMetric` using deterministic variant-class rules (word order, orthographic, optional particle, lemma synonym, progressive ambiguity). The CRK linter is loaded automatically when the CRK method plugin is active. Generic cross-language implementation requires per-entry `variants[]` in corpus. |
 | `chrf_plus_plus` | chrF++ | ✅ Implemented | 0–100 | Both | Character n-gram F-score (sacrebleu). Robust to morphological variation. The primary surface metric for agglutinative/polysynthetic languages. Per-entry uses `sentence_chrf`; corpus uses `corpus_chrf`. |
 | `bleu` | BLEU | ✅ Implemented | 0–100 | Corpus | Word-level n-gram precision (sacrebleu). **Excluded from composite** — word-level scoring penalizes morphological variation unfairly. Computed and reported for compatibility with MT literature. |
 | `ter` | Translation Edit Rate | 🔲 Planned | 0–∞ (lower is better) | Both | Minimum edit distance between predicted and reference, normalized by reference length (sacrebleu `corpus_ter`). Already available in our sacrebleu dependency. |
@@ -77,10 +105,12 @@ Semantic metrics measure meaning preservation using embeddings or learned models
 
 | ID | Metric | Status | Scale | Level | Implementation |
 |----|--------|--------|-------|-------|---------------|
-| `semantic_score` | Semantic Similarity | ⚡ Partial | 0.0–1.0 | Both | CRK: verdict-weighted score from `CrkSemanticMetric` (proxy). Universal: cosine similarity of sentence embeddings (source + predicted vs source + reference). Model TBD — must support low-resource languages, which rules out most English-centric embedding models. |
-| `comet_score` | COMET | ✅ Implemented | ~0.0–1.0 | Both | Learned MT evaluation metric (Unbabel). Trained on human quality judgments. **Excluded from composite** — training data is biased toward high-resource European languages; scores for LRLs are unreliable. Computed when `unbabel-comet` is installed. Reported with a low-resource warning flag. |
+| `semantic_score` | Semantic Similarity | ⚡ Partial | 0.0–1.0 | Both | CRK: verdict-weighted score from the CRK method plugin's `CrkSemanticMetric` (proxy). Universal: cosine similarity of sentence embeddings (source + predicted vs source + reference). Model TBD — must support low-resource languages, which rules out most English-centric embedding models. |
+| `comet_score` | COMET | ✅ Implemented | ~0.0–1.0 | Both | Learned MT evaluation metric (Unbabel). Trained on human quality judgments. **Excluded from composite** — training data is biased toward high-resource European languages; scores for LRLs are unreliable. Computed when `unbabel-comet` is installed. Reported with a low-resource warning flag. For 35 African languages, the harness auto-selects AfriCOMET (`masakhane/africomet-mtl`) via `resolve_comet_model()`, which has better human-judgment correlation for those languages. |
 
 > **Why COMET is excluded from the composite.** COMET is trained on WMT human evaluation data, which is overwhelmingly high-resource European language pairs. When applied to Plains Cree or other LRLs, the model's internal representations have no exposure to those languages — it's extrapolating from languages with fundamentally different morphological systems. The scores are still directionally useful (higher COMET ≈ more fluent-sounding output in general) but the absolute values are not calibrated. We report COMET for transparency but don't let it influence the composite score until we can validate it against human judgments for each target language.
+
+> **AfriCOMET for African languages.** The harness includes a COMET model registry (`COMET_MODEL_REGISTRY`) that maps language codes to specialized COMET models. For 35 African languages (yor, hau, ibo, amh, swa, etc.), it auto-selects `masakhane/africomet-mtl` — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. This selection happens automatically via `resolve_comet_model()` but can be overridden with `--comet-model`. The registry is extensible: new language→model mappings can be added to `COMET_MODEL_REGISTRY` in `metrics_comet.py`.
 
 ### 2.4 Behavioral Metrics
 
@@ -323,8 +353,9 @@ All key metrics support bootstrap confidence intervals (percentile method, n=100
 | `chrf_plus_plus` | ✅ `chrf_ci_lower`, `chrf_ci_upper` |
 | `exact_match_rate` | ✅ `exact_match_ci_lower`, `exact_match_ci_upper` |
 | `fst_acceptance_rate` | ✅ `fst_ci_lower`, `fst_ci_upper` (only computed when FST data exists) |
-| `comet_score` | 🔲 Planned (metric function exists in `metrics_comet.py` but not wired into `compute_all_cis()`) |
+| `comet_score` | ✅ `comet_ci_lower`, `comet_ci_upper` (bootstrapped from cached per-entry scores — no redundant neural inference) |
 | `composite` | ✅ `composite_ci_lower`, `composite_ci_upper` (computed when chrF++ and exact_match are available) |
+| per-tier CIs | ✅ `confidence_intervals_by_tier` — chrF++ and exact_match CIs per difficulty level (Tier 1-5) |
 
 ### 8.2 Paired Bootstrap Significance Tests
 
@@ -381,7 +412,12 @@ This section defines the hierarchical structure of the `scores` block in a run c
     // §8.1 Confidence intervals
     "confidence_intervals": {
       "chrf_plus_plus":     { "ci_lower": 78.2, "ci_upper": 83.1 },
-      "exact_match_rate":   { "ci_lower": 0.54, "ci_upper": 0.78 }
+      "exact_match_rate":   { "ci_lower": 0.54, "ci_upper": 0.78 },
+      "corpus_comet":       { "ci_lower": 0.71, "ci_upper": 0.76 }
+    },
+    "confidence_intervals_by_tier": {
+      "1": { "corpus_chrf": { "ci_lower": 68.1, "ci_upper": 76.5 } },
+      "3": { "corpus_chrf": { "ci_lower": 36.2, "ci_upper": 47.0 } }
     },
 
     // Breakdowns
@@ -489,18 +525,24 @@ The file `arena/mt_eval_harness/scoring.py` mirrors the weight tables and tier t
 | **Consistency Score** | Corpus-level only — no per-entry value to aggregate. Also, some inconsistency is legitimate (same English word → different target-language translations depending on context). |
 | **Compliance Index** | Quality gate, not quality signal. Measures structural preservation (placeholders, quotes), not translation accuracy. |
 
-## Appendix B: Language-Specific Metric Implementations
+## Appendix B: LYSS — Language-Specific Metric Implementations
 
-Some metrics have language-specific implementations that predate the generic harness metrics:
+The **LYSS** framework (Linguistically-informed Yield & Structural Scoring) provides language-specific metrics that go beyond surface-level string comparison. LYSS has three core components:
 
-| Language | Plugin | Metric | Notes |
-|----------|--------|--------|-------|
-| CRK (Plains Cree) | `CrkLinterMetric` | `equivalent_match_rate` | Deterministic variant-class rules: word order, orthographic, optional particle, lemma synonym, progressive ambiguity, inclusive/exclusive. Produces per-entry `lint_verdict` (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
-| CRK | `CrkFSTMetric` | `fst_acceptance_rate` | Superseded by `GiellaLTFSTMetric` but produces identical results. |
-| CRK | `CrkSemanticMetric` | Semantic validation | Deterministic: FST lemma extraction + dictionary glosses + spaCy content-word overlap. Produces verdicts (EXACT_MATCH/VALID/WRONG_ORDER/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
-| GiellaLT langs | `GiellaLTFSTMetric` | `fst_acceptance_rate` | Generic: works for CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — any language with a `.hfstol` analyzer. |
+- **LYSS-fst** — Morphological validity (`fst_acceptance_rate`): Is each word a valid form in the target language?
+- **LYSS-eq** — Linguistic equivalence (`equivalent_match_rate`): Is the output an acceptable variant of the reference?
+- **LYSS-sem** — Semantic validation (`semantic_score`): Does the output preserve the source meaning?
 
-When a language has a specific implementation, it takes precedence over the generic. The generic implementation is the fallback for languages without specialized tooling.
+> **Validation status: 🔶 Engineering heuristic.** LYSS metrics have NOT been validated against human quality judgments. They are designed from linguistic principles (FSTs, dictionaries, grammar rules built by linguists at UAlberta ALTLab), but the correlation between LYSS scores and actual translation quality has not been measured. See the [Speaker Validation Protocol](/docs/specifications/speaker-validation) for the required validation experiments.
+
+| Language | Plugin | LYSS Component | Metric Key | Notes |
+|----------|--------|----------------|------------|-------|
+| CRK (Plains Cree) | `CrkLinterMetric` | **LYSS-eq** | `equivalent_match_rate` | Deterministic variant-class rules: word order, orthographic, optional particle, lemma synonym, progressive ambiguity, inclusive/exclusive. Produces per-entry `lint_verdict` (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
+| CRK | `CrkFSTMetric` | **LYSS-fst** | `fst_acceptance_rate` | Superseded by `GiellaLTFSTMetric` but produces identical results. |
+| CRK | `CrkSemanticMetric` | **LYSS-sem** | `semantic_score` | Deterministic: FST lemma extraction + dictionary glosses + spaCy content-word overlap. Produces verdicts (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
+| GiellaLT langs | `GiellaLTFSTMetric` | **LYSS-fst** | `fst_acceptance_rate` | Generic: works for CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — any language with a `.hfstol` analyzer. |
+
+When a language has a specific implementation, it takes precedence over the generic. The generic implementation is the fallback for languages without specialized tooling. Future LYSS challenges will calibrate per-language overrides as new language communities are onboarded.
 
 ## Appendix C: Metrics Under Consideration
 
@@ -512,3 +554,61 @@ These are ideas being evaluated but not yet specified enough for §2:
 | Register match | Does the translation match the expected formality level? | Requires sociolinguistic classifiers. Research problem. |
 | Cultural appropriateness | Are cultural references handled correctly? | Cannot be automated — inherently requires human review. |
 | Discourse coherence | Do consecutive translations form a coherent passage? | Requires document-level evaluation, not sentence-level. |
+
+---
+
+## References
+
+Academic papers, tools, and language resources cited throughout this specification.
+
+### Surface Metrics
+
+1. Popović, M. (2017). "chrF++: words helping character n-grams." *Proceedings of the Second Conference on Machine Translation (WMT 2017)*, pp. 612–618. Copenhagen, Denmark.
+
+2. Papineni, K., Roukos, S., Ward, T., & Zhu, W.-J. (2002). "BLEU: a method for automatic evaluation of machine translation." *Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics (ACL 2002)*, pp. 311–318. Philadelphia, PA.
+
+3. Post, M. (2018). "A Call for Clarity in Reporting BLEU Scores." *Proceedings of the Third Conference on Machine Translation (WMT 2018)*, pp. 186–191. Belgium, Brussels. Reference implementation: [sacrebleu](https://github.com/mjpost/sacrebleu).
+
+4. Snover, M., Dorr, B., Schwartz, R., Micciulla, L., & Makhoul, J. (2006). "A Study of Translation Edit Rate with Targeted Human Annotation." *Proceedings of the 7th Conference of the Association for Machine Translation in the Americas (AMTA 2006)*, pp. 223–231. Cambridge, MA.
+
+### Neural Metrics
+
+5. Rei, R., Stewart, C., Farinha, A. C., & Lavie, A. (2020). "COMET: A Neural Framework for MT Evaluation." *Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)*, pp. 2685–2702. Online.
+
+6. Juraska, J., Finkelstein, M., Deutsch, D., Siddhant, A., Miber, D., & Markl, A. (2023). "MetricX-23: The Google Submission to the WMT 2023 Metrics Shared Task." *Proceedings of the Eighth Conference on Machine Translation (WMT 2023)*. Singapore.
+
+7. Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q., & Artzi, Y. (2020). "BERTScore: Evaluating Text Generation with BERT." *Proceedings of the Eighth International Conference on Learning Representations (ICLR 2020)*. Addis Ababa, Ethiopia.
+
+8. Sellam, T., Das, D., & Parikh, A. (2020). "BLEURT: Learning Robust Metrics for Text Generation." *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)*, pp. 7881–7892. Online.
+
+### Morphological and Linguistic Tools
+
+9. Lindén, K., Silfverberg, M., Axelson, E., Hardwick, S., & Pirinen, T. (2011). "HFST—Framework for Compiling and Applying Morphologies." *Systems and Frameworks for Computational Morphology (SFCM 2011)*, Communications in Computer and Information Science, vol. 100, pp. 67–85. Springer, Berlin, Heidelberg.
+
+10. Sánchez-Cartagena, V. M., & Toral, A. (2024). "MorphEval: Automatic Evaluation of Morphological Capabilities of Machine Translation Systems." *Machine Translation*, vol. 38, pp. 1–28.
+
+### Error Classification and Diagnostic Evaluation
+
+11. Popović, M. (2011). "Hjerson: An Open Source Tool for Automatic Error Classification of Machine Translation Output." *The Prague Bulletin of Mathematical Linguistics*, no. 96, pp. 59–68.
+
+12. Dreyer, M. & Marcu, D. (2012). "HyTER: Meaning-Equivalent Semantics for Translation Evaluation." *Proceedings of the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2012)*, pp. 162–171. Montréal, Canada.
+
+13. Reiter, E. & Belz, A. (2009). "An Investigation into the Validity of Some Metrics for Automatically Evaluating Natural Language Generation Systems." *Computational Linguistics*, vol. 35, no. 4, pp. 529–558. (Related work on feature-based evaluation metrics, including FUSE.)
+
+### Hallucination Detection
+
+14. Raunak, V., Menezes, A., & Junczys-Dowmunt, M. (2021). "The Curious Case of Hallucinations in Neural Machine Translation." *Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2021)*, pp. 1172–1183. Online.
+
+15. Guerreiro, N. M., Voita, E., & Martins, A. F. T. (2023). "Looking for a Needle in a Haystack: A Comprehensive Study of Hallucinations in Neural Machine Translation." *Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2023)*, pp. 1059–1075. Dubrovnik, Croatia.
+
+### Cree Language Resources
+
+16. Wolfart, H. C. (1973). "Plains Cree: A Grammatical Study." *Transactions of the American Philosophical Society*, vol. 63, no. 5, pp. 1–90.
+
+17. Wolvengrey, A. (2001). *nêhiyawêwin: itwêwina / Cree: Words.* Canadian Plains Research Center, University of Regina.
+
+### Data Governance
+
+18. First Nations Information Governance Centre. "The First Nations Principles of OCAP®." [https://fnigc.ca/ocap-training/](https://fnigc.ca/ocap-training/). (OCAP® is a registered trademark of the First Nations Information Governance Centre.)
+
+19. Carroll, S. R., Garba, I., Figueroa-Rodríguez, O. L., Holbrook, J., Lovett, R., Materechera, S., Parsons, M., Raseroka, K., Rodriguez-Lonebear, D., Rowe, R., Sara, R., Walker, J. D., Anderson, J., & Hudson, M. (2020). "The CARE Principles for Indigenous Data Governance." *Data Science Journal*, vol. 19, no. 1, p. 43.

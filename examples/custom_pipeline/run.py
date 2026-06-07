@@ -1,7 +1,7 @@
 """
 Custom Pipeline Example — Plugging a custom translation process.
 
-Demonstrates how to implement the TranslationProcess protocol
+Demonstrates how to implement the TranslationMethod protocol
 to evaluate your own translation pipeline against the harness.
 
 This example shows a dummy pipeline that reverses strings — in
@@ -18,7 +18,7 @@ from mt_eval_harness.plugins.metrics import MetricPlugin
 
 
 # ---------------------------------------------------------------------------
-# Custom translation process (implements TranslationProcess protocol)
+# Custom translation process (implements TranslationMethod protocol)
 # ---------------------------------------------------------------------------
 
 class ReverseTranslator:

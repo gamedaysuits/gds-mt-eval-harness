@@ -87,6 +87,24 @@ from mt_eval_harness.significance import (
     fst_acceptance_rate,
     composite_score,
 )
+from mt_eval_harness.metrics_comet import HAS_COMET
+
+
+def _comet_from_cached_scores(entries: list[dict]) -> float:
+    """Compute corpus COMET from pre-cached per-entry scores.
+
+    This avoids re-running neural inference on every bootstrap iteration.
+    tester.py injects 'comet_score' into each entry dict after COMET
+    scoring; this function simply takes the mean of those cached scores.
+
+    Falls back to 0.0 if no entries have cached COMET scores.
+    """
+    scores = [
+        e["comet_score"]
+        for e in entries
+        if not e.get("error") and isinstance(e.get("comet_score"), (int, float))
+    ]
+    return sum(scores) / len(scores) if scores else 0.0
 
 
 @dataclass
@@ -295,6 +313,27 @@ def compute_all_cis(
         )
         results["fst_acceptance_rate"] = asdict(ci)
 
+    # --- COMET (neural metric, when installed) ---
+    # Uses pre-computed per-entry COMET scores from tester.py rather than
+    # re-running model inference on each bootstrap iteration. The
+    # _comet_from_cached_scores function reads entry["comet_score"] values.
+    if HAS_COMET:
+        has_comet_scores = any(
+            isinstance(e.get("comet_score"), (int, float))
+            for e in valid_entries
+            if not e.get("error")
+        )
+        if has_comet_scores:
+            ci = bootstrap_ci(
+                valid_entries,
+                metric_fn=_comet_from_cached_scores,
+                n_bootstrap=n_bootstrap,
+                alpha=alpha,
+                seed=seed,
+                metric_name="comet",
+            )
+            results["comet"] = asdict(ci)
+
     # --- Composite score (when chrF++ and exact_match are available) ---
     # chrF++ and exact_match are always computable from valid entries that
     # have expected/predicted text. We verify by checking that at least
@@ -312,6 +351,78 @@ def compute_all_cis(
             metric_name="composite_score",
         )
         results["composite_score"] = asdict(ci)
+
+    return results
+
+
+def compute_per_tier_cis(
+    entries: list[dict],
+    n_bootstrap: int = 1000,
+    alpha: float = 0.05,
+    seed: int = 42,
+) -> dict[int, dict]:
+    """Compute bootstrap CIs grouped by difficulty tier.
+
+    Groups entries by their 'difficulty' field (0-5) and computes
+    CIs for corpus_chrf and exact_match_rate within each tier.
+
+    This enables answering questions like:
+        "Is our system significantly worse at Tier 4-5 than at Tier 1?"
+        "How wide are the error bars per difficulty level?"
+
+    Args:
+        entries: Entry dicts with 'difficulty', 'expected', 'predicted'.
+        n_bootstrap: Number of bootstrap iterations.
+        alpha: Significance level (default 0.05 → 95% CI).
+        seed: Random seed for reproducibility.
+
+    Returns:
+        Dict mapping difficulty level (int) to a dict of metric CIs.
+        Example: {1: {"corpus_chrf": {...}, "exact_match_rate": {...}}}
+    """
+    # Group entries by difficulty tier
+    tiers: dict[int, list[dict]] = {}
+    for e in entries:
+        if e.get("error"):
+            continue
+        tier = e.get("difficulty", 0)
+        tiers.setdefault(tier, []).append(e)
+
+    # Skip if only one tier (no meaningful per-tier breakdown)
+    if len(tiers) <= 1:
+        return {}
+
+    results = {}
+    for tier, tier_entries in sorted(tiers.items()):
+        # Need at least 5 entries per tier for meaningful CIs
+        if len(tier_entries) < 5:
+            continue
+
+        tier_cis = {}
+
+        # chrF++ CI per tier
+        ci = bootstrap_ci(
+            tier_entries,
+            metric_fn=corpus_chrf,
+            n_bootstrap=n_bootstrap,
+            alpha=alpha,
+            seed=seed + tier,  # Vary seed per tier for independence
+            metric_name=f"corpus_chrf_tier{tier}",
+        )
+        tier_cis["corpus_chrf"] = asdict(ci)
+
+        # Exact match CI per tier
+        ci = bootstrap_ci(
+            tier_entries,
+            metric_fn=exact_match_rate,
+            n_bootstrap=n_bootstrap,
+            alpha=alpha,
+            seed=seed + tier,
+            metric_name=f"exact_match_rate_tier{tier}",
+        )
+        tier_cis["exact_match_rate"] = asdict(ci)
+
+        results[tier] = tier_cis
 
     return results
 

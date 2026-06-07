@@ -35,7 +35,7 @@ graph TD
     end
 
     subgraph harness ["Eval Harness (Python)"]
-        H["TranslationProcess adapter"]
+        H["TranslationMethod adapter"]
         I["Score + Run Card"]
     end
 
@@ -389,11 +389,11 @@ export async function callLLM(sourceText, options) {
 
 Your pipeline is built. Now you need to connect it to the eval harness so you can benchmark it on the leaderboard.
 
-The harness speaks one interface: `TranslationProcess`. It's a Python protocol with a single method. Build whatever you want in whatever language — then give it this thin wrapper and it plugs in.
+The harness speaks one interface: `TranslationMethod`. It's a Python protocol with a single method. Build whatever you want in whatever language — then give it this thin wrapper and it plugs in.
 
 ```python title="fst_gated_process.py"
 """
-TranslationProcess adapter for the FST-gated pipeline.
+TranslationMethod adapter for the FST-gated pipeline.
 
 This thin wrapper connects your pipeline (running as a local
 subprocess or HTTP server) to the eval harness. The harness
@@ -481,7 +481,7 @@ class FSTGatedProcess:
 ```
 
 :::tip You don't need HTTP
-The example above calls the pipeline over HTTP because the pipeline is in JavaScript. If your pipeline is in Python, you can call it directly — no server needed. The `TranslationProcess` wrapper is just a function boundary. What happens inside is up to you.
+The example above calls the pipeline over HTTP because the pipeline is in JavaScript. If your pipeline is in Python, you can call it directly — no server needed. The `TranslationMethod` wrapper is just a function boundary. What happens inside is up to you.
 :::
 
 ### Running the Benchmark
@@ -772,7 +772,7 @@ The pipeline is a pattern. The stages are interchangeable. Build what works for 
 ## See Also
 
 - **[Eval Harness](/docs/specifications/harness)** — how to run the harness and interpret output
-- **[Method Interface](/docs/specifications/methods)** — the `TranslationProcess` protocol specification
+- **[Method Interface](/docs/specifications/methods)** — the `TranslationMethod` protocol specification
 - **[Leaderboard Rules](/docs/leaderboard/rules)** — submission criteria and anti-gaming policies
 - **[Support a Low-Resource Language](/docs/community/low-resource-languages)** — the broader context and OCAP principles
 - **[ALTLab](https://altlab.artsrn.ualberta.ca/)** — the Alberta Language Technology Lab (Plains Cree FST)

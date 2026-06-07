@@ -5,7 +5,7 @@ title: Method Interface
 
 # Shared Method Interface
 
-> **Executive Summary.** This page specifies the `TranslationProcess` protocol that all Arena methods must implement, the six method classes (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), and the method plugin format. Any approach that implements this protocol can be benchmarked.
+> **Executive Summary.** This page specifies the `TranslationMethod` protocol that all Arena methods must implement, the six method classes (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), and the method plugin format. Any approach that implements this protocol can be benchmarked.
 
 The eval harness and champollion share a common concept of **translation method**. A method is any procedure that takes source text and produces translated text — whether it's a direct LLM call, a multi-stage pipeline, a third-party API, or a human translator.
 
@@ -13,11 +13,13 @@ The eval harness and champollion share a common concept of **translation method*
 
 ```
 Method Plugin (v2 Spec)
-├── manifest.json         ← Shared metadata (name, version, supported pairs)
+├── method.json           ← Manifest (name, class, entry_point, metadata)
 ├── method_card.json      ← Leaderboard description (what, not how)
-├── translate.py          ← Python entry point (for eval harness)
-└── translate.js          ← Node.js entry point (for champollion CLI)
+├── pipeline.py           ← Python module implementing TranslationMethod
+└── (optional helpers)    ← Additional Python modules
 ```
+
+Loaded via `--method path/to/dir`. The harness discovers nothing automatically.
 
 ## Two Systems, One Interface
 
@@ -25,7 +27,7 @@ Method Plugin (v2 Spec)
 |---|---|---|
 | **Language** | Python | Node.js |
 | **Entry point** | `translate.py` | `translate.js` |
-| **Interface** | `TranslationProcess` protocol | `methodPlugin` config |
+| **Interface** | `TranslationMethod` protocol | `methodPlugin` config |
 | **Purpose** | Batch evaluation with scoring | Live localization in dev/CI |
 | **Output** | Run card with metrics | Translated locale files |
 
@@ -64,11 +66,11 @@ See the [Method Card Spec](/docs/specifications/methods#method-card) for the ful
 | `raw-llm` | Direct LLM call with minimal instruction |
 | `coached-llm` | LLM with structured prompt, examples, constraints |
 | `pipeline` | Multi-stage pipeline with deterministic components |
-| `custom-plugin` | External process implementing the `TranslationProcess` protocol |
+| `custom-plugin` | External process implementing the `TranslationMethod` protocol |
 | `api` | Third-party translation API (Google Translate, DeepL, etc.) |
 | `human` | Human translation (for establishing baselines) |
 
-## Eval Harness: TranslationProcess Protocol
+## Eval Harness: TranslationMethod Protocol
 
 The eval harness uses Python's structural typing (`Protocol`) for plugins. Any class with the right method signature works — no inheritance required:
 
@@ -91,7 +93,7 @@ class MyMethod:
         return results
 ```
 
-See the [Plugin Protocol](/docs/specifications/methods#eval-harness-translationprocess-protocol) for complete documentation including wrapper examples for non-Python methods.
+See the [Plugin Protocol](/docs/specifications/methods#eval-harness-translationmethod-protocol) for complete documentation including wrapper examples for non-Python methods.
 
 ## champollion: methodPlugin Config
 
@@ -116,11 +118,16 @@ When a method card is attached to a run (via `--method-card`), it's embedded in 
 
 ```bash
 # Run with method card attached
-python eval/baseline_experiment.py \
-  --dataset data/edtekla-dev-v1.json \
-  --method-card method_card.json \
-  --submit
+mt-eval run \
+  --method path/to/my-method \
+  --corpus data/edtekla-dev-v1.json \
+  --method-card method_card.json
+
+# Publish to the leaderboard
+mt-eval publish eval/logs/harness/your-run-card.json
 ```
+
+If no `--method-card` was provided, `mt-eval publish` launches an interactive wizard that walks you through describing your method.
 
 The leaderboard shows:
 - **Class badge** — visual indicator (e.g., "pipeline", "coached-llm")
@@ -128,7 +135,7 @@ The leaderboard shows:
 - **Tools used** — listed from the method card
 - **Open source indicator**
 
-When no method card is attached, the leaderboard shows harness-native configuration (model, condition, temperature, tools enabled).
+When no method card is attached, the leaderboard shows harness-native configuration (model, prompt version, temperature, tools enabled).
 
 :::danger DO NOT TRAIN on evaluation data
 Methods whose development process included exposure to the evaluation dataset — as training data, few-shot examples, dictionary entries, or prompt tuning material — will be **disqualified** from the leaderboard. See [MT Evaluation](/docs/leaderboard/rules) for what distinguishes a good method from a bad one.

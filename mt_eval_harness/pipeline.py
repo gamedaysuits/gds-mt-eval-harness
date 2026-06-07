@@ -136,6 +136,9 @@ def build_run_log(
     system_prompt_sha256: str = "",
     corpus_sha256: str = "",
     dataset_meta: dict | None = None,
+    method_card: dict | None = None,
+    coaching_prompt: str | None = None,
+    coaching_prompt_sha256: str | None = None,
 ) -> dict:
     """Assemble the complete RunLog dict.
 
@@ -144,9 +147,29 @@ def build_run_log(
     any logged result can be exactly reproduced.
 
     The 'provenance' block captures reproducibility identifiers required
-    by BENCHMARK_SPEC §3: system prompt hash, corpus file hash, and
-    dataset envelope metadata (version, license, etc.).
+    by BENCHMARK_SPEC §3: system prompt hash, corpus file hash, method
+    card (if using a plugin), coaching prompt text + hash, and dataset
+    envelope metadata (version, license, etc.).
     """
+    provenance = {
+        "system_prompt_used": system_prompt,
+        "system_prompt_sha256": system_prompt_sha256,
+        "corpus_sha256": corpus_sha256,
+        "dataset_meta": dataset_meta or {},
+    }
+
+    # Method card — when a method plugin is used, embed its self-description
+    # so the run log fully identifies the method, not just the model.
+    if method_card is not None:
+        provenance["method_card"] = method_card
+
+    # Coaching prompt — store the full text for reproducibility.
+    # Two runs with different coaching produce different hashes,
+    # even if all other config is identical.
+    if coaching_prompt is not None:
+        provenance["coaching_prompt"] = coaching_prompt
+        provenance["coaching_prompt_sha256"] = coaching_prompt_sha256 or ""
+
     return {
         "harness_version": __version__,
         "run_id": run_id,
@@ -157,17 +180,7 @@ def build_run_log(
         "total_entries": len(enriched_results),
         "cache_hits": cache_hits,
         "total_cost_usd": total_cost,
-        # Provenance block: reproducibility identifiers for run cards.
-        # - system_prompt_used: full prompt text (for audit/debugging)
-        # - system_prompt_sha256: hash of prompt (for fingerprinting)
-        # - corpus_sha256: hash of the corpus file (pins to exact dataset version)
-        # - dataset_meta: envelope metadata from the corpus file (id, version, etc.)
-        "provenance": {
-            "system_prompt_used": system_prompt,
-            "system_prompt_sha256": system_prompt_sha256,
-            "corpus_sha256": corpus_sha256,
-            "dataset_meta": dataset_meta or {},
-        },
+        "provenance": provenance,
         "results": enriched_results,
     }
 

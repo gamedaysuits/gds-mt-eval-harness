@@ -8,7 +8,7 @@ slug: '/specifications/benchmark'
 
 > **Executive Summary.** This document defines the evaluation protocol for the Champollion MT evaluation ecosystem: corpus format (§2), run card schema (§3), benchmark protocol (§6), human validation requirements (§7), sovereignty mechanisms (§8), leaderboard and submission model (§9), cost framework (§10), and extensibility to new languages (§11). For metric definitions, composite scoring weights, quality tier thresholds, and cost/speed metric formulas, see `SCORING_SPEC.md` — the single source of truth for all scoring logic. This document references SCORING_SPEC for those details rather than duplicating them.
 >
-> Last updated: 2026-05-26
+> Last updated: 2026-06-07
 
 ---
 
@@ -270,6 +270,10 @@ These fields define the experimental setup — what was tested and how.
 | `batch_size` | number | ❌ | Entries per concurrent API batch |
 | `max_retries` | number | ❌ | Maximum retries for FST rejection, if applicable |
 
+:::info Published Run Cards Include method_config
+When a run card is published to the leaderboard (via `mt-eval publish`), it also includes a `method_config` block containing the canonical 8-field MethodConfig (`model`, `temperature`, `batchSize`, `register`, `coachingFile`, `coachingPrompt`, `promptContext`, `qualityTier` — all camelCase). This enables zero-reconstruction import: `champollion leaderboard --install` reads `method_config` directly and writes it as a plugin manifest. The telemetry fields above (§3.2) record what the harness observed; `method_config` records what the developer intended.
+:::
+
 ### 3.3 Dataset Reference
 
 | Field | Type | Description |
@@ -378,8 +382,8 @@ All metrics in this section are machine-computed. See §1.1.
 | **FST acceptance rate** | ✅ Implemented | Fraction of predicted words accepted by the morphological analyzer (GiellaLT HFST) as valid forms in the target language. A word the FST accepts is a real, structurally valid word — not a hallucination. | 0.0–1.0 |
 | **Exact match** | ✅ Implemented | Fraction of predictions that exactly match the reference after Unicode normalization. Strict but unambiguous — useful as a ceiling check. | 0.0–1.0 |
 | **Morphological accuracy** | 🔲 Planned | For entries with gold-standard morphological analysis: fraction of morphemes correctly generated. More granular than FST acceptance — a word can be FST-valid but have the wrong morpheme structure (right root, wrong tense). | 0.0–1.0 |
-| **Equivalent match** | ⚡ Partial | Fraction matching an acceptable variant of the reference — accounting for word order, dialectal differences, and orthographic conventions. Currently implemented for CRK via `CrkLinterMetric`; generic implementation requires per-entry `variants[]` in corpus. | 0.0–1.0 |
-| **Semantic score** | ⚡ Partial | Meaning preservation regardless of surface form. Currently implemented for CRK via `CrkSemanticMetric` (verdict-weighted proxy). Universal embedding-based cosine similarity is planned — see SCORING_SPEC §2.3. | 0.0–1.0 |
+| **Equivalent match** | ⚡ Partial | Fraction matching an acceptable variant of the reference — accounting for word order, dialectal differences, and orthographic conventions. Currently implemented for CRK via the CRK method plugin's `CrkLinterMetric`; generic implementation requires per-entry `variants[]` in corpus. | 0.0–1.0 |
+| **Semantic score** | ⚡ Partial | Meaning preservation regardless of surface form. Currently implemented for CRK via the CRK method plugin's `CrkSemanticMetric` (verdict-weighted proxy). Universal embedding-based cosine similarity is planned — see SCORING_SPEC §2.3. | 0.0–1.0 |
 
 ### 4.2 Composite Score
 
@@ -634,7 +638,7 @@ Methods are classified by type. The canonical enum is defined in the harness cod
 | `raw-llm` | Direct LLM call with no language-specific engineering |
 | `coached-llm` | LLM with coaching data (examples, grammar notes, dictionary entries) |
 | `pipeline` | Multi-step pipeline (e.g., translate → FST validate → retry) |
-| `custom-plugin` | Custom `TranslationProcess` plugin |
+| `custom-plugin` | Custom `TranslationMethod` plugin |
 | `api` | External translation API (Google Translate, DeepL, etc.) |
 | `human` | Human translator baseline |
 

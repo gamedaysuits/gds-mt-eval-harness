@@ -338,10 +338,21 @@ def _analyze(
     # COMET runs on non-error entries with source, expected, and predicted.
     # It's a heavy operation (loads ~2.3 GB model) but provides the best
     # correlation with human quality judgments for high-resource languages.
-    from mt_eval_harness.metrics_comet import compute_comet, HAS_COMET
+    # For African languages, we auto-select AfriCOMET (masakhane/africomet-mtl)
+    # which provides better correlation with human judgments for those languages.
+    from mt_eval_harness.metrics_comet import compute_comet, HAS_COMET, resolve_comet_model
 
     comet_result = None
     if HAS_COMET:
+        # Resolve the best COMET model for this target language.
+        # AfriCOMET auto-selects for African languages in the registry.
+        # CLI --comet-model override can be passed via config.
+        explicit_model = config_dict.get("comet_model") if config_dict else None
+        resolved_model = resolve_comet_model(
+            target_lang=target_code or "",
+            explicit_model=explicit_model,
+        )
+
         comet_entries = [
             {
                 "source": em.source,
@@ -354,14 +365,44 @@ def _analyze(
         comet_result = compute_comet(
             comet_entries,
             target_lang=target_code or "",
+            model_name=resolved_model,
         )
         if comet_result:
             overall["comet_score"] = comet_result.corpus_score
             overall["comet_model"] = comet_result.model_name
             overall["comet_low_resource_warning"] = comet_result.low_resource_warning
     else:
-        print("  COMET: Not installed (pip install unbabel-comet)")
-        overall["comet_score"] = None
+        # COMET not installed — offer to install it right here
+        from mt_eval_harness.setup_wizard import prompt_comet_install
+        if prompt_comet_install():
+            # COMET was just installed — re-import and run it
+            from mt_eval_harness.metrics_comet import compute_comet, HAS_COMET, resolve_comet_model
+            if HAS_COMET:
+                explicit_model = config_dict.get("comet_model") if config_dict else None
+                resolved_model = resolve_comet_model(
+                    target_lang=target_code or "",
+                    explicit_model=explicit_model,
+                )
+                comet_entries = [
+                    {
+                        "source": em.source,
+                        "expected": em.expected,
+                        "predicted": em.predicted,
+                        "error": em.error,
+                    }
+                    for em in entry_metrics
+                ]
+                comet_result = compute_comet(
+                    comet_entries,
+                    target_lang=target_code or "",
+                    model_name=resolved_model,
+                )
+                if comet_result:
+                    overall["comet_score"] = comet_result.corpus_score
+                    overall["comet_model"] = comet_result.model_name
+                    overall["comet_low_resource_warning"] = comet_result.low_resource_warning
+        if overall.get("comet_score") is None:
+            overall["comet_score"] = None
 
     # --- Bootstrap confidence intervals ---
     # Compute 95% CIs on corpus-level metrics. Uses the same bootstrap
@@ -371,17 +412,28 @@ def _analyze(
         from mt_eval_harness.confidence import compute_all_cis
 
         # Build entry dicts in the format expected by significance.py
-        # metric functions (source, expected, predicted, error, exact_match)
-        ci_entries = [
-            {
+        # metric functions (source, expected, predicted, error, exact_match).
+        # Also include per-entry COMET scores (pre-computed above) so that
+        # confidence.py can bootstrap from cached values without re-running
+        # neural inference on each of the 1000 bootstrap iterations.
+        ci_entries = []
+        comet_idx = 0
+        for em in entry_metrics:
+            entry = {
                 "source": em.source,
                 "expected": em.expected,
                 "predicted": em.predicted,
                 "error": em.error,
                 "exact_match": em.exact_match,
+                "plugin_metrics": em.plugin_metrics,
             }
-            for em in entry_metrics
-        ]
+            # Inject pre-computed COMET score for this entry (non-error only)
+            if comet_result and comet_result.per_entry_scores and not em.error:
+                if comet_idx < len(comet_result.per_entry_scores):
+                    entry["comet_score"] = comet_result.per_entry_scores[comet_idx]
+                    comet_idx += 1
+            ci_entries.append(entry)
+
         cis = compute_all_cis(
             ci_entries,
             n_bootstrap=n_bootstrap_ci,
@@ -389,6 +441,24 @@ def _analyze(
         if cis:
             overall["confidence_intervals"] = cis
             print(f"  Bootstrap CIs: computed (n_bootstrap={n_bootstrap_ci})")
+
+        # Per-tier CIs — group entries by difficulty and compute CIs per group
+        from mt_eval_harness.confidence import compute_per_tier_cis
+
+        # Inject difficulty field into CI entries (it wasn't included above
+        # because compute_all_cis doesn't need it, but per-tier does)
+        for ci_entry, em in zip(ci_entries, entry_metrics):
+            ci_entry["difficulty"] = em.difficulty
+
+        tier_cis = compute_per_tier_cis(
+            ci_entries,
+            n_bootstrap=n_bootstrap_ci,
+        )
+        if tier_cis:
+            overall["confidence_intervals_by_tier"] = {
+                str(k): v for k, v in tier_cis.items()
+            }
+            print(f"  Per-tier CIs: {len(tier_cis)} tiers")
 
     # --- Plugin aggregates ---
     plugin_overall = {}
@@ -620,7 +690,12 @@ def _print_summary(
     if overall.get("comet_score") is not None:
         comet = overall["comet_score"]
         warning = " ⚠️ low-resource" if overall.get("comet_low_resource_warning") else ""
-        print(f"  COMET:            {comet:.4f}{warning}")
+        ci = cis.get("comet")
+        if ci:
+            print(f"  COMET:            {comet:.4f}  "
+                  f"[{ci['ci_lower']:.4f} – {ci['ci_upper']:.4f}]{warning}")
+        else:
+            print(f"  COMET:            {comet:.4f}{warning}")
 
     if "exact_match_rate" in overall and cis.get("exact_match_rate"):
         ci = cis["exact_match_rate"]
@@ -653,6 +728,48 @@ def _print_summary(
                 f"{sm.exact_match_rate:>6.1%} "
                 f"{sm.avg_chrf:>7.1f}"
             )
+
+    # Per-difficulty — shows how quality varies by translation complexity.
+    # Difficulty levels are assigned by the corpus builder based on
+    # word count, clause count, and average word length.
+    DIFFICULTY_LABELS = {
+        0: "Unrated",
+        1: "Easy (Tier 1)",
+        2: "Medium (Tier 2)",
+        3: "Hard (Tier 3)",
+        4: "Very Hard (Tier 4)",
+        5: "Expert (Tier 5)",
+    }
+    # Only display if there are multiple difficulty levels
+    # (a single level means the corpus has no difficulty annotations)
+    if len(difficulties) > 1:
+        # Check if per-tier CIs are available
+        tier_cis = overall.get("confidence_intervals_by_tier", {})
+
+        header = f"\n  {'Difficulty':<25s} {'Count':>6s} {'Exact':>7s} {'chrF++':>7s} {'BLEU':>7s}"
+        if tier_cis:
+            header += f"  {'chrF++ CI':>17s}"
+        print(header)
+
+        sep = f"  {'-'*25} {'-----':>6s} {'-----':>7s} {'------':>7s} {'----':>7s}"
+        if tier_cis:
+            sep += f"  {'-'*17}"
+        print(sep)
+
+        for level, sm in sorted(difficulties.items()):
+            label = DIFFICULTY_LABELS.get(level, f"Tier {level}")
+            line = (
+                f"  {label:<25s} "
+                f"{sm.count:>6d} "
+                f"{sm.exact_match_rate:>6.1%} "
+                f"{sm.avg_chrf:>7.1f} "
+                f"{sm.avg_bleu:>7.1f}"
+            )
+            # Append CI if available for this tier
+            tier_ci = tier_cis.get(str(level), {}).get("corpus_chrf")
+            if tier_ci:
+                line += f"  [{tier_ci['ci_lower']:.1f} – {tier_ci['ci_upper']:.1f}]"
+            print(line)
 
     # Plugin metrics
     if "plugin_metrics" in overall:

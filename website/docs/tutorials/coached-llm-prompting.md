@@ -79,6 +79,6 @@ python eval/baseline_experiment.py \
 
 ## See Also
 
-- [Method Interface](/docs/specifications/methods) — coaching data format and the TranslationProcess protocol
+- [Method Interface](/docs/specifications/methods) — coaching data format and the TranslationMethod protocol
 - [Support a Low-Resource Language](/docs/community/low-resource-languages) — the full context
 - [Eval Harness](/docs/specifications/harness) — how to run experiments

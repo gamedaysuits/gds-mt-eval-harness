@@ -275,10 +275,11 @@ class TestBuildManifest:
         manifest = _build_manifest(sample_report, basic_config)
         assert manifest["config"]["register"] == "Standard written register"
 
-    def test_register_excluded_when_empty(self, sample_report, basic_config):
+    def test_register_null_when_empty(self, sample_report, basic_config):
+        """Register is null (not absent) when empty — canonical shape always includes all fields."""
         basic_config.register = ""
         manifest = _build_manifest(sample_report, basic_config)
-        assert "register" not in manifest["config"]
+        assert manifest["config"]["register"] is None
 
     def test_benchmarks_keyed_by_locale(self, sample_report, basic_config):
         manifest = _build_manifest(sample_report, basic_config)

@@ -6,7 +6,7 @@ dataclass field. The config is serialized into every RunLog for full
 reproducibility — any logged result can be exactly reproduced by
 loading its config snapshot.
 
-The TranslationProcess protocol defines the plugin interface: any
+The TranslationMethod protocol defines the plugin interface: any
 callable that takes structured input and returns structured output
 can be registered as a translation method.
 
@@ -309,32 +309,64 @@ DEFAULT_MAX_TOOL_ROUNDS = 8
 
 
 # ---------------------------------------------------------------------------
-# Model registry — maps short names to OpenRouter model IDs
+# Model aliases — maps short names to OpenRouter model IDs
 # ---------------------------------------------------------------------------
-# This is a convenience lookup. You can always pass a full OpenRouter
-# model ID directly (e.g. "anthropic/claude-opus-4.6").
+# Loaded from shared/model-aliases.json (shared with the CLI) so both
+# tools accept the same short names. Falls back to a hardcoded dict
+# when running outside the monorepo (standalone pip install).
+#
+# You can always pass a full OpenRouter model ID directly
+# (e.g. "anthropic/claude-sonnet-4"). The alias file is just convenience.
 
-MODEL_REGISTRY: dict[str, str] = {
-    # Anthropic
-    "claude-opus-4.7":   "anthropic/claude-opus-4.7",
-    "claude-opus-4.6":   "anthropic/claude-opus-4.6",
-    "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
-    "claude-sonnet-4":   "anthropic/claude-sonnet-4",
-    # Google
-    "gemini-3.5-flash":  "google/gemini-3.5-flash",
-    "gemini-3.1-pro":    "google/gemini-3.1-pro-preview",
-    "gemini-3-flash":    "google/gemini-3-flash-preview",
-    "gemini-2.5-flash":  "google/gemini-2.5-flash",
-    # OpenAI
-    "gpt-5.5":           "openai/gpt-5.5",
-    # DeepSeek
-    "deepseek-v4-pro":   "deepseek/deepseek-v4-pro",
-    "deepseek-r1":       "deepseek/deepseek-r1-0528",
-    # Qwen
-    "qwen3-235b":        "qwen/qwen3-235b-a22b",
-}
+def _load_model_aliases() -> dict[str, str]:
+    """Load model aliases from the shared JSON file.
 
-DEFAULT_MODEL = "gemini-3.1-pro"
+    Search order:
+      1. shared/model-aliases.json relative to the monorepo root
+         (detected by walking up from this file's directory)
+      2. Hardcoded fallback for standalone installs
+
+    Returns:
+        Dict mapping short names → full OpenRouter model IDs.
+    """
+    # Walk up from this package to find the monorepo shared/ directory
+    check = _PACKAGE_DIR
+    for _ in range(6):
+        candidate = check / "shared" / "model-aliases.json"
+        if candidate.exists():
+            try:
+                aliases = json.loads(candidate.read_text(encoding="utf-8"))
+                # Strip non-alias keys (like _comment)
+                return {k: v for k, v in aliases.items() if not k.startswith("_")}
+            except Exception:
+                break
+        check = check.parent
+
+    # Fallback: hardcoded aliases for standalone installs
+    return {
+        "gemini-flash":  "google/gemini-3.5-flash",
+        "gemini-pro":    "google/gemini-3.1-pro-preview",
+        "claude-sonnet": "anthropic/claude-sonnet-4",
+        "gpt":           "openai/gpt-5.5",
+        # Extended aliases for backward compatibility
+        "claude-opus-4.7":   "anthropic/claude-opus-4.7",
+        "claude-opus-4.6":   "anthropic/claude-opus-4.6",
+        "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
+        "claude-sonnet-4":   "anthropic/claude-sonnet-4",
+        "gemini-3.5-flash":  "google/gemini-3.5-flash",
+        "gemini-3.1-pro":    "google/gemini-3.1-pro-preview",
+        "gemini-3-flash":    "google/gemini-3-flash-preview",
+        "gemini-2.5-flash":  "google/gemini-2.5-flash",
+        "gpt-5.5":           "openai/gpt-5.5",
+        "deepseek-v4-pro":   "deepseek/deepseek-v4-pro",
+        "deepseek-r1":       "deepseek/deepseek-r1-0528",
+        "qwen3-235b":        "qwen/qwen3-235b-a22b",
+    }
+
+
+MODEL_REGISTRY: dict[str, str] = _load_model_aliases()
+
+DEFAULT_MODEL = "gemini-pro"
 
 # Models that reject temperature=0 (require 0.01 minimum)
 NEEDS_NONZERO_TEMP: set[str] = {
@@ -352,23 +384,49 @@ NEEDS_NONZERO_TEMP: set[str] = {
 
 
 # ---------------------------------------------------------------------------
-# Plugin protocol — any translation process implements this
+# Plugin protocol — any translation method implements this
 # ---------------------------------------------------------------------------
 
 @runtime_checkable
-class TranslationProcess(Protocol):
+class TranslationMethod(Protocol):
     """Protocol for pluggable translation methods.
 
-    Any translation pipeline that implements this interface can be
-    registered with the Run Harness for standardized evaluation.
+    A method is a black box: source text in, translation out. The harness
+    doesn't care what happens inside — it scores the output. Methods can be:
+        - A custom multi-stage pipeline (decomp-recomp, backtranslation)
+        - A fine-tuned model endpoint
+        - A traditional MT system (Moses, Apertium)
+        - A commercial API wrapper (Google Translate, DeepL)
+        - Anything that produces translations
 
-    The process receives a batch of entries (even if batch_size=1)
+    The method receives a batch of entries (even if batch_size=1)
     and returns one result dict per entry.
 
     Why a protocol instead of a base class:
         Structural typing — existing pipelines don't need to inherit
         from anything. If it has the right method signature, it works.
     """
+
+    @property
+    def name(self) -> str:
+        """Human-readable method name for run IDs and logs."""
+        ...
+
+    def method_card(self) -> dict | None:
+        """Return method metadata for provenance tracking.
+
+        The method card is embedded in the RunLog and published run card
+        so results can be attributed to a specific method configuration.
+
+        Returns None if the method doesn't provide a card (e.g., the
+        built-in default LLM method — its provenance is captured via
+        model, coaching prompt, temperature, etc.).
+
+        Typical fields:
+            name, method_id, class, author, description,
+            tools_used, supported_pairs
+        """
+        ...
 
     async def translate(
         self,
@@ -494,15 +552,24 @@ class RunConfig:
     concurrency: int = DEFAULT_CONCURRENCY
 
     # --- System prompt ---
-    # Built-in versions: "naive", "custom"
-    # Language-specific versions register via PromptProvider plugins
+    # "naive" = minimal instruction ("translate X to Y")
+    # "custom" = load from custom_prompt_path (deprecated, use coaching_file)
+    # Coaching prompts are free text — the full text is recorded in the
+    # run card for reproducibility. There are no named prompt versions.
     prompt_version: str = "naive"
-    custom_prompt_path: str | None = None  # Path to custom .txt file
+    custom_prompt_path: str | None = None  # DEPRECATED: use coaching_file
+    coaching_file: str | None = None  # Path to coaching prompt text file
 
     # --- Post-translation hooks ---
     # List of hook names to apply (e.g. ["fst_gate"])
     # Hooks are registered externally via PostTranslationHook plugins
     post_hooks: list[str] = field(default_factory=list)
+
+    # --- FST retry ---
+    # Number of times to retry a translation that fails FST validation.
+    # 0 = score-only (no retry). Works with the default LLM method only;
+    # custom method plugins handle their own retry logic internally.
+    fst_retries: int = 0
 
     # --- Output ---
     output_dir: str = DEFAULT_OUTPUT_DIR
@@ -512,9 +579,13 @@ class RunConfig:
     temperature: float = DEFAULT_TEMPERATURE
     dry_run: bool = False      # Validate config without API calls
 
-    # --- Process plugin ---
-    # If set, uses a custom TranslationProcess instead of the built-in
-    # LLM caller. The process_name is logged for identification.
+    # --- Method plugin ---
+    # Path to a method plugin directory containing method.json + Python
+    # module. When set, the harness delegates translation to the plugin
+    # instead of using the built-in LLM caller. The method is a black box:
+    # source text in, translation out. The harness just scores the output.
+    method_path: str | None = None
+    # Legacy alias for process_name — kept for backward compatibility
     process_name: str | None = None
 
     # --- Champollion config interop ---

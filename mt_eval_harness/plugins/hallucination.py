@@ -18,6 +18,58 @@ Dependencies: Python stdlib only.
 Source: SCORING_SPEC.md §4.3 — weighted 0.05 in both Profile A and B.
 """
 
+# ---------------------------------------------------------------------------
+# Design Justification & Validation Status
+# ---------------------------------------------------------------------------
+#
+# VALIDATION STATUS: NOT HUMAN-VALIDATED
+#
+# These heuristics have NOT been validated against human hallucination
+# judgments. They are engineering heuristics designed to catch gross
+# failure modes observed in LLM MT output:
+#
+#   - Length inflation: NMT/LLM systems sometimes produce vastly longer
+#     output than the source (degenerate beam search, repetitive padding).
+#     Weight: 0.40 — highest because extreme length ratio is the cheapest
+#     and most reliable hallucination signal (Raunak et al., 2021).
+#
+#   - Repetition: Looping decoder output ("the the the...") is a known
+#     failure mode of autoregressive models. Weight: 0.30 — second highest
+#     because n-gram repetition is unambiguous when present.
+#
+#   - Entity mismatch: Fabricated named entities are a hallucination type
+#     documented in Guerreiro et al. (2023). Weight: 0.20 — lower because
+#     our capitalization-based NER proxy has high false-positive rate,
+#     especially for Cree (which has different capitalization conventions).
+#
+#   - Source echo: Model returns the source text unchanged — no translation
+#     occurred. Weight: 0.10 — lowest because this is easily caught by
+#     other metrics (exact_match_rate = 0, code_switching_rate ≈ 1.0).
+#
+# KNOWN LIMITATIONS:
+#   - Cannot detect subtle semantic hallucinations (plausible but wrong
+#     translations). This requires embedding-based methods (COMET-QE,
+#     LABSE cross-lingual similarity) or LLM cross-checking.
+#   - Entity mismatch uses capitalization as a proxy for NER — this will
+#     miss hallucinated entities in non-Latin scripts and false-fire on
+#     sentence-initial words.
+#   - The 0.4/0.3/0.2/0.1 weights are engineering judgment, not empirically
+#     derived. They should be recalibrated against labeled hallucination
+#     data when available.
+#
+# UPGRADE PATH:
+#   To add SOTA hallucination detection, implement a new plugin (e.g.,
+#   EmbeddingHallucinationPlugin) that uses cross-lingual embeddings.
+#   The MetricPlugin protocol supports multiple hallucination detectors
+#   running in parallel — the scoring spec can be updated to prefer the
+#   embedding-based detector when available.
+#
+# References:
+#   - Raunak et al. (2021). "Curious Case of Hallucinations in NMT."
+#   - Guerreiro et al. (2023). "Hallucinations in Large Multilingual
+#     Translation Models." TACL.
+# ---------------------------------------------------------------------------
+
 from __future__ import annotations
 
 import re

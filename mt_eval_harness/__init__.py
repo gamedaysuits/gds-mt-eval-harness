@@ -27,7 +27,8 @@ from mt_eval_harness.config import (
 from mt_eval_harness.exporter import ExportConfig, export_plugin
 from mt_eval_harness.corpus_loader import load_corpus
 from mt_eval_harness.champollion_config import (
-    ChampollionPromptConfig,
+    ChampollionRunConfig,
+    ChampollionPromptConfig,  # Back-compat alias for ChampollionRunConfig
     load_champollion_config,
     build_champollion_system_prompt,
 )
@@ -44,6 +45,8 @@ from mt_eval_harness.metrics_comet import (
     compute_comet,
     corpus_comet,
     DEFAULT_COMET_MODEL,
+    resolve_comet_model,
+    COMET_MODEL_REGISTRY,
 )
 
 __all__ = [
@@ -51,7 +54,8 @@ __all__ = [
     "ExportConfig",
     "export_plugin",
     "load_corpus",
-    "ChampollionPromptConfig",
+    "ChampollionRunConfig",
+    "ChampollionPromptConfig",  # Back-compat alias
     "load_champollion_config",
     "build_champollion_system_prompt",
     "ChampollionPromptProvider",
@@ -69,6 +73,8 @@ __all__ = [
     "compute_comet",
     "corpus_comet",
     "DEFAULT_COMET_MODEL",
+    "resolve_comet_model",
+    "COMET_MODEL_REGISTRY",
     "load_registry",
     "resolve_dataset",
     "load_method_card",

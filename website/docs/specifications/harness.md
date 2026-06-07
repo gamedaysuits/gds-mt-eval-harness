@@ -27,41 +27,78 @@ cd arena
 ## Usage
 
 ```bash
-python eval/baseline_experiment.py --dataset path/to/dataset.json
+mt-eval run --corpus path/to/dataset.json
 ```
 
-This runs every entry in the dataset through the configured model, scores the outputs, and writes a run card JSON file to the `results/` directory.
+This runs every entry in the corpus through the configured model (or method plugin), scores the outputs, and writes a run card JSON file to the output directory.
 
 ## CLI Flags
 
+### `mt-eval run`
+
 | Flag | Required | Default | Description |
 |------|----------|---------|-------------|
-| `--dataset` | ✅ | — | Path to the evaluation dataset JSON file |
-| `--model` | — | `openai/gpt-4o` | OpenRouter model slug (e.g., `google/gemini-2.5-pro`) |
-| `--condition` | — | `baseline` | Experiment label. Use to distinguish prompt strategies (e.g., `coached`, `few-shot`, `dictionary-augmented`) |
-| `--temperature` | — | `0.3` | Sampling temperature. Lower = more deterministic |
-| `--batch-size` | — | `5` | Number of entries per concurrent API batch |
-| `--fst-analyzer` | — | `null` | Path to an FST analyzer binary. When provided, each output is tested for morphological acceptance |
-| `--submit` | — | `false` | Submit the run card to the leaderboard API after the run completes |
+| `--corpus` | ✅ | — | Path to corpus file (`.json`, `.jsonl`, `.tsv`) |
+| `--source-file` / `--reference-file` | — | — | Parallel text files (FLORES+, WMT format) |
+| `-m, --model` | — | `gemini-pro` | Model slug (short name or full OpenRouter ID). Resolves via `shared/model-aliases.json`. Comma-separated for multi-model runs |
+| `-d, --dataset` | — | `all` | Dataset filter: `all`, segment name, or ID range |
+| `--ids` | — | — | Comma-separated entry IDs to evaluate |
+| `--source-lang` | — | `English` | Source language name |
+| `--target-lang` | — | — | Target language name |
+| `-p, --prompt` | — | `naive` | Prompt version (`naive`, `custom`, `champollion`) |
+| `--coaching-file` | — | — | Path to coaching prompt text file |
+| `--coaching` | — | — | Inline coaching text (quoted string) |
+| `--method` | — | — | Path to method plugin directory (contains `method.json` + Python module) |
+| `--method-card` | — | — | Path to method card JSON for leaderboard metadata |
+| `--fst-retries` | — | `0` | Number of FST retry attempts (default LLM method only) |
+| `--skip-fst` | — | `false` | Skip the FST quality gate entirely |
+| `--tools` | — | `false` | Enable tool-calling mode |
+| `--tools-list` | — | — | Comma-separated tool names |
+| `--max-tool-rounds` | — | `8` | Maximum tool-calling rounds per entry |
+| `--hooks` | — | — | Post-translation hook names |
+| `-b, --batch-size` | — | `25` | Entries per API call |
+| `-c, --concurrency` | — | `8` | Parallel API calls |
+| `--max-tokens` | — | `32768` | Max tokens per API call |
+| `--temperature` | — | `0.0` | Sampling temperature (0.0 = deterministic) |
+| `--no-cache` | — | `false` | Disable response caching |
+| `--cache-dir` | — | `eval/cache/harness` | Cache directory path |
+| `-o, --output-dir` | — | `eval/logs/harness` | Output directory for run cards and logs |
+| `-n, --name` | — | — | Human-readable run name |
+| `--dry-run` | — | `false` | Validate configuration without making API calls |
+| `--champollion-config` | — | — | Path to `champollion.config.json` |
+| `--champollion-cards-dir` | — | — | Language cards directory |
+| `--target-lang-code` | — | — | BCP-47 language code |
+
+### Other Subcommands
+
+| Subcommand | Description |
+|------------|-------------|
+| `mt-eval test <log_path>` | Analyze a completed run log |
+| `mt-eval publish <report_path>` | Submit a run card to the leaderboard |
+| `mt-eval compare <logs...>` | Compare multiple runs side-by-side |
+| `mt-eval dashboard <logs...>` | Generate an HTML dashboard from run logs |
+| `mt-eval list models\|prompts\|datasets` | List available resources |
+| `mt-eval export` | Package the current setup as a champollion method plugin |
+| `mt-eval export-config` | Export the resolved MethodConfig (all 8 canonical fields) as JSON |
 
 ### Examples
 
 ```bash
-# Run with defaults (GPT-4o, baseline condition)
-python eval/baseline_experiment.py --dataset data/edtekla-dev-v1.json
+# Run with defaults (gemini-pro alias → google/gemini-3.1-pro-preview, naive prompt)
+mt-eval run --corpus data/edtekla-dev-v1.json
 
-# Coached experiment with Gemini, lower temperature
-python eval/baseline_experiment.py \
-  --dataset data/edtekla-dev-v1.json \
-  --model google/gemini-2.5-pro \
-  --condition coached-v3 \
-  --temperature 0.1
+# Coached experiment with coaching file
+mt-eval run \
+  --corpus data/edtekla-dev-v1.json \
+  --model google/gemini-3.1-pro \
+  --coaching-file prompts/crk-coaching-v8.txt \
+  --temperature 0.0
 
-# Run with FST validation and auto-submit
-python eval/baseline_experiment.py \
-  --dataset data/edtekla-dev-v1.json \
-  --fst-analyzer ./bin/crk-analyzer \
-  --submit
+# Run a custom method plugin with FST retries
+mt-eval run \
+  --corpus data/edtekla-dev-v1.json \
+  --method ./methods/fst-gated-pipeline \
+  --fst-retries 3
 ```
 
 ---
@@ -74,13 +111,14 @@ Every experiment produces a **run card** — a self-contained JSON document. The
 {
   "run_id": "uuid-v4",
   "harness_version": "2.0",
-  "model_slug": "openai/gpt-4o",
-  "model_id": "gpt-4o-2024-08-06",
+  "model_slug": "google/gemini-3.1-pro",
+  "model_id": "gemini-3.1-pro-001",
   "condition": "baseline",
-  "timestamp": "2025-05-20T03:22:41Z",
+  "timestamp": "2026-06-01T03:22:41Z",
   "elapsed_seconds": 142.7,
   "dataset": { ... },
   "config": { ... },
+  "method_card": { ... },
   "system_prompt_sha256": "abc123...",
   "system_prompt_used": "You are a translator...",
   "fingerprint": { ... },
@@ -180,26 +218,24 @@ Use the **fingerprint** to group comparable runs (same experiment, different exe
 
 ---
 
-## Submitting to the Leaderboard
+## Publishing to the Leaderboard
 
-### Automatic submission
-
-Pass `--submit` to upload the run card on completion:
+After completing a run, use `mt-eval publish` to submit the run card:
 
 ```bash
-python eval/baseline_experiment.py \
-  --dataset data/edtekla-dev-v1.json \
-  --submit
+mt-eval publish eval/logs/harness/your-run-card.json
 ```
+
+If no `--method-card` was provided during the run, `mt-eval publish` launches an interactive wizard (`method_card_wizard.py`) that walks you through describing your method (name, class, tools used, etc.). The wizard output is embedded in the run card before submission.
 
 ### Manual submission
 
-Run cards are saved as JSON files in `results/`. You can submit any run card file via the leaderboard UI at [/leaderboard](https://champollion.dev/leaderboard), or through the API:
+Run cards are saved as JSON files in the output directory. You can also submit any run card file via the leaderboard UI at [/leaderboard](https://champollion.dev/leaderboard), or through the API:
 
 ```bash
 curl -X POST https://champollion.dev/api/leaderboard/submit \
   -H "Content-Type: application/json" \
-  -d @results/your-run-card.json
+  -d @eval/logs/harness/your-run-card.json
 ```
 
 :::warning Leaderboard validation

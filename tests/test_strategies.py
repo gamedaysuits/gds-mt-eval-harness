@@ -5,9 +5,9 @@ Key behaviors validated:
     - batch_size > 1 resolves to BatchStrategy
     - tools_enabled resolves to ToolCallStrategy (requires provider)
     - tools_enabled without provider raises ValueError
-    - Custom process resolves to PluginProcessStrategy
-    - Process takes priority over tools_enabled
-    - Process takes priority over batch_size
+    - Custom method resolves to MethodStrategy (via PluginProcessStrategy shim)
+    - Method takes priority over tools_enabled
+    - Method takes priority over batch_size
     - All strategies implement ExecutionStrategy protocol
 """
 
@@ -41,7 +41,10 @@ class MockToolProvider:
 
 
 class MockProcess:
-    """Minimal mock for TranslationProcess plugin."""
+    """Minimal mock for TranslationMethod plugin.
+
+    Uses the old name 'MockProcess' to verify backward compat shim.
+    """
 
     async def translate(self, entries, config):
         return [{"id": e["id"], "predicted": "mock"} for e in entries]
@@ -85,9 +88,9 @@ class TestResolveStrategy:
             resolve_strategy(config)
 
     def test_process_resolves_to_plugin(self):
-        """Custom process should yield PluginProcessStrategy."""
+        """Custom method should yield PluginProcessStrategy (MethodStrategy)."""
         config = RunConfig()
-        strategy = resolve_strategy(config, process=MockProcess())
+        strategy = resolve_strategy(config, method=MockProcess())
         assert isinstance(strategy, PluginProcessStrategy)
 
 
@@ -98,25 +101,25 @@ class TestResolveStrategy:
 class TestStrategyPriority:
     """Verify strategy selection follows the documented priority chain.
 
-    Priority: Process > Tools > Batch > Single.
-    This ensures plugins always take precedence, which is the key
+    Priority: Method > Tools > Batch > Single.
+    This ensures method plugins always take precedence, which is the key
     architectural guarantee for custom pipelines (e.g., FST-gated).
     """
 
-    def test_process_overrides_tools(self):
-        """Process should win even if tools_enabled is True."""
+    def test_method_overrides_tools(self):
+        """Method should win even if tools_enabled is True."""
         config = RunConfig(tools_enabled=True)
         strategy = resolve_strategy(
             config,
-            process=MockProcess(),
+            method=MockProcess(),
             tool_provider=MockToolProvider(),
         )
         assert isinstance(strategy, PluginProcessStrategy)
 
-    def test_process_overrides_batch(self):
-        """Process should win even if batch_size > 1."""
+    def test_method_overrides_batch(self):
+        """Method should win even if batch_size > 1."""
         config = RunConfig(batch_size=10)
-        strategy = resolve_strategy(config, process=MockProcess())
+        strategy = resolve_strategy(config, method=MockProcess())
         assert isinstance(strategy, PluginProcessStrategy)
 
     def test_tools_overrides_batch(self):
@@ -177,8 +180,8 @@ class TestEdgeCases:
         strategy = resolve_strategy(config)
         assert isinstance(strategy, SingleStrategy)
 
-    def test_none_process_ignored(self):
-        """Explicitly passing process=None should not trigger PluginProcessStrategy."""
+    def test_none_method_ignored(self):
+        """Explicitly passing method=None should not trigger MethodStrategy."""
         config = RunConfig(batch_size=1)
-        strategy = resolve_strategy(config, process=None)
+        strategy = resolve_strategy(config, method=None)
         assert isinstance(strategy, SingleStrategy)

@@ -229,30 +229,49 @@ def _get_gender_guidance(card: dict) -> str | None:
 # ---------------------------------------------------------------------------
 
 @dataclass
-class ChampollionPromptConfig:
-    """Prompt configuration extracted from champollion.config.json.
+class ChampollionRunConfig:
+    """Full configuration extracted from champollion.config.json.
 
-    Contains everything needed to build a production-identical system
-    prompt for a specific target language.
+    Contains everything needed to reproduce a production translation run:
+    prompt shaping (register, gender, context) AND method configuration
+    (model, temperature, batchSize, coaching).
+
+    This is the canonical MethodConfig — the same shape used by
+    method.json, the leaderboard, and export-config.
     """
     target_lang_name: str        # Human-readable name, e.g., "French"
     target_lang_code: str        # BCP-47 code, e.g., "fr"
+
+    # --- Prompt shaping ---
     register: str                # Full register text for prompt injection
     gender_guidance: str | None  # Per-language gender guidance, or None
     prompt_context: str | None   # Global context string from config
+
+    # --- Canonical MethodConfig fields ---
+    model: str | None = None           # OpenRouter model slug
+    temperature: float | None = None   # LLM sampling temperature
+    batch_size: int | None = None      # Entries per API call
+    method: str | None = None          # 'llm', 'llm-coached', etc.
+    coaching_file: str | None = None   # Path to coaching prompt file
+    coaching_prompt: str | None = None # Resolved coaching text (read from file)
+    quality_tier: str | None = None    # 'standard', 'high', 'research', 'verified'
+
+
+# Back-compat alias — old code may reference the old name
+ChampollionPromptConfig = ChampollionRunConfig
 
 
 def load_champollion_config(
     config_path: str | Path,
     target_lang_code: str,
     cards_dir: str | Path | None = None,
-) -> ChampollionPromptConfig:
-    """Load a champollion.config.json and extract prompt config for a target language.
+) -> ChampollionRunConfig:
+    """Load a champollion.config.json and extract full run config for a target language.
 
     This is the bridge between the champollion config format and the harness.
     It reads the same config file that the production CLI reads, and
-    extracts the register, gender guidance, and prompt context for the
-    specified target language.
+    extracts the register, gender guidance, prompt context, model,
+    temperature, batchSize, and coaching for the specified target language.
 
     Args:
         config_path: Path to champollion.config.json.
@@ -261,7 +280,7 @@ def load_champollion_config(
             from monorepo layout or npm install.
 
     Returns:
-        ChampollionPromptConfig with all fields populated.
+        ChampollionRunConfig with all fields populated.
 
     Raises:
         FileNotFoundError: If config or cards directory not found.
@@ -325,8 +344,8 @@ def load_champollion_config(
         pass  # Array form: ["fr", "de"] — no register override
 
     # Check "pairs" block if languages didn't specify a register
+    pairs = champollion_config.get("pairs", {})
     if not preset_override:
-        pairs = champollion_config.get("pairs", {})
         if isinstance(pairs, dict):
             # Try common pair key formats: "en:fr", "en→fr"
             pair_key = f"{source_locale}:{target_lang_code}"
@@ -349,7 +368,7 @@ def load_champollion_config(
     if not preset_override:
         preset_override = champollion_config.get("registerPreset")
 
-    # Build the config
+    # Build the prompt config
     register = _get_register_from_card(card, preset_override)
     gender_guidance = _get_gender_guidance(card)
     prompt_context = champollion_config.get("promptContext")
@@ -357,12 +376,75 @@ def load_champollion_config(
     # Language name from card
     lang_name = card.get("name", target_lang_code)
 
-    return ChampollionPromptConfig(
+    # --- Extract canonical MethodConfig fields ---
+    # Resolution order for each field:
+    #   1. Per-pair override (from pairs[src:target] or languages[code])
+    #   2. Top-level config default
+    #   3. None (not set — RunConfig defaults apply)
+
+    # Helper: get a field from pair config first, then top-level config
+    def _resolve_field(field_name: str, pair_cfg: dict | None = None):
+        if pair_cfg and isinstance(pair_cfg, dict) and field_name in pair_cfg:
+            return pair_cfg[field_name]
+        return champollion_config.get(field_name)
+
+    # Find the pair config for this target (may have been found above)
+    resolved_pair_cfg = None
+    if isinstance(pairs, dict):
+        for key_fmt in [
+            f"{source_locale}:{target_lang_code}",
+            f"{source_locale}:{canonical}",
+            f"{source_locale}→{target_lang_code}",
+            f"{source_locale}→{canonical}",
+        ]:
+            if key_fmt in pairs and isinstance(pairs[key_fmt], dict):
+                resolved_pair_cfg = pairs[key_fmt]
+                break
+
+    # Also check languages block for per-language overrides
+    resolved_lang_cfg = None
+    if isinstance(languages, dict):
+        lang_cfg = languages.get(target_lang_code) or languages.get(canonical)
+        if isinstance(lang_cfg, dict):
+            resolved_lang_cfg = lang_cfg
+
+    # Merge: pair > language > top-level
+    def _resolve(field_name: str):
+        for source in [resolved_pair_cfg, resolved_lang_cfg]:
+            if source and isinstance(source, dict) and field_name in source:
+                return source[field_name]
+        return champollion_config.get(field_name)
+
+    model = _resolve("model")
+    temperature_raw = _resolve("temperature")
+    temperature = float(temperature_raw) if temperature_raw is not None else None
+    batch_size_raw = _resolve("batchSize")
+    batch_size = int(batch_size_raw) if batch_size_raw is not None else None
+    method = _resolve("defaultMethod") or _resolve("method")
+    coaching_file = _resolve("coachingFile")
+
+    # If a coaching file is specified, try to read its contents
+    coaching_prompt = None
+    if coaching_file:
+        coaching_path = Path(coaching_file)
+        # Try relative to the config file's directory
+        if not coaching_path.is_absolute():
+            coaching_path = config_path.parent / coaching_file
+        if coaching_path.exists():
+            coaching_prompt = coaching_path.read_text(encoding="utf-8").strip()
+
+    return ChampollionRunConfig(
         target_lang_name=lang_name,
         target_lang_code=target_lang_code,
         register=register,
         gender_guidance=gender_guidance,
         prompt_context=prompt_context,
+        model=model,
+        temperature=temperature,
+        batch_size=batch_size,
+        method=method,
+        coaching_file=coaching_file,
+        coaching_prompt=coaching_prompt,
     )
 
 
@@ -373,23 +455,24 @@ def load_champollion_config(
 # This MUST produce identical output to the JS function in:
 #   lib/methods/llm.js → buildSystemMessage(langConfig)
 #
-# The JS function accepts { name, register, genderGuidance?, promptContext? }
+# The JS function accepts:
+#   { name, register, genderGuidance?, promptContext?, coachingPrompt? }
 # and returns a system prompt string. This Python function takes a
-# ChampollionPromptConfig (same fields, different names) and returns the
-# same string.
+# ChampollionRunConfig (same fields, different naming convention) and
+# returns the same string.
 #
 # SYNC NOTE: If the JS prompt template changes, update this function
 # and verify with the parity test.
 # ---------------------------------------------------------------------------
 
-def build_champollion_system_prompt(rc: ChampollionPromptConfig) -> str:
+def build_champollion_system_prompt(rc: ChampollionRunConfig) -> str:
     """Build a system prompt identical to production buildSystemMessage().
 
     This is a direct port of the JS function. The output must be
     character-for-character identical for the same inputs.
 
     Args:
-        rc: ChampollionPromptConfig extracted from a champollion config + card.
+        rc: ChampollionRunConfig extracted from a champollion config + card.
 
     Returns:
         System prompt string, ready for LLM API call.
@@ -410,12 +493,20 @@ def build_champollion_system_prompt(rc: ChampollionPromptConfig) -> str:
     else:
         context_block = ""
 
+    # Optional coaching guidance block
+    # This MUST match the JS insertion point exactly:
+    #   after "Register/tone:" line, before "Rules:" section
+    if rc.coaching_prompt:
+        coaching_block = f"\nCoaching guidance:\n{rc.coaching_prompt}\n"
+    else:
+        coaching_block = ""
+
     return (
         f"You are translating UI strings for a web/mobile application "
         f"from English to {rc.target_lang_name}.\n"
         f"{context_block}\n"
         f"Register/tone: {rc.register}\n"
-        f"\n"
+        f"{coaching_block}\n"
         f"Rules:\n"
         f"- Translate ONLY the values, keep the keys exactly as-is.\n"
         f"- Proper nouns (product names, company names, place names) "
@@ -428,3 +519,4 @@ def build_champollion_system_prompt(rc: ChampollionPromptConfig) -> str:
         f"and direct.\n"
         f"- Return ONLY valid JSON, no markdown fences, no explanation."
     )
+

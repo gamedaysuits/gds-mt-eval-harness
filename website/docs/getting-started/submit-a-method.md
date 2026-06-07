@@ -31,20 +31,20 @@ pip install sacrebleu aiohttp
 The harness scores your method against a standardized dataset:
 
 ```bash
-python eval/baseline_experiment.py \
-  --dataset data/edtekla-dev-v1.json \
-  --model google/gemini-2.5-pro \
+mt-eval run \
+  --corpus data/edtekla-dev-v1.json \
+  --model gemini-pro \
   --condition your-method-name \
   --temperature 0.2
 ```
 
 | Flag | What It Does |
 |---|---|
-| `--dataset` | Path to the evaluation dataset JSON |
-| `--model` | OpenRouter model slug |
+| `--corpus` | Path to the evaluation corpus (`.json`, `.jsonl`, `.tsv`) |
+| `--model` | Model slug — short alias (e.g. `gemini-pro`) or full OpenRouter ID |
 | `--condition` | Label for your method (appears on leaderboard) |
 | `--temperature` | Sampling temperature (lower = more deterministic) |
-| `--fst-analyzer` | Optional: path to FST binary for morphological validation |
+| `--fst-retries` | Optional: number of FST retry attempts |
 | `--submit` | Auto-submit the run card to the leaderboard |
 
 The harness produces a **run card** — a self-contained JSON file with your scores, the dataset hash, the model slug, and a cryptographic fingerprint tying results to the exact experiment configuration.
@@ -103,5 +103,5 @@ Or upload through the [Leaderboard UI](https://champollion.dev/leaderboard).
 
 - [Harness Usage](/docs/specifications/harness) — full CLI reference
 - [Leaderboard Rules](/docs/leaderboard/rules) — submission criteria and anti-gaming policies
-- [Building a Method](/docs/specifications/methods) — the TranslationProcess protocol
+- [Building a Method](/docs/specifications/methods) — the TranslationMethod protocol
 - [Datasets](/docs/leaderboard/datasets) — available evaluation datasets

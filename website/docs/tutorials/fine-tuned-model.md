@@ -56,7 +56,7 @@ training_data = [
 # Base model: meta-llama/Llama-3.1-8B, google/gemma-2-9b, etc.
 # Rank: 16–64, Alpha: 32–128, Epochs: 3–5
 
-# 3. Export and serve via the harness TranslationProcess protocol
+# 3. Export and serve via the harness TranslationMethod protocol
 ```
 
 ## Where to Find Parallel Data

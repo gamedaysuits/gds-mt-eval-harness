@@ -112,6 +112,9 @@ Each model gets its own aiohttp session and semaphore. A 14-model benchmark runs
 | **Crowdsource-ready** | Prove your method is better, share it | Researcher-only |
 | **Model-agnostic** | Any OpenRouter model (100+) | Single-vendor |
 | **Fast by default** | batch=25, cache=on, parallel multi-model | Manual optimization |
+| **COMET with bootstrap CIs** | Cached per-entry bootstrap — no redundant neural inference | CIs rarely computed |
+| **AfriCOMET auto-selection** | Auto-selects `masakhane/africomet-mtl` for 35 African languages | One model fits all |
+| **Per-difficulty-tier analysis** | Metrics + CIs per translation difficulty level (Tier 1–5) | Corpus-level only |
 | **Contest infrastructure** | Public, private, or team contests with blind evaluation | No contest support |
 | **Writing style benchmarking** | Custom style metrics + brand voice prompt tuning | Quality metrics only |
 
@@ -127,7 +130,7 @@ mt_eval_harness/
 │   ├── single.py          # One entry per API call
 │   ├── batch.py           # Multiple entries per call
 │   ├── tool_call.py       # Multi-round tool-calling
-│   └── plugin_process.py  # Custom TranslationProcess plugins
+│   └── method_strategy.py # Custom TranslationMethod plugins
 ├── tester.py              # Offline metric computation
 ├── exporter.py            # champollion plugin packaging
 ├── api.py                 # OpenRouter HTTP client
@@ -148,10 +151,10 @@ mt_eval_harness/
 The harness exposes four plugin protocols. If your class has the right method signatures, it works — no inheritance required.
 
 ```python
-from mt_eval_harness.config import TranslationProcess
+from mt_eval_harness.config import TranslationMethod
 
 class MyTranslationPipeline:
-    """Custom pipeline — implements TranslationProcess protocol."""
+    """Custom pipeline — implements TranslationMethod protocol."""
 
     async def translate(self, entries: list[dict], config) -> list[dict]:
         # Your translation logic here
@@ -163,23 +166,40 @@ See [GUIDE.md](GUIDE.md) for full plugin documentation.
 ## Installation
 
 ```bash
-# Basic (aiohttp + dotenv only)
+# Install the harness
 pip install mt-eval-harness
 
-# With metric computation (sacrebleu)
-pip install mt-eval-harness[metrics]
+# Interactive setup — installs optional deps with explanations
+mt-eval setup
 
-# Development
-pip install -e ".[dev]"
+# Or install everything at once, no prompts
+mt-eval setup --all
+
+# Check what's installed
+mt-eval setup --status
 ```
 
 **Requirements:** Python 3.11+ · `OPENROUTER_API_KEY` environment variable
 
+> **Ship lean, install on consent.** The harness core has minimal dependencies. Optional capabilities (COMET neural metric, FST morphological validation) install interactively via `mt-eval setup` — or on-the-fly when the harness detects they'd improve your eval. You never need to know specific pip commands.
+
+<details>
+<summary>Manual pip install (if you prefer)</summary>
+
+```bash
+pip install mt-eval-harness[comet]   # COMET neural metric + AfriCOMET
+pip install mt-eval-harness[fst]     # FST morphological validation
+pip install -e ".[dev]"              # Development
+```
+</details>
+
 ## Documentation
 
 - **[GUIDE.md](GUIDE.md)** — Full user guide and API reference
+- **[CHANGELOG.md](CHANGELOG.md)** — Versioned change log
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — Development standards and contribution workflow
 - **[Plugin Specification](../cli/website/docs/reference/plugin-spec.md)** — champollion plugin specification
+- **[Scoring Specification](website/docs/specifications/scoring.md)** — SSOT for metrics, composite weights, quality tiers
 
 ## Contests & Leaderboards
 

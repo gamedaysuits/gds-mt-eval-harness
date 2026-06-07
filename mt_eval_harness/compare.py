@@ -65,6 +65,8 @@ def compare_reports(
             "entries": overall.get("evaluated", 0),
             "exact_match": overall.get("exact_match_rate", 0),
             "corpus_chrf": overall.get("corpus_chrf", 0),
+            "comet_score": overall.get("comet_score"),
+            "comet_model": overall.get("comet_model", ""),
             "total_cost": overall.get("total_cost_usd", 0),
             "avg_latency": overall.get("avg_latency_s", 0),
         }
@@ -208,8 +210,16 @@ def run_compare(
             if "." in k and k not in extra_keys:
                 extra_keys.append(k)
 
-    header = f"  {'Run ID':40s} {'Model':18s} {'Exact':>7s} {'chrF++':>7s} {'Cost':>8s}"
-    separator = f"  {'-'*40} {'-'*18} {'-----':>7s} {'------':>7s} {'----':>8s}"
+    # Check if any report has COMET data — only show column if so
+    any_comet = any(r.get("comet_score") is not None for r in rows)
+
+    header = f"  {'Run ID':40s} {'Model':18s} {'Exact':>7s} {'chrF++':>7s}"
+    separator = f"  {'-'*40} {'-'*18} {'-----':>7s} {'------':>7s}"
+    if any_comet:
+        header += f" {'COMET':>7s}"
+        separator += f" {'-----':>7s}"
+    header += f" {'Cost':>8s}"
+    separator += f" {'----':>8s}"
     for ek in extra_keys:
         short = ek.split(".")[-1][:10]
         header += f" {short:>10s}"
@@ -228,9 +238,15 @@ def run_compare(
             f"  {r['run_id'][:40]:40s} "
             f"{r['model']:18s} "
             f"{r['exact_match']:>6.1%} "
-            f"{r['corpus_chrf']:>7.1f} "
-            f"${r['total_cost']:>7.4f}"
+            f"{r['corpus_chrf']:>7.1f}"
         )
+        if any_comet:
+            comet = r.get("comet_score")
+            if comet is not None:
+                line += f" {comet:>7.4f}"
+            else:
+                line += f" {'N/A':>7s}"
+        line += f" ${r['total_cost']:>7.4f}"
         for ek in extra_keys:
             val = r.get(ek, 0)
             if isinstance(val, float) and val <= 1.0:

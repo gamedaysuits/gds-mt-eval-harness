@@ -18,7 +18,7 @@ from __future__ import annotations
 
 from typing import Any, Protocol, runtime_checkable
 
-from mt_eval_harness.config import RunConfig, TranslationProcess
+from mt_eval_harness.config import RunConfig, TranslationMethod
 
 
 # ---------------------------------------------------------------------------
@@ -30,7 +30,7 @@ class ExecutionStrategy(Protocol):
     """Protocol for translation execution strategies.
 
     Each strategy handles one execution mode (single, batch, tool-call,
-    or custom plugin process). The orchestrator in runner.py resolves
+    or custom method plugin). The orchestrator in runner.py resolves
     the correct strategy via the factory and delegates all execution.
     """
 
@@ -62,13 +62,13 @@ class ExecutionStrategy(Protocol):
 
 def resolve_strategy(
     config: RunConfig,
-    process: TranslationProcess | None = None,
+    method: TranslationMethod | None = None,
     tool_provider: Any | None = None,
 ) -> ExecutionStrategy:
     """Resolve the correct execution strategy based on config.
 
     Priority order (matches the original runner.py dispatch):
-        1. Custom TranslationProcess plugin → PluginProcessStrategy
+        1. Custom TranslationMethod plugin → MethodStrategy
         2. tools_enabled → ToolCallStrategy
         3. batch_size > 1 → BatchStrategy
         4. Default → SingleStrategy
@@ -76,9 +76,9 @@ def resolve_strategy(
     This replaces the if/elif chain in the old execute_run() and makes
     strategy selection deterministic, testable, and extensible.
     """
-    if process is not None:
-        from mt_eval_harness.strategies.plugin_process import PluginProcessStrategy
-        return PluginProcessStrategy(process)
+    if method is not None:
+        from mt_eval_harness.strategies.method_strategy import MethodStrategy
+        return MethodStrategy(method)
 
     if config.tools_enabled:
         if not tool_provider:

@@ -338,14 +338,14 @@ def assemble_run_card(
     # Extract semantic_score from CrkSemanticMetric plugin (§4.2)
     #
     # CrkSemanticMetric (crk_semantic) produces per-entry verdicts:
-    #   EXACT_MATCH, VALID, WRONG_ORDER, PARTIAL, INCOMPLETE, WRONG,
+    #   EXACT_MATCH, VALID, GRAMMAR_ISSUES, PARTIAL, INCOMPLETE, WRONG,
     #   NO_OUTPUT, ERROR
     #
     # We derive a numeric 0.0–1.0 semantic score by assigning each
     # verdict a weight reflecting semantic fidelity:
     #   EXACT_MATCH  → 1.0  (identical output)
     #   VALID        → 1.0  (correct lemmas, inflection/order variation)
-    #   WRONG_ORDER  → 0.7  (right lemmas, structural grammar issues)
+    #   GRAMMAR_ISSUES  → 0.7  (right lemmas, structural grammar issues)
     #   PARTIAL      → 0.4  (some correct, some missing/wrong)
     #   INCOMPLETE   → 0.3  (compressed — missing content)
     #   WRONG        → 0.0  (genuinely incorrect lemma choices)
@@ -353,7 +353,7 @@ def assemble_run_card(
     #   ERROR        → 0.0  (validation itself failed)
     #
     # These weights reflect the semantic validator's design: VALID means
-    # identical lemma sets (only inflection differs), WRONG_ORDER means
+    # identical lemma sets (only inflection differs), GRAMMAR_ISSUES means
     # correct lemmas but sentence-level grammar issues, PARTIAL means
     # mixed results. The weights are conservative — community review
     # remains the ultimate arbiter.
@@ -363,7 +363,7 @@ def assemble_run_card(
     _SEMANTIC_VERDICT_WEIGHTS = {
         "EXACT_MATCH": 1.0,
         "VALID": 1.0,
-        "WRONG_ORDER": 0.7,
+        "GRAMMAR_ISSUES": 0.7,
         "PARTIAL": 0.4,
         "INCOMPLETE": 0.3,
         "WRONG": 0.0,
@@ -384,6 +384,29 @@ def assemble_run_card(
                 semantic_score = round(weighted_sum / total_judged, 4)
 
     # -------------------------------------------------------------------
+    # Extract behavioral metrics from plugin aggregates
+    #
+    # These are computed by language-agnostic plugins (CodeSwitching,
+    # Hallucination, Terminology) and need to be fed into the composite.
+    # scoring.py handles the inversion (1 - rate) for code_switching and
+    # hallucination, so we pass raw rates here.
+    # -------------------------------------------------------------------
+    code_switching_rate = None
+    cs_data = plugin_metrics.get("code_switching", {})
+    if cs_data and not cs_data.get("error"):
+        code_switching_rate = cs_data.get("avg_code_switching_rate")
+
+    hallucination_rate = None
+    hall_data = plugin_metrics.get("hallucination", {})
+    if hall_data and not hall_data.get("error"):
+        hallucination_rate = hall_data.get("avg_hallucination_rate")
+
+    terminology_adherence = None
+    term_data = plugin_metrics.get("terminology", {})
+    if term_data and not term_data.get("error"):
+        terminology_adherence = term_data.get("avg_terminology_adherence")
+
+    # -------------------------------------------------------------------
     # Composite score (SCORING_SPEC §4)
     # -------------------------------------------------------------------
     # Build a dict of available metrics in their NATIVE scales.
@@ -395,10 +418,14 @@ def assemble_run_card(
         "chrf_plus_plus": corpus_chrf,
         "exact_match_rate": overall.get("exact_match_rate"),
         "fst_acceptance_rate": fst_acceptance_rate,
-        # Wired from CrkLinterMetric when available, else None
+        # LYSS-eq: wired from CrkLinterMetric when available, else None
         "equivalent_match_rate": equivalent_match_rate,
-        # Wired from CrkSemanticMetric when available, else None
+        # LYSS-sem: wired from CrkSemanticMetric when available, else None
         "semantic_score": semantic_score,
+        # Behavioral metrics — wired from plugin aggregates
+        "code_switching_rate": code_switching_rate,
+        "hallucination_rate": hallucination_rate,
+        "terminology_adherence": terminology_adherence,
         # Planned — requires per-entry gold-standard morphological annotations
         "morphological_accuracy": None,
     }
@@ -499,6 +526,22 @@ def assemble_run_card(
         "by_segment": report.get("by_segment", {}),
         "provenance": git_provenance,
         "method_card": method_card,
+
+        # §3.7 Canonical MethodConfig — the exact config shape used by
+        # champollion.config.json, method.json, and export-config.
+        # Leaderboard --install reads this block directly so the installed
+        # plugin uses the exact same config that produced these results.
+        "method_config": {
+            "model": config.get("_model_id", config.get("model", "")),
+            "temperature": config.get("_effective_temperature",
+                                      config.get("temperature", 0)),
+            "batchSize": config.get("batch_size", 25),
+            "register": provenance.get("register_used", None),
+            "coachingFile": config.get("coaching_file", None),
+            "coachingPrompt": None,  # Resolved at runtime — not persisted
+            "promptContext": provenance.get("prompt_context_used", None),
+            "qualityTier": quality_tier,
+        },
 
         # Additional scores not in spec but useful
         "corpus_bleu": overall.get("corpus_bleu"),
@@ -623,6 +666,20 @@ def publish_to_supabase(
         report_path, method_card_path
     )
 
+    # --- Method card wizard ---
+    # If no method card was provided and we're interactive, offer the wizard.
+    # The wizard creates a method card dict that gets embedded in the run card.
+    if method_card_path is None and not auto_confirm:
+        if "method_card" not in run_card or run_card.get("method_card") is None:
+            print("\n  No method card attached to this run.")
+            offer = input("  Create one now? [Y/n] ").strip().lower()
+            if not offer or offer == "y":
+                from mt_eval_harness.method_card_wizard import run_wizard
+                card = run_wizard(submitter=submitter)
+                if card:
+                    run_card["method_card"] = card
+                    run_card["condition"] = card.get("class", run_card.get("condition", "unknown"))
+
     scores = run_card["scores"]
     dataset = run_card["dataset"]
     totals = run_card["totals"]
@@ -705,6 +762,11 @@ def publish_to_supabase(
     print(f"  Temperature:   {run_card.get('temperature', '?')}")
     print(f"  Max tokens:    {run_card.get('max_tokens', '?')}")
     print(f"  Dataset:       {dataset['id']} ({scores.get('total', '?')} entries)")
+    # Show entry count — entries will be stored individually in run_card_entries
+    report_data = json.loads(Path(report_path).read_text(encoding="utf-8"))
+    entry_count = len(report_data.get("entries", []))
+    if entry_count:
+        print(f"  Entries:       {entry_count} (will be stored individually)")
     print(f"  chrF++:        {scores.get('chrf_plus_plus', 'N/A')}")
     if cis and cis.get("corpus_chrf"):
         ci = cis["corpus_chrf"]
@@ -765,7 +827,102 @@ def publish_to_supabase(
         raise SystemExit(1)
 
     print(f"\n  ✅ Published to leaderboard!")
+
+    # --- Publish per-entry data ---
+    # Load entries from the report and batch-insert into run_card_entries.
+    # This enables per-entry drill-down on the leaderboard website.
+    report_data = json.loads(Path(report_path).read_text(encoding="utf-8"))
+    entries = report_data.get("entries", [])
+
+    if entries:
+        print(f"  Publishing {len(entries)} per-entry results...")
+        _publish_entries(
+            card_id=card_id,
+            entries=entries,
+            access_token=access_token,
+        )
+    else:
+        print("  ℹ No per-entry data found in report (entries list empty)")
+
     print(f"     https://mtevalarena.org/leaderboard")
     print("=" * 60)
 
     return result
+
+
+def _publish_entries(
+    card_id: str,
+    entries: list[dict],
+    access_token: str,
+) -> None:
+    """Batch-insert per-entry results into run_card_entries.
+
+    Uses Supabase's upsert (ON CONFLICT) so re-publishes are idempotent.
+    Entries are sent in batches of 50 to avoid request size limits.
+
+    Args:
+        card_id: The run_card ID (foreign key).
+        entries: List of entry dicts from the TestReport.
+        access_token: Supabase JWT for authenticated writes.
+    """
+    BATCH_SIZE = 50
+
+    # Transform report entries into run_card_entries rows
+    rows = []
+    for entry in entries:
+        row = {
+            "run_card_id": card_id,
+            "entry_id": str(entry.get("id", "")),
+            "source": entry.get("source", ""),
+            "expected": entry.get("expected", ""),
+            "raw_predicted": entry.get("raw_predicted"),
+            "predicted": entry.get("predicted", ""),
+            "segment": entry.get("segment", ""),
+            "difficulty": entry.get("difficulty"),
+            "domain": entry.get("domain", ""),
+            "exact_match": bool(entry.get("exact_match", False)),
+            "chrf_score": entry.get("chrf_score"),
+            "bleu_score": entry.get("bleu_score"),
+            "latency_s": entry.get("latency_s"),
+            "cost_usd": entry.get("cost_usd"),
+            "tool_call_count": entry.get("tool_call_count", 0),
+            "error": entry.get("error"),
+            "plugin_metrics": entry.get("plugin_metrics", {}),
+        }
+        rows.append(row)
+
+    # Batch insert — send rows in chunks to avoid payload limits
+    total_inserted = 0
+    for i in range(0, len(rows), BATCH_SIZE):
+        batch = rows[i:i + BATCH_SIZE]
+        data = json.dumps(batch).encode()
+
+        req = urllib.request.Request(
+            f"{SUPABASE_URL}/rest/v1/run_card_entries",
+            data=data,
+            headers={
+                "apikey": SUPABASE_ANON_KEY,
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json",
+                # Upsert on (run_card_id, entry_id) for idempotent re-publishes
+                "Prefer": "resolution=merge-duplicates",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                resp.read()  # Consume response
+            total_inserted += len(batch)
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode()
+            # Warn but don't fail — the run_card is already published.
+            # Per-entry data is secondary; we can retry later.
+            print(
+                f"  ⚠ Entry batch {i // BATCH_SIZE + 1} failed "
+                f"({exc.code}): {body[:200]}"
+            )
+
+    if total_inserted > 0:
+        print(f"  ✅ {total_inserted}/{len(rows)} entries published")
+

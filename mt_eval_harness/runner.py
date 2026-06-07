@@ -29,7 +29,7 @@ Design decisions:
       Each mode is independently testable and extensible.
     - Process plugins are first-class: the built-in LLM caller is
       just the default strategy. Any pipeline can register via the
-      TranslationProcess protocol for identical evaluation.
+      TranslationMethod protocol for identical evaluation.
     - All errors are captured (never thrown) so a partial run still
       produces usable data.
     - Progress reporting uses simple print() — no dependency on
@@ -50,7 +50,7 @@ from typing import Any
 
 import aiohttp
 
-from mt_eval_harness.config import RunConfig, TranslationProcess
+from mt_eval_harness.config import RunConfig, TranslationMethod
 from mt_eval_harness.cache import ResultCache
 from mt_eval_harness.api import load_api_key, call_openrouter, fetch_pricing
 from mt_eval_harness.strategies import resolve_strategy
@@ -119,10 +119,20 @@ def load_system_prompt(
     if version == "naive":
         return build_naive_prompt(config)
 
-    # Built-in: custom file
+    # Built-in: custom file (legacy — use coaching_file instead)
     if version == "custom":
-        path = Path(config.custom_prompt_path)
+        path = Path(config.custom_prompt_path or config.coaching_file)
         return path.read_text(encoding="utf-8")
+
+    # Coaching file takes precedence over prompt_version
+    # (coaching_file is the modern replacement for custom_prompt_path)
+    if config.coaching_file and version == "naive":
+        path = Path(config.coaching_file)
+        if path.exists():
+            return path.read_text(encoding="utf-8")
+        raise ValueError(
+            f"Coaching file not found: {config.coaching_file}"
+        )
 
     # Plugin providers
     if prompt_providers:
@@ -144,7 +154,7 @@ def load_system_prompt(
 
 async def execute_run(
     config: RunConfig,
-    process: TranslationProcess | None = None,
+    method: TranslationMethod | None = None,
     prompt_providers: list | None = None,
     tool_provider: Any | None = None,
     post_hooks: list | None = None,
@@ -162,8 +172,9 @@ async def execute_run(
 
     Args:
         config: Full run configuration.
-        process: Optional custom TranslationProcess plugin.
-                 If None, uses built-in LLM translation.
+        method: Optional custom TranslationMethod plugin.
+                If None, uses built-in LLM translation.
+                Can also be loaded from config.method_path.
         prompt_providers: Optional list of PromptProvider plugins
                           for custom system prompt versions.
         tool_provider: Optional ToolProvider plugin for tool-calling.
@@ -259,13 +270,26 @@ async def execute_run(
         )
         raise SystemExit(1)
 
+    # --- Load method plugin if specified ---
+    # config.method_path takes precedence over the method parameter.
+    # When a method is loaded, the harness delegates translation to it
+    # and the system prompt / batching / tools are irrelevant.
+    if config.method_path and method is None:
+        from mt_eval_harness.method_loader import load_method
+        method = load_method(config.method_path)
+        print(f"  Method:      {method.name} (from {config.method_path})")
+        card = method.method_card()
+        if card:
+            print(f"  Method ID:   {card.get('method_id', 'unknown')}")
+            print(f"  Method class: {card.get('class', 'unknown')}")
+
     # --- System prompt capture (BENCHMARK_SPEC §3.2) ---
     # The full prompt text and its SHA-256 are stored in the RunLog
     # for reproducibility. Two runs with different prompts will have
     # different hashes, even if all other config is identical.
     system_prompt = ""
     system_prompt_sha256 = ""
-    if process is None:
+    if method is None:
         system_prompt = load_system_prompt(config, prompt_providers)
         system_prompt_sha256 = hashlib.sha256(
             system_prompt.encode("utf-8")
@@ -283,7 +307,7 @@ async def execute_run(
                 print(f"  WARNING: Hook '{hook_name}' not found in registered hooks")
 
     # --- Resolve strategy ---
-    strategy = resolve_strategy(config, process, tool_provider)
+    strategy = resolve_strategy(config, method, tool_provider)
     strategy_name = type(strategy).__name__
     print(f"  Strategy:    {strategy_name}")
 
@@ -316,6 +340,21 @@ async def execute_run(
     # --- Enrich + Build RunLog ---
     enriched, total_cost = enrich_results(results, corpus, config, pricing)
 
+    # Collect method card if a method plugin was used
+    method_card_data = None
+    if method is not None and hasattr(method, "method_card"):
+        method_card_data = method.method_card()
+
+    # Collect coaching prompt text for provenance
+    coaching_text = None
+    coaching_sha = None
+    if config.coaching_file:
+        try:
+            coaching_text = Path(config.coaching_file).read_text(encoding="utf-8")
+            coaching_sha = hashlib.sha256(coaching_text.encode("utf-8")).hexdigest()
+        except FileNotFoundError:
+            pass  # Already loaded via system_prompt path
+
     run_id = _build_run_id(config)
     run_log = build_run_log(
         config=config,
@@ -329,6 +368,9 @@ async def execute_run(
         system_prompt_sha256=system_prompt_sha256,
         corpus_sha256=corpus_sha256,
         dataset_meta=dataset_meta,
+        method_card=method_card_data,
+        coaching_prompt=coaching_text,
+        coaching_prompt_sha256=coaching_sha,
     )
 
     output_path = write_run_log(run_log, config.output_dir)

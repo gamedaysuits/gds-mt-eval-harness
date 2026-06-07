@@ -23,8 +23,8 @@ The [Benchmark Specification](/docs/specifications/benchmark) is the single sour
 |-------|------|-------------|
 | `run_id` | `string` | UUID v4 generated at the start of the run |
 | `harness_version` | `string` | Semantic version of the harness that produced this card (e.g., `2.0`) |
-| `model_slug` | `string` | OpenRouter model slug used for the run (e.g., `openai/gpt-4o`) |
-| `model_id` | `string` | Resolved model identifier returned by the API (e.g., `gpt-4o-2024-08-06`) |
+| `model_slug` | `string` | Model slug used for the run (e.g., `google/gemini-3.1-pro`) |
+| `model_id` | `string` | Resolved model identifier returned by the API (e.g., `gemini-3.1-pro-001`) |
 | `condition` | `string` | Experiment label (e.g., `baseline`, `coached-v3`, `few-shot`) |
 | `timestamp` | `string` | ISO 8601 UTC timestamp when the run started |
 | `elapsed_seconds` | `number` | Wall-clock duration of the entire run |
@@ -33,10 +33,10 @@ The [Benchmark Specification](/docs/specifications/benchmark) is the single sour
 {
   "run_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
   "harness_version": "2.0",
-  "model_slug": "openai/gpt-4o",
-  "model_id": "gpt-4o-2024-08-06",
+  "model_slug": "google/gemini-3.1-pro",
+  "model_id": "gemini-3.1-pro-001",
   "condition": "baseline",
-  "timestamp": "2025-05-20T03:22:41Z",
+  "timestamp": "2026-06-01T03:22:41Z",
   "elapsed_seconds": 142.7
 }
 ```
@@ -81,18 +81,42 @@ The API and batching configuration used for this run.
 | `max_tokens` | `number` | Maximum tokens per completion |
 | `batch_size` | `number` | Entries per concurrent batch |
 | `concurrency` | `number` | Maximum parallel API requests |
+| `coaching_file` | `string` | Path to coaching prompt file, if used |
+| `method_path` | `string` | Path to method plugin directory, if used |
+| `fst_retries` | `number` | Number of FST retry attempts |
 
 ```json
 {
   "config": {
     "api_provider": "openrouter",
-    "temperature": 0.3,
-    "max_tokens": 1024,
-    "batch_size": 5,
-    "concurrency": 3
+    "temperature": 0.0,
+    "max_tokens": 32768,
+    "batch_size": 25,
+    "concurrency": 8
   }
 }
 ```
+
+:::info Published Run Cards Include `method_config`
+When a run card is published via `mt-eval publish`, `publish.py` injects a `method_config` block containing the canonical 8-field MethodConfig. This enables zero-friction leaderboard install — anyone can reproduce the method directly from the published card.
+
+```json
+{
+  "method_config": {
+    "model": "gemini-pro",
+    "temperature": 0.0,
+    "batchSize": 25,
+    "register": "Formal Plains Cree. Use SRO orthography.",
+    "coachingFile": "prompts/crk-coaching-v8.txt",
+    "coachingPrompt": null,
+    "promptContext": "champollion",
+    "qualityTier": "verified"
+  }
+}
+```
+
+All fields use **camelCase** and follow the canonical MethodConfig schema (see [Building a Method](/docs/specifications/methods)).
+:::
 
 ---
 
@@ -133,10 +157,10 @@ A reproducibility identifier. Two runs with identical fingerprints used the same
     "hash": "7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069",
     "components": {
       "dataset_sha256": "e3b0c44298fc1c14...",
-      "model_slug": "openai/gpt-4o",
+      "model_slug": "google/gemini-3.1-pro",
       "condition": "baseline",
       "system_prompt_sha256": "abc123...",
-      "temperature": 0.3,
+      "temperature": 0.0,
       "harness_version": "2.0"
     }
   }
@@ -336,6 +360,10 @@ card["run_card_hash"] = ""
 card_json = json.dumps(card, sort_keys=True, ensure_ascii=False)
 card["run_card_hash"] = hashlib.sha256(card_json.encode()).hexdigest()
 ```
+
+:::info Per-Entry Drill-Down
+Published run cards also populate the `run_card_entries` Supabase table, which stores per-entry results for drill-down analysis on the leaderboard. This table is populated automatically during `mt-eval publish`.
+:::
 
 ---
 

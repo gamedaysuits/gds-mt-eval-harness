@@ -170,16 +170,20 @@ def _build_manifest(report: dict, config: ExportConfig) -> dict:
     report_config = report.get("config", {})
     overall = report.get("overall", {})
 
-    # --- Config block (what champollion passes to the translation method) ---
+    # --- Config block — canonical MethodConfig shape ---
+    # All fields are always present. Unused values are null.
+    # This shape is identical across: champollion.config.json, method.json,
+    # leaderboard publish, leaderboard install, and export-config output.
     method_config: dict[str, Any] = {
         "model": report_config.get("model", ""),
+        "temperature": report_config.get("temperature") if report_config.get("temperature") is not None else None,
+        "batchSize": report_config.get("batch_size") if report_config.get("batch_size") else None,
+        "register": config.register or None,
+        "coachingFile": report_config.get("coaching_file", None),
+        "coachingPrompt": None,  # Resolved at runtime from coachingFile — not stored
+        "promptContext": None,  # Resolved from champollion config at runtime
+        "qualityTier": None,  # Set after scoring
     }
-    if config.register:
-        method_config["register"] = config.register
-    if report_config.get("batch_size"):
-        method_config["batchSize"] = report_config["batch_size"]
-    if report_config.get("temperature") is not None:
-        method_config["temperature"] = report_config["temperature"]
 
     # --- Benchmarks block (per-locale metrics from the test analysis) ---
     benchmarks = {}

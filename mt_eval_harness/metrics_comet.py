@@ -94,6 +94,130 @@ _XLMR_HIGH_RESOURCE = {
 }
 
 
+# ── Language-Aware Model Registry ────────────────────────────────
+#
+# AfriCOMET (masakhane/africomet-mtl) is trained on African language
+# human judgments from the Masakhane community. For African languages,
+# AfriCOMET provides better correlation with human quality assessments
+# than the default wmt22-comet-da model, which was trained primarily
+# on European language pairs.
+#
+# The registry maps ISO 639-3 codes to recommended COMET models.
+# Languages not in any registry entry fall back to DEFAULT_COMET_MODEL.
+#
+# Reference: Wan et al. (2022). "AfriCOMET: An Automatic Metric
+# for Machine Translation Evaluation of African Languages." Masakhane.
+#
+# NOTE: AfriCOMET requires `pip install unbabel-comet` (same package).
+# The model downloads on first use (~600 MB).
+
+_AFRICOMET_MODEL = "masakhane/africomet-mtl"
+
+# African languages covered by AfriCOMET training data.
+# These are languages with human judgment data from the Masakhane
+# community. AfriCOMET should provide more reliable scores for
+# these than generic COMET.
+# Source: AfriCOMET paper + Masakhane evaluation datasets.
+_AFRICOMET_LANGUAGES = {
+    # Niger-Congo
+    "yor",  # Yorùbá
+    "ibo",  # Igbo
+    "hau",  # Hausa (Chadic, not Niger-Congo, but in Masakhane)
+    "swa", "swh", "swc",  # Swahili variants
+    "zul",  # Zulu
+    "xho",  # Xhosa
+    "sot",  # Southern Sotho
+    "tsn",  # Tswana
+    "nso",  # Pedi / Northern Sotho
+    "ssw",  # Swati
+    "tso",  # Tsonga
+    "ven",  # Venda
+    "nbl",  # South Ndebele
+    "lin",  # Lingala
+    "lug",  # Luganda
+    "kin",  # Kinyarwanda
+    "run",  # Kirundi
+    "nya",  # Chichewa
+    "sna",  # Shona
+    "wol",  # Wolof
+    "bam",  # Bambara
+    "ewe",  # Ewe
+    "twi",  # Twi
+    "aka",  # Akan
+    "ful", "fuc",  # Fula variants
+    "mos",  # Mossi / Mooré
+
+    # Afroasiatic
+    "amh",  # Amharic
+    "tir",  # Tigrinya
+    "orm",  # Oromo
+    "som",  # Somali
+
+    # Nilo-Saharan
+    "luo",  # Luo (Dholuo)
+
+    # Creoles
+    "pcm",  # Nigerian Pidgin
+}
+
+# Registry: maps language code patterns to COMET model.
+# Checked in order; first match wins.
+COMET_MODEL_REGISTRY = [
+    {
+        "name": "AfriCOMET",
+        "model": _AFRICOMET_MODEL,
+        "languages": _AFRICOMET_LANGUAGES,
+        "note": "Masakhane African language evaluation model",
+    },
+    # Future entries can go here for other regional models, e.g.:
+    # {
+    #     "name": "IndicCOMET",
+    #     "model": "ai4bharat/indiccomet",
+    #     "languages": {"hin", "ben", "tam", "tel", ...},
+    #     "note": "Indic language evaluation model",
+    # },
+]
+
+
+def resolve_comet_model(
+    target_lang: str = "",
+    explicit_model: str | None = None,
+) -> str:
+    """Resolve the best COMET model for the given target language.
+
+    Priority order:
+        1. Explicit CLI override (--comet-model flag) — always wins
+        2. Registry match for target language code
+        3. DEFAULT_COMET_MODEL fallback
+
+    Args:
+        target_lang: ISO 639-3 or BCP-47 code for the target language.
+        explicit_model: If set, this model is used unconditionally
+                        (user explicitly chose a model via --comet-model).
+
+    Returns:
+        COMET model identifier string (e.g., "Unbabel/wmt22-comet-da"
+        or "masakhane/africomet-mtl").
+    """
+    # 1. Explicit override always wins
+    if explicit_model:
+        return explicit_model
+
+    # 2. Check registry for language-specific model
+    lang_base = target_lang.split("-")[0].lower() if target_lang else ""
+    if lang_base:
+        for entry in COMET_MODEL_REGISTRY:
+            if lang_base in entry["languages"]:
+                print(
+                    f"  COMET: Auto-selecting {entry['name']} "
+                    f"({entry['model']}) for {target_lang}"
+                )
+                return entry["model"]
+
+    # 3. Default fallback
+    return DEFAULT_COMET_MODEL
+
+
 @dataclass
 class COMETResult:
     """Result of COMET scoring for a single run.

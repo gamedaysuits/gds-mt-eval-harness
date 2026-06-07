@@ -37,8 +37,11 @@ BEHAVIORAL PLUGINS (language-agnostic):
 DESIGN DECISIONS:
     - The FST gate applies only to languages in GIELLALT_FST_REGISTRY.
       Languages without known FSTs proceed normally without any gate.
-    - CRK-specific plugins (linter, semantic) remain as additional
-      language-specific enrichments on top of the generic FST plugin.
+    - Language-specific LYSS plugins (linters, semantic validators) are
+      loaded when a matching language is detected. Currently supported:
+        * CRK (Plains Cree): CrkLinterMetric (LYSS-eq), CrkSemanticMetric (LYSS-sem)
+      These plugins live in crk-translate/eval/harness_plugins/ and are
+      imported conditionally to avoid hard dependencies.
     - Behavioral plugins load unconditionally — they're stdlib-only,
       language-agnostic, and zero-config.
     - The --skip-fst flag exists for CI/automation where interactive
@@ -130,45 +133,6 @@ def _detect_lang_name(config: dict) -> str:
         or "Unknown"
     )
 
-
-# ---------------------------------------------------------------------------
-# CRK-specific plugin loading (linter, semantic — language-specific by nature)
-# ---------------------------------------------------------------------------
-
-def _try_load_crk_linter() -> object | None:
-    """Attempt to load CrkLinterMetric. Returns the plugin instance or None.
-
-    CrkLinterMetric is an EXTERNAL plugin from the crk-translate package.
-    It is legitimately absent when crk-translate is not installed.
-    ImportError → None is correct here. Initialization errors are logged
-    as warnings because they indicate a broken installation.
-    """
-    try:
-        from eval.harness_plugins.metrics import CrkLinterMetric
-        return CrkLinterMetric()
-    except ImportError:
-        logger.debug("CrkLinterMetric not importable (crk-translate not installed)")
-        return None
-    except Exception as e:
-        logger.warning("CrkLinterMetric found but failed to initialize: %s", e)
-        return None
-
-
-def _try_load_crk_semantic() -> object | None:
-    """Attempt to load CrkSemanticMetric. Returns the plugin instance or None.
-
-    Same rationale as _try_load_crk_linter — external plugin, legitimately
-    absent when crk-translate is not installed.
-    """
-    try:
-        from eval.harness_plugins.metrics import CrkSemanticMetric
-        return CrkSemanticMetric()
-    except ImportError:
-        logger.debug("CrkSemanticMetric not importable (crk-translate not installed)")
-        return None
-    except Exception as e:
-        logger.warning("CrkSemanticMetric found but failed to initialize: %s", e)
-        return None
 
 
 # ---------------------------------------------------------------------------
@@ -283,19 +247,134 @@ def discover_metric_plugins(
             print(f"    Use --skip-fst to run without morphological checking.")
             raise SystemExit(1)
 
-    # --- CRK-specific plugins (in addition to the generic FST) ---
-    if lang_code == "crk":
-        linter = _try_load_crk_linter()
-        if linter:
-            plugins.append(linter)
-            print("  Linter: loaded (CrkLinterMetric — variant-class detection)")
-        else:
-            print("  ℹ CRK Linter: not available (install crk-translate package)")
+    # --- Language-specific LYSS plugins ---
+    # These provide linguistically-informed metrics that go beyond surface
+    # comparison. They are loaded conditionally based on target language.
+    # Each plugin lazy-initializes its heavy resources on first use.
+    #
+    # LYSS-eq (CrkLinterMetric): deterministic variant-class equivalence
+    # LYSS-sem (CrkSemanticMetric): FST lemma + dictionary + spaCy overlap
 
-        semantic = _try_load_crk_semantic()
-        if semantic:
-            plugins.append(semantic)
-            print("  Semantic: loaded (CrkSemanticMetric — semantic validation)")
+    if lang_code == "crk":
+        # The CRK LYSS plugins live in crk-translate/eval/harness_plugins/,
+        # which is a separate subtree from arena/mt_eval_harness/. We need
+        # to add crk-translate/ to sys.path so `from eval.harness_plugins`
+        # resolves. This follows the same pattern as method_loader.py
+        # (lines 119-131) which adds plugin directories to sys.path.
+        import sys
+        from pathlib import Path
+
+        # Detect monorepo root: plugin_discovery.py lives at
+        # <monorepo>/arena/mt_eval_harness/plugin_discovery.py
+        # so monorepo root is 2 levels up from this file's directory.
+        _this_dir = Path(__file__).resolve().parent        # mt_eval_harness/
+        _arena_dir = _this_dir.parent                      # arena/
+        _monorepo_root = _arena_dir.parent                 # Champollion/
+        _crk_dir = _monorepo_root / "crk-translate"
+
+        _crk_path_added = False
+        if _crk_dir.is_dir():
+            crk_dir_str = str(_crk_dir)
+            if crk_dir_str not in sys.path:
+                sys.path.insert(0, crk_dir_str)
+                _crk_path_added = True
+                logger.debug("Added %s to sys.path for CRK plugin imports", crk_dir_str)
+        else:
+            logger.warning(
+                "crk-translate directory not found at %s. "
+                "CRK-specific LYSS plugins will not be loaded.", _crk_dir
+            )
+
+        try:
+            from eval.harness_plugins.metrics import CrkLinterMetric
+            plugins.append(CrkLinterMetric())
+            print("  LYSS-eq: loaded (CrkLinterMetric — variant-class equivalence)")
+        except ImportError as e:
+            logger.warning(
+                "CrkLinterMetric not available (import error: %s). "
+                "equivalent_match_rate will be null in composite.", e
+            )
+
+        try:
+            from eval.harness_plugins.metrics import CrkSemanticMetric
+
+            # Probe whether LYSS-sem's runtime dependencies are available.
+            # CrkSemanticMetric lazy-loads spaCy + en_core_web_md + CrkGenerator
+            # on first compute(). If spaCy isn't installed, every entry gets
+            # verdict=ERROR and semantic_score is null. Better to tell the
+            # user upfront and offer to install, like the FST prompt does.
+            _sem_ready = True
+            try:
+                import spacy
+                spacy.load("en_core_web_md")
+            except ImportError:
+                _sem_ready = False
+                _missing = "spaCy"
+            except OSError:
+                # spaCy installed but model not downloaded
+                _sem_ready = False
+                _missing = "spaCy English model (en_core_web_md)"
+
+            if _sem_ready:
+                plugins.append(CrkSemanticMetric())
+                print("  LYSS-sem: loaded (CrkSemanticMetric — semantic validation)")
+            else:
+                # Prompt for CRK eval pack install (parallels FST prompt)
+                print(f"  LYSS-sem: {_missing} not found.")
+                _installed = False
+                if sys.stdin.isatty():
+                    print()
+                    print("  ┌─────────────────────────────────────────────────────────────┐")
+                    print("  │  CRK Eval Pack — Semantic Validation Dependencies           │")
+                    print("  │                                                             │")
+                    print("  │  LYSS-sem validates meaning preservation by comparing       │")
+                    print("  │  FST lemma glosses via English content-word overlap.         │")
+                    print("  │  It requires:                                               │")
+                    print("  │    • spaCy (NLP library for English lemmatization)           │")
+                    print("  │    • en_core_web_md model (~40 MB download)                 │")
+                    print("  │                                                             │")
+                    print("  │  Without this, semantic_score will be null in the composite. │")
+                    print("  └─────────────────────────────────────────────────────────────┘")
+                    print()
+                    try:
+                        answer = input("  Install CRK eval pack now? [y/N]: ").strip().lower()
+                        if answer in ("y", "yes"):
+                            import subprocess
+                            print("  Installing spaCy...")
+                            subprocess.check_call(
+                                [sys.executable, "-m", "pip", "install", "spacy>=3.5"],
+                                stdout=subprocess.DEVNULL,
+                            )
+                            print("  Downloading en_core_web_md model...")
+                            subprocess.check_call(
+                                [sys.executable, "-m", "spacy", "download", "en_core_web_md"],
+                                stdout=subprocess.DEVNULL,
+                            )
+                            # Re-import after install
+                            import importlib
+                            import spacy
+                            importlib.reload(spacy)
+                            plugins.append(CrkSemanticMetric())
+                            print("  ✓ CRK eval pack installed. LYSS-sem active.")
+                            _installed = True
+                    except (EOFError, KeyboardInterrupt):
+                        print()
+                    except Exception as e:
+                        print(f"  ✗ CRK eval pack install failed: {e}")
+
+                if not _installed:
+                    print("  LYSS-sem: skipped (semantic_score will be null in composite)")
+                    logger.warning(
+                        "CrkSemanticMetric loaded but %s is missing. "
+                        "Run: pip install spacy && python -m spacy download en_core_web_md",
+                        _missing,
+                    )
+
+        except ImportError as e:
+            logger.warning(
+                "CrkSemanticMetric not available (import error: %s). "
+                "semantic_score will be null in composite.", e
+            )
 
     # --- Behavioral plugins (language-agnostic, always loaded) ---
     # These detect specific failure modes in translation output.

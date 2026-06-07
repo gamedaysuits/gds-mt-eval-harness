@@ -87,7 +87,9 @@ def build_parser() -> argparse.ArgumentParser:
             "  compare          Compare multiple run logs\n"
             "  dashboard        Generate interactive HTML dashboard\n"
             "  list             List available models, prompts, datasets\n"
+            "  setup            Install optional dependencies (COMET, FST)\n"
             "  export           Package a TestReport as a champollion method plugin\n"
+            "  export-config    Generate a champollion.config.json snippet from a TestReport\n"
             "  generate-plugin  Alias for 'export'\n"
             "  logout           Remove stored auth credentials\n"
         ),
@@ -206,6 +208,32 @@ def build_parser() -> argparse.ArgumentParser:
         help="Remove stored authentication credentials",
     )
 
+    # --- SETUP command ---
+    setup_p = sub.add_parser(
+        "setup",
+        help="Install optional dependencies (COMET neural metric, FST runtime)",
+    )
+    setup_p.add_argument(
+        "--all",
+        action="store_true",
+        help="Install all optional dependencies without prompts",
+    )
+    setup_p.add_argument(
+        "--comet",
+        action="store_true",
+        help="Install COMET neural metric (unbabel-comet)",
+    )
+    setup_p.add_argument(
+        "--fst",
+        action="store_true",
+        help="Install FST runtime (pyhfst) for morphological validation",
+    )
+    setup_p.add_argument(
+        "--status",
+        action="store_true",
+        help="Show what's currently installed",
+    )
+
     # --- EXPORT command ---
     export_p = sub.add_parser(
         "export",
@@ -219,6 +247,26 @@ def build_parser() -> argparse.ArgumentParser:
         help="Alias for 'export' — package a TestReport as a champollion method plugin",
     )
     _add_export_args(gp_p)
+
+    # --- EXPORT-CONFIG command ---
+    ec_p = sub.add_parser(
+        "export-config",
+        help="Generate a champollion.config.json snippet from a TestReport",
+    )
+    ec_p.add_argument(
+        "--report",
+        required=True,
+        help="Path to a TestReport JSON file (output of 'mt-eval test')",
+    )
+    ec_p.add_argument(
+        "--target-lang-code",
+        required=True,
+        help="BCP-47 language code (e.g., 'crk', 'fr')",
+    )
+    ec_p.add_argument(
+        "-o", "--output",
+        help="Output file path (default: stdout)",
+    )
 
     return parser
 
@@ -350,16 +398,28 @@ def _add_run_args(parser: argparse.ArgumentParser):
              f"For multi-model parallelism, pass multiple models with -m.",
     )
 
-    # Prompt
+    # Prompt / Coaching
+    # Coaching prompts are free text — the full text is recorded in the
+    # run card for reproducibility. There are no named prompt versions.
     parser.add_argument(
         "-p", "--prompt",
         default="naive",
         help="System prompt version. Built-in: naive, custom. "
-             "Plugin versions registered via PromptProvider. Default: naive",
+             "Use --coaching-file for custom coaching prompts. Default: naive",
+    )
+    parser.add_argument(
+        "--coaching-file",
+        help="Path to coaching prompt text file. The full text is recorded "
+             "in the run card for reproducibility.",
+    )
+    parser.add_argument(
+        "--coaching",
+        help="Inline coaching text (for short prompts). Mutually exclusive "
+             "with --coaching-file.",
     )
     parser.add_argument(
         "--custom-prompt",
-        help="Path to custom system prompt .txt file (use with --prompt custom)",
+        help=argparse.SUPPRESS,  # DEPRECATED: hidden, use --coaching-file
     )
 
     # Output
@@ -391,6 +451,24 @@ def _add_run_args(parser: argparse.ArgumentParser):
         "--method-card",
         help="Path to a method card JSON file (see docs/method-card-spec.md). "
              "Embeds the method description in the run card for leaderboard display.",
+    )
+
+    # Method plugin
+    parser.add_argument(
+        "--method",
+        help="Path to a method plugin directory containing method.json + Python "
+             "module. When set, the harness delegates translation to the plugin. "
+             "Model, prompt, batch size, and tool flags are ignored.",
+    )
+
+    # FST retry
+    parser.add_argument(
+        "--fst-retries",
+        type=int,
+        default=0,
+        help="Number of times to retry translations that fail FST validation. "
+             "Default: 0 (score-only, no retry). Works with the default LLM method "
+             "only — custom method plugins handle their own retries.",
     )
 
     # Champollion config interop
@@ -432,6 +510,27 @@ def args_to_config(args) -> RunConfig:
     if hasattr(args, "hooks") and args.hooks:
         post_hooks = [h.strip() for h in args.hooks.split(",")]
 
+    # Resolve coaching file path.
+    # --coaching-file is the modern flag; --custom-prompt is the deprecated alias.
+    # If both are provided, --coaching-file wins.
+    coaching_file = getattr(args, "coaching_file", None)
+    custom_prompt = getattr(args, "custom_prompt", None)
+    if coaching_file is None and custom_prompt is not None:
+        # Backward compat: treat --custom-prompt as --coaching-file
+        coaching_file = custom_prompt
+
+    # If --coaching (inline text) is provided, write it to a temp file
+    # so it flows through the same coaching_file path.
+    coaching_inline = getattr(args, "coaching", None)
+    if coaching_inline and coaching_file is None:
+        import tempfile
+        tmp = tempfile.NamedTemporaryFile(
+            mode="w", suffix=".txt", delete=False, prefix="coaching_"
+        )
+        tmp.write(coaching_inline)
+        tmp.close()
+        coaching_file = tmp.name
+
     return RunConfig(
         dataset=args.dataset,
         entry_ids=entry_ids,
@@ -452,12 +551,15 @@ def args_to_config(args) -> RunConfig:
         batch_size=args.batch_size if hasattr(args, "batch_size") else DEFAULT_BATCH_SIZE,
         concurrency=args.concurrency if hasattr(args, "concurrency") else DEFAULT_CONCURRENCY,
         prompt_version=args.prompt if hasattr(args, "prompt") else "naive",
-        custom_prompt_path=args.custom_prompt if hasattr(args, "custom_prompt") else None,
+        custom_prompt_path=custom_prompt,  # Legacy field
+        coaching_file=coaching_file,
         post_hooks=post_hooks,
+        fst_retries=getattr(args, "fst_retries", 0),
         output_dir=args.output_dir if hasattr(args, "output_dir") else DEFAULT_OUTPUT_DIR,
         run_name=args.name if hasattr(args, "name") else None,
         temperature=args.temperature if hasattr(args, "temperature") else 0.0,
         dry_run=args.dry_run if hasattr(args, "dry_run") else False,
+        method_path=getattr(args, "method", None),
         champollion_config_path=args.champollion_config if hasattr(args, "champollion_config") else None,
         champollion_cards_dir=args.champollion_cards_dir if hasattr(args, "champollion_cards_dir") else None,
         target_lang_code=args.target_lang_code if hasattr(args, "target_lang_code") else "",
@@ -477,12 +579,15 @@ def cmd_list(what: str, live: bool = False):
             cmd_list_live()
 
     elif what == "prompts":
-        print("\nBuilt-in prompt versions:")
+        print("\nPrompt options:")
         print("  naive    Minimal translation instruction (default)")
-        print("  custom   Load from a .txt file (--custom-prompt)")
+        print("  custom   Load from a .txt file (DEPRECATED — use --coaching-file)")
         print("  champollion  Production-identical prompt from champollion.config.json")
         print("           (requires --champollion-config and --target-lang-code)")
-        print("\n  Register PromptProvider plugins for language-specific prompts.")
+        print("\n  Coaching prompts (recommended):")
+        print("    --coaching-file path.txt   Load coaching prompt from file")
+        print("    --coaching 'text'          Inline coaching text (short prompts)")
+        print("\n  The full coaching text is recorded in the run card for reproducibility.")
 
     elif what == "datasets":
         print(format_registry_table())
@@ -694,6 +799,16 @@ def main():
         logout()
         return
 
+    if args.command == "setup":
+        from mt_eval_harness.setup_wizard import run_setup
+        run_setup(
+            install_all=getattr(args, "all", False),
+            comet_only=getattr(args, "comet", False),
+            fst_only=getattr(args, "fst", False),
+            status_only=getattr(args, "status", False),
+        )
+        return
+
     if args.command == "compare":
         from mt_eval_harness.compare import run_compare
         run_compare(
@@ -726,6 +841,11 @@ def main():
         cmd_export(args)
         return
 
+    if args.command == "export-config":
+        from mt_eval_harness.config_exporter import cmd_export_config
+        cmd_export_config(args)
+        return
+
     # Default: run
     config = args_to_config(args)
 
@@ -739,6 +859,53 @@ def main():
     # and no explicit --prompt was given by the user.
     if config.champollion_config_path and config.prompt_version == "naive":
         config.prompt_version = "champollion"
+
+    # --- "Test What You Ship" mode ---
+    # When --champollion-config is provided, import ALL production config
+    # as defaults (model, temperature, batchSize, coaching). Explicit CLI
+    # flags still override. This ensures eval uses the same settings as
+    # production unless the user says otherwise.
+    if config.champollion_config_path and config.target_lang_code:
+        from mt_eval_harness.champollion_config import load_champollion_config
+        rc = load_champollion_config(
+            config.champollion_config_path,
+            config.target_lang_code,
+            cards_dir=config.champollion_cards_dir,
+        )
+
+        imported_fields = []
+
+        # Import model if user didn't explicitly set --model
+        # (argparse default is DEFAULT_MODEL)
+        if config.model == DEFAULT_MODEL and rc.model:
+            config.model = rc.model
+            imported_fields.append(f"model={rc.model}")
+
+        # Import temperature if user didn't explicitly set --temperature
+        # (argparse default is 0.0 for deterministic scoring)
+        if config.temperature == 0.0 and rc.temperature is not None:
+            config.temperature = rc.temperature
+            imported_fields.append(f"temperature={rc.temperature}")
+        elif rc.temperature is not None and rc.temperature != config.temperature:
+            # User explicitly set a different temperature — warn about divergence
+            print(
+                f"  ℹ Production temperature={rc.temperature}, "
+                f"harness using temperature={config.temperature}. "
+                f"Pass --temperature {rc.temperature} for production-identical output."
+            )
+
+        # Import batch_size if user didn't explicitly set --batch-size
+        if config.batch_size == DEFAULT_BATCH_SIZE and rc.batch_size:
+            config.batch_size = rc.batch_size
+            imported_fields.append(f"batchSize={rc.batch_size}")
+
+        # Import coaching prompt if user didn't provide one
+        if not config.coaching_file and rc.coaching_prompt:
+            config.coaching_file = rc.coaching_file
+            imported_fields.append("coachingFile")
+
+        if imported_fields:
+            print(f"  ℹ Imported from champollion.config.json: {', '.join(imported_fields)}")
 
     # Register the ChampollionPromptProvider when champollion config is active
     prompt_providers = None

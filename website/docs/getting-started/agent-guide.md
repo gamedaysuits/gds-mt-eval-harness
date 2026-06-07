@@ -81,7 +81,7 @@ Other commands: `mt-eval test <log.json>` (score a completed run), `mt-eval comp
 
 ## Build Your Own Method
 
-The harness accepts any Python class that implements the `TranslationProcess` protocol:
+The harness accepts any Python class that implements the `TranslationMethod` protocol:
 
 ```python
 from mt_eval_harness.config import RunConfig
@@ -138,7 +138,7 @@ async def main():
         model="google/gemini-2.5-flash",
         condition="my-method-v1",
     )
-    results = await execute_run(config, process=YourMethod())
+    results = await execute_run(config, method=YourMethod())
     print(f"Composite: {results['scores']['composite']}")
 
 asyncio.run(main())
