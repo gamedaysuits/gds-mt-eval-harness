@@ -10,6 +10,20 @@ slug: '/how-it-works'
 
 ---
 
+> [!IMPORTANT]
+> **Scope.** This platform evaluates **formal written text translation** — documents, educational materials, official communications, UI strings. It is not a chatbot, real-time interpreter, or unrestricted-domain conversational system. The leaderboard ranks translation methods against curated parallel corpora in specific text domains (see [Benchmark Specification §2.7](/docs/specifications/benchmark#27-domain) for the domain taxonomy). MT is infrastructure for language revitalization, not a substitute for it. Children learn language from people, not machines.
+
+### Current Domain Coverage
+
+| Domain | Tier Coverage | Status | Notes |
+|--------|--------------|--------|-------|
+| Official / government | Tiers 1–5 | Active | EdTeKLA corpus |
+| Educational / textbook | Tiers 1–4 | Active | EdTeKLA corpus |
+| Narrative / literary | Limited | Planned | Some entries in gold standard |
+| Religious / scriptural | Reference only | Not evaluated | FLORES+ (Bible-domain); not used for official scoring |
+| Conversational | Not in scope | By design | This system evaluates written text, not speech |
+| Technical / scientific | Not in scope | Future | Requires domain-specific terminology validation |
+
 ## 1. The Problem: Machine Translation ≠ Machine Learning
 
 Machine translation for low-resource languages (LRLs) is commonly framed as a machine learning problem: collect data, train a model, deploy. This framing is wrong, and the error is consequential — it directs funding, talent, and infrastructure toward an approach that structurally cannot work for the majority of the world's languages.
@@ -199,7 +213,28 @@ On Kaggle, the governance organization uploads their linguistic data to Google's
 
 ---
 
-## 5. Who This Serves
+## 5. Evaluation Philosophy: Microeval and LYSS
+
+Standard MT metrics (BLEU, chrF++, COMET) are designed to generalize across languages. That generality is their strength — and their blindspot. For polysynthetic languages, a morphologically invalid word that shares character n-grams with the reference scores well on chrF++ but would be recognized as gibberish by any speaker.
+
+**Microeval development** means building evaluation metrics tailored to specific languages using the best available linguistic tools. The framework is called **LYSS** (Linguistically-informed Yield & Structural Scoring):
+
+| Component | What it measures | Tool | Status |
+|-----------|-----------------|------|--------|
+| **LYSS-fst** | Morphological validity | Finite-state transducer | ✅ Implemented (Plains Cree) |
+| **LYSS-eq** | Linguistic equivalence | Linguist-curated variant rules | ✅ Implemented (Plains Cree) |
+| **LYSS-sem** | Semantic preservation | Language-specific semantic models | ✅ Implemented (Plains Cree) |
+
+The universal metrics (chrF++, BLEU) serve as baselines and as the primary signals for languages without LYSS tooling. Wherever language-specific tools exist, LYSS components carry the scoring weight — because the things that matter most for each language are the things only language-specific tools can measure.
+
+For the full LYSS specification and composite scoring logic, see [SCORING_SPEC.md §4](/docs/specifications/scoring#4-composite-score).
+
+> [!WARNING]
+> **Cross-run comparability.** When comparing runs with different metric availability (e.g., one run has FST scores, another doesn't), the composite scores are not directly comparable. The composite normalizes to available metrics, but a run evaluated on 5 metrics carries more information than one evaluated on 2. The leaderboard indicates metric coverage for each entry.
+
+---
+
+## 6. Who This Serves
 
 ### For ML Engineers & Researchers
 
@@ -223,7 +258,7 @@ An open challenge with real-world impact. Build a translation method for an unde
 
 ---
 
-## 6. Social and Technical Context
+## 7. Social and Technical Context
 
 ### 6.1 Language Revitalization Is Accelerating
 
@@ -243,7 +278,24 @@ The OCAP® principles (Ownership, Control, Access, Possession), the CARE princip
 
 ---
 
-## 7. Current State
+## 8. Tensions and Limitations
+
+This project uses a Western mechanism — competitive benchmarking — to serve knowledge systems that are often communal, relational, and Elder-guided. That tension is real and must be named, not resolved by assertion.
+
+**Benchmarking vs. communal knowledge.** Leaderboards rank individuals and optimize numerical scores. Indigenous knowledge traditions emphasize relational authority, communal correction, and relationship-based legitimacy. We cannot claim to serve these knowledge systems while building a platform whose core mechanism is individual competitive optimization. The sovereignty architecture (§4) — where communities own methods, control evaluation, and decide what gets deployed — is our structural response, but it does not dissolve the tension. A leaderboard is still a leaderboard.
+
+**What we are doing about it.** The platform supports team and community submissions alongside individual ones. The leaderboard frames results as "current state of the art" rather than "who is winning." The governance organization — not the leaderboard score — determines what gets deployed. No automated score entitles a developer to anything; the community decides. And we maintain an ongoing advisory feedback loop with partner communities about whether the platform's framing and incentive structure serves them. If it doesn't, we change it.
+
+**MT is not revitalization.** Translation converts text between languages. Revitalization creates new speakers. A perfect MT system does not solve the transmission problem, the prestige problem, or the pedagogical problem. It might even create the illusion that "the computer can speak the language," undermining urgency for human transmission. We build MT as infrastructure — draft translation for post-editing, morphological tools for language learning apps, political leverage for communities demanding services in their language — not as a replacement for intergenerational transmission. The community controls if, when, and how the technology is deployed.
+
+This section exists because these tensions were identified in an invited critique (May 2026) and we committed to naming them publicly rather than burying them in internal documents.
+
+> [!NOTE]
+> **Leaderboard scores are automated proxies.** All scores displayed on the leaderboard are automated measurements computed by the evaluation harness under controlled conditions. They indicate relative method performance but do not constitute quality guarantees. Community-validated methods are marked separately. No automated score entitles a developer to deployment — the governance organization makes that decision.
+
+---
+
+## 9. Current State
 
 ### What Exists Today
 
@@ -268,7 +320,7 @@ The OCAP® principles (Ownership, Control, Access, Possession), the CARE princip
 
 ---
 
-## 8. Getting Started
+## 10. Getting Started
 
 **Build a method:** Clone the [eval harness](https://github.com/gamedaysuits/arena), run a baseline experiment, and see where you land on the leaderboard.
 

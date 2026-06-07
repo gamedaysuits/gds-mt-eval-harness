@@ -497,6 +497,13 @@ def assemble_run_card(
             "fst_acceptance_rate": fst_acceptance_rate,
             "morphological_accuracy": None,      # 🔲 planned — requires gold annotations
             "chrf_plus_plus": corpus_chrf,
+            # TER: Translation Edit Rate (sacrebleu) — lower is better.
+            # Excluded from composite (Appendix A: correlates with chrF++,
+            # including both would double-count surface similarity).
+            "ter": overall.get("corpus_ter"),
+            # Length ratio: avg(len(predicted) / len(expected)) across entries.
+            # Diagnostic, not a quality signal — ideal is 1.0.
+            "length_ratio": overall.get("avg_length_ratio"),
             # Wired from CrkSemanticMetric: weighted verdict score (0.0–1.0)
             "semantic_score": semantic_score,
             "composite": composite,
@@ -546,6 +553,38 @@ def assemble_run_card(
         # Additional scores not in spec but useful
         "corpus_bleu": overall.get("corpus_bleu"),
     }
+
+    # -------------------------------------------------------------------
+    # Throughput / speed metrics (SCORING_SPEC §7)
+    #
+    # These are derived from existing RunLog fields. They are NOT in the
+    # composite — they measure speed, not quality.
+    # -------------------------------------------------------------------
+    elapsed_s = run_log.get("elapsed_s")
+    total_tokens = prompt_tokens + completion_tokens
+
+    tokens_per_second = None
+    if elapsed_s and elapsed_s > 0 and total_tokens > 0:
+        tokens_per_second = round(total_tokens / elapsed_s, 2)
+
+    entries_per_minute = None
+    if elapsed_s and elapsed_s > 0 and entry_count > 0:
+        entries_per_minute = round(entry_count / (elapsed_s / 60), 2)
+
+    # cost_per_source_char: normalize cost by total source characters.
+    # Comparable across languages with different tokenization.
+    total_source_chars = sum(
+        len(r.get("source", "")) for r in results
+    )
+    cost_per_source_char = None
+    if total_source_chars > 0 and total_cost_usd > 0:
+        cost_per_source_char = round(
+            total_cost_usd / total_source_chars, 8
+        )
+
+    run_card["scores"]["tokens_per_second"] = tokens_per_second
+    run_card["scores"]["entries_per_minute"] = entries_per_minute
+    run_card["totals"]["cost_per_source_char"] = cost_per_source_char
 
     # Add COMET score if computed
     if overall.get("comet_score") is not None:
@@ -752,6 +791,13 @@ def publish_to_supabase(
         "batch_size": run_card.get("batch_size"),
         "temperature": run_card.get("temperature"),
         "max_tokens": run_card.get("max_tokens"),
+        # New surface metrics — TER and length ratio
+        "ter": scores.get("ter"),
+        "length_ratio": scores.get("length_ratio"),
+        # Throughput metrics
+        "tokens_per_second": scores.get("tokens_per_second"),
+        "entries_per_minute": scores.get("entries_per_minute"),
+        "cost_per_source_char": totals.get("cost_per_source_char"),
     }
 
     # --- Preview ---
@@ -772,6 +818,10 @@ def publish_to_supabase(
         ci = cis["corpus_chrf"]
         print(f"    95% CI:      [{ci['ci_lower']:.1f} – {ci['ci_upper']:.1f}]")
     print(f"  BLEU:          {run_card.get('corpus_bleu', 'N/A')}")
+    if scores.get("ter") is not None:
+        print(f"  TER:           {scores['ter']:.2f}")
+    if scores.get("length_ratio") is not None:
+        print(f"  Length Ratio:  {scores['length_ratio']:.4f}")
     if scores.get("comet_score") is not None:
         warning = " ⚠️  low-resource" if scores.get("comet_low_resource_warning") else ""
         print(f"  COMET:         {scores['comet_score']:.4f}{warning}")
@@ -789,6 +839,12 @@ def publish_to_supabase(
     print(f"  Cost:          ${totals['total_cost_usd']:.4f}")
     if totals.get("cost_per_entry_usd"):
         print(f"  Cost/entry:    ${totals['cost_per_entry_usd']:.6f}")
+    if totals.get("cost_per_source_char"):
+        print(f"  Cost/src char: ${totals['cost_per_source_char']:.8f}")
+    if scores.get("tokens_per_second") is not None:
+        print(f"  Tokens/sec:    {scores['tokens_per_second']:.1f}")
+    if scores.get("entries_per_minute") is not None:
+        print(f"  Entries/min:   {scores['entries_per_minute']:.1f}")
     print(f"  Fingerprint:   {fingerprint_hash[:16]}...")
     print(f"  UUID:          {card_id}")
 

@@ -32,7 +32,7 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any
 
-from sacrebleu.metrics import CHRF, BLEU
+from sacrebleu.metrics import CHRF, BLEU, TER
 
 
 # ---------------------------------------------------------------------------
@@ -55,6 +55,8 @@ class EntryMetrics:
     exact_match: bool = False
     chrf_score: float = 0.0
     bleu_score: float = 0.0
+    ter_score: float = 0.0
+    length_ratio: float = 0.0
 
     # From RunLog
     latency_s: float = 0.0
@@ -204,6 +206,7 @@ def _analyze(
     # Setup sacrebleu metrics if available
     chrf_metric = CHRF(word_order=2)
     bleu_metric = BLEU()
+    ter_metric = TER()
 
     plugins = metric_plugins or []
 
@@ -280,6 +283,26 @@ def _analyze(
             except Exception:
                 em.bleu_score = 0.0
 
+        # --- TER (Translation Edit Rate) ---
+        # Lower is better: minimum edit distance / reference length.
+        # sacrebleu returns TER as a 0–100 scale percentage.
+        if em.expected and em.predicted:
+            try:
+                em.ter_score = ter_metric.corpus_score(
+                    [em.predicted], [[em.expected]]
+                ).score
+            except Exception:
+                em.ter_score = 0.0
+
+        # --- Length Ratio ---
+        # Character-level: len(predicted) / len(expected).
+        # Ideal is 1.0. Values <0.5 suggest truncation; >2.0 suggest
+        # hallucination/inflation. Trivial diagnostic metric.
+        if em.expected:
+            em.length_ratio = round(
+                len(em.predicted) / len(em.expected), 4
+            ) if len(em.expected) > 0 else 0.0
+
         # --- Plugin metrics ---
         entry_dict = {
             "id": em.id,
@@ -333,6 +356,26 @@ def _analyze(
             )
         except Exception:
             pass
+
+    # --- Corpus-level TER ---
+    if all_preds and all_refs:
+        try:
+            overall["corpus_ter"] = round(
+                ter_metric.corpus_score(all_preds, [all_refs]).score, 2
+            )
+        except Exception:
+            pass
+
+    # --- Average Length Ratio ---
+    # Averaged across non-error entries. A corpus-level diagnostic:
+    # significantly below 1.0 indicates systematic truncation,
+    # above 1.0 indicates systematic inflation.
+    non_error_with_ref = [
+        em for em in entry_metrics if not em.error and em.expected
+    ]
+    if non_error_with_ref:
+        avg_lr = sum(em.length_ratio for em in non_error_with_ref) / len(non_error_with_ref)
+        overall["avg_length_ratio"] = round(avg_lr, 4)
 
     # --- COMET scoring (neural metric) ---
     # COMET runs on non-error entries with source, expected, and predicted.

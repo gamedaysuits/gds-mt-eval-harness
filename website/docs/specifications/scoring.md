@@ -84,8 +84,8 @@ Surface metrics compare the predicted translation to the reference translation a
 | `equivalent_match_rate` | Equivalent Match | ⚡ Partial | 0.0–1.0 | Both | Does the predicted output match any accepted variant? For CRK: implemented via the CRK method plugin's `CrkLinterMetric` using deterministic variant-class rules (word order, orthographic, optional particle, lemma synonym, progressive ambiguity). The CRK linter is loaded automatically when the CRK method plugin is active. Generic cross-language implementation requires per-entry `variants[]` in corpus. |
 | `chrf_plus_plus` | chrF++ | ✅ Implemented | 0–100 | Both | Character n-gram F-score (sacrebleu). Robust to morphological variation. The primary surface metric for agglutinative/polysynthetic languages. Per-entry uses `sentence_chrf`; corpus uses `corpus_chrf`. |
 | `bleu` | BLEU | ✅ Implemented | 0–100 | Corpus | Word-level n-gram precision (sacrebleu). **Excluded from composite** — word-level scoring penalizes morphological variation unfairly. Computed and reported for compatibility with MT literature. |
-| `ter` | Translation Edit Rate | 🔲 Planned | 0–∞ (lower is better) | Both | Minimum edit distance between predicted and reference, normalized by reference length (sacrebleu `corpus_ter`). Already available in our sacrebleu dependency. |
-| `length_ratio` | Length Ratio | 🔲 Planned | 0–∞ (1.0 is ideal) | Both | `len(predicted) / len(reference)` in characters. Detects truncation (<0.5) and inflation/hallucination (>2.0). Trivial to implement. |
+| `ter` | Translation Edit Rate | ✅ Implemented | 0–∞ (lower is better) | Both | Minimum edit distance between predicted and reference, normalized by reference length (sacrebleu `corpus_ter`). Computed alongside chrF++ and BLEU. Excluded from composite — correlates with chrF++ so including both would double-count surface similarity. |
+| `length_ratio` | Length Ratio | ✅ Implemented | 0–∞ (1.0 is ideal) | Both | `len(predicted) / len(reference)` in characters. Detects truncation (<0.5) and inflation/hallucination (>2.0). Averaged across entries at corpus level. |
 
 ### 2.2 Structural Metrics
 
@@ -185,6 +185,9 @@ A metric is "available" if its value in the run card is a number (not `null`). W
 
 **This means the composite is always comparable within a run:** it uses whatever metrics are available and normalizes accordingly. Cross-run comparison is valid when runs use the same set of available metrics.
 
+> [!WARNING]
+> **Cross-run comparability.** When comparing runs with different metric availability (e.g., one run has FST scores, another doesn't), the composite scores are **not directly comparable**. A composite of 0.72 computed from 5 metrics carries more information than a composite of 0.72 computed from 2 metrics. The leaderboard displays a warning when metric coverage differs between compared runs. For rigorous comparison, use paired bootstrap significance tests (§8.2) on shared metrics only.
+
 ### 4.2 Input Normalization
 
 Before entering the composite formula, all metrics must be on a **0.0–1.0 scale** where 1.0 = perfect:
@@ -261,6 +264,9 @@ To add a new metric to the composite:
 ## 5. Quality Tiers
 
 These tiers are heuristic labels on automated composite scores. They describe what the scores tend to mean in practice, based on human review of outputs at each level. **They are not validated quality judgments** — only human review can confirm actual usability.
+
+> [!IMPORTANT]
+> **Automated tiers are provisional.** These labels are nominations for review, not quality declarations. A method reaching "Deployable" on automated metrics is a candidate for community evaluation — not a product to ship. Only human review by bilingual speakers can confirm actual usability (see [BENCHMARK_SPEC §7](/docs/specifications/benchmark#7-human-validation)). No method can claim Deployable or above without community review confirming speakers agree the output is usable. Tier boundaries may differ across languages as human validation data accumulates.
 
 | Tier | Composite Range | What a Speaker Typically Sees |
 |------|----------------|-------------------------------|
@@ -384,8 +390,8 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "equivalent_matches":     45,           // ⚡ partial (CRK: CrkLinterMetric)
     "chrf_plus_plus":         80.65,        // 0–100 (sacrebleu native scale)
     "bleu":                   54.78,        // 0–100, NOT in composite
-    "ter":                    null,         // 🔲 planned, 0–∞ (lower=better)
-    "length_ratio":           null,         // 🔲 planned, ideal=1.0
+    "ter":                    42.3,         // ✅ implemented, 0–∞ (lower=better)
+    "length_ratio":           1.03,         // ✅ implemented, ideal=1.0
 
     // §2.2 Structural metrics
     "fst_acceptance_rate":    1.0,          // 0.0–1.0
@@ -442,8 +448,8 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "avg_latency_seconds":    0.234,
     "median_latency_seconds": 0.190,
     "p95_latency_seconds":    0.415,
-    "tokens_per_second":      null,         // 🔲 needs total_tokens / elapsed
-    "entries_per_minute":     null          // 🔲 needs entry_count / (elapsed/60)
+    "tokens_per_second":      4462.5,       // ✅ total_tokens / elapsed
+    "entries_per_minute":     82.30         // ✅ entry_count / (elapsed/60)
   },
 
   "tokens": {

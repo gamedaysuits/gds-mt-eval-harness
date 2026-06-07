@@ -420,6 +420,9 @@ Quality tiers are heuristic labels on automated composite scores. They describe 
 
 **The tier thresholds and descriptions are defined in `SCORING_SPEC.md` §5.** The tiers are: Baseline (0.00–0.30), Emerging (0.30–0.50), Functional (0.50–0.70), Deployable (0.70–0.85), and Fluent (0.85–1.00).
 
+> [!IMPORTANT]
+> **Automated tiers are provisional.** These labels are nominations for review, not quality declarations. A method reaching "Deployable" on automated metrics is a candidate for community evaluation — not a product to ship. Only human review (§7) can confirm actual usability. Tier boundaries may differ across languages.
+
 These tiers are provisional. They will be recalibrated as human validation data accumulates and we learn where the actual "a speaker finds this useful" threshold falls for each language. The tier boundaries may differ across languages.
 
 No method can claim **Deployable** or above without community review confirming that bilingual speakers agree the output is usable.
@@ -662,6 +665,8 @@ Methods are classified by type. The canonical enum is defined in the harness cod
 | Verification tier | Who validated (§9.4) |
 | Date | When evaluated |
 
+> [!NOTE]
+> **All scores displayed on the leaderboard are automated proxy measurements.** They indicate relative method performance under controlled conditions but do not constitute quality guarantees. Community-validated methods are marked separately via the Verification tier column. For methodology details, see [SCORING_SPEC.md](/docs/specifications/scoring).
 
 ---
 

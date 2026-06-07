@@ -28,6 +28,9 @@ This harness provides the infrastructure to **crowdsource** that work:
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 ```
 
+> [!IMPORTANT]
+> **Scope.** This harness evaluates **formal written text translation** — documents, educational materials, UI strings, official communications. It is not a chatbot, real-time interpreter, or unrestricted-domain conversational system. The competitive leaderboard benchmarks translation methods against curated parallel corpora in specific text domains. See the [Benchmark Specification](website/docs/specifications/benchmark-spec.md) for corpus domains and the [Scoring Specification](website/docs/specifications/scoring.md) for quality tier definitions.
+
 ## Quick Start
 
 ```bash
