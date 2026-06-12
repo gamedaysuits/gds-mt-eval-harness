@@ -90,7 +90,8 @@ def enrich_results(
     """
     corpus_by_id = {e["id"]: e for e in corpus}
     enriched = []
-    total_cost = 0.0
+    total_cost = 0.0   # actual API spend THIS run (cache hits excluded)
+    cached_cost = 0.0  # original price of the cache-hit entries
 
     for result in results:
         entry = corpus_by_id.get(result["id"], {})
@@ -99,10 +100,17 @@ def enrich_results(
             config.model_id,
             pricing,
         )
-        total_cost += entry_cost
+        # Cache hits cost nothing this run — report actual spend
+        # accurately, with the original price carried alongside
+        # (founder decision 2026-06-12).
+        if result.get("cached"):
+            cached_cost += entry_cost
+        else:
+            total_cost += entry_cost
 
         enriched.append({
             "id": result["id"],
+            "cached": bool(result.get("cached", False)),
             "source": entry.get(config.source_field, ""),
             "expected": entry.get(config.target_field, ""),
             "raw_predicted": result.get("raw_predicted", result.get("predicted", "")),
@@ -119,7 +127,7 @@ def enrich_results(
             "metadata": result.get("metadata", {}),
         })
 
-    return enriched, round(total_cost, 4)
+    return enriched, round(total_cost, 4), round(cached_cost, 4)
 
 
 # ---------------------------------------------------------------------------
@@ -134,6 +142,7 @@ def build_run_log(
     elapsed_s: float,
     cache_hits: int,
     total_cost: float,
+    cached_cost: float = 0.0,
     system_prompt: str = "",
     system_prompt_sha256: str = "",
     corpus_sha256: str = "",
@@ -181,7 +190,10 @@ def build_run_log(
         "elapsed_s": round(elapsed_s, 1),
         "total_entries": len(enriched_results),
         "cache_hits": cache_hits,
+        # total_cost_usd is ACTUAL spend this run; cached entries carry
+        # their original price in cached_cost_usd.
         "total_cost_usd": total_cost,
+        "cached_cost_usd": cached_cost,
         "provenance": provenance,
         "results": enriched_results,
     }

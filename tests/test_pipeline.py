@@ -69,7 +69,7 @@ class TestEnrichResults:
         """Enriched results should include source and expected from corpus."""
         results = self._make_results(2)
         corpus = self._make_corpus(2)
-        enriched, _ = enrich_results(results, corpus, RunConfig())
+        enriched, _, _ = enrich_results(results, corpus, RunConfig())
         assert enriched[0]["source"] == "source_0"
         assert enriched[0]["expected"] == "expected_0"
         assert enriched[1]["source"] == "source_1"
@@ -78,14 +78,14 @@ class TestEnrichResults:
         """Enriched results should keep the predicted translation."""
         results = self._make_results(1)
         corpus = self._make_corpus(1)
-        enriched, _ = enrich_results(results, corpus, RunConfig())
+        enriched, _, _ = enrich_results(results, corpus, RunConfig())
         assert enriched[0]["predicted"] == "translation_0"
 
     def test_includes_segment_and_difficulty(self):
         """Corpus segment and difficulty should carry through."""
         results = self._make_results(1)
         corpus = self._make_corpus(1)
-        enriched, _ = enrich_results(results, corpus, RunConfig())
+        enriched, _, _ = enrich_results(results, corpus, RunConfig())
         assert enriched[0]["segment"] == "seg_0"
         assert enriched[0]["difficulty"] == 1
 
@@ -93,7 +93,7 @@ class TestEnrichResults:
         """If a result ID is not in corpus, fields default to empty."""
         results = [{"id": 999, "predicted": "orphan", "usage": {}, "latency_s": 0.1}]
         corpus = self._make_corpus(1)  # Only has id=0
-        enriched, _ = enrich_results(results, corpus, RunConfig())
+        enriched, _, _ = enrich_results(results, corpus, RunConfig())
         assert enriched[0]["source"] == ""
         assert enriched[0]["expected"] == ""
 
@@ -105,7 +105,7 @@ class TestEnrichResults:
         config = RunConfig(model="unknown/nonexistent-model-12345")
         results = self._make_results(1)
         corpus = self._make_corpus(1)
-        enriched, total_cost = enrich_results(results, corpus, config, pricing=None)
+        enriched, total_cost, _ = enrich_results(results, corpus, config, pricing=None)
         assert total_cost == 0.0
 
     def test_custom_field_names(self):
@@ -113,7 +113,7 @@ class TestEnrichResults:
         config = RunConfig(source_field="english", target_field="cree_sro")
         corpus = [{"id": 0, "english": "Hello", "cree_sro": "tanisi", "segment": "basic"}]
         results = [{"id": 0, "predicted": "tanisi", "usage": {}, "latency_s": 0.5}]
-        enriched, _ = enrich_results(results, corpus, config)
+        enriched, _, _ = enrich_results(results, corpus, config)
         assert enriched[0]["source"] == "Hello"
         assert enriched[0]["expected"] == "tanisi"
 
@@ -303,3 +303,25 @@ class TestApplyHooks:
         loop.close()
 
         assert out["predicted"] == "test"
+
+
+class TestCachedCostSplit:
+    """Cached entries report $0 actual spend with the original price
+    alongside (founder decision 2026-06-12)."""
+
+    def test_cached_entries_split_out_of_actual_spend(self):
+        from mt_eval_harness.pipeline import enrich_results
+        from mt_eval_harness.config import RunConfig
+
+        corpus = [{"id": "a", "source": "x", "reference": "y"},
+                  {"id": "b", "source": "x2", "reference": "y2"}]
+        usage = {"prompt_tokens": 10, "completion_tokens": 10, "cost": 0.5}
+        results = [
+            {"id": "a", "predicted": "p", "usage": dict(usage), "cached": True},
+            {"id": "b", "predicted": "p2", "usage": dict(usage)},
+        ]
+        enriched, total, cached = enrich_results(results, corpus, RunConfig())
+        assert cached > 0 and total > 0
+        assert abs(cached - total) < 1e-9  # same usage → same price, split
+        assert enriched[0]["cached"] is True
+        assert enriched[1]["cached"] is False

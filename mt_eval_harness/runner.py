@@ -374,7 +374,8 @@ async def execute_run(
     elapsed = time.monotonic() - run_start
 
     # --- Enrich + Build RunLog ---
-    enriched, total_cost = enrich_results(results, corpus, config, pricing)
+    enriched, total_cost, cached_cost = enrich_results(
+        results, corpus, config, pricing)
 
     # Collect method card if a method plugin was used
     method_card_data = None
@@ -400,6 +401,7 @@ async def execute_run(
         elapsed_s=elapsed,
         cache_hits=cache_hits,
         total_cost=total_cost,
+        cached_cost=cached_cost,
         system_prompt=system_prompt,
         system_prompt_sha256=system_prompt_sha256,
         corpus_sha256=corpus_sha256,
@@ -431,7 +433,8 @@ async def execute_run(
     print(f"  Entries:      {len(enriched)}")
     print(f"  Cache hits:   {cache_hits}")
     print(f"  Elapsed:      {elapsed:.1f}s")
-    print(f"  Total cost:   ${total_cost:.4f}")
+    cached_note = f"  (+${cached_cost:.4f} original price of cached entries)" if cached_cost else ""
+    print(f"  Total cost:   ${total_cost:.4f}{cached_note}")
     print(f"  Run log:      {output_path}")
     print("=" * 60)
 

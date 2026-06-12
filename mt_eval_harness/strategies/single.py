@@ -64,6 +64,7 @@ class SingleStrategy:
                 done_count += 1
                 report_progress(done_count, total)
                 cached["id"] = entry["id"]
+                cached["cached"] = True
                 return cached
 
             # Build messages for the LLM

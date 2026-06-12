@@ -103,7 +103,7 @@ class BatchStrategy:
                 # cached model outputs onto the CURRENT batch entries, as
                 # the single strategy already does.
                 rekeyed = [
-                    {**result, "id": entry["id"]}
+                    {**result, "id": entry["id"], "cached": True}
                     for result, entry in zip(cached, batch)
                 ]
                 cache_hits += len(batch)

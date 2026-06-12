@@ -61,6 +61,7 @@ class EntryMetrics:
     # From RunLog
     latency_s: float = 0.0
     cost_usd: float = 0.0
+    cached: bool = False  # result came from the local cache (cost_usd is the ORIGINAL price)
     tool_call_count: int = 0
     error: str | None = None
 
@@ -258,6 +259,7 @@ def _analyze(
             domain=r.get("domain", ""),
             latency_s=r.get("latency_s", 0),
             cost_usd=r.get("cost_usd", 0),
+            cached=bool(r.get("cached", False)),
             tool_call_count=r.get("tool_call_count", 0),
             error=r.get("error"),
         )
@@ -674,9 +676,15 @@ def _compute_overall(entries: list[EntryMetrics]) -> dict:
         overall["avg_latency_s"] = round(
             sum(em.latency_s for em in non_error) / n, 3
         )
+        # Actual spend this run; cache hits carry their ORIGINAL price in
+        # cached_cost_usd so cached reruns are visibly ~$0 actual.
         overall["total_cost_usd"] = round(
-            sum(em.cost_usd for em in non_error), 4
+            sum(em.cost_usd for em in non_error if not em.cached), 4
         )
+        overall["cached_cost_usd"] = round(
+            sum(em.cost_usd for em in non_error if em.cached), 4
+        )
+        overall["cached_entries"] = sum(1 for em in non_error if em.cached)
         overall["total_tool_calls"] = sum(em.tool_call_count for em in non_error)
 
     return overall

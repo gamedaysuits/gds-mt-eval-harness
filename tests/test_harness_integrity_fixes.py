@@ -276,3 +276,6 @@ def test_batch_cache_hits_rekey_entry_ids(tmp_path):
     assert hits == 2
     assert [r["id"] for r in results] == ["fresh_1", "fresh_2"]
     assert [r["predicted"] for r in results] == ["moi", "maailma"]
+    # Cache hits are flagged so cost accounting reports actual spend
+    # accurately with the original price alongside.
+    assert all(r["cached"] is True for r in results)

@@ -736,6 +736,10 @@ def assemble_run_card(
             "reasoning_tokens": reasoning_tokens,
             "cached_tokens": cached_tokens,
             "total_cost_usd": total_cost_usd,
+            # Original price of cache-hit entries — total_cost_usd is the
+            # ACTUAL spend of this run (founder decision 2026-06-12:
+            # cached runs report accurately, original price alongside).
+            "cached_cost_usd": run_log.get("cached_cost_usd", 0),
             "cost_per_entry_usd": cost_per_entry,
         },
 
