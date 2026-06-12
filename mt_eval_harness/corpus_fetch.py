@@ -1,10 +1,12 @@
 """
 Corpus Fetch — fetch-from-source resolution for missing corpora.
 
-Champollion does not host third-party corpora in git. Instead, each
-fetchable corpus has a corpora card (``cli/shared/corpora-cards/``)
-whose ``source`` block records where the data lives upstream and how to
-rebuild it locally:
+Champollion does not host third-party corpora in git. A missing corpus
+file can instead be rebuilt locally from a pinned upstream source,
+described in one of two places:
+
+1. A **corpora card** (``cli/shared/corpora-cards/``) whose ``source``
+   block records the upstream repo and builder:
 
     "source": {
         "repo_url": "https://github.com/EdTeKLA/IndigenousLanguages_Corpora",
@@ -15,23 +17,36 @@ rebuild it locally:
         "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     }
 
+2. A **registry dataset entry** (``arena/datasets/registry.json``) with
+   ``access: "fetch-from-source"`` and a ``source_export`` block pinning
+   the upstream export URL, its sha256, and the extraction recipe (the
+   Tatoeba mesh corpora use this — see
+   ``corpora_builder.adapters.tatoeba_challenge_adapter``):
+
+    "source_export": {
+        "builder": "tatoeba-challenge",
+        "url":     "https://object.pouta.csc.fi/Tatoeba-Challenge-devtest/test-v2023-09-26.tar",
+        "sha256":  "<sha256 of the export archive>",
+        "recipe":  {"split": "test", "seed": 42, ...},
+        "license": "CC-BY-2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/"
+    }
+
 When the harness is asked to load a corpus whose file is missing, this
 module:
 
-    1. Finds the corpora-cards directory (same monorepo-root walk that
-       ``language_cards`` / ``champollion_config`` use for language
-       cards, but targeting ``cli/shared/corpora-cards/``).
-    2. Matches the missing path against each card's ``dev.dataFile`` /
-       ``test.dataFile``.
-    3. Asks the user to confirm the upstream license and download
+    1. Matches the missing path against corpora cards first (matching
+       each card's ``dev.dataFile`` / ``test.dataFile``), then against
+       registry ``fetch-from-source`` entries (matching ``path``).
+    2. Asks the user to confirm the upstream license and download
        (``--yes`` / ``assume_yes`` / ``CI=true`` skip the prompt; a
        non-interactive stdin without those flags is an error, never a
        hang).
-    4. Runs the card's builder adapter (from
-       ``arena/scripts/corpora-builder``) to download from the upstream
-       repo and rebuild the corpus deterministically into the
-       gitignored cache ``arena/datasets/.cache/``.
-    5. Verifies the build against the card's ``sha256`` when present.
+    3. Runs the declared builder (from ``arena/scripts/corpora-builder``)
+       to download from the upstream source and rebuild the corpus
+       deterministically into the gitignored cache
+       ``arena/datasets/.cache/``.
+    4. Verifies the build against the pinned ``sha256`` when present.
 
 The builders themselves live in the corpora-builder package so that the
 download/parse logic has exactly one home.
@@ -55,6 +70,10 @@ _MONOREPO_ROOT = _ARENA_DIR.parent                      # Champollion/
 
 #: Gitignored build cache for fetched corpora.
 CACHE_DIR = _ARENA_DIR / "datasets" / ".cache"
+
+#: Dataset registry — fetch-from-source entries carry a `source_export`
+#: block describing how to rebuild their corpus from the upstream export.
+REGISTRY_PATH = _ARENA_DIR / "datasets" / "registry.json"
 
 
 # ---------------------------------------------------------------------------
@@ -197,6 +216,82 @@ BUILDERS: dict[str, Callable[..., Path]] = {
 
 
 # ---------------------------------------------------------------------------
+# Registry-based fetch-from-source (source_export entries)
+# ---------------------------------------------------------------------------
+
+def find_registry_export_for_corpus(
+    corpus_path: str | Path,
+    registry_path: Path | None = None,
+) -> dict[str, Any] | None:
+    """Find a fetch-from-source registry entry matching a corpus path.
+
+    Same matching semantics as ``find_card_for_corpus``: the registry's
+    ``path`` is relative to ``arena/datasets/`` while callers pass
+    arbitrary paths, so an entry matches when the requested path ends
+    with it (or, as a fallback, shares its filename).
+    """
+    registry_path = registry_path or REGISTRY_PATH
+    if not Path(registry_path).is_file():
+        return None
+    try:
+        registry = json.loads(
+            Path(registry_path).read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError) as exc:
+        logger.warning("Cannot read registry %s: %s", registry_path, exc)
+        return None
+
+    requested = Path(corpus_path)
+    requested_posix = requested.as_posix()
+
+    filename_match: dict[str, Any] | None = None
+    for entry in registry.get("datasets", []):
+        if (entry.get("access") or "").lower() != "fetch-from-source":
+            continue
+        export = entry.get("source_export")
+        if not isinstance(export, dict) or not export.get("builder"):
+            continue
+        rel = entry.get("path")
+        if not rel:
+            continue
+        if requested_posix.endswith(Path(rel).as_posix()):
+            return entry
+        if filename_match is None and requested.name == Path(rel).name:
+            filename_match = entry
+
+    return filename_match
+
+
+def _build_tatoeba_challenge(
+    entry: dict[str, Any], dest: Path, *, assume_yes: bool,
+) -> Path:
+    """Builder for the 'tatoeba-challenge' source_export builder id."""
+    _import_corpora_builder()
+    from corpora_builder.adapters import tatoeba_challenge_adapter
+
+    export = entry["source_export"]
+    lang_pair = entry["language_pair"]
+    return tatoeba_challenge_adapter.build_corpus_file(
+        dest,
+        source_lang=lang_pair["source"],
+        target_lang=lang_pair["target"],
+        cache_dir=CACHE_DIR / "tatoeba-challenge",
+        recipe=export.get("recipe"),
+        tar_url=export.get("url", tatoeba_challenge_adapter.TEST_TAR_URL),
+        tar_sha256=export.get(
+            "sha256", tatoeba_challenge_adapter.TEST_TAR_SHA256,
+        ),
+        auto_yes=assume_yes,
+    )
+
+
+#: builder id (registry source_export.builder) → build callable.
+REGISTRY_BUILDERS: dict[str, Callable[..., Path]] = {
+    "tatoeba-challenge": _build_tatoeba_challenge,
+}
+
+
+# ---------------------------------------------------------------------------
 # Fetch orchestration
 # ---------------------------------------------------------------------------
 
@@ -268,6 +363,88 @@ def _verify_sha256(built: Path, expected: str | None, card_id: str) -> None:
     logger.info("SHA-256 verified for '%s'", card_id)
 
 
+def _confirm_fetch_export(
+    entry: dict[str, Any], *, assume_yes: bool,
+) -> bool:
+    """License confirmation for a registry source_export fetch.
+
+    Same gating rules as ``_confirm_fetch``: --yes / CI proceed,
+    non-interactive without them raises, otherwise prompt.
+    """
+    export = entry["source_export"]
+    print()
+    print(f"  Corpus '{entry.get('id', '?')}' is not present locally.")
+    print(f"  It can be fetched from source and built into the local cache:")
+    print(f"    Export:  {export.get('url', '?')}")
+    print(f"    License: {export.get('license', entry.get('license', 'see registry'))} "
+          f"({export.get('license_url', '')})")
+    print(f"    Builder: {export['builder']}")
+    print()
+    print("  You are responsible for complying with this license.")
+
+    if assume_yes or os.environ.get("CI", "").lower() in ("1", "true", "yes"):
+        print("  --yes/CI set, proceeding automatically.")
+        return True
+
+    if _non_interactive():
+        raise RuntimeError(
+            f"Corpus '{entry.get('id', '?')}' must be fetched from "
+            f"{export.get('url', 'its upstream export')}, but this is a "
+            f"non-interactive session. Re-run with --yes to accept the "
+            f"{export.get('license', '')} license terms and fetch "
+            f"automatically."
+        )
+
+    try:
+        answer = input("  Fetch and build now? [y/N]: ").strip().lower()
+    except (EOFError, KeyboardInterrupt):
+        print("\n  Cancelled.")
+        return False
+    return answer in ("y", "yes")
+
+
+def fetch_corpus_from_registry_entry(
+    entry: dict[str, Any],
+    *,
+    assume_yes: bool = False,
+) -> Path:
+    """Fetch+build the corpus described by a registry source_export block.
+
+    Builds into ``arena/datasets/.cache/<entry path>`` (gitignored) and
+    verifies the entry's ``sha256`` when present. Reuses a previously
+    built cache file if it passes hash verification.
+    """
+    export = entry["source_export"]
+    builder_id = export["builder"]
+    build = REGISTRY_BUILDERS.get(builder_id)
+    if build is None:
+        raise RuntimeError(
+            f"Registry entry '{entry.get('id', '?')}' declares unknown "
+            f"source_export builder '{builder_id}'. Known builders: "
+            f"{sorted(REGISTRY_BUILDERS)}."
+        )
+
+    dest = CACHE_DIR / entry["path"]
+    if dest.exists():
+        try:
+            _verify_sha256(dest, entry.get("sha256"), entry.get("id", "?"))
+            logger.info("Using cached built corpus at %s", dest)
+            return dest
+        except ValueError:
+            logger.warning("Cached build failed verification — rebuilding")
+
+    if not _confirm_fetch_export(entry, assume_yes=assume_yes):
+        raise RuntimeError(
+            f"Fetch declined for registry corpus '{entry.get('id', '?')}'. "
+            f"Provide the corpus file locally or re-run and accept the fetch."
+        )
+
+    built = build(entry, dest, assume_yes=True)  # license accepted above
+    _verify_sha256(built, entry.get("sha256"), entry.get("id", "?"))
+    print(f"  Built corpus cached at {built}")
+    return built
+
+
 def fetch_corpus_from_card(
     card: dict[str, Any],
     data_file: str,
@@ -320,15 +497,24 @@ def try_fetch_missing_corpus(
     *,
     assume_yes: bool = False,
     cards_dir: Path | None = None,
+    registry_path: Path | None = None,
 ) -> Path | None:
-    """Resolve a missing corpus path via corpora-card fetch-from-source.
+    """Resolve a missing corpus path via fetch-from-source.
 
-    Returns the path to the built corpus in the cache, or None when no
-    fetchable card matches (caller should raise its usual
-    FileNotFoundError).
+    Resolution order: corpora cards first (richer per-corpus metadata),
+    then registry ``source_export`` entries. Returns the path to the
+    built corpus in the cache, or None when nothing fetchable matches
+    (caller should raise its usual FileNotFoundError).
     """
     match = find_card_for_corpus(corpus_path, cards_dir=cards_dir)
-    if match is None:
-        return None
-    card, data_file = match
-    return fetch_corpus_from_card(card, data_file, assume_yes=assume_yes)
+    if match is not None:
+        card, data_file = match
+        return fetch_corpus_from_card(card, data_file, assume_yes=assume_yes)
+
+    entry = find_registry_export_for_corpus(
+        corpus_path, registry_path=registry_path,
+    )
+    if entry is not None:
+        return fetch_corpus_from_registry_entry(entry, assume_yes=assume_yes)
+
+    return None

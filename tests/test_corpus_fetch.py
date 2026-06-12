@@ -2,6 +2,7 @@
 
 Covers:
     - corpora-card matching for missing corpus paths
+    - registry source_export matching (the Tatoeba mesh corpora)
     - fetch orchestration with a mocked builder (no network)
     - sha256 verification of built corpora
     - non-interactive behavior (--yes / CI env / declined prompt)
@@ -20,8 +21,10 @@ import pytest
 from mt_eval_harness import corpus_fetch
 from mt_eval_harness.corpus_fetch import (
     fetch_corpus_from_card,
+    fetch_corpus_from_registry_entry,
     find_card_for_corpus,
     find_corpora_cards_dir,
+    find_registry_export_for_corpus,
     try_fetch_missing_corpus,
 )
 
@@ -270,6 +273,209 @@ class TestTryFetchMissingCorpus:
         )
         assert built is not None
         assert built.exists()
+
+
+# ---------------------------------------------------------------------------
+# Registry source_export resolution (Tatoeba mesh corpora)
+# ---------------------------------------------------------------------------
+
+def _make_registry_entry(sha256: str | None = BUILT_SHA256) -> dict:
+    return {
+        "id": "tatoeba-test-mesh-dev",
+        "language_pair": {"source": "spa", "target": "fra"},
+        "size": 1,
+        "access": "fetch-from-source",
+        "license": "CC-BY-2.0",
+        "sha256": sha256,
+        "path": "curated/test-mesh-dev-v1.json",
+        "segment": "development",
+        "source_export": {
+            "builder": "test-registry-builder",
+            "url": "https://example.com/export.tar",
+            "sha256": "feed" * 16,
+            "license": "CC-BY-2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "recipe": {"split": "test", "seed": 42},
+        },
+    }
+
+
+@pytest.fixture
+def registry_path(tmp_path):
+    p = tmp_path / "registry.json"
+    p.write_text(json.dumps({
+        "registry_version": "1.0.0",
+        "datasets": [
+            _make_registry_entry(),
+            {   # fetch-from-source WITHOUT source_export (EdTeKLA style:
+                # resolved via corpora cards, not the registry) — skipped.
+                "id": "no-export", "access": "fetch-from-source",
+                "path": "curated/no-export.json",
+                "language_pair": {"source": "eng", "target": "crk"},
+            },
+            {   # local corpus — never registry-fetched.
+                "id": "local-ds", "access": "local",
+                "path": "curated/local-ds.json",
+                "language_pair": {"source": "eng", "target": "fra"},
+            },
+        ],
+    }), encoding="utf-8")
+    return p
+
+
+@pytest.fixture
+def fake_registry_builder(monkeypatch):
+    """Install a mock registry builder that writes BUILT_CORPUS to dest."""
+    calls = []
+
+    def build(entry, dest, *, assume_yes):
+        calls.append({"id": entry["id"], "dest": dest,
+                      "assume_yes": assume_yes})
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(BUILT_BYTES)
+        return dest
+
+    monkeypatch.setitem(
+        corpus_fetch.REGISTRY_BUILDERS, "test-registry-builder", build,
+    )
+    return calls
+
+
+class TestFindRegistryExportForCorpus:
+    def test_suffix_match(self, registry_path):
+        entry = find_registry_export_for_corpus(
+            "/abs/arena/datasets/curated/test-mesh-dev-v1.json",
+            registry_path=registry_path,
+        )
+        assert entry is not None
+        assert entry["id"] == "tatoeba-test-mesh-dev"
+
+    def test_filename_fallback(self, registry_path):
+        entry = find_registry_export_for_corpus(
+            "elsewhere/test-mesh-dev-v1.json", registry_path=registry_path,
+        )
+        assert entry is not None
+        assert entry["id"] == "tatoeba-test-mesh-dev"
+
+    def test_entry_without_source_export_not_fetchable(self, registry_path):
+        assert find_registry_export_for_corpus(
+            "curated/no-export.json", registry_path=registry_path,
+        ) is None
+
+    def test_local_entry_not_fetchable(self, registry_path):
+        assert find_registry_export_for_corpus(
+            "curated/local-ds.json", registry_path=registry_path,
+        ) is None
+
+    def test_missing_registry_returns_none(self, tmp_path):
+        assert find_registry_export_for_corpus(
+            "curated/test-mesh-dev-v1.json",
+            registry_path=tmp_path / "absent.json",
+        ) is None
+
+    def test_real_registry_resolves_mesh_corpus(self):
+        # The checked-in registry must resolve its own mesh entries.
+        entry = find_registry_export_for_corpus(
+            "datasets/curated/spa-fra-dev-v1.json",
+        )
+        assert entry is not None
+        assert entry["source_export"]["builder"] == "tatoeba-challenge"
+        assert entry["sha256"]
+
+
+class TestFetchCorpusFromRegistryEntry:
+    def test_builds_into_cache_and_verifies(
+        self, fake_registry_builder, cache_dir,
+    ):
+        built = fetch_corpus_from_registry_entry(
+            _make_registry_entry(), assume_yes=True,
+        )
+        assert built == cache_dir / "curated/test-mesh-dev-v1.json"
+        assert json.loads(built.read_text(encoding="utf-8")) == BUILT_CORPUS
+        assert fake_registry_builder[0]["id"] == "tatoeba-test-mesh-dev"
+
+    def test_sha256_mismatch_deletes_and_raises(
+        self, cache_dir, monkeypatch,
+    ):
+        def bad_build(entry, dest, *, assume_yes):
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(b"corrupted output")
+            return dest
+
+        monkeypatch.setitem(
+            corpus_fetch.REGISTRY_BUILDERS, "test-registry-builder",
+            bad_build,
+        )
+        with pytest.raises(ValueError, match="SHA-256 mismatch"):
+            fetch_corpus_from_registry_entry(
+                _make_registry_entry(), assume_yes=True,
+            )
+        assert not (cache_dir / "curated/test-mesh-dev-v1.json").exists()
+
+    def test_unknown_builder_raises(self, cache_dir):
+        entry = _make_registry_entry()
+        entry["source_export"]["builder"] = "does-not-exist"
+        with pytest.raises(RuntimeError, match="unknown source_export builder"):
+            fetch_corpus_from_registry_entry(entry, assume_yes=True)
+
+    def test_non_interactive_without_yes_raises(
+        self, fake_registry_builder, cache_dir, monkeypatch,
+    ):
+        monkeypatch.delenv("CI", raising=False)
+        monkeypatch.setattr(corpus_fetch, "_non_interactive", lambda: True)
+        with pytest.raises(RuntimeError, match="--yes"):
+            fetch_corpus_from_registry_entry(
+                _make_registry_entry(), assume_yes=False,
+            )
+
+    def test_cached_verified_build_skips_rebuild(
+        self, fake_registry_builder, cache_dir,
+    ):
+        dest = cache_dir / "curated/test-mesh-dev-v1.json"
+        dest.parent.mkdir(parents=True)
+        dest.write_bytes(BUILT_BYTES)
+        built = fetch_corpus_from_registry_entry(
+            _make_registry_entry(), assume_yes=True,
+        )
+        assert built == dest
+        assert fake_registry_builder == []  # builder never invoked
+
+
+class TestTryFetchResolutionOrder:
+    def test_registry_used_when_no_card_matches(
+        self, cards_dir, registry_path, fake_registry_builder, cache_dir,
+    ):
+        built = try_fetch_missing_corpus(
+            "arena/datasets/curated/test-mesh-dev-v1.json",
+            assume_yes=True, cards_dir=cards_dir,
+            registry_path=registry_path,
+        )
+        assert built is not None
+        assert fake_registry_builder, "registry builder should have run"
+
+    def test_cards_take_precedence_over_registry(
+        self, cards_dir, registry_path, fake_builder,
+        fake_registry_builder, cache_dir,
+    ):
+        # test-fetch-v1 matches a corpora card; the registry must not
+        # be consulted for it even when a registry_path is supplied.
+        built = try_fetch_missing_corpus(
+            "arena/datasets/curated/test-fetch-v1.json",
+            assume_yes=True, cards_dir=cards_dir,
+            registry_path=registry_path,
+        )
+        assert built is not None
+        assert fake_builder, "card builder should have run"
+        assert fake_registry_builder == []
+
+    def test_nothing_matches_returns_none(
+        self, cards_dir, registry_path, cache_dir,
+    ):
+        assert try_fetch_missing_corpus(
+            "curated/never-heard-of-it.json",
+            assume_yes=True, cards_dir=cards_dir,
+            registry_path=registry_path,
+        ) is None
 
 
 # ---------------------------------------------------------------------------
