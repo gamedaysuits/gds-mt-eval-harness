@@ -36,7 +36,7 @@ The viewer only *displays* open items and their exact `mt-eval run` commands —
 
 - `run_command` — copy-paste ready (fetches the corpus, runs the harness)
 - `est_cost_usd` and `est_basis` — either the **observed** cost of our own baseline run of the same (corpus, model), or an **extrapolation** from that model's sweep-average cost per entry × the corpus entry count. The basis is stated per item; your actual cost depends on provider pricing at run time.
-- `priority` — uncovered language pairs first, lowest-resource pairs first (corpus size is the proxy), naive before coached, cheapest model first.
+- `priority` — ranked by **expected chain value**: how much this one run is predicted to strengthen the whole language mesh, per estimated dollar. Every item carries its full formula breakdown (`edge_strength`, `pair_prior`, `model_offset`, `exploration_bonus`, `predicted_strength`, `expected_mesh_gain`, `ecv_per_usd`) so any rank can be re-derived by hand — the formula and its defaults are published in the [Queue Construction Specification](/docs/specifications/queue-construction), and the reasoning behind it in [Why the Queue Is Built This Way](/docs/perspectives/why-the-queue).
 
 **No claim-locking — pick any open item.** Two people running the same item is harmless by design: every run card is fingerprinted (SHA-256 over dataset hash + model + condition + system prompt, [Benchmark Spec §3.8](/docs/specifications/benchmark)), so identical runs deduplicate on publish, and independent replications of the same configuration are useful evidence, not waste.
 

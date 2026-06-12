@@ -13,6 +13,7 @@ const sidebars = {
         'perspectives/how-speakers-get-paid',
         'perspectives/from-benchmark-to-daily-use',
         'perspectives/reporting-errors-and-owning-corrections',
+        'perspectives/why-the-queue',
       ],
     },
     {
@@ -36,6 +37,7 @@ const sidebars = {
         'specifications/run-card',
         'specifications/scoring',
         'specifications/benchmark-spec',
+        'specifications/queue-construction',
       ],
     },
     {
