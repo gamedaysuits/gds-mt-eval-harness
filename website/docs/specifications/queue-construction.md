@@ -23,8 +23,8 @@ related:
 
 # Queue Construction Specification
 
-**Formula version: `ecv-v2` (expected chain value).** This document is
-the normative definition of how
+**Formula version: `ecv-v3` (expected chain value with bridge
+reliability).** This document is the normative definition of how
 [champollion.dev/queue.json](https://champollion.dev/queue.json) is
 ordered. The implementation
 (`arena/scripts/generate_sweep_queue.py` in the public harness repo)
@@ -33,6 +33,13 @@ exact parameter values used at generation time, and **every item
 carries its full formula breakdown**, so any rank can be re-derived by
 hand from the published JSON alone. If this page and the queue ever
 disagree, that is a bug — please report it.
+
+> **v3 (2026-06-13).** Every edge is now a *bridge* with two numbers —
+> quality and reliability — and the chain matrix runs on their product
+> (§1.5). 62 single-word vocabulary items run once can no longer look
+> like a path; replications, bigger corpora, richer corpora, and
+> tighter confidence intervals all carry priced value. v2 queues
+> (quality-only) remain interpretable via their own metadata.
 
 ## 1. The objective: a quality-weighted mesh
 
@@ -90,6 +97,58 @@ chain fidelity — the natural kernel when edges carry per-hop quality
 retention rather than unit lengths. (Queue v1 ranked by unweighted
 global efficiency gain — the special case of this family where all
 you know about an edge is whether it exists.)
+
+### 1.5 Reliability: a bridge is (q, r)
+
+A flashy score on a tiny, thin, never-replicated corpus is not a
+bridge. v3 therefore splits every measured edge into:
+
+```
+quality      q(e)   = best published corpus-level chrF++ / 100
+reliability  r(e)   = f_size · f_rich · f_conf · f_repl        ∈ [0, 1]
+effective    s_eff(e) = q(e) · r(e)        ← what chains compose over
+```
+
+| Factor | Definition | Full credit at | Anchor |
+|---|---|---|---|
+| `f_size` | min(1, n/100), n = evaluated entries of the best run | 100 entries | the [corpus-design](/docs/specifications/corpus-design) significance floor; Koehn (2004) validates bootstrap testing on ~300-sentence sets — even 300 is "small", so size discounts reliability rather than merely gating display |
+| `f_rich` | min(1, L̄/5), L̄ = mean *effective* source length | 5 effective words | AmericasNLP (Mager et al. 2021) adopted chrF because word-level units break on rich morphology; Mager et al. (2022) document whitespace tokens as the wrong unit |
+| `f_conf` | min(1, 5/h), h = the best run's chrF 95% CI half-width (proxy `50/√n` when unpublished) | CI ≤ ±5 chrF | the noise floor below which deltas are indistinguishable on small corpora; Kocmi et al. (2021) show within-CI deltas frequently contradict human preference |
+| `f_repl` | min(1, runs/2) | 2 published runs | Marie, Fujita & Rubino (2021), meta-evaluating 769 papers: unreplicated single comparisons are the field's documented credibility failure |
+
+**Effective length** is measured in content units, not whitespace
+words: `L̄ = mean source chars / c(L)`, where the *character economy*
+`c(L)` is the median characters on language L's side per English word
+on the aligned side, measured from this project's own parallel corpora
+(7,400+ aligned entries at v3 ship time: cmn 1.6, jpn 2.3, kor 2.6;
+eng baseline 5.0; deu 6.0; crk 4.7 — polysynthetic words priced by the
+content they carry). No typology lookup tables; the estimate sharpens
+as corpora grow; languages without eng-paired data use the default
+economy. Stamped per corpus in the registry (`richness` block).
+
+**Bridge tiers** (display vocabulary): **established** — n ≥ 100,
+L̄ ≥ 5, h ≤ 5, runs ≥ 2; **provisional** — measured but failing any;
+**registered** — no published runs. A chain claim ("you can get from X
+to Y") is only as strong as its weakest hop's tier, and the mesh
+visualization shows reliability as edge opacity.
+
+**Worked checks** (from the checked-in verification script, run before
+v3 shipped): *62 single-word vocabulary items, one run* → r ≈ **0.04**
+(not a path); *200 sentences, ±3 CI, 3 runs* → r = **1.00**; a
+101-entry Japanese corpus whose naive word count is 1.0 (script
+artifact) rehabilitates to 6.5 effective words and full `f_rich`.
+Bounds and per-factor monotonicity are property-tested.
+
+**Value of a run under v3.** A run can improve a bridge two ways, and
+ΔΦ takes the better of: **(a)** it becomes the edge's best run —
+`ŝ_eff = predicted quality × r(its corpus's n, richness, CI proxy,
+runs+1)`; or **(b)** it merely replicates — the current best stays,
+`f_repl` rises. Replication on a single-run edge is therefore real,
+priced value, and a bigger or richer corpus on a measured pair
+outranks a re-run of the small one. Items expose `edge_quality`,
+`edge_reliability`, `edge_tier`, `effective_strength`,
+`post_run_reliability`, and `predicted_effective` alongside the v2
+prediction fields.
 
 **What Φ is not.** Φ is the queue's internal prioritization currency,
 not a capability claim. Its inputs are development-set scores with all
@@ -211,6 +270,10 @@ and the formula accounts for it.
 | `S_CAP` | **0.95** | Prediction ceiling — no estimated edge may claim near-perfect fidelity it hasn't demonstrated. |
 | `S0_FALLBACK` | **0.5** | Pair prior of last resort, used only when there are no published results at all (the observed global mean — ≈ 0.54 over the first 429 runs — is preferred whenever any result exists). |
 | `COST_FLOOR` | **$0.01** | Floor for the ECV denominator, so near-free runs can't claim unbounded value per dollar. |
+| `N_FULL` | **100** | Evaluated entries for full size credit (§1.5). |
+| `L_HEALTHY` | **5.0** | Effective words for full richness credit (§1.5). |
+| `H_NOISE` | **±5 chrF** | CI half-width for full confidence credit; missing CIs proxy as 50/√n (anchored to ±5 at n=100). |
+| `RUNS_FULL` | **2** | Published runs for full replication credit. |
 
 **Versioning.** Parameter or formula changes bump `formula_version`
 (metadata) and this page's version line. The queue always echoes the

@@ -60,7 +60,15 @@
         "license": "CC-BY-NC-SA-4.0",
         "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
-      "path": "curated/eng-crk-dev-v1.json"
+      "path": "curated/eng-crk-dev-v1.json",
+      "richness": {
+        "mean_source_chars": 29.4,
+        "mean_effective_words": 5.87,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-crk-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-spa-que-dev",
@@ -86,7 +94,15 @@
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 95 entries, stratified across 2 domain(s).",
       "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code que; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code que; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 20.1,
+        "mean_effective_words": 3.76,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-que-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-haw-dev",
@@ -112,7 +128,15 @@
       "path": "curated/eng-haw-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 194 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 19.6,
+        "mean_effective_words": 3.93,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-haw-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-ceb-dev",
@@ -136,7 +160,15 @@
       "path": "curated/eng-ceb-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 132 entries, stratified across 1 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 14.7,
+        "mean_effective_words": 2.95,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-ceb-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-ilo-dev",
@@ -162,7 +194,15 @@
       "path": "curated/eng-ilo-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 105 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 15.3,
+        "mean_effective_words": 3.05,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-ilo-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-war-dev",
@@ -188,7 +228,15 @@
       "path": "curated/eng-war-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 131 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.1,
+        "mean_effective_words": 3.22,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-war-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-hil-dev",
@@ -214,7 +262,15 @@
       "path": "curated/eng-hil-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 56 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 25.7,
+        "mean_effective_words": 5.14,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-hil-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-pam-dev",
@@ -241,7 +297,15 @@
       "path": "curated/eng-pam-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 48 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.6,
+        "mean_effective_words": 3.32,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-pam-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-pag-dev",
@@ -266,7 +330,15 @@
       "path": "curated/eng-pag-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 60 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 28.7,
+        "mean_effective_words": 5.75,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-pag-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-yor-dev",
@@ -290,7 +362,15 @@
       "path": "curated/eng-yor-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 1 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 19.7,
+        "mean_effective_words": 3.94,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-yor-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-hau-dev",
@@ -318,7 +398,15 @@
       "path": "curated/eng-hau-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 140 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.9,
+        "mean_effective_words": 3.38,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-hau-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-fra-hau-dev",
@@ -344,7 +432,15 @@
       "path": "curated/fra-hau-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 17.8,
+        "mean_effective_words": 3.13,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-hau-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-ibo-dev",
@@ -369,7 +465,15 @@
       "path": "curated/eng-ibo-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 35 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 29.9,
+        "mean_effective_words": 5.98,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-ibo-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-zul-dev",
@@ -397,7 +501,15 @@
       "path": "curated/eng-zul-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 112 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 27.0,
+        "mean_effective_words": 5.41,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-zul-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-xho-dev",
@@ -424,7 +536,15 @@
       "path": "curated/eng-xho-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 75 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 27.0,
+        "mean_effective_words": 5.41,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-xho-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-sna-dev",
@@ -449,7 +569,15 @@
       "path": "curated/eng-sna-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 23.0,
+        "mean_effective_words": 4.6,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-sna-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-lug-dev",
@@ -476,7 +604,15 @@
       "path": "curated/eng-lug-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 183 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 15.7,
+        "mean_effective_words": 3.15,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-lug-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-tir-dev",
@@ -507,7 +643,15 @@
       "path": "curated/eng-tir-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 54 entries, stratified across 8 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 20.8,
+        "mean_effective_words": 4.16,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tir-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-amh-dev",
@@ -535,7 +679,15 @@
       "path": "curated/eng-amh-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 73 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 25.9,
+        "mean_effective_words": 5.18,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-amh-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-cym-dev",
@@ -561,7 +713,15 @@
       "path": "curated/eng-cym-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.2,
+        "mean_effective_words": 3.24,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-cym-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-fra-eus-dev",
@@ -586,7 +746,15 @@
       "path": "curated/fra-eus-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 14.2,
+        "mean_effective_words": 2.5,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-fra-cat-dev",
@@ -610,7 +778,15 @@
       "path": "curated/fra-cat-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 57 entries, stratified across 1 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 13.4,
+        "mean_effective_words": 2.35,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-por-glg-dev",
@@ -637,7 +813,15 @@
       "path": "curated/por-glg-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 102 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 18.3,
+        "mean_effective_words": 3.4,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-glg-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-fra-ltz-dev",
@@ -662,7 +846,15 @@
       "path": "curated/fra-ltz-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 196 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.9,
+        "mean_effective_words": 2.97,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-ltz-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-deu-ltz-dev",
@@ -689,7 +881,15 @@
       "path": "curated/deu-ltz-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 179 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 17.2,
+        "mean_effective_words": 2.86,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-ltz-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-nld-fry-dev",
@@ -715,7 +915,15 @@
       "path": "curated/nld-fry-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 19.3,
+        "mean_effective_words": 3.57,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-fry-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-mlt-dev",
@@ -741,7 +949,15 @@
       "path": "curated/eng-mlt-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 129 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16,
+        "mean_effective_words": 3.2,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-mlt-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-ita-mlt-dev",
@@ -766,7 +982,15 @@
       "path": "curated/ita-mlt-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 180 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 17.9,
+        "mean_effective_words": 3.06,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-mlt-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-dan-fao-dev",
@@ -791,7 +1015,15 @@
       "path": "curated/dan-fao-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 2 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 26.7,
+        "mean_effective_words": 4.94,
+        "economy": 5.4,
+        "economy_basis": "measured",
+        "computed_from": "dan-fao-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-sme-dev",
@@ -820,7 +1052,15 @@
       "path": "curated/eng-sme-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 6 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 23.1,
+        "mean_effective_words": 4.61,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-sme-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-tam-dev",
@@ -847,7 +1087,15 @@
       "path": "curated/eng-tam-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 153 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.7,
+        "mean_effective_words": 3.35,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tam-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-tel-dev",
@@ -875,7 +1123,15 @@
       "path": "curated/eng-tel-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 71 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 26.8,
+        "mean_effective_words": 5.35,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tel-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-kan-dev",
@@ -904,7 +1160,15 @@
       "path": "curated/eng-kan-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 6 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 24.8,
+        "mean_effective_words": 4.95,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-kan-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-mal-dev",
@@ -932,7 +1196,15 @@
       "path": "curated/eng-mal-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 17.9,
+        "mean_effective_words": 3.58,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-mal-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-guj-dev",
@@ -958,7 +1230,15 @@
       "path": "curated/eng-guj-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 165 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 27.4,
+        "mean_effective_words": 5.49,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-guj-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-pan-dev",
@@ -987,7 +1267,15 @@
       "path": "curated/eng-pan-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 6 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 33.4,
+        "mean_effective_words": 6.69,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-pan-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-sin-dev",
@@ -1013,7 +1301,15 @@
       "path": "curated/eng-sin-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 69 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 19.1,
+        "mean_effective_words": 3.82,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-sin-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-urd-dev",
@@ -1041,7 +1337,15 @@
       "path": "curated/eng-urd-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 181 entries, stratified across 5 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 15.2,
+        "mean_effective_words": 3.04,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-urd-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-mya-dev",
@@ -1065,7 +1369,15 @@
       "path": "curated/eng-mya-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 77 entries, stratified across 1 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 14.4,
+        "mean_effective_words": 2.88,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-mya-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-lao-dev",
@@ -1095,7 +1407,15 @@
       "path": "curated/eng-lao-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 7 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 49.9,
+        "mean_effective_words": 9.98,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-lao-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-zsm-dev",
@@ -1122,7 +1442,15 @@
       "path": "curated/eng-zsm-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 148 entries, stratified across 4 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 16.6,
+        "mean_effective_words": 3.33,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-zsm-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-mon-dev",
@@ -1149,7 +1477,15 @@
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 138 entries, stratified across 3 domain(s).",
       "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code mon; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code mon; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 14.3,
+        "mean_effective_words": 2.86,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-mon-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-kaz-dev",
@@ -1175,7 +1511,15 @@
       "path": "curated/eng-kaz-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 113 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 15.6,
+        "mean_effective_words": 3.13,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-kaz-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-uzb-dev",
@@ -1202,7 +1546,15 @@
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 167 entries, stratified across 3 domain(s).",
       "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 15.8,
+        "mean_effective_words": 3.16,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-uzb-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-rus-uzb-dev",
@@ -1227,7 +1579,15 @@
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 51 entries, stratified across 1 domain(s).",
       "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 18,
+        "mean_effective_words": 3.3,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-uzb-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-bos-dev",
@@ -1253,7 +1613,15 @@
       "path": "curated/eng-bos-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 64 entries, stratified across 3 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 15.3,
+        "mean_effective_words": 3.07,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-bos-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-sqi-dev",
@@ -1280,7 +1648,15 @@
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 3 domain(s).",
       "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code sqi; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code sqi; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 16.4,
+        "mean_effective_words": 3.27,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-sqi-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "crk-master-corpus",
@@ -1375,7 +1751,15 @@
       "path": "curated/eng-fra-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 41.0,
+        "mean_effective_words": 8.19,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-fra-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-deu-dev",
@@ -1411,7 +1795,15 @@
       "path": "curated/eng-deu-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 41.3,
+        "mean_effective_words": 8.26,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-deu-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-nld-dev",
@@ -1447,7 +1839,15 @@
       "path": "curated/eng-nld-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 35.3,
+        "mean_effective_words": 7.06,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-tgl-dev",
@@ -1480,7 +1880,15 @@
       "path": "curated/eng-tgl-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 10 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 33.7,
+        "mean_effective_words": 6.74,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tgl-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-spa-dev",
@@ -1516,7 +1924,15 @@
       "path": "curated/eng-spa-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 43.3,
+        "mean_effective_words": 8.67,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-spa-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-cmn-dev",
@@ -1549,7 +1965,15 @@
       "path": "curated/eng-cmn-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 10 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 38.2,
+        "mean_effective_words": 7.64,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-jpn-dev",
@@ -1587,7 +2011,15 @@
       "path": "curated/eng-jpn-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 15 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 47.5,
+        "mean_effective_words": 9.51,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-kor-dev",
@@ -1622,7 +2054,15 @@
       "path": "curated/eng-kor-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 12 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 36,
+        "mean_effective_words": 7.2,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-por-dev",
@@ -1654,7 +2094,15 @@
       "path": "curated/eng-por-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 9 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 39.5,
+        "mean_effective_words": 7.91,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-por-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-tha-dev",
@@ -1686,7 +2134,15 @@
       "path": "curated/eng-tha-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 9 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 28.9,
+        "mean_effective_words": 5.78,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tha-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-vie-dev",
@@ -1720,7 +2176,15 @@
       "path": "curated/eng-vie-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 11 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 38.8,
+        "mean_effective_words": 7.77,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-arb-dev",
@@ -1754,7 +2218,15 @@
       "path": "curated/eng-arb-dev-v1.json",
       "segment": "development",
       "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 11 domain(s).",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 35.3,
+        "mean_effective_words": 7.07,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-arb-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-dan-dev",
@@ -1816,6 +2288,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 55.6,
+        "mean_effective_words": 11.11,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -1869,6 +2349,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 44.0,
+        "mean_effective_words": 8.81,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-fao-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -1922,6 +2410,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 51.7,
+        "mean_effective_words": 9.08,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -1980,6 +2476,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 59.7,
+        "mean_effective_words": 9.96,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2036,6 +2540,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 52.4,
+        "mean_effective_words": 9.82,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2092,6 +2604,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 46.6,
+        "mean_effective_words": 8.61,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2142,6 +2662,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 40.8,
+        "mean_effective_words": 7.56,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2193,6 +2721,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 36.1,
+        "mean_effective_words": 6.69,
+        "economy": 5.4,
+        "economy_basis": "measured",
+        "computed_from": "dan-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2240,6 +2776,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 45.4,
+        "mean_effective_words": 8.33,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2289,6 +2833,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.7,
+        "mean_effective_words": 9.17,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-dan-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2351,6 +2903,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 74.1,
+        "mean_effective_words": 14.82,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2413,6 +2973,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 73.8,
+        "mean_effective_words": 14.76,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-ita-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2470,6 +3038,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.5,
+        "mean_effective_words": 10.71,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-glg-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2522,7 +3098,15 @@
           "builder_version": "0.1.0"
         }
       },
-      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code que; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code que; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md.",
+      "richness": {
+        "mean_source_chars": 34.9,
+        "mean_effective_words": 6.97,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-que-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-eng-fry-dev",
@@ -2574,6 +3158,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 47.8,
+        "mean_effective_words": 9.56,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-fry-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2634,6 +3226,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 49.6,
+        "mean_effective_words": 9.92,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2692,6 +3292,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 55.3,
+        "mean_effective_words": 11.05,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2746,6 +3354,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 36.0,
+        "mean_effective_words": 7.2,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-ltz-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2804,6 +3420,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 49.5,
+        "mean_effective_words": 8.69,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2862,6 +3486,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 58.5,
+        "mean_effective_words": 10.28,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-ita-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2921,6 +3553,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 62.5,
+        "mean_effective_words": 10.98,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -2981,6 +3621,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 76.7,
+        "mean_effective_words": 13.48,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-por-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3040,6 +3688,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 63.5,
+        "mean_effective_words": 11.9,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-fra-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3087,6 +3743,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 30.3,
+        "mean_effective_words": 5.55,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3140,6 +3804,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 44.3,
+        "mean_effective_words": 7.56,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3196,6 +3868,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 57.4,
+        "mean_effective_words": 9.8,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3255,6 +3935,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 67.1,
+        "mean_effective_words": 11.79,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3311,6 +3999,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 59.0,
+        "mean_effective_words": 10.36,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3363,6 +4059,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.4,
+        "mean_effective_words": 9.38,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3422,6 +4126,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 71.4,
+        "mean_effective_words": 11.9,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3479,6 +4191,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 68.7,
+        "mean_effective_words": 12.87,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-por-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3537,6 +4257,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 54.2,
+        "mean_effective_words": 10.15,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3595,6 +4323,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 61.8,
+        "mean_effective_words": 11.58,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-deu-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3652,6 +4388,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 57.3,
+        "mean_effective_words": 9.54,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3709,6 +4453,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 61.8,
+        "mean_effective_words": 11.48,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3767,6 +4519,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 58.1,
+        "mean_effective_words": 10.9,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3824,6 +4584,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 62.7,
+        "mean_effective_words": 10.44,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-ita-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3884,6 +4652,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 75.6,
+        "mean_effective_words": 12.6,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-por-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -3942,6 +4718,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 60.3,
+        "mean_effective_words": 11.31,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-ita-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4000,6 +4784,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 80.3,
+        "mean_effective_words": 14.91,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-ita-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4055,6 +4847,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 44.1,
+        "mean_effective_words": 7.53,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4112,6 +4912,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 55.9,
+        "mean_effective_words": 10.32,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-rus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4169,6 +4977,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 61.4,
+        "mean_effective_words": 11.4,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-nld-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4225,6 +5041,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 63.8,
+        "mean_effective_words": 11.96,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-glg-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4279,6 +5103,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 56.1,
+        "mean_effective_words": 10.51,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4333,6 +5165,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 58.4,
+        "mean_effective_words": 10.95,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4385,6 +5225,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.6,
+        "mean_effective_words": 9.95,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4437,6 +5285,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 42.4,
+        "mean_effective_words": 7.83,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4488,6 +5344,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 33.3,
+        "mean_effective_words": 6.15,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-ltz-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4550,6 +5414,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 68.5,
+        "mean_effective_words": 12.03,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-deu-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4608,6 +5480,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 62.4,
+        "mean_effective_words": 10.41,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4665,6 +5545,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.7,
+        "mean_effective_words": 10.08,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4713,6 +5601,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 73.7,
+        "mean_effective_words": 13.5,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4768,6 +5664,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.5,
+        "mean_effective_words": 9.89,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4824,6 +5728,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 55.7,
+        "mean_effective_words": 9.51,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4880,6 +5792,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 52.9,
+        "mean_effective_words": 9.82,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4933,6 +5853,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 68.2,
+        "mean_effective_words": 11.36,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -4986,6 +5914,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 58.2,
+        "mean_effective_words": 10.91,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5038,6 +5974,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 58.2,
+        "mean_effective_words": 9.71,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-ceb-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5088,6 +6032,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 51.9,
+        "mean_effective_words": 8.65,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-cat-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5140,6 +6092,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 40.1,
+        "mean_effective_words": 7.53,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5187,6 +6147,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 42.8,
+        "mean_effective_words": 7.13,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5236,6 +6204,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 51.2,
+        "mean_effective_words": 8.53,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5283,6 +6259,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 37.3,
+        "mean_effective_words": 6.84,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5334,6 +6318,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 43.4,
+        "mean_effective_words": 7.42,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5381,6 +6373,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 30.2,
+        "mean_effective_words": 5.53,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5417,7 +6417,15 @@
       "path": "curated/eng-tuk-dev-v1.json",
       "segment": "development",
       "notes": "Rebuilt 2026-06-12 by corpora-builder (seed 42) after the original 0.1.0 build shipped 118 entries all sharing the duplicated id 'tatoeba_eng' (OPUS id-file language labels parsed as sentence ids; adapter now falls back to positional ids when id files are non-unique). 118 entries, stratified across 13 domain(s). Registered for the first time with this rebuild.",
-      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "richness": {
+        "mean_source_chars": 47.2,
+        "mean_effective_words": 9.43,
+        "economy": 5.0,
+        "economy_basis": "measured",
+        "computed_from": "eng-tuk-dev-v1.json",
+        "computed_at": "2026-06-12"
+      }
     },
     {
       "id": "tatoeba-por-tgl-dev",
@@ -5471,6 +6479,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 42.8,
+        "mean_effective_words": 7.94,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-tgl-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5518,6 +6534,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 104.0,
+        "mean_effective_words": 19.07,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-kaz-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5565,6 +6589,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 17.5,
+        "mean_effective_words": 7.66,
+        "economy": 2.29,
+        "economy_basis": "measured",
+        "computed_from": "jpn-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5618,6 +6650,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 42.0,
+        "mean_effective_words": 7.88,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-tgl-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5670,6 +6710,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 47.4,
+        "mean_effective_words": 8.33,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-tgl-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5718,6 +6766,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 15.0,
+        "mean_effective_words": 6.55,
+        "economy": 2.29,
+        "economy_basis": "measured",
+        "computed_from": "jpn-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5766,6 +6822,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 42.0,
+        "mean_effective_words": 7.0,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-tgl-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5813,6 +6877,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 13.8,
+        "mean_effective_words": 6.05,
+        "economy": 2.29,
+        "economy_basis": "measured",
+        "computed_from": "jpn-eus-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5872,6 +6944,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 63.0,
+        "mean_effective_words": 11.07,
+        "economy": 5.69,
+        "economy_basis": "measured",
+        "computed_from": "fra-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5928,6 +7008,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 59.7,
+        "mean_effective_words": 9.94,
+        "economy": 6.0,
+        "economy_basis": "measured",
+        "computed_from": "deu-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -5982,6 +7070,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.5,
+        "mean_effective_words": 9.13,
+        "economy": 5.86,
+        "economy_basis": "measured",
+        "computed_from": "ita-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6036,6 +7132,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 43.3,
+        "mean_effective_words": 8.12,
+        "economy": 5.33,
+        "economy_basis": "measured",
+        "computed_from": "spa-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6083,6 +7187,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 12.5,
+        "mean_effective_words": 7.97,
+        "economy": 1.57,
+        "economy_basis": "measured",
+        "computed_from": "cmn-jpn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6130,6 +7242,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 53.6,
+        "mean_effective_words": 9.83,
+        "economy": 5.45,
+        "economy_basis": "measured",
+        "computed_from": "rus-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6186,6 +7306,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 59.7,
+        "mean_effective_words": 11.03,
+        "economy": 5.41,
+        "economy_basis": "measured",
+        "computed_from": "nld-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6239,6 +7367,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 45.3,
+        "mean_effective_words": 8.4,
+        "economy": 5.39,
+        "economy_basis": "measured",
+        "computed_from": "por-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6286,6 +7422,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 13.0,
+        "mean_effective_words": 8.27,
+        "economy": 1.57,
+        "economy_basis": "measured",
+        "computed_from": "cmn-vie-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6333,6 +7477,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 11.9,
+        "mean_effective_words": 7.58,
+        "economy": 1.57,
+        "economy_basis": "measured",
+        "computed_from": "cmn-kor-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     },
     {
@@ -6381,6 +7533,14 @@
           "created": "2026-06-12T00:00:00+00:00",
           "builder_version": "0.1.0"
         }
+      },
+      "richness": {
+        "mean_source_chars": 35.2,
+        "mean_effective_words": 6.52,
+        "economy": 5.4,
+        "economy_basis": "measured",
+        "computed_from": "dan-cmn-dev-v1.json",
+        "computed_at": "2026-06-12"
       }
     }
   ]

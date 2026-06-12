@@ -27,7 +27,7 @@ the artifact behind champollion.dev/queue.json and the /contribute page:
      cli/website/src/pages/leaderboard.js) — already-covered
      (dataset, model, condition) combos are dropped from the queue.
 
-Priority model (expected-chain-value v2)
+Priority model (expected-chain-value v3)
 ----------------------------------------
 Normative definition, philosophy, defaults, and citations live in the
 public spec — arena/website/docs/specifications/queue-construction.md
@@ -36,50 +36,61 @@ implementation here mirrors it exactly; a summary:
 
 The mission is "every language into every language by measured
 individual pair chains". The benchmark's value therefore lives in its
-*quality-weighted graph*: each measured language pair carries an edge
-strength s(e) = best published corpus-level chrF++ / 100, an estimated
-chain between two languages composes multiplicatively along a path
-with a per-junction discount λ (pivoting loses fidelity: Utiyama &
-Isahara 2007; Wu & Wang 2007; Fan et al. 2021), and the mesh objective
-is the quality-weighted global efficiency
+*quality-weighted graph* — and v3 makes every edge a BRIDGE with two
+numbers, not one:
+
+    quality      q(e) = best published corpus-level chrF++ / 100
+    reliability  r(e) = f_size · f_rich · f_conf · f_repl   ∈ [0,1]
+    effective    s_eff(e) = q(e) · r(e)
+
+f_size = min(1, n/100) (evaluated entries vs the significance floor);
+f_rich = min(1, L̄/5) where L̄ is mean effective source length in
+content units (chars divided by the language's MEASURED character
+economy — registry ``richness`` backfill; fixes both the CJK "one
+word per sentence" artifact and polysynthetic word counting);
+f_conf = min(1, 5/h) with h the best run's chrF CI half-width (proxy
+50/√n when unpublished); f_repl = min(1, runs/2). 62 single-word
+vocabulary items run once compute r ≈ 0.04 — not a path. Chains
+compose multiplicatively over s_eff with a per-junction discount λ
+(pivot literature), and the mesh objective is
 
     Φ = mean over ordered language pairs (u,v) of Q(u,v),
-    Q(u,v) = max over paths P of  λ^(|P|-1) · Π_{e in P} s(e)
+    Q(u,v) = max over paths P of  λ^(|P|-1) · Π_{e in P} s_eff(e)
 
 (the Latora–Marchiori 2001 efficiency construction with the 1/d kernel
-replaced by multiplicative chain fidelity; v1's unweighted 1/d ranking
-was the binary ancestor of this). Each open queue item — one
-(corpus, model, condition) run nobody has published — is valued by the
+replaced by chain fidelity). Each open queue item is valued by the
 mesh improvement it is expected to buy per dollar:
 
     ECV(item) = ΔΦ(item) / max(est_cost, COST_FLOOR)
-    ΔΦ = Φ after raising the item's pair edge to max(s(e), ŝ) − Φ now
 
-where ŝ is a transparent prediction with an optimism bonus
-(UCB1-shaped, Auer et al. 2002): pair prior (hierarchical back-off:
-pair mean → target-language mean → source-language mean → global mean
-→ 0.5) + model offset + condition offset + κ·sqrt(2·ln(1+N)/(1+n)).
-ΔΦ uses the exact single-edge closed form
+where ΔΦ raises the item's edge to the best of (a) the run becoming
+the edge's new best (predicted quality × the reliability ITS corpus
+would produce) or (b) a pure replication bump on the current best —
+so replications, bigger corpora, richer corpora, and tighter CIs all
+carry priced value, not just higher scores. Quality predictions are
+the v2 transparent sum (hierarchical back-off prior + model offset +
+pair/target-local condition offset + UCB1-shaped exploration bonus,
+Auer et al. 2002); ΔΦ uses the exact single-edge closed form
 Q'(u,v) = max(Q(u,v), E(u,a)·s'·E(b,v), E(u,b)·s'·E(a,v)) with
-E(x,y) = λ·Q(x,y) for x≠y and E(x,x) = 1. Ranking by marginal value
-per cost is the greedy rule for budgeted coverage-style maximization
-(Nemhauser et al. 1978; Khuller, Moss & Naor 1999) — see the spec for
-why and for the honesty limits of each ingredient.
+E = λQ off-diagonal. Ranking by marginal value per cost is the greedy
+rule for budgeted coverage-style maximization (Nemhauser et al. 1978;
+Khuller, Moss & Naor 1999).
 
 Ties break: naive before coached, cheaper first, then item id.
-Unmeasured pairs dominate naturally (s(e)=0 makes ΔΦ large) — there is
-no longer a hard "uncovered first" gate; a covered pair outranks an
-uncovered one only when the formula says the upgrade genuinely buys
-more mesh per dollar. Every item exposes its full formula breakdown
-(edge_strength, pair_prior, model_offset, condition_offset,
-exploration_bonus, predicted_strength, expected_mesh_gain,
-ecv_per_usd) so any ranking can be re-derived by hand.
+Every item exposes its full breakdown (edge_quality,
+edge_reliability, edge_tier, effective_strength, pair_prior + basis,
+model_offset, condition_offset, exploration_bonus,
+predicted_strength, post_run_reliability, predicted_effective,
+expected_mesh_gain, ecv_per_usd) so any ranking can be re-derived by
+hand. Bridge display tiers: established (n ≥ 100, L̄ ≥ 5, h ≤ 5,
+runs ≥ 2) / provisional / registered.
 
-With ``--offline`` (or a failed query) there are no results: all edge
-strengths are 0, predictions collapse to the 0.5 prior, and the
-ranking degrades to structural chain value per dollar — v1 behavior.
-The legacy v1 field ``chaining_gain`` (binary-efficiency gain) is kept
-on every item for continuity and parity testing.
+With ``--offline`` (or a failed query) there are no results: all
+edges are registered-only, predictions collapse to the 0.5 prior, and
+ranking degrades to structural chain value per dollar — with
+reliability still differentiating corpora (a bigger, richer corpus
+yields a stronger post-run bridge for the same predicted score). The
+legacy v1 field ``chaining_gain`` is kept for continuity.
 
 No claim-locking by design: run-card fingerprints make duplicate runs
 harmless (identical fingerprints dedupe on publish; non-identical
@@ -127,7 +138,7 @@ MIRROR_RAW = (
 
 CONDITIONS = ("naive", "coached")
 
-# ---- Expected-chain-value v2 parameters -----------------------------------
+# ---- Expected-chain-value v3 parameters -----------------------------------
 # Normative home: arena/website/docs/specifications/queue-construction.md §4.
 # Change them there first; the queue metadata echoes the values used.
 
@@ -158,6 +169,85 @@ S0_FALLBACK = 0.5
 #: Floor for the cost denominator (USD) — keeps near-free runs from
 #: claiming unbounded value per dollar.
 COST_FLOOR = 0.01
+
+# ---- Reliability (ecv-v3) — founder-approved thresholds, spec §3 ----------
+# A bridge is (quality q, reliability r): s_eff = q·r enters the chain
+# matrix, so "62 single-word vocabulary items, run once" can never look
+# like an established bridge. Literature anchors: Koehn 2004 (even 300
+# sentences is a small test set); Kocmi et al. 2021 (chrF deltas inside
+# the CI are noise); Marie et al. 2021 (unreplicated comparisons are
+# the field's credibility failure); Mager et al. 2021/2022 (character-
+# level content units for morphologically rich languages).
+
+#: Evaluated entries for full size credit (significance floor).
+RELIABILITY_N_FULL = 100
+
+#: Mean effective source words (chars / measured character economy)
+#: for full richness credit — a real-sentence corpus.
+RELIABILITY_L_HEALTHY = 5.0
+
+#: chrF 95% CI half-width for full confidence credit (noise floor).
+RELIABILITY_H_NOISE = 5.0
+
+#: Published runs on an edge for full replication credit.
+RELIABILITY_RUNS_FULL = 2
+
+
+def _ci_half_proxy(n: int) -> float:
+    """CI half-width estimate when a run published no bootstrap CI.
+
+    Anchored at the policy noise floor (±5 chrF at n=100) with 1/√n
+    scaling: h ≈ 50/√n. A 50-entry run proxies to ±7.1, a 200-entry
+    run to ±3.5.
+    """
+    import math
+    return 50.0 / math.sqrt(max(1, n))
+
+
+def reliability_factors(
+    n_eval: int,
+    eff_words: float | None,
+    ci_half: float | None,
+    runs: int,
+) -> dict:
+    """The four reliability factors and their product r ∈ [0,1].
+
+    Missing effective-length metadata is treated as neutral (the
+    registry backfill stamps every locally-buildable corpus; absence
+    means we could not measure, not that entries are poor). A missing
+    CI falls back to the n-based proxy.
+    """
+    f_size = min(1.0, n_eval / RELIABILITY_N_FULL) if n_eval else 0.0
+    f_rich = (
+        min(1.0, eff_words / RELIABILITY_L_HEALTHY)
+        if eff_words else 1.0
+    )
+    h = ci_half if ci_half and ci_half > 0 else _ci_half_proxy(n_eval)
+    f_conf = min(1.0, RELIABILITY_H_NOISE / h) if h > 0 else 0.0
+    f_repl = min(1.0, runs / RELIABILITY_RUNS_FULL)
+    r = f_size * f_rich * f_conf * f_repl
+    return {
+        "f_size": round(f_size, 4),
+        "f_rich": round(f_rich, 4),
+        "f_conf": round(f_conf, 4),
+        "f_repl": round(f_repl, 4),
+        "r": round(r, 4),
+    }
+
+
+def bridge_tier(n_eval: int, eff_words: float | None,
+                ci_half: float | None, runs: int) -> str:
+    """Display tier: established / provisional (registered = no runs)."""
+    if runs <= 0:
+        return "registered"
+    h = ci_half if ci_half and ci_half > 0 else _ci_half_proxy(n_eval)
+    ok = (
+        n_eval >= RELIABILITY_N_FULL
+        and (eff_words is None or eff_words >= RELIABILITY_L_HEALTHY)
+        and h <= RELIABILITY_H_NOISE
+        and runs >= RELIABILITY_RUNS_FULL
+    )
+    return "established" if ok else "provisional"
 
 
 def load_json(path: Path) -> dict:
@@ -313,7 +403,8 @@ def _fetch_run_rows(page_size: int = FETCH_PAGE_SIZE) -> list[dict]:
     while True:
         url = (
             f"{SUPABASE_URL}/rest/v1/run_cards"
-            "?select=dataset_id,model_slug,condition,chrf_plus_plus,submitted_at"
+            "?select=dataset_id,model_slug,condition,chrf_plus_plus,"
+            "submitted_at,corpus_size,chrf_ci_lower,chrf_ci_upper"
             "&trust=neq.disqualified&order=id.asc"
             f"&limit={page_size}&offset={offset}"
         )
@@ -362,12 +453,20 @@ def fetch_results() -> tuple[set[tuple[str, str, str]], list[dict]]:
         combos.add((ds, model, cond))
         chrf = row.get("chrf_plus_plus")
         if chrf is not None and 0 <= chrf <= 100:
+            lo, hi = row.get("chrf_ci_lower"), row.get("chrf_ci_upper")
+            ci_half = (
+                (hi - lo) / 2.0
+                if lo is not None and hi is not None and hi >= lo
+                else None
+            )
             results.append({
                 "token": ds,
                 "model": model,
                 "condition": cond,
                 "strength": chrf / 100.0,
                 "submitted_at": row.get("submitted_at"),
+                "n_eval": row.get("corpus_size") or 0,
+                "ci_half": ci_half,
             })
     return combos, results
 
@@ -400,14 +499,18 @@ def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
       n_results       int
     """
     token_pair: dict[str, tuple[str, str]] = {}
+    token_dataset: dict[str, dict] = {}
     for ds in datasets:
         lp = ds.get("language_pair")
         if not lp:
             continue
         pair = (lp["source"], lp["target"])
         token_pair[ds["id"].lower()] = pair
+        token_dataset[ds["id"].lower()] = ds
         if ds.get("path"):
-            token_pair[Path(ds["path"]).stem.lower()] = pair
+            stem = Path(ds["path"]).stem.lower()
+            token_pair[stem] = pair
+            token_dataset[stem] = ds
 
     pair_scores: dict[frozenset, list[float]] = {}
     target_scores: dict[str, list[float]] = {}
@@ -416,6 +519,8 @@ def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
     cell_counts: dict[tuple[frozenset, str], int] = {}
     by_pair_model: dict[tuple[frozenset, str], list[float]] = {}
     by_pair_model_cond: dict[tuple[frozenset, str, str], list[float]] = {}
+    best_run: dict[frozenset, dict] = {}   # the run that set the edge's q
+    edge_runs: dict[frozenset, int] = {}
 
     for r in results:
         pair = token_pair.get(r["token"])
@@ -434,6 +539,34 @@ def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
         by_pair_model_cond.setdefault(
             (e, r["model"], r["condition"]), []
         ).append(s)
+        edge_runs[e] = edge_runs.get(e, 0) + 1
+        if e not in best_run or s > best_run[e]["strength"]:
+            best_run[e] = r
+
+    # ---- Bridge facts per edge (reliability layer, ecv-v3) --------------
+    # q from the best run; n/CI from that same run; richness from the
+    # corpus that run used (registry backfill); replication = run count.
+    edge_bridge: dict[frozenset, dict] = {}
+    for e, br in best_run.items():
+        ds = token_dataset.get(br["token"]) or {}
+        eff_words = (ds.get("richness") or {}).get("mean_effective_words")
+        n_eval = br.get("n_eval") or 0
+        runs = edge_runs.get(e, 0)
+        factors = reliability_factors(
+            n_eval, eff_words, br.get("ci_half"), runs,
+        )
+        q = max(pair_scores[e])
+        edge_bridge[e] = {
+            "q": round(q, 4),
+            **factors,
+            "s_eff": round(q * factors["r"], 4),
+            "n_eval": n_eval,
+            "ci_half": (round(br["ci_half"], 2)
+                        if br.get("ci_half") else None),
+            "eff_words": eff_words,
+            "runs": runs,
+            "tier": bridge_tier(n_eval, eff_words, br.get("ci_half"), runs),
+        }
 
     # Model offsets: how a model does relative to the other models on the
     # same pair, averaged over pairs where a comparison exists (a plain
@@ -475,7 +608,10 @@ def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
                 cond_deltas_target.setdefault(tgt, []).append(delta)
 
     return {
+        # quality space (predictions back off over these)
         "edge_strength": {e: max(v) for e, v in pair_scores.items()},
+        # bridge space (reliability layer; s_eff drives the chain matrix)
+        "edge_bridge": edge_bridge,
         "pair_scores": pair_scores,
         "target_scores": target_scores,
         "source_scores": source_scores,
@@ -485,6 +621,7 @@ def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
         "cond_deltas_pair": cond_deltas_pair,
         "cond_deltas_target": cond_deltas_target,
         "n_results": len(all_scores),
+        "token_dataset": token_dataset,
     }
 
 
@@ -729,19 +866,24 @@ def build_mesh_snapshot(
     for e in sorted(pair_size, key=lambda x: tuple(sorted(x))):
         a, b = sorted(e)
         runs = edge_runs.get(e, [])
+        bridge = (evidence.get("edge_bridge") or {}).get(e)
         edges.append({
             "a": a,
             "b": b,
             "size": pair_size[e],
             "status": "measured" if runs else "registered",
             "best_chrf": max((c for _t, c in runs), default=None),
+            # Reliability layer (ecv-v3): the viz maps r to opacity and
+            # shows the tier; q stays the color band.
+            "reliability": bridge["r"] if bridge else None,
+            "tier": bridge["tier"] if bridge else "registered",
             "runs": [[t, c] for t, c in runs],
         })
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "generator": "arena/scripts/generate_sweep_queue.py",
-        "formula_version": "ecv-v2",
+        "formula_version": "ecv-v3",
         "phi_current": round(phi_current, 6),
         "bands_chrf": MESH_BANDS,
         "band_note": (
@@ -853,7 +995,13 @@ def main() -> int:
         }
         | {lang for e in evidence["edge_strength"] for lang in e}
     )
-    Q = build_chain_matrix(nodes, evidence["edge_strength"], lam=args.lam)
+    # The chain matrix runs on EFFECTIVE strengths (quality × reliability,
+    # ecv-v3): an unreliable bridge contributes weak chains no matter how
+    # flashy its best score.
+    effective_strengths = {
+        e: b["s_eff"] for e, b in evidence["edge_bridge"].items()
+    }
+    Q = build_chain_matrix(nodes, effective_strengths, lam=args.lam)
     n_nodes = len(nodes)
     phi_now = (
         sum(Q[u][v] for u in nodes for v in nodes if u != v)
@@ -928,13 +1076,43 @@ def main() -> int:
                 if cond == "coached":
                     run_cmd += " --coaching-file YOUR_COACHING.txt"
 
-                # ---- Expected-chain-value v2 (spec §3) -------------------
+                # ---- Expected-chain-value v3 (spec §3) -------------------
+                # A bridge is (quality, reliability): the chain matrix
+                # runs on s_eff = q·r, and a run is valued by how much
+                # it raises the edge's EFFECTIVE strength — via a better
+                # score, a bigger/richer corpus, a tighter CI, or simply
+                # by replicating a single-run edge.
                 edge = frozenset((src, tgt))
-                s_cur = evidence["edge_strength"].get(edge, 0.0)
+                bridge = evidence["edge_bridge"].get(edge)
+                q_cur = bridge["q"] if bridge else 0.0
+                r_cur = bridge["r"] if bridge else 0.0
+                s_eff_cur = bridge["s_eff"] if bridge else 0.0
+                runs_cur = bridge["runs"] if bridge else 0
                 pred = predict_strength(
                     (src, tgt), ms, cond, evidence, kappa=args.kappa,
                 )
-                s_new = max(s_cur, pred["predicted_strength"])
+                n_run = ds.get("size") or 0
+                rich_run = (ds.get("richness") or {}).get(
+                    "mean_effective_words"
+                )
+                # Branch A: this run becomes the edge's best run — its
+                # corpus stats define r (CI proxied from n until scored).
+                fac_a = reliability_factors(
+                    n_run, rich_run, None, runs_cur + 1,
+                )
+                s_post_a = pred["predicted_strength"] * fac_a["r"]
+                # Branch B: the current best stays; this run replicates.
+                if bridge:
+                    fac_b = reliability_factors(
+                        bridge["n_eval"], bridge["eff_words"],
+                        bridge["ci_half"], runs_cur + 1,
+                    )
+                    s_post_b = bridge["q"] * fac_b["r"]
+                else:
+                    s_post_b = 0.0
+                post_r = (fac_a["r"] if s_post_a >= s_post_b
+                          else fac_b["r"])
+                s_new = max(s_eff_cur, s_post_a, s_post_b)
                 cache_key = (edge, round(s_new, 6))
                 if cache_key not in gain_cache:
                     gain_cache[cache_key] = single_edge_gain(
@@ -968,13 +1146,19 @@ def main() -> int:
                     "chaining_gain": round(gains.get(ds["id"], 0.0), 6),
                     # Full formula breakdown (spec §3) — every ranking is
                     # re-derivable by hand from these fields.
-                    "edge_strength": round(s_cur, 4),
+                    "edge_quality": round(q_cur, 4),
+                    "edge_reliability": round(r_cur, 4),
+                    "edge_tier": (bridge["tier"] if bridge
+                                  else "registered"),
+                    "effective_strength": round(s_eff_cur, 4),
                     "pair_prior": pred["pair_prior"],
                     "prior_basis": pred["prior_basis"],
                     "model_offset": pred["model_offset"],
                     "condition_offset": pred["condition_offset"],
                     "exploration_bonus": pred["exploration_bonus"],
                     "predicted_strength": pred["predicted_strength"],
+                    "post_run_reliability": round(post_r, 4),
+                    "predicted_effective": round(max(s_post_a, s_post_b), 4),
                     "expected_mesh_gain": round(mesh_gain, 8),
                     "ecv_per_usd": round(ecv, 8),
                     "run_command": run_cmd,
@@ -1016,7 +1200,7 @@ def main() -> int:
             "conditions": list(CONDITIONS),
             "coverage_source": coverage_note,
             "priority_model": (
-                "expected-chain-value v2: items are ranked by "
+                "expected-chain-value v3: items are ranked by "
                 "ECV = ΔΦ / cost — the expected gain in quality-weighted "
                 "mesh efficiency Φ from publishing this run, per estimated "
                 "dollar. Φ averages, over all ordered language pairs, the "
@@ -1030,12 +1214,18 @@ def main() -> int:
                 "queue-construction"
             ),
             "priority_parameters": {
-                "formula_version": "ecv-v2",
+                "formula_version": "ecv-v3",
                 "lambda_junction_discount": args.lam,
                 "kappa_exploration_scale": args.kappa,
                 "strength_cap": S_CAP,
                 "cost_floor_usd": COST_FLOOR,
                 "prior_fallback": S0_FALLBACK,
+                "reliability_thresholds": {
+                    "n_full": RELIABILITY_N_FULL,
+                    "effective_words_healthy": RELIABILITY_L_HEALTHY,
+                    "ci_half_noise_floor": RELIABILITY_H_NOISE,
+                    "runs_full": RELIABILITY_RUNS_FULL,
+                },
                 "phi_current": round(phi_now, 6),
                 "scored_runs_used": evidence["n_results"],
                 "scored_edges": len(evidence["edge_strength"]),

@@ -293,6 +293,71 @@ class TestPredictStrength:
 
 
 # ---------------------------------------------------------------------------
+# Reliability layer (ecv-v3): bridges are (quality, reliability)
+# ---------------------------------------------------------------------------
+
+class TestReliability:
+    def test_founders_case_is_not_a_path(self, queue_mod):
+        # 62 single-word vocabulary items, one run, wide CI
+        f = queue_mod.reliability_factors(62, 1.0, 8.0, 1)
+        assert f["r"] == pytest.approx(0.62 * 0.2 * 0.625 * 0.5, abs=1e-3)
+        assert f["r"] < 0.05
+
+    def test_established_bridge_reaches_full_reliability(self, queue_mod):
+        f = queue_mod.reliability_factors(200, 8.0, 3.0, 3)
+        assert f["r"] == 1.0
+
+    def test_vocab_list_can_never_be_established(self, queue_mod):
+        # f_rich caps r at 0.2·(everything else) for one-word entries
+        f = queue_mod.reliability_factors(10_000, 1.0, 1.0, 50)
+        assert f["r"] <= 0.2
+        assert queue_mod.bridge_tier(10_000, 1.0, 1.0, 50) == "provisional"
+
+    def test_missing_richness_is_neutral(self, queue_mod):
+        with_rich = queue_mod.reliability_factors(100, 8.0, 4.0, 2)["r"]
+        without = queue_mod.reliability_factors(100, None, 4.0, 2)["r"]
+        assert without == pytest.approx(with_rich)
+
+    def test_ci_proxy_matches_policy_anchor(self, queue_mod):
+        # ±5 at n=100, 1/sqrt(n) scaling
+        assert queue_mod._ci_half_proxy(100) == pytest.approx(5.0)
+        assert queue_mod._ci_half_proxy(25) == pytest.approx(10.0)
+
+    def test_tiers(self, queue_mod):
+        assert queue_mod.bridge_tier(0, None, None, 0) == "registered"
+        assert queue_mod.bridge_tier(120, 8.0, 4.0, 2) == "established"
+        assert queue_mod.bridge_tier(120, 8.0, 4.0, 1) == "provisional"
+        assert queue_mod.bridge_tier(60, 8.0, 4.0, 2) == "provisional"
+
+    def test_evidence_builds_edge_bridge(self, queue_mod):
+        datasets = _datasets()
+        datasets[0]["richness"] = {"mean_effective_words": 8.0}
+        datasets[0]["size"] = 100
+        rows = [
+            {"token": "ds-ab", "model": "m1", "condition": "naive",
+             "strength": 0.5, "n_eval": 100, "ci_half": 4.0},
+            {"token": "ds-ab", "model": "m2", "condition": "naive",
+             "strength": 0.6, "n_eval": 100, "ci_half": 3.0},
+        ]
+        ev = queue_mod.build_evidence(datasets, rows)
+        b = ev["edge_bridge"][frozenset(("aaa", "bbb"))]
+        assert b["q"] == 0.6                  # best run sets quality
+        assert b["runs"] == 2
+        assert b["ci_half"] == 3.0            # best run's CI
+        assert b["r"] == pytest.approx(1.0)   # 100/8.0/±3/2 runs → full
+        assert b["s_eff"] == pytest.approx(0.6)
+        assert b["tier"] == "established"
+
+    def test_replication_raises_effective_strength(self, queue_mod):
+        """A second run on a single-run edge must increase s_eff even
+        with no quality improvement — replications carry priced value."""
+        f1 = queue_mod.reliability_factors(120, 8.0, 4.0, 1)
+        f2 = queue_mod.reliability_factors(120, 8.0, 4.0, 2)
+        q = 0.6
+        assert q * f2["r"] > q * f1["r"]
+
+
+# ---------------------------------------------------------------------------
 # Full-board pagination
 # ---------------------------------------------------------------------------
 
