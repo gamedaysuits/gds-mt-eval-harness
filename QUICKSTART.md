@@ -105,6 +105,22 @@ Or publish manually:
 mt-eval publish eval/logs/harness/run_*_report.json
 ```
 
+## 6. Contribute compute (one command)
+
+Don't want to pick corpora yourself? The public queue ranks every open
+(corpus, model, condition) by expected chain value — how much the run
+strengthens the whole language mesh per estimated dollar:
+
+```bash
+mt-eval queue --top 5             # run the 5 highest-value open items
+mt-eval queue --budget 2.50       # or bound by estimated spend
+mt-eval queue --top 3 --dry-run   # show the plan, run nothing
+```
+
+The plan and estimated cost are confirmed before anything executes;
+publish the resulting reports as above. Details:
+https://mtevalarena.org/docs/getting-started/contributing-compute
+
 ---
 
 ## What the run card looks like

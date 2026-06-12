@@ -82,6 +82,7 @@ def build_parser() -> argparse.ArgumentParser:
         epilog=(
             "SUBCOMMANDS:\n"
             "  run              Execute a translation run (default)\n"
+            "  queue            Run the top of the community compute queue\n"
             "  test             Analyze a completed run log\n"
             "  publish          Submit a TestReport to the leaderboard\n"
             "  compare          Compare multiple run logs\n"
@@ -188,6 +189,22 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Fetch live model catalog from OpenRouter (requires API key)",
     )
+
+    # --- QUEUE command ---
+    queue_p = sub.add_parser(
+        "queue",
+        help="Run the top of the community compute queue with your own key",
+        description=(
+            "Execute open items from the public queue "
+            "(champollion.dev/queue.json), which is ranked by expected "
+            "chain value — mesh improvement per estimated dollar. Items "
+            "run in queue order; the plan and estimated spend are shown "
+            "and confirmed before anything is executed. Afterwards, "
+            "publish your reports with: mt-eval publish <report.json>"
+        ),
+    )
+    from mt_eval_harness.queue_runner import add_queue_arguments
+    add_queue_arguments(queue_p)
 
     # --- PUBLISH command ---
     pub_p = sub.add_parser(
@@ -960,6 +977,10 @@ def main():
         # Offer to publish to the arena (interactive only)
         _prompt_publish(report_path)
         return
+
+    if args.command == "queue":
+        from mt_eval_harness.queue_runner import run_from_args
+        sys.exit(run_from_args(args))
 
     if args.command == "publish":
         from mt_eval_harness.publish import publish_to_supabase

@@ -70,6 +70,26 @@ item I pick, then run `mt-eval publish` on the generated report JSON and
 show me the published run card.
 ```
 
+## Tier 0 — One command
+
+The fastest way to contribute is to let the harness take the top of the
+queue for you:
+
+```bash
+mt-eval queue --top 5          # run the 5 highest-value open items
+mt-eval queue --budget 2.50    # or: run from the top until ~$2.50 of
+                               # estimated spend is committed
+mt-eval queue --top 3 --dry-run   # see the plan first, spend nothing
+```
+
+It never re-sorts — the queue order *is* the [priority
+model](/docs/specifications/queue-construction) — and it shows the full
+plan with estimated spend and asks before executing anything. Coached
+items are skipped unless you bring your own coaching file
+(`--include-coached --coaching-file my-coaching.txt`). Afterwards,
+publish each report with `mt-eval publish` as below, and watch what
+your runs built at [champollion.dev/mesh](https://champollion.dev/mesh).
+
 ## Tier 1 — Run a benchmark
 
 Every queue item's `run_command` is self-contained. A typical one:
