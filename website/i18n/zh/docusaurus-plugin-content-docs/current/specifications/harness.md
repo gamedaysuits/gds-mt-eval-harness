@@ -24,7 +24,7 @@ related:
 
 > **执行摘要。** 本页涵盖 MT 评估工具的安装、配置和使用 — 该工具针对标准化语料库对翻译方法进行基准测试，并生成评分运行卡。有关指标、模式和评估协议的规范定义，请参阅[基准规范](/docs/specifications/benchmark)。
 
-该工具运行翻译实验并生成运行卡。它处理提示构建、API 调用、评分和结果序列化 — 您提供数据集和模型。
+该工具运行翻译实验并生成运行卡。它处理提示构建、API 调用、评分和结果序列化 — 你提供数据集和模型。
 
 ## 安装
 
@@ -189,7 +189,7 @@ mt-eval run \
 }
 ```
 
-**`totals`** — 令牌使用情况和成本跟踪：
+**`totals`** — 令牌使用和成本跟踪：
 
 ```json
 {
@@ -227,13 +227,13 @@ mt-eval run \
 
 ---
 
-## 指纹与运行卡哈希
+## 指纹与运行卡哈希 {#fingerprint-vs-run-card-hash}
 
 工具生成两个不同的哈希。它们有不同的用途：
 
 ### 指纹
 
-**指纹**回答：*"这个运行能否被重现？"*
+**指纹**回答：*"这个运行能被重现吗？"*
 
 它对定义实验配置的输入组合进行哈希 — 而不是输出：
 
@@ -266,11 +266,11 @@ mt-eval run \
 mt-eval publish eval/logs/harness/your-run-card.json
 ```
 
-如果在运行期间未提供 `--method-card`，`mt-eval publish` 会启动交互式向导（`method_card_wizard.py`），引导您描述您的方法（名称、类别、使用的工具等）。向导输出在提交前嵌入到运行卡中。
+如果在运行期间没有提供 `--method-card`，`mt-eval publish` 会启动交互式向导（`method_card_wizard.py`），引导你描述你的方法（名称、类别、使用的工具等）。向导输出在提交前嵌入到运行卡中。
 
 ### 手动提交
 
-运行卡作为 JSON 文件保存在输出目录中。您也可以通过[/leaderboard](https://champollion.dev/leaderboard)的排行榜 UI 提交任何运行卡文件，或通过 API：
+运行卡作为 JSON 文件保存在输出目录中。你也可以通过排行榜 UI 在 [/leaderboard](https://champollion.dev/leaderboard) 提交任何运行卡文件，或通过 API：
 
 ```bash
 curl -X POST https://champollion.dev/api/leaderboard/submit \
@@ -279,16 +279,16 @@ curl -X POST https://champollion.dev/api/leaderboard/submit \
 ```
 
 :::warning 排行榜验证
-排行榜根据数据集注册表验证提交的运行卡。引用未知数据集或具有破损 `run_card_hash` 的提交将被拒绝。
+排行榜根据数据集注册表验证提交的运行卡。引用未知数据集或具有破损 `run_card_hash` 的提交会被拒绝。
 :::
 
 :::danger 不要在评估数据上进行训练
-如果您的方法在开发期间已看到评估数据集 — 作为训练数据、少样本示例、字典条目或提示工程材料 — 您的提交将被**取消资格**。有关什么是好方法与坏方法，请参阅 [MT 评估](/docs/leaderboard/rules)。
+如果你的方法在开发期间见过评估数据集 — 作为训练数据、少样本示例、字典条目或提示工程材料 — 你的提交将被**取消资格**。有关什么是好方法与坏方法，请参阅 [MT 评估](/docs/leaderboard/rules)。
 :::
 
 ---
 
-## 另请参阅
+## 另见
 
 - [MT 评估](/docs/leaderboard/rules) — 概述、排行榜价值主张和好/坏方法指导
 - [评估数据集](/docs/leaderboard/datasets) — 数据集格式、EDTeKLA、FLORES+

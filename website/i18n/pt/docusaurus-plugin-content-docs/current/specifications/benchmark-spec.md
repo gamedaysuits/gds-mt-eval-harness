@@ -29,7 +29,7 @@ related:
 
 ### 1.1 Métricas Automatizadas São Proxies
 
-Toda métrica definida neste documento é computada por máquina. chrF++, aceitação FST, acurácia morfológica, similaridade semântica — todas elas são proxies automatizados para qualidade de tradução. Eles são úteis para iteração rápida, comparação sistemática e detecção de regressões. Eles **não são substitutos para julgamento humano**.
+Toda métrica definida neste documento é computada por máquina. chrF++, aceitação FST, acurácia morfológica, similaridade semântica — todas elas são proxies automatizados para qualidade de tradução. Elas são úteis para iteração rápida, comparação sistemática e detecção de regressões. Elas **não são substitutos para julgamento humano**.
 
 A hierarquia de avaliação:
 
@@ -53,7 +53,7 @@ Todo resultado de benchmark deve ser reprodutível. O run card (§3) captura a c
 
 ### 1.4 Sem Dados de Avaliação Sintéticos
 
-**Este projeto não gera, usa ou endossa dados de avaliação sintéticos.** Todos os corpora devem ser originários de texto genuinamente autoral — traduções publicadas, livros didáticos, documentos bilíngues ou traduções eliciadas de falantes fluentes.
+**Este projeto não gera, usa ou endossa dados de avaliação sintéticos.** Todos os corpora devem ser originários de texto genuinamente autoral — traduções publicadas, livros didáticos, documentos bilíngues ou traduções elicitadas de falantes fluentes.
 
 LLMs podem auxiliar com:
 - Alinhamento de sentenças (encontrando passagens paralelas em textos bilíngues existentes)
@@ -63,9 +63,9 @@ LLMs podem auxiliar com:
 
 LLMs **nunca** devem gerar traduções de referência ou pares de avaliação.
 
-**Somos neutros em desenvolvimento em relação aos dados de treinamento.** Se um desenvolvedor de método usa dados de treinamento sintéticos, retrotradução ou aumento de dados em seu método, essa é sua escolha — avaliamos o resultado, não o processo de treinamento. O OMT-1600 da Meta usa aproximadamente 270 milhões de sentenças paralelas sintéticas geradas via retrotradução. Não temos objeção a métodos treinados dessa forma. Testamos apenas em curação humana.
+**Somos neutros em desenvolvimento em relação aos dados de treinamento.** Se um desenvolvedor de método usa dados de treinamento sintéticos, retrotradução ou aumento de dados em seu método, essa é sua escolha — nós avaliamos o resultado, não o processo de treinamento. O OMT-1600 da Meta usa aproximadamente 270 milhões de sentenças paralelas sintéticas geradas via retrotradução. Não temos objeção a métodos treinados dessa forma. Testamos apenas em curação humana.
 
-> **Por que não texto bíblico para avaliação?** OMT-1600 avalia 1.560 de 1.600 idiomas em texto do domínio bíblico. Traduções bíblicas têm registro arcaico, vocabulário litúrgico e estrutura de sentença formulaica. Nossos corpora de avaliação são originários de texto curado pela comunidade, diverso em domínio — saúde, legal, educacional, governamental, conversacional e domínios técnicos (ver §2.7). Esta é uma escolha de design deliberada. As comunidades precisam de tradução para os domínios onde realmente vivem e trabalham, não um único registro religioso. Um método que pontua bem em Gênesis 1:1 diz quase nada sobre seu desempenho em uma agenda de conselho de banda ou um formulário de admissão de clínica.
+> **Por que não texto da Bíblia para avaliação?** OMT-1600 avalia 1.560 de 1.600 idiomas em texto do domínio Bíblia. Traduções bíblicas têm registro arcaico, vocabulário litúrgico e estrutura de sentença formulaica. Nossos corpora de avaliação são originários de texto curado pela comunidade, diverso em domínios — saúde, legal, educacional, governamental, conversacional e técnico (ver §2.7). Esta é uma escolha de design deliberada. As comunidades precisam de tradução para os domínios onde realmente vivem e trabalham, não um único registro religioso. Um método que pontua bem em Gênesis 1:1 diz quase nada sobre seu desempenho em uma agenda de conselho de banda ou um formulário de admissão de clínica.
 
 ---
 
@@ -96,7 +96,7 @@ A estrutura de nível superior de um arquivo de corpus:
 | Campo | Tipo | Obrigatório | Descrição |
 |-------|------|-----------|-----------|
 | `id` | string | ✅ | Identificador único do dataset, usado em run cards e leaderboard |
-| `version` | string | ✅ | Versão semântica. Incrementar invalida comparações de run card anteriores |
+| `version` | string | ✅ | Versão semântica. Incrementar invalida comparações anteriores de run card |
 | `language_pair` | string | ✅ | Rótulo de exibição (ex: `EN→CRK`) |
 | `source_language` | string | ✅ | Código de idioma de origem BCP 47 |
 | `target_language` | string | ✅ | Código de idioma de destino BCP 47 |
@@ -129,7 +129,7 @@ Cada entrada no corpus representa um desafio de tradução:
 | `id` | integer | ✅ | Identificador único dentro do corpus |
 | `source` | string | ✅ | Texto de origem no idioma de origem |
 | `reference` | string | ✅ | Tradução de referência padrão-ouro no idioma de destino |
-| `segment` | string | 📎 | Partição do corpus: `gold_standard`, `held_out`, `development` ou `diagnostic` |
+| `segment` | string | 📎 | Partição de corpus: `gold_standard`, `held_out`, `development` ou `diagnostic` |
 | `difficulty` | integer | 📎 | Classificação de dificuldade 1–5 (ver §2.4) |
 | `provenance` | string | 📎 | Origem desta entrada (ver §2.5) |
 | `register` | string | 📎 | Nível de registro/formalidade (ver §2.6) |
@@ -167,11 +167,11 @@ Os segmentos `gold_standard` e `held_out` são totalmente secretos. Tanto as sen
 | 4 — Morfologia complexa | Obviation, voz passiva, ordem conjunta, orações relativas | "the woman whose son went to the store" |
 | 5 — Avançado | Multi-cláusula, registro formal, cerimonial, idiomático | Parágrafo completo com tom apropriado ao registro |
 
-Um corpus bem construído deve incluir entradas em todos os cinco tiers de dificuldade, ponderados em direção aos tiers 2–4 onde caem a maioria dos desafios de tradução do mundo real.
+Um corpus bem construído deve incluir entradas em todos os cinco tiers de dificuldade, ponderado em direção aos tiers 2–4 onde caem a maioria dos desafios de tradução do mundo real.
 
 ### 2.5 Tags de Proveniência
 
-Cada entrada deve indicar sua origem:
+Toda entrada deve indicar sua origem:
 
 | Tag | Significado |
 |-----|-------------|
@@ -196,7 +196,7 @@ Cada entrada deve indicar sua origem:
 
 **Contexto** descreve a função comunicativa:
 
-> 🔲 **Planejado.** O campo `context` é definido no esquema mas ainda não está preenchido em datasets atuais. É reservado para enriquecimento futuro de corpus.
+> 🔲 **Planejado.** O campo `context` é definido no esquema mas ainda não preenchido em datasets atuais. É reservado para enriquecimento futuro de corpus.
 
 | Contexto | Descrição |
 |----------|-----------|
@@ -208,9 +208,9 @@ Cada entrada deve indicar sua origem:
 | `label` | Rótulo de UI, texto de botão ou título |
 | `error` | Mensagem de erro ou aviso |
 
-### 2.7 Domínio
+### 2.7 Domínio {#27-domain}
 
-**Domínio** descreve o caso de uso do mundo real — o tipo de conteúdo sendo traduzido. Isto é ortogonal ao registro e contexto:
+**Domínio** descreve o caso de uso do mundo real — o tipo de conteúdo sendo traduzido. Isto é ortogonal a registro e contexto:
 
 - **Registro** responde: *Quão formal é isto?*
 - **Contexto** responde: *O que esta sentença está fazendo?*
@@ -219,19 +219,19 @@ Cada entrada deve indicar sua origem:
 Um contrato legal (domínio: `legal`) pode ser formal (registro: `formal`) e conter uma declaração (contexto: `declaration`). Uma transcrição de chatbot legal (domínio: `legal`) pode ser conversacional (registro: `conversational`) e conter perguntas (contexto: `question`). Mesmo domínio, registro e contexto diferentes.
 
 | Código de Domínio | Descrição | Consumidores Típicos |
-|-------------------|-----------|-------------------|
+|-------------------|-----------|---------------------|
 | `ui` | Strings de interface de software | Desenvolvedores de app, times de localização |
-| `legal` | Contratos, estatutos, petições judiciais, documentos de imigração | Escritórios de advocacia, tribunais, times de compliance, advogados de PI |
-| `medical` | Notas clínicas, rótulos de drogas, comunicações com pacientes, protocolos de ensaios | Hospitais, pharma, ensaios clínicos, portais de pacientes |
+| `legal` | Contratos, estatutos, petições judiciais, documentos de imigração | Escritórios de advocacia, tribunais, times de conformidade, advogados de PI |
+| `medical` | Notas clínicas, rótulos de drogas, comunicações de paciente, protocolos de ensaio | Hospitais, pharma, ensaios clínicos, portais de paciente |
 | `financial` | Bancário, seguros, arquivos regulatórios, relatórios de auditoria | Bancos, seguradoras, reguladores, auditores |
 | `edu` | Livros didáticos, currículos, planos de aula, materiais acadêmicos | Escolas, universidades, editoras de livros didáticos |
-| `ecommerce` | Descrições de produtos, avaliações, listagens de marketplace | Varejistas online, vendedores de marketplace |
+| `ecommerce` | Descrições de produto, avaliações, listagens de marketplace | Varejistas online, vendedores de marketplace |
 | `marketing` | Copy de anúncio, mensagens de marca, campanhas, slogans | Agências de publicidade, times de marca |
-| `gov` | Documentos de política, regulações, avisos públicos, legislação | Agências governamentais, times de compliance |
-| `scientific` | Artigos de pesquisa, abstratos, metodologia, propostas de bolsa | Pesquisadores, periódicos, agências de bolsa |
+| `gov` | Documentos de política, regulações, avisos públicos, legislação | Agências governamentais, times de conformidade |
+| `scientific` | Artigos de pesquisa, abstracts, metodologia, propostas de bolsa | Pesquisadores, periódicos, agências de bolsa |
 | `religious` | Escritura, textos litúrgicos, comentário teológico | Comunidades de fé, editoras litúrgicas |
 | `support` | FAQs, mensagens de erro, guias de solução de problemas, scripts de chatbot | Empresas SaaS, help desks |
-| `subtitles` | Diálogo de filme, TV, streaming e gaming | Plataformas de streaming, estúdios, empresas de gaming |
+| `subtitles` | Filme, TV, streaming e diálogo de jogos | Plataformas de streaming, estúdios, empresas de jogos |
 | `news` | Jornalismo, relatórios de agência, editorial, comunicados de imprensa | Organizações de mídia, agências de notícias |
 | `literary` | Ficção, poesia, narrativa, textos culturais | Editoras, orgs de preservação cultural |
 | `conv` | Conversa informal, mídia social, mensagens | Apps de consumidor, plataformas sociais |
@@ -245,7 +245,7 @@ Um contrato legal (domínio: `legal`) pode ser formal (registro: `formal`) e con
 
 ---
 
-## 3. Esquema de Run Card
+## 3. Esquema de Run Card {#3-run-card-schema}
 
 O run card é a unidade atômica de avaliação. É um documento JSON auto-contido que registra a configuração completa e resultados de uma única execução de avaliação: um método, um modelo, uma configuração, um dataset.
 
@@ -282,15 +282,15 @@ Estes campos definem a configuração experimental — o que foi testado e como.
 | `max_retries` | number | ❌ | Máximo de retries para rejeição FST, se aplicável |
 
 :::info Run Cards Publicados Incluem method_config
-Quando um run card é publicado no leaderboard (via `mt-eval publish`), ele também inclui um bloco `method_config` contendo o MethodConfig canônico de 8 campos (`model`, `temperature`, `batchSize`, `register`, `coachingFile`, `coachingPrompt`, `promptContext`, `qualityTier` — todos camelCase). Isto permite importação de zero-reconstrução: `champollion leaderboard --install` lê `method_config` diretamente e escreve como um manifesto de plugin. Os campos de telemetria acima (§3.2) registram o que o harness observou; `method_config` registra o que o desenvolvedor pretendia.
+Quando um run card é publicado no leaderboard (via `mt-eval publish`), ele também inclui um bloco `method_config` contendo o MethodConfig canônico de 8 campos (`model`, `temperature`, `batchSize`, `register`, `coachingFile`, `coachingPrompt`, `promptContext`, `qualityTier` — todos camelCase). Isto permite importação zero-reconstrução: `champollion leaderboard --install` lê `method_config` diretamente e escreve como um manifesto de plugin. Os campos de telemetria acima (§3.2) registram o que o harness observou; `method_config` registra o que o desenvolvedor pretendia.
 :::
 
 ### 3.3 Referência de Dataset
 
 | Campo | Tipo | Descrição |
 |-------|------|-----------|
-| `dataset.id` | string | Identificador do dataset |
-| `dataset.version` | string | Versão do dataset |
+| `dataset.id` | string | Identificador de dataset |
+| `dataset.version` | string | Versão de dataset |
 | `dataset.language_pair` | string | Rótulo de exibição |
 | `dataset.sha256` | string | Hash SHA-256 do conteúdo do arquivo de dataset |
 | `dataset.entry_count` | number | Número de entradas avaliadas |
@@ -317,7 +317,7 @@ Métricas agregadas para toda a execução. Todas as métricas de qualidade são
 | `scores.length_ratio` | number | avg(len(predicted)/len(reference)), ideal = 1.0 |
 | `scores.code_switching_rate` | number | 0.0–1.0, fração de entradas com vazamento de linguagem de origem |
 | `scores.hallucination_rate` | number | 0.0–1.0, fração de entradas com conteúdo alucinado |
-| `scores.terminology_adherence` | number | 0.0–1.0, aderência aos termos do glossário (`null` se nenhum glossário) |
+| `scores.terminology_adherence` | number | 0.0–1.0, aderência a termos de glossário (`null` se nenhum glossário) |
 | `scores.tokens_per_second` | number | total_tokens / elapsed_seconds |
 | `scores.entries_per_minute` | number | entradas traduzidas por minuto |
 | `scores.composite` | number | Pontuação composta ponderada (0.0–1.0). Ver SCORING_SPEC §4 |
@@ -409,7 +409,7 @@ Todas as métricas nesta seção são computadas por máquina. Ver §1.1.
 
 | Métrica | Status | O Que Mede | Intervalo |
 |---------|--------|-----------|-----------|
-| **chrF++** | ✅ Implementado | F-score de n-grama de caractere. Opera no nível de caractere, tornando-o mais robusto que métricas de nível de palavra (BLEU) para idiomas morfologicamente ricos onde palavras são longas e altamente inflectidas. Computado por sacrebleu. | 0–100 (escala nativa). Dividido por 100 quando usado em composto. |
+| **chrF++** | ✅ Implementado | F-score de n-grama de caractere. Opera no nível de caractere, tornando-o mais robusto que métricas de nível de palavra (BLEU) para idiomas morfologicamente ricos onde palavras são longas e altamente flexionadas. Computado por sacrebleu. | 0–100 (escala nativa). Dividido por 100 quando usado em composto. |
 | **Taxa de aceitação FST** | ✅ Implementado | Fração de palavras preditas aceitas pelo analisador morfológico (GiellaLT HFST) como formas válidas no idioma de destino. Uma palavra que o FST aceita é uma palavra real, estruturalmente válida — não uma alucinação. | 0.0–1.0 |
 | **Correspondência exata** | ✅ Implementado | Fração de predições que correspondem exatamente à referência após normalização Unicode. Rigoroso mas inequívoco — útil como verificação de teto. | 0.0–1.0 |
 | **Acurácia morfológica** | 🔲 Planejado | Para entradas com análise morfológica padrão-ouro: fração de morfemas gerados corretamente. Mais granular que aceitação FST — uma palavra pode ser FST-válida mas ter a estrutura de morfema errada (raiz correta, tempo errado). | 0.0–1.0 |
@@ -426,7 +426,7 @@ composite = Σ (weight_i × metric_i)   for all available metrics
              Σ weight_i              (renormalized to sum to 1.0)
 ```
 
-Quando uma métrica não está disponível (nenhum FST configurado, nenhuma classe de variante definida, nenhum modelo de embedding), seu peso é redistribuído proporcionalmente entre as métricas restantes. Isto significa que a composta é sempre comparável dentro de um idioma — ela usa quaisquer métricas disponíveis para esse idioma e normaliza de acordo.
+Quando uma métrica não está disponível (nenhum FST configurado, nenhuma classe de variante definida, nenhum modelo de embedding), seu peso é redistribuído proporcionalmente entre as métricas restantes. Isto significa que a composta é sempre comparável dentro de um idioma — ela usa qualquer métrica disponível para esse idioma e normaliza de acordo.
 
 **Tabelas de peso, regras de normalização de entrada e o inventário completo de métrica são definidos em `SCORING_SPEC.md` §4.** Esse documento é o SSOT para:
 - Pesos do Perfil A (idiomas com cobertura FST — 9 métricas, métricas estruturais carregam 40%)
@@ -436,7 +436,7 @@ Quando uma métrica não está disponível (nenhum FST configurado, nenhuma clas
 
 O código do harness espelha essas tabelas em `mt_eval_harness/scoring.py`. Quando SCORING_SPEC muda, `scoring.py` é atualizado para corresponder e `test_scoring_ssot.py` valida alinhamento.
 
-> **Por que não BLEU?** BLEU opera no nível de palavra e penaliza variação morfológica. Para idiomas polissintéticos, uma única palavra pode ser uma cláusula inteira — BLEU trataria diferenças inflexionais menores como falhas completas. chrF++ lida com isto melhor operando no nível de caractere. BLEU é excluído de ambas as tabelas de peso. Ver SCORING_SPEC Apêndice A para a rationale completa.
+> **Por que não BLEU?** BLEU opera no nível de palavra e penaliza variação morfológica. Para idiomas polissintéticos, uma única palavra pode ser uma cláusula inteira — BLEU trataria diferenças flexionais menores como falhas completas. chrF++ lida com isto melhor operando no nível de caractere. BLEU é excluído de ambas as tabelas de peso. Ver SCORING_SPEC Apêndice A para a rationale completa.
 
 
 ### 4.3 Pontuação Ajustada por Custo
@@ -445,14 +445,14 @@ Para métodos usando APIs pagas, também relatamos um ranking secundário. A fó
 
 ---
 
-## 5. Tiers de Qualidade
+## 5. Tiers de Qualidade {#5-quality-tiers}
 
 Tiers de qualidade são rótulos heurísticos em pontuações compostas automatizadas. Eles descrevem o que as pontuações tendem a significar na prática, baseado em revisão humana de saídas em cada nível. **Eles não são julgamentos de qualidade validados** — apenas revisão humana (§6) pode confirmar usabilidade real.
 
 **Os limites de tier e descrições são definidos em `SCORING_SPEC.md` §5.** Os tiers são: Baseline (0.00–0.30), Emerging (0.30–0.50), Functional (0.50–0.70), Deployable (0.70–0.85) e Fluent (0.85–1.00).
 
 > [!IMPORTANT]
-> **Tiers automatizados são provisórios.** Esses rótulos são indicações para revisão, não declarações de qualidade. Um método atingindo "Deployable" em métricas automatizadas é um candidato para avaliação comunitária — não um produto para enviar. Apenas revisão humana (§7) pode confirmar usabilidade real. Os limites de tier podem diferir entre idiomas.
+> **Tiers automatizados são provisórios.** Esses rótulos são indicações para revisão, não declarações de qualidade. Um método atingindo "Deployable" em métricas automatizadas é um candidato para avaliação comunitária — não um produto para enviar. Apenas revisão humana (§7) pode confirmar usabilidade real. Limites de tier podem diferir entre idiomas.
 
 Esses tiers são provisórios. Eles serão recalibrados conforme dados de validação humana se acumulam e aprendemos onde o limiar real de "um falante acha isto útil" cai para cada idioma. Os limites de tier podem diferir entre idiomas.
 
@@ -497,9 +497,9 @@ Um benchmark inicial típico: 12 modelos × 3 temperaturas × 2 prompts × 2 coa
 
 Um benchmark serve dois propósitos distintos:
 
-**Baselining** — mapeando a paisagem com abordagens ingênuas. "O que os modelos existentes podem fazer para este idioma sem nenhuma engenharia específica de idioma?" Isto estabelece a barra. A matriz de baseline diz: quais modelos alucinam menos, quais temperaturas produzem saída mais consistente, se dados de coaching ajudam em tudo, onde todos os modelos falham uniformemente (o que revela problemas linguísticos difíceis).
+**Baselining** — mapeando a paisagem com abordagens ingênuas. "O que os modelos existentes podem fazer para este idioma sem nenhuma engenharia específica de idioma?" Isto estabelece a barra. A matriz de baseline diz: quais modelos alucinam menos, quais temperaturas produzem a saída mais consistente, se dados de coaching ajudam em tudo, onde todos os modelos falham uniformemente (que revela problemas linguísticos difíceis).
 
-**Avaliação de método** — testando um método específico engenheirado. "Meu pipeline coached com gate FST bate os baselines?" O run card do método é comparado contra a matriz de baseline. Um método é interessante quando supera o melhor baseline — quando engenharia adiciona valor sobre chamadas de modelo ingênuas.
+**Avaliação de método** — testando um método específico engenheirado. "Meu pipeline coached gated-FST bate os baselines?" O run card do método é comparado contra a matriz de baseline. Um método é interessante quando supera o melhor baseline — quando engenharia adiciona valor sobre chamadas de modelo ingênuas.
 
 Ambas as atividades produzem run cards com o mesmo esquema. A distinção está na intenção e no espaço de parâmetro: baselines permutam entre modelos e configs; avaliação de método testa um método contra as melhores configurações.
 
@@ -516,7 +516,7 @@ Ver §8 para o mecanismo completo de soberania.
 
 ---
 
-## 7. Validação Humana
+## 7. Validação Humana {#7-human-validation}
 
 Métricas automatizadas são proxies. Validação humana é a verdade fundamental.
 
@@ -527,7 +527,7 @@ Métricas automatizadas são proxies. Validação humana é a verdade fundamenta
 - **Plausibilidade alucinada** — a saída parece o idioma de destino para um não-falante mas é gibberish para um falante fluente
 - **Variação aceitável mas não marcada** — a saída está correta mas as métricas automatizadas a marcam errada porque usa uma variante dialetal não na referência
 
-### 7.2 O Gate de Validação
+### 7.2 O Portão de Validação
 
 Nenhum método pode avançar de tier **Functional** para **Deployable** sem validação humana confirmando que falantes bilíngues concordam que a saída é utilizável. Isto não é uma formalidade — é o ponto. As métricas automatizadas existem para reduzir o volume de saída que precisa de revisão humana. Elas não podem substituí-la.
 
@@ -537,7 +537,7 @@ Nenhum método pode avançar de tier **Functional** para **Deployable** sem vali
 
 1. Um método atinge o limiar Deployable em métricas automatizadas
 2. Uma amostra de saídas (estratificada por tier de dificuldade) é apresentada a falantes bilíngues
-3. Falantes classificam cada tradução em uma escala: **reject**, **gist** (significado é claro mas fraseado está errado), **acceptable** (correto com problemas menores), **excellent** (indistinguível de tradução humana)
+3. Falantes classificam cada tradução em uma escala: **rejeitar**, **gist** (significado é claro mas fraseado está errado), **aceitável** (correto com problemas menores), **excelente** (indistinguível de tradução humana)
 4. A org de governança revisa as classificações agregadas
 5. Se a comunidade aceita o método, ele procede para transferência de propriedade e deployment
 
@@ -567,7 +567,7 @@ graph TD
 ```
 
 O fluxo:
-1. **Corpus de desenvolvimento é público.** Sem restrições nos segmentos `development` e `diagnostic`.
+1. **Corpus de desenvolvimento é público.** Sem restrições em segmentos `development` e `diagnostic`.
 2. **Conjunto de teste padrão-ouro é totalmente secreto.** Tanto sentenças de origem quanto traduções de referência vivem em infraestrutura controlada por governança.
 3. **Para obter uma pontuação oficial, você entrega seu método.** A org de governança o executa em um sandbox. Apenas pontuações voltam.
 4. **A org de governança já tem o método.** A submissão É o código do método. Se atinge o limiar Deployable, transferência de propriedade já está em progresso.
@@ -603,22 +603,22 @@ Para servir como custódio-chave para um benchmark de idioma:
 
 | Princípio | Implementação |
 |-----------|---------------|
-| **Ownership** (OCAP) | Dados linguísticos pertencem à comunidade. Org de governança controla infraestrutura de avaliação. |
-| **Control** (OCAP) | Org de governança controla avaliação via execução sandboxed. Eles decidem quem submete e em quais termos. |
-| **Access** (OCAP) | Comunidade tem acesso irrestrito a seus próprios dados, resultados e métodos desenvolvidos contra ele. |
-| **Possession** (OCAP) | Conjunto de teste nunca deixa infraestrutura de governança. Criptografia em repouso como backup. |
-| **Collective Benefit** (CARE) | Transferência de propriedade garante métodos beneficiam a comunidade. Modelo de receita (margem de 10% em throughbill; comunidade retém ~90%) sustenta isto. |
-| **Authority to Control** (CARE) | Execução sandboxed é a implementação técnica. |
-| **Responsibility** (CARE) | Desenvolvedores aceitam responsabilidade através de termos de participação. |
-| **Ethics** (CARE) | Direitos comunitários sobre conveniência de pesquisador. |
+| **Propriedade** (OCAP) | Dados linguísticos pertencem à comunidade. Org de governança controla infraestrutura de avaliação. |
+| **Controle** (OCAP) | Org de governança controla avaliação via execução sandboxed. Eles decidem quem submete e em quais termos. |
+| **Acesso** (OCAP) | Comunidade tem acesso irrestrito a seus próprios dados, resultados e métodos desenvolvidos contra ele. |
+| **Posse** (OCAP) | Conjunto de teste nunca deixa infraestrutura de governança. Criptografia em repouso como backup. |
+| **Benefício Coletivo** (CARE) | Transferência de propriedade garante métodos beneficiam a comunidade. Modelo de receita (margem de 10% em throughbill; comunidade retém ~90%) sustenta isto. |
+| **Autoridade para Controlar** (CARE) | Execução sandboxed é a implementação técnica. |
+| **Responsabilidade** (CARE) | Desenvolvedores aceitam responsabilidade através de termos de participação. |
+| **Ética** (CARE) | Direitos comunitários sobre conveniência de pesquisador. |
 
-### 8.6 Classes de Dependência e a Política de Rede de Sandbox
+### 8.6 Classes de Dependência e a Política de Rede do Sandbox
 
-Execução sandboxed (§8.2) e transferência de propriedade (§8.3) ambas dependem de saber exatamente o que um método precisa em tempo de execução. A [especificação de Interface de Método](/docs/specifications/methods#method-validity-and-dependency-classes) define cinco **classes de dependência** — S (auto-contido), O (externo aberto), A1 (inferência de LLM substituível), A2 (API externa não-substituível), X (fechado) — e o manifesto de dependência que todo método deve declarar. Esta subseção registra como a política de rede de sandbox os implementa.
+Execução sandboxed (§8.2) e transferência de propriedade (§8.3) ambas dependem de saber exatamente o que um método precisa em tempo de execução. A [especificação de Interface de Método](/docs/specifications/methods#method-validity-and-dependency-classes) define cinco **classes de dependência** — S (auto-contido), O (aberto externo), A1 (inferência de LLM substituível), A2 (API externa não-substituível), X (fechado) — e o manifesto de dependência que todo método deve declarar. Esta subseção registra como a política de rede do sandbox as implementa.
 
-**Egress padrão-deny.** A especificação de sandbox requer que containers de método não tenham acesso de rede por padrão. Isto não é uma regra de firewall — a especificação remove a rede do ambiente de execução, então uma dependência de rede não declarada falha na camada de arquitetura, não na camada de política. Métodos de classe S e O executam inteiramente de artefatos vendored na submissão (artefatos de classe O são pinados e espelhados em tempo de submissão).
+**Egress padrão-deny.** A especificação do sandbox requer que containers de método não tenham acesso de rede por padrão. Isto não é uma regra de firewall — a especificação remove a rede do ambiente de execução, então uma dependência de rede não declarada falha na camada de arquitetura, não na camada de política. Métodos de classe S e O executam inteiramente de artefatos vendored na submissão (artefatos de classe O são pinados e espelhados em tempo de submissão).
 
-**O gateway de LLM (🔲 planejado).** A maioria dos métodos chama LLMs, então a especificação de sandbox define exatamente uma exceção de egress: um **gateway de LLM** operado pela infraestrutura de avaliação. O gateway:
+**O gateway de LLM (🔲 planejado).** A maioria dos métodos chama LLMs, então a especificação do sandbox define exatamente uma exceção de egress: um **gateway de LLM** operado pela infraestrutura de avaliação. O gateway:
 
 - proxies requisições de inferência para uma **allowlist explícita de modelos pinados** — os identificadores de modelo registrados no manifesto do método e run card;
 - **registra cada requisição e resposta** no log de auditoria selado, então tráfego de gateway pode ser revisado para tentativas de exfiltração de dados antes de pontuações serem liberadas;
@@ -644,7 +644,7 @@ Uma submissão válida de leaderboard deve incluir:
 
 ### 9.2 Critérios de Legitimidade
 
-1. **Sem treinamento em dados de avaliação.** Métodos não devem ter sido expostos a entradas `gold_standard` ou `held_out`. (Implementado arquiteturalmente — você não pode treinar em dados que nunca viu.)
+1. **Sem treinamento em dados de avaliação.** Métodos não devem ter sido expostos a entradas `gold_standard` ou `held_out`. (Arquiteturalmente enforçado — você não pode treinar em dados que nunca viu.)
 2. **Declarar uso de dados de desenvolvimento.** Usar entradas `development` para prompting few-shot é permitido mas deve ser declarado.
 3. **Reprodutibilidade.** Org de governança deve ser capaz de re-executar e alcançar pontuações dentro de ±2%.
 4. **Generalização.** Métodos devem funcionar em entradas não vistas, não apenas exemplos memorizados.
@@ -653,19 +653,19 @@ Uma submissão válida de leaderboard deve incluir:
 
 1. **Linting de classe de variante** — desempenho suspeitosamente perfeito em entradas com variantes conhecidas é sinalizado
 2. **Rotação de corpus** — org de governança pode rotar entradas entre segmentos sem aviso
-3. **Revisão comunitária** — o gate de validação humana (§7) detecta métodos que gamificam métricas mas produzem saída ruim
+3. **Revisão comunitária** — o portão de validação humana (§7) detecta métodos que gamificam métricas mas produzem saída ruim
 
 ### 9.4 Tiers de Verificação
 
-Tiers de verificação descrevem **quem validou o resultado** — ortogonal aos tiers de qualidade (§5), que descrevem o que a pontuação automatizada significa.
+Tiers de verificação descrevem **quem validou o resultado** — ortogonal a tiers de qualidade (§5), que descrevem o que a pontuação automatizada significa.
 
 | Tier | Significado | Como Alcançado |
 |------|-----------|----------------|
-| **Self-benchmarked** | Desenvolvedor executou o harness e submeteu o run card | PR ou flag `--submit` contra segmento `development` |
-| **GDS Verified** | Mantenedores reproduziram o resultado independentemente | Submeter método como plugin instalável; mantenedores re-executam |
-| **Community Validated** | Org de governança executou contra `gold_standard` + revisão comunitária | Submeter código do método para org de governança (§8.2); passar validação humana (§7) |
+| **Auto-benchmarked** | Desenvolvedor executou o harness e submeteu o run card | PR ou flag `--submit` contra segmento `development` |
+| **GDS Verificado** | Mantenedores reproduziram o resultado independentemente | Submeter método como plugin instalável; mantenedores re-executam |
+| **Validado pela Comunidade** | Org de governança executou contra `gold_standard` + revisão comunitária | Submeter código do método para org de governança (§8.2); passar validação humana (§7) |
 
-Um método pode ser Self-benchmarked em um tier de qualidade Functional. Tier de qualidade e tier de verificação são eixos independentes no leaderboard.
+Um método pode ser Auto-benchmarked em um tier de qualidade Functional. Tier de qualidade e tier de verificação são eixos independentes no leaderboard.
 
 ### 9.5 Modelo de Submissão em Camadas
 
@@ -673,11 +673,11 @@ O mecanismo de submissão depende de qual segmento de corpus você está avalian
 
 | Segmento | Caminho de Submissão | Verificação | Código do Método Obrigatório? |
 |----------|-------------------|-----------|------------------------------|
-| `development` | Self-serve: executar harness, submeter run card via PR ou API | Self-benchmarked | Não — você mantém seu código |
-| `development` | Re-execução de mantenedor: submeter método como plugin | GDS Verified | Sim — método deve ser instalável |
-| `gold_standard` | Submeter método para org de governança; eles executam em sandbox | Community Validated | Sim — método é submetido e mantido |
+| `development` | Auto-serve: executar harness, submeter run card via PR ou API | Auto-benchmarked | Não — você mantém seu código |
+| `development` | Re-execução de mantenedor: submeter método como plugin | GDS Verificado | Sim — método deve ser instalável |
+| `gold_standard` | Submeter método para org de governança; eles executam em sandbox | Validado pela Comunidade | Sim — método é submetido e mantido |
 
-O caminho self-serve (segmento de desenvolvimento) não tem restrições. O caminho soberano (segmento padrão-ouro) requer submissão completa de método porque (a) o desenvolvedor nunca vê o conjunto de teste, e (b) métodos que atingem Deployable estão sujeitos a transferência de propriedade (§8.3).
+O caminho auto-serve (segmento de desenvolvimento) não tem restrições. O caminho soberano (segmento padrão-ouro) requer submissão completa de método porque (a) o desenvolvedor nunca vê o conjunto de teste, e (b) métodos que atingem Deployable estão sujeitos a transferência de propriedade (§8.3).
 
 ### 9.6 Classes de Método
 
@@ -717,7 +717,7 @@ Métodos são classificados por tipo. O enum canônico é definido no código do
 
 ---
 
-## 10. Framework de Custos
+## 10. Framework de Custos {#10-cost-framework}
 
 ### 10.1 Custo Por Execução
 
@@ -764,13 +764,13 @@ Sweep típico: 12 modelos × 3 temps × 2 prompts × 2 coaching = 144 execuçõe
 
 ---
 
-## 11. Estendendo para Novos Idiomas
+## 11. Estendendo para Novos Idiomas {#11-extending-to-new-languages}
 
 ### 11.1 Requisitos Mínimos
 
 1. **50+ entradas** no segmento `gold_standard`
 2. **30+ entradas** no segmento `development`
-3. **10+ entradas** no segmento `diagnostic` direcionando fenômenos linguísticos específicos
+3. **10+ entradas** no segmento `diagnostic` direcionadas a fenômenos linguísticos específicos
 4. **Proveniência** para cada entrada
 5. **Distribuição de dificuldade** — pelo menos 3 de 5 tiers
 6. **Distribuição de registro** — pelo menos 2 registros

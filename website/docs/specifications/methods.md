@@ -48,7 +48,7 @@ Loaded via `--method path/to/dir`. The harness discovers nothing automatically.
 
 A method that supports both systems provides two entry points — one for each language runtime. The **method card** is the bridge: it describes the method in a format both systems understand.
 
-## Method Card
+## Method Card {#method-card}
 
 A method card describes *what* a translation method is without revealing proprietary details like the full system prompt. It answers:
 
@@ -88,7 +88,7 @@ The `dependency_class` field summarizes what the method needs to run and transfe
 | `api` | Third-party translation API (Google Translate, DeepL, etc.) |
 | `human` | Human translation (for establishing baselines) |
 
-## Method Validity and Dependency Classes
+## Method Validity and Dependency Classes {#method-validity-and-dependency-classes}
 
 A method is only as runnable, and only as transferable, as its least available dependency. Two Arena mechanisms depend on knowing exactly what a method needs:
 
@@ -211,7 +211,7 @@ Three layers, from cheapest to most authoritative:
 - Class A2 methods on the open leaderboard carry a visible **"external dependency"** flag: their scores depend on a third-party service that may change or disappear, and they are not currently prize-eligible.
 - Class X methods are not listed.
 
-## Eval Harness: TranslationMethod Protocol
+## Eval Harness: TranslationMethod Protocol {#eval-harness-translationmethod-protocol}
 
 The eval harness uses Python's structural typing (`Protocol`) for plugins. Any class with the right method signature works — no inheritance required:
 

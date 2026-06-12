@@ -297,7 +297,7 @@ The OCAP® principles (Ownership, Control, Access, Possession), the CARE princip
 
 ---
 
-## 8. Tensions and Limitations
+## 8. Tensions and Limitations {#8-tensions-and-limitations}
 
 This project uses a Western mechanism — competitive benchmarking — to serve knowledge systems that are often communal, relational, and Elder-guided. That tension is real and must be named, not resolved by assertion.
 

@@ -19,9 +19,9 @@ related:
 ---
 # Gemeinsame Methodenschnittstelle
 
-> **Zusammenfassung.** Diese Seite spezifiziert das `TranslationMethod`-Protokoll, das alle Arena-Methoden implementieren müssen, die sechs Methodenklassen (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), das Methoden-Plugin-Format sowie die **Abhängigkeitsklassen** (S/O/A1/A2/X), die bestimmen, ob eine Methode in der Evaluations-Sandbox ausgeführt werden und sich für Preise qualifizieren kann. Jeder Ansatz, der dieses Protokoll implementiert, kann einem Benchmark unterzogen werden; wovon er abhängt, bestimmt, wo er antreten kann.
+> **Zusammenfassung.** Diese Seite spezifiziert das `TranslationMethod`-Protokoll, das alle Arena-Methoden implementieren müssen, die sechs Methodenklassen (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), das Methoden-Plugin-Format sowie die **Abhängigkeitsklassen** (S/O/A1/A2/X), die bestimmen, ob eine Methode in der Evaluierungs-Sandbox ausgeführt werden kann und für Preise infrage kommt. Jeder Ansatz, der dieses Protokoll implementiert, kann einem Benchmark unterzogen werden; wovon er abhängt, bestimmt, wo er antreten kann.
 
-Das Eval-Harness und champollion teilen ein gemeinsames Konzept der **Übersetzungsmethode**. Eine Methode ist jedes Verfahren, das Quelltext entgegennimmt und übersetzten Text erzeugt – sei es ein direkter LLM-Aufruf, eine mehrstufige Pipeline, eine Drittanbieter-API oder eine menschliche Übersetzerin bzw. ein menschlicher Übersetzer.
+Das Eval-Harness und champollion teilen ein gemeinsames Konzept der **Übersetzungsmethode**. Eine Methode ist jedes Verfahren, das Quelltext entgegennimmt und übersetzten Text erzeugt — sei es ein direkter LLM-Aufruf, eine mehrstufige Pipeline, eine Drittanbieter-API oder ein menschlicher Übersetzer.
 
 ## Architektur
 
@@ -42,21 +42,21 @@ Geladen über `--method path/to/dir`. Das Harness erkennt nichts automatisch.
 | **Sprache** | Python | Node.js |
 | **Einstiegspunkt** | `translate.py` | `translate.js` |
 | **Schnittstelle** | `TranslationMethod`-Protokoll | `methodPlugin`-Konfiguration |
-| **Zweck** | Batch-Evaluation mit Bewertung | Live-Lokalisierung in Dev/CI |
-| **Ausgabe** | Run-Card mit Metriken | Übersetzte Locale-Dateien |
+| **Zweck** | Batch-Evaluierung mit Bewertung | Live-Lokalisierung in Dev/CI |
+| **Ausgabe** | Run Card mit Metriken | Übersetzte Locale-Dateien |
 
-Eine Methode, die beide Systeme unterstützt, stellt zwei Einstiegspunkte bereit – einen für jede Sprachlaufzeitumgebung. Die **Methodenkarte** ist die Brücke: Sie beschreibt die Methode in einem Format, das beide Systeme verstehen.
+Eine Methode, die beide Systeme unterstützt, stellt zwei Einstiegspunkte bereit — einen für jede Sprachlaufzeit. Die **Method Card** ist das Bindeglied: Sie beschreibt die Methode in einem Format, das beide Systeme verstehen.
 
-## Methodenkarte
+## Method Card {#method-card}
 
-Eine Methodenkarte beschreibt, *was* eine Übersetzungsmethode ist, ohne proprietäre Details wie den vollständigen Systemprompt preiszugeben. Sie beantwortet folgende Fragen:
+Eine Method Card beschreibt, *was* eine Übersetzungsmethode ist, ohne proprietäre Details wie den vollständigen System-Prompt preiszugeben. Sie beantwortet:
 
-- Welcher Methodenklasse gehört dies an? (Raw-LLM, Coached-LLM, Pipeline, API usw.)
-- Welche Werkzeuge verwendet sie? (FST-Analysetool, Wörterbuch usw.)
-- Ist die Implementierung quelloffen?
+- Welche Methodenklasse ist dies? (raw LLM, coached LLM, Pipeline, API usw.)
+- Welche Werkzeuge verwendet sie? (FST-Analyzer, Wörterbuch usw.)
+- Ist die Implementierung Open Source?
 - Welche Sprachpaare unterstützt sie?
 
-Siehe die [Methodenkarten-Spezifikation](/docs/specifications/methods#method-card) für das vollständige JSON-Schema.
+Das vollständige JSON-Schema finden Sie in der [Method-Card-Spezifikation](/docs/specifications/methods#method-card).
 
 ### Beispiel
 
@@ -74,50 +74,50 @@ Siehe die [Methodenkarten-Spezifikation](/docs/specifications/methods#method-car
 }
 ```
 
-Das Feld `dependency_class` fasst zusammen, was die Methode zur Ausführung und Übertragung benötigt – siehe [Methodengültigkeit und Abhängigkeitsklassen](#method-validity-and-dependency-classes) weiter unten.
+Das Feld `dependency_class` fasst zusammen, was die Methode zur Ausführung und Übertragung benötigt — siehe [Methodengültigkeit und Abhängigkeitsklassen](#method-validity-and-dependency-classes) weiter unten.
 
 ### Methodenklassen
 
 | Klasse | Beschreibung |
 |-------|-------------|
 | `raw-llm` | Direkter LLM-Aufruf mit minimaler Anweisung |
-| `coached-llm` | LLM mit strukturiertem Prompt, Beispielen, Beschränkungen |
+| `coached-llm` | LLM mit strukturiertem Prompt, Beispielen, Einschränkungen |
 | `pipeline` | Mehrstufige Pipeline mit deterministischen Komponenten |
 | `custom-plugin` | Externer Prozess, der das `TranslationMethod`-Protokoll implementiert |
 | `api` | Drittanbieter-Übersetzungs-API (Google Translate, DeepL usw.) |
 | `human` | Menschliche Übersetzung (zur Festlegung von Baselines) |
 
-## Methodengültigkeit und Abhängigkeitsklassen
+## Methodengültigkeit und Abhängigkeitsklassen {#method-validity-and-dependency-classes}
 
-Eine Methode ist nur so ausführbar und nur so übertragbar wie ihre am wenigsten verfügbare Abhängigkeit. Zwei Arena-Mechanismen sind darauf angewiesen, genau zu wissen, was eine Methode benötigt:
+Eine Methode ist nur so ausführbar und nur so übertragbar wie ihre am wenigsten verfügbare Abhängigkeit. Zwei Arena-Mechanismen hängen davon ab, genau zu wissen, was eine Methode benötigt:
 
-1. **Sandbox-Evaluation** ([Benchmark-Spezifikation §8.2](/docs/specifications/benchmark)) – offizielle Goldstandard-Bewertungen stammen aus einer Sandbox, deren Netzwerkrichtlinie **standardmäßig verweigernd** (default-deny) ist. Eine Methode, die stillschweigend einen externen Dienst erfordert, kann keine offizielle Bewertung erzeugen.
-2. **Preisübertragung** ([Preis-Spezifikation](/docs/specifications/prizes)) – preisgekrönte Methoden werden an die Governance-Organisation der Sprachgemeinschaft übertragen. Eine Methode, die Inhalte bündelt, zu deren Aufnahme die einreichende Person nicht berechtigt war, kann nicht rechtmäßig übertragen werden. Die einreichende Person muss die Rechte an allem im Paket besitzen (oder erhalten).
+1. **Sandbox-Evaluierung** ([Benchmark-Spezifikation §8.2](/docs/specifications/benchmark)) — offizielle Goldstandard-Bewertungen stammen aus einer Sandbox, deren Netzwerkrichtlinie **standardmäßig auf Verweigern (default-deny)** eingestellt ist. Eine Methode, die stillschweigend einen externen Dienst voraussetzt, kann keine offizielle Bewertung erzeugen.
+2. **Preisübertragung** ([Preis-Spezifikation](/docs/specifications/prizes)) — preisgekrönte Methoden gehen an die Governance-Organisation der Sprachgemeinschaft über. Eine Methode, die Inhalte bündelt, zu deren Einbindung der Einreichende nicht berechtigt war, kann nicht rechtmäßig übertragen werden. Der Einreichende muss die Rechte an allem im Paket besitzen (oder ihm müssen diese eingeräumt worden sein).
 
 Um beide Prüfungen mechanisch statt ad hoc zu gestalten, deklariert jede Methode eine **Abhängigkeitsklasse**, die aus einem **Abhängigkeitsmanifest** in `method.json` abgeleitet wird.
 
-> **Hinweis zur Benennung.** *Methodenklasse* (siehe oben: `raw-llm`, `pipeline`, …) beschreibt, *wie eine Methode übersetzt*. *Abhängigkeitsklasse* (dieser Abschnitt) beschreibt, *was eine Methode zur Ausführung und Übertragung benötigt*. Es handelt sich um unabhängige Achsen: Eine `pipeline`-Methode kann jeder beliebigen Abhängigkeitsklasse angehören.
+> **Hinweis zur Benennung.** Die *Methodenklasse* (§oben: `raw-llm`, `pipeline`, …) beschreibt, *wie eine Methode übersetzt*. Die *Abhängigkeitsklasse* (dieser Abschnitt) beschreibt, *was eine Methode zur Ausführung und Übertragung benötigt*. Es handelt sich um unabhängige Achsen: Eine `pipeline`-Methode kann jeder beliebigen Abhängigkeitsklasse angehören.
 
 ### Die fünf Abhängigkeitsklassen
 
-| Klasse | Name | Definition | Sandbox-ausführbar? | Preisberechtigt? |
+| Klasse | Name | Definition | In Sandbox ausführbar? | Preisberechtigt? |
 |-------|------|-----------|-------------------|-----------------|
-| **S** | Eigenständig | Sämtlicher Code, alle Daten, Modelle und Gewichte werden innerhalb des Methodenverzeichnisses ausgeliefert, unter Lizenzen, die Weiterverbreitung und Übertragung an die Gemeinschaft erlauben. | ✅ Ja, unverändert | ✅ Ja |
-| **O** | Offen extern | Hängt von extern gehosteten Artefakten unter offenen Lizenzen ab, die Weiterverbreitung erlauben (einschließlich Copyleft-Lizenzen wie AGPL) – z. B. ein FST, der zur Installationszeit heruntergeladen wird. | ✅ Ja – Artefakte werden gepinnt und **in die Einreichung gespiegelt** | ✅ Ja, unter Bedingungen zur Lizenzkompatibilität: Copyleft-Bedingungen bleiben durch die Übertragung hinweg erhalten, und die Gemeinschaft erhält dieselben Rechte, die die Lizenz allen gewährt |
-| **A1** | API-abhängig, ersetzbar | Erfordert LLM-Inferenz zur Laufzeit, wobei das Modell **ersetzbare Konfiguration** ist – jedes hinreichend leistungsfähige Modell kann eingesetzt werden. Der Wert der Methode liegt in ihren Prompts, Coaching-Daten und ihrem Code, nicht im Modell eines einzelnen Anbieters. | ⚠️ Nur über das **LLM-Gateway**, das die Sandbox-Spezifikation definiert (🔲 geplant – siehe unten) | ⚠️ Bedingt – siehe unten |
-| **A2** | API-abhängig, nicht ersetzbar | Erfordert Laufzeitaufrufe an eine externe Daten- oder Dienst-API, die nicht gespiegelt oder ersetzt werden kann – typischerweise, weil der bereitgestellte Inhalt proprietär oder unlizenziert ist (z. B. eine Wörterbuch-API, deren zugrunde liegendes Wörterbuch keine öffentliche Lizenz besitzt). | ❌ Nein – die Abhängigkeit kann in der Sandbox ohne die Erlaubnis der Rechteinhaberin bzw. des Rechteinhabers nicht existieren | ❌ Nicht, bis die Rechteinhaberin bzw. der Rechteinhaber die Sandbox-Aufnahme **und** Übertragungsberechtigungen gewährt. Zulässig auf der offenen Bestenliste (Entwicklungssegment) mit einem sichtbaren **„externe Abhängigkeit“**-Kennzeichen |
-| **X** | Geschlossen | Bündelt Inhalte, zu deren Weiterverbreitung die einreichende Person nicht berechtigt ist – unlizenzierte Datensätze, gescrapte proprietäre Inhalte, lizenzinkompatible Komponenten. | ❌ | ❌ In jeder Bahn unzulässig. Das Bündeln von Inhalten ohne Rechte ist ein Lizenzverstoß, unabhängig davon, wo die Methode läuft |
+| **S** | Self-contained | Sämtlicher Code, alle Daten, Modelle und Gewichte werden innerhalb des Methodenverzeichnisses ausgeliefert, unter Lizenzen, die Weiterverbreitung und Community-Übertragung erlauben. | ✅ Ja, unverändert | ✅ Ja |
+| **O** | Open external | Hängt von extern gehosteten Artefakten unter offenen Lizenzen ab, die eine Weiterverbreitung erlauben (einschließlich Copyleft-Lizenzen wie AGPL) — z. B. einem FST, das zur Installationszeit heruntergeladen wird. | ✅ Ja — Artefakte werden gepinnt und **in die Einreichung gespiegelt** | ✅ Ja, unter Bedingungen der Lizenzkompatibilität: Copyleft-Bedingungen bleiben über die Übertragung hinweg erhalten, und die Community erhält dieselben Rechte, die die Lizenz jedem einräumt |
+| **A1** | API-dependent, substitutable | Erfordert LLM-Inferenz zur Laufzeit, wobei das Modell **austauschbare Konfiguration** ist — jedes hinreichend leistungsfähige Modell kann eingesetzt werden. Der Wert der Methode liegt in ihren Prompts, Coaching-Daten und im Code, nicht im Modell eines einzelnen Anbieters. | ⚠️ Nur über das **LLM-Gateway**, das die Sandbox-Spezifikation definiert (🔲 geplant — siehe unten) | ⚠️ Bedingt — siehe unten |
+| **A2** | API-dependent, non-substitutable | Erfordert Laufzeitaufrufe an eine externe Daten- oder Dienst-API, die nicht gespiegelt oder ersetzt werden kann — typischerweise, weil der bereitgestellte Inhalt proprietär oder unlizenziert ist (z. B. eine Wörterbuch-API, deren zugrunde liegendes Wörterbuch über keine öffentliche Lizenz verfügt). | ❌ Nein — die Abhängigkeit kann ohne Erlaubnis des Rechteinhabers nicht in der Sandbox existieren | ❌ Nicht, bis der Rechteinhaber die Aufnahme in die Sandbox **und** Übertragungsberechtigungen gewährt. Auf der offenen Bestenliste (Entwicklungssegment) mit einer sichtbaren **„external dependency"**-Kennzeichnung zulässig |
+| **X** | Closed | Bündelt Inhalte, zu deren Weiterverbreitung der Einreichende nicht berechtigt ist — unlizenzierte Datensätze, gescrapte proprietäre Inhalte, lizenzinkompatible Komponenten. | ❌ | ❌ In jeder Bahn unzulässig. Das Bündeln von Inhalten ohne Rechte ist eine Lizenzverletzung, unabhängig davon, wo die Methode ausgeführt wird |
 
-**Effektive Klasse.** Die Abhängigkeitsklasse einer Methode ist die *restriktivste* Klasse unter all ihren deklarierten Abhängigkeiten, in der Reihenfolge S < O < A1 < A2 < X. Ein einziges unlizenziertes Wörterbuch macht eine ansonsten eigenständige Pipeline zur Klasse A2 (bei Zugriff zur Laufzeit) oder zur Klasse X (bei Bündelung ohne Rechte).
+**Effektive Klasse.** Die Abhängigkeitsklasse einer Methode ist die *restriktivste* Klasse unter all ihren deklarierten Abhängigkeiten, in der Reihenfolge S < O < A1 < A2 < X. Ein einziges unlizenziertes Wörterbuch macht aus einer ansonsten in sich geschlossenen Pipeline eine Klasse-A2-Methode (bei Zugriff zur Laufzeit) oder eine Klasse-X-Methode (bei Bündelung ohne Rechte).
 
-### Die A1/A2-Unterscheidung: Ersetzbarkeit
+### Die A1/A2-Unterscheidung: Austauschbarkeit
 
-Die meisten Methoden rufen LLMs auf. Die Arena tut nicht so, als wäre dem nicht so – doch sie unterscheidet zwei sehr verschiedene Arten von API-Abhängigkeit:
+Die meisten Methoden rufen LLMs auf. Die Arena gibt nicht vor, dass dem nicht so wäre — aber sie unterscheidet zwei sehr unterschiedliche Arten von API-Abhängigkeit:
 
-- **A1 (ersetzbar):** Die API stellt LLM-Inferenz als Standardware bereit. Die Modellkennung ist Konfiguration: Die Methode muss durchgängig gegen jeden kompatiblen Inferenz-Endpunkt laufen, einschließlich eines von der Gemeinschaft gehosteten Open-Weight-Modells. Die Ausgabequalität kann zwischen Modellen variieren – das ist das Risiko der Entwicklerin bzw. des Entwicklers, und offizielle Bewertungen sind an das in der Evaluation verwendete, gepinnte Modell gebunden. Eine Methode, die von **anbieterseitigem Zustand** abhängt (ein nur beim Anbieter gehostetes Fine-Tune, anbieterseitige Dateispeicher, anbieterspezifische Assistenten), ist *nicht* ersetzbar: Dieser Zustand lässt sich nicht austauschen, sodass die Abhängigkeit A2 ist, sofern nicht die zugrunde liegenden Gewichte oder Daten in der Einreichung enthalten sind.
-- **A2 (nicht ersetzbar):** Die API stellt etwas Einzigartiges bereit – typischerweise proprietäre oder unlizenzierte Daten. Kein alternativer Endpunkt kann dies bereitstellen, und der Inhalt kann ohne die Erlaubnis der Rechteinhaberin bzw. des Rechteinhabers nicht in die Sandbox gespiegelt werden. Die Methode funktioniert auf der offenen Bestenliste (gekennzeichnet), kann jedoch keine offiziellen Sandbox-Bewertungen erzeugen oder sich für Preise qualifizieren, bis entsprechende Berechtigungen vorliegen.
+- **A1 (austauschbar):** Die API stellt Standard-LLM-Inferenz bereit. Der Modellbezeichner ist Konfiguration: Die Methode muss durchgängig gegen jeden kompatiblen Inferenz-Endpunkt funktionieren, einschließlich eines von der Community gehosteten Open-Weight-Modells. Die Ausgabequalität kann zwischen Modellen variieren — das ist das Risiko des Entwicklers, und offizielle Bewertungen sind an das gepinnte Modell gebunden, das in der Evaluierung verwendet wird. Eine Methode, die von **anbieterseitigem Zustand** abhängt (ein nur beim Anbieter gehostetes Fine-Tune, anbieterseitige Dateispeicher, anbieterspezifische Assistenten), ist *nicht* austauschbar: Dieser Zustand kann nicht ausgetauscht werden, sodass die Abhängigkeit A2 ist, es sei denn, die zugrunde liegenden Gewichte oder Daten sind in der Einreichung enthalten.
+- **A2 (nicht austauschbar):** Die API stellt etwas Einzigartiges bereit — typischerweise proprietäre oder unlizenzierte Daten. Kein alternativer Endpunkt kann dies bereitstellen, und der Inhalt kann ohne Erlaubnis des Rechteinhabers nicht in die Sandbox gespiegelt werden. Die Methode funktioniert auf der offenen Bestenliste (gekennzeichnet), kann jedoch keine offiziellen Sandbox-Bewertungen erzeugen oder für Preise infrage kommen, bis entsprechende Berechtigungen vorliegen.
 
-**Was eine A1-Preisübertragung tatsächlich vermittelt.** Die Gemeinschaft erhält nicht das Modell – niemand kann die Gewichte von Anthropic, Google oder OpenAI übertragen. Die Übertragung umfasst das vollständige Rezept *rund um* das Modell: alle Prompts, Coaching-Daten, den Pipeline-Code, die Wiederholungslogik, die Konfiguration und die dokumentierten Modellanforderungen. Da das Modell konstruktionsbedingt ersetzbar ist, kann die Gemeinschaft die übertragene Methode auf jeden beliebigen Anbieter ihrer Wahl ausrichten – oder auf ein Open-Weight-Modell auf eigener Hardware – ohne Beteiligung der Entwicklerin bzw. des Entwicklers. Das Rezept gehört einem; die Maschine ist gemietet und austauschbar.
+**Was eine A1-Preisübertragung tatsächlich vermittelt.** Die Community erhält nicht das Modell — niemand kann die Gewichte von Anthropic, Google oder OpenAI übertragen. Die Übertragung umfasst das vollständige Rezept *rund um* das Modell: alle Prompts, Coaching-Daten, Pipeline-Code, Wiederholungslogik, Konfiguration und dokumentierten Modellanforderungen. Da das Modell konstruktionsbedingt austauschbar ist, kann die Community die übertragene Methode auf jeden beliebigen Anbieter ausrichten — oder auf ein Open-Weight-Modell auf eigener Hardware — ohne Beteiligung des Entwicklers. Das Rezept ist im Besitz; der Motor ist gemietet und ersetzbar.
 
 ### Abhängigkeitsmanifest (`method.json`)
 
@@ -169,16 +169,16 @@ Jede Methode deklariert ihre Abhängigkeiten im `method.json`-Manifest. Jeder Ei
 
 | Feld | Erforderlich | Beschreibung |
 |-------|----------|-------------|
-| `id` | ✅ | Stabile Kennung für die Abhängigkeit |
+| `id` | ✅ | Stabiler Bezeichner für die Abhängigkeit |
 | `kind` | ✅ | `data`, `model`, `software` oder `service` |
-| `license` | ✅ | SPDX-Kennung, `proprietary` oder `none`. `none` bedeutet, dass keine öffentliche Lizenz existiert – wird als „alle Rechte vorbehalten“ behandelt |
-| `access` | ✅ | `bundled` (wird im Methodenverzeichnis ausgeliefert), `mirrored` (zur Installationszeit abgerufen, gepinnt, in die Einreichung eingebunden), `gateway` (LLM-Inferenz zur Laufzeit über das Evaluations-Gateway), `external-api` (jeder andere Netzwerkaufruf zur Laufzeit) |
-| `source` | ✅ | Kanonische URL oder `provider:slug`-Kennung |
-| `pin` | für `mirrored` | Version, Commit oder Content-Hash, der das exakte Artefakt pinnt |
+| `license` | ✅ | SPDX-Bezeichner, `proprietary` oder `none`. `none` bedeutet, dass keine öffentliche Lizenz existiert — wird als „alle Rechte vorbehalten" behandelt |
+| `access` | ✅ | `bundled` (wird im Methodenverzeichnis ausgeliefert), `mirrored` (zur Installationszeit abgerufen, gepinnt, in die Einreichung eingebunden), `gateway` (LLM-Inferenz zur Laufzeit über das Evaluierungs-Gateway), `external-api` (jeder andere Netzwerkaufruf zur Laufzeit) |
+| `source` | ✅ | Kanonische URL oder `provider:slug`-Bezeichner |
+| `pin` | für `mirrored` | Version, Commit oder Inhalts-Hash, der das exakte Artefakt pinnt |
 | `substitutable` | für `gateway`/`external-api` | Ob ein beliebiger kompatibler Endpunkt diese Abhängigkeit bereitstellen kann |
 | `redistributable` | ✅ | Ob die Lizenz die Weiterverbreitung des Artefakts erlaubt |
-| `transferable` | ✅ | Ob das Artefakt (oder die Rechte daran) im Rahmen der Preisübertragungsbedingungen an eine Gemeinschaft übertragen werden kann |
-| `notes` | ❌ | Freier Kontext |
+| `transferable` | ✅ | Ob das Artefakt (oder Rechte daran) im Rahmen der Preisübertragungsbedingungen an eine Community übertragen werden kann |
+| `notes` | ❌ | Freiform-Kontext |
 
 **Klassenableitung.** Jede Abhängigkeit trägt eine Klasse bei; die `dependency_class` der Methode ist die restriktivste:
 
@@ -188,31 +188,31 @@ Jede Methode deklariert ihre Abhängigkeiten im `method.json`-Manifest. Jeder Ei
 | `mirrored` + offene Lizenz, die Weiterverbreitung erlaubt (Copyleft eingeschlossen) | O |
 | `gateway` + `substitutable: true` (LLM-Inferenz) | A1 |
 | `external-api` oder `gateway` mit `substitutable: false` | A2 |
-| `bundled` + `license: none` oder mit Weiterverbreitung inkompatible Lizenz | X |
+| `bundled` + `license: none` oder weiterverbreitungsinkompatible Lizenz | X |
 
-Die deklarierte `dependency_class` muss der Klasse entsprechen, die das Harness aus dem Manifest ableitet. Eine Diskrepanz ist ein Validierungsfehler.
+Die deklarierte `dependency_class` muss mit der Klasse übereinstimmen, die das Harness aus dem Manifest ableitet. Eine Abweichung ist ein Validierungsfehler.
 
-Eine Methode **ohne** externe Abhängigkeiten deklariert `"dependency_class": "S"` und `"dependencies": []`. Das leere Array ist eine affirmative Aussage, die wie jede andere geprüft wird.
+Eine Methode mit **keinen** externen Abhängigkeiten deklariert `"dependency_class": "S"` und `"dependencies": []`. Das leere Array ist eine affirmative Aussage, die wie jede andere geprüft wird.
 
-### Wie die Gültigkeit verifiziert wird
+### Wie die Gültigkeit überprüft wird
 
-Drei Ebenen, von der günstigsten zur maßgeblichsten:
+Drei Ebenen, vom günstigsten zum verbindlichsten:
 
-1. **Manifest-Prüfung.** Das Harness leitet die effektive Klasse aus dem Manifest ab und weist Diskrepanzen zurück. Prüfende vergleichen jede deklarierte Abhängigkeit mit ihrer angegebenen Lizenz und Quelle – eine als `redistributable: true` deklarierte Abhängigkeit, deren Upstream-Lizenz etwas anderes besagt, besteht die Prüfung nicht.
-2. **Statische Analyse.** Eingereichter Code wird auf Netzwerkaufrufe, dynamische Downloads und Dateisystemzugriffe gescannt, die das Manifest nicht berücksichtigt. Eine in der Prüfung gefundene *nicht deklarierte* Abhängigkeit ist ein Ablehnungsgrund, unabhängig davon, welcher Klasse sie angehört hätte – das Manifest muss vollständig sein, nicht nur korrekt.
-3. **Sandbox-Netzwerkrichtlinie.** Die Sandbox-Spezifikation erfordert **standardmäßig verweigernden Egress** (default-deny): Methoden-Container erhalten keinen Netzwerkzugriff, sofern nicht ein Pfad explizit auf die Zulassungsliste gesetzt wird. Der einzige Egress-Pfad, den die Spezifikation definiert, ist das **LLM-Gateway** – ein Inferenz-Proxy, der von der Evaluationsinfrastruktur betrieben wird, beschränkt auf eine explizite Zulassungsliste gepinnter Modelle, wobei jede Anfrage und Antwort für die Nachprüfung nach dem Lauf protokolliert wird. Alles, was nicht auf der Zulassungsliste steht, scheitert auf der Netzwerkebene, nicht auf der Richtlinienebene. Siehe [Benchmark-Spezifikation §8.6](/docs/specifications/benchmark) für die Netzwerkrichtlinie und das Gateway-Design.
+1. **Manifest-Prüfung.** Das Harness leitet die effektive Klasse aus dem Manifest ab und weist Abweichungen zurück. Prüfer gleichen jede deklarierte Abhängigkeit mit ihrer angegebenen Lizenz und Quelle ab — eine als `redistributable: true` deklarierte Abhängigkeit, deren Upstream-Lizenz etwas anderes besagt, besteht die Prüfung nicht.
+2. **Statische Analyse.** Eingereichter Code wird auf Netzwerkaufrufe, dynamische Downloads und Dateisystemzugriffe untersucht, die das Manifest nicht berücksichtigt. Eine bei der Prüfung gefundene *nicht deklarierte* Abhängigkeit ist ein Ablehnungsgrund, unabhängig davon, welche Klasse sie gewesen wäre — das Manifest muss vollständig sein, nicht nur korrekt.
+3. **Sandbox-Netzwerkrichtlinie.** Die Sandbox-Spezifikation erfordert **standardmäßiges Verweigern des ausgehenden Datenverkehrs (default-deny egress)**: Methoden-Container erhalten keinen Netzwerkzugriff, es sei denn, ein Pfad ist explizit auf der Allowlist eingetragen. Der einzige ausgehende Pfad, den die Spezifikation definiert, ist das **LLM-Gateway** — ein Inferenz-Proxy, der von der Evaluierungsinfrastruktur betrieben wird, auf eine explizite Allowlist gepinnter Modelle beschränkt ist und bei dem jede Anfrage und Antwort für eine nachträgliche Prüfung protokolliert wird. Alles, was nicht auf der Allowlist steht, scheitert auf der Netzwerkebene, nicht auf der Richtlinienebene. Die Netzwerkrichtlinie und das Gateway-Design finden Sie in der [Benchmark-Spezifikation §8.6](/docs/specifications/benchmark).
 
-> 🔲 **Geplant.** Die Sandbox und ihr LLM-Gateway sind spezifiziert, aber noch nicht gebaut. Bis das Gateway betriebsbereit ist, können nur Methoden der Klasse S und der Klasse O in der Sandbox evaluiert werden; Methoden der Klasse A1 sind *grundsätzlich* preisberechtigt, können aber noch keine offiziellen Goldstandard-Bewertungen erzeugen. Diese Seite beschreibt, was die Spezifikation erfordert, nicht, was derzeit läuft.
+> 🔲 **Geplant.** Die Sandbox und ihr LLM-Gateway sind spezifiziert, aber noch nicht implementiert. Bis das Gateway betriebsbereit ist, können nur Methoden der Klassen S und O in der Sandbox evaluiert werden; Methoden der Klasse A1 sind *grundsätzlich* preisberechtigt, können jedoch noch keine offiziellen Goldstandard-Bewertungen erzeugen. Diese Seite beschreibt, was die Spezifikation erfordert, nicht das, was derzeit ausgeführt wird.
 
-### Anzeige auf der Bestenliste
+### Bestenlisten-Anzeige
 
-- Die Bestenliste zeigt die Abhängigkeitsklasse jeder Methode neben ihrem Methodenklassen-Abzeichen an.
-- Methoden der Klasse A2 auf der offenen Bestenliste tragen ein sichtbares **„externe Abhängigkeit“**-Kennzeichen: Ihre Bewertungen hängen von einem Drittanbieterdienst ab, der sich ändern oder verschwinden kann, und sie sind derzeit nicht preisberechtigt.
-- Methoden der Klasse X werden nicht gelistet.
+- Die Bestenliste zeigt die Abhängigkeitsklasse jeder Methode neben ihrem Methodenklassen-Badge an.
+- Methoden der Klasse A2 auf der offenen Bestenliste tragen eine sichtbare **„external dependency"**-Kennzeichnung: Ihre Bewertungen hängen von einem Drittanbieterdienst ab, der sich ändern oder verschwinden kann, und sie sind derzeit nicht preisberechtigt.
+- Methoden der Klasse X werden nicht aufgeführt.
 
-## Eval-Harness: TranslationMethod-Protokoll
+## Eval-Harness: TranslationMethod-Protokoll {#eval-harness-translationmethod-protocol}
 
-Das Eval-Harness verwendet Pythons strukturelle Typisierung (`Protocol`) für Plugins. Jede Klasse mit der richtigen Methodensignatur funktioniert – keine Vererbung erforderlich:
+Das Eval-Harness verwendet Pythons strukturelle Typisierung (`Protocol`) für Plugins. Jede Klasse mit der richtigen Methodensignatur funktioniert — keine Vererbung erforderlich:
 
 ```python
 class MyMethod:
@@ -233,7 +233,7 @@ class MyMethod:
         return results
 ```
 
-Siehe das [Plugin-Protokoll](/docs/specifications/methods#eval-harness-translationmethod-protocol) für die vollständige Dokumentation, einschließlich Wrapper-Beispielen für Nicht-Python-Methoden.
+Vollständige Dokumentation einschließlich Wrapper-Beispielen für Nicht-Python-Methoden finden Sie im [Plugin-Protokoll](/docs/specifications/methods#eval-harness-translationmethod-protocol).
 
 ## champollion: methodPlugin-Konfiguration
 
@@ -250,11 +250,11 @@ In champollion werden Methoden pro Sprachpaar in `champollion.config.json` regis
 }
 ```
 
-Siehe die [Plugin-Spezifikation](https://champollion.dev/docs/reference/plugin-spec) für die champollion-seitige Schnittstelle.
+Die champollion-seitige Schnittstelle finden Sie in der [Plugin-Spezifikation](https://champollion.dev/docs/reference/plugin-spec).
 
 ## Bestenlisten-Integration
 
-Wenn eine Methodenkarte an einen Lauf angehängt wird (über `--method-card`), wird sie in die Run-Card eingebettet und auf der Bestenliste angezeigt:
+Wenn eine Method Card an einen Lauf angehängt wird (über `--method-card`), wird sie in die Run Card eingebettet und auf der Bestenliste angezeigt:
 
 ```bash
 # Run with method card attached
@@ -267,30 +267,30 @@ mt-eval run \
 mt-eval publish eval/logs/harness/your-run-card.json
 ```
 
-Wenn keine `--method-card` angegeben wurde, startet `mt-eval publish` einen interaktiven Assistenten, der Sie durch die Beschreibung Ihrer Methode führt.
+Wurde keine `--method-card` bereitgestellt, startet `mt-eval publish` einen interaktiven Assistenten, der Sie durch die Beschreibung Ihrer Methode führt.
 
 Die Bestenliste zeigt:
-- **Klassen-Abzeichen** – visuelle Anzeige (z. B. „pipeline“, „coached-llm“)
-- **Abhängigkeitsklasse** – S/O/A1/A2 (siehe [Methodengültigkeit und Abhängigkeitsklassen](#method-validity-and-dependency-classes)); A2-Methoden tragen ein „externe Abhängigkeit“-Kennzeichen
-- **Methodenname** – aus der Methodenkarte
-- **Verwendete Werkzeuge** – aus der Methodenkarte aufgelistet
+- **Klassen-Badge** — visuelle Anzeige (z. B. „pipeline", „coached-llm")
+- **Abhängigkeitsklasse** — S/O/A1/A2 (siehe [Methodengültigkeit und Abhängigkeitsklassen](#method-validity-and-dependency-classes)); A2-Methoden tragen eine „external dependency"-Kennzeichnung
+- **Methodenname** — aus der Method Card
+- **Verwendete Werkzeuge** — aus der Method Card aufgelistet
 - **Open-Source-Indikator**
 
-Wenn keine Methodenkarte angehängt ist, zeigt die Bestenliste die harness-native Konfiguration an (Modell, Prompt-Version, Temperatur, aktivierte Werkzeuge).
+Wenn keine Method Card angehängt ist, zeigt die Bestenliste die harness-native Konfiguration an (Modell, Prompt-Version, Temperatur, aktivierte Werkzeuge).
 
-:::danger KEIN TRAINING mit Evaluationsdaten
-Methoden, deren Entwicklungsprozess eine Berührung mit dem Evaluationsdatensatz beinhaltete – als Trainingsdaten, Few-Shot-Beispiele, Wörterbucheinträge oder Material zum Prompt-Tuning –, werden von der Bestenliste **disqualifiziert**. Siehe [MT-Evaluation](/docs/leaderboard/rules) dazu, was eine gute Methode von einer schlechten unterscheidet.
+:::danger NICHT mit Evaluierungsdaten TRAINIEREN
+Methoden, deren Entwicklungsprozess Kontakt mit dem Evaluierungsdatensatz beinhaltete — als Trainingsdaten, Few-Shot-Beispiele, Wörterbucheinträge oder Material zur Prompt-Optimierung — werden von der Bestenliste **disqualifiziert**. Was eine gute von einer schlechten Methode unterscheidet, erfahren Sie unter [MT-Evaluierung](/docs/leaderboard/rules).
 :::
 
 ---
 
 ## Siehe auch
 
-- [MT-Evaluation](/docs/leaderboard/rules) – Überblick, Bestenlisten-Wert und Leitfaden zu guten/schlechten Methoden
-- [Eval-Harness](/docs/specifications/harness) – wie Evaluationen durchgeführt werden
-- [Evaluationsdatensätze](/docs/leaderboard/datasets) – verfügbare Datensätze (EDTeKLA, FLORES+)
-- [Run-Card-Spezifikation](/docs/specifications/run-card) – das JSON-Schema der Run-Card
-- [Plugin-Spezifikation](https://champollion.dev/docs/reference/plugin-spec) – champollion-seitige Plugin-Schnittstelle
-- [Methoden-Bestenliste](https://champollion.dev/leaderboard) – Live-Benchmark-Bewertungen
-- [Benchmark-Spezifikation](/docs/specifications/benchmark) – Evaluationsprotokoll, Korpusformat, Run-Card-Schema
-- [Scoring-Spezifikation](/docs/specifications/scoring) – SSOT für Metriken, Composite-Gewichtungen und Qualitätsstufen
+- [MT-Evaluierung](/docs/leaderboard/rules) — Überblick, Bestenlisten-Wert und Leitfaden für gute/schlechte Methoden
+- [Eval-Harness](/docs/specifications/harness) — wie Evaluierungen ausgeführt werden
+- [Evaluierungsdatensätze](/docs/leaderboard/datasets) — verfügbare Datensätze (EDTeKLA, FLORES+)
+- [Run-Card-Spezifikation](/docs/specifications/run-card) — das Run-Card-JSON-Schema
+- [Plugin-Spezifikation](https://champollion.dev/docs/reference/plugin-spec) — champollion-seitige Plugin-Schnittstelle
+- [Methoden-Bestenliste](https://champollion.dev/leaderboard) — Live-Benchmark-Bewertungen
+- [Benchmark-Spezifikation](/docs/specifications/benchmark) — Evaluierungsprotokoll, Korpusformat, Run-Card-Schema
+- [Scoring-Spezifikation](/docs/specifications/scoring) — SSOT für Metriken, zusammengesetzte Gewichtungen und Qualitätsstufen

@@ -157,7 +157,7 @@ A single speaker doing only Task A would commit **~8 hours over 2 weeks for $400
 
 ---
 
-## 5. Data Governance
+## 5. Data Governance {#5-data-governance}
 
 All speaker contributions are governed by the project's OCAP®-forward data policies:
 
@@ -169,7 +169,7 @@ All speaker contributions are governed by the project's OCAP®-forward data poli
 
 ---
 
-## 6. What Speakers Get
+## 6. What Speakers Get {#6-what-speakers-get}
 
 Beyond compensation:
 
@@ -181,7 +181,7 @@ Beyond compensation:
 
 ---
 
-## 7. How to Get Started
+## 7. How to Get Started {#7-how-to-get-started}
 
 If you are a bilingual Cree–English speaker interested in participating, or if you know someone who might be:
 

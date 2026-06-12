@@ -22,9 +22,9 @@ related:
 ---
 # Eval Harness v2.0
 
-> **Buod para sa Ehekutibo.** Sinasaklaw ng pahinang ito ang pag-install, pag-configure, at paggamit ng MT evaluation harness — ang tool na nagbe-benchmark ng mga paraan ng pagsasalin laban sa mga standardized corpus at lumilikha ng mga scored run card. Para sa mga kanonikal na depinisyon ng metrics, schema, at protocol ng evaluation, tingnan ang [Espesipikasyon ng Benchmark](/docs/specifications/benchmark).
+> **Buod para sa Ehekutibo.** Saklaw ng pahinang ito ang pag-install, pagsasaayos, at paggamit ng MT evaluation harness — ang tool na nagbe-benchmark ng mga pamamaraan ng pagsasalin laban sa mga pamantayang corpus at gumagawa ng mga scored run card. Para sa mga kanonikal na depinisyon ng mga metric, schema, at protocol ng pagsusuri, tingnan ang [Benchmark Specification](/docs/specifications/benchmark).
 
-Pinapatakbo ng harness ang mga eksperimento sa pagsasalin at lumilikha ito ng mga run card. Pinangangasiwaan nito ang prompt construction, API calls, scoring, at result serialization — ibinibigay ninyo ang dataset at ang model.
+Pinapatakbo ng harness ang mga eksperimento sa pagsasalin at gumagawa ito ng mga run card. Pinangangasiwaan nito ang pagbuo ng prompt, mga API call, scoring, at serialization ng resulta — ibinibigay ninyo ang dataset at ang model.
 
 ## Pag-install
 
@@ -47,7 +47,7 @@ cd arena
 mt-eval run --corpus path/to/dataset.json
 ```
 
-Pinapatakbo nito ang bawat entry sa corpus sa pamamagitan ng naka-configure na model (o method plugin), binibigyan ng score ang mga output, at nagsusulat ng run card JSON file sa output directory.
+Pinapatakbo nito ang bawat entry sa corpus sa pamamagitan ng naka-configure na model (o method plugin), nagbibigay ng score sa mga output, at nagsusulat ng run card JSON file sa output directory.
 
 ## Mga CLI Flag
 
@@ -56,10 +56,10 @@ Pinapatakbo nito ang bawat entry sa corpus sa pamamagitan ng naka-configure na m
 | Flag | Kinakailangan | Default | Paglalarawan |
 |------|----------|---------|-------------|
 | `--corpus` | ✅ | — | Path papunta sa corpus file (`.json`, `.jsonl`, `.tsv`) |
-| `--source-file` / `--reference-file` | — | — | Parallel text files (FLORES+, WMT format) |
-| `-m, --model` | — | `gemini-pro` | Model slug (maikling pangalan o buong OpenRouter ID). Nire-resolve sa pamamagitan ng `shared/model-aliases.json`. Pinaghihiwalay ng comma para sa mga multi-model run |
-| `-d, --dataset` | — | `all` | Dataset filter: `all`, pangalan ng segment, o ID range |
-| `--ids` | — | — | Mga entry ID na pinaghihiwalay ng comma upang i-evaluate |
+| `--source-file` / `--reference-file` | — | — | Mga parallel text file (FLORES+, WMT format) |
+| `-m, --model` | — | `gemini-pro` | Model slug (maikling pangalan o buong OpenRouter ID). Nire-resolve sa pamamagitan ng `shared/model-aliases.json`. Pinaghihiwalay ng kuwit para sa mga multi-model run |
+| `-d, --dataset` | — | `all` | Dataset filter: `all`, pangalan ng segment, o saklaw ng ID |
+| `--ids` | — | — | Mga entry ID na pinaghihiwalay ng kuwit upang suriin |
 | `--source-lang` | — | `English` | Pangalan ng source language |
 | `--target-lang` | — | — | Pangalan ng target language |
 | `-p, --prompt` | — | `naive` | Bersyon ng prompt (`naive`, `custom`, `champollion`) |
@@ -67,37 +67,37 @@ Pinapatakbo nito ang bawat entry sa corpus sa pamamagitan ng naka-configure na m
 | `--coaching` | — | — | Inline coaching text (quoted string) |
 | `--method` | — | — | Path papunta sa method plugin directory (naglalaman ng `method.json` + Python module) |
 | `--method-card` | — | — | Path papunta sa method card JSON para sa leaderboard metadata |
-| `--fst-retries` | — | `0` | Bilang ng mga FST retry attempt (default LLM method lamang) |
+| `--fst-retries` | — | `0` | Bilang ng mga pagtatangkang FST retry (default na LLM method lamang) |
 | `--skip-fst` | — | `false` | Laktawan nang buo ang FST quality gate |
-| `--tools` | — | `false` | I-enable ang tool-calling mode |
-| `--tools-list` | — | — | Mga pangalan ng tool na pinaghihiwalay ng comma |
-| `--max-tool-rounds` | — | `8` | Pinakamataas na tool-calling rounds bawat entry |
+| `--tools` | — | `false` | Paganahin ang tool-calling mode |
+| `--tools-list` | — | — | Mga pangalan ng tool na pinaghihiwalay ng kuwit |
+| `--max-tool-rounds` | — | `8` | Pinakamataas na bilang ng tool-calling rounds kada entry |
 | `--hooks` | — | — | Mga pangalan ng post-translation hook |
-| `--style-profile` | — | — | Path papunta sa style profile JSON. Ini-enable ang writing-style consistency metrics (impormatibo — hindi kailanman bahagi ng composite score; tingnan ang [§ Writing-style at register metrics](#writing-style-and-register-metrics-informational)) |
-| `-b, --batch-size` | — | `25` | Mga entry bawat API call |
+| `--style-profile` | — | — | Path papunta sa isang style profile JSON. Pinapagana ang mga metric para sa consistency ng writing style (impormatibo — kailanman ay hindi bahagi ng composite score; tingnan ang [§ Mga metric ng estilo ng pagsulat at rehistro](#writing-style-and-register-metrics-informational)) |
+| `-b, --batch-size` | — | `25` | Mga entry kada API call |
 | `-c, --concurrency` | — | `8` | Mga parallel API call |
-| `--max-tokens` | — | `32768` | Max tokens bawat API call |
+| `--max-tokens` | — | `32768` | Pinakamataas na tokens kada API call |
 | `--temperature` | — | `0.0` | Sampling temperature (0.0 = deterministic) |
 | `--no-cache` | — | `false` | I-disable ang response caching |
 | `--cache-dir` | — | `eval/cache/harness` | Path ng cache directory |
 | `-o, --output-dir` | — | `eval/logs/harness` | Output directory para sa mga run card at log |
 | `-n, --name` | — | — | Run name na madaling basahin ng tao |
-| `--dry-run` | — | `false` | I-validate ang configuration nang hindi gumagawa ng API calls |
+| `--dry-run` | — | `false` | I-validate ang configuration nang hindi gumagawa ng mga API call |
 | `--champollion-config` | — | — | Path papunta sa `champollion.config.json` |
-| `--champollion-cards-dir` | — | — | Language cards directory |
+| `--champollion-cards-dir` | — | — | Directory ng mga language card |
 | `--target-lang-code` | — | — | BCP-47 language code |
 
-### Iba Pang Subcommands
+### Iba Pang Subcommand
 
 | Subcommand | Paglalarawan |
 |------------|-------------|
 | `mt-eval test <log_path>` | Suriin ang isang nakumpletong run log |
 | `mt-eval publish <report_path>` | Magsumite ng run card sa leaderboard |
-| `mt-eval compare <logs...>` | Paghambingin ang maraming run nang magkakatabi |
+| `mt-eval compare <logs...>` | Ihambing ang maraming run nang magkatabi |
 | `mt-eval dashboard <logs...>` | Bumuo ng HTML dashboard mula sa mga run log |
 | `mt-eval list models\|prompts\|datasets` | Ilista ang mga available na resource |
 | `mt-eval export` | I-package ang kasalukuyang setup bilang champollion method plugin |
-| `mt-eval export-config` | I-export ang na-resolve na MethodConfig (lahat ng 8 kanonikal na field) bilang JSON |
+| `mt-eval export-config` | I-export ang resolved MethodConfig (lahat ng 8 kanonikal na field) bilang JSON |
 
 ### Mga Halimbawa
 
@@ -121,9 +121,9 @@ mt-eval run \
 
 ---
 
-## Schema ng Run Card
+## Run Card Schema
 
-Ang bawat eksperimento ay lumilikha ng **run card** — isang self-contained JSON document. Ang top-level structure:
+Bawat eksperimento ay gumagawa ng **run card** — isang self-contained na JSON document. Ang top-level structure:
 
 ```json
 {
@@ -148,15 +148,15 @@ Ang bawat eksperimento ay lumilikha ng **run card** — isang self-contained JSO
 }
 ```
 
-Tingnan ang [Espesipikasyon ng Run Card](/docs/specifications/run-card) para sa buong schema na may dokumentasyon para sa bawat field.
+Tingnan ang [Run Card Specification](/docs/specifications/run-card) para sa buong schema na may dokumentasyon para sa bawat field.
 
 :::info Awtoritatibong Schema
-Ang [Espesipikasyon ng Benchmark](/docs/specifications/benchmark) ang iisang source of truth para sa schema ng run card. Para sa mga depinisyon ng metric, composite weights, at quality tiers, tingnan ang [Espesipikasyon sa Scoring](/docs/specifications/scoring). Idinodokumento ng pahinang ito kung paano gamitin ang harness; ang mga spec ang nagtatakda kung ano ang kahulugan ng mga output.
+Ang [Benchmark Specification](/docs/specifications/benchmark) ang nag-iisang source of truth para sa run card schema. Para sa mga depinisyon ng metric, composite weights, at quality tiers, tingnan ang [Scoring Specification](/docs/specifications/scoring). Idinodokumento ng pahinang ito kung paano gamitin ang harness; tinutukoy ng mga spec kung ano ang ibig sabihin ng mga output.
 :::
 
 ### Mahahalagang Block
 
-**`dataset`** — Tinutukoy kung aling dataset ang ginamit, kabilang ang content hash nito upang maiugnay ang mga resulta sa isang partikular na bersyon:
+**`dataset`** — Tinutukoy kung aling dataset ang ginamit, kabilang ang content hash nito upang maikabit ang mga resulta sa isang partikular na bersyon:
 
 ```json
 // Example using master_corpus.json (62 gold + 342 textbook = 404)
@@ -169,7 +169,7 @@ Ang [Espesipikasyon ng Benchmark](/docs/specifications/benchmark) ang iisang sou
 }
 ```
 
-**`scores`** — Aggregate metrics para sa run:
+**`scores`** — Mga aggregate metric para sa run:
 
 ```json
 // Counts reflect the dataset used (here: master_corpus.json, 404 entries)
@@ -189,7 +189,7 @@ Ang [Espesipikasyon ng Benchmark](/docs/specifications/benchmark) ang iisang sou
 }
 ```
 
-**`totals`** — Pagsubaybay sa token usage at cost:
+**`totals`** — Pagsubaybay sa paggamit ng token at gastos:
 
 ```json
 {
@@ -205,44 +205,44 @@ Ang [Espesipikasyon ng Benchmark](/docs/specifications/benchmark) ang iisang sou
 
 ---
 
-## Writing-style at register metrics (impormatibo)
+## Mga metric ng estilo ng pagsulat at rehistro (impormatibo)
 
-Maaaring i-evaluate ng harness kung tumutugma ang mga pagsasalin sa target na **register** at **writing style**, sa pamamagitan ng `WritingStyleConsistency` metric plugin (`mt_eval_harness/plugins/writing_style.py`). Maaaring tama sa lingguwistikong antas ang isang pagsasalin ngunit mali ang register — impormal na phrasing sa legal na dokumento, formal boilerplate sa marketing copy — at hindi ito mapapansin ng string metrics. Napapansin ito ng mga metric na ito.
+Maaaring suriin ng harness kung tumutugma ang mga pagsasalin sa target na **rehistro** at **writing style**, sa pamamagitan ng `WritingStyleConsistency` metric plugin (`mt_eval_harness/plugins/writing_style.py`). Maaaring tama ang isang pagsasalin sa aspektong lingguwistiko ngunit nasa maling rehistro — impormal na pananalita sa isang legal na dokumento, pormal na boilerplate sa marketing copy — at hindi ito mapapansin ng mga string metric. Napapansin ito ng mga metric na ito.
 
-**Ano ang sinusukat (bawat entry):**
+**Ano ang sinusukat (kada entry):**
 
-| Metric | Sukatan | Kahulugan |
+| Metric | Scale | Kahulugan |
 |--------|-------|---------|
-| `style_register_match` | boolean | Tumutugma ba ang output sa inaasahang register? Ang target ay nagmumula sa `register` field ng corpus entry (tingnan ang [Benchmark Spec §2.6](/docs/specifications/benchmark)) o mula sa isang style profile |
-| `style_sentence_length_ratio` | float | Hinulaang vs reference na average sentence length (1.0 = tugma; divergence = style drift) |
-| `style_formality_score` | 0.0–1.0 | Presensya ng mga formal/informal marker (T–V pronouns, contractions, …) gamit ang per-language marker resources |
+| `style_register_match` | boolean | Tumutugma ba ang output sa inaasahang rehistro? Nagmumula ang target sa field na `register` ng corpus entry (tingnan ang [Benchmark Spec §2.6](/docs/specifications/benchmark)) o mula sa isang style profile |
+| `style_sentence_length_ratio` | float | Predicted vs reference average sentence length (1.0 = tugma; divergence = style drift) |
+| `style_formality_score` | 0.0–1.0 | Presensya ng mga pormal/impormal na marker (T–V pronouns, contractions, …) gamit ang per-language marker resources |
 
 **Aggregate:** `style_consistency_rate` — ang fraction ng mga entry na walang natukoy na register mismatch.
 
-Mag-enable ng custom target gamit ang `--style-profile path/to/profile.json` (hal. isang brand-voice profile); kung wala nito, bumabalik ang plugin sa `register` metadata ng bawat corpus entry kung naroroon.
+Paganahin ang custom target gamit ang `--style-profile path/to/profile.json` (hal. isang brand-voice profile); kung wala nito, babalik ang plugin sa metadata na `register` ng bawat corpus entry kung naroroon.
 
 :::caution Matapat na saklaw
-Ang mga metric na ito ay **impormatibo lamang** — hindi kailanman bahagi ang mga ito ng composite score, at marker-based ang formality detection (isang heuristic), hindi isang learned judgment. Ituring ang mga ito bilang drift detector para sa pagsunod sa register, hindi bilang hatol sa kalidad ng style.
+Ang mga metric na ito ay **impormatibo lamang** — kailanman ay hindi sila bahagi ng composite score, at ang formality detection ay marker-based (isang heuristic), hindi isang learned judgment. Ituring ang mga ito bilang drift detector para sa pagsunod sa rehistro, hindi bilang hatol sa kalidad ng estilo.
 :::
 
 ---
 
-## Fingerprint vs Run Card Hash
+## Fingerprint vs Run Card Hash {#fingerprint-vs-run-card-hash}
 
-Lumilikha ang harness ng dalawang magkaibang hash. Magkaiba ang layunin ng mga ito:
+Gumagawa ang harness ng dalawang magkahiwalay na hash. Magkaiba ang layunin ng mga ito:
 
 ### Fingerprint
 
 Sinasagot ng **fingerprint** ang: *"Maaari bang ma-reproduce ang run na ito?"*
 
-Iha-hash nito ang kombinasyon ng mga input na nagtatakda sa experiment configuration — hindi ang mga output:
+Hina-hash nito ang kombinasyon ng mga input na tumutukoy sa configuration ng eksperimento — hindi ang mga output:
 
 - Dataset SHA-256
 - Model slug
 - Condition label
 - System prompt SHA-256
 - Temperature
-- Harness version
+- Bersyon ng harness
 
 Dalawang run na may magkaparehong fingerprint ang gumamit ng parehong setup. Dapat maihambing ang kanilang mga resulta (maliban sa API non-determinism).
 
@@ -250,10 +250,10 @@ Dalawang run na may magkaparehong fingerprint ang gumamit ng parehong setup. Dap
 
 Sinasagot ng **run card hash** ang: *"Nabago ba nang hindi awtorisado ang partikular na result file na ito?"*
 
-Ito ang SHA-256 ng buong run card JSON (hindi kasama ang mismong `run_card_hash` field). Kung may magbago sa anumang field — isang score, isang timestamp, isang output — masisira ang hash.
+Ito ang SHA-256 ng buong run card JSON (hindi kasama ang field na `run_card_hash` mismo). Kung may magbago sa alinmang field — isang score, isang timestamp, isang output — masisira ang hash.
 
 :::info Kailan gagamitin ang alin
-Gamitin ang **fingerprint** upang i-group ang mga maihahambing na run (parehong eksperimento, magkaibang execution). Gamitin ang **run card hash** upang beripikahin ang integridad ng isang partikular na result file.
+Gamitin ang **fingerprint** upang ipangkat ang mga maihahambing na run (parehong eksperimento, magkakaibang execution). Gamitin ang **run card hash** upang i-verify ang integridad ng isang partikular na result file.
 :::
 
 ---
@@ -266,11 +266,11 @@ Pagkatapos makumpleto ang isang run, gamitin ang `mt-eval publish` upang isumite
 mt-eval publish eval/logs/harness/your-run-card.json
 ```
 
-Kung walang ibinigay na `--method-card` habang pinapatakbo ang run, inilulunsad ng `mt-eval publish` ang isang interactive wizard (`method_card_wizard.py`) na gagabay sa inyo sa paglalarawan ng inyong method (pangalan, class, mga tool na ginamit, atbp.). Ini-embed ang output ng wizard sa run card bago isumite.
+Kung walang ibinigay na `--method-card` sa panahon ng run, maglulunsad ang `mt-eval publish` ng interactive wizard (`method_card_wizard.py`) na gagabay sa inyo sa paglalarawan ng inyong method (pangalan, klase, mga tool na ginamit, atbp.). Isinasama ang output ng wizard sa run card bago isumite.
 
-### Manwal na pagsusumite
+### Manu-manong pagsusumite
 
-Sine-save ang mga run card bilang JSON files sa output directory. Maaari rin ninyong isumite ang anumang run card file sa pamamagitan ng leaderboard UI sa [/leaderboard](https://champollion.dev/leaderboard), o sa pamamagitan ng API:
+Sine-save ang mga run card bilang mga JSON file sa output directory. Maaari rin ninyong isumite ang anumang run card file sa pamamagitan ng leaderboard UI sa [/leaderboard](https://champollion.dev/leaderboard), o sa pamamagitan ng API:
 
 ```bash
 curl -X POST https://champollion.dev/api/leaderboard/submit \
@@ -278,22 +278,22 @@ curl -X POST https://champollion.dev/api/leaderboard/submit \
   -d @eval/logs/harness/your-run-card.json
 ```
 
-:::warning Validation ng Leaderboard
-Bine-validate ng leaderboard ang mga isinumiteng run card laban sa dataset registry. Tinatanggihan ang mga submission na tumutukoy sa hindi kilalang mga dataset, o may sirang `run_card_hash`.
+:::warning Pag-validate ng leaderboard
+Vina-validate ng leaderboard ang mga isinumiteng run card laban sa dataset registry. Tinatanggihan ang mga submission na tumutukoy sa mga hindi kilalang dataset, o may sirang `run_card_hash`.
 :::
 
 :::danger HUWAG MAG-TRAIN sa evaluation data
-Kung nakita na ng inyong method ang evaluation dataset sa panahon ng development — bilang training data, few-shot examples, dictionary entries, o prompt engineering material — ang inyong submission ay **madidiskuwalipika**. Tingnan ang [MT Evaluation](/docs/leaderboard/rules) para sa kung ano ang bumubuo sa mabuti vs. masamang method.
+Kung nakita na ng inyong method ang evaluation dataset sa panahon ng development — bilang training data, few-shot examples, dictionary entries, o prompt engineering material — ang inyong submission ay **madidisqualify**. Tingnan ang [MT Evaluation](/docs/leaderboard/rules) para sa kung ano ang bumubuo sa mabuti vs. masamang method.
 :::
 
 ---
 
 ## Tingnan Din
 
-- [MT Evaluation](/docs/leaderboard/rules) — overview, value proposition ng leaderboard, at gabay sa mabuti/masamang method
+- [MT Evaluation](/docs/leaderboard/rules) — pangkalahatang-ideya, value proposition ng leaderboard, at gabay sa mabuti/masamang method
 - [Evaluation Datasets](/docs/leaderboard/datasets) — dataset format, EDTeKLA, FLORES+
-- [Espesipikasyon ng Run Card](/docs/specifications/run-card) — ang buong JSON schema
-- [Pagbuo ng Method](/docs/specifications/methods) — ang method interface para sa paglikha ng mga method na maaaring i-evaluate
+- [Run Card Specification](/docs/specifications/run-card) — ang buong JSON schema
+- [Building a Method](/docs/specifications/methods) — ang method interface para sa paglikha ng mga method na maaaring suriin
 - [Method Leaderboard](https://champollion.dev/leaderboard) — mga live benchmark score
-- [Espesipikasyon ng Benchmark](/docs/specifications/benchmark) — evaluation protocol, corpus format, schema ng run card
-- [Espesipikasyon sa Scoring](/docs/specifications/scoring) — SSOT para sa metrics, composite weights, at quality tiers
+- [Benchmark Specification](/docs/specifications/benchmark) — evaluation protocol, corpus format, run card schema
+- [Scoring Specification](/docs/specifications/scoring) — SSOT para sa mga metric, composite weights, at quality tiers

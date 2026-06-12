@@ -73,7 +73,7 @@ Isso executa cada entrada do corpus através do modelo configurado (ou plugin de
 | `--tools-list` | — | — | Nomes de ferramentas separados por vírgula |
 | `--max-tool-rounds` | — | `8` | Máximo de rodadas de tool-calling por entrada |
 | `--hooks` | — | — | Nomes de hooks pós-tradução |
-| `--style-profile` | — | — | Caminho para JSON de perfil de estilo. Ativa métricas de consistência de estilo de escrita (informacional — nunca faz parte da pontuação composta; consulte [§ Métricas de estilo de escrita e registro](#métricas-de-estilo-de-escrita-e-registro-informacional)) |
+| `--style-profile` | — | — | Caminho para JSON de perfil de estilo. Ativa métricas de consistência de estilo de escrita (informacional — nunca faz parte da pontuação composta; consulte [§ Métricas de estilo de escrita e registro](#writing-style-and-register-metrics-informational)) |
 | `-b, --batch-size` | — | `25` | Entradas por chamada de API |
 | `-c, --concurrency` | — | `8` | Chamadas de API paralelas |
 | `--max-tokens` | — | `32768` | Máximo de tokens por chamada de API |
@@ -151,7 +151,7 @@ Cada experimento produz um **run card** — um documento JSON autossuficiente. A
 Consulte a [Especificação de Run Card](/docs/specifications/run-card) para o esquema completo com cada campo documentado.
 
 :::info Esquema Autoritativo
-A [Especificação de Benchmark](/docs/specifications/benchmark) é a única fonte de verdade para o esquema de run card. Para definições de métricas, pesos compostos e tiers de qualidade, consulte a [Especificação de Pontuação](/docs/specifications/scoring). Esta página documenta como usar o harness; as especificações definem o que os outputs significam.
+A [Especificação de Benchmark](/docs/specifications/benchmark) é a única fonte de verdade para o esquema de run card. Para definições de métricas, pesos compostos e tiers de qualidade, consulte a [Especificação de Pontuação](/docs/specifications/scoring). Esta página documenta como usar o harness; as specs definem o que os outputs significam.
 :::
 
 ### Blocos Principais
@@ -227,7 +227,7 @@ Essas métricas são **apenas informacionais** — nunca fazem parte da pontuaç
 
 ---
 
-## Fingerprint vs Hash de Run Card
+## Fingerprint vs Hash de Run Card {#fingerprint-vs-run-card-hash}
 
 O harness produz dois hashes distintos. Eles servem propósitos diferentes:
 
@@ -282,7 +282,7 @@ curl -X POST https://champollion.dev/api/leaderboard/submit \
 O leaderboard valida run cards enviados contra o registro de datasets. Envios referenciando datasets desconhecidos, ou com um `run_card_hash` quebrado, são rejeitados.
 :::
 
-:::danger NÃO TREINE em dados de avaliação
+:::danger NÃO TREINE com dados de avaliação
 Se seu método viu o dataset de avaliação durante o desenvolvimento — como dados de treinamento, exemplos few-shot, entradas de dicionário ou material de engenharia de prompt — seu envio será **desqualificado**. Consulte [MT Evaluation](/docs/leaderboard/rules) para o que torna um método bom vs. ruim.
 :::
 

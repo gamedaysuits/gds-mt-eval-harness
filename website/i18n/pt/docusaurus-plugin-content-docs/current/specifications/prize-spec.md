@@ -62,7 +62,7 @@ Toda avaliação de prêmio acontece em um sandbox (§1.4), e métodos vencedore
 | **S** — auto-contida | ✅ Sim | Nenhuma além das condições de limite em §2 |
 | **O** — aberta externa (por exemplo, FST AGPL espelhado no envio) | ✅ Sim | Artefatos fixados e inclusos no envio; licenças permitem transferência comunitária; termos copyleft preservados (a comunidade recebe os mesmos direitos que a licença concede a todos) |
 | **A1** — inferência LLM substituível | ⚠️ Condicional | Modelo declarado, fixado e substituível (deve executar contra um modelo de peso aberto hospedado pela comunidade); avaliação roteada através do gateway LLM do sandbox (🔲 planejado — métodos A1 não podem produzir pontuações de padrão ouro até que o gateway esteja operacional); transferência transmite a receita completa (prompts, coaching, código), não o modelo |
-| **A2** — API de serviço/dados externos não-substituível | ❌ Ainda não | Inelegível até que o detentor dos direitos conceda permissões de inclusão em sandbox e transferência. Permitido no leaderboard aberto com uma flag visível de "dependência externa" |
+| **A2** — dados externos não-substituíveis/API de serviço | ❌ Ainda não | Inelegível até que o detentor dos direitos conceda permissões de inclusão em sandbox e transferência. Permitido no leaderboard aberto com uma flag visível de "dependência externa" |
 | **X** — conteúdo agrupado sem direitos | ❌ Nunca | Inadmissível em todas as pistas |
 
 A classe de um método é a classe mais restritiva entre suas dependências declaradas. Dependências não declaradas de qualquer classe são desqualificantes (§5).
@@ -168,13 +168,13 @@ Este é um sistema que **não destrói o idioma.** Pode não ser perfeito, mas c
 
 ---
 
-## 4. Fundos de Prêmios Futuros
+## 4. Fundos de Prêmios Futuros {#4-future-prize-pools}
 
 O Founder's Prize é a semente. Fundos de prêmios adicionais são financiados por patrocinadores. Cada novo fundo de prêmios é documentado como uma nova subseção de §2 com seu próprio:
 
 - Valor e moeda do prêmio
 - Par de idiomas
-- Atribuição do patrocinador
+- Atribuição de patrocinador
 - Condições de limite (que podem diferir do Founder's Prize)
 - Data de expiração (se houver)
 - Quaisquer condições especiais
@@ -196,7 +196,7 @@ Patrocinadores também podem financiar:
 
 ### 4.2 Escrow de Fundo de Prêmios
 
-Todos os fundos de prêmios são mantidos em escrow (gerenciados pelo projeto ou um trustee designado) até que as condições de limite sejam atendidas. Se um prêmio expira sem ser reclamado, os fundos são devolvidos ao patrocinador ou redirecionados para um novo fundo de prêmios a critério do patrocinador.
+Todos os fundos de prêmios são mantidos em escrow (gerenciados pelo projeto ou um trustee designado) até que as condições de limite sejam atendidas. Se um prêmio expira sem ser reclamado, fundos são devolvidos ao patrocinador ou redirecionados para um novo fundo de prêmios a critério do patrocinador.
 
 ---
 
@@ -204,7 +204,7 @@ Todos os fundos de prêmios são mantidos em escrow (gerenciados pelo projeto ou
 
 Um envio é desqualificado se:
 
-1. **Treinamento em dados de avaliação.** Método foi exposto a entradas de corpus `gold_standard` ou `held_out`. (Arquitetonicamente prevenido por execução em sandbox — mas se evidência de contaminação for encontrada, o resultado é anulado.)
+1. **Treinamento em dados de avaliação.** Método foi exposto a entradas de corpus `gold_standard` ou `held_out`. (Arquitetonicamente prevenido por execução em sandbox — mas se evidência de contaminação é encontrada, o resultado é anulado.)
 2. **Não-reproduzível.** Organização de governança não consegue reproduzir pontuações dentro de ±2%.
 3. **Dependências não declaradas ou inelegíveis.** O método requer acesso em tempo de execução a serviços externos além do que seu manifesto de dependência declara, ou sua classe de dependência efetiva é A2 ou X (§1.6). Inferência LLM de Classe A1 declarada roteada através do gateway de avaliação é permitida; qualquer outra dependência de rede em tempo de execução — e qualquer dependência não declarada de qualquer classe — é desqualificante.
 4. **Termos de participação não assinados.** Todos os membros da equipe devem concordar com a transferência de propriedade.

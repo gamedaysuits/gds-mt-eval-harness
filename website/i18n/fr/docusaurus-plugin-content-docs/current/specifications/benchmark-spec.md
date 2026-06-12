@@ -19,7 +19,7 @@ related:
 ---
 # Spécification du Benchmark
 
-> **Résumé exécutif.** Ce document définit le protocole d'évaluation pour l'écosystème d'évaluation de traduction automatique Champollion : format du corpus (§2), schéma de carte d'exécution (§3), protocole de benchmark (§6), exigences de validation humaine (§7), mécanismes de souveraineté (§8), modèle de classement et de soumission (§9), cadre de coûts (§10), et extensibilité à de nouvelles langues (§11). Pour les définitions de métriques, les poids de notation composite, les seuils de niveaux de qualité et les formules de métriques de coûts/vitesse, voir `SCORING_SPEC.md` — la source unique de vérité pour toute la logique de notation. Ce document référence SCORING_SPEC pour ces détails plutôt que de les dupliquer.
+> **Résumé exécutif.** Ce document définit le protocole d'évaluation pour l'écosystème d'évaluation MT Champollion : format du corpus (§2), schéma de la fiche de résultats (§3), protocole de benchmark (§6), exigences de validation humaine (§7), mécanismes de souveraineté (§8), modèle de classement et de soumission (§9), cadre de coûts (§10), et extensibilité à de nouvelles langues (§11). Pour les définitions de métriques, les poids de notation composite, les seuils de niveaux de qualité et les formules de métriques de coûts/vitesse, voir `SCORING_SPEC.md` — la source unique de vérité pour toute la logique de notation. Ce document référence SCORING_SPEC pour ces détails plutôt que de les dupliquer.
 >
 > Dernière mise à jour : 2026-06-07
 
@@ -29,7 +29,7 @@ related:
 
 ### 1.1 Les métriques automatisées sont des approximations
 
-Chaque métrique définie dans ce document est calculée par machine. chrF++, acceptation FST, précision morphologique, similarité sémantique — toutes sont des approximations automatisées de la qualité de traduction. Elles sont utiles pour l'itération rapide, la comparaison systématique et la détection des régressions. Elles ne sont **pas des substituts au jugement humain**.
+Chaque métrique définie dans ce document est calculée par machine. chrF++, acceptation FST, précision morphologique, similarité sémantique — ce sont toutes des approximations automatisées de la qualité de traduction. Elles sont utiles pour l'itération rapide, la comparaison systématique et la détection des régressions. Elles ne sont **pas des substituts au jugement humain**.
 
 La hiérarchie d'évaluation :
 
@@ -41,7 +41,7 @@ Human review (bilingual speakers validate output)
 Actual utility (does this help a language community?)
 ```
 
-Aucun score automatisé, aussi élevé soit-il, ne peut remplacer un locuteur courant lisant le résultat et confirmant qu'il est correct, naturel et culturellement approprié. Les niveaux de qualité définis à la §5 sont des étiquettes heuristiques sur les scores composites automatisés — utiles pour suivre les progrès, mais jamais suffisants en eux-mêmes.
+Aucun score automatisé, aussi élevé soit-il, ne peut remplacer un locuteur courant lisant la sortie et confirmant qu'elle est correcte, naturelle et culturellement appropriée. Les niveaux de qualité définis à la §5 sont des étiquettes heuristiques sur les scores composites automatisés — utiles pour suivre les progrès, mais jamais suffisants en eux-mêmes.
 
 ### 1.2 Méthodes, pas modèles
 
@@ -49,23 +49,23 @@ Nous évaluons les **méthodes**, pas les modèles. Un modèle est un composant.
 
 ### 1.3 Reproductibilité
 
-Chaque résultat de benchmark doit être reproductible. La carte d'exécution (§3) capture la configuration complète d'une expérience. L'empreinte (§3.5) identifie la configuration expérimentale. Le hachage de la carte d'exécution (§3.6) vérifie l'intégrité du résultat. Quiconque ayant la même méthode, corpus et configuration devrait obtenir des scores dans ±2 % (en tenant compte de la non-déterminisme d'échantillonnage LLM à température > 0).
+Chaque résultat de benchmark doit être reproductible. La fiche de résultats (§3) capture la configuration complète d'une expérience. L'empreinte (§3.5) identifie la configuration expérimentale. Le hachage de la fiche de résultats (§3.6) vérifie l'intégrité du résultat. Quiconque ayant la même méthode, corpus et configuration devrait obtenir des scores dans ±2 % (en tenant compte de la non-déterminisme d'échantillonnage LLM à température > 0).
 
 ### 1.4 Pas de données d'évaluation synthétiques
 
-**Ce projet ne génère pas, n'utilise pas et n'approuve pas les données d'évaluation synthétiques.** Tous les corpus doivent provenir de textes authentiques rédigés par des humains — traductions publiées, manuels scolaires, documents bilingues ou traductions élicitées auprès de locuteurs courants.
+**Ce projet ne génère pas, n'utilise pas et n'approuve pas les données d'évaluation synthétiques.** Tous les corpus doivent être issus de textes authentiques rédigés par des humains — traductions publiées, manuels scolaires, documents bilingues ou traductions élicitées auprès de locuteurs courants.
 
 Les LLM peuvent aider à :
 - L'alignement de phrases (trouver des passages parallèles dans les textes bilingues existants)
 - La conversion de format (convertir les matériaux publiés dans le schéma du corpus)
 - L'enrichissement des métadonnées (suggérer des niveaux de difficulté, des étiquettes de registre)
-- La proposition de phrases sources pour traduction humaine (§11.3 — l'étape de traduction est toujours humaine)
+- La proposition de phrases sources pour la traduction humaine (§11.3 — l'étape de traduction est toujours humaine)
 
 Les LLM ne doivent **jamais** générer des traductions de référence ou des paires d'évaluation.
 
-**Nous sommes neutres sur le développement concernant les données d'entraînement.** Si un développeur de méthode utilise des données d'entraînement synthétiques, la rétrotraduction ou l'augmentation de données dans sa méthode, c'est son choix — nous évaluons le résultat, pas le processus d'entraînement. OMT-1600 de Meta utilise environ 270 millions de phrases parallèles synthétiques générées via rétrotraduction. Nous n'avons aucune objection aux méthodes entraînées de cette façon. Nous testons uniquement sur la curation humaine.
+**Nous sommes neutres sur le développement des données d'entraînement.** Si un développeur de méthode utilise des données d'entraînement synthétiques, la rétrotraduction ou l'augmentation de données dans sa méthode, c'est son choix — nous évaluons la sortie, pas le processus d'entraînement. Le OMT-1600 de Meta utilise environ 270 millions de phrases parallèles synthétiques générées via rétrotraduction. Nous n'avons aucune objection aux méthodes entraînées de cette façon. Nous testons uniquement sur la curation humaine.
 
-> **Pourquoi pas le texte biblique pour l'évaluation ?** OMT-1600 évalue 1 560 des 1 600 langues sur du texte du domaine biblique. Les traductions bibliques ont un registre archaïque, un vocabulaire liturgique et une structure de phrase formulaïque. Nos corpus d'évaluation proviennent de textes curatés par la communauté, diversifiés par domaine — santé, juridique, éducatif, gouvernemental, conversationnel et domaines techniques (voir §2.7). C'est un choix de conception délibéré. Les communautés ont besoin de traduction pour les domaines où elles vivent et travaillent réellement, pas un seul registre religieux. Une méthode qui obtient un bon score sur Genèse 1:1 vous dit presque rien sur sa performance sur un ordre du jour du conseil de bande ou un formulaire d'admission à une clinique.
+> **Pourquoi pas le texte biblique pour l'évaluation ?** OMT-1600 évalue 1 560 des 1 600 langues sur du texte du domaine biblique. Les traductions bibliques ont un registre archaïque, un vocabulaire liturgique et une structure de phrase formulaïque. Nos corpus d'évaluation sont issus de textes curatés par la communauté, diversifiés par domaine — santé, juridique, éducatif, gouvernemental, conversationnel et domaines techniques (voir §2.7). C'est un choix de conception délibéré. Les communautés ont besoin de traductions pour les domaines où elles vivent et travaillent réellement, pas un seul registre religieux. Une méthode qui obtient un bon score sur Genèse 1:1 vous dit presque rien sur sa performance sur un ordre du jour du conseil de bande ou un formulaire d'admission à une clinique.
 
 ---
 
@@ -95,8 +95,8 @@ La structure de haut niveau d'un fichier corpus :
 
 | Champ | Type | Requis | Description |
 |-------|------|--------|-------------|
-| `id` | chaîne | ✅ | Identifiant unique du jeu de données, utilisé dans les cartes d'exécution et le classement |
-| `version` | chaîne | ✅ | Version sémantique. L'incrémentation invalide les comparaisons de cartes d'exécution antérieures |
+| `id` | chaîne | ✅ | Identifiant unique du jeu de données, utilisé dans les fiches de résultats et le classement |
+| `version` | chaîne | ✅ | Version sémantique. L'incrémentation invalide les comparaisons de fiches de résultats antérieures |
 | `language_pair` | chaîne | ✅ | Étiquette d'affichage (par ex., `EN→CRK`) |
 | `source_language` | chaîne | ✅ | Code de langue source BCP 47 |
 | `target_language` | chaîne | ✅ | Code de langue cible BCP 47 |
@@ -128,7 +128,7 @@ Chaque entrée du corpus représente un défi de traduction :
 |-------|------|--------|-------------|
 | `id` | entier | ✅ | Identifiant unique dans le corpus |
 | `source` | chaîne | ✅ | Texte source dans la langue source |
-| `reference` | chaîne | ✅ | Traduction de référence de qualité or dans la langue cible |
+| `reference` | chaîne | ✅ | Traduction de référence de qualité dans la langue cible |
 | `segment` | chaîne | 📎 | Partition du corpus : `gold_standard`, `held_out`, `development`, ou `diagnostic` |
 | `difficulty` | entier | 📎 | Évaluation de difficulté 1–5 (voir §2.4) |
 | `provenance` | chaîne | 📎 | Origine de cette entrée (voir §2.5) |
@@ -137,7 +137,7 @@ Chaque entrée du corpus représente un défi de traduction :
 | `domain` | chaîne | 📎 | Domaine de cas d'usage de la taxonomie à 16 codes (voir §2.7). Doit être l'un de : `conv`, `ecommerce`, `edu`, `financial`, `gov`, `legal`, `literary`, `marketing`, `medical`, `news`, `religious`, `scientific`, `subtitles`, `support`, `tech`, `ui`. Validé au moment de la construction. |
 
 > **📎 = RECOMMANDÉ.** Le harnais gère les champs optionnels manquants avec élégance via les valeurs par défaut. Les corpus tiers n'ont besoin de fournir que `id`, `source` et `reference` par entrée.
-| `morphological_analysis` | chaîne | ❌ | Décomposition morphologique de référence or |
+| `morphological_analysis` | chaîne | ❌ | Décomposition morphologique de référence |
 | `notes` | chaîne | ❌ | Notes du traducteur, variantes dialectales, drapeaux d'ambiguïté |
 | `variant_class` | chaîne | ❌ | Étiquette de classe regroupant les variantes de traduction acceptables |
 
@@ -165,7 +165,7 @@ Les segments `gold_standard` et `held_out` sont entièrement secrets. Les phrase
 | 2 — Phrases simples | Sujet-verbe ou SVO, temps présent | « I see the dog » → « niwâpamâw atim » |
 | 3 — Complexité modérée | Temps passé/futur, possessifs, animacité | « I saw his dog yesterday » |
 | 4 — Morphologie complexe | Obviation, voix passive, ordre conjoint, propositions relatives | « the woman whose son went to the store » |
-| 5 — Avancé | Multi-clause, registre formel, cérémoniel, idiomatique | Paragraphe complet avec registre approprié au contexte |
+| 5 — Avancé | Multi-clause, registre formel, cérémoniel, idiomatique | Paragraphe complet avec registre approprié |
 
 Un corpus bien construit devrait inclure des entrées dans les cinq niveaux de difficulté, avec un poids vers les niveaux 2–4 où se situent la plupart des défis de traduction du monde réel.
 
@@ -175,10 +175,10 @@ Chaque entrée doit indiquer son origine :
 
 | Étiquette | Signification |
 |-----------|---------------|
-| `gold_standard` | Vérifié par des locuteurs courants |
+| `gold_standard` | Vérifiée par des locuteurs courants |
 | `textbook` | Provenant de matériels éducatifs publiés |
-| `elicited` | Produit par des sessions d'élicitation structurées |
-| `corpus` | Extrait d'un corpus parallèle |
+| `elicited` | Produite par des sessions d'élicitation structurées |
+| `corpus` | Extraite d'un corpus parallèle |
 
 > **Remarque :** En pratique, les valeurs de provenance sont des chaînes de forme libre. Les étiquettes ci-dessus sont des conventions, pas une énumération validée — les jeux de données peuvent utiliser d'autres chaînes de provenance descriptives.
 
@@ -205,10 +205,10 @@ Chaque entrée doit indiquer son origine :
 | `question` | Interrogatif |
 | `instruction` | Commande ou directive |
 | `narrative` | Narration ou description |
-| `label` | Étiquette d'interface utilisateur, texte de bouton ou titre |
+| `label` | Étiquette UI, texte de bouton ou titre |
 | `error` | Message d'erreur ou avertissement |
 
-### 2.7 Domaine
+### 2.7 Domaine {#27-domain}
 
 **Domaine** décrit le cas d'usage du monde réel — le type de contenu traduit. C'est orthogonal au registre et au contexte :
 
@@ -221,17 +221,17 @@ Un contrat juridique (domaine : `legal`) peut être formel (registre : `formal`)
 | Code de domaine | Description | Consommateurs typiques |
 |-----------------|-------------|----------------------|
 | `ui` | Chaînes d'interface logicielle | Développeurs d'applications, équipes de localisation |
-| `legal` | Contrats, statuts, dossiers judiciaires, documents d'immigration | Cabinets juridiques, tribunaux, équipes de conformité, avocats en propriété intellectuelle |
+| `legal` | Contrats, statuts, dossiers judiciaires, documents d'immigration | Cabinets juridiques, tribunaux, équipes de conformité, avocats en PI |
 | `medical` | Notes cliniques, étiquettes de médicaments, communications aux patients, protocoles d'essais | Hôpitaux, pharma, essais cliniques, portails patients |
 | `financial` | Banque, assurance, dépôts réglementaires, rapports d'audit | Banques, assureurs, régulateurs, auditeurs |
-| `edu` | Manuels scolaires, programmes d'études, plans de cours, matériels académiques | Écoles, universités, éditeurs de manuels |
+| `edu` | Manuels scolaires, programmes, plans de cours, matériels académiques | Écoles, universités, éditeurs de manuels |
 | `ecommerce` | Descriptions de produits, avis, annonces de marché | Détaillants en ligne, vendeurs de marché |
 | `marketing` | Texte publicitaire, messages de marque, campagnes, slogans | Agences publicitaires, équipes de marque |
 | `gov` | Documents de politique, réglementations, avis publics, législation | Agences gouvernementales, équipes de conformité |
 | `scientific` | Articles de recherche, résumés, méthodologie, propositions de subventions | Chercheurs, revues, agences de subventions |
 | `religious` | Écriture sainte, textes liturgiques, commentaires théologiques | Communautés de foi, éditeurs liturgiques |
 | `support` | FAQ, messages d'erreur, guides de dépannage, scripts de chatbot | Entreprises SaaS, centres d'assistance |
-| `subtitles` | Dialogue de film, TV, streaming et jeux vidéo | Plateformes de streaming, studios, entreprises de jeux vidéo |
+| `subtitles` | Dialogue de film, TV, streaming et jeux vidéo | Plateformes de streaming, studios, entreprises de jeux |
 | `news` | Journalisme, dépêches, éditorial, communiqués de presse | Organisations médiatiques, agences de presse |
 | `literary` | Fiction, poésie, narration, textes culturels | Éditeurs, organisations de préservation culturelle |
 | `conv` | Conversation informelle, médias sociaux, messagerie | Applications grand public, plateformes sociales |
@@ -239,17 +239,17 @@ Un contrat juridique (domaine : `legal`) peut être formel (registre : `formal`)
 
 > **Benchmarks spécifiques au domaine.** Le benchmark général évalue une méthode dans tous les domaines. Mais l'Arena supporte également les **benchmarks filtrés par domaine** — où les scores sont calculés uniquement sur les entrées étiquetées avec un domaine spécifique. Cela permet aux utilisateurs de répondre à : « Quelle méthode est la meilleure pour traduire des documents juridiques en français ? » vs « Quelle méthode a le meilleur score français global ? »
 >
-> Les classements du classement filtrés par domaine sont une fonctionnalité clé du produit. Différentes méthodes auront des performances différentes selon les domaines — une méthode affinée sur la terminologie juridique peut dominer les benchmarks juridiques mais sous-performer sur le texte conversationnel. L'Arena aide les utilisateurs à trouver la solution qui fonctionne le mieux pour leur cas d'usage spécifique.
+> Les classements du leaderboard filtrés par domaine sont une fonctionnalité clé du produit. Différentes méthodes auront des performances différentes selon les domaines — une méthode affinée sur la terminologie juridique peut dominer les benchmarks juridiques mais sous-performer sur le texte conversationnel. L'Arena aide les utilisateurs à trouver la solution qui fonctionne le mieux pour leur cas d'usage spécifique.
 
-> **Futur : Chatbot Arena.** Le site web de l'Arena inclura un assistant conversationnel qui aide les utilisateurs à décrire leur cas d'usage de traduction automatique (domaine, paire de langues, exigences de qualité) et recommande la meilleure méthode validée par la communauté du classement. Par exemple : « J'ai besoin de traduire des protocoles d'essais cliniques de l'anglais au japonais — quelle méthode obtient le meilleur score sur les benchmarks EN→JA du domaine médical ? » Cela dépend d'avoir suffisamment de données d'évaluation étiquetées par domaine et de diversité de méthodes.
+> **Futur : Chatbot Arena.** Le site web de l'Arena inclura un assistant conversationnel qui aide les utilisateurs à décrire leur cas d'usage MT (domaine, paire de langues, exigences de qualité) et recommande la meilleure méthode validée par la communauté du leaderboard. Par exemple : « J'ai besoin de traduire des protocoles d'essais cliniques de l'anglais au japonais — quelle méthode obtient le meilleur score sur les benchmarks EN→JA du domaine médical ? » Cela dépend d'avoir suffisamment de données d'évaluation étiquetées par domaine et de diversité de méthodes.
 
 ---
 
-## 3. Schéma de carte d'exécution
+## 3. Schéma de la fiche de résultats {#3-run-card-schema}
 
-La carte d'exécution est l'unité atomique d'évaluation. C'est un document JSON autonome qui enregistre la configuration complète et les résultats d'une seule exécution d'évaluation : une méthode, un modèle, une configuration, un jeu de données.
+La fiche de résultats est l'unité atomique d'évaluation. C'est un document JSON autonome qui enregistre la configuration complète et les résultats d'une seule exécution d'évaluation : une méthode, un modèle, une configuration, un jeu de données.
 
-Chaque carte d'exécution capture trois dimensions :
+Chaque fiche de résultats capture trois dimensions :
 - **Qualité** — à quel point les traductions sont-elles bonnes ?
 - **Coût** — combien a coûté leur production ?
 - **Vitesse** — combien de temps cela a-t-il pris ?
@@ -279,10 +279,10 @@ Ces champs définissent la configuration expérimentale — ce qui a été test�
 | `fst_version` | chaîne | ❌ | Version de l'analyseur FST, s'il est utilisé |
 | `tools_enabled` | chaîne[] | ❌ | Liste des outils disponibles pour la méthode |
 | `batch_size` | nombre | ❌ | Entrées par lot API concurrent |
-| `max_retries` | nombre | ❌ | Nombre maximum de tentatives pour rejet FST, le cas échéant |
+| `max_retries` | nombre | ❌ | Nombre maximum de tentatives pour le rejet FST, le cas échéant |
 
-:::info Les cartes d'exécution publiées incluent method_config
-Lorsqu'une carte d'exécution est publiée au classement (via `mt-eval publish`), elle inclut également un bloc `method_config` contenant la MethodConfig canonique à 8 champs (`model`, `temperature`, `batchSize`, `register`, `coachingFile`, `coachingPrompt`, `promptContext`, `qualityTier` — tous en camelCase). Cela permet l'importation sans reconstruction : `champollion leaderboard --install` lit `method_config` directement et l'écrit comme un manifeste de plugin. Les champs de télémétrie ci-dessus (§3.2) enregistrent ce que le harnais a observé ; `method_config` enregistre ce que le développeur a prévu.
+:::info Les fiches de résultats publiées incluent method_config
+Lorsqu'une fiche de résultats est publiée sur le leaderboard (via `mt-eval publish`), elle inclut également un bloc `method_config` contenant le MethodConfig canonique à 8 champs (`model`, `temperature`, `batchSize`, `register`, `coachingFile`, `coachingPrompt`, `promptContext`, `qualityTier` — tous en camelCase). Cela permet l'importation sans reconstruction : `champollion leaderboard --install` lit `method_config` directement et l'écrit comme un manifeste de plugin. Les champs de télémétrie ci-dessus (§3.2) enregistrent ce que le harnais a observé ; `method_config` enregistre ce que le développeur a prévu.
 :::
 
 ### 3.3 Référence du jeu de données
@@ -295,7 +295,7 @@ Lorsqu'une carte d'exécution est publiée au classement (via `mt-eval publish`)
 | `dataset.sha256` | chaîne | Hachage SHA-256 du contenu du fichier du jeu de données |
 | `dataset.entry_count` | nombre | Nombre d'entrées évaluées |
 
-Le SHA-256 du jeu de données épingle le résultat à une version spécifique des données. Si le jeu de données change, les anciennes cartes d'exécution ne sont pas comparables.
+Le SHA-256 du jeu de données épingle le résultat à une version spécifique des données. Si le jeu de données change, les anciennes fiches de résultats ne sont pas comparables.
 
 ### 3.4 Scores (Qualité)
 
@@ -310,7 +310,7 @@ Métriques agrégées pour l'exécution entière. Toutes les métriques de quali
 | `scores.equivalent_match_rate` | nombre | 0.0–1.0 |
 | `scores.fst_accepted` | nombre | Entrées acceptées par l'analyseur FST |
 | `scores.fst_acceptance_rate` | nombre | 0.0–1.0, `null` si aucun FST configuré |
-| `scores.morphological_accuracy` | nombre | 0.0–1.0, `null` si aucune analyse de référence or |
+| `scores.morphological_accuracy` | nombre | 0.0–1.0, `null` si aucune analyse de référence |
 | `scores.chrf_plus_plus` | nombre | Score chrF++ au niveau du corpus (0–100) |
 | `scores.semantic_score` | nombre | Similarité sémantique basée sur l'intégration (0.0–1.0) |
 | `scores.ter` | nombre | Taux d'édition de traduction (0–∞, plus bas est mieux) |
@@ -324,7 +324,7 @@ Métriques agrégées pour l'exécution entière. Toutes les métriques de quali
 | `scores.errors` | nombre | Entrées qui ont échoué (erreur API, délai d'attente, etc.) |
 | `scores.by_difficulty` | objet | Scores ventilés par niveau de difficulté |
 | `scores.by_provenance` | objet | Scores ventilés par étiquette de provenance |
-| `scores.by_domain` | objet | ✅ Implémenté — Scores ventilés par domaine (§2.7). Permet le classement du classement filtré par domaine. Calculé par tester.py et transmis via publish.py. |
+| `scores.by_domain` | objet | ✅ Implémenté — Scores ventilés par domaine (§2.7). Permet le classement du leaderboard filtré par domaine. Calculé par tester.py et transmis via publish.py. |
 
 ### 3.5 Totaux (Coût)
 
@@ -338,14 +338,14 @@ Métriques agrégées pour l'exécution entière. Toutes les métriques de quali
 | `totals.cost_per_entry_usd` | nombre | `total_cost_usd / entry_count` |
 | `totals.cost_per_source_char` | nombre | USD par caractère source — comparable entre les langues |
 
-### 3.6 Minutage (Vitesse)
+### 3.6 Timing (Vitesse)
 
 | Champ | Type | Description |
 |-------|------|-------------|
 | `elapsed_seconds` | nombre | Durée murale de l'exécution complète (haut niveau) |
 | `scores.avg_latency_seconds` | nombre | Temps de réponse moyen par entrée |
 | `scores.median_latency_seconds` | nombre | Temps de réponse médian par entrée |
-| `scores.p95_latency_seconds` | nombre | Temps de réponse du 95e percentile par entrée |
+| `scores.p95_latency_seconds` | nombre | Temps de réponse au 95e percentile par entrée |
 
 ### 3.7 Résultats par entrée
 
@@ -355,7 +355,7 @@ Chaque entrée du tableau `results[]` enregistre une traduction. Les données pa
 |-------|------|-------------|
 | `entry_id` | chaîne | Correspond à `entries[].id` dans le corpus |
 | `source` | chaîne | Texte source qui a été traduit |
-| `expected` | chaîne | Traduction de référence or |
+| `expected` | chaîne | Traduction de référence de qualité |
 | `raw_predicted` | chaîne \| null | Sortie brute du modèle avant post-traitement |
 | `predicted` | chaîne | Sortie réelle de la méthode (post-traitée) |
 | `segment` | chaîne | Identifiant de segment (par ex., index de phrase) |
@@ -393,11 +393,11 @@ L'empreinte est le hachage SHA-256 de la concaténation triée de :
 
 > **Pourquoi 8 composants ?** La taille du lot et l'appel d'outils affectent matériellement la qualité de la sortie et doivent être inclus dans l'identité. Deux exécutions avec des tailles de lot différentes ou des outils différents activés sont des configurations expérimentales différentes, même si tous les autres paramètres correspondent.
 
-Deux exécutions avec des empreintes identiques devraient produire des résultats comparables. Les différences sont dues à la non-déterminisme de l'API (température > 0) ou aux mises à jour de modèle côté fournisseur.
+Deux exécutions avec des empreintes identiques devraient produire des résultats comparables. Les différences sont dues au non-déterminisme de l'API (température > 0) ou aux mises à jour du modèle côté fournisseur.
 
-### 3.9 Hachage de carte d'exécution
+### 3.9 Hachage de la fiche de résultats
 
-Le hachage SHA-256 de la carte d'exécution JSON entière (avec le champ `run_card_hash` lui-même défini sur `""` lors du hachage). C'est le sceau de détection de falsification. Si un champ change, le hachage se casse.
+Le hachage SHA-256 de la fiche de résultats JSON entière (avec le champ `run_card_hash` lui-même défini à `""` lors du hachage). C'est le sceau de détection de falsification. Si un champ change, le hachage se casse.
 
 ---
 
@@ -410,9 +410,9 @@ Toutes les métriques de cette section sont calculées par machine. Voir §1.1.
 | Métrique | Statut | Ce qu'elle mesure | Plage |
 |----------|--------|------------------|-------|
 | **chrF++** | ✅ Implémenté | Score F des n-grammes de caractères. Fonctionne au niveau des caractères, ce qui le rend plus robuste que les métriques au niveau des mots (BLEU) pour les langues morphologiquement riches où les mots sont longs et hautement fléchis. Calculé par sacrebleu. | 0–100 (échelle native). Divisé par 100 lors de l'utilisation dans le composite. |
-| **Taux d'acceptation FST** | ✅ Implémenté | Fraction des mots prédits acceptés par l'analyseur morphologique (GiellaLT HFST) comme formes valides dans la langue cible. Un mot que le FST accepte est un mot réel, structurellement valide — pas une hallucination. | 0.0–1.0 |
+| **Taux d'acceptation FST** | ✅ Implémenté | Fraction des mots prédits acceptés par l'analyseur morphologique (HFST GiellaLT) comme formes valides dans la langue cible. Un mot que le FST accepte est un mot réel, structurellement valide — pas une hallucination. | 0.0–1.0 |
 | **Correspondance exacte** | ✅ Implémenté | Fraction des prédictions qui correspondent exactement à la référence après normalisation Unicode. Strict mais sans ambiguïté — utile comme vérification du plafond. | 0.0–1.0 |
-| **Précision morphologique** | 🔲 Planifié | Pour les entrées avec analyse morphologique de référence or : fraction des morphèmes correctement générés. Plus granulaire que l'acceptation FST — un mot peut être valide FST mais avoir la mauvaise structure morphémique (bonne racine, mauvais temps). | 0.0–1.0 |
+| **Précision morphologique** | 🔲 Planifié | Pour les entrées avec analyse morphologique de référence : fraction des morphèmes correctement générés. Plus granulaire que l'acceptation FST — un mot peut être valide FST mais avoir la mauvaise structure morphémique (bonne racine, mauvais temps). | 0.0–1.0 |
 | **Correspondance équivalente** | ⚡ Partiel | Fraction correspondant à une variante acceptable de la référence — tenant compte de l'ordre des mots, des différences dialectales et des conventions orthographiques. Actuellement implémenté pour CRK via la norme d'évaluation CRK `CrkLinterMetric` (dans `eval_standards/crk/`) ; chargé automatiquement via la déclaration `evalMetrics` de la carte de langue CRK. L'implémentation générique nécessite `variants[]` par entrée dans le corpus. | 0.0–1.0 |
 | **Score sémantique** | ⚡ Partiel | Préservation du sens indépendamment de la forme de surface. Actuellement implémenté pour CRK via la norme d'évaluation CRK `CrkSemanticMetric` (dans `eval_standards/crk/`, proxy pondéré par verdict). La similarité cosinus basée sur l'intégration universelle est prévue — voir SCORING_SPEC §2.3. | 0.0–1.0 |
 
@@ -429,10 +429,10 @@ composite = Σ (weight_i × metric_i)   for all available metrics
 Lorsqu'une métrique n'est pas disponible (pas de FST configuré, pas de classes de variantes définies, pas de modèle d'intégration), son poids est redistribué proportionnellement entre les métriques restantes. Cela signifie que le composite est toujours comparable au sein d'une langue — il utilise les métriques disponibles pour cette langue et normalise en conséquence.
 
 **Les tableaux de poids, les règles de normalisation d'entrée et l'inventaire complet des métriques sont définis dans `SCORING_SPEC.md` §4.** Ce document est la SSOT pour :
-- Poids du profil A (langues avec couverture FST — 9 métriques, les métriques structurelles représentent 40%)
-- Poids du profil B (langues sans couverture FST — 8 métriques)
-- Règles de normalisation (chrF++ ÷ 100, inversion du taux de code-switching et d'hallucination)
-- Métriques exclues du composite (BLEU, COMET, TER, ratio de longueur, cohérence) et pourquoi
+- Les poids du profil A (langues avec couverture FST — 9 métriques, les métriques structurelles représentent 40%)
+- Les poids du profil B (langues sans couverture FST — 8 métriques)
+- Les règles de normalisation (chrF++ ÷ 100, inversion du taux de code-switching et d'hallucination)
+- Les métriques exclues du composite (BLEU, COMET, TER, ratio de longueur, cohérence) et pourquoi
 
 Le code du harnais reflète ces tableaux dans `mt_eval_harness/scoring.py`. Lorsque SCORING_SPEC change, `scoring.py` est mis à jour pour correspondre et `test_scoring_ssot.py` valide l'alignement.
 
@@ -445,16 +445,16 @@ Pour les méthodes utilisant des API payantes, nous rapportons également un cla
 
 ---
 
-## 5. Niveaux de qualité
+## 5. Niveaux de qualité {#5-quality-tiers}
 
-Les niveaux de qualité sont des étiquettes heuristiques sur les scores composites automatisés. Ils décrivent ce que les scores tendent à signifier en pratique, basé sur l'examen humain des résultats à chaque niveau. **Ce ne sont pas des jugements de qualité validés** — seul l'examen humain (§6) peut confirmer l'utilisabilité réelle.
+Les niveaux de qualité sont des étiquettes heuristiques sur les scores composites automatisés. Ils décrivent ce que les scores tendent à signifier en pratique, basé sur l'examen humain des sorties à chaque niveau. **Ce ne sont pas des jugements de qualité validés** — seul l'examen humain (§6) peut confirmer l'utilisabilité réelle.
 
-**Les seuils de niveaux et les descriptions sont définis dans `SCORING_SPEC.md` §5.** Les niveaux sont : Baseline (0.00–0.30), Emerging (0.30–0.50), Functional (0.50–0.70), Deployable (0.70–0.85), et Fluent (0.85–1.00).
+**Les seuils de niveau et les descriptions sont définis dans `SCORING_SPEC.md` §5.** Les niveaux sont : Baseline (0.00–0.30), Emerging (0.30–0.50), Functional (0.50–0.70), Deployable (0.70–0.85), et Fluent (0.85–1.00).
 
 > [!IMPORTANT]
-> **Les niveaux automatisés sont provisoires.** Ces étiquettes sont des nominations pour examen, pas des déclarations de qualité. Une méthode atteignant « Deployable » sur les métriques automatisées est une candidate pour l'évaluation communautaire — pas un produit à expédier. Seul l'examen humain (§7) peut confirmer l'utilisabilité réelle. Les limites de niveaux peuvent différer selon les langues.
+> **Les niveaux automatisés sont provisoires.** Ces étiquettes sont des nominations pour examen, pas des déclarations de qualité. Une méthode atteignant « Deployable » sur les métriques automatisées est une candidate pour l'évaluation communautaire — pas un produit à expédier. Seul l'examen humain (§7) peut confirmer l'utilisabilité réelle. Les limites de niveau peuvent différer selon les langues.
 
-Ces niveaux sont provisoires. Ils seront recalibrés à mesure que les données de validation humaine s'accumulent et que nous apprenons où se situe le seuil réel « un locuteur trouve cela utile » pour chaque langue. Les limites de niveaux peuvent différer selon les langues.
+Ces niveaux sont provisoires. Ils seront recalibrés à mesure que les données de validation humaine s'accumulent et que nous apprenons où se situe le seuil réel « un locuteur trouve cela utile » pour chaque langue. Les limites de niveau peuvent différer selon les langues.
 
 Aucune méthode ne peut prétendre à **Deployable** ou supérieur sans examen communautaire confirmant que les locuteurs bilingues conviennent que la sortie est utilisable.
 
@@ -462,11 +462,11 @@ Aucune méthode ne peut prétendre à **Deployable** ou supérieur sans examen c
 
 ## 6. Protocole de benchmark
 
-Un **benchmark** est la production systématique de cartes d'exécution dans un espace de paramètres déclaré sur un jeu de données donné. Ce n'est pas une seule exécution — c'est une exploration structurée de la façon dont différentes configurations se comportent.
+Un **benchmark** est la production systématique de fiches de résultats dans un espace de paramètres déclaré sur un jeu de données donné. Ce n'est pas une seule exécution — c'est une exploration structurée de la façon dont différentes configurations se comportent.
 
 ### 6.1 Ce qu'un benchmark produit
 
-Un benchmark produit une **matrice de cartes d'exécution** — une pour chaque combinaison de valeurs de paramètres. La matrice permet une comparaison multifacette entre :
+Un benchmark produit une **matrice de fiches de résultats** — une pour chaque combinaison de valeurs de paramètres. La matrice permet une comparaison multifacette entre :
 
 - **Qualité** — score composite, ventilations de métriques individuelles
 - **Coût** — coût total et par entrée pour chaque configuration
@@ -482,7 +482,7 @@ Un benchmark déclare quels paramètres sont permutés :
 |-----|-----------------|---------|
 | `model` | 4–12 modèles (frontière + milieu de gamme + budget) | Combien la capacité du modèle compte-t-elle ? |
 | `temperature` | 0.0, 0.3, 0.7 | L'aléatoire d'échantillonnage aide-t-il ou nuit-il ? |
-| `prompt_version` | 2–3 stratégies d'invite | La méthode est-elle sensible à la conception de l'invite ? |
+| `prompt_version` | 2–3 stratégies d'invite | À quel point la méthode est-elle sensible à la conception de l'invite ? |
 | `coaching_config` | avec/sans données d'entraînement | L'injection de connaissances linguistiques améliore-t-elle la sortie ? |
 | `tool_config` | avec/sans FST, avec/sans dictionnaire | Les outils linguistiques améliorent-ils la sortie ? |
 
@@ -499,24 +499,24 @@ Un benchmark sert deux objectifs distincts :
 
 **Baselining** — cartographier le paysage avec des approches naïves. « Que peuvent faire les modèles existants pour cette langue sans aucune ingénierie spécifique à la langue ? » Cela établit la barre. La matrice de base vous dit : quels modèles hallucinent le moins, quelles températures produisent la sortie la plus cohérente, si les données d'entraînement aident du tout, où tous les modèles échouent uniformément (ce qui révèle les problèmes linguistiques difficiles).
 
-**Évaluation de méthode** — tester une méthode spécifique ingéniérée. « Ma pipeline entraînée et validée par FST surpasse-t-elle les baselines ? » La carte d'exécution de la méthode est comparée à la matrice de base. Une méthode est intéressante lorsqu'elle surpasse la meilleure baseline — lorsque l'ingénierie ajoute de la valeur par rapport aux appels de modèle naïfs.
+**Évaluation de méthode** — tester une méthode spécifique ingéniérée. « Ma pipeline entraînée et validée par FST surpasse-t-elle les baselines ? » La fiche de résultats de la méthode est comparée à la matrice de base. Une méthode est intéressante quand elle surpasse la meilleure baseline — quand l'ingénierie ajoute de la valeur par rapport aux appels de modèle naïfs.
 
-Les deux activités produisent des cartes d'exécution avec le même schéma. La distinction réside dans l'intention et l'espace de paramètres : les baselines permutent entre les modèles et les configs ; l'évaluation de méthode teste une méthode contre les meilleures configurations.
+Les deux activités produisent des fiches de résultats avec le même schéma. La distinction est dans l'intention et l'espace de paramètres : les baselines permutent entre les modèles et les configs ; l'évaluation de méthode teste une méthode contre les meilleures configurations.
 
-### 6.4 Évaluation dev vs. or
+### 6.4 Évaluation dev vs. de référence
 
 Les développeurs de méthodes itèrent librement contre les segments de corpus `development` et `diagnostic`. C'est informel — pas de limites, pas de soumissions, pas d'implication de gouvernance. Le développeur apprend ce qui fonctionne.
 
-Les scores officiels du classement proviennent uniquement de l'évaluation `gold_standard`. C'est formel :
+Les scores officiels du leaderboard proviennent uniquement de l'évaluation `gold_standard`. C'est formel :
 1. Le développeur soumet sa méthode complète et exécutable (code + config + données d'entraînement)
-2. L'organisation de gouvernance l'exécute dans un harnais en bac à sable contre l'ensemble de test secret
+2. L'organisation de gouvernance l'exécute dans un harnais en sandbox contre l'ensemble de test secret
 3. Seuls les scores reviennent
 
-Voir §8 pour le mécanisme complet de souveraineté.
+Voir §8 pour le mécanisme de souveraineté complet.
 
 ---
 
-## 7. Validation humaine
+## 7. Validation humaine {#7-human-validation}
 
 Les métriques automatisées sont des approximations. La validation humaine est la vérité de base.
 
@@ -529,14 +529,14 @@ Les métriques automatisées sont des approximations. La validation humaine est 
 
 ### 7.2 La porte de validation
 
-Aucune méthode ne peut progresser du niveau **Functional** à **Deployable** sans validation humaine confirmant que les locuteurs bilingues conviennent que la sortie est utilisable. Ce n'est pas une formalité — c'est le but. Les métriques automatisées existent pour réduire le volume de sortie qui nécessite un examen humain. Elles ne peuvent pas le remplacer.
+Aucune méthode ne peut progresser du niveau **Functional** à **Deployable** sans validation humaine confirmant que les locuteurs bilingues conviennent que la sortie est utilisable. Ce n'est pas une formalité — c'est le but. Les métriques automatisées existent pour réduire le volume de sortie nécessitant un examen humain. Elles ne peuvent pas le remplacer.
 
 ### 7.3 Protocole d'examen communautaire
 
 > 🔲 **Planifié** : L'interface d'examen communautaire n'est pas encore en direct. Cette section décrit le processus prévu.
 
 1. Une méthode atteint le seuil Deployable sur les métriques automatisées
-2. Un échantillon de résultats (stratifié par niveau de difficulté) est présenté aux locuteurs bilingues
+2. Un échantillon de sorties (stratifié par niveau de difficulté) est présenté aux locuteurs bilingues
 3. Les locuteurs évaluent chaque traduction sur une échelle : **rejeter**, **gist** (le sens est clair mais la formulation est fausse), **acceptable** (correct avec des problèmes mineurs), **excellent** (indistinguable d'une traduction humaine)
 4. L'organisation de gouvernance examine les évaluations agrégées
 5. Si la communauté accepte la méthode, elle procède au transfert de propriété et au déploiement
@@ -549,9 +549,9 @@ Les jeux de données d'évaluation contiennent des connaissances linguistiques c
 
 ### 8.1 Le problème
 
-Les benchmarks conventionnels publient les ensembles de test ouvertement. Une fois publiées, les données ne peuvent pas être dépubliées. Pour les communautés de langues autochtones et minoritaires, cela crée une dynamique extractive — les données linguistiques sont utilisées sans consentement continu. Suivant la vision pragmatique de Dhein de la souveraineté des données biologiques, nous traitons les données linguistiques comme une « ressource mercurielle avec un potentiel inconnaissable » nécessitant une gouvernance dynamique et relationnelle.
+Les benchmarks conventionnels publient les ensembles de test ouvertement. Une fois publiées, les données ne peuvent pas être dépubliées. Pour les communautés linguistiques autochtones et minoritaires, cela crée une dynamique extractive — les données linguistiques sont utilisées sans consentement continu. Suivant la vision pragmatique de Dhein de la souveraineté des données biologiques, nous traitons les données linguistiques comme une « ressource mercurielle avec un potentiel inconnaissable » nécessitant une gouvernance dynamique et relationnelle.
 
-### 8.2 Exécution en bac à sable
+### 8.2 Exécution en sandbox
 
 Le mécanisme d'application principal : le développeur remet son module de méthode, l'organisation de gouvernance l'exécute contre l'ensemble de test entièrement secret sur sa propre infrastructure, et seuls les scores sont retournés. Le développeur ne voit jamais les phrases sources ni les traductions de référence.
 
@@ -568,8 +568,8 @@ graph TD
 
 Le flux :
 1. **Le corpus de développement est public.** Pas de restrictions sur les segments `development` et `diagnostic`.
-2. **L'ensemble de test or est entièrement secret.** Les phrases sources et les traductions de référence vivent sur l'infrastructure contrôlée par la gouvernance.
-3. **Pour obtenir un score officiel, vous remettez votre méthode.** L'organisation de gouvernance l'exécute dans un bac à sable. Seuls les scores reviennent.
+2. **L'ensemble de test de référence est entièrement secret.** Les phrases sources et les traductions de référence vivent sur l'infrastructure contrôlée par la gouvernance.
+3. **Pour obtenir un score officiel, vous remettez votre méthode.** L'organisation de gouvernance l'exécute dans un sandbox. Seuls les scores reviennent.
 4. **L'organisation de gouvernance a déjà la méthode.** La soumission EST le code de la méthode. S'il atteint le seuil Deployable, le transfert de propriété est déjà en cours.
 5. **La soumission nécessite l'accord aux conditions.** Y compris la clause de transfert de propriété (§8.3).
 6. **L'organisation de gouvernance contrôle entièrement l'accès.** Elle peut refuser ou révoquer l'évaluation à tout moment. Consentement dynamique.
@@ -577,21 +577,21 @@ Le flux :
 
 ### 8.3 Transfert de propriété
 
-Les méthodes qui atteignent un score composite au seuil Deployable (0.70) ou au-dessus contre l'évaluation or, **et** qui passent la validation humaine (§7), sont soumises au transfert de propriété.
+Les méthodes qui atteignent un score composite au seuil Deployable (0.70) ou au-dessus contre l'évaluation de référence, **et** qui passent la validation humaine (§7), sont soumises au transfert de propriété.
 
 **Le développeur conserve :**
-- Attribution et crédit (le nom reste sur le classement)
-- Droit de publier sur la méthode
-- Droit d'utiliser la méthode pour d'autres paires de langues
+- L'attribution et le crédit (le nom reste sur le leaderboard)
+- Le droit de publier sur la méthode
+- Le droit d'utiliser la méthode pour d'autres paires de langues
 
 **L'organisation de gouvernance gagne :**
-- Droit d'utiliser, modifier, distribuer et monétiser la méthode pour leur langue
-- Droit de sous-licencier
-- Possession physique du code de la méthode (déjà détenue à partir de la soumission d'évaluation)
+- Le droit d'utiliser, modifier, distribuer et monétiser la méthode pour sa langue
+- Le droit de sous-licencier
+- La possession physique du code de la méthode (déjà détenue à partir de la soumission d'évaluation)
 
 ### 8.4 Exigences de l'organisation de gouvernance
 
-Pour servir de custode clé pour un benchmark de langue :
+Pour servir de custodien clé pour un benchmark de langue :
 
 1. **Représenter la communauté linguistique** — relation démontrable avec les locuteurs et les autorités culturelles
 2. **Capacité de gestion des clés** — capacité technique à gérer les clés cryptographiques
@@ -604,56 +604,56 @@ Pour servir de custode clé pour un benchmark de langue :
 | Principe | Implémentation |
 |----------|----------------|
 | **Propriété** (OCAP) | Les données linguistiques appartiennent à la communauté. L'organisation de gouvernance contrôle l'infrastructure d'évaluation. |
-| **Contrôle** (OCAP) | L'organisation de gouvernance contrôle l'évaluation via l'exécution en bac à sable. Elle décide qui soumet et selon quelles conditions. |
+| **Contrôle** (OCAP) | L'organisation de gouvernance contrôle l'évaluation via l'exécution en sandbox. Elle décide qui soumet et selon quelles conditions. |
 | **Accès** (OCAP) | La communauté a un accès sans restriction à ses propres données, résultats et méthodes développées contre elle. |
 | **Possession** (OCAP) | L'ensemble de test ne quitte jamais l'infrastructure de gouvernance. Le chiffrement au repos comme sauvegarde. |
 | **Bénéfice collectif** (CARE) | Le transfert de propriété garantit que les méthodes bénéficient à la communauté. Le modèle de revenus (marge de 10% sur le débit ; la communauté conserve ~90%) soutient cela. |
-| **Autorité de contrôle** (CARE) | L'exécution en bac à sable est l'implémentation technique. |
+| **Autorité de contrôle** (CARE) | L'exécution en sandbox est l'implémentation technique. |
 | **Responsabilité** (CARE) | Les développeurs acceptent la responsabilité par les conditions de participation. |
 | **Éthique** (CARE) | Les droits communautaires sur la commodité des chercheurs. |
 
-### 8.6 Classes de dépendances et la politique réseau du bac à sable
+### 8.6 Classes de dépendances et la politique réseau du sandbox
 
-L'exécution en bac à sable (§8.2) et le transfert de propriété (§8.3) dépendent tous deux de savoir exactement ce qu'une méthode a besoin au moment de l'exécution. La [spécification de l'interface de méthode](/docs/specifications/methods#method-validity-and-dependency-classes) définit cinq **classes de dépendances** — S (autonome), O (externe ouvert), A1 (inférence LLM substituable), A2 (API externe non-substituable), X (fermé) — et le manifeste de dépendance que chaque méthode doit déclarer. Cette sous-section enregistre comment la politique réseau du bac à sable les applique.
+L'exécution en sandbox (§8.2) et le transfert de propriété (§8.3) dépendent tous deux de savoir exactement ce qu'une méthode a besoin au moment de l'exécution. La [spécification de l'interface de méthode](/docs/specifications/methods#method-validity-and-dependency-classes) définit cinq **classes de dépendances** — S (autonome), O (externe ouvert), A1 (inférence LLM substituable), A2 (API externe non-substituable), X (fermé) — et le manifeste de dépendance que chaque méthode doit déclarer. Cette sous-section enregistre comment la politique réseau du sandbox les applique.
 
-**Sortie par défaut-refus.** La spécification du bac à sable exige que les conteneurs de méthode n'aient pas d'accès réseau par défaut. Ce n'est pas une règle de pare-feu — la spécification supprime le réseau de l'environnement d'exécution, donc une dépendance réseau non déclarée échoue à la couche architecturale, pas à la couche politique. Les méthodes de classe S et O s'exécutent entièrement à partir d'artefacts vendus dans la soumission (les artefacts de classe O sont épinglés et mis en miroir à la soumission).
+**Sortie par défaut-refus.** La spécification du sandbox exige que les conteneurs de méthode n'aient pas d'accès réseau par défaut. Ce n'est pas une règle de pare-feu — la spécification supprime le réseau de l'environnement d'exécution, donc une dépendance réseau non déclarée échoue à la couche architecturale, pas à la couche politique. Les méthodes de classe S et O s'exécutent entièrement à partir d'artefacts vendus dans la soumission (les artefacts de classe O sont épinglés et mis en miroir à la soumission).
 
-**La passerelle LLM (🔲 planifiée).** La plupart des méthodes appellent des LLM, donc la spécification du bac à sable définit exactement une exception de sortie : une **passerelle LLM** exploitée par l'infrastructure d'évaluation. La passerelle :
+**La passerelle LLM (🔲 planifiée).** La plupart des méthodes appellent des LLM, donc la spécification du sandbox définit exactement une exception de sortie : une **passerelle LLM** exploitée par l'infrastructure d'évaluation. La passerelle :
 
-- proxies les demandes d'inférence vers une **liste d'autorisation explicite de modèles épinglés** — les identifiants de modèle enregistrés dans le manifeste de la méthode et la carte d'exécution ;
+- proxie les demandes d'inférence vers une **liste d'autorisation explicite de modèles épinglés** — les identifiants de modèle enregistrés dans le manifeste de la méthode et la fiche de résultats ;
 - **enregistre chaque demande et réponse** dans le journal d'audit scellé, afin que le trafic de la passerelle puisse être examiné pour les tentatives d'exfiltration de données avant la libération des scores ;
 - est le *seul* chemin réseau — il n'y a pas de sortie générale, pas de DNS, pas d'autres points de terminaison.
 
-C'est ce qui rend les méthodes de classe A1 évaluables sans abandonner les garanties de vérifiabilité de §8.2 — mais c'est un vrai compromis, et la spécification le nomme clairement : traduire une phrase source secrète via un modèle externe **divulgue cette phrase source au fournisseur du modèle**. Les traductions de référence ne quittent jamais (elles sont détenues par le harnais, en dehors du conteneur ; voir §8.2), et la méthode elle-même ne peut toujours rien exfiltrer au-delà de ce que les appels d'inférence autorisés et enregistrés contiennent. Que la divulgation bornée soit acceptable pour un corpus donné est une décision de l'intendant : autoriser une évaluation de classe A1 signifie l'autoriser en connaissance de cause, par exécution, comme tout autre usage des données.
+C'est ce qui rend les méthodes de classe A1 évaluables sans abandonner les garanties de vérifiabilité de §8.2 — mais c'est un vrai compromis, et la spécification le nomme clairement : traduire une phrase source secrète via un modèle externe **divulgue cette phrase source au fournisseur du modèle**. Les traductions de référence ne quittent jamais (elles sont détenues par le harnais, en dehors du conteneur ; voir §8.2), et la méthode elle-même ne peut toujours rien exfiltrer au-delà de ce que les appels d'inférence enregistrés et autorisés contiennent. Que la divulgation bornée soit acceptable pour un corpus donné est une décision du gestionnaire : autoriser une évaluation de classe A1 signifie l'autoriser en connaissance de cause, par exécution, comme tout autre usage des données.
 
-**Statut.** Le bac à sable et sa passerelle sont spécifiés mais pas encore construits. Jusqu'à ce que la passerelle soit opérationnelle, seules les méthodes de classe S et O peuvent produire des scores or ; les méthodes de classe A1 restent éligibles aux prix en principe (voir [Spécification des prix §1.6](/docs/specifications/prizes)) mais ne peuvent pas encore être évaluées contre les segments secrets. Les dépendances de classe A2 ne peuvent pas entrer du tout dans le bac à sable jusqu'à ce que le détenteur des droits accorde la permission — l'artefact doit être autorisé à *exister* dans le bac à sable avant que toute question de réseau ne se pose.
+**Statut.** Le sandbox et sa passerelle sont spécifiés mais pas encore construits. Jusqu'à ce que la passerelle soit opérationnelle, seules les méthodes de classe S et O peuvent produire des scores de référence ; les méthodes de classe A1 restent éligibles aux prix en principe (voir [Spécification des prix §1.6](/docs/specifications/prizes)) mais ne peuvent pas encore être évaluées contre les segments secrets. Les dépendances de classe A2 ne peuvent pas entrer du tout dans le sandbox jusqu'à ce que le détenteur des droits accorde la permission — l'artefact doit être autorisé à *exister* dans le sandbox avant que toute question de réseau ne se pose.
 
 ---
 
-## 9. Classement et soumission
+## 9. Leaderboard et soumission
 
 ### 9.1 Exigences de soumission
 
-Une soumission valide au classement doit inclure :
+Une soumission valide au leaderboard doit inclure :
 
-1. Une carte d'exécution complète (§3) avec tous les champs requis
+1. Une fiche de résultats complète (§3) avec tous les champs requis
 2. Le code de la méthode — entièrement exécutable, avec instructions d'installation
 3. Toutes les dépendances — données d'entraînement, dictionnaires, binaires FST, invites
 4. Un rapport de coûts
-5. Un README décrivant l'approche et les limitations de la méthode
+5. Un README décrivant l'approche de la méthode et ses limitations
 
 ### 9.2 Critères de légitimité
 
 1. **Pas d'entraînement sur les données d'évaluation.** Les méthodes ne doivent pas avoir été exposées aux entrées `gold_standard` ou `held_out`. (Appliqué architecturalement — vous ne pouvez pas entraîner sur des données que vous n'avez jamais vues.)
-2. **Déclarer l'utilisation des données de développement.** L'utilisation des entrées `development` pour les invites few-shot est autorisée mais doit être déclarée.
-3. **Reproductibilité.** L'organisation de gouvernance doit être capable de réexécuter et d'obtenir des scores dans ±2%.
+2. **Déclarer l'utilisation des données de développement.** L'utilisation des entrées `development` pour l'invite few-shot est autorisée mais doit être déclarée.
+3. **Reproductibilité.** L'organisation de gouvernance doit pouvoir réexécuter et obtenir des scores dans ±2%.
 4. **Généralisation.** Les méthodes doivent fonctionner sur des entrées non vues, pas seulement des exemples mémorisés.
 
-### 9.3 Anti-jeu
+### 9.3 Anti-triche
 
-1. **Linting de classe de variantes** — la performance suspecte parfaite sur les entrées avec des variantes connues est signalée
+1. **Linting de classe de variante** — la performance suspecte parfaite sur les entrées avec des variantes connues est signalée
 2. **Rotation du corpus** — l'organisation de gouvernance peut faire tourner les entrées entre les segments sans préavis
-3. **Examen communautaire** — la porte de validation humaine (§7) détecte les méthodes qui jouent les métriques mais produisent une mauvaise sortie
+3. **Examen communautaire** — la porte de validation humaine (§7) détecte les méthodes qui trichent sur les métriques mais produisent une mauvaise sortie
 
 ### 9.4 Niveaux de vérification
 
@@ -661,11 +661,11 @@ Les niveaux de vérification décrivent **qui a validé le résultat** — ortho
 
 | Niveau | Signification | Comment atteint |
 |--------|---------------|-----------------|
-| **Auto-benchmarké** | Le développeur a exécuté le harnais et soumis la carte d'exécution | PR ou drapeau `--submit` contre le segment `development` |
+| **Auto-benchmarké** | Le développeur a exécuté le harnais et soumis la fiche de résultats | PR ou drapeau `--submit` contre le segment `development` |
 | **Vérifié par GDS** | Les mainteneurs ont reproduit le résultat indépendamment | Soumettre la méthode comme plugin installable ; les mainteneurs réexécutent |
 | **Validé par la communauté** | L'organisation de gouvernance a exécuté contre `gold_standard` + examen communautaire | Soumettre le code de la méthode à l'organisation de gouvernance (§8.2) ; passer la validation humaine (§7) |
 
-Une méthode peut être auto-benchmarkée à un niveau de qualité Functional. Le niveau de qualité et le niveau de vérification sont des axes indépendants sur le classement.
+Une méthode peut être Auto-benchmarkée à un niveau de qualité Functional. Le niveau de qualité et le niveau de vérification sont des axes indépendants sur le leaderboard.
 
 ### 9.5 Modèle de soumission en couches
 
@@ -673,11 +673,11 @@ Le mécanisme de soumission dépend du segment de corpus que vous évaluez :
 
 | Segment | Chemin de soumission | Vérification | Code de méthode requis ? |
 |---------|-------------------|-------------|------------------------|
-| `development` | Libre-service : exécuter le harnais, soumettre la carte d'exécution via PR ou API | Auto-benchmarké | Non — vous gardez votre code |
+| `development` | Libre-service : exécuter le harnais, soumettre la fiche de résultats via PR ou API | Auto-benchmarké | Non — vous gardez votre code |
 | `development` | Réexécution du mainteneur : soumettre la méthode comme plugin | Vérifié par GDS | Oui — la méthode doit être installable |
-| `gold_standard` | Soumettre la méthode à l'organisation de gouvernance ; ils exécutent en bac à sable | Validé par la communauté | Oui — la méthode est soumise et détenue |
+| `gold_standard` | Soumettre la méthode à l'organisation de gouvernance ; ils exécutent en sandbox | Validé par la communauté | Oui — la méthode est soumise et détenue |
 
-Le chemin libre-service (segment de développement) n'a pas de restrictions. Le chemin souverain (segment or) nécessite la soumission complète de la méthode car (a) le développeur ne voit jamais l'ensemble de test, et (b) les méthodes qui atteignent Deployable sont soumises au transfert de propriété (§8.3).
+Le chemin libre-service (segment de développement) n'a pas de restrictions. Le chemin souverain (segment de référence) nécessite la soumission complète de la méthode parce que (a) le développeur ne voit jamais l'ensemble de test, et (b) les méthodes qui atteignent Deployable sont soumises au transfert de propriété (§8.3).
 
 ### 9.6 Classes de méthodes
 
@@ -692,7 +692,7 @@ Les méthodes sont classées par type. L'énumération canonique est définie da
 | `api` | API de traduction externe (Google Translate, DeepL, etc.) |
 | `human` | Baseline de traducteur humain |
 
-### 9.7 Champs du classement
+### 9.7 Champs du leaderboard
 
 | Champ | Description |
 |-------|-------------|
@@ -713,11 +713,11 @@ Les méthodes sont classées par type. L'énumération canonique est définie da
 | Date | Quand évalué |
 
 > [!NOTE]
-> **Tous les scores affichés sur le classement sont des mesures de proxy automatisées.** Ils indiquent la performance relative de la méthode dans des conditions contrôlées mais ne constituent pas des garanties de qualité. Les méthodes validées par la communauté sont marquées séparément via la colonne Niveau de vérification. Pour les détails de méthodologie, voir [SCORING_SPEC.md](/docs/specifications/scoring).
+> **Tous les scores affichés sur le leaderboard sont des mesures de proxy automatisées.** Ils indiquent la performance relative de la méthode dans des conditions contrôlées mais ne constituent pas des garanties de qualité. Les méthodes validées par la communauté sont marquées séparément via la colonne Niveau de vérification. Pour les détails de méthodologie, voir [SCORING_SPEC.md](/docs/specifications/scoring).
 
 ---
 
-## 10. Cadre de coûts
+## 10. Cadre de coûts {#10-cost-framework}
 
 ### 10.1 Coût par exécution
 
@@ -750,8 +750,8 @@ Balayage typique : 12 modèles × 3 temps × 2 invites × 2 entraînement = 144 
 | Compensation des locuteurs (corpus) | $2,500–6,000 | 50–150 entrées à $50–65/hr |
 | Compensation des locuteurs (examen) | $500–1,500 | Examen de la sortie de la méthode |
 | Calcul (balayages de benchmark) | $100–500 | Plusieurs balayages pendant le développement |
-| Calcul (classement continu) | $50–200/an | Exécution des méthodes soumises |
-| Infrastructure (bac à sable) | $200–500/an | Infrastructure d'évaluation de l'organisation de gouvernance |
+| Calcul (leaderboard continu) | $50–200/an | Exécution des méthodes soumises |
+| Infrastructure (sandbox) | $200–500/an | Infrastructure d'évaluation de l'organisation de gouvernance |
 | **Établissement total** | **$3,350–8,500** | |
 
 ### 10.4 Échelle du programme
@@ -764,7 +764,7 @@ Balayage typique : 12 modèles × 3 temps × 2 invites × 2 entraînement = 144 
 
 ---
 
-## 11. Extension à de nouvelles langues
+## 11. Extension à de nouvelles langues {#11-extending-to-new-languages}
 
 ### 11.1 Exigences minimales
 
@@ -780,8 +780,8 @@ Balayage typique : 12 modèles × 3 temps × 2 invites × 2 entraînement = 144 
 
 - **Analyseur morphologique FST** — active la métrique la plus puissante pour les langues polysynthétiques
 - **Dictionnaire bilingue** — active les méthodes basées sur le dictionnaire, réduit les hallucinations
-- **Analyse morphologique de référence or** — active la métrique de précision morphologique
-- **Classes de variantes** — active la métrique de correspondance équivalente et le linting anti-jeu
+- **Analyse morphologique de référence** — active la métrique de précision morphologique
+- **Classes de variantes** — active la métrique de correspondance équivalente et le linting anti-triche
 - **Organisation de gouvernance** — active la souveraineté cryptographique et le transfert de propriété
 
 ### 11.3 Le chemin assisté par agent

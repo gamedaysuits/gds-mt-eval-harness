@@ -37,7 +37,7 @@ Chaque métrique majeure d'évaluation de TA (BLEU, COMET, chrF++) a été valid
 
 **Comment cela fonctionne :**
 
-1. Nous fournissons un tableur ou un formulaire web avec 200 lignes. Chaque ligne contient :
+1. Nous fournissons une feuille de calcul ou un formulaire web avec 200 lignes. Chaque ligne contient :
    - La phrase source en anglais
    - Une traduction crie générée par machine
    - (Optionnellement) une traduction crie de référence à titre de comparaison
@@ -48,8 +48,8 @@ Chaque métrique majeure d'évaluation de TA (BLEU, COMET, chrF++) a été valid
    | Score | Étiquette | Signification |
    |-------|-----------|---------------|
    | 1 | Aucune | La traduction n'a rien à voir avec la source |
-   | 2 | Peu | Quelques mots correspondent mais le sens global est mauvais |
-   | 3 | Beaucoup | Le sens fondamental est présent mais des parties importantes manquent ou sont erronées |
+   | 2 | Peu | Quelques mots correspondent mais le sens global est faux |
+   | 3 | Beaucoup | Le sens fondamental est présent mais des parties importantes manquent ou sont fausses |
    | 4 | Presque tout | Presque tout est correct, lacunes mineures de sens |
    | 5 | Tout | La traduction transmet pleinement le sens de la source |
 
@@ -62,7 +62,7 @@ Chaque métrique majeure d'évaluation de TA (BLEU, COMET, chrF++) a été valid
    | 4 | Bon | Naturel avec une légère maladresse |
    | 5 | Impeccable | Un locuteur cri aurait pu écrire ceci |
 
-3. Optionnellement, le locuteur peut ajouter une note en texte libre expliquant son évaluation (par exemple, « accord animé/inanimé incorrect sur le verbe », « c'est le dialecte th mais j'évalue selon le dialecte y »).
+3. Optionnellement, le locuteur peut ajouter une note en texte libre expliquant son évaluation (par exemple, « accord animé/inanimé incorrect sur le verbe », « c'est du dialecte th mais j'évalue selon le dialecte y »).
 
 **Estimation du temps :** ~2,5 minutes par traduction × 200 traductions = ~8 heures. Peut être réparti sur plusieurs sessions (par exemple, 4 × sessions de 2 heures sur 2 semaines).
 
@@ -83,19 +83,19 @@ Chaque métrique majeure d'évaluation de TA (BLEU, COMET, chrF++) a été valid
 1. Nous fournissons 50 paires. Chaque paire contient :
    - La source en anglais
    - Traduction A (la référence)
-   - Traduction B (une variante que notre linter dit être équivalente)
+   - Traduction B (une variante que notre linter dit équivalente)
    - La raison de l'équivalence (par exemple, « permutation d'ordre des mots », « variante orthographique », « particule optionnelle supprimée »)
 
 2. Pour chaque paire, le locuteur répond :
    - **Même sens ?** Oui / Non / Dépend du contexte
-   - **Les deux sont naturels ?** Oui / A est meilleur / B est meilleur / Aucun n'est naturel
+   - **Les deux sont naturelles ?** Oui / A est meilleure / B est meilleure / Aucune n'est naturelle
    - **Notes** (texte libre optionnel)
 
 **Estimation du temps :** ~2 minutes par paire × 50 paires = ~2 heures.
 
 **Compensation :** 50–65 CAD/heure × 2 heures = **100–130 CAD par locuteur**.
 
-**Ce que nous en faisons :** Nous calculons la précision de chaque classe d'équivalence. Si les locuteurs disent que 90 % des équivalences « ordre des mots » sont véritablement équivalentes, cette classe est validée. S'ils disent que 40 % des équivalences « synonyme de lemme » sont erronées, nous savons que nous devons corriger ou supprimer cette classe.
+**Ce que nous en faisons :** Nous calculons la précision de chaque classe d'équivalence. Si les locuteurs disent que 90 % des équivalences « ordre des mots » sont véritablement équivalentes, cette classe est validée. S'ils disent que 40 % des équivalences « synonyme de lemme » sont fausses, nous savons que nous devons corriger ou supprimer cette classe.
 
 ---
 
@@ -151,14 +151,14 @@ Un seul locuteur faisant seulement la tâche A s'engagerait pour **~8 heures sur
 
 **Non obligatoires :**
 - Connaissances techniques ou en TAL (nous fournissons tous les outils et le contexte)
-- Compétences informatiques (l'interface d'évaluation sera un simple tableur ou formulaire web)
+- Compétences informatiques (l'interface d'évaluation sera une simple feuille de calcul ou un formulaire web)
 - Implication antérieure dans le projet Champollion
 
 ---
 
-## 5. Gouvernance des données
+## 5. Gouvernance des données {#5-gouvernance-des-donnees}
 
-Toutes les contributions des locuteurs sont régies par les politiques de données avant-gardistes OCAP® du projet :
+Toutes les contributions des locuteurs sont régies par les politiques de données OCAP®-forward du projet :
 
 - **Propriété :** Les évaluations de qualité des locuteurs restent leur contribution intellectuelle. Ils sont crédités par leur nom (ou anonymement, à leur choix) dans toute publication.
 - **Contrôle :** Les locuteurs peuvent retirer leurs évaluations à tout moment. Le retrait supprime leurs données de toutes les analyses.
@@ -168,27 +168,27 @@ Toutes les contributions des locuteurs sont régies par les politiques de donné
 
 ---
 
-## 6. Ce que les locuteurs reçoivent
+## 6. Ce que les locuteurs reçoivent {#6-ce-que-les-locuteurs-recoivent}
 
 Au-delà de la compensation :
 
 - **Co-auteur** sur toute publication utilisant leurs évaluations (si souhaité)
 - **Reconnaissance** dans toute la documentation du projet
 - **Accès anticipé** aux outils d'évaluation et aux résultats
-- **Contribution** à la façon dont les métriques sont utilisées — si un locuteur dit « votre linter se trompe sur X », nous corrigeons le linter
+- **Contribution** sur la façon dont les métriques sont utilisées — si un locuteur dit « votre linter se trompe sur X », nous corrigeons le linter
 - **Droit de veto** sur la publication des résultats qu'ils trouvent problématiques
 
 ---
 
-## 7. Comment commencer
+## 7. Comment commencer {#7-comment-commencer}
 
 Si vous êtes un locuteur bilingue cri–anglais intéressé par la participation, ou si vous connaissez quelqu'un qui pourrait l'être :
 
 1. **Contactez-nous** à [email/contact du projet] — aucun engagement requis, juste une conversation
-2. **Nous expliquons les tâches** en langage clair (pas de jargon)
+2. **Nous expliquons les tâches** en langage clair (sans jargon)
 3. **Vous choisissez les tâches** qui vous intéressent (A, B, C, ou toute combinaison)
 4. **Nous établissons un calendrier** qui vous convient (blocs de 2 heures, horaires flexibles)
-5. **Vous évaluez les traductions** via tableur ou formulaire web — de n'importe où, à votre rythme
+5. **Vous évaluez les traductions** via feuille de calcul ou formulaire web — de n'importe où, à votre rythme
 6. **Nous payons rapidement** — dans les 2 semaines suivant l'achèvement de chaque bloc de tâches
 
 ---

@@ -21,7 +21,7 @@ El marco de evaluación LYSS (Linguistically-informed Yield & Structural Scoring
 - **LYSS-eq**: ¿Es la salida una variante aceptable de la traducción de referencia? (verificado por las clases de equivalencia del linter)
 - **LYSS-sem**: ¿Preserva la salida el significado de la fuente? (verificado por el validador semántico)
 
-Estas métricas producen números. **No sabemos si esos números significan algo.** El FST puede rechazar palabras válidas que no reconoce (préstamos, neologismos, nombres propios). El linter puede perder equivalencias válidas o aceptar equivalencias inválidas. El validador semántico puede juzgar mal el significado. Hasta que los hablantes bilingües nos digan si nuestras puntuaciones automatizadas coinciden con su juicio humano de la calidad de la traducción, estamos adivinando.
+Estas métricas producen números. **No sabemos si esos números significan algo.** El FST puede rechazar palabras válidas que no reconoce (préstamos, neologismos, nombres propios). El linter puede perder equivalencias válidas o aceptar inválidas. El validador semántico puede juzgar mal el significado. Hasta que hablantes bilingües nos digan si nuestras puntuaciones automatizadas coinciden con su juicio humano de la calidad de la traducción, estamos adivinando.
 
 Cada métrica importante de evaluación de MT (BLEU, COMET, chrF++) fue validada comparando puntuaciones automatizadas contra miles de evaluaciones de calidad humana. Necesitamos lo mismo — a una escala menor, porque nuestros recursos son limitados, pero con el mismo rigor.
 
@@ -62,9 +62,9 @@ Cada métrica importante de evaluación de MT (BLEU, COMET, chrF++) fue validada
    | 4 | Bueno | Suena natural con torpeza menor |
    | 5 | Impecable | Un hablante de cree podría haber escrito esto |
 
-3. Opcionalmente, el hablante puede agregar una nota de texto libre explicando su calificación (por ejemplo, "acuerdo incorrecto de animado/inanimado en el verbo," "este es dialecto th pero califico basándome en dialecto y").
+3. Opcionalmente, el hablante puede agregar una nota de texto libre explicando su calificación (p. ej., "acuerdo animado/inanimado incorrecto en el verbo," "este es dialecto th pero califico basado en dialecto y").
 
-**Estimación de tiempo:** ~2.5 minutos por traducción × 200 traducciones = ~8 horas. Puede dividirse en múltiples sesiones (por ejemplo, 4 × sesiones de 2 horas durante 2 semanas).
+**Estimación de tiempo:** ~2.5 minutos por traducción × 200 traducciones = ~8 horas. Puede dividirse en múltiples sesiones (p. ej., 4 × sesiones de 2 horas durante 2 semanas).
 
 **Compensación:** $50–65 CAD/hora (coincidiendo con las tasas de compensación de hablantes de BENCHMARK_SPEC §10.3). Total por hablante: $400–520 CAD. Para 3 hablantes: **$1,200–1,560 CAD**.
 
@@ -84,7 +84,7 @@ Cada métrica importante de evaluación de MT (BLEU, COMET, chrF++) fue validada
    - La fuente en inglés
    - Traducción A (la referencia)
    - Traducción B (una variante que nuestro linter dice que es equivalente)
-   - La razón de equivalencia (por ejemplo, "permutación de orden de palabras," "variante ortográfica," "partícula opcional eliminada")
+   - La razón de equivalencia (p. ej., "permutación de orden de palabras," "variante ortográfica," "partícula opcional eliminada")
 
 2. Para cada par, el hablante responde:
    - **¿Mismo significado?** Sí / No / Depende del contexto
@@ -112,13 +112,13 @@ Cada métrica importante de evaluación de MT (BLEU, COMET, chrF++) fue validada
 3. Para cada palabra, el hablante responde:
    - **¿Es esta una palabra válida en cree?** Sí / No / Inseguro
    - **Si es sí, ¿qué tipo?** Palabra establecida / Préstamo / Nombre / Forma dialectal / Neologismo / Otro
-   - **Notas** (texto libre opcional)
+   - **Notas** (opcional)
 
 **Estimación de tiempo:** ~1 minuto por palabra × 100 palabras = ~1.5 horas.
 
 **Compensación:** $50–65 CAD/hora × 1.5 horas = **$75–100 CAD**.
 
-**Qué hacemos con esto:** Calculamos la tasa de rechazo falso del FST. Si el FST rechaza 50 palabras y los hablantes dicen que 30 de ellas son válidas, la tasa de rechazo falso es del 60% — inaceptablemente alta, requiriendo una lista de excepciones de préstamos. Si los hablantes dicen que solo 5 son válidas, la tasa de rechazo falso es del 10% — la métrica es confiable.
+**Qué hacemos con esto:** Calculamos la tasa de rechazo falso del FST. Si el FST rechaza 50 palabras y los hablantes dicen que 30 de ellas son válidas, la tasa de rechazo falso es del 60% — inaceptablemente alta, requiriendo una lista de excepciones/préstamos. Si los hablantes dicen que solo 5 son válidas, la tasa de rechazo falso es del 10% — la métrica es confiable.
 
 ---
 
@@ -133,42 +133,42 @@ Cada métrica importante de evaluación de MT (BLEU, COMET, chrF++) fue validada
 
 Si los mismos 3 hablantes hacen todas las tareas: **~11.5 horas cada uno durante 2–4 semanas, $575–750 cada uno**.
 
-Un solo hablante que solo haga la Tarea A se comprometería a **~8 horas durante 2 semanas por $400–520**.
+Un solo hablante haciendo solo la Tarea A se comprometería a **~8 horas durante 2 semanas por $400–520**.
 
 ---
 
 ## 4. Calificaciones del hablante
 
-**Requeridas:**
+**Requerido:**
 - Bilingüe en cree de las llanuras e inglés
 - Fluidez de lectura en SRO (Ortografía Romana Estándar)
 - Cómodo calificando traducciones en una escala estructurada
 
-**Preferidas:**
+**Preferido:**
 - Experiencia con dialecto y (el dialecto utilizado en nuestro corpus de referencia de EDTeKLA)
 - Experiencia en enseñanza o traducción (proporciona juicio de calidad calibrado)
 - Familiaridad con diferentes registros (formal, educativo, conversacional)
 
-**No requeridas:**
+**No requerido:**
 - Conocimiento técnico o de PNL (proporcionamos todas las herramientas y contexto)
-- Habilidades computacionales (la interfaz de calificación será una hoja de cálculo o formulario web simple)
+- Habilidades computacionales (la interfaz de calificación será una hoja de cálculo simple o formulario web)
 - Participación previa en el proyecto Champollion
 
 ---
 
-## 5. Gobernanza de datos
+## 5. Gobernanza de datos {#5-gobernanza-de-datos}
 
 Todas las contribuciones de los hablantes se rigen por las políticas de datos orientadas a OCAP® del proyecto:
 
-- **Propiedad:** Las calificaciones de calidad de los hablantes permanecen como su contribución intelectual. Se les acredita por nombre (o de forma anónima, a su elección) en cualquier publicación.
+- **Propiedad:** Las calificaciones de calidad de los hablantes permanecen como su contribución intelectual. Se les acredita por nombre (o anónimamente, a su elección) en cualquier publicación.
 - **Control:** Los hablantes pueden retirar sus calificaciones en cualquier momento. La retirada elimina sus datos de todos los análisis.
 - **Acceso:** Los datos de calificación se almacenan en infraestructura controlada por la organización de gobernanza comunitaria (cuando se establezca) o en la plataforma preferida del hablante.
-- **Posesión:** Los datos de calificación sin procesar nunca se publican. Solo las estadísticas agregadas (correlaciones, acuerdo entre anotadores) aparecen en publicaciones.
-- **Compensación:** Los hablantes reciben pago por su tiempo independientemente de si usamos sus calificaciones. El pago no está condicionado a los resultados.
+- **Posesión:** Los datos de calificación sin procesar nunca se publican. Solo estadísticas agregadas (correlaciones, acuerdo entre anotadores) aparecen en publicaciones.
+- **Compensación:** Los hablantes se pagan por su tiempo independientemente de si usamos sus calificaciones. El pago no está condicionado a los resultados.
 
 ---
 
-## 6. Qué obtienen los hablantes
+## 6. Qué obtienen los hablantes {#6-qué-obtienen-los-hablantes}
 
 Más allá de la compensación:
 
@@ -180,7 +180,7 @@ Más allá de la compensación:
 
 ---
 
-## 7. Cómo comenzar
+## 7. Cómo comenzar {#7-cómo-comenzar}
 
 Si usted es un hablante bilingüe de cree e inglés interesado en participar, o si conoce a alguien que podría estarlo:
 
@@ -188,7 +188,7 @@ Si usted es un hablante bilingüe de cree e inglés interesado en participar, o 
 2. **Explicamos las tareas** en lenguaje simple (sin jerga)
 3. **Usted elige qué tareas** le interesan (A, B, C, o cualquier combinación)
 4. **Establecemos un cronograma** que funcione para usted (bloques de 2 horas, horario flexible)
-5. **Usted califica traducciones** a través de hoja de cálculo o formulario web — desde cualquier lugar, en su propio tiempo
+5. **Usted califica traducciones** a través de hoja de cálculo o formulario web — desde cualquier lugar, a su propio ritmo
 6. **Pagamos rápidamente** — dentro de 2 semanas de completar cada bloque de tareas
 
 ---
@@ -198,7 +198,7 @@ Si usted es un hablante bilingüe de cree e inglés interesado en participar, o 
 Con datos de validación de hablantes, podemos:
 
 1. **Publicar las correlaciones de métricas** — probando (o refutando) que las puntuaciones LYSS reflejan el juicio humano
-2. **Recalibrar las métricas** — ajustando pesos, umbrales y clases de equivalencia basándose en retroalimentación de hablantes
+2. **Recalibrar las métricas** — ajustando pesos, umbrales y clases de equivalencia basados en retroalimentación de hablantes
 3. **Arreglar el linter** — eliminando equivalencias falsas, agregando las faltantes
 4. **Arreglar la lista de excepciones del FST** — agregando palabras válidas que el FST rechaza incorrectamente
 5. **Enviar a un lugar académico** — con hablantes como coautores, estableciendo LYSS como una métrica validada para evaluación de MT de lenguajes polisintéticos

@@ -169,7 +169,7 @@ This is a system that **does not mangle the language.** It may not be perfect, b
 
 ---
 
-## 4. Future Prize Pools
+## 4. Future Prize Pools {#4-future-prize-pools}
 
 The Founder's Prize is the seed. Additional prize pools are funded by sponsors. Each new prize pool is documented as a new subsection of §2 with its own:
 

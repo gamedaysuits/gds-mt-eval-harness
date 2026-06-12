@@ -26,7 +26,7 @@ related:
 
 > **Resumo Executivo.** Este é o documento único e autoritário para todas as métricas de avaliação, pontuação composta, níveis de qualidade e análise de custos no ecossistema de avaliação de MT do Champollion. As métricas de avaliação específicas de idioma — validade morfológica FST, classes de equivalência de linter e validação semântica determinística — são coletivamente denominadas **LYSS** (Linguistically-informed Yield & Structural Scoring). Toda métrica computada pelo harness, todo peso na fórmula composta e todo limiar de nível é definido aqui — e apenas aqui. Código, documentação e esquemas de banco de dados derivam deste documento. Quando há conflito, este documento é autoritário.
 >
-> **Escopo.** Este documento define *o que* medimos e *como pontuamos*. Ele não define o esquema de run card (ver BENCHMARK_SPEC §3), o protocolo de benchmark (BENCHMARK_SPEC §6) ou as regras de leaderboard (ver documentação da arena). Esses documentos fazem referência a este para definições de métricas e lógica de pontuação.
+> **Escopo.** Este documento define *o que* medimos e *como* pontuamos. Ele não define o esquema de run card (ver BENCHMARK_SPEC §3), o protocolo de benchmark (BENCHMARK_SPEC §6) ou as regras de leaderboard (ver docs da arena). Esses documentos fazem referência a este para definições de métricas e lógica de pontuação.
 >
 > Última atualização: 2026-06-07
 
@@ -38,9 +38,9 @@ related:
 
 > *"Se nos concentrarmos apenas no que generaliza, inevitavelmente esqueceremos de onde não generaliza — e perderemos esses idiomas e todo seu conhecimento e sabedoria."*
 
-Este projeto pratica **desenvolvimento de microeval**: construindo métricas de avaliação adaptadas a idiomas específicos usando as melhores ferramentas linguísticas disponíveis — transdutores de estado finito, dicionários bilíngues, analisadores morfológicos, regras de equivalência curadas por linguistas. Isso é o oposto do paradigma dominante em avaliação de MT, que busca métricas universais que funcionem em todos os idiomas. Métricas universais são valiosas, mas são mais fracas precisamente onde são mais necessárias: para idiomas com morfologia complexa, dados de treinamento limitados e sem representação em conjuntos de treinamento de métricas neurais.
+Este projeto pratica **desenvolvimento de microeval**: construindo métricas de avaliação adaptadas a idiomas específicos usando as melhores ferramentas linguísticas disponíveis — transdutores de estado finito, dicionários bilíngues, analisadores morfológicos, regras de equivalência curadas por linguistas. Isto é o oposto do paradigma dominante em avaliação de MT, que busca métricas universais que funcionem em todos os idiomas. Métricas universais são valiosas, mas são mais fracas precisamente onde são mais necessárias: para idiomas com morfologia complexa, dados de treinamento limitados e sem representação em conjuntos de treinamento de métricas neurais.
 
-Não estamos fazendo progresso em tradução automática para muitos idiomas do mundo não apenas porque nos faltam corpora, mas porque **nem sabemos como o progresso se parece** — nos faltam ferramentas de avaliação automatizadas para medir se um sistema de tradução está melhorando. LYSS é nossa tentativa de construir essas ferramentas, idioma por idioma, usando qualquer recurso linguístico que exista.
+Não estamos fazendo progresso em tradução automática para muitos idiomas do mundo não apenas porque nos faltam corpora, mas porque **nem mesmo sabemos como se parece o progresso** — nos faltam ferramentas de avaliação automatizadas para medir se um sistema de tradução está melhorando. LYSS é nossa tentativa de construir essas ferramentas, idioma por idioma, usando qualquer recurso linguístico que exista.
 
 ### 1.2 Métricas Automatizadas São Proxies
 
@@ -48,7 +48,7 @@ Toda métrica definida aqui é computada por máquina. Elas são úteis para ite
 
 ### 1.3 Design Multi-Sinal
 
-Nenhuma métrica única captura qualidade de tradução. Uma tradução pode ter sobreposição perfeita de chrF++ mas falhar na validação morfológica. Pode passar em verificações FST mas carregar o significado errado. Pode ser semanticamente precisa mas estilisticamente estranha para o idioma de destino. A pontuação composta em §4 agrega múltiplos sinais independentes, cada um capturando uma dimensão diferente de qualidade.
+Nenhuma métrica única captura qualidade de tradução. Uma tradução pode ter sobreposição perfeita de chrF++ mas falhar na validação morfológica. Pode passar em verificações FST mas carregar o significado errado. Pode ser semanticamente precisa mas estilisticamente estranha para o idioma alvo. A pontuação composta em §4 agrega múltiplos sinais independentes, cada um capturando uma dimensão diferente de qualidade.
 
 ### 1.4 Extensibilidade
 
@@ -64,20 +64,20 @@ Cost      — How much does it cost?          (cost metrics, §6)
 Speed     — How fast does it run?           (speed metrics, §7)
 ```
 
-Esses são eixos independentes. Um método pode ser de alta qualidade mas caro, rápido mas impreciso, ou qualquer combinação. O leaderboard permite classificação por qualquer dimensão. A pontuação ajustada por custo (§6.3) é a única métrica que combina dimensões.
+Estes são eixos independentes. Um método pode ser de alta qualidade mas caro, rápido mas impreciso, ou qualquer combinação. O leaderboard permite ordenação por qualquer dimensão. A pontuação ajustada por custo (§6.3) é a única métrica que combina dimensões.
 
 ### 1.6 Status de Validação
 
-Toda métrica nesta especificação tem um **status de validação** distinto de seu status de implementação (§3). O status de implementação rastreia se o código existe. O status de validação rastreia se a métrica foi mostrada correlacionar com julgamentos de qualidade humana.
+Toda métrica nesta especificação tem um **status de validação** distinto de seu status de implementação (§3). Status de implementação rastreia se o código existe. Status de validação rastreia se a métrica foi mostrada correlacionar com julgamentos de qualidade humana.
 
 | Nível de Validação | Significado | Métricas Atuais |
 |------------------|---------|----------------|
 | **✅ Validado externamente** | Estudos de correlação humana publicados existem (WMT, artigos acadêmicos) | `chrf_plus_plus`, `bleu`, `comet_score` |
-| **⚡ Validado por proxy** | Validado para idiomas de alto recurso; não validado para nossos LRLs de destino | `comet_score` (validado para pares EU, não para CRK) |
+| **⚡ Validado por proxy** | Validado para idiomas de alto recurso; não validado para nossos LRLs alvo | `comet_score` (validado para pares EU, não para CRK) |
 | **🔶 Heurística de engenharia** | Projetado a partir de princípios linguísticos ou modos de falha observados; sem dados de correlação humana | `fst_acceptance_rate`, `equivalent_match_rate`, `semantic_score`, `code_switching_rate`, `hallucination_rate`, `terminology_adherence` |
 | **🔲 Não validado** | Ainda não testado em nenhum dado | `morphological_accuracy`, `orthographic_accuracy`, `consistency_score` |
 
-> **O que isso significa na prática.** A pontuação composta (§4) agrega métricas em todos os níveis de validação. Esta é uma escolha de design explícita: acreditamos que uma heurística de engenharia estruturalmente fundamentada (aceitação FST) é mais informativa para idiomas polissintéticos do que uma métrica neural validada apenas em pares europeus (COMET). Mas não provamos isso. A pontuação composta deve ser tratada como uma **estimativa de engenharia**, não uma medição de qualidade validada, até que estudos de correlação humana sejam concluídos para cada idioma de destino.
+> **O que isto significa na prática.** A pontuação composta (§4) agrega métricas em todos os níveis de validação. Esta é uma escolha de design explícita: acreditamos que uma heurística de engenharia estruturalmente fundamentada (aceitação FST) é mais informativa para idiomas polissintéticos do que uma métrica neural validada apenas em pares europeus (COMET). Mas não provamos isto. A pontuação composta deve ser tratada como uma **estimativa de engenharia**, não uma medição de qualidade validada, até que estudos de correlação humana sejam concluídos para cada idioma alvo.
 >
 > **Experimentos de validação necessários** (ver `mt-evaluation-landscape.md` §6 e `speaker-validation.md`):
 > 1. Estudo de correlação com julgamento humano: 200+ pares de sentenças avaliados por 3+ falantes bilíngues
@@ -88,9 +88,9 @@ Toda métrica nesta especificação tem um **status de validação** distinto de
 
 ---
 
-## 2. Inventário de Métricas
+## 2. Inventário de Métricas {#2-metric-inventory}
 
-As métricas são organizadas em quatro categorias. Cada métrica tem um status de implementação, escala e nível (por entrada, nível de corpus ou ambos).
+Métricas são organizadas em quatro categorias. Cada métrica tem um status de implementação, escala e nível (por entrada, nível de corpus ou ambos).
 
 ### 2.1 Métricas de Superfície
 
@@ -99,23 +99,23 @@ Métricas de superfície comparam a tradução prevista com a tradução de refe
 | ID | Métrica | Status | Escala | Nível | Implementação |
 |----|--------|--------|-------|-------|---------------|
 | `exact_match_rate` | Correspondência Exata | ✅ Implementado | 0.0–1.0 | Ambos | Binário: previsto == referência? Taxa de corpus = correspondências / total. |
-| `equivalent_match_rate` | Correspondência Equivalente | ⚡ Parcial | 0.0–1.0 | Ambos | A saída prevista corresponde a qualquer variante aceita? Para CRK: implementado via padrão de avaliação CRK `CrkLinterMetric` (em `eval_standards/crk/`) usando regras de classe de variante determinística (ordem de palavras, ortográfica, partícula opcional, sinônimo de lema, ambiguidade progressiva). Carregado automaticamente via declaração `evalMetrics` do cartão de idioma CRK. A implementação genérica entre idiomas requer `variants[]` por entrada no corpus. |
+| `equivalent_match_rate` | Correspondência Equivalente | ⚡ Parcial | 0.0–1.0 | Ambos | A saída prevista corresponde a qualquer variante aceita? Para CRK: implementado via padrão de avaliação CRK `CrkLinterMetric` (em `eval_standards/crk/`) usando regras de classe de variante determinísticas (ordem de palavras, ortográfica, partícula opcional, sinônimo de lema, ambiguidade progressiva). Carregado automaticamente via declaração `evalMetrics` do cartão de idioma CRK. Implementação genérica entre idiomas requer `variants[]` por entrada no corpus. |
 | `chrf_plus_plus` | chrF++ | ✅ Implementado | 0–100 | Ambos | F-score de n-grama de caractere (sacrebleu). Robusto a variação morfológica. A métrica de superfície primária para idiomas aglutinadores/polissintéticos. Por entrada usa `sentence_chrf`; corpus usa `corpus_chrf`. |
-| `bleu` | BLEU | ✅ Implementado | 0–100 | Corpus | Precisão de n-grama no nível de palavra (sacrebleu). **Excluído da composta** — pontuação no nível de palavra penaliza variação morfológica injustamente. Computado e relatado para compatibilidade com literatura de MT. |
+| `bleu` | BLEU | ✅ Implementado | 0–100 | Corpus | Precisão de n-grama no nível de palavra (sacrebleu). **Excluído da composta** — pontuação no nível de palavra penaliza variação morfológica injustamente. Computado e reportado para compatibilidade com literatura de MT. |
 | `ter` | Taxa de Edição de Tradução | ✅ Implementado | 0–∞ (menor é melhor) | Ambos | Distância de edição mínima entre previsto e referência, normalizada pelo comprimento da referência (sacrebleu `corpus_ter`). Computado junto com chrF++ e BLEU. Excluído da composta — correlaciona com chrF++ então incluir ambos dobraria a contagem de similaridade de superfície. |
 | `length_ratio` | Razão de Comprimento | ✅ Implementado | 0–∞ (1.0 é ideal) | Ambos | `len(predicted) / len(reference)` em caracteres. Detecta truncamento (<0.5) e inflação/alucinação (>2.0). Média em entradas no nível de corpus. |
 
 ### 2.2 Métricas Estruturais
 
-Métricas estruturais validam a bem-formação linguística da tradução. Elas requerem ferramentas específicas de idioma (analisadores FST, analisadores morfológicos) e são os sinais mais fortes para idiomas morfologicamente ricos.
+Métricas estruturais validam a bem-formação linguística da tradução. Elas requerem ferramentas específicas de idioma (analisadores FST, parsers morfológicos) e são os sinais mais fortes para idiomas morfologicamente ricos.
 
 | ID | Métrica | Status | Escala | Nível | Implementação |
 |----|--------|--------|-------|-------|---------------|
 | `fst_acceptance_rate` | Aceitação FST | ✅ Implementado | 0.0–1.0 | Ambos | Proporção de palavras de saída aceitas por um transdutor de estado finito (GiellaLT). Uma palavra é "válida" se o FST retorna pelo menos uma análise morfológica. Disponível para qualquer idioma com analisador `.hfstol` GiellaLT. |
-| `morphological_accuracy` | Precisão Morfológica | 🔲 Planejado | 0.0–1.0 | Ambos | Uma palavra pode ser válida em FST mas ter a inflexão errada (raiz correta, sufixo errado). Esta métrica compara a análise FST da palavra prevista contra as características morfológicas esperadas. Requer anotações morfológicas de ouro por entrada no corpus. |
+| `morphological_accuracy` | Precisão Morfológica | 🔲 Planejado | 0.0–1.0 | Ambos | Uma palavra pode ser FST-válida mas ter a inflexão errada (raiz correta, sufixo errado). Esta métrica compara a análise FST da palavra prevista contra as características morfológicas esperadas. Requer anotações morfológicas por entrada no corpus. |
 | `orthographic_accuracy` | Precisão Ortográfica | 🔲 Planejado | 0.0–1.0 | Ambos | Valida correção específica de script: uso de macron/circunflexo SRO para Cree, marcas diacríticas para Inuktitut, marcadores de comprimento de vogal para Ojibwe. Conjuntos de regras por idioma. |
 
-> **Por que métricas estruturais importam.** O OMT-1600 da Meta — o maior sistema de MT já publicado (1.600 idiomas) — avalia com ChrF++, xCOMET, MetricX e BLASER 3. Nenhuma delas valida correção morfológica. ChrF++ mede sobreposição de n-grama de caractere: recompensa strings que *parecem* o idioma de destino. Para idiomas polissintéticos, isso significa uma palavra morfologicamente inválida que compartilha muitos caracteres com a referência pontua bem. Nossa métrica de aceitação FST é um teste estrutural binário: a palavra é uma forma válida no idioma, ou não é. Nenhuma outra estrutura de avaliação de MT fornece isso em escala.
+> **Por que métricas estruturais importam.** O OMT-1600 da Meta — o maior sistema de MT já publicado (1.600 idiomas) — avalia com ChrF++, xCOMET, MetricX e BLASER 3. Nenhuma delas valida correção morfológica. ChrF++ mede sobreposição de n-grama de caractere: recompensa strings que *parecem* o idioma alvo. Para idiomas polissintéticos, isto significa uma palavra morfologicamente inválida que compartilha muitos caracteres com a referência pontua bem. Nossa métrica de aceitação FST é um teste estrutural binário: a palavra é ou uma forma válida no idioma, ou não é. Nenhuma outra estrutura de avaliação de MT fornece isto em escala.
 
 ### 2.3 Métricas Semânticas
 
@@ -124,22 +124,22 @@ Métricas semânticas medem preservação de significado usando embeddings ou mo
 | ID | Métrica | Status | Escala | Nível | Implementação |
 |----|--------|--------|-------|-------|---------------|
 | `semantic_score` | Similaridade Semântica | ⚡ Parcial | 0.0–1.0 | Ambos | CRK: pontuação ponderada por veredicto do padrão de avaliação CRK `CrkSemanticMetric` (em `eval_standards/crk/`, proxy). Universal: similaridade de cosseno de embeddings de sentença (fonte + previsto vs fonte + referência). Modelo TBD — deve suportar idiomas de baixo recurso, o que exclui a maioria dos modelos de embedding centrados em inglês. |
-| `comet_score` | COMET | ✅ Implementado | ~0.0–1.0 | Ambos | Métrica de avaliação de MT aprendida (Unbabel). Treinada em julgamentos de qualidade humana. **Excluído da composta** — dados de treinamento são enviesados para idiomas europeus de alto recurso; pontuações para LRLs são não confiáveis. Computado quando `unbabel-comet` está instalado. Relatado com sinalizador de aviso de baixo recurso. Para 35 idiomas africanos, o harness seleciona automaticamente AfriCOMET (`masakhane/africomet-mtl`) via `resolve_comet_model()`, que tem melhor correlação com julgamento humano para esses idiomas. |
+| `comet_score` | COMET | ✅ Implementado | ~0.0–1.0 | Ambos | Métrica de avaliação de MT aprendida (Unbabel). Treinada em julgamentos de qualidade humana. **Excluída da composta** — dados de treinamento são enviesados para idiomas europeus de alto recurso; pontuações para LRLs são não confiáveis. Computada quando `unbabel-comet` está instalado. Reportada com sinalizador de aviso de baixo recurso. Para 35 idiomas africanos, o harness seleciona automaticamente AfriCOMET (`masakhane/africomet-mtl`) via `resolve_comet_model()`, que tem melhor correlação com julgamento humano para esses idiomas. |
 
-> **Por que COMET é excluído da composta.** COMET é treinado em dados de avaliação humana WMT, que é predominantemente pares de idiomas europeus de alto recurso. Quando aplicado a Plains Cree ou outros LRLs, as representações internas do modelo não têm exposição a esses idiomas — está extrapolando de idiomas com sistemas morfológicos fundamentalmente diferentes. As pontuações ainda são direcionalmente úteis (COMET mais alto ≈ saída mais fluente em geral) mas os valores absolutos não são calibrados. Relatamos COMET por transparência mas não deixamos influenciar a pontuação composta até que possamos validá-la contra julgamentos humanos para cada idioma de destino.
+> **Por que COMET é excluído da composta.** COMET é treinado em dados de avaliação humana WMT, que é predominantemente pares de idiomas europeus de alto recurso. Quando aplicado a Plains Cree ou outros LRLs, as representações internas do modelo não têm exposição a esses idiomas — está extrapolando de idiomas com sistemas morfológicos fundamentalmente diferentes. As pontuações ainda são direcionalmente úteis (COMET mais alto ≈ saída mais fluente em geral) mas os valores absolutos não são calibrados. Reportamos COMET por transparência mas não deixamos influenciar a pontuação composta até que possamos validá-la contra julgamentos humanos para cada idioma alvo.
 
-> **AfriCOMET para idiomas africanos.** Cada cartão de idioma tem um campo `metricModelSupport` (ver especificação de cartão de idioma §9) que declara quais modelos COMET especializados são treinados para esse idioma. Para 35 idiomas africanos (yor, hau, ibo, amh, swa, etc.), o cartão declara AfriCOMET (`masakhane/africomet-mtl`) — um modelo COMET ajustado em julgamentos humanos de MT de idiomas africanos pela comunidade Masakhane. O harness seleciona automaticamente o modelo recomendado via `resolve_comet_model()` lendo de cartões de idioma, mas isso pode ser substituído com `--comet-model`. Adicionar novos mapeamentos idioma→modelo é feito enriquecendo o cartão de idioma (não editando código Python).
+> **AfriCOMET para idiomas africanos.** Cada cartão de idioma tem um campo `metricModelSupport` (ver especificação de cartão de idioma §9) que declara quais modelos COMET especializados são treinados para esse idioma. Para 35 idiomas africanos (yor, hau, ibo, amh, swa, etc.), o cartão declara AfriCOMET (`masakhane/africomet-mtl`) — um modelo COMET ajustado em julgamentos humanos de MT de idiomas africanos pela comunidade Masakhane. O harness seleciona automaticamente o modelo recomendado via `resolve_comet_model()` lendo de cartões de idioma, mas isto pode ser sobrescrito com `--comet-model`. Adicionar novos mapeamentos idioma→modelo é feito enriquecendo o cartão de idioma (não editando código Python).
 
 ### 2.4 Métricas Comportamentais
 
-Métricas comportamentais detectam modos de falha específicos na saída de tradução. Elas não medem qualidade diretamente — elas detectam problemas.
+Métricas comportamentais detectam modos de falha específicos em saída de tradução. Elas não medem qualidade diretamente — elas detectam problemas.
 
 | ID | Métrica | Status | Escala | Nível | Implementação |
 |----|--------|--------|-------|-------|---------------|
-| `code_switching_rate` | Taxa de Code-Switching | ✅ Implementado | 0.0–1.0 (menor é melhor) | Ambos | Proporção de palavras de saída que estão no idioma de origem (tipicamente inglês). Detectado via análise de script Unicode e/ou lista de palavras de idioma de origem. Modo de falha muito comum de LLM: o modelo insere palavras em inglês quando não conhece o equivalente no idioma de destino. |
-| `hallucination_rate` | Taxa de Alucinação | ✅ Implementado | 0.0–1.0 (menor é melhor) | Ambos | Proporção de conteúdo de saída que não tem conteúdo de origem correspondente. Detectado via alinhamento de palavras ou sobreposição de embedding multilíngue. Captura o modelo gerando traduções plausíveis mas fabricadas. |
-| `terminology_adherence` | Aderência à Terminologia | ✅ Implementado | 0.0–1.0 | Ambos | Para métodos treinados: proporção de termos de terminologia prescrita que aparecem na saída. Requer dados de dicionário de treinamento. Mede se o modelo respeita vocabulário fornecido por especialista. |
-| `consistency_score` | Consistência Entre Entradas | 🔲 Planejado | 0.0–1.0 | Apenas Corpus | O modelo traduz o mesmo termo de origem da mesma forma em todas as entradas? Baixa consistência sugere que o modelo está adivinhando em vez de aplicar padrões aprendidos. Requer termos repetidos em entradas de corpus. |
+| `code_switching_rate` | Taxa de Code-Switching | ✅ Implementado | 0.0–1.0 (menor é melhor) | Ambos | Proporção de palavras de saída que estão no idioma fonte (tipicamente inglês). Detectado via análise de script Unicode e/ou lista de palavras de idioma fonte. Modo de falha muito comum de LLM: o modelo insere palavras em inglês quando não conhece o equivalente no idioma alvo. |
+| `hallucination_rate` | Taxa de Alucinação | ✅ Implementado | 0.0–1.0 (menor é melhor) | Ambos | Proporção de conteúdo de saída que não tem conteúdo de fonte correspondente. Detectado via alinhamento de palavras ou sobreposição de embedding cross-lingual. Captura o modelo gerando traduções plausíveis mas fabricadas. |
+| `terminology_adherence` | Aderência de Terminologia | ✅ Implementado | 0.0–1.0 | Ambos | Para métodos treinados: proporção de termos de terminologia prescrita que aparecem na saída. Requer dados de dicionário de treinamento. Mede se o modelo respeita vocabulário fornecido por especialista. |
+| `consistency_score` | Consistência Entre Entradas | 🔲 Planejado | 0.0–1.0 | Apenas Corpus | O modelo traduz o mesmo termo fonte da mesma forma em entradas? Consistência baixa sugere que o modelo está adivinhando em vez de aplicar padrões aprendidos. Requer termos repetidos em entradas de corpus. |
 
 ### 2.5 Métricas de Conformidade
 
@@ -147,10 +147,10 @@ Métricas de conformidade validam que traduções preservam integridade estrutur
 
 | ID | Métrica | Status | Escala | Nível | Implementação |
 |----|--------|--------|-------|-------|---------------|
-| `compliance_index` | Conformidade de Dupla Passagem | ✅ Implementado | 0.0–1.0 | Ambos | Composto ponderado: 60% integridade de variável (variáveis `{placeholder}` são preservadas?) + 20% conformidade de aspas (caracteres de aspas corretos por cartão de idioma) + 20% conformidade de maiúsculas (sem vazamento de letra latina para idiomas sem maiúsculas). Computado em saída bruta e pós-processada. Via `DoublePassCompliancePlugin`. |
+| `compliance_index` | Conformidade de Dupla Passagem | ✅ Implementado | 0.0–1.0 | Ambos | Composta ponderada: 60% integridade de variável (variáveis `{placeholder}` são preservadas?) + 20% conformidade de aspas (caracteres de aspas corretos por cartão de idioma) + 20% conformidade de maiúsculas (sem vazamento de letra latina para idiomas sem maiúsculas). Computado em saída bruta e pós-processada. Via `DoublePassCompliancePlugin`. |
 | `repair_effectiveness` | Efetividade de Reparo | ✅ Implementado | 0.0–1.0 | Corpus | Proporção de violações de conformidade que foram automaticamente reparadas por hooks pós-tradução. Mede quanto o portão de qualidade melhorou a saída bruta. |
 
-> **Por que conformidade não está na composta.** Métricas de conformidade medem preservação estrutural (placeholders, aspas), não qualidade de tradução. Uma tradução pode ser perfeita linguisticamente mas falhar conformidade porque descartou uma variável `{name}`. Esses são portões de qualidade — eles bloqueiam saída ruim de ser enviada, mas não classificam qualidade de tradução.
+> **Por que conformidade não está na composta.** Métricas de conformidade medem preservação estrutural (placeholders, aspas), não qualidade de tradução. Uma tradução pode ser perfeita linguisticamente mas falhar conformidade porque descartou uma variável `{name}`. Estes são portões de qualidade — eles bloqueiam saída ruim de ser enviada, mas não classificam qualidade de tradução.
 
 ---
 
@@ -161,7 +161,7 @@ Toda métrica em §2 cai em um de quatro níveis de implementação:
 | Nível | Significado | Comportamento de Run Card |
 |------|---------|-------------------|
 | **✅ Implementado** | Código existe, testado, produzindo valores em run cards hoje | Valor numérico em run card |
-| **⚡ Parcial** | Proxy específico de idioma existe (por exemplo, CRK) mas implementação universal está pendente | Valor numérico quando proxy se aplica, `null` caso contrário |
+| **⚡ Parcial** | Proxy específico de idioma existe (ex: CRK) mas implementação universal está pendente | Valor numérico quando proxy se aplica, `null` caso contrário |
 | **🔲 Planejado** | Especificado mas ainda não implementado | `null` em run card (campo presente, valor ausente) |
 | **💡 Proposto** | Sob discussão, ainda não especificado | Não em run card |
 
@@ -187,7 +187,7 @@ Uma métrica se move de Proposto → Planejado quando:
 
 ---
 
-## 4. Pontuação Composta
+## 4. Pontuação Composta {#4-composite-score}
 
 ### 4.1 Fórmula
 
@@ -199,12 +199,12 @@ composite = Σ (weight_i × value_i)    for all available metrics
              Σ weight_i               (re-normalization denominator)
 ```
 
-Uma métrica é "disponível" se seu valor no run card é um número (não `null`). Quando uma métrica não está disponível — porque o idioma não tem FST, ou porque uma métrica ainda não foi implementada — seu peso é redistribuído proporcionalmente entre as métricas restantes.
+Uma métrica é "disponível" se seu valor no run card é um número (não `null`). Quando uma métrica não está disponível — porque o idioma não tem FST, ou porque uma métrica ainda não está implementada — seu peso é redistribuído proporcionalmente entre as métricas restantes.
 
-**Isso significa que a composta é sempre comparável dentro de uma execução:** usa qualquer métrica disponível e normaliza de acordo. A comparação entre execuções é válida quando as execuções usam o mesmo conjunto de métricas disponíveis.
+**Isto significa que a composta é sempre comparável dentro de uma execução:** usa qualquer métrica disponível e normaliza de acordo. Comparação entre execuções é válida quando execuções usam o mesmo conjunto de métricas disponíveis.
 
 > [!WARNING]
-> **Comparabilidade entre execuções.** Ao comparar execuções com disponibilidade de métrica diferente (por exemplo, uma execução tem pontuações FST, outra não), as pontuações compostas **não são diretamente comparáveis**. Uma composta de 0.72 computada de 5 métricas carrega mais informação do que uma composta de 0.72 computada de 2 métricas. O leaderboard exibe um aviso quando a cobertura de métrica difere entre execuções comparadas. Para comparação rigorosa, use testes de significância bootstrap pareados (§8.2) apenas em métricas compartilhadas.
+> **Comparabilidade entre execuções.** Ao comparar execuções com disponibilidade de métrica diferente (ex: uma execução tem pontuações FST, outra não), as pontuações compostas **não são diretamente comparáveis**. Uma composta de 0.72 computada de 5 métricas carrega mais informação do que uma composta de 0.72 computada de 2 métricas. O leaderboard exibe um aviso quando cobertura de métrica difere entre execuções comparadas. Para comparação rigorosa, use testes de significância bootstrap pareados (§8.2) apenas em métricas compartilhadas.
 
 ### 4.2 Normalização de Entrada
 
@@ -224,25 +224,25 @@ Antes de entrar na fórmula composta, todas as métricas devem estar em uma **es
 
 Métricas excluídas da composta (`bleu`, `comet_score`, `ter`, `length_ratio`, `consistency_score`) não são normalizadas para este propósito.
 
-### 4.3 Tabelas de Peso
+### 4.3 Tabelas de Peso {#43-weight-tables}
 
 #### Perfil A: Idiomas COM Cobertura FST
 
-Para idiomas que têm um transdutor de estado finito GiellaLT disponível. Métricas estruturais carregam 40% da composta (FST 0.25 + precisão morfológica 0.15), refletindo a primazia da correção morfológica para idiomas polissintéticos/aglutinadores.
+Para idiomas que têm um transdutor de estado finito GiellaLT disponível. Métricas estruturais carregam 40% da composta (FST 0.25 + precisão morfológica 0.15), refletindo a primazia de correção morfológica para idiomas polissintéticos/aglutinadores.
 
 | Métrica | Peso Alvo | Justificativa |
 |--------|--------------|-----------|
 | `fst_acceptance_rate` | **0.25** | Peso mais alto. Se o FST rejeita uma palavra, não é uma forma válida no idioma — independentemente do que outras métricas dizem. Binário, estruturalmente fundamentado. |
-| `morphological_accuracy` | **0.15** | Uma palavra pode ser válida em FST mas morfologicamente errada (raiz correta, inflexão errada). Junto com FST, métricas estruturais carregam 40%. |
+| `morphological_accuracy` | **0.15** | Uma palavra pode ser FST-válida mas morfologicamente errada (raiz correta, inflexão errada). Junto com FST, métricas estruturais carregam 40%. |
 | `chrf_plus_plus` | **0.15** | Sobreposição de n-grama de caractere: o melhor proxy de nível de superfície para idiomas polissintéticos. Lida com morfologia aglutinadora melhor do que métricas no nível de palavra. |
-| `semantic_score` | **0.15** | Preservação de significado quando forma de superfície diverge. Captura traduções semanticamente erradas que passam em verificações estruturais. |
+| `semantic_score` | **0.15** | Preservação de significado quando forma de superfície diverge. Captura traduções semanticamente erradas que passam verificações estruturais. |
 | `equivalent_match_rate` | **0.10** | Recompensa variantes aceitáveis, não apenas a tradução de referência única. Importante para idiomas com ordem de palavras flexível. |
-| `code_switching_rate` | **0.05** | Penaliza vazamento de idioma de origem. Invertido: 0% code-switching = 1.0. |
+| `code_switching_rate` | **0.05** | Penaliza vazamento de idioma fonte. Invertido: 0% code-switching = 1.0. |
 | `terminology_adherence` | **0.05** | Recompensa métodos treinados que respeitam vocabulário prescrito. Ativo apenas quando dados de treinamento estão presentes. |
 | `hallucination_rate` | **0.05** | Penaliza conteúdo fabricado. Invertido: 0% alucinação = 1.0. |
 | `exact_match_rate` | **0.05** | Peso mais baixo. Muito rigoroso para idiomas polissintéticos — múltiplas traduções corretas existem. Mantido como verificação de teto. |
 
-> **Total: 1.00.** Quando métricas não estão disponíveis, seus pesos são redistribuídos proporcionalmente entre métricas disponíveis. Atualmente, `morphological_accuracy` (peso 0.15) é a única métrica de Perfil A ainda não computada — requer anotações morfológicas de ouro por entrada. Com esta métrica ausente, as 8 métricas restantes (peso total 0.85) são cada uma escaladas por 1/0.85 ≈ 1.176. Por exemplo:
+> **Total: 1.00.** Quando métricas não estão disponíveis, seus pesos são redistribuídos proporcionalmente entre métricas disponíveis. Atualmente, `morphological_accuracy` (peso 0.15) é a única métrica de Perfil A ainda não computada — requer anotações morfológicas de padrão-ouro por entrada. Com esta métrica ausente, as 8 métricas restantes (peso total 0.85) são cada uma escaladas por 1/0.85 ≈ 1.176. Por exemplo:
 > - FST: 0.25/0.85 = 0.294
 > - chrF++: 0.15/0.85 = 0.176
 > - semântica: 0.15/0.85 = 0.176
@@ -255,16 +255,16 @@ Para idiomas sem ferramentas de validação morfológica. Métricas semânticas 
 |--------|--------------|-----------|
 | `semantic_score` | **0.25** | Sem validação estrutural, preservação de significado é o sinal disponível mais forte. |
 | `chrf_plus_plus` | **0.25** | Sem FST, sobreposição no nível de caractere se torna a verificação de superfície primária. |
-| `equivalent_match_rate` | **0.15** | Correspondência de variante fornece avaliação de qualidade estruturada sem exigir ferramentas morfológicas. |
+| `equivalent_match_rate` | **0.15** | Correspondência de variante fornece avaliação de qualidade estruturada sem requerer ferramentas morfológicas. |
 | `exact_match_rate` | **0.10** | Sem FST, correspondência exata carrega mais peso como único proxy de validação estrutural. |
-| `code_switching_rate` | **0.10** | Vazamento de idioma de origem importa mais quando não há FST para capturar saída ruim. |
+| `code_switching_rate` | **0.10** | Vazamento de idioma fonte importa mais quando não há FST para capturar saída ruim. |
 | `terminology_adherence` | **0.05** | Conformidade de vocabulário treinado. |
 | `hallucination_rate` | **0.05** | Detecção de conteúdo fabricado. |
 | `orthographic_accuracy` | **0.05** | Correção específica de script preenche parte da lacuna deixada por FST ausente. |
 
 > **Total: 1.00.** `orthographic_accuracy` (peso 0.05) é planejado mas ainda não computado. Com ele ausente, as 7 métricas restantes (peso total 0.95) são escaladas por 1/0.95 ≈ 1.053 — um impacto negligenciável na composta.
 
-> **Nota sobre evolução de peso.** Esses pesos são provisórios e serão recalibrados conforme dados de validação humana se acumulam. O objetivo de longo prazo é derivar pesos empiricamente: quais métricas automatizadas melhor predizem julgamentos de qualidade humana para cada família de idiomas?
+> **Nota sobre evolução de peso.** Estes pesos são provisórios e serão recalibrados conforme dados de validação humana se acumulam. O objetivo de longo prazo é derivar pesos empiricamente: quais métricas automatizadas melhor predizem julgamentos de qualidade humana para cada família de idiomas?
 
 ### 4.4 Adicionando uma Nova Métrica à Composta
 
@@ -281,12 +281,12 @@ Para adicionar uma nova métrica à composta:
 
 ---
 
-## 5. Níveis de Qualidade
+## 5. Níveis de Qualidade {#5-quality-tiers}
 
-Esses níveis são rótulos heurísticos em pontuações compostas automatizadas. Eles descrevem o que as pontuações tendem a significar na prática, com base em revisão humana de saídas em cada nível. **Eles não são julgamentos de qualidade validados** — apenas revisão humana pode confirmar usabilidade real.
+Estes níveis são rótulos heurísticos em pontuações compostas automatizadas. Eles descrevem o que as pontuações tendem a significar na prática, baseado em revisão humana de saídas em cada nível. **Eles não são julgamentos de qualidade validados** — apenas revisão humana pode confirmar usabilidade real.
 
 > [!IMPORTANT]
-> **Níveis automatizados são provisórios.** Esses rótulos são indicações para revisão, não declarações de qualidade. Um método atingindo "Implantável" em métricas automatizadas é um candidato para avaliação comunitária — não um produto para enviar. Apenas revisão humana por falantes bilíngues pode confirmar usabilidade real (ver [BENCHMARK_SPEC §7](/docs/specifications/benchmark#7-human-validation)). Nenhum método pode reivindicar Implantável ou acima sem revisão comunitária confirmando que falantes concordam que a saída é usável. Limites de nível podem diferir entre idiomas conforme dados de validação humana se acumulam.
+> **Níveis automatizados são provisórios.** Estes rótulos são indicações para revisão, não declarações de qualidade. Um método atingindo "Implantável" em métricas automatizadas é um candidato para avaliação comunitária — não um produto para enviar. Apenas revisão humana por falantes bilíngues pode confirmar usabilidade real (ver [BENCHMARK_SPEC §7](/docs/specifications/benchmark#7-human-validation)). Nenhum método pode reivindicar Implantável ou acima sem revisão comunitária confirmando que falantes concordam que a saída é usável. Limites de nível podem diferir entre idiomas conforme dados de validação humana se acumulam.
 
 | Nível | Intervalo Composto | O Que um Falante Tipicamente Vê |
 |------|----------------|-------------------------------|
@@ -296,7 +296,7 @@ Esses níveis são rótulos heurísticos em pontuações compostas automatizadas
 | **Implantável** | 0.70–0.85 | Adequado para tradução de rascunho com revisão humana. Maioria da morfologia está correta. |
 | **Fluente** | 0.85–1.00 | Aproximando-se de tradução humana competente. Erros são raros e menores. |
 
-Esses níveis são provisórios. Serão recalibrados conforme dados de validação humana se acumulam e aprendemos onde o limiar "um falante acha isso útil" realmente cai para cada idioma. Nenhum método pode reivindicar **Implantável** ou acima sem revisão comunitária confirmando que falantes bilíngues concordam que a saída é usável.
+Estes níveis são provisórios. Serão recalibrados conforme dados de validação humana se acumulam e aprendemos onde o limiar "um falante acha isto útil" realmente cai para cada idioma. Nenhum método pode reivindicar **Implantável** ou acima sem revisão comunitária confirmando que falantes bilíngues concordam que a saída é usável.
 
 ### 5.1 Limites de Nível (Legível por Máquina)
 
@@ -315,7 +315,7 @@ composite is null  →  "unscored"
 
 ## 6. Métricas de Custo
 
-Métricas de custo medem a eficiência financeira de um método de tradução. Elas são relatadas separadamente da qualidade — custo não influencia a pontuação composta (exceto na classificação secundária ajustada por custo).
+Métricas de custo medem a eficiência financeira de um método de tradução. Elas são reportadas separadamente de qualidade — custo não influencia a pontuação composta (exceto na classificação secundária ajustada por custo).
 
 ### 6.1 Métricas de Token
 
@@ -332,10 +332,10 @@ Métricas de custo medem a eficiência financeira de um método de tradução. E
 
 | ID | Métrica | Computação | Caso de Uso |
 |----|--------|-------------|----------|
-| `total_cost_usd` | Custo total de execução | Preço relatado pelo provedor × contagens de token | "Quanto custou este benchmark?" |
+| `total_cost_usd` | Custo total de execução | Preço reportado por provedor × contagens de token | "Quanto custou este benchmark?" |
 | `cost_per_entry_usd` | Custo por entrada de corpus | `total_cost_usd / entry_count` | Comparando métodos no mesmo corpus |
 | `cost_per_1k_tokens` | Custo por 1.000 tokens | ✅ `total_cost_usd / total_tokens × 1000` | Eficiência universal de LLM — comparável entre corpora |
-| `cost_per_source_char` | Custo por caractere de origem | `total_cost_usd / total_source_chars` | Comparável entre idiomas com tokenização diferente |
+| `cost_per_source_char` | Custo por caractere fonte | `total_cost_usd / total_source_chars` | Comparável entre idiomas com tokenização diferente |
 
 > **Por que múltiplas métricas de custo?** Uma "entrada" varia em comprimento — uma frase de 3 palavras custa menos do que um parágrafo. `cost_per_entry_usd` é útil para comparar métodos no *mesmo* corpus (mesmas entradas = mesmos comprimentos = comparação justa). `cost_per_1k_tokens` é a métrica de eficiência de LLM padrão, comparável *entre* corpora. `cost_per_source_char` normaliza para diferenças de tokenização — a mesma sentença pode tokenizar em números diferentes de tokens dependendo do vocabulário do modelo.
 
@@ -347,7 +347,7 @@ Para métodos usando APIs pagas, computamos uma classificação secundária:
 cost_adjusted = composite / log2(1 + cost_per_entry_usd × 1000)
 ```
 
-Isso recompensa métodos que alcançam boas pontuações eficientemente. Usa `cost_per_entry_usd` (não por token) porque a pontuação ajustada por custo é sempre computada dentro de um único benchmark (mesmo corpus), tornando comparação por entrada justa.
+Isto recompensa métodos que alcançam boas pontuações eficientemente. Usa `cost_per_entry_usd` (não por token) porque a pontuação ajustada por custo é sempre computada dentro de um único benchmark (mesmo corpus), tornando comparação por entrada justa.
 
 A pontuação ajustada por custo é uma **classificação secundária** — o leaderboard primário classifica por pontuação composta. Ela responde uma pergunta diferente: "dado um orçamento, qual método dá os melhores resultados?"
 
@@ -374,12 +374,12 @@ Métricas de velocidade medem latência e throughput de um método de tradução
 
 Todas as métricas-chave suportam intervalos de confiança bootstrap (método percentil, n=1000 reamostragens, α=0.05):
 
-| Métrica | IC Relatado |
+| Métrica | IC Reportado |
 |--------|------------|
 | `chrf_plus_plus` | ✅ `chrf_ci_lower`, `chrf_ci_upper` |
 | `exact_match_rate` | ✅ `exact_match_ci_lower`, `exact_match_ci_upper` |
 | `fst_acceptance_rate` | ✅ `fst_ci_lower`, `fst_ci_upper` (computado apenas quando dados FST existem) |
-| `comet_score` | ✅ `comet_ci_lower`, `comet_ci_upper` (reamostragem de pontuações por entrada em cache — sem inferência neural redundante) |
+| `comet_score` | ✅ `comet_ci_lower`, `comet_ci_upper` (bootstrapped de pontuações por entrada em cache — sem inferência neural redundante) |
 | `composite` | ✅ `composite_ci_lower`, `composite_ci_upper` (computado quando chrF++ e exact_match estão disponíveis) |
 | ICs por nível | ✅ `confidence_intervals_by_tier` — ICs de chrF++ e exact_match por nível de dificuldade (Nível 1-5) |
 
@@ -477,11 +477,11 @@ Esta seção define a estrutura hierárquica do bloco `scores` em um run card. E
 }
 ```
 
-> **Histórico de esquema.** Rascunhos de especificação anteriores propuseram blocos `cost`, `speed` e `tokens` separados. Estes foram mesclados em `scores` e `totals` respectivamente por simplicidade. Métricas de velocidade (`tokens_per_second`, `entries_per_minute`, latências) vivem em `scores`; contagens de token e figuras de custo vivem em `totals`.
+> **Histórico de esquema.** Rascunhos de especificação anteriores propuseram blocos separados `cost`, `speed` e `tokens`. Estes foram mesclados em `scores` e `totals` respectivamente por simplicidade. Métricas de velocidade (`tokens_per_second`, `entries_per_minute`, latências) vivem em `scores`; contagens de token e figuras de custo vivem em `totals`.
 
 ### 9.1 Mapeamento Esquema–Banco de Dados
 
-O JSON de run card é armazenado em sua totalidade como coluna `jsonb` no Supabase. Métricas-chave também são desnormalizadas em colunas de nível superior para desempenho de classificação/filtro:
+O JSON de run card é armazenado em sua totalidade como coluna `jsonb` em Supabase. Métricas-chave também são desnormalizadas em colunas de nível superior para desempenho de ordenação/filtro:
 
 | Campo de Run Card | Coluna Supabase | Tipo | Índice |
 |---------------|----------------|------|-------|
@@ -534,7 +534,7 @@ O arquivo `arena/mt_eval_harness/scoring.py` espelha as tabelas de peso e limite
 
 1. Atualize `scoring.py` para corresponder
 2. Execute `pytest tests/test_scoring_ssot.py` para validar alinhamento
-3. Atualize documentação de FAQ e website que resumem os pesos
+3. Atualize FAQ e docs de website que resumem os pesos
 
 ### 10.3 Documentos Que Fazem Referência a Esta Especificação
 
@@ -551,30 +551,30 @@ O arquivo `arena/mt_eval_harness/scoring.py` espelha as tabelas de peso e limite
 
 | Métrica | Por Que Excluída |
 |--------|-------------|
-| **BLEU** | Pontuação no nível de palavra penaliza variação morfológica em idiomas polissintéticos. Uma diferença inflexional menor (significado correto, sufixo ligeiramente diferente) conta como um miss completo. chrF++ lida melhor com isso no nível de caractere. |
-| **COMET** | Treinado em dados WMT (pares europeus de alto recurso). Pontuações para LRLs são não confiáveis — o modelo está extrapolando de idiomas com sistemas morfológicos diferentes. Relatado por transparência, não para pontuação. |
-| **TER** | Distância de edição correlaciona com chrF++ para maioria dos casos de uso. Incluir ambos dobraria a contagem de similaridade de superfície. TER é relatado para referência. |
+| **BLEU** | Pontuação no nível de palavra penaliza variação morfológica em idiomas polissintéticos. Uma diferença inflexional menor (significado correto, sufixo ligeiramente diferente) conta como uma falha completa. chrF++ lida melhor com isto no nível de caractere. |
+| **COMET** | Treinado em dados WMT (pares europeus de alto recurso). Pontuações para LRLs são não confiáveis — o modelo está extrapolando de idiomas com sistemas morfológicos diferentes. Reportado por transparência, não para pontuação. |
+| **TER** | Distância de edição correlaciona com chrF++ para maioria dos casos de uso. Incluir ambos dobraria a contagem de similaridade de superfície. TER é reportado para referência. |
 | **Razão de Comprimento** | Um diagnóstico, não um sinal de qualidade. Uma razão de 1.02 e uma razão de 0.98 são ambas boas. Apenas valores extremos indicam problemas. |
-| **Pontuação de Consistência** | Apenas nível de corpus — sem valor por entrada para agregar. Também, alguma inconsistência é legítima (mesma palavra em inglês → diferentes traduções de idioma de destino dependendo do contexto). |
+| **Pontuação de Consistência** | Apenas nível de corpus — sem valor por entrada para agregar. Também, alguma inconsistência é legítima (mesma palavra em inglês → diferentes traduções em idioma alvo dependendo de contexto). |
 | **Índice de Conformidade** | Portão de qualidade, não sinal de qualidade. Mede preservação estrutural (placeholders, aspas), não precisão de tradução. |
 
-## Apêndice B: LYSS — Implementações de Métrica Específicas de Idioma
+## Apêndice B: LYSS — Implementações de Métrica Específica de Idioma
 
 O framework **LYSS** (Linguistically-informed Yield & Structural Scoring) fornece métricas específicas de idioma que vão além de comparação de string de nível de superfície. LYSS tem três componentes principais:
 
-- **LYSS-fst** — Validade morfológica (`fst_acceptance_rate`): Cada palavra é uma forma válida no idioma de destino?
+- **LYSS-fst** — Validade morfológica (`fst_acceptance_rate`): Cada palavra é uma forma válida no idioma alvo?
 - **LYSS-eq** — Equivalência linguística (`equivalent_match_rate`): A saída é uma variante aceitável da referência?
-- **LYSS-sem** — Validação semântica (`semantic_score`): A saída preserva o significado da origem?
+- **LYSS-sem** — Validação semântica (`semantic_score`): A saída preserva o significado da fonte?
 
 > **Status de validação: 🔶 Heurística de engenharia.** Métricas LYSS NÃO foram validadas contra julgamentos de qualidade humana. Elas são projetadas a partir de princípios linguísticos (FSTs, dicionários, regras gramaticais construídas por linguistas no ALTLab da UAlberta), mas a correlação entre pontuações LYSS e qualidade de tradução real não foi medida. Ver [Protocolo de Validação de Falante](/docs/specifications/speaker-validation) para os experimentos de validação necessários.
 
 | Idioma | Plugin | Localização | Componente LYSS | Chave de Métrica | Notas |
 |----------|--------|----------|----------------|------------|-------|
-| CRK (Plains Cree) | `CrkLinterMetric` | `eval_standards/crk/metrics.py` | **LYSS-eq** | `equivalent_match_rate` | Regras de classe de variante determinística: ordem de palavras, ortográfica, partícula opcional, sinônimo de lema, ambiguidade progressiva, inclusivo/exclusivo. Produz `lint_verdict` por entrada (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
+| CRK (Plains Cree) | `CrkLinterMetric` | `eval_standards/crk/metrics.py` | **LYSS-eq** | `equivalent_match_rate` | Regras de classe de variante determinísticas: ordem de palavras, ortográfica, partícula opcional, sinônimo de lema, ambiguidade progressiva, inclusivo/exclusivo. Produz `lint_verdict` por entrada (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
 | CRK | `CrkSemanticMetric` | `eval_standards/crk/metrics.py` | **LYSS-sem** | `semantic_score` | Determinístico: extração de lema FST + glossas de dicionário + sobreposição de palavra de conteúdo spaCy. Produz veredictos (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
 | Idiomas GiellaLT | `GiellaLTFSTMetric` | `plugins/giellalt_fst.py` | **LYSS-fst** | `fst_acceptance_rate` | Genérico: funciona para CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — qualquer idioma com analisador `.hfstol`. |
 
-> **Nota de arquitetura (junho de 2026).** Métricas LYSS específicas de idioma agora são declaradas no cartão de idioma sob `evalMetrics` e carregadas de `eval_standards/<lang>/` por `plugin_discovery.py`. Elas são **padrões de avaliação** (árbitro), não métricas de plugin de método (concorrente). Isso significa qualquer método de tradução direcionado a CRK é automaticamente pontuado por LYSS — nenhuma configuração específica de método necessária. `CrkFSTMetric` foi removido; sua funcionalidade é totalmente coberta pelo `GiellaLTFSTMetric` genérico.
+> **Nota de arquitetura (junho de 2026).** Métricas LYSS específicas de idioma agora são declaradas no cartão de idioma sob `evalMetrics` e carregadas de `eval_standards/<lang>/` por `plugin_discovery.py`. Elas são **padrões de avaliação** (árbitro), não métricas de plugin de método (concorrente). Isto significa qualquer método de tradução visando CRK é automaticamente pontuado por LYSS — nenhuma configuração específica de método necessária. `CrkFSTMetric` foi removido; sua funcionalidade é totalmente coberta pelo `GiellaLTFSTMetric` genérico.
 
 ## Apêndice C: Métricas Sob Consideração
 
@@ -582,7 +582,7 @@ Estas são ideias sendo avaliadas mas ainda não especificadas o suficiente para
 
 | Ideia | O Que Mediria | Bloqueadores |
 |------|----------------------|----------|
-| Fluência (perplexidade de LM) | A saída é prosa bem-formada no idioma de destino? | Requer um LM de idioma de destino. Nenhum bom modelo existe para maioria dos LRLs. |
+| Fluência (perplexidade de LM) | A saída é prosa bem-formada no idioma alvo? | Requer um LM de idioma alvo. Nenhum bom modelo existe para maioria dos LRLs. |
 | Correspondência de registro | A tradução corresponde ao nível de formalidade esperado? | Requer classificadores sociolinguísticos. Problema de pesquisa. |
 | Apropriação cultural | Referências culturais são tratadas corretamente? | Não pode ser automatizado — inerentemente requer revisão humana. |
 | Coerência de discurso | Traduções consecutivas formam uma passagem coerente? | Requer avaliação no nível de documento, não no nível de sentença. |

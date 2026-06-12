@@ -5,9 +5,9 @@ slug: '/specifications/corpus-partnership'
 ---
 # Stratégie de partenariat de corpus : établir des corpus d'évaluation par le biais de départements de linguistique universitaires
 
-> **Objectif.** Ce document fournit le flux de travail complet pour établir un corpus d'évaluation de traduction automatique par le biais d'un partenariat avec un département de linguistique. Il couvre ce que nous avons besoin que le département livre, à quoi le corpus doit ressembler, comment il est scellé cryptographiquement, comment fonctionne l'évaluation en bac à sable, et ce que le département reçoit en retour. C'est le document que vous apportez à une réunion avec un partenaire académique potentiel.
+> **Objectif.** Ce document fournit le flux de travail complet pour établir un corpus d'évaluation de traduction automatique par le biais d'un partenariat avec un département de linguistique. Il couvre ce que nous avons besoin que le département livre, à quoi le corpus doit ressembler, comment il est scellé cryptographiquement, comment fonctionne l'évaluation en sandbox, et ce que le département reçoit en retour. C'est le document que vous apportez à une réunion avec un partenaire académique potentiel.
 >
-> **Public cible.** Directeurs de département, chercheurs principaux, coordonnateurs de recherche et directeurs de programmes de langues autochtones dans les universités ayant des programmes actifs de documentation linguistique ou de traitement automatique des langues naturelles.
+> **Public cible.** Directeurs de département, chercheurs principaux, coordonnateurs de recherche et directeurs de programmes de langues autochtones dans les universités ayant des programmes actifs de documentation linguistique ou de traitement automatique des langues.
 >
 > **Documents connexes :**
 > - [Protocole de validation des locuteurs](/docs/specifications/speaker-validation) — la demande adressée aux locuteurs bilingues pour *marquer* les traductions existantes (évaluation de la qualité, validation du linter, examen FST)
@@ -20,14 +20,14 @@ slug: '/specifications/corpus-partnership'
 
 ## 1. Ce que ce partenariat produit
 
-Un **corpus d'évaluation scellé** : un ensemble organisé de paires de textes parallèles (langue source → langue cible) qui devient la vérité de référence pour mesurer la qualité de la traduction automatique. Les méthodes sont testées contre ce corpus dans un bac à sable — les développeurs ne voient jamais les données de test.
+Un **corpus d'évaluation scellé** : un ensemble organisé de paires de textes parallèles (langue source → langue cible) qui devient la vérité de référence pour mesurer la qualité de la traduction automatique. Les méthodes sont testées contre ce corpus dans un sandbox — les développeurs ne voient jamais les données de test.
 
 Le partenariat produit trois artefacts :
 
 | Artefact | Ce que c'est | Qui le contrôle |
 |----------|-----------|-----------------|
 | **Corpus de développement** | 100–200+ paires de textes parallèles publiques pour le développement de méthodes | Publié ouvertement (CC BY-NC-SA 4.0 ou équivalent) |
-| **Ensemble de test de référence** | 50–150 paires de textes parallèles secrètes pour l'évaluation officielle | Organisme de gouvernance communautaire (scellé cryptographiquement) |
+| **Ensemble de test de référence** | 50–150 paires de textes parallèles secrètes pour l'évaluation officielle | Organisation de gouvernance communautaire (scellée cryptographiquement) |
 | **Suite de tests diagnostiques** | 10–50 paires contrastives ciblées testant des phénomènes linguistiques spécifiques | Publié ouvertement |
 
 Le corpus de développement permet à quiconque de construire des méthodes de traduction. L'ensemble de test de référence garantit que ces méthodes sont testées honnêtement. La suite diagnostique détecte les modes de défaillance spécifiques (par exemple, « ce système peut-il gérer l'obviation ? »).
@@ -44,12 +44,12 @@ Le corpus de développement permet à quiconque de construire des méthodes de t
 
    | Priorité | Domaine | Pourquoi |
    |----------|--------|-----|
-   | 🔴 Élevée | `edu` — Éducation | Manuels scolaires, programmes d'études — besoin direct de la communauté |
-   | 🔴 Élevée | `gov` — Gouvernement | Documents du conseil de bande, politique — besoin pratique quotidien |
-   | 🔴 Élevée | `medical` — Santé | Formulaires d'admission à la clinique, informations de santé — critique pour la sécurité |
-   | 🟡 Moyenne | `conv` — Conversationnel | Langage courant — établit la fluidité de base |
+   | 🔴 Élevée | `edu` — Éducatif | Manuels scolaires, programmes d'études — besoin direct de la communauté |
+   | 🔴 Élevée | `gov` — Gouvernemental | Documents du conseil de bande, politiques — besoin pratique quotidien |
+   | 🔴 Élevée | `medical` — Santé | Formulaires d'admission à la clinique, informations sanitaires — critique pour la sécurité |
+   | 🟡 Moyenne | `conv` — Conversationnel | Discours quotidien — établit la fluidité de base |
    | 🟡 Moyenne | `legal` — Juridique | Documents de droits, traités — importance communautaire |
-   | 🟢 Inférieure | `literary` — Littéraire/Culturel | Histoires, traditions orales — préservation culturelle |
+   | 🟢 Inférieure | `literary` — Littéraire/Culturel | Histoires, histoires orales — préservation culturelle |
 
 2. **Rédiger un document de conception du corpus** spécifiant :
    - Taille cible par segment (développement, gold_standard, diagnostique)
@@ -65,8 +65,8 @@ Le corpus de développement permet à quiconque de construire des méthodes de t
 **Responsable :** Coordonnateur de recherche travaillant avec des locuteurs bilingues.
 
 1. **Générer ou sélectionner des phrases source** dans les domaines et niveaux de difficulté prévus. Les sources peuvent être :
-   - Matériaux bilingues publiés existants (manuels scolaires, documents gouvernementaux)
-   - Phrases nouvellement élicitées conçues pour couvrir des phénomènes linguistiques spécifiques
+   - Des matériaux bilingues publiés existants (manuels scolaires, documents gouvernementaux)
+   - Des phrases nouvellement élicitées conçues pour couvrir des phénomènes linguistiques spécifiques
    - Adaptées à partir de documents du monde réel (ordres du jour du conseil de bande, formulaires de clinique, matériels éducatifs)
 
 2. **Chaque phrase source doit avoir :**
@@ -93,7 +93,7 @@ Le corpus de développement permet à quiconque de construire des méthodes de t
    - L'évaluation de la difficulté est-elle correcte ?
    - Y a-t-il des variantes acceptables qui devraient être notées ?
 
-2. **Exécuter le validateur de schéma.** Nous fournissons un script qui valide le corpus par rapport au schéma d'entrée (Benchmark Spec §2.2). Il vérifie :
+2. **Exécuter via notre validateur de schéma.** Nous fournissons un script qui valide le corpus par rapport au schéma d'entrée (Benchmark Spec §2.2). Il vérifie :
    - Les champs obligatoires sont présents
    - Les codes de domaine sont valides
    - Les niveaux de difficulté sont des entiers 1–5
@@ -110,9 +110,9 @@ Le corpus de développement permet à quiconque de construire des méthodes de t
 
    | Segment | Taille cible | Accès |
    |---------|------------|--------|
-   | `development` | 60 % des entrées (min 100) | Public |
-   | `gold_standard` | 30 % des entrées (min 50) | Secret, scellé |
-   | `held_out` | 10 % des entrées (min 10) | Secret, scellé, jamais utilisé jusqu'à activation |
+   | `development` | 60% des entrées (min 100) | Public |
+   | `gold_standard` | 30% des entrées (min 50) | Secret, scellé |
+   | `held_out` | 10% des entrées (min 10) | Secret, scellé, jamais utilisé jusqu'à activation |
 
    La division préserve la distribution des niveaux de difficulté (échantillonnage stratifié) de sorte que chaque segment a une représentation proportionnelle dans tous les niveaux.
 
@@ -201,11 +201,11 @@ Le corpus doit inclure des entrées dans les cinq niveaux de difficulté, pondé
 
 | Niveau | Description | Distribution cible |
 |------|-------------|-------------------|
-| 1 — Vocabulaire de base | Mots simples, salutations courantes, nombres | 10–15 % |
-| 2 — Phrases simples | SVO, temps présent | 25–30 % |
-| 3 — Complexité modérée | Temps passé/futur, possessifs, animacité | 30–35 % |
-| 4 — Morphologie complexe | Obviation, passif, ordre conjoint, propositions relatives | 15–20 % |
-| 5 — Avancé | Multi-clauses, registre formel, cérémoniel, idiomatique | 5–10 % |
+| 1 — Vocabulaire de base | Mots simples, salutations courantes, nombres | 10–15% |
+| 2 — Phrases simples | SVO, temps présent | 25–30% |
+| 3 — Complexité modérée | Temps passé/futur, possessifs, animacité | 30–35% |
+| 4 — Morphologie complexe | Obviation, passif, ordre conjoint, propositions relatives | 15–20% |
+| 5 — Avancé | Multi-clauses, registre formel, cérémoniel, idiomatique | 5–10% |
 
 ### 3.4 Suite de tests diagnostiques
 
@@ -213,7 +213,7 @@ Le segment diagnostique teste des phénomènes linguistiques spécifiques en uti
 
 Pour les langues polysynthétiques, la suite de tests diagnostiques doit cibler :
 
-| Phénomène | Exemple (Cree) | Ce qu'il teste |
+| Phénomène | Exemple (Cri) | Ce qu'il teste |
 |-----------|----------------|--------------|
 | **Accord d'animacité** | atim (AN) vs. maskisin (IN) — formes verbales différentes | Le système sait-il quels noms sont animés ? |
 | **Obviation** | Troisième personne proximale vs. obviative | Suit-il la hiérarchie de la troisième personne ? |
@@ -225,9 +225,9 @@ Pour les autres familles linguistiques, identifiez les 3–5 phénomènes les pl
 
 ### 3.5 Ce que nous ne voulons PAS
 
-| Anti-modèle | Pourquoi |
+| Anti-motif | Pourquoi |
 |-------------|-----|
-| **Texte biblique uniquement** | Registre archaïque, vocabulaire liturgique, structure formulaïque. OMT-1600 a évalué 1 560 langues de cette façon — nous l'évitons délibérément. |
+| **Texte Bible uniquement** | Registre archaïque, vocabulaire liturgique, structure formulaïque. OMT-1600 a évalué 1 560 langues de cette façon — nous l'évitons délibérément. |
 | **Paires d'évaluation synthétiques** | Les références générées par LLM contredisent l'objectif de l'évaluation. La référence doit être rédigée par un humain. |
 | **Corpus à registre unique** | Tout formel, ou tout conversationnel. La traduction du monde réel s'étend sur plusieurs registres. |
 | **Difficulté-1 uniquement** | Les mots simples et les salutations ne testent pas la traduction — ils testent la recherche de vocabulaire. |
@@ -236,18 +236,18 @@ Pour les autres familles linguistiques, identifiez les 3–5 phénomènes les pl
 
 ---
 
-## 4. Scellement cryptographique et test en bac à sable
+## 4. Scellement cryptographique et tests en sandbox {#4-cryptographic-sealing-and-sandbox-testing}
 
 ### 4.1 Pourquoi sceller l'ensemble de test ?
 
-Les benchmarks ML conventionnels publient les ensembles de test ouvertement. Une fois publiés, les LLM de pointe s'entraîneront finalement sur eux (intentionnellement ou par scraping web), rendant les scores peu fiables. Pour les données linguistiques autochtones, il y a une préoccupation supplémentaire : les données linguistiques publiées peuvent être utilisées sans consentement communautaire.
+Les benchmarks ML conventionnels publient les ensembles de test ouvertement. Une fois publiés, les LLM de pointe s'entraîneront finalement sur eux (intentionnellement ou par web scraping), rendant les scores peu fiables. Pour les données linguistiques autochtones, il y a une préoccupation supplémentaire : les données linguistiques publiées peuvent être utilisées sans consentement communautaire.
 
 Le scellement garantit :
 - **Intégrité de l'ensemble de test :** Les méthodes ne peuvent pas surapprentissage sur des données qu'elles n'ont jamais vues
 - **Souveraineté des données :** La communauté contrôle qui évalue par rapport à ses données
 - **Fraîcheur perpétuelle :** L'ensemble de test ne devient jamais contaminé
 
-### 4.2 Comment fonctionne le test en bac à sable
+### 4.2 Comment fonctionne les tests en sandbox
 
 ```
 Developer workflow:
@@ -273,11 +273,11 @@ La clé de chiffrement pour l'ensemble de test scellé est divisée en utilisant
 
 | Détenteur de part | Rôle | Pouvoir de révocation |
 |-------------|------|-----------------|
-| **Organisme de gouvernance communautaire** | Dépositaire principal | Peut révoquer l'accès à l'évaluation unilatéralement |
+| **Organisation de gouvernance communautaire** | Dépositaire principal | Peut révoquer l'accès à l'évaluation unilatéralement |
 | **Partenaire du département académique** | Co-dépositaire | Peut participer à la reconstruction de la clé |
 | **Projet Champollion** | Séquestre | Ne peut pas accéder aux données seul ; assure la continuité si les autres parties deviennent indisponibles |
 
-N'importe quelle 2 des 3 parts reconstruit la clé. Cela signifie :
+N'importe quelles 2 des 3 parts reconstruisent la clé. Cela signifie :
 - La communauté + le département peuvent accéder aux données sans Champollion
 - La communauté + Champollion peuvent accéder aux données sans le département
 - Champollion seul ne peut JAMAIS accéder aux données
@@ -336,7 +336,7 @@ Cela prouve :
 | **Harnais d'évaluation** | Un cadre d'évaluation fonctionnel et testé pour leur langue — économise des mois de construction d'outils |
 | **Métriques LYSS** | Métriques d'évaluation spécifiques à la langue (LYSS-fst, LYSS-eq, LYSS-sem) configurées pour leur langue — si les ressources FST et dictionnaire existent |
 | **Classement** | Un classement public et en direct montrant l'état de l'art pour leur paire linguistique |
-| **Benchmark de base** | Balayage de 12 modèles fournissant immédiatement des bases publiables |
+| **Benchmark de base** | Balayage de 12 modèles fournissant des bases immédiatement publiables |
 | **Suite de tests diagnostiques** | Tests ciblés pour des phénomènes linguistiques spécifiques — réutilisables pour d'autres évaluations |
 
 ### 5.2 Publications
@@ -363,7 +363,7 @@ Le partenariat fournit des résultats concrets pour les propositions de subventi
 ### 5.4 Impact communautaire
 
 - La communauté linguistique gagne une **capacité d'évaluation indépendante** — elle peut évaluer si un système de TA (Google, Meta ou personnalisé) fonctionne réellement pour sa langue
-- La communauté **contrôle les données de test** via la garde cryptographique des clés
+- La communauté **contrôle les données de test** via la garde des clés cryptographiques
 - Toute méthode prouvée par le biais du benchmark **transfère la propriété** à la communauté (voir Benchmark Spec §8.3)
 - Les revenus des méthodes déployées vont à la communauté (répartition 90/10)
 
@@ -394,14 +394,14 @@ Nous fournissons toute l'ingénierie, la configuration du harnais, la configurat
 
 ---
 
-## 7. Comment commencer
+## 7. Comment commencer {#7-how-to-get-started}
 
 1. **Nous contacter** — [email/contact du projet]. Nous planifierons un appel de 30 minutes pour discuter de votre langue, des ressources disponibles et de la logistique du partenariat.
 
 2. **Nous fournissons :**
    - Ce document
    - Le schéma du corpus et les outils de validation
-   - Des exemples de notre corpus Cree (CRK) existant
+   - Des exemples de notre corpus Cri (CRK) existant
    - Un modèle de conception de corpus brouillon
 
 3. **Vous fournissez :**
@@ -428,7 +428,7 @@ C'est bien. LYSS-fst (validité morphologique) nécessite un FST, mais le harnai
 
 ### « Nos locuteurs utilisent un script non-latin. »
 
-Entièrement supporté. Le schéma du corpus gère n'importe quel script Unicode. Nous avons conçu pour SRO (Standard Roman Orthography) et les syllabaires pour Cree, mais la même infrastructure fonctionne pour Devanagari, le script arabe, CJK, Éthiopique ou tout autre système d'écriture.
+Entièrement supporté. Le schéma du corpus gère n'importe quel script Unicode. Nous avons conçu pour SRO (Standard Roman Orthography) et les syllabaires pour le Cri, mais la même infrastructure fonctionne pour Devanagari, le script arabe, CJK, Éthiopique ou tout autre système d'écriture.
 
 ### « Qu'en est-il de la variation dialectale ? »
 
@@ -436,15 +436,15 @@ Entièrement supporté. Le schéma du corpus gère n'importe quel script Unicode
 
 ### « Qui possède le corpus ? »
 
-La communauté linguistique, via l'organisme de gouvernance. Le département est crédité en tant que partenaire de recherche. Champollion détient une part de clé en séquestre pour la continuité opérationnelle mais ne peut pas accéder aux données scellées seul. Le segment de développement est publié sous une licence Creative Commons spécifiée par la communauté.
+La communauté linguistique, via l'organisation de gouvernance. Le département est crédité en tant que partenaire de recherche. Champollion détient une part de clé en séquestre pour la continuité opérationnelle mais ne peut pas accéder aux données scellées seul. Le segment de développement est publié sous une licence Creative Commons spécifiée par la communauté.
 
 ### « Que se passe-t-il si nous voulons arrêter ? »
 
 La communauté peut révoquer l'accès à l'évaluation à tout moment en refusant de reconstruire la clé de chiffrement. Les données scellées ne sont jamais exposées. Le segment de développement, déjà publié, reste public sous sa licence. Les résultats de recherche du département (publications, présentations) lui appartiennent indépendamment.
 
-### « Que se passe-t-il si l'organisme de gouvernance n'existe pas encore ? »
+### « Que se passe-t-il si l'organisation de gouvernance n'existe pas encore ? »
 
-Nous pouvons commencer par les Phases 1–3 (conception du corpus, création, AQ) sans organisme de gouvernance. Le scellement (Phase 4) nécessite d'identifier un dépositaire de clé. En attendant, le département peut servir de co-dépositaire aux côtés du projet Champollion, avec la compréhension que la garde est transférée à l'organisme de gouvernance communautaire lorsqu'il est établi.
+Nous pouvons commencer par les Phases 1–3 (conception du corpus, création, AQ) sans organisation de gouvernance. Le scellement (Phase 4) nécessite d'identifier un dépositaire de clé. En attendant, le département peut servir de co-dépositaire aux côtés du projet Champollion, avec la compréhension que la garde est transférée à l'organisation de gouvernance communautaire lorsqu'une est établie.
 
 ---
 

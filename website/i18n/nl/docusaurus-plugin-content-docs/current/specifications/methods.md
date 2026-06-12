@@ -19,9 +19,9 @@ related:
 ---
 # Gedeelde Methode-interface
 
-> **Samenvatting.** Deze pagina specificeert het `TranslationMethod`-protocol dat alle Arena-methoden moeten implementeren, de zes methodeklassen (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), het methode-pluginformaat en de **afhankelijkheidsklassen** (S/O/A1/A2/X) die bepalen of een methode in de evaluatiesandbox kan worden uitgevoerd en in aanmerking komt voor prijzen. Elke aanpak die dit protocol implementeert kan worden gebenchmarkt; wat de aanpak vereist, bepaalt in welke categorie deze kan meedingen.
+> **Samenvatting.** Deze pagina specificeert het `TranslationMethod`-protocol dat alle Arena-methoden moeten implementeren, de zes methodeklassen (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), het methode-pluginformaat en de **afhankelijkheidsklassen** (S/O/A1/A2/X) die bepalen of een methode in de evaluatiesandbox kan worden uitgevoerd en in aanmerking komt voor prijzen. Elke aanpak die dit protocol implementeert, kan worden gebenchmarkt; wat de methode vereist, bepaalt in welke categorie zij kan meedingen.
 
-De eval-harness en champollion delen een gemeenschappelijk concept van **vertaalmethode**. Een methode is elke procedure die brontekst als invoer neemt en vertaalde tekst produceert — of het nu een directe LLM-aanroep is, een meerfasige pijplijn, een externe API of een menselijke vertaler.
+De eval-harness en champollion delen een gemeenschappelijk concept van **vertaalmethode**. Een methode is elke procedure die brontekst als invoer neemt en vertaalde tekst produceert — of het nu een directe LLM-aanroep is, een meerfasige pijplijn, een externe API, of een menselijke vertaler.
 
 ## Architectuur
 
@@ -43,16 +43,16 @@ Geladen via `--method path/to/dir`. De harness detecteert niets automatisch.
 | **Toegangspunt** | `translate.py` | `translate.js` |
 | **Interface** | `TranslationMethod`-protocol | `methodPlugin`-configuratie |
 | **Doel** | Batchevaluatie met scoring | Live lokalisatie in dev/CI |
-| **Uitvoer** | Run card met metriekwaarden | Vertaalde localisatiebestanden |
+| **Uitvoer** | Run card met metriekwaarden | Vertaalde locale-bestanden |
 
-Een methode die beide systemen ondersteunt, biedt twee toegangspunten — één voor elke taalruntime. De **method card** vormt de brug: deze beschrijft de methode in een formaat dat beide systemen begrijpen.
+Een methode die beide systemen ondersteunt, biedt twee toegangspunten — één voor elke taalruntime. De **method card** vormt de brug: zij beschrijft de methode in een formaat dat beide systemen begrijpen.
 
-## Method Card
+## Method Card {#method-card}
 
-Een method card beschrijft *wat* een vertaalmethode is, zonder eigendomsgevoelige details zoals de volledige systeemprompt prijs te geven. De card beantwoordt de volgende vragen:
+Een method card beschrijft *wat* een vertaalmethode is, zonder eigendomsgevoelige details zoals de volledige systeemprompt prijs te geven. Zij beantwoordt de volgende vragen:
 
 - Tot welke klasse behoort deze methode? (ruwe LLM, gecoachte LLM, pijplijn, API, enz.)
-- Welke hulpmiddelen gebruikt de methode? (FST-analysator, woordenboek, enz.)
+- Welke hulpmiddelen gebruikt zij? (FST-analysator, woordenboek, enz.)
 - Is de implementatie open source?
 - Welke taalparen worden ondersteund?
 
@@ -87,9 +87,9 @@ Het veld `dependency_class` geeft een samenvatting van wat de methode nodig heef
 | `api` | Externe vertaal-API (Google Translate, DeepL, enz.) |
 | `human` | Menselijke vertaling (voor het vaststellen van basislijnen) |
 
-## Methodegeldigheid en afhankelijkheidsklassen
+## Methodegeldigheid en afhankelijkheidsklassen {#method-validity-and-dependency-classes}
 
-Een methode is slechts zo uitvoerbaar en overdraagbaar als haar minst beschikbare afhankelijkheid. Twee Arena-mechanismen zijn afhankelijk van een nauwkeurige kennis van wat een methode vereist:
+Een methode is slechts zo uitvoerbaar en overdraagbaar als haar minst beschikbare afhankelijkheid. Twee Arena-mechanismen zijn afhankelijk van een exacte kennis van wat een methode vereist:
 
 1. **Sandbox-evaluatie** ([Benchmark Specification §8.2](/docs/specifications/benchmark)) — officiële goudstandaard-scores worden gegenereerd in een sandbox waarvan het netwerkbeleid **standaard-weigeren** is. Een methode die stilzwijgend een externe dienst vereist, kan geen officiële score produceren.
 2. **Prijsoverdracht** ([Prize Specification](/docs/specifications/prizes)) — prijswinnende methoden worden overgedragen aan de bestuursorganisatie van de taalgemeenschap. Een methode die inhoud bevat waarop de indiener geen rechten heeft, kan niet rechtmatig worden overgedragen. De indiener moet de rechten bezitten (of verleend hebben gekregen) op alles wat in het pakket is opgenomen.
@@ -103,21 +103,21 @@ Om beide controles mechanisch in plaats van ad hoc te maken, declareert elke met
 | Klasse | Naam | Definitie | Uitvoerbaar in sandbox? | In aanmerking voor prijs? |
 |-------|------|-----------|-------------------|-----------------|
 | **S** | Zelfvoorzienend | Alle code, gegevens, modellen en gewichten worden meegeleverd in de methodemap, onder licenties die herdistributie en overdracht aan de gemeenschap toestaan. | ✅ Ja, zonder aanpassingen | ✅ Ja |
-| **O** | Open extern | Afhankelijk van extern gehoste artefacten onder open licenties die herdistributie toestaan (inclusief copyleft-licenties zoals AGPL) — bijv. een FST die bij installatie wordt gedownload. | ✅ Ja — artefacten zijn vastgezet en **gespiegeld in de inzending** | ✅ Ja, met licentiecompatibiliteitsvoorwaarden: copyleft-bepalingen blijven van kracht na overdracht, en de gemeenschap ontvangt dezelfde rechten die de licentie aan iedereen verleent |
-| **A1** | API-afhankelijk, vervangbaar | Vereist LLM-inferentie tijdens uitvoering, waarbij het model **vervangbare configuratie** is — elk voldoende capabel model kan worden ingeplugd. De waarde van de methode ligt in de prompts, coachinggegevens en code, niet in het model van een specifieke aanbieder. | ⚠️ Alleen via de **LLM-gateway** die de sandboxspecificatie definieert (🔲 gepland — zie hieronder) | ⚠️ Voorwaardelijk — zie hieronder |
-| **A2** | API-afhankelijk, niet-vervangbaar | Vereist aanroepen tijdens uitvoering naar een externe gegevens- of dienst-API die niet gespiegeld of vervangen kan worden — doorgaans omdat de aangeboden inhoud eigendomsrechtelijk beschermd of niet-gelicentieerd is (bijv. een woordenboek-API waarvan het onderliggende woordenboek geen publieke licentie heeft). | ❌ Nee — de afhankelijkheid kan niet in de sandbox bestaan zonder toestemming van de rechthebbende | ❌ Niet totdat de rechthebbende sandbox-opname **en** overdrachtsrechten verleent. Toegestaan op het open (ontwikkelingssegment) leaderboard met een zichtbare **"externe afhankelijkheid"**-markering |
-| **X** | Gesloten | Bevat inhoud waarop de indiener geen recht heeft tot herdistributie — niet-gelicentieerde datasets, gescrapte eigendomsrechtelijk beschermde inhoud, licentie-incompatibele componenten. | ❌ | ❌ Niet toegelaten in elke categorie. Het bundelen van inhoud zonder rechten is een licentieovertreding, ongeacht waar de methode wordt uitgevoerd |
+| **O** | Open extern | Afhankelijk van extern gehoste artefacten onder open licenties die herdistributie toestaan (inclusief copyleft-licenties zoals AGPL) — bijv. een FST die bij installatie wordt gedownload. | ✅ Ja — artefacten zijn vastgepind en **gespiegeld in de inzending** | ✅ Ja, met licentiecompatibiliteitsvoorwaarden: copyleft-bepalingen blijven behouden bij overdracht, en de gemeenschap ontvangt dezelfde rechten die de licentie aan iedereen verleent |
+| **A1** | API-afhankelijk, vervangbaar | Vereist runtime LLM-inferentie, waarbij het model **vervangbare configuratie** is — elk voldoende capabel model kan worden ingeplugd. De waarde van de methode ligt in haar prompts, coachinggegevens en code, niet in het model van één specifieke aanbieder. | ⚠️ Alleen via de **LLM-gateway** die de sandboxspecificatie definieert (🔲 gepland — zie hieronder) | ⚠️ Voorwaardelijk — zie hieronder |
+| **A2** | API-afhankelijk, niet-vervangbaar | Vereist runtime-aanroepen naar een externe gegevens- of dienst-API die niet gespiegeld of vervangen kan worden — doorgaans omdat de aangeboden inhoud eigendomsrechtelijk beschermd of niet-gelicentieerd is (bijv. een woordenboek-API waarvan het onderliggende woordenboek geen publieke licentie heeft). | ❌ Nee — de afhankelijkheid kan niet in de sandbox bestaan zonder toestemming van de rechthebbende | ❌ Niet totdat de rechthebbende sandbox-opname **en** overdrachtsrechten verleent. Toegestaan op het open (ontwikkelingssegment-)leaderboard met een zichtbare **"externe afhankelijkheid"**-markering |
+| **X** | Gesloten | Bevat inhoud waarop de indiener geen recht heeft tot herdistributie — niet-gelicentieerde datasets, gescrapte eigendomsinhoud, licentie-incompatibele componenten. | ❌ | ❌ Niet toegelaten in elke categorie. Het bundelen van inhoud zonder rechten is een licentieovertreding, ongeacht waar de methode wordt uitgevoerd |
 
-**Effectieve klasse.** De afhankelijkheidsklasse van een methode is de *meest restrictieve* klasse onder alle gedeclareerde afhankelijkheden, in de volgorde S < O < A1 < A2 < X. Één niet-gelicentieerd woordenboek maakt een verder zelfvoorzienende pijplijn tot klasse A2 (indien benaderd tijdens uitvoering) of klasse X (indien gebundeld zonder rechten).
+**Effectieve klasse.** De afhankelijkheidsklasse van een methode is de *meest beperkende* klasse onder al haar gedeclareerde afhankelijkheden, in de volgorde S < O < A1 < A2 < X. Één niet-gelicentieerd woordenboek maakt een verder zelfvoorzienende pijplijn tot Klasse A2 (indien benaderd tijdens runtime) of Klasse X (indien gebundeld zonder rechten).
 
 ### Het A1/A2-onderscheid: vervangbaarheid
 
-De meeste methoden roepen LLM's aan. De Arena doet niet alsof dit anders is — maar maakt onderscheid tussen twee zeer verschillende soorten API-afhankelijkheid:
+De meeste methoden roepen LLM's aan. De Arena doet niet alsof dit anders is — maar zij maakt onderscheid tussen twee zeer verschillende soorten API-afhankelijkheid:
 
-- **A1 (vervangbaar):** De API biedt generieke LLM-inferentie. De modelidentificator is configuratie: de methode moet end-to-end kunnen worden uitgevoerd tegen elk compatibel inferentie-eindpunt, inclusief een door de gemeenschap gehost open-gewichtenmodel. De uitvoerkwaliteit kan verschillen per model — dat is het risico van de ontwikkelaar, en officiële scores zijn gekoppeld aan het vastgezette model dat bij de evaluatie is gebruikt. Een methode die afhankelijk is van **aanbiedersspecifieke toestand** (een fine-tune die alleen bij de aanbieder wordt gehost, bestandsopslag van de aanbieder, aanbiedersspecifieke assistenten) is *niet* vervangbaar: die toestand kan niet worden uitgewisseld, waardoor de afhankelijkheid A2 is, tenzij de onderliggende gewichten of gegevens in de inzending zijn opgenomen.
+- **A1 (vervangbaar):** De API biedt generieke LLM-inferentie. De modelidentificator is configuratie: de methode moet end-to-end kunnen worden uitgevoerd tegen elk compatibel inferentie-eindpunt, inclusief een door de gemeenschap gehost open-gewichtenmodel. De uitvoerkwaliteit kan per model verschillen — dat is het risico van de ontwikkelaar, en officiële scores zijn gekoppeld aan het vastgepinde model dat bij de evaluatie is gebruikt. Een methode die afhankelijk is van **aanbiederzijdige toestand** (een fine-tune die alleen bij de aanbieder wordt gehost, bestandsopslag van de aanbieder, aanbiederspecifieke assistenten) is *niet* vervangbaar: die toestand kan niet worden uitgewisseld, waardoor de afhankelijkheid A2 is, tenzij de onderliggende gewichten of gegevens in de inzending zijn opgenomen.
 - **A2 (niet-vervangbaar):** De API biedt iets unieks — doorgaans eigendomsrechtelijk beschermde of niet-gelicentieerde gegevens. Geen alternatief eindpunt kan dit leveren, en de inhoud kan niet in de sandbox worden gespiegeld zonder toestemming van de rechthebbende. De methode werkt op het open leaderboard (gemarkeerd), maar kan geen officiële sandbox-scores produceren of in aanmerking komen voor prijzen totdat de benodigde toestemmingen zijn verkregen.
 
-**Wat een A1-prijsoverdracht daadwerkelijk omvat.** De gemeenschap ontvangt het model niet — niemand kan de gewichten van Anthropic, Google of OpenAI overdragen. De overdracht omvat het volledige recept *rondom* het model: alle prompts, coachinggegevens, pijplijncode, herhaalpogingslogica, configuratie en gedocumenteerde modelvereisten. Omdat het model per definitie vervangbaar is, kan de gemeenschap de overgedragen methode richten op elke gewenste aanbieder — of op een open-gewichtenmodel op eigen hardware — zonder betrokkenheid van de ontwikkelaar. Het recept is eigendom; de motor wordt gehuurd en is vervangbaar.
+**Wat een A1-prijsoverdracht daadwerkelijk omvat.** De gemeenschap ontvangt het model niet — niemand kan de gewichten van Anthropic, Google of OpenAI overdragen. De overdracht omvat het volledige recept *rondom* het model: alle prompts, coachinggegevens, pijplijncode, retry-logica, configuratie en gedocumenteerde modelvereisten. Omdat het model per definitie vervangbaar is, kan de gemeenschap de overgedragen methode richten op elke gewenste aanbieder — of op een open-gewichtenmodel op eigen hardware — zonder betrokkenheid van de ontwikkelaar. Het recept is eigendom; de motor wordt gehuurd en is vervangbaar.
 
 ### Afhankelijkheidsmanifest (`method.json`)
 
@@ -167,20 +167,20 @@ Elke methode declareert haar afhankelijkheden in het manifest `method.json`. Elk
 }
 ```
 
-| Veld | Verplicht | Beschrijving |
+| Veld | Vereist | Beschrijving |
 |-------|----------|-------------|
 | `id` | ✅ | Stabiele identificator voor de afhankelijkheid |
-| `kind` | ✅ | `data`, `model`, `software` of `service` |
-| `license` | ✅ | SPDX-identificator, `proprietary` of `none`. `none` betekent dat er geen publieke licentie bestaat — behandeld als alle rechten voorbehouden |
-| `access` | ✅ | `bundled` (wordt meegeleverd in de methodemap), `mirrored` (opgehaald bij installatie, vastgezet, opgenomen in de inzending), `gateway` (LLM-inferentie tijdens uitvoering via de evaluatiegateway), `external-api` (elke andere netwerkaanroep tijdens uitvoering) |
+| `kind` | ✅ | `data`, `model`, `software`, of `service` |
+| `license` | ✅ | SPDX-identificator, `proprietary`, of `none`. `none` betekent dat er geen publieke licentie bestaat — behandeld als alle rechten voorbehouden |
+| `access` | ✅ | `bundled` (wordt meegeleverd in de methodemap), `mirrored` (opgehaald bij installatie, vastgepind, opgenomen in de inzending), `gateway` (runtime LLM-inferentie via de evaluatiegateway), `external-api` (elke andere runtime-netwerkaanroep) |
 | `source` | ✅ | Canonieke URL of `provider:slug`-identificator |
-| `pin` | voor `mirrored` | Versie, commit of inhoudsHash die het exacte artefact vastlegt |
+| `pin` | voor `mirrored` | Versie, commit of inhoudshasj die het exacte artefact vastpint |
 | `substitutable` | voor `gateway`/`external-api` | Of elk compatibel eindpunt deze afhankelijkheid kan bedienen |
 | `redistributable` | ✅ | Of de licentie herdistributie van het artefact toestaat |
 | `transferable` | ✅ | Of het artefact (of de rechten daarop) kan worden overgedragen aan een gemeenschap onder de voorwaarden van prijsoverdracht |
-| `notes` | ❌ | Vrije-tekst toelichting |
+| `notes` | ❌ | Vrije-vormcontext |
 
-**Klassederivatie.** Elke afhankelijkheid draagt een klasse bij; de `dependency_class` van de methode is de meest restrictieve:
+**Klassederivatie.** Elke afhankelijkheid draagt een klasse bij; de `dependency_class` van de methode is de meest beperkende:
 
 | Afhankelijkheidsprofiel | Draagt bij |
 |--------------------|-------------|
@@ -196,21 +196,21 @@ Een methode zonder **externe** afhankelijkheden declareert `"dependency_class": 
 
 ### Hoe geldigheid wordt geverifieerd
 
-Drie lagen, van goedkoopst naar meest gezaghebbend:
+Drie lagen, van goedkoopst tot meest gezaghebbend:
 
-1. **Manifestaudit.** De harness leidt de effectieve klasse af uit het manifest en verwerpt afwijkingen. Reviewers controleren elke gedeclareerde afhankelijkheid aan de hand van de opgegeven licentie en bron — een afhankelijkheid die als `redistributable: true` is gedeclareerd maar waarvan de upstream-licentie anders aangeeft, slaagt niet voor de review.
-2. **Statische analyse.** De ingediende code wordt gescand op netwerkaanroepen, dynamische downloads en bestandssysteemtoegang die niet in het manifest zijn opgenomen. Een *niet-gedeclareerde* afhankelijkheid die tijdens de review wordt gevonden, is grond voor afwijzing, ongeacht welke klasse deze zou hebben gehad — het manifest moet volledig zijn, niet alleen nauwkeurig.
-3. **Sandbox-netwerkbeleid.** De sandboxspecificatie vereist **standaard-weigeren egress**: methodecontainers krijgen geen netwerktoegang tenzij een pad expliciet op de allowlist staat. Het enige egress-pad dat de specificatie definieert is de **LLM-gateway** — een inferentieproxy die wordt beheerd door de evaluatie-infrastructuur, beperkt tot een expliciete allowlist van vastgezette modellen, waarbij elk verzoek en elke respons wordt gelogd voor audit na de run. Alles wat niet op de allowlist staat, mislukt op de netwerklaag, niet op de beleidslaag. Zie [Benchmark Specification §8.6](/docs/specifications/benchmark) voor het netwerkbeleid en het gateway-ontwerp.
+1. **Manifestaudit.** De harness leidt de effectieve klasse af uit het manifest en verwerpt afwijkingen. Reviewers controleren elke gedeclareerde afhankelijkheid aan de hand van de opgegeven licentie en bron — een afhankelijkheid die als `redistributable: true` is gedeclareerd maar waarvan de upstream-licentie anders luidt, slaagt niet voor de review.
+2. **Statische analyse.** De ingediende code wordt gescand op netwerkaanroepen, dynamische downloads en bestandssysteemtoegang die niet in het manifest zijn opgenomen. Een *niet-gedeclareerde* afhankelijkheid die bij de review wordt gevonden, is grond voor afwijzing, ongeacht welke klasse zij zou hebben gehad — het manifest moet volledig zijn, niet alleen nauwkeurig.
+3. **Sandbox-netwerkbeleid.** De sandboxspecificatie vereist **standaard-weigeren egress**: methodecontainers krijgen geen netwerktoegang tenzij een pad expliciet op de allowlist staat. Het enige egress-pad dat de specificatie definieert, is de **LLM-gateway** — een inferentieproxy die wordt beheerd door de evaluatie-infrastructuur, beperkt tot een expliciete allowlist van vastgepinde modellen, waarbij elk verzoek en elke respons wordt gelogd voor audit na de run. Alles wat niet op de allowlist staat, mislukt op de netwerklaag, niet op de beleidslaag. Zie [Benchmark Specification §8.6](/docs/specifications/benchmark) voor het netwerkbeleid en het gateway-ontwerp.
 
-> 🔲 **Gepland.** De sandbox en de bijbehorende LLM-gateway zijn gespecificeerd maar nog niet gebouwd. Totdat de gateway operationeel is, kunnen alleen klasse S- en klasse O-methoden worden geëvalueerd in de sandbox; klasse A1-methoden komen *in principe* in aanmerking voor prijzen, maar kunnen nog geen officiële goudstandaard-scores produceren. Deze pagina beschrijft wat de specificatie vereist, niet wat momenteel wordt uitgevoerd.
+> 🔲 **Gepland.** De sandbox en haar LLM-gateway zijn gespecificeerd maar nog niet gebouwd. Totdat de gateway operationeel is, kunnen alleen Klasse S- en Klasse O-methoden in de sandbox worden geëvalueerd; Klasse A1-methoden komen *in principe* in aanmerking voor prijzen, maar kunnen nog geen officiële goudstandaard-scores produceren. Deze pagina beschrijft wat de specificatie vereist, niet wat momenteel wordt uitgevoerd.
 
 ### Weergave op het leaderboard
 
-- Het leaderboard toont de afhankelijkheidsklasse van elke methode naast het badge van de methodeklasse.
-- Klasse A2-methoden op het open leaderboard dragen een zichtbare **"externe afhankelijkheid"**-markering: hun scores zijn afhankelijk van een externe dienst die kan veranderen of verdwijnen, en ze komen momenteel niet in aanmerking voor prijzen.
+- Het leaderboard toont de afhankelijkheidsklasse van elke methode naast haar methodeklasse-badge.
+- Klasse A2-methoden op het open leaderboard dragen een zichtbare **"externe afhankelijkheid"**-markering: hun scores zijn afhankelijk van een externe dienst die kan veranderen of verdwijnen, en zij komen momenteel niet in aanmerking voor prijzen.
 - Klasse X-methoden worden niet vermeld.
 
-## Eval Harness: TranslationMethod-protocol
+## Eval Harness: TranslationMethod-protocol {#eval-harness-translationmethod-protocol}
 
 De eval-harness maakt gebruik van Python's structurele typering (`Protocol`) voor plugins. Elke klasse met de juiste methodehandtekening werkt — overerving is niet vereist:
 
@@ -254,7 +254,7 @@ Zie de [Plugin Spec](https://champollion.dev/docs/reference/plugin-spec) voor de
 
 ## Leaderboard-integratie
 
-Wanneer een method card aan een run is gekoppeld (via `--method-card`), wordt deze ingesloten in de run card en weergegeven op het leaderboard:
+Wanneer een method card aan een run is gekoppeld (via `--method-card`), wordt zij ingesloten in de run card en weergegeven op het leaderboard:
 
 ```bash
 # Run with method card attached
@@ -271,7 +271,7 @@ Als er geen `--method-card` is opgegeven, start `mt-eval publish` een interactie
 
 Het leaderboard toont:
 - **Klassebadge** — visuele indicator (bijv. "pipeline", "coached-llm")
-- **Afhankelijkheidsklasse** — S/O/A1/A2 (zie [Methodegeldigheid en afhankelijkheidsklassen](#method-validity-and-dependency-classes)); A2-methoden dragen een markering "externe afhankelijkheid"
+- **Afhankelijkheidsklasse** — S/O/A1/A2 (zie [Methodegeldigheid en afhankelijkheidsklassen](#method-validity-and-dependency-classes)); A2-methoden dragen een "externe afhankelijkheid"-markering
 - **Methodenaam** — afkomstig uit de method card
 - **Gebruikte hulpmiddelen** — vermeld in de method card
 - **Open source-indicator**

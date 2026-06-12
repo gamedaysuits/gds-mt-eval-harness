@@ -228,7 +228,7 @@ These metrics are **informational only** — they are never part of the composit
 
 ---
 
-## Fingerprint vs Run Card Hash
+## Fingerprint vs Run Card Hash {#fingerprint-vs-run-card-hash}
 
 The harness produces two distinct hashes. They serve different purposes:
 

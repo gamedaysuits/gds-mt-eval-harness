@@ -21,9 +21,26 @@ import sys
 from pathlib import Path
 
 from mt_eval_harness.config import MODEL_REGISTRY
+from mt_eval_harness.scoring import classify_quality_tier
 
 # Version of the export format. Bumped when fields are added/changed.
 EXPORT_FORMAT_VERSION = "1.0.0"
+
+
+def _extract_composite_score(overall: dict) -> float | None:
+    """Pull the composite score out of a TestReport's `overall` block.
+
+    TestReports store the composite under
+    `overall.confidence_intervals.composite_score.score`, not as a
+    top-level `overall.composite_score`. Check the CI block first, then
+    fall back to a top-level key for forward compatibility.
+    """
+    ci_block = overall.get("confidence_intervals") or {}
+    composite_ci = ci_block.get("composite_score") or {}
+    score = composite_ci.get("score")
+    if score is not None:
+        return score
+    return overall.get("composite_score")
 
 
 def export_champollion_config(
@@ -75,9 +92,15 @@ def export_champollion_config(
     if provenance.get("register_used"):
         method_config["register"] = provenance["register_used"]
 
-    # Build quality tier from scores
-    if overall.get("quality_tier"):
-        method_config["qualityTier"] = overall["quality_tier"]
+    # Build quality tier from scores. Reports don't store a tier — derive
+    # it from the composite (SCORING_SPEC §5.1), preferring an explicit
+    # report value if a future format adds one.
+    composite_score = _extract_composite_score(overall)
+    quality_tier = overall.get("quality_tier")
+    if quality_tier is None and composite_score is not None:
+        quality_tier = classify_quality_tier(composite_score)
+    if quality_tier:
+        method_config["qualityTier"] = quality_tier
 
     # Detect source language
     source_lang_code = config.get("source_lang_code", "en")
@@ -122,8 +145,8 @@ def export_champollion_config(
         "corpus_size": overall.get("total_entries", 0),
         "exact_match_rate": overall.get("exact_match_rate"),
         "chrf_plus_plus": overall.get("corpus_chrf"),
-        "composite_score": overall.get("composite_score"),
-        "quality_tier": overall.get("quality_tier"),
+        "composite_score": composite_score,
+        "quality_tier": quality_tier,
     }
 
     # Output

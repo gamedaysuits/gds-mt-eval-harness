@@ -48,11 +48,11 @@ Chaque métrique définie ici est calculée par machine. Elles sont utiles pour 
 
 ### 1.3 Conception multi-signaux
 
-Aucune métrique unique ne capture la qualité de la traduction. Une traduction peut avoir un chevauchement chrF++ parfait mais échouer la validation morphologique. Elle peut passer les vérifications FST mais porter le mauvais sens. Elle peut être sémantiquement exacte mais stylistiquement étrangère à la langue cible. Le score composite au §4 agrège plusieurs signaux indépendants, chacun capturant une dimension différente de la qualité.
+Aucune métrique unique ne capture la qualité de la traduction. Une traduction peut avoir un chevauchement chrF++ parfait mais échouer la validation morphologique. Elle peut passer les vérifications FST mais transmettre le mauvais sens. Elle peut être sémantiquement exacte mais stylistiquement étrangère à la langue cible. Le score composite au §4 agrège plusieurs signaux indépendants, chacun capturant une dimension différente de la qualité.
 
 ### 1.4 Extensibilité
 
-Cet inventaire de métriques n'est pas fermé. Les nouvelles langues apportent de nouvelles exigences : précision tonale pour les langues tonales, précision diacritique pour les scripts sémitiques, correction de syllabaire pour le Cree. L'architecture (protocole MetricPlugin, composite pondéré avec renormalisation) est conçue pour que les métriques soient ajoutées sans casser les scores existants. Les métriques spécifiques à la langue (par exemple, le linter et le validateur sémantique du CRK) sont déclarées sur les cartes de langue sous `evalMetrics` et chargées depuis `eval_standards/` — le harnais n'est livré qu'avec des métriques comportementales génériques (changement de code, hallucination, terminologie).
+Cet inventaire de métriques n'est pas fermé. Les nouvelles langues apportent de nouvelles exigences : précision tonale pour les langues tonales, précision diacritique pour les scripts sémitiques, exactitude du syllabaire pour le cri. L'architecture (protocole MetricPlugin, composite pondéré avec renormalisation) est conçue pour que les métriques soient ajoutées sans casser les scores existants. Les métriques spécifiques à la langue (par exemple, le linter et le validateur sémantique du CRK) sont déclarées sur les cartes de langue sous `evalMetrics` et chargées depuis `eval_standards/` — le harnais n'expédie que les métriques comportementales génériques (changement de code, hallucination, terminologie).
 
 ### 1.5 Trois dimensions d'évaluation
 
@@ -82,13 +82,13 @@ Chaque métrique de cette spécification a un **statut de validation** distinct 
 > **Expériences de validation requises** (voir `mt-evaluation-landscape.md` §6 et `speaker-validation.md`) :
 > 1. Étude de corrélation avec jugement humain : 200+ paires de phrases notées par 3+ locuteurs bilingues
 > 2. Mesure du taux de rejet faux FST sur un corpus représentatif
-> 3. Portage en deuxième langue (Sámi du Nord) pour tester la généralisation
+> 3. Portage en deuxième langue (same du Nord) pour tester la généralisation
 > 4. Comparaison directe avec COMET sur les mêmes données
 
 
 ---
 
-## 2. Inventaire des métriques
+## 2. Inventaire des métriques {#2-metric-inventory}
 
 Les métriques sont organisées en quatre catégories. Chaque métrique a un statut d'implémentation, une échelle et un niveau (par entrée, au niveau du corpus, ou les deux).
 
@@ -97,48 +97,48 @@ Les métriques sont organisées en quatre catégories. Chaque métrique a un sta
 Les métriques de surface comparent la traduction prédite à la traduction de référence au niveau de la chaîne. Elles ne nécessitent aucun outil linguistique — juste une comparaison de chaînes.
 
 | ID | Métrique | Statut | Échelle | Niveau | Implémentation |
-|----|----------|--------|--------|--------|----------------|
+|----|----------|--------|--------|--------|---------------|
 | `exact_match_rate` | Correspondance exacte | ✅ Implémentée | 0,0–1,0 | Les deux | Binaire : la sortie prédite == référence ? Taux de corpus = correspondances / total. |
-| `equivalent_match_rate` | Correspondance équivalente | ⚡ Partielle | 0,0–1,0 | Les deux | La sortie prédite correspond-elle à une variante acceptée ? Pour CRK : implémentée via le standard d'évaluation CRK `CrkLinterMetric` (dans `eval_standards/crk/`) utilisant des règles de classe de variante déterministes (ordre des mots, orthographique, particule optionnelle, synonyme de lemme, ambiguïté progressive). Chargée automatiquement via la déclaration `evalMetrics` de la carte de langue CRK. L'implémentation générique multilingue nécessite `variants[]` par entrée dans le corpus. |
-| `chrf_plus_plus` | chrF++ | ✅ Implémentée | 0–100 | Les deux | Score F de n-gramme de caractères (sacrebleu). Robuste à la variation morphologique. La métrique de surface principale pour les langues agglutinatives/polysynthétiques. Par entrée utilise `sentence_chrf` ; corpus utilise `corpus_chrf`. |
+| `equivalent_match_rate` | Correspondance équivalente | ⚡ Partielle | 0,0–1,0 | Les deux | La sortie prédite correspond-elle à une variante acceptée ? Pour le CRK : implémentée via la norme d'évaluation CRK `CrkLinterMetric` (dans `eval_standards/crk/`) en utilisant des règles de classe de variante déterministes (ordre des mots, orthographique, particule optionnelle, synonyme de lemme, ambiguïté progressive). Chargée automatiquement via la déclaration `evalMetrics` de la carte de langue CRK. L'implémentation générique multilingue nécessite `variants[]` par entrée dans le corpus. |
+| `chrf_plus_plus` | chrF++ | ✅ Implémentée | 0–100 | Les deux | Score F de n-gramme de caractères (sacrebleu). Robuste à la variation morphologique. La métrique de surface principale pour les langues agglutinatives/polysynthétiques. Utilise `sentence_chrf` par entrée ; `corpus_chrf` au niveau du corpus. |
 | `bleu` | BLEU | ✅ Implémentée | 0–100 | Corpus | Précision de n-gramme au niveau des mots (sacrebleu). **Exclue du composite** — la notation au niveau des mots pénalise injustement la variation morphologique. Calculée et rapportée pour la compatibilité avec la littérature de traduction automatique. |
 | `ter` | Taux d'édition de traduction | ✅ Implémentée | 0–∞ (plus bas est mieux) | Les deux | Distance d'édition minimale entre la sortie prédite et la référence, normalisée par la longueur de la référence (sacrebleu `corpus_ter`). Calculée aux côtés de chrF++ et BLEU. Exclue du composite — corrèle avec chrF++ donc l'inclure doublerait le compte de la similarité de surface. |
 | `length_ratio` | Ratio de longueur | ✅ Implémentée | 0–∞ (1,0 est idéal) | Les deux | `len(predicted) / len(reference)` en caractères. Détecte la troncature (<0,5) et l'inflation/hallucination (>2,0). Moyenné sur les entrées au niveau du corpus. |
 
 ### 2.2 Métriques structurelles
 
-Les métriques structurelles valident la bonne formation linguistique de la traduction. Elles nécessitent des outils spécifiques à la langue (analyseurs FST, analyseurs morphologiques) et sont les signaux les plus forts pour les langues morphologiquement riches.
+Les métriques structurelles valident la bien-formedness linguistique de la traduction. Elles nécessitent des outils spécifiques à la langue (analyseurs FST, analyseurs morphologiques) et sont les signaux les plus forts pour les langues morphologiquement riches.
 
 | ID | Métrique | Statut | Échelle | Niveau | Implémentation |
-|----|----------|--------|--------|--------|----------------|
+|----|----------|--------|--------|--------|---------------|
 | `fst_acceptance_rate` | Acceptation FST | ✅ Implémentée | 0,0–1,0 | Les deux | Proportion de mots de sortie acceptés par un transducteur à états finis (GiellaLT). Un mot est « valide » si le FST retourne au moins une analyse morphologique. Disponible pour toute langue avec un analyseur `.hfstol` GiellaLT. |
-| `morphological_accuracy` | Précision morphologique | 🔲 Planifiée | 0,0–1,0 | Les deux | Un mot peut être valide FST mais avoir la mauvaise inflexion (bonne racine, mauvais suffixe). Cette métrique compare l'analyse FST du mot prédit par rapport aux traits morphologiques attendus. Nécessite des annotations morphologiques par entrée dans le corpus. |
-| `orthographic_accuracy` | Précision orthographique | 🔲 Planifiée | 0,0–1,0 | Les deux | Valide la correction spécifique au script : utilisation de macron/circonflexe SRO pour le Cree, marques diacritiques pour l'Inuktitut, marqueurs de longueur de voyelle pour l'Ojibwe. Ensembles de règles par langue. |
+| `morphological_accuracy` | Exactitude morphologique | 🔲 Planifiée | 0,0–1,0 | Les deux | Un mot peut être valide FST mais avoir la mauvaise inflexion (bonne racine, mauvais suffixe). Cette métrique compare l'analyse FST du mot prédit par rapport aux traits morphologiques attendus. Nécessite des annotations morphologiques au niveau de l'entrée dans le corpus. |
+| `orthographic_accuracy` | Exactitude orthographique | 🔲 Planifiée | 0,0–1,0 | Les deux | Valide la correction spécifique au script : utilisation de macron/circonflexe SRO pour le cri, marques diacritiques pour l'inuktitut, marqueurs de longueur de voyelle pour l'ojibwé. Ensembles de règles par langue. |
 
-> **Pourquoi les métriques structurelles sont importantes.** OMT-1600 de Meta — le plus grand système de traduction automatique jamais publié (1 600 langues) — évalue avec ChrF++, xCOMET, MetricX et BLASER 3. Aucune de ces métriques ne valide la correction morphologique. ChrF++ mesure le chevauchement de n-grammes de caractères : elle récompense les chaînes qui *ressemblent* à la langue cible. Pour les langues polysynthétiques, cela signifie qu'un mot morphologiquement invalide qui partage de nombreux caractères avec la référence obtient un bon score. Notre métrique d'acceptation FST est un test structurel binaire : le mot est soit une forme valide dans la langue, soit il ne l'est pas. Aucun autre cadre d'évaluation de traduction automatique ne fournit cela à l'échelle.
+> **Pourquoi les métriques structurelles sont importantes.** Le OMT-1600 de Meta — le plus grand système de traduction automatique jamais publié (1 600 langues) — évalue avec ChrF++, xCOMET, MetricX et BLASER 3. Aucune de ces métriques ne valide l'exactitude morphologique. ChrF++ mesure le chevauchement de n-grammes de caractères : elle récompense les chaînes qui *ressemblent* à la langue cible. Pour les langues polysynthétiques, cela signifie qu'un mot morphologiquement invalide qui partage de nombreux caractères avec la référence obtient un bon score. Notre métrique d'acceptation FST est un test structurel binaire : le mot est soit une forme valide dans la langue, soit il ne l'est pas. Aucun autre cadre d'évaluation de traduction automatique ne fournit cela à l'échelle.
 
 ### 2.3 Métriques sémantiques
 
 Les métriques sémantiques mesurent la préservation du sens en utilisant des plongements ou des modèles appris. Elles capturent les traductions qui sont superficiellement différentes mais sémantiquement équivalentes, et signalent les traductions qui sont superficiellement similaires mais sémantiquement erronées.
 
 | ID | Métrique | Statut | Échelle | Niveau | Implémentation |
-|----|----------|--------|--------|--------|----------------|
-| `semantic_score` | Similarité sémantique | ⚡ Partielle | 0,0–1,0 | Les deux | CRK : score pondéré par verdict du `CrkSemanticMetric` du standard d'évaluation CRK (dans `eval_standards/crk/`, approximation). Universel : similarité cosinus des plongements de phrases (source + prédit vs source + référence). Modèle TBD — doit supporter les langues à ressources limitées, ce qui exclut la plupart des modèles de plongement centrés sur l'anglais. |
+|----|----------|--------|--------|--------|---------------|
+| `semantic_score` | Similarité sémantique | ⚡ Partielle | 0,0–1,0 | Les deux | CRK : score pondéré par verdict de la norme d'évaluation CRK `CrkSemanticMetric` (dans `eval_standards/crk/`, approximation). Universel : similarité cosinus des plongements de phrases (source + prédit vs source + référence). Modèle TBD — doit supporter les langues à ressources limitées, ce qui exclut la plupart des modèles de plongement centrés sur l'anglais. |
 | `comet_score` | COMET | ✅ Implémentée | ~0,0–1,0 | Les deux | Métrique d'évaluation de traduction automatique apprise (Unbabel). Entraînée sur des jugements de qualité humains. **Exclue du composite** — les données d'entraînement sont biaisées vers les langues européennes à ressources élevées ; les scores pour les LRL sont peu fiables. Calculée quand `unbabel-comet` est installé. Rapportée avec un drapeau d'avertissement pour les ressources limitées. Pour 35 langues africaines, le harnais sélectionne automatiquement AfriCOMET (`masakhane/africomet-mtl`) via `resolve_comet_model()`, qui a une meilleure corrélation avec les jugements humains pour ces langues. |
 
-> **Pourquoi COMET est exclu du composite.** COMET est entraîné sur les données d'évaluation humaine WMT, qui sont massivement des paires de langues européennes à ressources élevées. Lorsqu'elle est appliquée au Cree des Plaines ou à d'autres LRL, les représentations internes du modèle n'ont aucune exposition à ces langues — elle extrapole à partir de langues avec des systèmes morphologiques fondamentalement différents. Les scores sont toujours directionnellement utiles (COMET plus élevé ≈ sortie plus fluide en général) mais les valeurs absolues ne sont pas calibrées. Nous rapportons COMET pour la transparence mais ne le laissons pas influencer le score composite jusqu'à ce que nous puissions le valider par rapport aux jugements humains pour chaque langue cible.
+> **Pourquoi COMET est exclu du composite.** COMET est entraîné sur les données d'évaluation humaine WMT, qui sont massivement des paires de langues européennes à ressources élevées. Lorsqu'elle est appliquée aux langues à ressources limitées comme le cri des Plaines ou autres, les représentations internes du modèle n'ont aucune exposition à ces langues — elle extrapole à partir de langues avec des systèmes morphologiques fondamentalement différents. Les scores sont toujours directionnellement utiles (COMET plus élevé ≈ sortie plus fluide en général) mais les valeurs absolues ne sont pas calibrées. Nous rapportons COMET pour la transparence mais ne le laissons pas influencer le score composite jusqu'à ce que nous puissions le valider par rapport aux jugements humains pour chaque langue cible.
 
-> **AfriCOMET pour les langues africaines.** Chaque carte de langue a un champ `metricModelSupport` (voir spécification de carte de langue §9) qui déclare quels modèles COMET spécialisés sont entraînés pour cette langue. Pour 35 langues africaines (yor, hau, ibo, amh, swa, etc.), la carte déclare AfriCOMET (`masakhane/africomet-mtl`) — un modèle COMET affiné sur les jugements humains de traduction automatique en langues africaines par la communauté Masakhane. Le harnais sélectionne automatiquement le modèle recommandé via `resolve_comet_model()` lisant les cartes de langue, mais cela peut être remplacé avec `--comet-model`. L'ajout de nouveaux mappages langue→modèle se fait en enrichissant la carte de langue (pas en éditant le code Python).
+> **AfriCOMET pour les langues africaines.** Chaque carte de langue a un champ `metricModelSupport` (voir spécification de carte de langue §9) qui déclare quels modèles COMET spécialisés sont entraînés pour cette langue. Pour 35 langues africaines (yor, hau, ibo, amh, swa, etc.), la carte déclare AfriCOMET (`masakhane/africomet-mtl`) — un modèle COMET affiné sur les jugements humains de traduction automatique en langues africaines par la communauté Masakhane. Le harnais sélectionne automatiquement le modèle recommandé via `resolve_comet_model()` en lisant les cartes de langue, mais cela peut être remplacé avec `--comet-model`. L'ajout de nouveaux mappages langue→modèle se fait en enrichissant la carte de langue (pas en éditant le code Python).
 
 ### 2.4 Métriques comportementales
 
 Les métriques comportementales détectent les modes de défaillance spécifiques dans la sortie de traduction. Elles ne mesurent pas directement la qualité — elles détectent les problèmes.
 
 | ID | Métrique | Statut | Échelle | Niveau | Implémentation |
-|----|----------|--------|--------|--------|----------------|
+|----|----------|--------|--------|--------|---------------|
 | `code_switching_rate` | Taux de changement de code | ✅ Implémentée | 0,0–1,0 (plus bas est mieux) | Les deux | Proportion de mots de sortie qui sont dans la langue source (généralement l'anglais). Détectée via l'analyse de script Unicode et/ou une liste de mots de la langue source. Mode de défaillance très courant des LLM : le modèle insère des mots anglais quand il ne connaît pas l'équivalent en langue cible. |
 | `hallucination_rate` | Taux d'hallucination | ✅ Implémentée | 0,0–1,0 (plus bas est mieux) | Les deux | Proportion du contenu de sortie qui n'a pas de contenu source correspondant. Détectée via l'alignement des mots ou le chevauchement des plongements multilingues. Capture le modèle générant des traductions plausibles mais fabriquées. |
-| `terminology_adherence` | Adhérence à la terminologie | ✅ Implémentée | 0,0–1,0 | Les deux | Pour les méthodes coachées : proportion des termes de terminologie prescrits qui apparaissent dans la sortie. Nécessite les données du dictionnaire de coaching. Mesure si le modèle respecte le vocabulaire fourni par les experts. |
+| `terminology_adherence` | Adhérence à la terminologie | ✅ Implémentée | 0,0–1,0 | Les deux | Pour les méthodes coachées : proportion des termes de terminologie prescrits qui apparaissent dans la sortie. Nécessite des données de dictionnaire de coaching. Mesure si le modèle respecte le vocabulaire fourni par les experts. |
 | `consistency_score` | Cohérence entre entrées | 🔲 Planifiée | 0,0–1,0 | Corpus uniquement | Le modèle traduit-il le même terme source de la même manière sur les entrées ? Une faible cohérence suggère que le modèle devine plutôt que d'appliquer des motifs appris. Nécessite des termes répétés sur les entrées du corpus. |
 
 ### 2.5 Métriques de conformité
@@ -146,7 +146,7 @@ Les métriques comportementales détectent les modes de défaillance spécifique
 Les métriques de conformité valident que les traductions préservent l'intégrité structurelle — espaces réservés, formatage et conventions typographiques. Ce sont des vérifications de qualité, pas des scores de qualité.
 
 | ID | Métrique | Statut | Échelle | Niveau | Implémentation |
-|----|----------|--------|--------|--------|----------------|
+|----|----------|--------|--------|--------|---------------|
 | `compliance_index` | Conformité double passage | ✅ Implémentée | 0,0–1,0 | Les deux | Composite pondéré : 60% intégrité des variables (les variables `{placeholder}` sont-elles préservées ?) + 20% conformité des guillemets (caractères de guillemets corrects par carte de langue) + 20% conformité de la casse (pas de fuite de lettres latines pour les langues sans casse). Calculée sur la sortie brute et post-traitée. Via `DoublePassCompliancePlugin`. |
 | `repair_effectiveness` | Efficacité de réparation | ✅ Implémentée | 0,0–1,0 | Corpus | Proportion des violations de conformité qui ont été automatiquement réparées par les crochets de post-traduction. Mesure combien la porte de qualité a amélioré la sortie brute. |
 
@@ -159,7 +159,7 @@ Les métriques de conformité valident que les traductions préservent l'intégr
 Chaque métrique au §2 se situe dans l'un des quatre niveaux d'implémentation :
 
 | Niveau | Signification | Comportement de la carte d'exécution |
-|--------|--------------|-------------------------------------|
+|--------|--------------|-----------------------------------|
 | **✅ Implémentée** | Le code existe, testé, produisant des valeurs dans les cartes d'exécution aujourd'hui | Valeur numérique dans la carte d'exécution |
 | **⚡ Partielle** | Une approximation spécifique à la langue existe (par exemple, CRK) mais l'implémentation universelle est en attente | Valeur numérique quand l'approximation s'applique, `null` sinon |
 | **🔲 Planifiée** | Spécifiée mais pas encore implémentée | `null` dans la carte d'exécution (champ présent, valeur absente) |
@@ -187,7 +187,7 @@ Une métrique passe de Proposée → Planifiée quand :
 
 ---
 
-## 4. Score composite
+## 4. Score composite {#4-composite-score}
 
 ### 4.1 Formule
 
@@ -224,11 +224,11 @@ Avant d'entrer dans la formule composite, toutes les métriques doivent être su
 
 Les métriques exclues du composite (`bleu`, `comet_score`, `ter`, `length_ratio`, `consistency_score`) ne sont pas normalisées à cette fin.
 
-### 4.3 Tableaux de poids
+### 4.3 Tableaux de poids {#43-weight-tables}
 
 #### Profil A : Langues AVEC couverture FST
 
-Pour les langues qui ont un transducteur à états finis GiellaLT disponible. Les métriques structurelles portent 40% du composite (FST 0,25 + précision morphologique 0,15), reflétant la primauté de la correction morphologique pour les langues polysynthétiques/agglutinatives.
+Pour les langues qui ont un transducteur à états finis GiellaLT disponible. Les métriques structurelles portent 40% du composite (FST 0,25 + exactitude morphologique 0,15), reflétant la primauté de l'exactitude morphologique pour les langues polysynthétiques/agglutinatives.
 
 | Métrique | Poids cible | Justification |
 |----------|------------|---------------|
@@ -242,7 +242,7 @@ Pour les langues qui ont un transducteur à états finis GiellaLT disponible. Le
 | `hallucination_rate` | **0,05** | Pénalise le contenu fabriqué. Inversée : 0% hallucination = 1,0. |
 | `exact_match_rate` | **0,05** | Poids le plus bas. Trop strict pour les langues polysynthétiques — plusieurs traductions correctes existent. Conservé comme vérification de plafond. |
 
-> **Total : 1,00.** Quand les métriques ne sont pas disponibles, leurs poids sont redistribués proportionnellement sur les métriques disponibles. Actuellement, `morphological_accuracy` (poids 0,15) est la seule métrique du Profil A non encore calculée — elle nécessite des annotations morphologiques par entrée au standard d'or. Avec cette métrique absente, les 8 métriques restantes (poids total 0,85) sont chacune mises à l'échelle par 1/0,85 ≈ 1,176. Par exemple :
+> **Total : 1,00.** Quand les métriques ne sont pas disponibles, leurs poids sont redistribués proportionnellement sur les métriques disponibles. Actuellement, `morphological_accuracy` (poids 0,15) est la seule métrique du Profil A non encore calculée — elle nécessite des annotations morphologiques au niveau de l'entrée au niveau de l'or. Avec cette métrique absente, les 8 métriques restantes (poids total 0,85) sont chacune mises à l'échelle par 1/0,85 ≈ 1,176. Par exemple :
 > - FST : 0,25/0,85 = 0,294
 > - chrF++ : 0,15/0,85 = 0,176
 > - sémantique : 0,15/0,85 = 0,176
@@ -255,12 +255,12 @@ Pour les langues sans outils de validation morphologique. Les métriques sémant
 |----------|------------|---------------|
 | `semantic_score` | **0,25** | Sans validation structurelle, la préservation du sens est le signal disponible le plus fort. |
 | `chrf_plus_plus` | **0,25** | Sans FST, le chevauchement au niveau des caractères devient la vérification de surface principale. |
-| `equivalent_match_rate` | **0,15** | La correspondance des variantes fournit une évaluation de qualité structurée sans nécessiter des outils morphologiques. |
+| `equivalent_match_rate` | **0,15** | La correspondance des variantes fournit une évaluation de qualité structurée sans nécessiter d'outils morphologiques. |
 | `exact_match_rate` | **0,10** | Sans FST, la correspondance exacte porte plus de poids comme seule approximation de validation structurelle. |
 | `code_switching_rate` | **0,10** | La fuite de la langue source est plus importante quand il n'y a pas de FST pour attraper la mauvaise sortie. |
 | `terminology_adherence` | **0,05** | Conformité du vocabulaire coaché. |
 | `hallucination_rate` | **0,05** | Détection de contenu fabriqué. |
-| `orthographic_accuracy` | **0,05** | La correction spécifique au script comble partiellement le vide laissé par l'absence de FST. |
+| `orthographic_accuracy` | **0,05** | L'exactitude spécifique au script comble partiellement le vide laissé par l'absence de FST. |
 
 > **Total : 1,00.** `orthographic_accuracy` (poids 0,05) est planifiée mais pas encore calculée. Avec elle absente, les 7 métriques restantes (poids total 0,95) sont mises à l'échelle par 1/0,95 ≈ 1,053 — un impact négligeable sur le composite.
 
@@ -270,7 +270,7 @@ Pour les langues sans outils de validation morphologique. Les métriques sémant
 
 Pour ajouter une nouvelle métrique au composite :
 
-1. **La définir** au §2 avec le statut `🔲 Planned`, incluant l'échelle, le niveau et la méthode de calcul.
+1. **La définir** au §2 avec le statut `🔲 Planned`, y compris l'échelle, le niveau et la méthode de calcul.
 2. **L'implémenter** comme MetricPlugin (ou dans `tester.py` pour les métriques principales).
 3. **Ajouter un espace réservé nul** dans le bloc des scores de la carte d'exécution.
 4. **Lui assigner un poids cible** au §4.3 en ajustant les poids existants vers le bas. Les poids doivent sommer à 1,00.
@@ -281,12 +281,12 @@ Pour ajouter une nouvelle métrique au composite :
 
 ---
 
-## 5. Niveaux de qualité
+## 5. Niveaux de qualité {#5-quality-tiers}
 
 Ces niveaux sont des étiquettes heuristiques sur les scores composites automatisés. Ils décrivent ce que les scores tendent à signifier en pratique, basés sur l'examen humain des sorties à chaque niveau. **Ce ne sont pas des jugements de qualité validés** — seul l'examen humain peut confirmer l'utilisabilité réelle.
 
 > [!IMPORTANT]
-> **Les niveaux automatisés sont provisoires.** Ces étiquettes sont des nominations pour examen, pas des déclarations de qualité. Une méthode atteignant « Déployable » sur les métriques automatisées est une candidate pour l'évaluation communautaire — pas un produit à expédier. Seul l'examen humain par des locuteurs bilingues peut confirmer l'utilisabilité réelle (voir [BENCHMARK_SPEC §7](/docs/specifications/benchmark#7-human-validation)). Aucune méthode ne peut prétendre à Déployable ou supérieur sans examen communautaire confirmant que les locuteurs conviennent que la sortie est utilisable. Les seuils des niveaux peuvent différer selon les langues à mesure que les données de validation humaine s'accumulent.
+> **Les niveaux automatisés sont provisoires.** Ces étiquettes sont des nominations pour examen, pas des déclarations de qualité. Une méthode atteignant « Déployable » sur les métriques automatisées est une candidate pour l'évaluation communautaire — pas un produit à expédier. Seul l'examen humain par des locuteurs bilingues peut confirmer l'utilisabilité réelle (voir [BENCHMARK_SPEC §7](/docs/specifications/benchmark#7-human-validation)). Aucune méthode ne peut prétendre à Déployable ou supérieur sans examen communautaire confirmant que les locuteurs conviennent que la sortie est utilisable. Les limites des niveaux peuvent différer selon les langues à mesure que les données de validation humaine s'accumulent.
 
 | Niveau | Plage composite | Ce qu'un locuteur voit généralement |
 |--------|-----------------|-----------------------------------|
@@ -298,7 +298,7 @@ Ces niveaux sont des étiquettes heuristiques sur les scores composites automati
 
 Ces niveaux sont provisoires. Ils seront recalibrés à mesure que les données de validation humaine s'accumulent et que nous apprenons où le seuil « un locuteur trouve cela utile » se situe réellement pour chaque langue. Aucune méthode ne peut prétendre à **Déployable** ou supérieur sans examen communautaire confirmant que les locuteurs bilingues conviennent que la sortie est utilisable.
 
-### 5.1 Seuils des niveaux (lisibles par machine)
+### 5.1 Seuils des niveaux (lisible par machine)
 
 Pour les implémentations de code, les seuils sont (évalués de haut en bas, première correspondance gagne) :
 
@@ -398,7 +398,7 @@ Si la valeur p < 0,05 et l'intervalle de confiance de la différence exclut zér
 
 ## 9. Schéma des scores de la carte d'exécution
 
-Cette section définit la structure hiérarchique du bloc `scores` dans une carte d'exécution. Ce schéma est dérivé des métriques définies aux §2–§7 et doit rester synchronisé.
+Cette section définit la structure hiérarchique du bloc `scores` dans une carte d'exécution. Ce schéma est dérivé des métriques définies aux §2–§7 et doit être maintenu en synchronisation.
 
 ```jsonc
 {
@@ -538,11 +538,11 @@ Le fichier `arena/mt_eval_harness/scoring.py` reflète les tableaux de poids et 
 
 ### 10.3 Documents qui font référence à cette spécification
 
-| Document | Ce qu'il référence | Comment rester synchronisé |
-|----------|-------------------|---------------------------|
+| Document | Ce qu'il référence | Comment maintenir la synchronisation |
+|----------|-------------------|-----------------------------------|
 | `arena/website/docs/specifications/benchmark-spec.md` §4–§5 | Formule composite, tableaux de poids, seuils des niveaux | Référence croisée ce document ; ne pas dupliquer les tableaux |
 | `website/docs/getting-started/faq.md` | Résumé simplifié des poids | Doit correspondre à §4.3 ; lien vers ce document |
-| `arena/website/docs/how-it-works.md` | Seuil Déployable | Doit correspondre à §5 |
+| `arena/website/docs/how-it-works.md` | Seuil déployable | Doit correspondre à §5 |
 | `publish.py` via `scoring.py` | Dicts de poids + fonction de niveau | Test automatisé valide la correspondance |
 
 ---
@@ -556,7 +556,7 @@ Le fichier `arena/mt_eval_harness/scoring.py` reflète les tableaux de poids et 
 | **TER** | La distance d'édition corrèle avec chrF++ pour la plupart des cas d'usage. Inclure les deux doublerait le compte de la similarité de surface. TER est rapporté pour référence. |
 | **Ratio de longueur** | Un diagnostic, pas un signal de qualité. Un ratio de 1,02 et un ratio de 0,98 sont tous deux corrects. Seules les valeurs extrêmes indiquent des problèmes. |
 | **Score de cohérence** | Corpus uniquement — pas de valeur par entrée à agréger. Aussi, une certaine incohérence est légitime (même mot anglais → différentes traductions en langue cible selon le contexte). |
-| **Index de conformité** | Porte de qualité, pas signal de qualité. Mesure la préservation structurelle (espaces réservés, guillemets), pas la précision de la traduction. |
+| **Index de conformité** | Porte de qualité, pas signal de qualité. Mesure la préservation structurelle (espaces réservés, guillemets), pas l'exactitude de la traduction. |
 
 ## Appendice B : LYSS — Implémentations de métriques spécifiques à la langue
 
@@ -566,15 +566,15 @@ Le cadre **LYSS** (Linguistically-informed Yield & Structural Scoring) fournit d
 - **LYSS-eq** — Équivalence linguistique (`equivalent_match_rate`) : La sortie est-elle une variante acceptable de la référence ?
 - **LYSS-sem** — Validation sémantique (`semantic_score`) : La sortie préserve-t-elle le sens source ?
 
-> **Statut de validation : 🔶 Heuristique d'ingénierie.** Les métriques LYSS n'ont PAS été validées par rapport aux jugements de qualité humains. Elles sont conçues à partir de principes linguistiques (FST, dictionnaires, règles de grammaire construites par des linguistes au ALTLab de l'Université de l'Alberta), mais la corrélation entre les scores LYSS et la qualité réelle de la traduction n'a pas été mesurée. Voir le [Protocole de validation des locuteurs](/docs/specifications/speaker-validation) pour les expériences de validation requises.
+> **Statut de validation : 🔶 Heuristique d'ingénierie.** Les métriques LYSS n'ont PAS été validées par rapport aux jugements de qualité humains. Elles sont conçues à partir de principes linguistiques (FST, dictionnaires, règles de grammaire construites par des linguistes du ALTLab UAlberta), mais la corrélation entre les scores LYSS et la qualité réelle de la traduction n'a pas été mesurée. Voir le [Protocole de validation des locuteurs](/docs/specifications/speaker-validation) pour les expériences de validation requises.
 
 | Langue | Plugin | Localisation | Composant LYSS | Clé de métrique | Notes |
 |--------|--------|-------------|----------------|-----------------|-------|
-| CRK (Cree des Plaines) | `CrkLinterMetric` | `eval_standards/crk/metrics.py` | **LYSS-eq** | `equivalent_match_rate` | Règles de classe de variante déterministes : ordre des mots, orthographique, particule optionnelle, synonyme de lemme, ambiguïté progressive, inclusif/exclusif. Produit par entrée `lint_verdict` (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
-| CRK | `CrkSemanticMetric` | `eval_standards/crk/metrics.py` | **LYSS-sem** | `semantic_score` | Déterministe : extraction de lemme FST + glosses de dictionnaire + chevauchement de mots de contenu spaCy. Produit des verdicts (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
+| CRK (Cri des Plaines) | `CrkLinterMetric` | `eval_standards/crk/metrics.py` | **LYSS-eq** | `equivalent_match_rate` | Règles de classe de variante déterministes : ordre des mots, orthographique, particule optionnelle, synonyme de lemme, ambiguïté progressive, inclusif/exclusif. Produit `lint_verdict` par entrée (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
+| CRK | `CrkSemanticMetric` | `eval_standards/crk/metrics.py` | **LYSS-sem** | `semantic_score` | Déterministe : extraction de lemme FST + gloses de dictionnaire + chevauchement de mots de contenu spaCy. Produit des verdicts (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
 | Langues GiellaLT | `GiellaLTFSTMetric` | `plugins/giellalt_fst.py` | **LYSS-fst** | `fst_acceptance_rate` | Générique : fonctionne pour CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — toute langue avec un analyseur `.hfstol`. |
 
-> **Note d'architecture (juin 2026).** Les métriques LYSS spécifiques à la langue sont maintenant déclarées sur la carte de langue sous `evalMetrics` et chargées depuis `eval_standards/<lang>/` par `plugin_discovery.py`. Ce sont des **standards d'évaluation** (arbitre), pas des métriques de plugin de méthode (concurrent). Cela signifie que toute méthode de traduction ciblant le CRK est automatiquement notée par LYSS — aucune configuration spécifique à la méthode nécessaire. `CrkFSTMetric` a été supprimé ; sa fonctionnalité est entièrement couverte par le `GiellaLTFSTMetric` générique.
+> **Note d'architecture (juin 2026).** Les métriques LYSS spécifiques à la langue sont maintenant déclarées sur la carte de langue sous `evalMetrics` et chargées depuis `eval_standards/<lang>/` par `plugin_discovery.py`. Ce sont des **normes d'évaluation** (arbitre), pas des métriques de plugin de méthode (concurrent). Cela signifie que toute méthode de traduction ciblant le CRK est automatiquement notée par LYSS — aucune configuration spécifique à la méthode nécessaire. `CrkFSTMetric` a été supprimé ; sa fonctionnalité est entièrement couverte par le `GiellaLTFSTMetric` générique.
 
 ## Appendice C : Métriques en considération
 
@@ -584,7 +584,7 @@ Ce sont des idées en cours d'évaluation mais pas encore assez spécifiées pou
 |------|----------------------|----------|
 | Fluidité (perplexité LM) | La sortie est-elle bien formée en prose dans la langue cible ? | Nécessite un LM en langue cible. Aucun bon modèle n'existe pour la plupart des LRL. |
 | Correspondance de registre | La traduction correspond-elle au niveau de formalité attendu ? | Nécessite des classificateurs sociolinguistiques. Problème de recherche. |
-| Appropriateness culturelle | Les références culturelles sont-elles traitées correctement ? | Ne peut pas être automatisée — nécessite intrinsèquement un examen humain. |
+| Appropriateness culturelle | Les références culturelles sont-elles traitées correctement ? | Ne peut pas être automatisé — nécessite intrinsèquement un examen humain. |
 | Cohérence du discours | Les traductions consécutives forment-elles un passage cohérent ? | Nécessite une évaluation au niveau du document, pas au niveau de la phrase. |
 
 ---
@@ -625,7 +625,7 @@ Articles académiques, outils et ressources linguistiques cités dans cette spé
 
 12. Dreyer, M. & Marcu, D. (2012). « HyTER: Meaning-Equivalent Semantics for Translation Evaluation. » *Proceedings of the 2012 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2012)*, pp. 162–171. Montréal, Canada.
 
-13. Reiter, E. & Belz, A. (2009). « An Investigation into the Validity of Some Metrics for Automatically Evaluating Natural Language Generation Systems. » *Computational Linguistics*, vol. 35, no. 4, pp. 529–558. (Travaux connexes sur les métriques d'évaluation basées sur les caractéristiques, incluant FUSE.)
+13. Reiter, E. & Belz, A. (2009). « An Investigation into the Validity of Some Metrics for Automatically Evaluating Natural Language Generation Systems. » *Computational Linguistics*, vol. 35, no. 4, pp. 529–558. (Travaux connexes sur les métriques d'évaluation basées sur les caractéristiques, y compris FUSE.)
 
 ### Détection d'hallucination
 
@@ -633,11 +633,11 @@ Articles académiques, outils et ressources linguistiques cités dans cette spé
 
 15. Guerreiro, N. M., Voita, E., & Martins, A. F. T. (2023). « Looking for a Needle in a Haystack: A Comprehensive Study of Hallucinations in Neural Machine Translation. » *Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2023)*, pp. 1059–1075. Dubrovnik, Croatie.
 
-### Ressources en langue Cree
+### Ressources en langue crie
 
 16. Wolfart, H. C. (1973). « Plains Cree: A Grammatical Study. » *Transactions of the American Philosophical Society*, vol. 63, no. 5, pp. 1–90.
 
-17. Wolvengrey, A. (2001). *nêhiyawêwin: itwêwina / Cree: Words.* Canadian Plains Research Center, Université de Regina.
+17. Wolvengrey, A. (2001). *nêhiyawêwin: itwêwina / Cree: Words.* Canadian Plains Research Center, University of Regina.
 
 ### Gouvernance des données
 

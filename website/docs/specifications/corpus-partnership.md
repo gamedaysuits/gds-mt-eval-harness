@@ -237,7 +237,7 @@ For other language families, identify the 3–5 most diagnostic phenomena that d
 
 ---
 
-## 4. Cryptographic Sealing and Sandbox Testing
+## 4. Cryptographic Sealing and Sandbox Testing {#4-cryptographic-sealing-and-sandbox-testing}
 
 ### 4.1 Why Seal the Test Set?
 
@@ -395,7 +395,7 @@ We provide all engineering, harness configuration, LYSS metric setup, leaderboar
 
 ---
 
-## 7. How to Get Started
+## 7. How to Get Started {#7-how-to-get-started}
 
 1. **Contact us** — [project email/contact]. We'll schedule a 30-minute call to discuss your language, available resources, and partnership logistics.
 

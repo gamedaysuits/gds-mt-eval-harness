@@ -20,7 +20,7 @@ slug: '/specifications/corpus-partnership'
 
 ## 1. Lo Que Esta Asociación Produce
 
-Un **corpus de evaluación sellado**: un conjunto curado de pares de texto paralelo (lengua fuente → lengua meta) que se convierte en la verdad fundamental para medir la calidad de la traducción automática. Los métodos se prueban contra este corpus en un sandbox — los desarrolladores nunca ven los datos de prueba.
+Un **corpus de evaluación sellado**: un conjunto curado de pares de texto paralelo (lengua fuente → lengua destino) que se convierte en la verdad fundamental para medir la calidad de la traducción automática. Los métodos se prueban contra este corpus en un sandbox — los desarrolladores nunca ven los datos de prueba.
 
 La asociación produce tres artefactos:
 
@@ -38,7 +38,7 @@ El corpus de desarrollo permite que cualquiera construya métodos de traducción
 
 ### Fase 1: Diseño del Corpus (2–4 semanas, tiempo de investigador)
 
-**Responsable:** PI o postdoc con experiencia en la lengua meta.
+**Responsable:** PI o posdoctorado con experiencia en la lengua destino.
 
 1. **Seleccione dominios de material fuente.** Elija 4–6 dominios del mundo real donde la traducción es realmente necesaria por la comunidad de hablantes. Nuestra taxonomía admite 16 dominios (ver Especificación de Benchmark §2.7):
 
@@ -76,7 +76,7 @@ El corpus de desarrollo permite que cualquiera construya métodos de traducción
    - Nivel de dificultad estimado (1–5, ver §3.3)
    - Etiqueta de procedencia (libro de texto, elicitado, corpus, gold_standard)
 
-3. **Traduzca cada oración fuente** a la lengua meta, realizado por hablantes bilingües. Múltiples traducciones de referencia por entrada son valiosas pero no requeridas.
+3. **Traduzca cada oración fuente** a la lengua destino, realizado por hablantes bilingües. Múltiples traducciones de referencia por entrada son valiosas pero no requeridas.
 
 4. **Opcionalmente, agregue análisis morfológico** para cada traducción de referencia:
    - Glosa interlineal (desglose morfema por morfema)
@@ -85,12 +85,12 @@ El corpus de desarrollo permite que cualquiera construya métodos de traducción
 
 ### Fase 3: Aseguramiento de Calidad (2–4 semanas)
 
-**Responsable:** Lingüista con experiencia en la lengua meta.
+**Responsable:** Lingüista con experiencia en la lengua destino.
 
 1. **Revisión cruzada.** Cada traducción debe ser revisada por al menos un hablante bilingüe adicional que no produjo la traducción original. El revisor verifica:
    - ¿Es la traducción precisa?
    - ¿Suena natural?
-   - ¿Es la calificación de dificultad correcta?
+   - ¿Es correcta la calificación de dificultad?
    - ¿Hay variantes aceptables que deban anotarse?
 
 2. **Ejecute a través de nuestro validador de esquema.** Proporcionamos un script que valida el corpus contra el esquema de entrada (Especificación de Benchmark §2.2). Verifica:
@@ -188,7 +188,7 @@ Cada archivo de corpus es un documento JSON que sigue el esquema en Especificaci
 ### 3.2 Requisitos de Tamaño Mínimo
 
 | Segmento | Entradas Mínimas | Recomendado |
-|----------|------------------|------------|
+|----------|-----------------|------------|
 | `development` | 100 | 200–300 |
 | `gold_standard` | 50 | 100–150 |
 | `diagnostic` | 10 | 30–50 |
@@ -218,10 +218,10 @@ Para lenguas polisintéticas, la suite de prueba de diagnóstico debe dirigirse 
 | **Acuerdo de animacidad** | atim (AN) vs. maskisin (IN) — formas verbales diferentes | ¿Sabe el sistema cuáles sustantivos son animados? |
 | **Obviación** | Tercera persona proximal vs. obviativa | ¿Rastrea la jerarquía de tercera persona? |
 | **Marcación inversa** | Formas verbales directas vs. inversas | ¿Maneja paciente-supera-agente? |
-| **Conjuntivo/Independiente** | Verbo de cláusula principal vs. cláusula subordinada | ¿Usa el paradigma verbal correcto? |
+| **Conjuntivo/Independiente** | Orden de verbo de cláusula principal vs. subordinada | ¿Usa el paradigma verbal correcto? |
 | **Inclusivo/Exclusivo** | "Nosotros (incluyéndote)" vs. "Nosotros (excluyéndote)" | ¿Distingue formas de primera persona plural? |
 
-Para otras familias lingüísticas, identifique los 3–5 fenómenos más diagnósticos que distingan traducción competente de incompetente. La experiencia lingüística del departamento es esencial aquí — estas son las pruebas que solo un especialista sabría escribir.
+Para otras familias de lenguas, identifique los 3–5 fenómenos más diagnósticos que distingan traducción competente de incompetente. La experiencia lingüística del departamento es esencial aquí — estas son las pruebas que solo un especialista sabría escribir.
 
 ### 3.5 Lo Que NO Queremos
 
@@ -236,11 +236,11 @@ Para otras familias lingüísticas, identifique los 3–5 fenómenos más diagn�
 
 ---
 
-## 4. Sellado Criptográfico y Prueba en Sandbox
+## 4. Sellado Criptográfico y Prueba en Sandbox {#4-cryptographic-sealing-and-sandbox-testing}
 
 ### 4.1 ¿Por Qué Sellar el Conjunto de Prueba?
 
-Los benchmarks de ML convencionales publican conjuntos de prueba abiertamente. Una vez publicados, los LLMs fronterizos eventualmente entrenarán en ellos (intencional o a través de raspado web), haciendo que las puntuaciones sean poco confiables. Para datos de lenguas indígenas, hay una preocupación adicional: los datos lingüísticos publicados pueden usarse sin consentimiento comunitario.
+Los benchmarks de ML convencionales publican conjuntos de prueba abiertamente. Una vez publicados, los LLMs fronterizos eventualmente entrenarán en ellos (intencional o a través de web scraping), haciendo que las puntuaciones sean poco confiables. Para datos de lenguas indígenas, hay una preocupación adicional: los datos lingüísticos publicados pueden usarse sin consentimiento comunitario.
 
 El sellado garantiza:
 - **Integridad del conjunto de prueba:** Los métodos no pueden sobreajustarse a datos que nunca han visto
@@ -371,7 +371,7 @@ La asociación proporciona resultados concretos para propuestas de subvenciones:
 
 | Componente | Costo Estimado | Quién Paga |
 |-----------|----------------|-----------|
-| Tiempo de PI/postdoc (diseño, supervisión) | ~40 horas | Departamento (o financiado por subvención) |
+| Tiempo de PI/posdoctorado (diseño, supervisión) | ~40 horas | Departamento (o financiado por subvención) |
 | Compensación de hablantes (traducción) | $2,500–6,000 | Financiado por subvención o Champollion |
 | Compensación de hablantes (revisión) | $500–1,500 | Financiado por subvención o Champollion |
 | Tiempo de coordinador de investigación | ~20 horas | Departamento |
@@ -394,7 +394,7 @@ Proporcionamos toda la ingeniería, configuración del arnés, configuración de
 
 ---
 
-## 7. Cómo Comenzar
+## 7. Cómo Comenzar {#7-how-to-get-started}
 
 1. **Contáctenos** — [correo electrónico/contacto del proyecto]. Programaremos una llamada de 30 minutos para discutir su lengua, recursos disponibles y logística de asociación.
 
@@ -405,14 +405,14 @@ Proporcionamos toda la ingeniería, configuración del arnés, configuración de
    - Una plantilla de diseño de corpus borrador
 
 3. **Usted proporciona:**
-   - Un PI o postdoc para liderar el trabajo lingüístico
+   - Un PI o posdoctorado para liderar el trabajo lingüístico
    - Acceso a hablantes bilingües (o un plan para reclutarlos)
    - Información sobre recursos disponibles (FST, diccionario, corpus existentes)
    - Aprobación institucional para gobernanza de datos (cumplimiento OCAP® o equivalente)
 
 4. **Codiseñamos el corpus** — selección de dominio, distribución de dificultad, pruebas de diagnóstico, cronograma y presupuesto.
 
-5. **Comienza el trabajo.** Nos comunicamos semanalmente. El departamento tiene autonomía total sobre decisiones lingüísticas; manejamos toda la ingeniería.
+5. **El trabajo comienza.** Nos comunicamos semanalmente. El departamento tiene autonomía completa sobre decisiones lingüísticas; manejamos toda la ingeniería.
 
 ---
 
@@ -444,7 +444,7 @@ La comunidad puede revocar acceso de evaluación en cualquier momento negándose
 
 ### "¿Qué pasa si la organización de gobernanza aún no existe?"
 
-Podemos comenzar con Fases 1–3 (diseño del corpus, creación, QA) sin una organización de gobernanza. El sellado (Fase 4) requiere identificar un custodio de clave. Mientras tanto, el departamento puede servir como cocustodio junto al proyecto Champollion, con el entendimiento de que la custodia se transfiere a la organización de gobernanza comunitaria cuando se establezca.
+Podemos comenzar con Fases 1–3 (diseño del corpus, creación, QA) sin una organización de gobernanza. El sellado (Fase 4) requiere identificar un custodio de clave. Mientras tanto, el departamento puede servir como cocustodio junto al proyecto Champollion, con el entendimiento de que la custodia se transfiere a la organización de gobernanza comunitaria cuando se establezca una.
 
 ---
 

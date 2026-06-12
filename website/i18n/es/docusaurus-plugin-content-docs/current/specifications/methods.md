@@ -21,7 +21,7 @@ related:
 
 > **Resumen Ejecutivo.** Esta página especifica el protocolo `TranslationMethod` que todos los métodos de Arena deben implementar, las seis clases de métodos (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), el formato de complemento de método, y las **clases de dependencia** (S/O/A1/A2/X) que determinan si un método puede ejecutarse en la zona de pruebas de evaluación y calificar para premios. Cualquier enfoque que implemente este protocolo puede ser evaluado; lo que depende determina dónde puede competir.
 
-El arnés de evaluación y champollion comparten un concepto común de **método de traducción**. Un método es cualquier procedimiento que toma texto fuente y produce texto traducido — ya sea una llamada directa a LLM, una tubería de múltiples etapas, una API de terceros, o un traductor humano.
+El arnés de evaluación y champollion comparten un concepto común de **método de traducción**. Un método es cualquier procedimiento que toma texto fuente y produce texto traducido — ya sea una llamada directa a LLM, una canalización de múltiples etapas, una API de terceros, o un traductor humano.
 
 ## Arquitectura
 
@@ -47,11 +47,11 @@ Se carga a través de `--method path/to/dir`. El arnés no descubre nada automá
 
 Un método que admite ambos sistemas proporciona dos puntos de entrada — uno para cada tiempo de ejecución de lenguaje. La **tarjeta de método** es el puente: describe el método en un formato que ambos sistemas entienden.
 
-## Tarjeta de Método
+## Tarjeta de Método {#method-card}
 
-Una tarjeta de método describe *qué* es un método de traducción sin revelar detalles propietarios como el mensaje del sistema completo. Responde:
+Una tarjeta de método describe *qué* es un método de traducción sin revelar detalles propietarios como el indicador del sistema completo. Responde:
 
-- ¿Qué clase de método es este? (LLM sin procesar, LLM entrenado, tubería, API, etc.)
+- ¿Qué clase de método es este? (LLM sin procesar, LLM entrenado, canalización, API, etc.)
 - ¿Qué herramientas utiliza? (analizador FST, diccionario, etc.)
 - ¿Es la implementación de código abierto?
 - ¿Qué pares de idiomas admite?
@@ -81,13 +81,13 @@ El campo `dependency_class` resume lo que el método necesita para ejecutarse y 
 | Clase | Descripción |
 |-------|-------------|
 | `raw-llm` | Llamada directa a LLM con instrucción mínima |
-| `coached-llm` | LLM con mensaje estructurado, ejemplos, restricciones |
-| `pipeline` | Tubería de múltiples etapas con componentes determinísticos |
+| `coached-llm` | LLM con indicador estructurado, ejemplos, restricciones |
+| `pipeline` | Canalización de múltiples etapas con componentes deterministas |
 | `custom-plugin` | Proceso externo que implementa el protocolo `TranslationMethod` |
 | `api` | API de traducción de terceros (Google Translate, DeepL, etc.) |
 | `human` | Traducción humana (para establecer líneas de base) |
 
-## Validez de Método y Clases de Dependencia
+## Validez de Método y Clases de Dependencia {#method-validity-and-dependency-classes}
 
 Un método es tan ejecutable, y tan transferible, como su dependencia menos disponible. Dos mecanismos de Arena dependen de saber exactamente qué necesita un método:
 
@@ -104,20 +104,20 @@ Para hacer ambas verificaciones mecánicas en lugar de ad hoc, cada método decl
 |-------|--------|-----------|--------------------------------|----------------------|
 | **S** | Autónomo | Todo el código, datos, modelos y pesos se envían dentro del directorio del método, bajo licencias que permiten redistribución y transferencia comunitaria. | ✅ Sí, tal cual | ✅ Sí |
 | **O** | Externo abierto | Depende de artefactos alojados externamente bajo licencias abiertas que permiten redistribución (incluidas licencias copyleft como AGPL) — por ejemplo, un FST descargado en tiempo de instalación. | ✅ Sí — los artefactos se fijan y se **reflejan en el envío** | ✅ Sí, con condiciones de compatibilidad de licencia: los términos copyleft se preservan a través de la transferencia, y la comunidad recibe los mismos derechos que la licencia otorga a todos |
-| **A1** | Dependiente de API, sustituible | Requiere inferencia de LLM en tiempo de ejecución, donde el modelo es **configuración sustituible** — cualquier modelo suficientemente capaz puede insertarse. El valor del método reside en sus mensajes, datos de entrenamiento y código, no en el modelo de ningún proveedor. | ⚠️ Solo a través de la **puerta de enlace de LLM** que la especificación de zona de pruebas define (🔲 planeado — ver abajo) | ⚠️ Condicional — ver abajo |
-| **A2** | Dependiente de API, no sustituible | Requiere llamadas en tiempo de ejecución a una API de datos o servicio externo que no puede reflejarse o sustituirse — típicamente porque el contenido servido es propietario o sin licencia (por ejemplo, una API de diccionario cuyo diccionario subyacente no tiene licencia pública). | ❌ No — la dependencia no puede existir en la zona de pruebas sin permiso del titular de derechos | ❌ No hasta que el titular de derechos otorgue permisos de **inclusión en zona de pruebas** y **transferencia**. Permitido en el marcador abierto (segmento de desarrollo) con una bandera **"dependencia externa"** visible |
+| **A1** | Dependiente de API, sustituible | Requiere inferencia de LLM en tiempo de ejecución, donde el modelo es **configuración sustituible** — cualquier modelo suficientemente capaz puede insertarse. El valor del método reside en sus indicadores, datos de entrenamiento y código, no en el modelo de ningún proveedor. | ⚠️ Solo a través de la **puerta de enlace de LLM** que la especificación de zona de pruebas define (🔲 planeado — consulte a continuación) | ⚠️ Condicional — consulte a continuación |
+| **A2** | Dependiente de API, no sustituible | Requiere llamadas en tiempo de ejecución a una API de datos o servicio externo que no puede reflejarse o sustituirse — típicamente porque el contenido servido es propietario o sin licencia (por ejemplo, una API de diccionario cuyo diccionario subyacente no tiene licencia pública). | ❌ No — la dependencia no puede existir en la zona de pruebas sin el permiso del titular de derechos | ❌ No hasta que el titular de derechos otorgue permisos de **inclusión en zona de pruebas** y **transferencia**. Permitido en la tabla de clasificación abierta (segmento de desarrollo) con una bandera **"dependencia externa"** visible |
 | **X** | Cerrado | Agrupa contenido que el remitente no tiene derecho a redistribuir — conjuntos de datos sin licencia, contenido propietario raspado, componentes incompatibles con licencia. | ❌ | ❌ Inadmisible en todos los carriles. Agrupar contenido sin derechos es una violación de licencia independientemente de dónde se ejecute el método |
 
-**Clase efectiva.** La clase de dependencia de un método es la clase *más restrictiva* entre todas sus dependencias declaradas, en el orden S < O < A1 < A2 < X. Un diccionario sin licencia hace que una tubería por lo demás autónoma sea Clase A2 (si se accede en tiempo de ejecución) o Clase X (si se agrupa sin derechos).
+**Clase efectiva.** La clase de dependencia de un método es la clase *más restrictiva* entre todas sus dependencias declaradas, en el orden S < O < A1 < A2 < X. Un diccionario sin licencia hace que una canalización por lo demás autónoma sea Clase A2 (si se accede en tiempo de ejecución) o Clase X (si se agrupa sin derechos).
 
 ### La Distinción A1/A2: Sustituibilidad
 
 La mayoría de los métodos llaman a LLM. Arena no pretende lo contrario — pero distingue dos tipos muy diferentes de dependencia de API:
 
-- **A1 (sustituible):** La API proporciona inferencia de LLM de mercancía. El identificador del modelo es configuración: el método debe ejecutarse de extremo a extremo contra cualquier punto final de inferencia compatible, incluido un modelo de peso abierto alojado en la comunidad. La calidad de salida puede diferir entre modelos — ese es el riesgo del desarrollador, y las puntuaciones oficiales están vinculadas al modelo fijado utilizado en la evaluación. Un método que depende de **estado del lado del proveedor** (un ajuste fino alojado solo en el proveedor, almacenes de archivos del proveedor, asistentes específicos del proveedor) *no* es sustituible: ese estado no puede extraerse, por lo que la dependencia es A2 a menos que los pesos o datos subyacentes se incluyan en el envío.
-- **A2 (no sustituible):** La API sirve algo único — típicamente datos propietarios o sin licencia. Ningún punto final alternativo puede proporcionarlo, y el contenido no puede reflejarse en la zona de pruebas sin permiso del titular de derechos. El método funciona en el marcador abierto (marcado), pero no puede producir puntuaciones oficiales de zona de pruebas o calificar para premios hasta que existan permisos.
+- **A1 (sustituible):** La API proporciona inferencia de LLM de mercancía. El identificador del modelo es configuración: el método debe ejecutarse de extremo a extremo contra cualquier punto final de inferencia compatible, incluido un modelo de peso abierto alojado por la comunidad. La calidad de salida puede diferir entre modelos — ese es el riesgo del desarrollador, y las puntuaciones oficiales están vinculadas al modelo fijado utilizado en la evaluación. Un método que depende de **estado del lado del proveedor** (un ajuste fino alojado solo en el proveedor, almacenes de archivos del proveedor, asistentes específicos del proveedor) *no* es sustituible: ese estado no puede extraerse, por lo que la dependencia es A2 a menos que los pesos o datos subyacentes se incluyan en el envío.
+- **A2 (no sustituible):** La API sirve algo único — típicamente datos propietarios o sin licencia. Ningún punto final alternativo puede proporcionarlo, y el contenido no puede reflejarse en la zona de pruebas sin el permiso del titular de derechos. El método funciona en la tabla de clasificación abierta (marcado), pero no puede producir puntuaciones oficiales de zona de pruebas ni calificar para premios hasta que existan permisos.
 
-**Lo que una transferencia de premio A1 realmente transmite.** La comunidad no recibe el modelo — nadie puede transferir los pesos de Anthropic, Google u OpenAI. La transferencia cubre la receta completa *alrededor* del modelo: todos los mensajes, datos de entrenamiento, código de tubería, lógica de reintentos, configuración y requisitos de modelo documentados. Porque el modelo es sustituible por construcción, la comunidad puede apuntar el método transferido a cualquier proveedor que elija — o a un modelo de peso abierto en su propio hardware — sin la participación del desarrollador. La receta es propiedad; el motor se alquila y es reemplazable.
+**Lo que una transferencia de premio A1 realmente transmite.** La comunidad no recibe el modelo — nadie puede transferir los pesos de Anthropic, Google u OpenAI. La transferencia cubre la receta completa *alrededor* del modelo: todos los indicadores, datos de entrenamiento, código de canalización, lógica de reintentos, configuración y requisitos de modelo documentados. Debido a que el modelo es sustituible por construcción, la comunidad puede apuntar el método transferido a cualquier proveedor que elija — o a un modelo de peso abierto en su propio hardware — sin la participación del desarrollador. La receta es propiedad; el motor se alquila y es reemplazable.
 
 ### Manifiesto de Dependencia (`method.json`)
 
@@ -184,7 +184,7 @@ Cada método declara sus dependencias en el manifiesto `method.json`. Cada entra
 
 | Perfil de dependencia | Contribuye |
 |----------------------|-----------|
-| `bundled` + licencia permite redistribución y transferencia | S |
+| `bundled` + la licencia permite redistribución y transferencia | S |
 | `mirrored` + licencia abierta que permite redistribución (copyleft incluido) | O |
 | `gateway` + `substitutable: true` (inferencia de LLM) | A1 |
 | `external-api`, o `gateway` con `substitutable: false` | A2 |
@@ -196,21 +196,21 @@ Un método sin **ninguna** dependencia externa declara `"dependency_class": "S"`
 
 ### Cómo Se Verifica la Validez
 
-Tres capas, de la más barata a la más autorizada:
+Tres capas, de la más económica a la más autorizada:
 
-1. **Auditoría de manifiesto.** El arnés deriva la clase efectiva del manifiesto y rechaza discrepancias. Los revisores verifican cada dependencia declarada contra su licencia y fuente declaradas — una dependencia declarada `redistributable: true` cuya licencia ascendente dice lo contrario falla la revisión.
+1. **Auditoría de manifiesto.** El arnés deriva la clase efectiva del manifiesto y rechaza discrepancias. Los revisores verifican cada dependencia declarada contra su licencia y fuente indicadas — una dependencia declarada `redistributable: true` cuya licencia ascendente dice lo contrario falla la revisión.
 2. **Análisis estático.** El código enviado se escanea en busca de llamadas de red, descargas dinámicas y acceso al sistema de archivos que el manifiesto no contabiliza. Una dependencia *no declarada* encontrada en la revisión es motivo de rechazo independientemente de qué clase habría sido — el manifiesto debe ser completo, no solo preciso.
-3. **Política de red de zona de pruebas.** La especificación de zona de pruebas requiere **negación por defecto de salida**: los contenedores de método no obtienen acceso de red a menos que una ruta esté explícitamente en la lista de permitidos. La única ruta de salida que la especificación define es la **puerta de enlace de LLM** — un proxy de inferencia operado por la infraestructura de evaluación, restringido a una lista de permitidos explícita de modelos fijados, con cada solicitud y respuesta registrada para auditoría posterior a la ejecución. Cualquier cosa que no esté en la lista de permitidos falla en la capa de red, no en la capa de política. Consulte [Especificación de Evaluación §8.6](/docs/specifications/benchmark) para la política de red y el diseño de la puerta de enlace.
+3. **Política de red de zona de pruebas.** La especificación de zona de pruebas requiere **negación de salida por defecto**: los contenedores de método no obtienen acceso de red a menos que una ruta esté explícitamente en la lista de permitidos. La única ruta de salida que la especificación define es la **puerta de enlace de LLM** — un proxy de inferencia operado por la infraestructura de evaluación, restringido a una lista de permitidos explícita de modelos fijados, con cada solicitud y respuesta registrada para auditoría posterior a la ejecución. Cualquier cosa que no esté en la lista de permitidos falla en la capa de red, no en la capa de política. Consulte [Especificación de Evaluación §8.6](/docs/specifications/benchmark) para la política de red y el diseño de la puerta de enlace.
 
-> 🔲 **Planeado.** La zona de pruebas y su puerta de enlace de LLM están especificadas pero aún no se han construido. Hasta que la puerta de enlace sea operativa, solo los métodos de Clase S y Clase O pueden evaluarse en la zona de pruebas; los métodos de Clase A1 son elegibles para premios *en principio* pero aún no pueden producir puntuaciones de oro estándar oficial. Esta página describe lo que la especificación requiere, no lo que actualmente se ejecuta.
+> 🔲 **Planeado.** La zona de pruebas y su puerta de enlace de LLM están especificadas pero aún no se han construido. Hasta que la puerta de enlace sea operativa, solo los métodos de Clase S y Clase O pueden evaluarse en la zona de pruebas; los métodos de Clase A1 son elegibles para premio *en principio* pero aún no pueden producir puntuaciones de oro estándar oficial. Esta página describe lo que la especificación requiere, no lo que actualmente se ejecuta.
 
-### Visualización del Marcador
+### Visualización de Tabla de Clasificación
 
-- El marcador muestra la clase de dependencia de cada método junto con su distintivo de clase de método.
-- Los métodos de Clase A2 en el marcador abierto llevan una bandera **"dependencia externa"** visible: sus puntuaciones dependen de un servicio de terceros que puede cambiar o desaparecer, y actualmente no son elegibles para premios.
+- La tabla de clasificación muestra la clase de dependencia de cada método junto con su distintivo de clase de método.
+- Los métodos de Clase A2 en la tabla de clasificación abierta llevan una bandera **"dependencia externa"** visible: sus puntuaciones dependen de un servicio de terceros que puede cambiar o desaparecer, y actualmente no son elegibles para premio.
 - Los métodos de Clase X no se enumeran.
 
-## Arnés de Evaluación: Protocolo TranslationMethod
+## Arnés de Evaluación: Protocolo TranslationMethod {#eval-harness-translationmethod-protocol}
 
 El arnés de evaluación utiliza tipificación estructural de Python (`Protocol`) para complementos. Cualquier clase con la firma de método correcta funciona — no se requiere herencia:
 
@@ -252,9 +252,9 @@ En champollion, los métodos se registran por par de idiomas en `champollion.con
 
 Consulte la [Especificación de Complemento](https://champollion.dev/docs/reference/plugin-spec) para la interfaz del lado de champollion.
 
-## Integración del Marcador
+## Integración de Tabla de Clasificación
 
-Cuando una tarjeta de método se adjunta a una ejecución (a través de `--method-card`), se incrusta en la tarjeta de ejecución y se muestra en el marcador:
+Cuando una tarjeta de método se adjunta a una ejecución (a través de `--method-card`), se incrusta en la tarjeta de ejecución y se muestra en la tabla de clasificación:
 
 ```bash
 # Run with method card attached
@@ -269,28 +269,28 @@ mt-eval publish eval/logs/harness/your-run-card.json
 
 Si no se proporcionó `--method-card`, `mt-eval publish` inicia un asistente interactivo que lo guía a través de la descripción de su método.
 
-El marcador muestra:
-- **Distintivo de clase** — indicador visual (por ejemplo, "pipeline", "coached-llm")
+La tabla de clasificación muestra:
+- **Distintivo de clase** — indicador visual (por ejemplo, "canalización", "coached-llm")
 - **Clase de dependencia** — S/O/A1/A2 (consulte [Validez de Método y Clases de Dependencia](#method-validity-and-dependency-classes)); los métodos A2 llevan una bandera "dependencia externa"
 - **Nombre del método** — de la tarjeta de método
 - **Herramientas utilizadas** — enumeradas de la tarjeta de método
 - **Indicador de código abierto**
 
-Cuando no se adjunta ninguna tarjeta de método, el marcador muestra configuración nativa del arnés (modelo, versión de mensaje, temperatura, herramientas habilitadas).
+Cuando no se adjunta ninguna tarjeta de método, la tabla de clasificación muestra configuración nativa del arnés (modelo, versión de indicador, temperatura, herramientas habilitadas).
 
 :::danger NO ENTRENE con datos de evaluación
-Los métodos cuyo proceso de desarrollo incluyó exposición al conjunto de datos de evaluación — como datos de entrenamiento, ejemplos de pocos disparos, entradas de diccionario o material de ajuste de mensaje — serán **descalificados** del marcador. Consulte [Evaluación de MT](/docs/leaderboard/rules) para lo que distingue un buen método de uno malo.
+Los métodos cuyo proceso de desarrollo incluyó exposición al conjunto de datos de evaluación — como datos de entrenamiento, ejemplos de pocos disparos, entradas de diccionario o material de ajuste de indicador — serán **descalificados** de la tabla de clasificación. Consulte [Evaluación de MT](/docs/leaderboard/rules) para lo que distingue un buen método de uno malo.
 :::
 
 ---
 
 ## Véase También
 
-- [Evaluación de MT](/docs/leaderboard/rules) — descripción general, valor del marcador y orientación de método bueno/malo
+- [Evaluación de MT](/docs/leaderboard/rules) — descripción general, valor de tabla de clasificación y orientación de método bueno/malo
 - [Arnés de Evaluación](/docs/specifications/harness) — cómo ejecutar evaluaciones
 - [Conjuntos de Datos de Evaluación](/docs/leaderboard/datasets) — conjuntos de datos disponibles (EDTeKLA, FLORES+)
-- [Especificación de Tarjeta de Ejecución](/docs/specifications/run-card) — esquema JSON de tarjeta de ejecución
+- [Especificación de Tarjeta de Ejecución](/docs/specifications/run-card) — el esquema JSON de tarjeta de ejecución
 - [Especificación de Complemento](https://champollion.dev/docs/reference/plugin-spec) — interfaz de complemento del lado de champollion
-- [Marcador de Método](https://champollion.dev/leaderboard) — puntuaciones de evaluación en vivo
+- [Tabla de Clasificación de Métodos](https://champollion.dev/leaderboard) — puntuaciones de evaluación en vivo
 - [Especificación de Evaluación](/docs/specifications/benchmark) — protocolo de evaluación, formato de corpus, esquema de tarjeta de ejecución
 - [Especificación de Puntuación](/docs/specifications/scoring) — SSOT para métricas, pesos compuestos y niveles de calidad

@@ -209,7 +209,7 @@ Every entry must indicate its origin:
 | `label` | UI label, button text, or heading |
 | `error` | Error message or warning |
 
-### 2.7 Domain
+### 2.7 Domain {#27-domain}
 
 **Domain** describes the real-world use case — the type of content being translated. This is orthogonal to register and context:
 
@@ -246,7 +246,7 @@ A legal contract (domain: `legal`) might be formal (register: `formal`) and cont
 
 ---
 
-## 3. Run Card Schema
+## 3. Run Card Schema {#3-run-card-schema}
 
 The run card is the atomic unit of evaluation. It is a self-contained JSON document that records the complete configuration and results of a single evaluation run: one method, one model, one configuration, one dataset.
 
@@ -446,7 +446,7 @@ For methods using paid APIs, we also report a secondary ranking. The cost-adjust
 
 ---
 
-## 5. Quality Tiers
+## 5. Quality Tiers {#5-quality-tiers}
 
 Quality tiers are heuristic labels on automated composite scores. They describe what the scores tend to mean in practice, based on human review of outputs at each level. **They are not validated quality judgments** — only human review (§6) can confirm actual usability.
 
@@ -517,7 +517,7 @@ See §8 for the full sovereignty mechanism.
 
 ---
 
-## 7. Human Validation
+## 7. Human Validation {#7-human-validation}
 
 Automated metrics are proxies. Human validation is the ground truth.
 
@@ -718,7 +718,7 @@ Methods are classified by type. The canonical enum is defined in the harness cod
 
 ---
 
-## 10. Cost Framework
+## 10. Cost Framework {#10-cost-framework}
 
 ### 10.1 Per-Run Cost
 
@@ -765,7 +765,7 @@ Typical sweep: 12 models × 3 temps × 2 prompts × 2 coaching = 144 runs at ~$0
 
 ---
 
-## 11. Extending to New Languages
+## 11. Extending to New Languages {#11-extending-to-new-languages}
 
 ### 11.1 Minimum Requirements
 

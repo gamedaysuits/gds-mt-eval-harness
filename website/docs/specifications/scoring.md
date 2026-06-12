@@ -89,7 +89,7 @@ Every metric in this specification has a **validation status** distinct from its
 
 ---
 
-## 2. Metric Inventory
+## 2. Metric Inventory {#2-metric-inventory}
 
 Metrics are organized into four categories. Each metric has an implementation status, scale, and level (per-entry, corpus-level, or both).
 
@@ -188,7 +188,7 @@ A metric moves from Proposed → Planned when:
 
 ---
 
-## 4. Composite Score
+## 4. Composite Score {#4-composite-score}
 
 ### 4.1 Formula
 
@@ -225,7 +225,7 @@ Before entering the composite formula, all metrics must be on a **0.0–1.0 scal
 
 Metrics excluded from the composite (`bleu`, `comet_score`, `ter`, `length_ratio`, `consistency_score`) are not normalized for this purpose.
 
-### 4.3 Weight Tables
+### 4.3 Weight Tables {#43-weight-tables}
 
 #### Profile A: Languages WITH FST Coverage
 
@@ -282,7 +282,7 @@ To add a new metric to the composite:
 
 ---
 
-## 5. Quality Tiers
+## 5. Quality Tiers {#5-quality-tiers}
 
 These tiers are heuristic labels on automated composite scores. They describe what the scores tend to mean in practice, based on human review of outputs at each level. **They are not validated quality judgments** — only human review can confirm actual usability.
 

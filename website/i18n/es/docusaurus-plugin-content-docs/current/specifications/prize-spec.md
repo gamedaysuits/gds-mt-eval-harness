@@ -51,7 +51,7 @@ Algunos corpus utilizados durante el desarrollo del método llevan licencias no 
 
 1. **Los corpus de estándar de oro de premios no deben incrustar contenido de corpus con licencia NC.** Los segmentos de prueba de estándar de oro son originales encargados por la comunidad (véase Corpus Partnership Strategy) — creados por humanos para el premio, con derechos aclarados para evaluación e implementación comercial desde el inicio.
 2. **Un método que reclama un premio no debe incrustar contenido de corpus con licencia NC** (p. ej., como datos de entrenamiento, ejemplos incrustados o tablas de búsqueda). El método transferido está destinado a implementación comercial por la organización de gobernanza (BENCHMARK_SPEC §8.3, Method Submission Agreement §6); el contenido con licencia NC dentro de él contaminaría esa implementación.
-3. **Los desarrolladores pueden usar libremente corpus con licencia NC para desarrollar y autoevaluar** — para eso es la pista de desarrollo. La restricción se aplica a lo que se envía y lo que se implementa, no a cómo un desarrollador aprende.
+3. **Los desarrolladores pueden usar libremente corpus con licencia NC para desarrollar y autoevaluar** — eso es para lo que existe la pista de desarrollo. La restricción se aplica a lo que se envía y lo que se implementa, no a cómo un desarrollador aprende.
 
 ### 1.6 Clases de Dependencia Controlan la Elegibilidad de Premios
 
@@ -60,10 +60,10 @@ Toda evaluación de premios ocurre en un sandbox (§1.4), y los métodos ganador
 | Clase de dependencia | ¿Elegible para premio? | Condiciones |
 |------------------|----------------|------------|
 | **S** — autónomo | ✅ Sí | Ninguna más allá de las condiciones de umbral en §2 |
-| **O** — abierto externo (p. ej., FST AGPL reflejado en envío) | ✅ Sí | Artefactos fijados e incluidos en el envío; las licencias permiten transferencia comunitaria; términos copyleft preservados (la comunidad recibe los mismos derechos que la licencia otorga a todos) |
+| **O** — abierto externo (p. ej., FST AGPL reflejado en envío) | ✅ Sí | Artefactos fijados y vendidos en el envío; licencias permiten transferencia comunitaria; términos copyleft preservados (la comunidad recibe los mismos derechos que la licencia otorga a todos) |
 | **A1** — inferencia LLM sustituible | ⚠️ Condicional | Modelo declarado, fijado y sustituible (debe ejecutarse contra un modelo de peso abierto alojado por la comunidad); evaluación enrutada a través de la puerta de entrada LLM del sandbox (🔲 planeado — los métodos A1 no pueden producir puntuaciones de estándar de oro hasta que la puerta esté operativa); la transferencia transmite la receta completa (indicaciones, entrenamiento, código), no el modelo |
 | **A2** — API de servicio/datos externos no sustituibles | ❌ Aún no | Inelegible hasta que el titular de derechos otorgue permisos de inclusión en sandbox y transferencia. Permitido en la tabla de clasificación abierta con una bandera visible de "dependencia externa" |
-| **X** — contenido incluido sin derechos | ❌ Nunca | Inadmisible en todas las pistas |
+| **X** — contenido agrupado sin derechos | ❌ Nunca | Inadmisible en todas las pistas |
 
 La clase de un método es la clase más restrictiva entre sus dependencias declaradas. Las dependencias no declaradas de cualquier clase son descalificantes (§5).
 
@@ -89,7 +89,7 @@ Un método reclama el Founder's Prize cumpliendo **TODAS** las siguientes condic
 | # | Condición | Métrica | Umbral | Justificación |
 |---|-----------|--------|-----------|-----------|
 | 1 | **Puntuación compuesta** | `composite` (SCORING_SPEC §4) | **≥ 0.80** | Entre Implementable (0.70) y Fluido (0.85). Requiere alta calidad en todas las dimensiones de métrica — no solo validez morfológica. |
-| 2 | **Aceptación FST** | `fst_acceptance_rate` (SCORING_SPEC §2.2) | **≥ 0.99 (99%+)** | Efectivamente todas las palabras de salida deben ser formas morfológicamente válidas reconocidas por el FST de GiellaLT. La tolerancia del 1% representa casos límite (nombres propios, neologismos, préstamos) que el FST puede legítimamente no cubrir. Esta es la puerta de control de calidad definitiva para MT polisintética — si el FST rechaza más del 1% de palabras, el método está produciendo formas que no existen en el idioma. Todo el punto de este premio es comprar un sistema que no mutile las cosas. |
+| 2 | **Aceptación FST** | `fst_acceptance_rate` (SCORING_SPEC §2.2) | **≥ 0.99 (99%+)** | Efectivamente todas las palabras de salida deben ser formas morfológicamente válidas reconocidas por el FST de GiellaLT. La tolerancia del 1% representa casos límite (nombres propios, neologismos, préstamos) que el FST puede legítimamente no cubrir. Esta es la puerta de control de calidad definitoria para MT polisintética — si el FST rechaza más del 1% de palabras, el método está produciendo formas que no existen en el idioma. Todo el punto de este premio es comprar un sistema que no mutile las cosas. |
 | 3 | **chrF++** | `chrf_plus_plus` (SCORING_SPEC §2.1) | **≥ 55.0** | La superposición de n-gramas de caracteres debe exceder 55 en la escala 0–100. Asegura similitud a nivel de superficie con traducciones de referencia, no solo validez morfológica. |
 | 4 | **Validación comunitaria** | Revisión humana (BENCHMARK_SPEC §7) | **≥ 70% "aceptable" o "excelente"** | Una muestra estratificada de salidas (≥30 entradas en niveles de dificultad 2–5) es revisada por ≥2 hablantes bilingües de CRK. Al menos el 70% de las entradas revisadas debe recibir una calificación de "aceptable" o "excelente". |
 | 5 | **Evaluación de estándar de oro** | Ejecución en sandbox (BENCHMARK_SPEC §8.2) | **Requerida** | Todas las métricas automatizadas deben calcularse contra el segmento de corpus `gold_standard`, ejecutado por la organización de gobernanza en un entorno aislado. Las puntuaciones del conjunto de desarrollo no cuentan. |
@@ -97,13 +97,13 @@ Un método reclama el Founder's Prize cumpliendo **TODAS** las siguientes condic
 
 > **¿Por qué 99+% FST?** El problema central en la traducción automática para idiomas polisintéticos es la alucinación — los LLM producen cadenas que *parecen* el idioma objetivo pero son morfológicamente inválidas. Un método que produce 95% de salida válida aún tiene 5% de palabras fabricadas — ruido inaceptable para cualquier uso en producción. El umbral de 99%+ exige alucinación casi nula mientras permite el caso raro (un nombre propio que el FST no conoce, un neologismo legítimo). Si un método no puede lograr aceptación FST de 99%+, no ha resuelto el problema.
 >
-> **¿Por qué 0.80 compuesto?** Esto se sitúa entre Implementable (0.70) y Fluido (0.85). Un método en 0.80 con aceptación FST de 99%+ produce salida donde prácticamente cada palabra es una palabra Cree real *y* la calidad general de la traducción es alta en dimensiones de superficie, estructura y semántica. La puerta de validación comunitaria (condición #4) asegura que esto no sea solo juego de métricas — los hablantes deben confirmar que la salida es genuinamente utilizable.
+> **¿Por qué 0.80 compuesto?** Esto se sitúa entre Implementable (0.70) y Fluido (0.85). Un método en 0.80 con aceptación FST de 99%+ produce salida donde prácticamente cada palabra es una palabra real de Cree *y* la calidad general de traducción es alta en dimensiones de superficie, estructura y semántica. La puerta de validación comunitaria (condición #4) asegura que esto no sea solo juego de métricas — los hablantes deben confirmar que la salida es genuinamente utilizable.
 
 #### Qué Significa Este Umbral en la Práctica
 
 En compuesto ≥ 0.80 con FST ≥ 0.99 y chrF++ ≥ 55, un hablante bilingüe típicamente vería:
 
-- **Prácticamente cada** palabra de salida es una palabra Cree real (FST valida 99%+ — formas alucinadas casi nulas)
+- **Prácticamente cada** palabra de salida es una palabra real de Cree (FST valida 99%+ — formas alucinadas casi nulas)
 - Las categorías gramaticales principales (persona, número, tiempo) son correctas en la mayoría de entradas
 - El orden de palabras es generalmente natural
 - El significado se preserva confiablemente
@@ -133,7 +133,7 @@ Este es un sistema que **no mutila el idioma.** Puede no ser perfecto, pero cada
 ### 3.2 Evaluación
 
 1. La organización de gobernanza instala y ejecuta el método en un arnés aislado contra el corpus `gold_standard`
-2. Se calculan las métricas automatizadas (compuesto, FST, chrF++, etc.)
+2. Las métricas automatizadas se calculan (compuesto, FST, chrF++, etc.)
 3. Si se cumplen los umbrales automatizados (condiciones 1–3), la organización de gobernanza procede a revisión comunitaria
 4. Si los umbrales automatizados NO se cumplen, el desarrollador recibe puntuaciones y retroalimentación. No se activa revisión comunitaria.
 
@@ -168,7 +168,7 @@ Este es un sistema que **no mutila el idioma.** Puede no ser perfecto, pero cada
 
 ---
 
-## 4. Fondos de Premios Futuros
+## 4. Fondos de Premios Futuros {#4-future-prize-pools}
 
 El Founder's Prize es la semilla. Fondos de premios adicionales son financiados por patrocinadores. Cada nuevo fondo de premios se documenta como una nueva subsección de §2 con su propio:
 
@@ -241,7 +241,7 @@ Cuando se activa un fondo de premios:
 1. La interfaz de usuario de la tabla de clasificación debe mostrar premios activos y sus condiciones de umbral
 2. Las tarjetas de ejecución que cumplen umbrales automatizados (condiciones 1–3) deben marcarse para revisión comunitaria
 3. El campo `quality_tier` en el esquema de tarjeta de ejecución ya captura el nivel ("implementable", "fluido")
-4. No se necesitan cambios de código nuevos en el arnés — la especificación de premios es una capa de política sobre puntuación existente
+4. No se necesian cambios de código nuevos en el arnés — la especificación de premio es una capa de política sobre puntuación existente
 
 ---
 

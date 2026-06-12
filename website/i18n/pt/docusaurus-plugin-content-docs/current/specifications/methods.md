@@ -17,7 +17,7 @@ related:
     kind: cookbook
     note: "A full method, built end-to-end"
 ---
-# Interface Compartilhada de Método
+# Interface de Método Compartilhado
 
 > **Resumo Executivo.** Esta página especifica o protocolo `TranslationMethod` que todos os métodos da Arena devem implementar, as seis classes de método (`raw-llm`, `coached-llm`, `pipeline`, `custom-plugin`, `api`, `human`), o formato de plugin de método e as **classes de dependência** (S/O/A1/A2/X) que determinam se um método pode ser executado na sandbox de avaliação e se qualifica para prêmios. Qualquer abordagem que implemente este protocolo pode ser avaliada; o que ela depende determina onde pode competir.
 
@@ -47,7 +47,7 @@ Carregado via `--method path/to/dir`. O harness não descobre nada automaticamen
 
 Um método que suporta ambos os sistemas fornece dois pontos de entrada — um para cada runtime de linguagem. O **cartão de método** é a ponte: descreve o método em um formato que ambos os sistemas entendem.
 
-## Cartão de Método
+## Cartão de Método {#method-card}
 
 Um cartão de método descreve *o que* é um método de tradução sem revelar detalhes proprietários como o prompt completo do sistema. Ele responde:
 
@@ -87,16 +87,16 @@ O campo `dependency_class` resume o que o método precisa para executar e transf
 | `api` | API de tradução de terceiros (Google Translate, DeepL, etc.) |
 | `human` | Tradução humana (para estabelecer linhas de base) |
 
-## Validade de Método e Classes de Dependência
+## Validade de Método e Classes de Dependência {#method-validity-and-dependency-classes}
 
 Um método é tão executável e tão transferível quanto sua dependência menos disponível. Dois mecanismos da Arena dependem de saber exatamente o que um método precisa:
 
 1. **Avaliação em sandbox** ([Especificação de Benchmark §8.2](/docs/specifications/benchmark)) — pontuações ouro oficiais vêm de uma sandbox cuja política de rede é **padrão-negar**. Um método que silenciosamente requer um serviço externo não pode produzir uma pontuação oficial.
-2. **Transferência de prêmio** ([Especificação de Prêmio](/docs/specifications/prizes)) — métodos vencedores de prêmios transferem para a organização de governança da comunidade de idiomas. Um método que agrupa conteúdo que o remetente não tinha direito de incluir não pode ser transferido legalmente. O remetente deve deter (ou receber) os direitos de tudo na caixa.
+2. **Transferência de prêmio** ([Especificação de Prêmio](/docs/specifications/prizes)) — métodos vencedores de prêmios transferem para a organização de governança da comunidade de idiomas. Um método que agrupa conteúdo que o remetente não tinha direito de incluir não pode ser transferido legalmente. O remetente deve deter (ou ser concedido) os direitos de tudo na caixa.
 
 Para tornar ambas as verificações mecânicas em vez de ad hoc, cada método declara uma **classe de dependência**, derivada de um **manifesto de dependência** em `method.json`.
 
-> **Nota sobre nomenclatura.** *Classe de método* (§acima: `raw-llm`, `pipeline`, …) descreve *como um método traduz*. *Classe de dependência* (esta seção) descreve *o que um método precisa para executar e transferir*. São eixos independentes: um método `pipeline` pode ser qualquer classe de dependência.
+> **Nota sobre nomenclatura.** *Classe de método* (§acima: `raw-llm`, `pipeline`, …) descreve *como um método traduz*. *Classe de dependência* (esta seção) descreve *o que um método precisa para executar e transferir*. Eles são eixos independentes: um método `pipeline` pode ser qualquer classe de dependência.
 
 ### As Cinco Classes de Dependência
 
@@ -114,10 +114,10 @@ Para tornar ambas as verificações mecânicas em vez de ad hoc, cada método de
 
 A maioria dos métodos chama LLMs. A Arena não finge o contrário — mas distingue dois tipos muito diferentes de dependência de API:
 
-- **A1 (substituível):** A API fornece inferência de LLM como commodity. O identificador do modelo é configuração: o método deve ser executado de ponta a ponta contra qualquer endpoint de inferência compatível, incluindo um modelo de peso aberto hospedado pela comunidade. A qualidade da saída pode diferir entre modelos — esse é o risco do desenvolvedor, e pontuações oficiais são vinculadas ao modelo fixado usado na avaliação. Um método que depende de **estado do lado do provedor** (um fine-tune hospedado apenas no provedor, armazenamentos de arquivo do provedor, assistentes específicos do provedor) *não* é substituível: esse estado não pode ser removido, então a dependência é A2 a menos que os pesos ou dados subjacentes sejam incluídos na submissão.
+- **A1 (substituível):** A API fornece inferência de LLM como commodity. O identificador do modelo é configuração: o método deve ser executado de ponta a ponta contra qualquer endpoint de inferência compatível, incluindo um modelo de peso aberto hospedado pela comunidade. A qualidade da saída pode diferir entre modelos — esse é o risco do desenvolvedor, e as pontuações oficiais estão vinculadas ao modelo fixado usado na avaliação. Um método que depende de **estado do lado do provedor** (um fine-tune hospedado apenas no provedor, armazenamentos de arquivo do provedor, assistentes específicos do provedor) *não* é substituível: esse estado não pode ser removido, então a dependência é A2 a menos que os pesos ou dados subjacentes sejam incluídos na submissão.
 - **A2 (não-substituível):** A API serve algo único — tipicamente dados proprietários ou sem licença. Nenhum endpoint alternativo pode fornecê-lo, e o conteúdo não pode ser espelhado na sandbox sem permissão do detentor dos direitos. O método funciona no placar aberto (sinalizado), mas não pode produzir pontuações oficiais de sandbox ou se qualificar para prêmios até que permissões existam.
 
-**O que uma transferência de prêmio A1 realmente transmite.** A comunidade não recebe o modelo — ninguém pode transferir os pesos da Anthropic, Google ou OpenAI. A transferência cobre a receita completa *ao redor* do modelo: todos os prompts, dados de treinamento, código de pipeline, lógica de retry, configuração e requisitos de modelo documentados. Como o modelo é substituível por construção, a comunidade pode apontar o método transferido para qualquer provedor que escolher — ou para um modelo de peso aberto em seu próprio hardware — sem envolvimento do desenvolvedor. A receita é de propriedade; o motor é alugado e substituível.
+**O que uma transferência de prêmio A1 realmente transmite.** A comunidade não recebe o modelo — ninguém pode transferir os pesos da Anthropic, Google ou OpenAI. A transferência cobre a receita completa *em torno* do modelo: todos os prompts, dados de treinamento, código de pipeline, lógica de retry, configuração e requisitos de modelo documentados. Como o modelo é substituível por construção, a comunidade pode apontar o método transferido para qualquer provedor que escolher — ou para um modelo de peso aberto em seu próprio hardware — sem envolvimento do desenvolvedor. A receita é de propriedade; o motor é alugado e substituível.
 
 ### Manifesto de Dependência (`method.json`)
 
@@ -199,7 +199,7 @@ Um método com **nenhuma** dependência externa declara `"dependency_class": "S"
 Três camadas, da mais barata à mais autoritária:
 
 1. **Auditoria de manifesto.** O harness deriva a classe efetiva do manifesto e rejeita incompatibilidades. Revisores verificam cada dependência declarada contra sua licença e fonte declaradas — uma dependência declarada `redistributable: true` cuja licença upstream diz o contrário falha na revisão.
-2. **Análise estática.** Código submetido é verificado para chamadas de rede, downloads dinâmicos e acesso ao sistema de arquivos que o manifesto não contabiliza. Uma dependência *não declarada* encontrada na revisão é motivo para rejeição independentemente de que classe teria sido — o manifesto deve ser completo, não apenas preciso.
+2. **Análise estática.** O código enviado é verificado quanto a chamadas de rede, downloads dinâmicos e acesso ao sistema de arquivos que o manifesto não contabiliza. Uma dependência *não declarada* encontrada na revisão é motivo para rejeição independentemente de que classe teria sido — o manifesto deve ser completo, não apenas preciso.
 3. **Política de rede de sandbox.** A especificação de sandbox requer **padrão-negar egresso**: contêineres de método não recebem acesso de rede a menos que um caminho seja explicitamente permitido. O único caminho de egresso que a especificação define é o **gateway de LLM** — um proxy de inferência operado pela infraestrutura de avaliação, restrito a uma lista de permissões explícita de modelos fixados, com cada solicitação e resposta registrada para auditoria pós-execução. Qualquer coisa não na lista de permissões falha na camada de rede, não na camada de política. Veja [Especificação de Benchmark §8.6](/docs/specifications/benchmark) para a política de rede e design do gateway.
 
 > 🔲 **Planejado.** A sandbox e seu gateway de LLM são especificados mas ainda não construídos. Até que o gateway seja operacional, apenas métodos Classe S e Classe O podem ser avaliados na sandbox; métodos Classe A1 são elegíveis para prêmio *em princípio* mas ainda não podem produzir pontuações ouro oficiais. Esta página descreve o que a especificação requer, não o que atualmente é executado.
@@ -210,7 +210,7 @@ Três camadas, da mais barata à mais autoritária:
 - Métodos Classe A2 no placar aberto carregam uma flag **"dependência externa"** visível: suas pontuações dependem de um serviço de terceiros que pode mudar ou desaparecer, e atualmente não são elegíveis para prêmio.
 - Métodos Classe X não são listados.
 
-## Eval Harness: Protocolo TranslationMethod
+## Eval Harness: Protocolo TranslationMethod {#eval-harness-translationmethod-protocol}
 
 O eval harness usa tipagem estrutural do Python (`Protocol`) para plugins. Qualquer classe com a assinatura de método correta funciona — nenhuma herança necessária:
 
@@ -293,4 +293,4 @@ Métodos cujo processo de desenvolvimento incluiu exposição ao conjunto de dad
 - [Especificação de Plugin](https://champollion.dev/docs/reference/plugin-spec) — interface de plugin do lado do champollion
 - [Placar de Método](https://champollion.dev/leaderboard) — pontuações de benchmark ao vivo
 - [Especificação de Benchmark](/docs/specifications/benchmark) — protocolo de avaliação, formato de corpus, esquema de cartão de execução
-- [Especificação de Pontuação](/docs/specifications/scoring) — SSOT para métricas, pesos compostos e tiers de qualidade
+- [Especificação de Pontuação](/docs/specifications/scoring) — SSOT para métricas, pesos compostos e níveis de qualidade

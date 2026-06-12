@@ -66,14 +66,14 @@ Dit verwerkt elk item in het corpus via het geconfigureerde model (of de methode
 | `--coaching-file` | — | — | Pad naar tekstbestand met coaching-prompt |
 | `--coaching` | — | — | Inline coaching-tekst (geciteerde tekenreeks) |
 | `--method` | — | — | Pad naar map met methode-plugin (bevat `method.json` + Python-module) |
-| `--method-card` | — | — | Pad naar methode card JSON voor leaderboard-metadata |
+| `--method-card` | — | — | Pad naar methode-card JSON voor leaderboard-metadata |
 | `--fst-retries` | — | `0` | Aantal FST-herpogingen (alleen standaard LLM-methode) |
 | `--skip-fst` | — | `false` | FST-kwaliteitspoort volledig overslaan |
 | `--tools` | — | `false` | Modus voor tool-aanroepen inschakelen |
 | `--tools-list` | — | — | Door komma's gescheiden toolnamen |
 | `--max-tool-rounds` | — | `8` | Maximum aantal tool-aanroepronden per item |
 | `--hooks` | — | — | Namen van post-vertaalhooks |
-| `--style-profile` | — | — | Pad naar een stijlprofiel JSON. Schakelt metrische waarden voor schrijfstijlconsistentie in (informatief — nooit onderdeel van de composite score; zie [§ Schrijfstijl- en registermetrische waarden](#writing-style-and-register-metrics-informational)) |
+| `--style-profile` | — | — | Pad naar een stijlprofiel JSON. Schakelt metrische waarden voor schrijfstijlconsistentie in (informatief — nooit onderdeel van de samengestelde score; zie [§ Schrijfstijl- en registermetrische waarden](#writing-style-and-register-metrics-informational)) |
 | `-b, --batch-size` | — | `25` | Items per API-aanroep |
 | `-c, --concurrency` | — | `8` | Parallelle API-aanroepen |
 | `--max-tokens` | — | `32768` | Maximum aantal tokens per API-aanroep |
@@ -151,12 +151,12 @@ Elk experiment produceert een **run card** — een op zichzelf staand JSON-docum
 Zie de [Run Card Specification](/docs/specifications/run-card) voor het volledige schema met elk veld gedocumenteerd.
 
 :::info Gezaghebbend schema
-De [Benchmark Specification](/docs/specifications/benchmark) is de enige bron van waarheid voor het run card-schema. Voor metrische definities, composite-gewichten en kwaliteitsniveaus, zie de [Scoring Specification](/docs/specifications/scoring). Deze pagina documenteert het gebruik van de harness; de specificaties definiëren wat de uitvoer betekent.
+De [Benchmark Specification](/docs/specifications/benchmark) is de enige bron van waarheid voor het run card-schema. Voor metrische definities, samengestelde gewichten en kwaliteitsniveaus, zie de [Scoring Specification](/docs/specifications/scoring). Deze pagina documenteert het gebruik van de harness; de specificaties definiëren wat de uitvoer betekent.
 :::
 
-### Belangrijke blokken
+### Sleutelblokken
 
-**`dataset`** — Identificeert welke dataset is gebruikt, inclusief de content-hash zodat resultaten aan een specifieke versie zijn gekoppeld:
+**`dataset`** — Identificeert welke dataset is gebruikt, inclusief de inhoudshasj zodat resultaten aan een specifieke versie zijn gekoppeld:
 
 ```json
 // Example using master_corpus.json (62 gold + 342 textbook = 404)
@@ -212,48 +212,48 @@ De harness kan evalueren of vertalingen overeenkomen met een doelgericht **regis
 **Wat er wordt gemeten (per item):**
 
 | Metrische waarde | Schaal | Betekenis |
-|-----------------|--------|-----------|
+|------------------|--------|-----------|
 | `style_register_match` | booleaans | Komt de uitvoer overeen met het verwachte register? Het doel is afkomstig uit het veld `register` van het corpusitem (zie [Benchmark Spec §2.6](/docs/specifications/benchmark)) of uit een stijlprofiel |
 | `style_sentence_length_ratio` | float | Voorspelde versus referentie gemiddelde zinslengte (1.0 = overeenkomst; afwijking = stijldrift) |
 | `style_formality_score` | 0.0–1.0 | Aanwezigheid van formele/informele markers (T–V-voornaamwoorden, samentrekkingen, …) met behulp van taalspecifieke markerresources |
 
 **Geaggregeerd:** `style_consistency_rate` — het aandeel items zonder gedetecteerde registermismatch.
 
-Schakel een aangepast doel in met `--style-profile path/to/profile.json` (bijv. een merkstemprofiel); zonder dit valt de plugin terug op de `register`-metadata van elk corpusitem, indien aanwezig.
+Schakel een aangepast doel in met `--style-profile path/to/profile.json` (bijv. een merkstemprofiel); zonder dit profiel valt de plugin terug op de `register`-metadata van elk corpusitem, indien aanwezig.
 
 :::caution Eerlijke afbakening
-Deze metrische waarden zijn **uitsluitend informatief** — ze maken nooit deel uit van de composite score, en de formaliteitsdetectie is op markers gebaseerd (een heuristiek), geen aangeleerd oordeel. Beschouw ze als een driftdetector voor registerconformiteit, niet als een uitspraak over stijlkwaliteit.
+Deze metrische waarden zijn **uitsluitend informatief** — ze maken nooit deel uit van de samengestelde score, en de formaliteitsdetectie is op markers gebaseerd (een heuristiek), geen aangeleerd oordeel. Beschouw ze als een driftdetector voor registerconformiteit, niet als een uitspraak over stijlkwaliteit.
 :::
 
 ---
 
-## Vingerafdruk versus run card-hash
+## Vingerafdruk versus run card-hasj {#fingerprint-vs-run-card-hash}
 
-De harness produceert twee afzonderlijke hashes. Ze dienen verschillende doeleinden:
+De harness produceert twee afzonderlijke hasjes. Ze dienen verschillende doeleinden:
 
 ### Vingerafdruk
 
 De **vingerafdruk** beantwoordt de vraag: *"Kan deze run worden gereproduceerd?"*
 
-De vingerafdruk hasht de combinatie van invoergegevens die de experimentconfiguratie definiëren — niet de uitvoer:
+Het hasht de combinatie van invoergegevens die de experimentconfiguratie definiëren — niet de uitvoer:
 
 - Dataset SHA-256
 - Model-slug
 - Conditielabel
-- Systeem-prompt SHA-256
+- Systeemprompt SHA-256
 - Temperatuur
 - Harness-versie
 
 Twee runs met identieke vingerafdrukken hebben dezelfde configuratie gebruikt. Hun resultaten zouden vergelijkbaar moeten zijn (met uitzondering van API-niet-determinisme).
 
-### Run card-hash
+### Run card-hasj
 
-De **run card-hash** beantwoordt de vraag: *"Is dit specifieke resultaatbestand gemanipuleerd?"*
+De **run card-hasj** beantwoordt de vraag: *"Is dit specifieke resultaatbestand gemanipuleerd?"*
 
-Het is de SHA-256 van het volledige run card JSON-bestand (exclusief het veld `run_card_hash` zelf). Als een veld wijzigt — een score, een tijdstempel, een enkele uitvoer — is de hash ongeldig.
+Het is de SHA-256 van het volledige run card JSON-bestand (exclusief het veld `run_card_hash` zelf). Als een veld wijzigt — een score, een tijdstempel, een enkele uitvoer — is de hasj ongeldig.
 
 :::info Wanneer welke te gebruiken
-Gebruik de **vingerafdruk** om vergelijkbare runs te groeperen (hetzelfde experiment, verschillende uitvoeringen). Gebruik de **run card-hash** om de integriteit van een specifiek resultaatbestand te verifiëren.
+Gebruik de **vingerafdruk** om vergelijkbare runs te groeperen (hetzelfde experiment, verschillende uitvoeringen). Gebruik de **run card-hasj** om de integriteit van een specifiek resultaatbestand te verifiëren.
 :::
 
 ---
@@ -296,4 +296,4 @@ Als uw methode de evaluatiedataset tijdens de ontwikkeling heeft gezien — als 
 - [Building a Method](/docs/specifications/methods) — de methode-interface voor het maken van evalueerbare methoden
 - [Method Leaderboard](https://champollion.dev/leaderboard) — live benchmarkscores
 - [Benchmark Specification](/docs/specifications/benchmark) — evaluatieprotocol, corpusformaat, run card-schema
-- [Scoring Specification](/docs/specifications/scoring) — SSOT voor metrische waarden, composite-gewichten en kwaliteitsniveaus
+- [Scoring Specification](/docs/specifications/scoring) — SSOT voor metrische waarden, samengestelde gewichten en kwaliteitsniveaus

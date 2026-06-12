@@ -71,12 +71,12 @@ Esto ejecuta cada entrada del corpus a través del modelo configurado (o complem
 | `--skip-fst` | — | `false` | Omitir completamente la puerta de calidad de FST |
 | `--tools` | — | `false` | Habilitar modo de llamada de herramientas |
 | `--tools-list` | — | — | Nombres de herramientas separados por comas |
-| `--max-tool-rounds` | — | `8` | Rondas máximas de llamada de herramientas por entrada |
+| `--max-tool-rounds` | — | `8` | Máximo de rondas de llamada de herramientas por entrada |
 | `--hooks` | — | — | Nombres de ganchos posteriores a la traducción |
 | `--style-profile` | — | — | Ruta a un perfil de estilo JSON. Habilita métricas de consistencia de estilo de escritura (informativo — nunca parte de la puntuación compuesta; consulte [§ Métricas de estilo de escritura y registro](#métricas-de-estilo-de-escritura-y-registro-informativo)) |
 | `-b, --batch-size` | — | `25` | Entradas por llamada a API |
 | `-c, --concurrency` | — | `8` | Llamadas a API paralelas |
-| `--max-tokens` | — | `32768` | Tokens máximos por llamada a API |
+| `--max-tokens` | — | `32768` | Máximo de tokens por llamada a API |
 | `--temperature` | — | `0.0` | Temperatura de muestreo (0.0 = determinista) |
 | `--no-cache` | — | `false` | Deshabilitar almacenamiento en caché de respuestas |
 | `--cache-dir` | — | `eval/cache/harness` | Ruta del directorio de caché |
@@ -219,7 +219,7 @@ El arnés puede evaluar si las traducciones coinciden con un **registro** y **es
 
 **Agregado:** `style_consistency_rate` — la fracción de entradas sin desajuste de registro detectado.
 
-Habilite un objetivo personalizado con `--style-profile path/to/profile.json` (por ejemplo, un perfil de voz de marca); sin uno, el complemento recurre a los metadatos `register` de cada entrada del corpus donde esté presente.
+Habilite un objetivo personalizado con `--style-profile path/to/profile.json` (por ejemplo, un perfil de voz de marca); sin uno, el complemento recurre a los metadatos `register` de cada entrada del corpus donde estén presentes.
 
 :::caution Alcance Honesto
 Estas métricas son **solo informativas** — nunca son parte de la puntuación compuesta, y la detección de formalidad se basa en marcadores (una heurística), no en un juicio aprendido. Trátelas como un detector de desviación para adherencia de registro, no como un veredicto sobre calidad de estilo.
@@ -227,7 +227,7 @@ Estas métricas son **solo informativas** — nunca son parte de la puntuación 
 
 ---
 
-## Huella Digital vs Hash de Tarjeta de Ejecución
+## Huella Digital vs Hash de Tarjeta de Ejecución {#huella-digital-vs-hash-de-tarjeta-de-ejecución}
 
 El arnés produce dos hashes distintos. Sirven para propósitos diferentes:
 
@@ -244,7 +244,7 @@ Genera un hash de la combinación de entradas que definen la configuración del 
 - Temperatura
 - Versión del arnés
 
-Dos ejecuciones con huellas digitales idénticas utilizaron la misma configuración. Sus resultados deben ser comparables (módulo no determinismo de API).
+Dos ejecuciones con huellas digitales idénticas utilizaron la misma configuración. Sus resultados deberían ser comparables (módulo no determinismo de API).
 
 ### Hash de Tarjeta de Ejecución
 

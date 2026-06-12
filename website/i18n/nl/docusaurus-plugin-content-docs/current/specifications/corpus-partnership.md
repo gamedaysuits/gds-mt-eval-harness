@@ -76,7 +76,7 @@ Het ontwikkelingscorpus stelt iedereen in staat vertaalmethoden te bouwen. De go
    - Geschatte moeilijkheidsgraad (1–5, zie §3.3)
    - Herkomstlabel (leerboek, ontlokt, corpus, gold_standard)
 
-3. **Vertaal elke bronzin** naar de doeltaal; dit wordt uitgevoerd door tweetalige sprekers. Meerdere referentievertalingen per item zijn waardevol maar niet vereist.
+3. **Vertaal elke bronzin** naar de doeltaal, uitgevoerd door tweetalige sprekers. Meerdere referentievertalingen per item zijn waardevol maar niet vereist.
 
 4. **Voeg optioneel morfologische analyse toe** voor elke referentievertaling:
    - Interlineaire gloss (morfeem-voor-morfeem uitsplitsing)
@@ -87,11 +87,11 @@ Het ontwikkelingscorpus stelt iedereen in staat vertaalmethoden te bouwen. De go
 
 **Verantwoordelijke:** Taalkundige met expertise in de doeltaal.
 
-1. **Kruisreview.** Elke vertaling dient te worden beoordeeld door ten minste één extra tweetalige spreker die de oorspronkelijke vertaling niet heeft gemaakt. De beoordelaar controleert:
+1. **Kruiscontrole.** Elke vertaling dient te worden beoordeeld door ten minste één extra tweetalige spreker die de oorspronkelijke vertaling niet heeft gemaakt. De beoordelaar controleert:
    - Is de vertaling nauwkeurig?
-   - Klinkt ze natuurlijk?
+   - Klinkt de vertaling natuurlijk?
    - Is de moeilijkheidsgraad correct?
-   - Zijn er aanvaardbare varianten die vermeld moeten worden?
+   - Zijn er aanvaardbare varianten die vermeld dienen te worden?
 
 2. **Voer de schemavalidator uit.** Wij leveren een script dat het corpus valideert aan de hand van het itemschema (Benchmarkspecificatie §2.2). Het controleert:
    - Aanwezigheid van verplichte velden
@@ -100,7 +100,7 @@ Het ontwikkelingscorpus stelt iedereen in staat vertaalmethoden te bouwen. De go
    - Geen dubbele ID's
    - Tekencodering (UTF-8 NFC-normalisatie)
 
-3. **Als er een FST bestaat voor de taal,** voer de referentievertalingen daar doorheen. Elk woord in de referentie dient FST-geldig te zijn. Woorden die dat niet zijn (leenwoorden, neologismen, eigennamen) dienen te worden gedocumenteerd in een allowlist.
+3. **Als er een FST bestaat voor de taal,** voer de referentievertalingen daardoorheen. Elk woord in de referentie dient FST-geldig te zijn. Woorden die dat niet zijn (leenwoorden, neologismen, eigennamen) dienen te worden gedocumenteerd in een acceptatielijst.
 
 ### Fase 4: Segmentatie en Verzegeling (1 week, onze engineering)
 
@@ -131,7 +131,7 @@ Het ontwikkelingscorpus stelt iedereen in staat vertaalmethoden te bouwen. De go
       at a specific time without revealing its contents)
    ```
 
-3. **Het development-segment** wordt vastgelegd in de openbare repository en gepubliceerd met volledige licentie-informatie.
+3. **Het development-segment** wordt vastgelegd in de openbare repository en gepubliceerd met volledige licentieverlening.
 
 4. **Het diagnostische segment** is eveneens openbaar — het test specifieke taalkundige verschijnselen (zie §3.4).
 
@@ -197,14 +197,14 @@ Elk corpusbestand is een JSON-document dat het schema in Benchmarkspecificatie �
 
 ### 3.3 Verdeling over Moeilijkheidsgraden
 
-Het corpus moet items bevatten over alle vijf moeilijkheidsgraden, met nadruk op graden 2–4:
+Het corpus moet items bevatten over alle vijf moeilijkheidsgraden, met een nadruk op graden 2–4:
 
 | Graad | Beschrijving | Beoogde verdeling |
 |------|-------------|-------------------|
 | 1 — Basiswoordenschat | Losse woorden, veelgebruikte begroetingen, getallen | 10–15% |
 | 2 — Eenvoudige zinnen | SVO, tegenwoordige tijd | 25–30% |
 | 3 — Gemiddelde complexiteit | Verleden/toekomstige tijd, bezittelijke vormen, animaatheid | 30–35% |
-| 4 — Complexe morfologie | Obviatie, passief, conjunctorde, betrekkelijke bijzinnen | 15–20% |
+| 4 — Complexe morfologie | Obviatie, passief, conjunctvolgorde, betrekkelijke bijzinnen | 15–20% |
 | 5 — Gevorderd | Meervoudige bijzinnen, formeel register, ceremonieel, idiomatisch | 5–10% |
 
 ### 3.4 Diagnostische Testsuite
@@ -216,35 +216,35 @@ Voor polysynthetische talen dient de diagnostische suite gericht te zijn op:
 | Verschijnsel | Voorbeeld (Cree) | Wat het test |
 |-----------|----------------|--------------|
 | **Animaatheidscongruentie** | atim (AN) vs. maskisin (IN) — verschillende werkwoordsvormen | Weet het systeem welke zelfstandige naamwoorden animaat zijn? |
-| **Obviatie** | Proximatief vs. obviatiefde derde persoon | Volgt het de hiërarchie van de derde persoon? |
+| **Obviatie** | Proximatief vs. obviatiefvorm derde persoon | Houdt het de hiërarchie van de derde persoon bij? |
 | **Inversmarkering** | Directe vs. inverse werkwoordsvormen | Verwerkt het patiënt-overtreft-agens? |
 | **Conjunct/Onafhankelijk** | Hoofdzin vs. bijzin werkwoordsvolgorde | Gebruikt het het juiste werkwoordsparadigma? |
-| **Inclusief/Exclusief** | "Wij (inclusief u)" vs. "Wij (exclusief u)" | Onderscheidt het meervoudsvormen van de eerste persoon? |
+| **Inclusief/Exclusief** | "Wij (inclusief u)" vs. "Wij (exclusief u)" | Onderscheidt het de eerste persoon meervoudsvormen? |
 
-Voor andere taalfamilies: identificeer de 3–5 meest diagnostische verschijnselen die competente van incompetente vertaling onderscheiden. De taalkundige expertise van de afdeling is hier essentieel — dit zijn de tests die alleen een specialist zou weten te schrijven.
+Identificeer voor andere taalfamilies de 3–5 meest diagnostische verschijnselen die competente van incompetente vertaling onderscheiden. De taalkundige expertise van de afdeling is hier essentieel — dit zijn de tests die alleen een specialist zou weten te schrijven.
 
 ### 3.5 Wat Wij NIET Willen
 
-| Anti-patroon | Reden |
+| Antipatroon | Reden |
 |-------------|-----|
 | **Uitsluitend Bijbeltekst** | Archaïsch register, liturgisch vocabulaire, formulaïsche structuur. OMT-1600 evalueerde 1.560 talen op deze manier — wij vermijden dit bewust. |
 | **Synthetische evaluatieparen** | Door LLM gegenereerde referenties ondermijnen het doel van evaluatie. De referentie moet door een mens zijn geschreven. |
-| **Corpora met één register** | Uitsluitend formeel of uitsluitend conversationeel. Vertaling in de praktijk omvat meerdere registers. |
+| **Corpora met één register** | Uitsluitend formeel of uitsluitend conversationeel. Vertaling in de praktijk beslaat meerdere registers. |
 | **Uitsluitend moeilijkheidsgraad 1** | Losse woorden en begroetingen testen geen vertaling — ze testen het opzoeken van vocabulaire. |
 | **Machinaal vertaalde referenties** | Google Translate-uitvoer gebruiken als "referentie" is circulair. |
 | **Zinnen zonder contextlabel** | Wij hebben de communicatieve functie nodig voor diagnostische analyse. |
 
 ---
 
-## 4. Cryptografische Verzegeling en Sandboxtesten
+## 4. Cryptografische Verzegeling en Sandboxtesten {#4-cryptographic-sealing-and-sandbox-testing}
 
 ### 4.1 Waarom de Testset Verzegelen?
 
-Conventionele ML-benchmarks publiceren testsets openbaar. Zodra gepubliceerd, zullen frontier-LLM's er uiteindelijk op trainen (opzettelijk of via webscraping), waardoor scores onbetrouwbaar worden. Voor inheemse taaldata bestaat er een bijkomende zorg: gepubliceerde taalkundige data kan worden gebruikt zonder toestemming van de gemeenschap.
+Conventionele ML-benchmarks publiceren testsets openbaar. Zodra gepubliceerd, zullen frontier-LLM's er uiteindelijk op trainen (opzettelijk of via webscraping), waardoor scores onbetrouwbaar worden. Voor gegevens over inheemse talen bestaat er een bijkomende zorg: gepubliceerde taalkundige gegevens kunnen worden gebruikt zonder toestemming van de gemeenschap.
 
 Verzegeling garandeert:
-- **Integriteit van de testset:** Methoden kunnen niet overfitting vertonen op data die ze nooit hebben gezien
-- **Gegevenssouvereiniteit:** De gemeenschap bepaalt wie haar data evalueert
+- **Integriteit van de testset:** Methoden kunnen niet overfitten op gegevens die ze nooit hebben gezien
+- **Gegevenssouvereiniteit:** De gemeenschap bepaalt wie haar gegevens evalueert
 - **Blijvende versheid:** De testset raakt nooit besmet
 
 ### 4.2 Hoe Sandboxtesten Werkt
@@ -274,17 +274,17 @@ De encryptiesleutel voor de verzegelde testset wordt gesplitst met behulp van Sh
 | Sleutelhouder | Rol | Intrekkingsbevoegdheid |
 |-------------|------|-----------------|
 | **Communautaire bestuursorganisatie** | Primaire beheerder | Kan evaluatietoegang eenzijdig intrekken |
-| **Academische afdelingspartner** | Mede-beheerder | Kan deelnemen aan sleutelreconstructie |
-| **Champollion-project** | Escrow | Heeft geen toegang tot data alleen; waarborgt continuïteit als andere partijen niet beschikbaar zijn |
+| **Academische afdelingspartner** | Medebeherder | Kan deelnemen aan sleutelreconstructie |
+| **Champollion-project** | Escrow | Heeft geen toegang tot gegevens alleen; waarborgt continuïteit als andere partijen niet beschikbaar zijn |
 
-Elke 2 van 3 aandelen reconstrueren de sleutel. Dit betekent:
-- De gemeenschap + afdeling kunnen de data raadplegen zonder Champollion
-- De gemeenschap + Champollion kunnen de data raadplegen zonder de afdeling
-- Champollion alleen kan de data NOOIT raadplegen
+Elk 2 van 3 aandelen reconstrueren de sleutel. Dit betekent:
+- De gemeenschap + afdeling kunnen de gegevens raadplegen zonder Champollion
+- De gemeenschap + Champollion kunnen de gegevens raadplegen zonder de afdeling
+- Champollion alleen kan de gegevens NOOIT raadplegen
 
 ### 4.4 Hash-manifesten
 
-Wanneer het corpus wordt verzegeld, wordt een **hash-manifest** gepubliceerd in een openbare Git-commit:
+Wanneer het corpus wordt verzegeld, wordt een **hash-manifest** gepubliceerd naar een openbare Git-commit:
 
 ```json
 {
@@ -323,7 +323,7 @@ Dit bewijst:
 - Het corpus bestond op een specifieke datum
 - Het heeft een bekende omvang en structuur
 - Elke wijziging aan de verzegelde segmenten zou de hashketen verbreken
-- De gemeenschap kan verifiëren dat haar data niet is gemanipuleerd
+- De gemeenschap kan verifiëren dat haar gegevens niet zijn gemanipuleerd
 
 ---
 
@@ -345,26 +345,26 @@ De corpusconstructie en evaluatieresultaten ondersteunen meerdere publicaties:
 
 | Artikel | Venue | Rol van de afdeling |
 |-------|-------|-----------------|
-| Methodologie voor corpusconstructie | LREC, ComputEL | Eerste of mede-auteur |
-| Basisevaluatieresultaten | ACL, EMNLP | Mede-auteur |
-| Validatie van LYSS-metrics | WMT Metrics Shared Task | Mede-auteur |
-| Ontwerp van diagnostische testsuite | SIGMORPHON, NAACL | Eerste of mede-auteur |
+| Methodologie voor corpusconstructie | LREC, ComputEL | Eerste auteur of co-auteur |
+| Resultaten van basisevaluatie | ACL, EMNLP | Co-auteur |
+| Validatie van LYSS-metrics | WMT Metrics Shared Task | Co-auteur |
+| Ontwerp van diagnostische testsuite | SIGMORPHON, NAACL | Eerste auteur of co-auteur |
 | Taalspecifieke NLP-bronnen | Taalspecifieke venues | Eerste auteur |
 
 ### 5.3 Positionering voor Subsidies
 
 Het partnerschap levert concrete resultaten op voor subsidieaanvragen:
 
-- "Open-source evaluatie-infrastructuur voor [taal] MT" — aantoonbaar deliverable
-- "Cryptografische gegevenssouvereiniteit voor inheemse taalkundige data" — nieuw, publiceerbaar
+- "Open-source evaluatie-infrastructuur voor [taal] MT" — aantoonbaar resultaat
+- "Cryptografische gegevenssouvereiniteit voor inheemse taalkundige gegevens" — nieuw, publiceerbaar
 - "Door de gemeenschap beheerde benchmark met live leaderboard" — doorlopende impactmeting
 - "Onafhankelijke evaluatie van OMT-1600 / Google Translate voor [taal]" — actueel, hoge zichtbaarheid
 
 ### 5.4 Impact op de Gemeenschap
 
-- De taalgemeenschap krijgt een **onafhankelijke evaluatiecapaciteit** — zij kan beoordelen of een MT-systeem (Google, Meta of op maat gemaakt) daadwerkelijk werkt voor haar taal
+- De taalgemeenschap krijgt een **onafhankelijke evaluatiecapaciteit** — zij kunnen beoordelen of een MT-systeem (Google, Meta of op maat gemaakt) daadwerkelijk werkt voor hun taal
 - De gemeenschap **beheert de testdata** via cryptografisch sleutelbeheer
-- Methoden die via de benchmark zijn bewezen, **dragen eigendom over** aan de gemeenschap (zie Benchmarkspecificatie §8.3)
+- Methoden die via de benchmark worden bewezen, **dragen eigendom over** aan de gemeenschap (zie Benchmarkspecificatie §8.3)
 - Inkomsten uit geïmplementeerde methoden vloeien naar de gemeenschap (verdeling 90/10)
 
 ### 5.5 Wat het de Afdeling Kost
@@ -373,11 +373,11 @@ Het partnerschap levert concrete resultaten op voor subsidieaanvragen:
 |-----------|---------------|----------|
 | PI/postdoc-inzet (ontwerp, toezicht) | ~40 uur | Afdeling (of gefinancierd via subsidie) |
 | Sprekervergoeding (vertaling) | $2.500–6.000 | Gefinancierd via subsidie of Champollion |
-| Sprekervergoeding (review) | $500–1.500 | Gefinancierd via subsidie of Champollion |
+| Sprekervergoeding (beoordeling) | $500–1.500 | Gefinancierd via subsidie of Champollion |
 | Inzet onderzoekscoördinator | ~20 uur | Afdeling |
 | **Engineering, infrastructuur, harness** | **$0** | **Champollion-project** |
 
-Wij leveren alle engineering, harness-configuratie, LYSS-metricconfiguratie, leaderboard-integratie en doorlopende infrastructuur kosteloos aan de afdeling. De bijdrage van de afdeling bestaat uit taalkundige expertise en toegang tot sprekers.
+Wij leveren alle engineering, harness-configuratie, LYSS-metricconfiguratie, leaderboardintegratie en doorlopende infrastructuur zonder kosten voor de afdeling. De bijdrage van de afdeling bestaat uit taalkundige expertise en toegang tot sprekers.
 
 ---
 
@@ -387,16 +387,16 @@ Wij leveren alle engineering, harness-configuratie, LYSS-metricconfiguratie, lea
 |-------|----------|--------------|
 | 1: Corpusontwerp | 2–4 weken | Ontwerpdocument goedgekeurd |
 | 2: Bronzinnen + Vertaling | 4–8 weken | Ruw corpus voltooid |
-| 3: Kwaliteitsborging | 2–4 weken | Kruisbeoordeeld, schemagevalideerd |
+| 3: Kwaliteitsborging | 2–4 weken | Kruisgecontroleerd, schemagevalideerd |
 | 4: Verzegeling | 1 week | Goudstandaard verzegeld, hash-manifest gepubliceerd |
 | 5: Integratie | 1–2 weken | Taal live op leaderboard met basislijnen |
 | **Totaal** | **10–19 weken** | **Live leaderboard met verzegelde evaluatie** |
 
 ---
 
-## 7. Hoe te Beginnen
+## 7. Hoe te Beginnen {#7-how-to-get-started}
 
-1. **Neem contact met ons op** — [project e-mail/contact]. Wij plannen een gesprek van 30 minuten om uw taal, beschikbare middelen en de logistiek van het partnerschap te bespreken.
+1. **Neem contact met ons op** — [projecte-mail/contact]. Wij plannen een gesprek van 30 minuten om uw taal, beschikbare middelen en de logistiek van het partnerschap te bespreken.
 
 2. **Wij leveren:**
    - Dit document
@@ -432,19 +432,19 @@ Volledig ondersteund. Het corpusschema verwerkt elk Unicode-schrift. Wij hebben 
 
 ### "Hoe zit het met dialectvariatie?"
 
-Label het. Het itemschema van het corpus bevat een `notes`-veld voor dialectinformatie. Als meerdere dialecten zijn vertegenwoordigd, documenteer ze dan. De equivalentieklassen van de linter (LYSS-eq) kunnen worden geconfigureerd om dialectale varianten als equivalent te accepteren. De diagnostische testsuite kan dialectspecifieke contrasten bevatten.
+Label het. Het corpusitemschema bevat een `notes`-veld voor dialectinformatie. Als meerdere dialecten zijn vertegenwoordigd, documenteer ze dan. De equivalentieklassen van de linter (LYSS-eq) kunnen worden geconfigureerd om dialectale varianten als equivalent te accepteren. De diagnostische testsuite kan dialectspecifieke contrasten bevatten.
 
 ### "Wie is eigenaar van het corpus?"
 
-De taalgemeenschap, via de bestuursorganisatie. De afdeling wordt vermeld als onderzoekspartner. Champollion houdt een escrow-sleutelaandeel aan voor operationele continuïteit, maar heeft geen toegang tot de verzegelde data alleen. Het development-segment wordt gepubliceerd onder een Creative Commons-licentie die door de gemeenschap wordt bepaald.
+De taalgemeenschap, via de bestuursorganisatie. De afdeling wordt vermeld als onderzoekspartner. Champollion houdt een escrow-sleutelaandeel aan voor operationele continuïteit, maar heeft geen toegang tot de verzegelde gegevens alleen. Het development-segment wordt gepubliceerd onder een Creative Commons-licentie die door de gemeenschap wordt bepaald.
 
 ### "Wat als wij willen stoppen?"
 
-De gemeenschap kan evaluatietoegang op elk moment intrekken door te weigeren de encryptiesleutel te reconstrueren. De verzegelde data wordt nooit blootgesteld. Het development-segment, dat al is gepubliceerd, blijft openbaar onder zijn licentie. De onderzoeksresultaten van de afdeling (publicaties, presentaties) blijven van haar, ongeacht wat er gebeurt.
+De gemeenschap kan evaluatietoegang op elk moment intrekken door te weigeren de encryptiesleutel te reconstrueren. De verzegelde gegevens worden nooit blootgesteld. Het development-segment, dat al is gepubliceerd, blijft openbaar onder zijn licentie. De onderzoeksresultaten van de afdeling (publicaties, presentaties) blijven van hen, ongeacht de omstandigheden.
 
 ### "Wat als de bestuursorganisatie nog niet bestaat?"
 
-Wij kunnen beginnen met Fasen 1–3 (corpusontwerp, aanmaak, kwaliteitsborging) zonder een bestuursorganisatie. De verzegeling (Fase 4) vereist het aanwijzen van een sleutelbeheerder. In de tussentijd kan de afdeling optreden als mede-beheerder naast het Champollion-project, met de afspraak dat het beheer wordt overgedragen aan de communautaire bestuursorganisatie zodra die is opgericht.
+Wij kunnen beginnen met Fasen 1–3 (corpusontwerp, aanmaak, kwaliteitsborging) zonder een bestuursorganisatie. De verzegeling (Fase 4) vereist het aanwijzen van een sleutelbeheerder. In de tussentijd kan de afdeling optreden als medebeherder naast het Champollion-project, met de afspraak dat het beheer wordt overgedragen aan de communautaire bestuursorganisatie zodra die is opgericht.
 
 ---
 

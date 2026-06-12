@@ -44,7 +44,7 @@ Toda métrica de avaliação de MT importante (BLEU, COMET, chrF++) foi validada
 
 2. Para cada tradução, o falante avalia duas coisas:
 
-   **Adequação** (diz a coisa certa?):
+   **Adequação** (ela diz a coisa certa?):
    | Pontuação | Rótulo | Significado |
    |-----------|--------|-------------|
    | 1 | Nenhuma | A tradução não tem nada a ver com a fonte |
@@ -68,13 +68,13 @@ Toda métrica de avaliação de MT importante (BLEU, COMET, chrF++) foi validada
 
 **Compensação:** $50–65 CAD/hora (correspondendo às taxas de compensação de falantes da BENCHMARK_SPEC §10.3). Total por falante: $400–520 CAD. Para 3 falantes: **$1.200–1.560 CAD**.
 
-**O que fazemos com isso:** Calculamos a correlação entre nossas pontuações LYSS automatizadas e as avaliações dos falantes. Se LYSS-fst se correlaciona com avaliações de fluência e LYSS-sem se correlaciona com avaliações de adequação, as métricas são validadas. Se não, sabemos onde corrigi-las.
+**O que fazemos com isso:** Calculamos a correlação entre nossas pontuações LYSS automatizadas e as avaliações dos falantes. Se LYSS-fst correlaciona com avaliações de fluência e LYSS-sem correlaciona com avaliações de adequação, as métricas são validadas. Se não, sabemos onde corrigi-las.
 
 ---
 
 ### Tarefa B: Validação de Equivalência do Linter (~2 horas)
 
-**O quê:** Revisar 50 pares de traduções em Cree que nosso linter classifica como "equivalentes" e nos dizer se realmente significam a mesma coisa.
+**O quê:** Revisar 50 pares de traduções Cree que nosso linter classifica como "equivalentes" e nos dizer se realmente significam a mesma coisa.
 
 **Quem:** 1–2 falantes bilíngues (podem ser os mesmos falantes da Tarefa A).
 
@@ -101,16 +101,16 @@ Toda métrica de avaliação de MT importante (BLEU, COMET, chrF++) foi validada
 
 ### Tarefa C: Revisão de Rejeição Falsa do FST (~1,5 horas)
 
-**O quê:** Revisar 100 palavras em Cree que o analisador FST rejeita (diz que não são palavras válidas em Cree) e nos dizer se realmente são válidas.
+**O quê:** Revisar 100 palavras Cree que o analisador FST rejeita (diz que não são palavras válidas em Cree) e nos dizer se realmente são válidas.
 
-**Quem:** 1 falante bilíngue com forte conhecimento de vocabulário em Cree.
+**Quem:** 1 falante bilíngue com forte conhecimento de vocabulário Cree.
 
 **Como funciona:**
 
 1. Executamos o analisador FST em nosso corpus de ouro EDTeKLA com 436 entradas e coletamos cada palavra que ele rejeita.
 2. Apresentamos até 100 palavras rejeitadas ao falante com seu contexto de sentença.
 3. Para cada palavra, o falante responde:
-   - **Esta é uma palavra válida em Cree?** Sim / Não / Incerto
+   - **Esta é uma palavra Cree válida?** Sim / Não / Incerto
    - **Se sim, que tipo?** Palavra estabelecida / Empréstimo / Nome / Forma dialetal / Neologismo / Outro
    - **Notas** (texto livre opcional)
 
@@ -156,7 +156,7 @@ Um único falante fazendo apenas a Tarefa A se comprometeria com **~8 horas ao l
 
 ---
 
-## 5. Governança de Dados
+## 5. Governança de Dados {#5-data-governance}
 
 Todas as contribuições dos falantes são regidas pelas políticas de dados OCAP®-forward do projeto:
 
@@ -168,7 +168,7 @@ Todas as contribuições dos falantes são regidas pelas políticas de dados OCA
 
 ---
 
-## 6. O Que os Falantes Recebem
+## 6. O Que os Falantes Recebem {#6-what-speakers-get}
 
 Além da compensação:
 
@@ -180,7 +180,7 @@ Além da compensação:
 
 ---
 
-## 7. Como Começar
+## 7. Como Começar {#7-how-to-get-started}
 
 Se você é um falante bilíngue de Cree–Inglês interessado em participar, ou se conhece alguém que possa estar:
 

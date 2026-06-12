@@ -5,7 +5,7 @@ slug: '/specifications/speaker-validation'
 ---
 # Sprekervalidatieprotocol
 
-> **Doel.** Dit document beschrijft precies wat wij nodig hebben van tweetalige Cree–Engelse sprekers om de LYSS-evaluatiemetrieken te valideren. Zonder deze validatie zijn onze geautomatiseerde scores technische schattingen, geen bewezen kwaliteitsmetingen. Dit is de belangrijkste lacune in het project.
+> **Doel.** Dit document beschrijft exact wat we nodig hebben van tweetalige Cree–Engelse sprekers om de LYSS-evaluatiemetrieken te valideren. Zonder deze validatie zijn onze geautomatiseerde scores technische schattingen, geen bewezen kwaliteitsmetingen. Dit is de belangrijkste lacune in het project.
 >
 > **Doelgroep.** Gemeenschapspartners, potentiële medewerkers, subsidiebeoordelaars en het projectteam.
 >
@@ -21,13 +21,13 @@ Het LYSS-evaluatieraamwerk (Linguistically-informed Yield & Structural Scoring) 
 - **LYSS-eq**: Is de uitvoer een aanvaardbare variant van de referentievertaling? (gecontroleerd door de equivalentieklassen van de linter)
 - **LYSS-sem**: Behoudt de uitvoer de betekenis van de bron? (gecontroleerd door de semantische validator)
 
-Deze metrieken produceren getallen. **Wij weten niet of die getallen iets betekenen.** De FST kan geldige woorden afwijzen die hij niet herkent (leenwoorden, neologismen, eigennamen). De linter kan geldige equivalenties missen of ongeldige accepteren. De semantische validator kan betekenis verkeerd beoordelen. Totdat tweetalige sprekers ons vertellen of onze geautomatiseerde scores overeenkomen met hun menselijk oordeel over vertaalkwaliteit, tasten wij in het duister.
+Deze metrieken produceren getallen. **We weten niet of die getallen iets betekenen.** De FST kan geldige woorden afwijzen die hij niet herkent (leenwoorden, neologismen, eigennamen). De linter kan geldige equivalenties missen of ongeldige accepteren. De semantische validator kan betekenis verkeerd beoordelen. Totdat tweetalige sprekers ons vertellen of onze geautomatiseerde scores overeenkomen met hun menselijk oordeel over vertaalkwaliteit, tasten we in het duister.
 
-Elke belangrijke MT-evaluatiemetriek (BLEU, COMET, chrF++) werd gevalideerd door geautomatiseerde scores te vergelijken met duizenden menselijke kwaliteitsbeoordelingen. Wij hebben hetzelfde nodig — op kleinere schaal, omdat onze middelen beperkt zijn, maar met dezelfde nauwkeurigheid.
+Elke grote MT-evaluatiemetriek (BLEU, COMET, chrF++) werd gevalideerd door geautomatiseerde scores te vergelijken met duizenden menselijke kwaliteitsbeoordelingen. We hebben hetzelfde nodig — op kleinere schaal, omdat onze middelen beperkt zijn, maar met dezelfde nauwkeurigheid.
 
 ---
 
-## 2. Wat Wij Nodig Hebben: Drie Taken
+## 2. Wat We Nodig Hebben: Drie Taken
 
 ### Taak A: Beoordeling van Vertaalkwaliteit (Primair — ~8 uur totaal)
 
@@ -37,7 +37,7 @@ Elke belangrijke MT-evaluatiemetriek (BLEU, COMET, chrF++) werd gevalideerd door
 
 **Hoe het werkt:**
 
-1. Wij stellen een spreadsheet of webformulier beschikbaar met 200 rijen. Elke rij bevat:
+1. We verstrekken een spreadsheet of webformulier met 200 rijen. Elke rij bevat:
    - De Engelse bronzin
    - Een machinaal gegenereerde Cree-vertaling
    - (Optioneel) een referentie-Cree-vertaling ter vergelijking
@@ -62,25 +62,25 @@ Elke belangrijke MT-evaluatiemetriek (BLEU, COMET, chrF++) werd gevalideerd door
    | 4 | Goed | Natuurlijk klinkend met kleine onhandigheid |
    | 5 | Vlekkeloos | Een Cree-spreker had dit kunnen schrijven |
 
-3. Optioneel kan de spreker een vrije-tekstaantekening toevoegen ter toelichting van de beoordeling (bijv. "onjuiste animaat/inanimaat-congruentie op het werkwoord," "dit is th-dialect, maar ik beoordeel op basis van y-dialect").
+3. Optioneel kan de spreker een vrije-tekst-opmerking toevoegen ter toelichting van zijn of haar beoordeling (bijv. "onjuiste animate/inanimate-congruentie op het werkwoord," "dit is th-dialect, maar ik beoordeel op basis van y-dialect").
 
-**Tijdschatting:** ~2,5 minuten per vertaling × 200 vertalingen = ~8 uur. Kan worden verdeeld over meerdere sessies (bijv. 4 × 2-urige sessies over 2 weken).
+**Tijdschatting:** ~2,5 minuten per vertaling × 200 vertalingen = ~8 uur. Kan worden verdeeld over meerdere sessies (bijv. 4 × 2-uurssessies over 2 weken).
 
 **Vergoeding:** $50–65 CAD/uur (overeenkomstig de sprekervergoedingstarieven in BENCHMARK_SPEC §10.3). Totaal per spreker: $400–520 CAD. Voor 3 sprekers: **$1.200–1.560 CAD**.
 
-**Wat wij ermee doen:** Wij berekenen de correlatie tussen onze geautomatiseerde LYSS-scores en de sprekerbeoordelingen. Als LYSS-fst correleert met vloeiendheidsbeoordelingen en LYSS-sem correleert met adequaatheidsbeoordelingen, zijn de metrieken gevalideerd. Zo niet, dan weten wij waar wij ze moeten verbeteren.
+**Wat we ermee doen:** We berekenen de correlatie tussen onze geautomatiseerde LYSS-scores en de sprekerbeoordelingen. Als LYSS-fst correleert met vloeiendheidsbeoordelingen en LYSS-sem correleert met adequaatheidsbeoordelingen, zijn de metrieken gevalideerd. Zo niet, dan weten we waar we ze moeten verbeteren.
 
 ---
 
 ### Taak B: Linter-equivalentievalidatie (~2 uur)
 
-**Wat:** Beoordeel 50 paren van Cree-vertalingen die onze linter als "equivalent" classificeert en vertel ons of ze werkelijk hetzelfde betekenen.
+**Wat:** Beoordeel 50 paren van Cree-vertalingen die onze linter als "equivalent" classificeert en geef aan of ze werkelijk hetzelfde betekenen.
 
 **Wie:** 1–2 tweetalige sprekers (kunnen dezelfde sprekers zijn als bij Taak A).
 
 **Hoe het werkt:**
 
-1. Wij stellen 50 paren beschikbaar. Elk paar bevat:
+1. We verstrekken 50 paren. Elk paar bevat:
    - De Engelse bron
    - Vertaling A (de referentie)
    - Vertaling B (een variant die onze linter als equivalent beschouwt)
@@ -95,30 +95,30 @@ Elke belangrijke MT-evaluatiemetriek (BLEU, COMET, chrF++) werd gevalideerd door
 
 **Vergoeding:** $50–65 CAD/uur × 2 uur = **$100–130 CAD per spreker**.
 
-**Wat wij ermee doen:** Wij berekenen de precisie van elke equivalentieklasse. Als sprekers zeggen dat 90% van de "woordvolgorde"-equivalenties werkelijk equivalent zijn, is die klasse gevalideerd. Als zij zeggen dat 40% van de "lemma-synoniem"-equivalenties onjuist zijn, weten wij dat wij die klasse moeten corrigeren of verwijderen.
+**Wat we ermee doen:** We berekenen de precisie van elke equivalentieklasse. Als sprekers zeggen dat 90% van de "woordvolgorde"-equivalenties werkelijk equivalent zijn, is die klasse gevalideerd. Als ze zeggen dat 40% van de "lemma-synoniem"-equivalenties onjuist is, weten we dat we die klasse moeten corrigeren of verwijderen.
 
 ---
 
-### Taak C: FST-beoordeling van onterechte afwijzingen (~1,5 uur)
+### Taak C: FST-beoordeling van ten onrechte afgewezen woorden (~1,5 uur)
 
-**Wat:** Beoordeel 100 Cree-woorden die de FST-analyzer afwijst (als niet-geldige Cree-woorden beschouwt) en vertel ons of ze werkelijk geldig zijn.
+**Wat:** Beoordeel 100 Cree-woorden die de FST-analyzer afwijst (als niet-geldige Cree-woorden beschouwt) en geef aan of ze werkelijk geldig zijn.
 
 **Wie:** 1 tweetalige spreker met uitgebreide kennis van het Cree-vocabulaire.
 
 **Hoe het werkt:**
 
-1. Wij voeren de FST-analyzer uit op ons EDTeKLA-goudstandaardcorpus van 436 vermeldingen en verzamelen elk woord dat wordt afgewezen.
-2. Wij presenteren tot 100 afgewezen woorden aan de spreker met hun zincontext.
+1. We voeren de FST-analyzer uit op ons EDTeKLA-goudstandaardcorpus van 436 vermeldingen en verzamelen elk woord dat wordt afgewezen.
+2. We presenteren tot 100 afgewezen woorden aan de spreker met hun zincontext.
 3. Voor elk woord beantwoordt de spreker:
    - **Is dit een geldig Cree-woord?** Ja / Nee / Onzeker
-   - **Zo ja, welk type?** Gevestigd woord / Leenwoord / Naam / Dialectvorm / Neologisme / Anders
+   - **Zo ja, wat voor soort?** Gevestigd woord / Leenwoord / Naam / Dialectvorm / Neologisme / Anders
    - **Opmerkingen** (optioneel)
 
 **Tijdschatting:** ~1 minuut per woord × 100 woorden = ~1,5 uur.
 
 **Vergoeding:** $50–65 CAD/uur × 1,5 uur = **$75–100 CAD**.
 
-**Wat wij ermee doen:** Wij berekenen de fout-afwijzingsgraad van de FST. Als de FST 50 woorden afwijst en sprekers zeggen dat 30 ervan geldig zijn, is de fout-afwijzingsgraad 60% — onaanvaardbaar hoog, waarvoor een allowlist voor leenwoorden/uitzonderingen vereist is. Als sprekers zeggen dat slechts 5 geldig zijn, is de fout-afwijzingsgraad 10% — de metriek is betrouwbaar.
+**Wat we ermee doen:** We berekenen de fout-afwijzingspercentage van de FST. Als de FST 50 woorden afwijst en sprekers zeggen dat 30 ervan geldig zijn, bedraagt het fout-afwijzingspercentage 60% — onaanvaardbaar hoog, waarvoor een allowlist voor leenwoorden/uitzonderingen vereist is. Als sprekers zeggen dat slechts 5 geldig zijn, bedraagt het fout-afwijzingspercentage 10% — de metriek is betrouwbaar.
 
 ---
 
@@ -147,60 +147,60 @@ Een enkele spreker die alleen Taak A uitvoert, verbindt zich voor **~8 uur over 
 **Gewenst:**
 - Ervaring met het y-dialect (het dialect dat wordt gebruikt in ons referentiecorpus van EDTeKLA)
 - Onderwijs- of vertaalervaring (biedt gekalibreerd kwaliteitsoordeel)
-- Vertrouwdheid met verschillende registers (formeel, educatief, conversationeel)
+- Bekendheid met verschillende registers (formeel, educatief, conversationeel)
 
 **Niet vereist:**
-- Technische kennis of NLP-kennis (wij stellen alle hulpmiddelen en context beschikbaar)
+- Technische kennis of NLP-kennis (we verstrekken alle hulpmiddelen en context)
 - Computationele vaardigheden (de beoordelingsinterface is een eenvoudige spreadsheet of webformulier)
 - Eerdere betrokkenheid bij het Champollion-project
 
 ---
 
-## 5. Gegevensbeheer
+## 5. Gegevensbeheer {#5-data-governance}
 
 Alle bijdragen van sprekers vallen onder het OCAP®-vooruitlopende gegevensbeleid van het project:
 
-- **Eigendom:** De kwaliteitsbeoordelingen van sprekers blijven hun intellectuele bijdrage. Zij worden bij naam vermeld (of anoniem, naar hun keuze) in elke publicatie.
+- **Eigendom:** De kwaliteitsbeoordelingen van sprekers blijven hun intellectuele bijdrage. Ze worden bij naam vermeld (of anoniem, naar hun keuze) in elke publicatie.
 - **Controle:** Sprekers kunnen hun beoordelingen op elk moment intrekken. Intrekking verwijdert hun gegevens uit alle analyses.
 - **Toegang:** Beoordelingsgegevens worden opgeslagen op infrastructuur die wordt beheerd door de gemeenschapsbestuursorganisatie (wanneer opgericht) of op het voorkeursplatform van de spreker.
 - **Bezit:** Ruwe beoordelingsgegevens worden nooit gepubliceerd. Alleen geaggregeerde statistieken (correlaties, inter-annotatorovereenstemming) verschijnen in publicaties.
-- **Vergoeding:** Sprekers worden betaald voor hun tijd, ongeacht of wij hun beoordelingen gebruiken. Betaling is niet afhankelijk van de resultaten.
+- **Vergoeding:** Sprekers worden betaald voor hun tijd, ongeacht of we hun beoordelingen gebruiken. Betaling is niet afhankelijk van de resultaten.
 
 ---
 
-## 6. Wat Sprekers Ontvangen
+## 6. Wat Sprekers Ontvangen {#6-what-speakers-get}
 
 Naast de vergoeding:
 
-- **Medeauteurschap** bij elke publicatie die gebruikmaakt van hun beoordelingen (indien gewenst)
+- **Mede-auteurschap** bij elke publicatie die gebruikmaakt van hun beoordelingen (indien gewenst)
 - **Erkenning** in alle projectdocumentatie
 - **Vroege toegang** tot de evaluatietools en -resultaten
-- **Inbreng** over hoe de metrieken worden gebruikt — als een spreker zegt "uw linter heeft het mis over X," corrigeren wij de linter
+- **Inbreng** over hoe de metrieken worden gebruikt — als een spreker zegt "uw linter heeft het mis over X," passen we de linter aan
 - **Vetorecht** over publicatie van resultaten die zij problematisch achten
 
 ---
 
-## 7. Hoe Te Beginnen
+## 7. Hoe te Beginnen {#7-how-to-get-started}
 
 Als u een tweetalige Cree–Engelse spreker bent die geïnteresseerd is in deelname, of als u iemand kent die dat zou kunnen zijn:
 
 1. **Neem contact met ons op** via [project e-mail/contact] — geen verplichting vereist, slechts een gesprek
-2. **Wij leggen de taken uit** in begrijpelijke taal (geen jargon)
+2. **We leggen de taken uit** in begrijpelijke taal (geen jargon)
 3. **U kiest welke taken** u interesseren (A, B, C of een combinatie)
-4. **Wij stellen een schema op** dat voor u werkt (blokken van 2 uur, flexibele tijden)
+4. **We stellen een schema op** dat voor u werkt (blokken van 2 uur, flexibele tijden)
 5. **U beoordeelt vertalingen** via spreadsheet of webformulier — van overal, op uw eigen tijd
-6. **Wij betalen snel** — binnen 2 weken na het voltooien van elk taakblok
+6. **We betalen snel** — binnen 2 weken na het voltooien van elk taakblok
 
 ---
 
 ## 8. Wat Er Daarna Gebeurt
 
-Met sprekervalidatiegegevens kunnen wij:
+Met sprekervalidatiegegevens kunnen we:
 
-1. **De metriekcorrelaties publiceren** — waarmee bewezen (of weerlegd) wordt dat LYSS-scores het menselijk oordeel weerspiegelen
+1. **De metriekcorrelaties publiceren** — bewijs leveren (of weerleggen) dat LYSS-scores het menselijk oordeel weerspiegelen
 2. **De metrieken herijken** — gewichten, drempelwaarden en equivalentieklassen aanpassen op basis van feedback van sprekers
-3. **De linter corrigeren** — valse equivalenties verwijderen, ontbrekende toevoegen
-4. **De FST-allowlist corrigeren** — geldige woorden toevoegen die de FST ten onrechte afwijst
-5. **Indienen bij een academisch tijdschrift** — met sprekers als medeauteurs, waarmee LYSS wordt gevestigd als een gevalideerde metriek voor MT-evaluatie van polysynthetische talen
+3. **De linter verbeteren** — valse equivalenties verwijderen, ontbrekende toevoegen
+4. **De FST-allowlist verbeteren** — geldige woorden toevoegen die de FST ten onrechte afwijst
+5. **Indienen bij een academisch tijdschrift** — met sprekers als mede-auteurs, waarmee LYSS wordt gevestigd als een gevalideerde metriek voor MT-evaluatie van polysynthetische talen
 
-Zonder sprekervalidatie blijft LYSS een technisch hulpmiddel. Met sprekervalidatie wordt LYSS een wetenschappelijk gefundeerde evaluatiemetriek. Dat is het verschil tussen "wij hebben iets gebouwd" en "wij hebben bewezen dat het werkt."
+Zonder sprekervalidatie blijft LYSS een technisch hulpmiddel. Met validatie wordt LYSS een wetenschappelijk gefundeerde evaluatiemetriek. Dat is het verschil tussen "we hebben iets gebouwd" en "we hebben bewezen dat het werkt."

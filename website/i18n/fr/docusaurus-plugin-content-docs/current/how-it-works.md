@@ -24,12 +24,12 @@ related:
 ---
 # Comment ça marche : Crowdsourcing compétitif pour la traduction automatique
 
-> **Résumé exécutif.** La traduction automatique pour les langues peu dotées du monde — notamment les ~1 300 que le OMT-1600 de Meta prétend couvrir mais à des niveaux de qualité en dessous de tout seuil utilisable — n'est pas un problème de formation de modèles — c'est un problème d'*infrastructure*. Aucun modèle, laboratoire ou entreprise unique ne le résoudra. Ce document décrit une architecture de plateforme qui transforme la communauté mondiale d'ingénieurs ML, de linguistes et de locuteurs en laboratoire de recherche distribué : quiconque construit une méthode de traduction, la plateforme prouve si elle fonctionne par rapport à des données d'évaluation souveraines, et les méthodes éprouvées se déploient en production avec les revenus allant aux communautés dont elles servent les langues. Le mécanisme est le crowdsourcing compétitif avec souveraineté cryptographique — une combinaison qui n'a jamais été tentée auparavant.
+> **Résumé exécutif.** La traduction automatique pour les langues peu dotées du monde — notamment les ~1 300 que le OMT-1600 de Meta prétend couvrir mais à des niveaux de qualité en dessous de tout seuil utilisable — n'est pas un problème de formation de modèles — c'est un problème d'*infrastructure*. Aucun modèle, laboratoire ou entreprise isolé ne le résoudra. Ce document décrit une architecture de plateforme qui transforme la communauté mondiale d'ingénieurs ML, de linguistes et de locuteurs en laboratoire de recherche distribué : quiconque construit une méthode de traduction, la plateforme prouve si elle fonctionne par rapport à des données d'évaluation souveraines, et les méthodes éprouvées se déploient en production avec des revenus circulant vers les communautés dont les langues les servent. Le mécanisme est le crowdsourcing compétitif avec souveraineté cryptographique — une combinaison qui n'a jamais été tentée auparavant.
 
 ---
 
 > [!IMPORTANT]
-> **Portée.** Cette plateforme évalue la **traduction de texte écrit formel** — documents, matériels éducatifs, communications officielles, chaînes d'interface. Ce n'est pas un chatbot, un interprète en temps réel ou un système conversationnel de domaine non restreint. Le classement évalue les méthodes de traduction par rapport à des corpus parallèles curés dans des domaines textuels spécifiques (voir [Spécification du benchmark §2.7](/docs/specifications/benchmark#27-domain) pour la taxonomie des domaines). La TA est une infrastructure pour la revitalisation des langues, non un substitut à celle-ci. Les enfants apprennent la langue auprès de personnes, pas de machines.
+> **Portée.** Cette plateforme évalue la **traduction de texte écrit formel** — documents, matériels éducatifs, communications officielles, chaînes d'interface. Ce n'est pas un chatbot, un interprète en temps réel ou un système conversationnel de domaine non restreint. Le classement évalue les méthodes de traduction par rapport à des corpus parallèles curés dans des domaines textuels spécifiques (voir [Spécification de référence §2.7](/docs/specifications/benchmark#27-domain) pour la taxonomie des domaines). La TA est une infrastructure pour la revitalisation des langues, non un substitut à celle-ci. Les enfants apprennent la langue auprès de personnes, pas de machines.
 
 ### Couverture actuelle des domaines
 
@@ -48,12 +48,12 @@ La traduction automatique pour les langues peu dotées (LPD) est généralement 
 
 ### 1.1 Pourquoi la formulation ML échoue
 
-Le pipeline ML standard pour la TA nécessite trois choses : de grands corpus parallèles, des benchmarks d'évaluation validés et un chemin de déploiement. Pour les ~130 langues servies par Google Translate et les ~200 couvertes par NLLB-200, tous trois existent. Pour les ~1 300 langues supplémentaires que OMT-1600 prétend couvrir, les données d'évaluation existent mais la qualité est principalement en dessous des seuils utilisables, les poids du modèle ne sont pas disponibles publiquement, et il n'y a pas de pipeline de déploiement. Pour les ~5 400+ restantes, aucun n'existe du tout.
+Le pipeline ML standard pour la TA nécessite trois choses : de grands corpus parallèles, des références d'évaluation validées et un chemin de déploiement. Pour les ~130 langues servies par Google Translate et les ~200 couvertes par NLLB-200, tous trois existent. Pour les ~1 300 langues supplémentaires que OMT-1600 prétend couvrir, les données d'évaluation existent mais la qualité est généralement en dessous des seuils utilisables, les poids du modèle ne sont pas disponibles publiquement, et il n'y a pas de pipeline de déploiement. Pour les ~5 400+ restantes, aucun n'existe du tout.
 
 | Exigence | Langues hautement dotées | Couverture OMT-1600 (~1 300 LPD) | ~5 400 langues restantes |
 |----------|--------------------------|----------------------------------|--------------------------|
 | **Corpus parallèles** | Millions de paires de phrases (Europarl, Corpus ONU, OpenSubtitles) | Bitext domaine biblique, raclages web, rétrotraduction synthétique. Pas de données curées par la communauté. | Centaines à bas milliers, le cas échéant |
-| **Benchmarks d'évaluation** | WMT, FLORES, NTREX — standardisés, reproductibles | BOUQuET (domaine biblique), met-BOUQuET. Pas de validation morphologique. Pas d'évaluation indépendante. | Pas de benchmarks standards ; évaluation ad hoc |
+| **Références d'évaluation** | WMT, FLORES, NTREX — standardisées, reproductibles | BOUQuET (domaine biblique), met-BOUQuET. Pas de validation morphologique. Pas d'évaluation indépendante. | Pas de références standardisées ; évaluation ad hoc |
 | **Chemin de déploiement** | Google Translate, DeepL, Azure — API commerciales | Poids du modèle non publiés. Pas de CLI, pas de système de plugins, pas d'API déployable par la communauté. | Rien. Pas d'API, pas de produit, pas de marché. |
 
 L'approche ML fonctionne quand les données existent pour l'entraînement et le marché existe pour le déploiement. OMT-1600 a considérablement étendu la première condition — mais l'expansion sans vérification de qualité indépendante, validation morphologique ou gouvernance communautaire est une expansion sans confiance. Le problème n'est pas seulement « nous avons besoin d'un meilleur modèle » — c'est « nous avons besoin d'une infrastructure qui prouve que le modèle fonctionne, selon les termes que la communauté contrôle ».
@@ -72,18 +72,18 @@ La distinction importe :
 | **Évaluation** | BLEU/chrF sur des ensembles de test retenus | Validation morphologique + examen humain + métriques automatisées |
 | **Déploiement** | Servir le modèle | Empaqueter la méthode en tant que plugin |
 
-Les LLM modernes contiennent déjà des connaissances latentes de nombreuses langues peu dotées — suffisamment pour produire une sortie qui *semble* plausible. Le problème est que cette sortie est souvent morphologiquement invalide (le modèle hallucine des formes de mots qui n'existent pas dans la langue). Le défi en ingénierie est : comment extraire ce que le LLM sait, le valider par rapport à la réalité linguistique et empaqueter le résultat pour une utilisation en production ?
+Les LLM modernes contiennent déjà des connaissances latentes de nombreuses langues peu dotées — suffisamment pour produire une sortie qui *semble* plausible. Le problème est que cette sortie est souvent morphologiquement invalide (le modèle hallucine des formes de mots qui n'existent pas dans la langue). Le défi en ingénierie est : comment extraire ce que le LLM sait, le valider par rapport à la réalité linguistique, et empaqueter le résultat pour une utilisation en production ?
 
 C'est pourquoi nous évaluons les **méthodes**, pas les modèles. Une méthode est la recette complète : sélection de modèle + ingénierie d'invite + utilisation d'outils + pré/post-traitement + données d'entraînement + stratégies de nouvelle tentative. Deux équipes utilisant le même modèle avec des méthodes différentes obtiendront des scores différents. C'est le point.
 
 ### 1.3 Pourquoi les langues polysynthétiques cassent tout
 
-Beaucoup des langues les plus peu dotées du monde sont **polysynthétiques** — elles codent des phrases entières en mots uniques par des processus morphologiques productifs. Considérez le mot cri des Plaines :
+Beaucoup des langues les plus peu dotées du monde sont **polysynthétiques** — elles encodent des phrases entières en mots uniques par des processus morphologiques productifs. Considérez le mot cri des Plaines :
 
 > **ê-kî-nitawi-kîskinwahamâkosiyân**
 > *« quand j'étais allé à l'école »*
 
-Un mot. Il code le temps (passé), la direction (aller à), la racine (apprendre), la voix (passif/réfléchi) et la personne (première singulier). L'anglais a besoin de six mots pour ce que le cri exprime en un.
+Un mot. Il encode le temps (passé), la direction (aller à), la racine (apprendre), la voix (passif/réfléchi) et la personne (première singulier). L'anglais a besoin de six mots pour ce que le cri exprime en un.
 
 Cela casse la TA standard à tous les niveaux :
 
@@ -154,8 +154,8 @@ Chaque étape a une fonction spécifique :
 | Étape | Ce qui se passe | Qui en bénéficie |
 |-------|-----------------|------------------|
 | **Développer** | Un chercheur, un étudiant ou un amateur construit une méthode de traduction en utilisant les outils qu'il souhaite — invites LLM, pipelines FST, dictionnaires, modèles ajustés fins, systèmes basés sur des règles ou hybrides | Le contributeur apprend, expérimente, publie |
-| **Évaluer** | Le harnais d'évaluation évalue la méthode par rapport à un corpus standardisé avec des métriques reproductibles. Chaque exécution produit une [fiche d'exécution](/docs/specifications/benchmark#3-run-card-schema) — un enregistrement complet de ce qui a été testé et de ses performances | Les chercheurs obtiennent des résultats reproductibles et comparables |
-| **Prouver** | Les résultats apparaissent sur le classement public. Les méthodes sont classées, comparées et examinées. La communauté voit ce qui fonctionne et ce qui ne fonctionne pas | Tout le monde gagne une visibilité sur l'état de l'art |
+| **Évaluer** | Le harnais d'évaluation évalue la méthode par rapport à un corpus standardisé avec des métriques reproductibles. Chaque exécution produit une [fiche d'exécution](/docs/specifications/benchmark#3-run-card-schema) — un enregistrement complet de ce qui a été testé et comment il a performé | Les chercheurs obtiennent des résultats reproductibles et comparables |
+| **Prouver** | Les résultats apparaissent sur le classement public. Les méthodes sont classées, comparées et scrutées. La communauté voit ce qui fonctionne et ce qui ne fonctionne pas | Tout le monde gagne une visibilité sur l'état de l'art |
 | **Transférer** | Pour les langues autochtones, les méthodes qui atteignent le seuil Déployable (composite ≥ 0,70) ET passent la validation humaine ont leur propriété de code transférée à l'organisation de gouvernance de la communauté linguistique | La communauté gagne un actif générateur de revenus |
 | **Déployer** | La méthode est exportée en tant que plugin [champollion](https://github.com/gamedaysuits/champollion) et servie via API. Les développeurs consomment les traductions sans avoir besoin de comprendre la méthode sous-jacente | Les développeurs obtiennent la traduction pour les langues que les API commerciales ne servent pas |
 | **Soutenir** | Les revenus de l'API sont divisés : 90 % à la communauté, 10 % à l'infrastructure. Les revenus financent plus de recherche linguistique, développement de corpus et programmes communautaires | La roue libre se soutient elle-même après l'établissement initial |
@@ -164,7 +164,7 @@ Chaque étape a une fonction spécifique :
 
 La compétition n'est pas accessoire — c'est le mécanisme. Voici pourquoi :
 
-**Diversité des approches.** La meilleure méthode pour Anglais→Cri des Plaines pourrait être un LLM entraîné avec FST. La meilleure pour Anglais→Quechua pourrait être un pipeline augmenté par dictionnaire. La meilleure pour Anglais→Inuktitut pourrait être un modèle ajusté fin amorcé à partir du corpus Hansard du Nunavut. Aucune équipe ou approche unique ne dominera toutes les langues. Le classement révèle quels *types* d'approches fonctionnent pour quels *types* de langues — un résultat méta qui est lui-même une contribution de recherche.
+**Diversité des approches.** La meilleure méthode pour Anglais→Cri des Plaines pourrait être un LLM entraîné par FST. La meilleure pour Anglais→Quechua pourrait être un pipeline augmenté par dictionnaire. La meilleure pour Anglais→Inuktitut pourrait être un modèle ajusté fin amorcé à partir du corpus Hansard du Nunavut. Aucune équipe ou approche unique ne dominera toutes les langues. Le classement révèle quels *types* d'approches fonctionnent pour quels *types* de langues — un résultat méta qui est lui-même une contribution de recherche.
 
 **Engagement soutenu.** Un classement n'est jamais terminé. Quelqu'un veut toujours battre le meilleur score. Chaque soumission donne du calcul et de l'effort intellectuel au problème. Contrairement à une subvention ponctuelle, la dynamique compétitive génère un investissement de recherche continu de la communauté mondiale.
 
@@ -243,7 +243,7 @@ Le **développement de microeval** signifie construire des métriques d'évaluat
 | **LYSS-eq** | Équivalence linguistique | Règles de variantes curées par linguiste | ✅ Implémenté (Cri des Plaines) |
 | **LYSS-sem** | Préservation sémantique | Modèles sémantiques spécifiques à la langue | ✅ Implémenté (Cri des Plaines) |
 
-Les métriques universelles (chrF++, BLEU) servent de lignes de base et de signaux primaires pour les langues sans outils LYSS. Partout où des outils spécifiques à la langue existent, les composants LYSS portent le poids de la notation — parce que les choses qui importent le plus pour chaque langue sont les choses que seuls les outils spécifiques à la langue peuvent mesurer.
+Les métriques universelles (chrF++, BLEU) servent de références et de signaux primaires pour les langues sans outils LYSS. Partout où des outils spécifiques à la langue existent, les composants LYSS portent le poids de la notation — parce que les choses qui importent le plus pour chaque langue sont les choses que seuls les outils spécifiques à la langue peuvent mesurer.
 
 Pour la spécification LYSS complète et la logique de notation composite, voir [SCORING_SPEC.md §4](/docs/specifications/scoring#4-composite-score).
 
@@ -256,7 +256,7 @@ Pour la spécification LYSS complète et la logique de notation composite, voir 
 
 ### Pour les ingénieurs ML et les chercheurs
 
-Un classement ouvert avec des benchmarks standardisés pour les paires de langues qu'aucune tâche partagée ne couvre. Reproduisez n'importe quel résultat avec le harnais d'évaluation. Publiez votre méthode. Battez le meilleur score. Chaque soumission est empreinte d'une configuration spécifique et d'une version d'ensemble de données — pas d'ambiguïté sur ce qui a été testé.
+Un classement ouvert avec des références standardisées pour les paires de langues qu'aucune tâche partagée ne couvre. Reproduisez n'importe quel résultat avec le harnais d'évaluation. Publiez votre méthode. Battez le meilleur score. Chaque soumission est empreinte d'une configuration spécifique et d'une version d'ensemble de données — pas d'ambiguïté sur ce qui a été testé.
 
 ### Pour les communautés linguistiques
 
@@ -268,11 +268,11 @@ Des métriques transparentes et reproductibles pour évaluer les propositions de
 
 ### Pour les développeurs
 
-Traduction pour les langues qu'aucune API commerciale ne sert. Une commande CLI (`npx champollion sync`) traduit vos fichiers de locale en utilisant des méthodes éprouvées par la communauté. Utilisez Google Translate pour le français, un LLM entraîné pour le cri des Plaines et une API communautaire pour le quechua — tout dans le même projet, tout avec la même interface.
+Traduction pour les langues qu'aucune API commerciale ne sert. Une commande CLI (`npx champollion sync`) traduit vos fichiers de paramètres régionaux en utilisant des méthodes éprouvées par la communauté. Utilisez Google Translate pour le français, un LLM entraîné pour le cri des Plaines et une API communautaire pour le quechua — tout dans le même projet, tout avec la même interface.
 
 ### Pour les étudiants
 
-Un défi ouvert avec un impact réel. Construisez une méthode de traduction pour une langue peu dotée, évaluez-la et publiez vos résultats. L'infrastructure est gratuite, les ensembles de données sont ouverts et le classement ne se soucie pas de savoir si vous êtes dans une université top-10 ou travaillez depuis un terminal de bibliothèque.
+Un défi ouvert avec un impact réel. Construisez une méthode de traduction pour une langue peu dotée, évaluez-la et publiez vos résultats. L'infrastructure est gratuite, les ensembles de données sont ouverts et le classement ne se soucie pas de savoir si vous êtes dans une université du top 10 ou si vous travaillez depuis un terminal de bibliothèque.
 
 ---
 
@@ -282,13 +282,13 @@ Un défi ouvert avec un impact réel. Construisez une méthode de traduction pou
 
 Les efforts de revitalisation des langues se développent dans le monde entier. Les écoles d'immersion, les nids de langues communautaires et les projets d'archivage numérique s'étendent dans les communautés autochtones du Canada, des États-Unis, de l'Australie, de la Nouvelle-Zélande et du nord de l'Europe. Ces efforts ont besoin de technologie — spécifiquement, une technologie de traduction qui respecte la souveraineté communautaire sur les données linguistiques.
 
-### 6.2 Les LLM ont changé la ligne de base
+### 6.2 Les LLM ont changé la référence
 
-Avant 2023, construire une capacité TA pour une langue polysynthétique nécessitait une expertise NLP significative, un entraînement de modèle personnalisé et de grands budgets de calcul. Les LLM modernes ont changé la ligne de base : une invite bien formulée avec des données d'entraînement et une validation morphologique peut produire des traductions utilisables pour certaines paires de langues — aucun entraînement requis. Cela réduit considérablement la barrière d'entrée pour le développement de méthodes. Le problème s'est déplacé de « comment construisons-nous un modèle ? » à « comment construisons-nous un pipeline qui valide et corrige ce que le modèle produit ? »
+Avant 2023, construire une capacité TA pour une langue polysynthétique nécessitait une expertise NLP significative, un entraînement de modèle personnalisé et de grands budgets de calcul. Les LLM modernes ont changé la référence : une invite bien formulée avec des données d'entraînement et une validation morphologique peut produire des traductions utilisables pour certaines paires de langues — aucun entraînement requis. Cela réduit considérablement la barrière d'entrée pour le développement de méthodes. Le problème s'est déplacé de « comment construisons-nous un modèle ? » à « comment construisons-nous un pipeline qui valide et corrige ce que le modèle produit ? »
 
-### 6.3 La culture du benchmarking open source
+### 6.3 La culture de l'évaluation comparative open source
 
-Le benchmarking en IA est devenu sa propre culture. Les classements stimulent l'innovation. Les compétitions attirent les talents. Chatbot Arena, LMSYS, Hugging Face Open LLM Leaderboard — ces plateformes démontrent que l'évaluation compétitive stimule les progrès rapides. Nous prenons cette énergie et la dirigeons vers la traduction pour les milliers de langues où la TA commerciale n'existe pas ou n'a pas été indépendamment prouvée fonctionner.
+L'évaluation comparative en IA est devenue sa propre culture. Les classements stimulent l'innovation. Les compétitions attirent les talents. Chatbot Arena, LMSYS, Hugging Face Open LLM Leaderboard — ces plateformes démontrent que l'évaluation compétitive stimule les progrès rapides. Nous prenons cette énergie et la dirigeons vers la traduction pour les milliers de langues où la TA commerciale n'existe pas ou n'a pas été indépendamment prouvée fonctionner.
 
 ### 6.4 La souveraineté des données autochtones est non négociable
 
@@ -296,20 +296,20 @@ Les principes OCAP® (Propriété, Contrôle, Accès, Possession), les principes
 
 ---
 
-## 8. Tensions et limitations
+## 8. Tensions et limitations {#8-tensions-and-limitations}
 
 Ce projet utilise un mécanisme occidental — l'évaluation comparative — pour servir des systèmes de connaissances qui sont souvent communautaires, relationnels et guidés par les aînés. Cette tension est réelle et doit être nommée, non résolue par affirmation.
 
 **Évaluation comparative vs. connaissances communautaires.** Les classements classent les individus et optimisent les scores numériques. Les traditions de connaissances autochtones mettent l'accent sur l'autorité relationnelle, la correction communautaire et la légitimité basée sur les relations. Nous ne pouvons pas prétendre servir ces systèmes de connaissances tout en construisant une plateforme dont le mécanisme central est l'optimisation compétitive individuelle. L'architecture de souveraineté (§4) — où les communautés possèdent les méthodes, contrôlent l'évaluation et décident ce qui se déploie — est notre réponse structurelle, mais elle ne dissout pas la tension. Un classement est toujours un classement.
 
-**Ce que nous faisons à ce sujet.** La plateforme soutient les soumissions d'équipes et de communautés aux côtés des soumissions individuelles. Le classement encadre les résultats comme « l'état actuel de l'art » plutôt que « qui gagne ». L'organisation de gouvernance — pas le score du classement — détermine ce qui se déploie. Aucun score automatisé ne donne droit à un développeur à quoi que ce soit ; la communauté décide. Et nous maintenons une boucle de rétroaction consultatif continu avec les communautés partenaires sur la question de savoir si l'encadrement et la structure d'incitation de la plateforme les servent. Si ce n'est pas le cas, nous le changeons.
+**Ce que nous faisons à ce sujet.** La plateforme soutient les soumissions d'équipes et de communautés aux côtés des soumissions individuelles. Le classement encadre les résultats comme « l'état actuel de l'art » plutôt que « qui gagne ». L'organisation de gouvernance — pas le score du classement — détermine ce qui se déploie. Aucun score automatisé n'autorise un développeur à quoi que ce soit ; la communauté décide. Et nous maintenons une boucle de rétroaction consultatif continu avec les communautés partenaires sur la question de savoir si l'encadrement et la structure d'incitation de la plateforme les servent. Si ce n'est pas le cas, nous le changeons.
 
 **La TA n'est pas la revitalisation.** La traduction convertit le texte entre les langues. La revitalisation crée de nouveaux locuteurs. Un système TA parfait ne résout pas le problème de transmission, le problème de prestige ou le problème pédagogique. Cela pourrait même créer l'illusion que « l'ordinateur peut parler la langue », sapant l'urgence de la transmission humaine. Nous construisons la TA comme infrastructure — traduction brouillon pour post-édition, outils morphologiques pour les applications d'apprentissage des langues, levier politique pour les communautés exigeant des services dans leur langue — non comme un substitut à la transmission intergénérationnelle. La communauté contrôle si, quand et comment la technologie est déployée.
 
 Cette section existe parce que ces tensions ont été identifiées dans une critique invitée (mai 2026) et nous nous sommes engagés à les nommer publiquement plutôt que de les enterrer dans des documents internes.
 
 > [!NOTE]
-> **Les scores du classement sont des proxies automatisés.** Tous les scores affichés sur le classement sont des mesures automatisées calculées par le harnais d'évaluation dans des conditions contrôlées. Ils indiquent la performance relative des méthodes mais ne constituent pas des garanties de qualité. Les méthodes validées par la communauté sont marquées séparément. Aucun score automatisé ne donne droit à un développeur au déploiement — l'organisation de gouvernance prend cette décision.
+> **Les scores du classement sont des proxies automatisés.** Tous les scores affichés sur le classement sont des mesures automatisées calculées par le harnais d'évaluation dans des conditions contrôlées. Ils indiquent la performance relative de la méthode mais ne constituent pas des garanties de qualité. Les méthodes validées par la communauté sont marquées séparément. Aucun score automatisé n'autorise un développeur au déploiement — l'organisation de gouvernance prend cette décision.
 
 ---
 
@@ -322,17 +322,17 @@ Cette section existe parce que ces tensions ont été identifiées dans une crit
 - **EDTeKLA Dev v1** — Corpus d'évaluation cri des Plaines (CC BY-NC-SA 4.0), provenant du groupe de recherche EdTeKLA de l'Université de l'Alberta. Le corpus de manuel a 486 entrées (436 dev + 50 retenus), plus 62 paires d'étalon-or séparées d'itwêwina (548 au total). Le corpus dev canonique est `textbook_dev.json` avec 436 entrées — la division dev de manuel complète.
 - **FLORES+ Devtest** — 1 012 phrases × 39 langues (CC BY-SA 4.0).
 - **Site Arena** — Site de documentation basé sur Docusaurus avec classement, spécifications, tutoriels et cadre de souveraineté.
-- **Spécification du benchmark** — [Spec canonique](/docs/specifications/benchmark) définissant le schéma de corpus, le format de fiche d'exécution et le protocole d'évaluation. Pour les définitions de métriques, les poids composites et les niveaux de qualité, voir [SCORING_SPEC.md](/docs/specifications/scoring).
+- **Spécification de référence** — [Spécification canonique](/docs/specifications/benchmark) définissant le schéma de corpus, le format de fiche d'exécution et le protocole d'évaluation. Pour les définitions de métriques, les poids composites et les niveaux de qualité, voir [SCORING_SPEC.md](/docs/specifications/scoring).
 
 ### Prochaines étapes
 
 | Phase | Quoi | Statut |
 |-------|------|--------|
-| Balayage de base | 12 modèles × 3 températures × 2 configs d'entraînement sur EDTeKLA | 🔲 Planifié |
+| Balayage de référence | 12 modèles × 3 températures × 2 configurations d'entraînement sur EDTeKLA | 🔲 Planifié |
 | Score composite | Implémentation de métrique pondérée dans le harnais | ✅ Fait |
-| Score sémantique | Score pondéré par verdict de CrkSemanticMetric (standard d'évaluation) | ✅ Fait |
-| Précision morphologique | Notation par morphème par rapport à l'analyse de l'étalon-or | 🔲 Planifié |
-| Correspondance équivalente | Correspondance de classe de variante via CrkLinterMetric (standard d'évaluation) | ✅ Fait |
+| Score sémantique | Score pondéré par verdict de CrkSemanticMetric (norme d'évaluation) | ✅ Fait |
+| Précision morphologique | Notation par morphème par rapport à l'analyse d'étalon-or | 🔲 Planifié |
+| Correspondance équivalente | Correspondance de classe de variante via CrkLinterMetric (norme d'évaluation) | ✅ Fait |
 | API Champollion | API mesurée pour les méthodes possédées par la communauté | 🔲 Planifié |
 | Deuxième langue | Expansion à une deuxième paire de langues (Inuktitut, Quechua ou Sámi) | 🔲 Planifié |
 
@@ -340,19 +340,19 @@ Cette section existe parce que ces tensions ont été identifiées dans une crit
 
 ## 10. Commencer
 
-**Construisez une méthode :** Clonez le [harnais d'évaluation](https://github.com/gamedaysuits/arena), exécutez une expérience de base et voyez où vous vous situez sur le classement.
+**Construire une méthode :** Clonez le [harnais d'évaluation](https://github.com/gamedaysuits/arena), exécutez une expérience de référence et voyez où vous vous situez sur le classement.
 
-**Contribuez un corpus :** Si vous parlez une langue peu dotée, même 50 paires de traduction curées suffisent pour ouvrir une nouvelle piste de classement. Voir [Pour les communautés linguistiques](https://mtevalarena.org/docs/community/for-language-communities).
+**Contribuer un corpus :** Si vous parlez une langue peu dotée, même 50 paires de traduction curées suffisent pour ouvrir une nouvelle piste de classement. Voir [Pour les communautés linguistiques](https://mtevalarena.org/docs/community/for-language-communities).
 
-**Déployez des traductions :** Installez [champollion](https://github.com/gamedaysuits/champollion) et traduisez votre application avec `npx champollion sync`.
+**Déployer des traductions :** Installez [champollion](https://github.com/gamedaysuits/champollion) et traduisez votre application avec `npx champollion sync`.
 
-**Financez l'effort :** Voir [Le modèle économique](https://mtevalarena.org/docs/sovereignty/economic-model) pour les cadres de coûts et les projections de durabilité.
+**Financer l'effort :** Voir [Le modèle économique](https://mtevalarena.org/docs/sovereignty/economic-model) pour les cadres de coûts et les projections de durabilité.
 
 ---
 
 ## Voir aussi
 
-- **[Spécification du benchmark](/docs/specifications/benchmark)** — format de corpus, schéma de fiche d'exécution, protocole d'évaluation, souveraineté
+- **[Spécification de référence](/docs/specifications/benchmark)** — format de corpus, schéma de fiche d'exécution, protocole d'évaluation, souveraineté
 - **[Spécification de notation](/docs/specifications/scoring)** — métriques, poids composites, niveaux de qualité, formules de coût/vitesse
 - **[MT Eval Arena](https://mtevalarena.org)** — le terrain de jeu R&D
 - **[champollion](https://github.com/gamedaysuits/champollion)** — la plateforme de déploiement

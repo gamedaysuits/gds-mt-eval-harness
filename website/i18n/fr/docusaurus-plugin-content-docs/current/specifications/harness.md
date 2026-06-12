@@ -24,7 +24,7 @@ related:
 
 > **Résumé exécutif.** Cette page couvre l'installation, la configuration et l'utilisation du harnais d'évaluation de traduction automatique — l'outil qui évalue les méthodes de traduction par rapport à des corpus standardisés et produit des cartes de résultats notées. Pour les définitions canoniques des métriques, des schémas et du protocole d'évaluation, consultez la [Spécification de référence](/docs/specifications/benchmark).
 
-Le harnais exécute des expériences de traduction et produit des cartes de résultats. Il gère la construction des invites, les appels API, la notation et la sérialisation des résultats — vous fournissez le corpus et le modèle.
+Le harnais exécute des expériences de traduction et produit des cartes de résultats. Il gère la construction des invites, les appels API, la notation et la sérialisation des résultats — vous fournissez l'ensemble de données et le modèle.
 
 ## Installation
 
@@ -58,7 +58,7 @@ Cela exécute chaque entrée du corpus via le modèle configuré (ou le plugin d
 | `--corpus` | ✅ | — | Chemin du fichier corpus (`.json`, `.jsonl`, `.tsv`) |
 | `--source-file` / `--reference-file` | — | — | Fichiers texte parallèles (FLORES+, format WMT) |
 | `-m, --model` | — | `gemini-pro` | Slug du modèle (nom court ou ID OpenRouter complet). Résolu via `shared/model-aliases.json`. Séparé par des virgules pour les exécutions multi-modèles |
-| `-d, --dataset` | — | `all` | Filtre de corpus : `all`, nom de segment ou plage d'ID |
+| `-d, --dataset` | — | `all` | Filtre d'ensemble de données : `all`, nom de segment ou plage d'ID |
 | `--ids` | — | — | ID d'entrées séparés par des virgules à évaluer |
 | `--source-lang` | — | `English` | Nom de la langue source |
 | `--target-lang` | — | — | Nom de la langue cible |
@@ -81,7 +81,7 @@ Cela exécute chaque entrée du corpus via le modèle configuré (ou le plugin d
 | `--no-cache` | — | `false` | Désactiver la mise en cache des réponses |
 | `--cache-dir` | — | `eval/cache/harness` | Chemin du répertoire de cache |
 | `-o, --output-dir` | — | `eval/logs/harness` | Répertoire de sortie pour les cartes de résultats et les journaux |
-| `-n, --name` | — | — | Nom d'exécution lisible |
+| `-n, --name` | — | — | Nom d'exécution lisible par l'homme |
 | `--dry-run` | — | `false` | Valider la configuration sans effectuer d'appels API |
 | `--champollion-config` | — | — | Chemin vers `champollion.config.json` |
 | `--champollion-cards-dir` | — | — | Répertoire des cartes de langue |
@@ -123,7 +123,7 @@ mt-eval run \
 
 ## Schéma de carte de résultats
 
-Chaque expérience produit une **carte de résultats** — un document JSON autonome. La structure de haut niveau :
+Chaque expérience produit une **carte de résultats** — un document JSON autonome. La structure de niveau supérieur :
 
 ```json
 {
@@ -151,12 +151,12 @@ Chaque expérience produit une **carte de résultats** — un document JSON auto
 Consultez la [Spécification de carte de résultats](/docs/specifications/run-card) pour le schéma complet avec chaque champ documenté.
 
 :::info Schéma faisant autorité
-La [Spécification de référence](/docs/specifications/benchmark) est l'unique source de vérité pour le schéma de carte de résultats. Pour les définitions de métriques, les poids composites et les niveaux de qualité, consultez la [Spécification de notation](/docs/specifications/scoring). Cette page documente comment utiliser le harnais ; les spécifications définissent ce que signifient les résultats.
+La [Spécification de référence](/docs/specifications/benchmark) est la source unique de vérité pour le schéma de carte de résultats. Pour les définitions de métriques, les poids composites et les niveaux de qualité, consultez la [Spécification de notation](/docs/specifications/scoring). Cette page documente comment utiliser le harnais ; les spécifications définissent ce que signifient les résultats.
 :::
 
 ### Blocs clés
 
-**`dataset`** — Identifie le corpus utilisé, y compris son hash de contenu pour que les résultats soient liés à une version spécifique :
+**`dataset`** — Identifie quel ensemble de données a été utilisé, y compris son hash de contenu pour que les résultats soient liés à une version spécifique :
 
 ```json
 // Example using master_corpus.json (62 gold + 342 textbook = 404)
@@ -214,12 +214,12 @@ Le harnais peut évaluer si les traductions correspondent à un **registre** et 
 | Métrique | Échelle | Signification |
 |----------|---------|-------------|
 | `style_register_match` | booléen | La sortie correspond-elle au registre attendu ? La cible provient du champ `register` de l'entrée du corpus (voir [Spécification de référence §2.6](/docs/specifications/benchmark)) ou d'un profil de style |
-| `style_sentence_length_ratio` | float | Longueur moyenne de phrase prédite vs référence (1.0 = correspondance ; divergence = dérive de style) |
+| `style_sentence_length_ratio` | flottant | Longueur moyenne de phrase prédite vs référence (1.0 = correspondance ; divergence = dérive de style) |
 | `style_formality_score` | 0.0–1.0 | Présence de marqueurs formels/informels (pronoms T–V, contractions, …) utilisant des ressources de marqueurs par langue |
 
 **Agrégat :** `style_consistency_rate` — la fraction d'entrées sans décalage de registre détecté.
 
-Activez une cible personnalisée avec `--style-profile path/to/profile.json` (par exemple un profil de voix de marque) ; sans cela, le plugin revient aux métadonnées `register` de chaque entrée du corpus le cas échéant.
+Activez une cible personnalisée avec `--style-profile path/to/profile.json` (par exemple, un profil de voix de marque) ; sans cela, le plugin revient aux métadonnées `register` de chaque entrée du corpus le cas échéant.
 
 :::caution Portée honnête
 Ces métriques sont **informatif uniquement** — elles ne font jamais partie du score composite, et la détection de formalité est basée sur des marqueurs (une heuristique), pas un jugement appris. Traitez-les comme un détecteur de dérive pour l'adhérence au registre, pas un verdict sur la qualité du style.
@@ -227,7 +227,7 @@ Ces métriques sont **informatif uniquement** — elles ne font jamais partie du
 
 ---
 
-## Empreinte vs Hash de carte de résultats
+## Empreinte vs Hash de carte de résultats {#empreinte-vs-hash-de-carte-de-résultats}
 
 Le harnais produit deux hashes distincts. Ils servent des objectifs différents :
 
@@ -237,23 +237,23 @@ L'**empreinte** répond à : *« Cette exécution pourrait-elle être reproduite
 
 Elle hache la combinaison d'entrées qui définissent la configuration de l'expérience — pas les résultats :
 
-- SHA-256 du corpus
+- SHA-256 de l'ensemble de données
 - Slug du modèle
 - Étiquette de condition
 - SHA-256 de l'invite système
 - Température
 - Version du harnais
 
-Deux exécutions avec des empreintes identiques ont utilisé la même configuration. Leurs résultats doivent être comparables (modulo le non-déterminisme de l'API).
+Deux exécutions avec des empreintes identiques ont utilisé la même configuration. Leurs résultats devraient être comparables (modulo le non-déterminisme de l'API).
 
 ### Hash de carte de résultats
 
-Le **hash de carte de résultats** répond à : *« Ce fichier de résultats spécifique a-t-il été altéré ? »*
+Le **hash de carte de résultats** répond à : *« Ce fichier de résultat spécifique a-t-il été altéré ? »*
 
 C'est le SHA-256 de l'ensemble du JSON de carte de résultats (excluant le champ `run_card_hash` lui-même). Si un champ change — un score, un horodatage, une seule sortie — le hash se casse.
 
 :::info Quand utiliser lequel
-Utilisez l'**empreinte** pour regrouper les exécutions comparables (même expérience, exécutions différentes). Utilisez le **hash de carte de résultats** pour vérifier l'intégrité d'un fichier de résultats spécifique.
+Utilisez l'**empreinte** pour regrouper les exécutions comparables (même expérience, exécutions différentes). Utilisez le **hash de carte de résultats** pour vérifier l'intégrité d'un fichier de résultat spécifique.
 :::
 
 ---
@@ -279,11 +279,11 @@ curl -X POST https://champollion.dev/api/leaderboard/submit \
 ```
 
 :::warning Validation du classement
-Le classement valide les cartes de résultats soumises par rapport au registre de corpus. Les soumissions référençant des corpus inconnus, ou avec un `run_card_hash` cassé, sont rejetées.
+Le classement valide les cartes de résultats soumises par rapport au registre d'ensembles de données. Les soumissions référençant des ensembles de données inconnus, ou avec un `run_card_hash` cassé, sont rejetées.
 :::
 
 :::danger NE PAS ENTRAÎNER sur les données d'évaluation
-Si votre méthode a vu le corpus d'évaluation lors du développement — en tant que données d'entraînement, exemples few-shot, entrées de dictionnaire ou matériel d'ingénierie d'invite — votre soumission sera **disqualifiée**. Consultez [Évaluation de la traduction automatique](/docs/leaderboard/rules) pour savoir ce qui constitue une bonne vs mauvaise méthode.
+Si votre méthode a vu l'ensemble de données d'évaluation lors du développement — en tant que données d'entraînement, exemples few-shot, entrées de dictionnaire ou matériel d'ingénierie d'invite — votre soumission sera **disqualifiée**. Consultez [Évaluation de la traduction automatique](/docs/leaderboard/rules) pour savoir ce qui constitue une bonne vs mauvaise méthode.
 :::
 
 ---
@@ -291,7 +291,7 @@ Si votre méthode a vu le corpus d'évaluation lors du développement — en tan
 ## Voir aussi
 
 - [Évaluation de la traduction automatique](/docs/leaderboard/rules) — aperçu, proposition de valeur du classement et conseils sur les bonnes/mauvaises méthodes
-- [Corpus d'évaluation](/docs/leaderboard/datasets) — format de corpus, EDTeKLA, FLORES+
+- [Ensembles de données d'évaluation](/docs/leaderboard/datasets) — format d'ensemble de données, EDTeKLA, FLORES+
 - [Spécification de carte de résultats](/docs/specifications/run-card) — le schéma JSON complet
 - [Construire une méthode](/docs/specifications/methods) — l'interface de méthode pour créer des méthodes évaluables
 - [Classement des méthodes](https://champollion.dev/leaderboard) — scores de référence en direct
