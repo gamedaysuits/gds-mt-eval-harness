@@ -5,11 +5,18 @@ Reads three sources of truth and emits ``cli/website/static/queue.json``,
 the artifact behind champollion.dev/queue.json and the /contribute page:
 
   1. ``arena/datasets/registry.json`` — which dev-split corpora are open
-     for community runs. Only corpora that are hosted in the public
-     harness mirror (``access: "local"``, ``segment: "development"``) and
-     carry a redistributable license (CC-BY family, non-NC) are queued.
-     NC-licensed (EdTeKLA) and quarantined corpora are excluded — see
-     the project licensing policy (NC content stays out of open
+     for community runs. Two kinds qualify, both requiring
+     ``segment: "development"``, a redistributable license (CC-BY
+     family, non-NC), and no quarantine flag:
+       - ``access: "local"`` corpora hosted in the public harness
+         mirror (fetched with curl in the run command);
+       - ``access: "fetch-from-source"`` corpora with a
+         ``source_export`` block (the Tatoeba mesh corpora) — never
+         hosted by us; the harness rebuilds them locally from the
+         pinned upstream export when ``mt-eval run --yes`` finds the
+         corpus path missing, then verifies the registry sha256.
+     NC-licensed (EdTeKLA) corpora are excluded either way — see the
+     project licensing policy (NC content stays out of open
      contribution lanes).
   2. ``arena/eval/logs/sweep_manifest.json`` — the validated model lineup
      and observed per-run costs from the 2026-06-11 baseline sweep.
@@ -19,6 +26,35 @@ the artifact behind champollion.dev/queue.json and the /contribute page:
   3. The public leaderboard REST endpoint (read-only anon key, same as
      cli/website/src/pages/leaderboard.js) — already-covered
      (dataset, model, condition) combos are dropped from the queue.
+
+Priority model (mesh-chaining v1)
+---------------------------------
+The mission is "every language into every language by measured
+individual pair chains": an unbenchmarked pair is served by chaining
+benchmarked edges, so a queue item's value is how much its language
+pair shortens chains across the whole benchmark graph — not how big
+its corpus is. Items are ranked by, in order:
+
+  1. **Uncovered pairs first** — language pairs with no leaderboard
+     coverage at all come before replications/extensions of covered
+     pairs.
+  2. **Chaining value** (descending) — the gain in *global efficiency*
+     (mean over ordered language pairs of 1/d(u,v), 1/inf = 0) when the
+     item's pair edge is added to the graph of currently covered pairs.
+     Efficiency is used instead of raw average path length because it
+     is well-defined on disconnected graphs: edges that join components
+     — the highest-value chaining edges — rank first instead of
+     dividing by infinity. Identical definition as
+     ``corpora_builder.probe_tatoeba.graph_efficiency``; a parity test
+     in arena/tests keeps the two in lockstep.
+  3. **Corpus size** (ascending) — the low-resource-first proxy,
+     demoted from primary criterion to tiebreak within equal chaining
+     value.
+  4. Naive before coached, then cheapest model first, then item id.
+
+With ``--offline`` (or a failed coverage query) the covered graph is
+empty, so every pair's chaining gain is the identical component-join
+value and ordering degrades gracefully to the size/cost tiebreakers.
 
 No claim-locking by design: run-card fingerprints make duplicate runs
 harmless (identical fingerprints dedupe on publish; non-identical
@@ -82,13 +118,21 @@ def model_short(slug: str) -> str:
 def queue_corpora(registry: dict) -> list[dict]:
     """Select corpora eligible for the public queue.
 
-    Eligible = dev-split, hosted in the public mirror, non-NC license.
-    Everything else (fetch-from-source NC corpora, quarantined sets,
-    local-only gold standards) stays out of the open contribution lane.
+    Eligible = dev-split, non-NC license, and obtainable by a
+    contributor: either hosted in the public mirror (``access:
+    "local"``) or rebuildable from a pinned upstream export
+    (``access: "fetch-from-source"`` with a ``source_export`` block —
+    the harness fetch-on-miss path). Everything else (NC corpora,
+    quarantined sets, local-only gold standards) stays out of the open
+    contribution lane.
     """
     out = []
     for ds in registry.get("datasets", []):
-        if ds.get("access") != "local":
+        access = ds.get("access")
+        if access == "fetch-from-source":
+            if not isinstance(ds.get("source_export"), dict):
+                continue  # no public rebuild recipe (e.g. EdTeKLA cards)
+        elif access != "local":
             continue
         if ds.get("segment") != "development":
             continue
@@ -102,6 +146,82 @@ def queue_corpora(registry: dict) -> list[dict]:
             continue
         out.append(ds)
     return out
+
+
+def graph_efficiency(nodes: list[str], edges: set[frozenset]) -> float:
+    """Global efficiency of an undirected graph via per-node BFS.
+
+    Mean over ordered node pairs of 1/d(u,v), with 1/inf = 0 — defined
+    even on disconnected graphs. Mirror of
+    ``corpora_builder.probe_tatoeba.graph_efficiency`` (kept duplicated
+    so this script stays stdlib-only; parity-tested in arena/tests).
+    """
+    from collections import deque
+
+    adj: dict[str, set] = {n: set() for n in nodes}
+    for e in edges:
+        pair = tuple(e)
+        if len(pair) != 2:
+            continue
+        a, b = pair
+        if a in adj and b in adj:
+            adj[a].add(b)
+            adj[b].add(a)
+
+    n = len(nodes)
+    if n < 2:
+        return 0.0
+    total = 0.0
+    for start in nodes:
+        dist = {start: 0}
+        queue = deque([start])
+        while queue:
+            u = queue.popleft()
+            for v in adj[u]:
+                if v not in dist:
+                    dist[v] = dist[u] + 1
+                    queue.append(v)
+        total += sum(1.0 / d for node, d in dist.items() if node != start)
+    return total / (n * (n - 1))
+
+
+def chaining_gains(
+    corpora: list[dict],
+    covered_pair_ids: set,
+) -> dict[str, float]:
+    """Chaining value per corpus id against the covered-pair graph.
+
+    Nodes are every language appearing in an eligible corpus; edges are
+    the pairs of corpora already covered on the leaderboard. A corpus's
+    chaining value is the global-efficiency gain from adding its pair
+    edge — 0.0 when the edge is already covered (replications add no
+    new chaining).
+    """
+    nodes = sorted({
+        lang
+        for ds in corpora
+        for lang in (ds["language_pair"]["source"],
+                     ds["language_pair"]["target"])
+    })
+    covered_edges = {
+        frozenset((ds["language_pair"]["source"],
+                   ds["language_pair"]["target"]))
+        for ds in corpora
+        if ds["id"] in covered_pair_ids
+    }
+    baseline = graph_efficiency(nodes, covered_edges)
+
+    gains: dict[str, float] = {}
+    for ds in corpora:
+        edge = frozenset((ds["language_pair"]["source"],
+                          ds["language_pair"]["target"]))
+        if edge in covered_edges:
+            gains[ds["id"]] = 0.0
+        else:
+            gains[ds["id"]] = (
+                graph_efficiency(nodes, covered_edges | {edge}) - baseline
+            )
+    return gains
 
 
 def target_lang_name(iso3: str) -> str | None:
@@ -206,10 +326,11 @@ def main() -> int:
             coverage_note = f"coverage query failed ({exc}); all combos listed"
 
     # ---- Build items -----------------------------------------------------
-    # Priority: uncovered language pairs first, lower-resource first
-    # (corpus size ascending is the proxy: a thinner public corpus pool
-    # generally means a lower-resourced pair), naive before coached,
-    # then cheapest model first so the entry cost stays low.
+    # Priority: mesh-chaining v1 (see module docstring) — uncovered
+    # language pairs first, then chaining value (global-efficiency gain
+    # on the covered-pair graph) descending, with corpus size demoted to
+    # a low-resource tiebreaker, naive before coached, cheapest model
+    # first so the entry cost stays low.
     covered_pairs = set()
     for ds in corpora:
         stem = Path(ds["path"]).stem
@@ -217,6 +338,8 @@ def main() -> int:
         for token, _m, _c in coverage:
             if token in tokens:
                 covered_pairs.add(ds["id"])
+
+    gains = chaining_gains(corpora, covered_pairs)
 
     items = []
     skipped_no_card = []
@@ -228,7 +351,10 @@ def main() -> int:
         if not lang:
             skipped_no_card.append(ds["id"])
             continue
-        corpus_url = f"{MIRROR_RAW}/datasets/{ds['path']}"
+        is_fetch = ds.get("access") == "fetch-from-source"
+        corpus_url = (
+            None if is_fetch else f"{MIRROR_RAW}/datasets/{ds['path']}"
+        )
         for cond in CONDITIONS:
             for slug in lineup:
                 ds_tokens = {stem.lower(), ds["id"].lower()}
@@ -247,35 +373,56 @@ def main() -> int:
                     )
                 else:
                     est, basis = None, "no sweep data for this model"
-                run_cmd = (
-                    f"curl -fsSLO {corpus_url} && "
-                    f"mt-eval run --corpus {stem}.json "
-                    f'--model {slug} --target-lang "{lang}"'
-                )
+                if is_fetch:
+                    # Not hosted by us: run from an arena checkout and the
+                    # harness rebuilds the corpus from the pinned upstream
+                    # export on first use (--yes accepts the CC-BY terms),
+                    # verifying the registry sha256.
+                    run_cmd = (
+                        f"mt-eval run --corpus datasets/{ds['path']} "
+                        f'--model {slug} --target-lang "{lang}" --yes'
+                    )
+                else:
+                    run_cmd = (
+                        f"curl -fsSLO {corpus_url} && "
+                        f"mt-eval run --corpus {stem}.json "
+                        f'--model {slug} --target-lang "{lang}"'
+                    )
                 if cond == "coached":
                     run_cmd += " --coaching-file YOUR_COACHING.txt"
-                items.append(
-                    {
-                        "id": f"{stem}__{slug.replace('/', '_')}__{cond}",
-                        "language_pair": f"{src}>{tgt}",
-                        "target_language": lang,
-                        "corpus_id": ds["id"],
-                        "corpus_file": f"datasets/{ds['path']}",
-                        "corpus_url": corpus_url,
-                        "corpus_license": ds.get("license"),
-                        "entry_count": ds.get("size"),
-                        "model": slug,
-                        "condition": cond,
-                        "est_cost_usd": est,
-                        "est_basis": basis,
-                        "pair_covered_on_leaderboard": ds["id"] in covered_pairs,
-                        "run_command": run_cmd,
-                    }
-                )
+                item = {
+                    "id": f"{stem}__{slug.replace('/', '_')}__{cond}",
+                    "language_pair": f"{src}>{tgt}",
+                    "target_language": lang,
+                    "corpus_id": ds["id"],
+                    "corpus_file": f"datasets/{ds['path']}",
+                    "corpus_url": corpus_url,
+                    "corpus_license": ds.get("license"),
+                    "entry_count": ds.get("size"),
+                    "model": slug,
+                    "condition": cond,
+                    "est_cost_usd": est,
+                    "est_basis": basis,
+                    "pair_covered_on_leaderboard": ds["id"] in covered_pairs,
+                    "chaining_gain": round(gains.get(ds["id"], 0.0), 6),
+                    "run_command": run_cmd,
+                }
+                if is_fetch:
+                    item["corpus_fetch"] = (
+                        "fetch-from-source: corpus is not hosted in the "
+                        "mirror; mt-eval builds it locally from the pinned "
+                        "Tatoeba Challenge export and verifies the registry "
+                        "sha256 (run from an arena checkout)"
+                    )
+                    item["source_export_url"] = (
+                        ds.get("source_export") or {}
+                    ).get("url")
+                items.append(item)
 
     def sort_key(it):
         return (
             it["pair_covered_on_leaderboard"],          # empty squares first
+            -it["chaining_gain"],                        # mesh value first
             it["entry_count"] or 10**9,                  # low-resource proxy
             it["condition"] != "naive",                  # naive before coached
             it["est_cost_usd"] if it["est_cost_usd"] is not None else 10**9,
@@ -298,6 +445,16 @@ def main() -> int:
             "models": lineup,
             "conditions": list(CONDITIONS),
             "coverage_source": coverage_note,
+            "priority_model": (
+                "mesh-chaining v1: uncovered pairs first, then chaining "
+                "value (global-efficiency gain of the item's language-pair "
+                "edge on the covered-pair graph) descending, then corpus "
+                "size ascending (low-resource tiebreak), naive before "
+                "coached, cheapest model first. Chaining value reflects the "
+                "mission: every language into every language by measured "
+                "pair chains — items that shorten chains between "
+                "benchmarked languages outrank bigger corpora."
+            ),
             "cost_basis": (
                 "Cost estimates come from the 2026-06 baseline sweep manifest "
                 f"(arena/eval/logs/sweep_manifest.json: {sweep_ok} successful "
@@ -309,6 +466,11 @@ def main() -> int:
             "how_to_run": (
                 "Install: curl -fsSL champollion.dev/harness | bash ; set "
                 "OPENROUTER_API_KEY; then paste any item's run_command. "
+                "Items with corpus_fetch are not hosted anywhere by us: "
+                "run them from your arena checkout and the harness "
+                "downloads the pinned Tatoeba Challenge export (~169 MB, "
+                "cached once for all pairs), rebuilds the corpus locally, "
+                "and verifies its sha256 against the registry. "
                 "Coached items: write your own coaching file first — see "
                 "https://mtevalarena.org/docs/tutorials/coached-llm-prompting"
             ),
