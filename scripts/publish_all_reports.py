@@ -18,8 +18,9 @@ The harness's Supabase endpoint is env-overridable (mt_eval_harness/auth.py):
 
 This script defaults all three to the STAGING branch (xhvqqnxtvgggzcweofrp)
 and the staging-bot session at ~/.mt-eval/auth.staging.json, and refuses to
-run against the production project as a guard rail. Export the env vars
-before invoking to point elsewhere (but never at production from here).
+run against the production project as a guard rail. The single sanctioned
+exception: --allow-prod (founder-gated) publishes via the harness's own
+production defaults and the founder session at ~/.mt-eval/auth.json.
 
 Usage:
     python3 arena/scripts/publish_all_reports.py            # publish all
@@ -54,23 +55,45 @@ STAGING_TOKEN_PATH = str(Path.home() / ".mt-eval" / "auth.staging.json")
 PROD_REF = "sjdomynysdljkbemupqa"
 
 # --- Configure the harness endpoint BEFORE importing mt_eval_harness ---
-# auth.py reads these at import time.
-os.environ.setdefault("MT_EVAL_SUPABASE_URL", STAGING_URL)
-os.environ.setdefault("MT_EVAL_SUPABASE_ANON_KEY", STAGING_ANON_KEY)
-os.environ.setdefault("MT_EVAL_TOKEN_PATH", STAGING_TOKEN_PATH)
+# auth.py reads these at import time, so the target must be decided here
+# (argparse in main() is too late). --allow-prod is checked against raw argv.
+#
+# Default: STAGING. With --allow-prod (founder-authorized flip, 2026-06-12):
+# leave the harness on its own defaults — the production project + the
+# founder session at ~/.mt-eval/auth.json.
+ALLOW_PROD = "--allow-prod" in sys.argv
 
-if PROD_REF in os.environ["MT_EVAL_SUPABASE_URL"]:
-    sys.exit(
-        "Refusing to run: MT_EVAL_SUPABASE_URL points at the PRODUCTION "
-        "project. This script is for staging publishes only."
-    )
+if ALLOW_PROD:
+    if any(k in os.environ for k in (
+            "MT_EVAL_SUPABASE_URL", "MT_EVAL_SUPABASE_ANON_KEY")):
+        sys.exit(
+            "--allow-prod uses the harness's built-in production endpoint; "
+            "unset MT_EVAL_SUPABASE_URL / MT_EVAL_SUPABASE_ANON_KEY first."
+        )
+else:
+    os.environ.setdefault("MT_EVAL_SUPABASE_URL", STAGING_URL)
+    os.environ.setdefault("MT_EVAL_SUPABASE_ANON_KEY", STAGING_ANON_KEY)
+    os.environ.setdefault("MT_EVAL_TOKEN_PATH", STAGING_TOKEN_PATH)
+
+    if PROD_REF in os.environ["MT_EVAL_SUPABASE_URL"]:
+        sys.exit(
+            "Refusing to run: MT_EVAL_SUPABASE_URL points at the PRODUCTION "
+            "project. Pass --allow-prod to publish to production deliberately."
+        )
 
 sys.path.insert(0, str(ARENA_ROOT))
 
+from mt_eval_harness import auth as _auth  # noqa: E402
 from mt_eval_harness.publish import (  # noqa: E402
     assemble_run_card,
     publish_to_supabase,
 )
+
+# Backfill the env from whatever the harness resolved to (prod defaults under
+# --allow-prod), so _card_exists and the banner below read consistent values.
+os.environ.setdefault("MT_EVAL_SUPABASE_URL", _auth.SUPABASE_URL)
+os.environ.setdefault("MT_EVAL_SUPABASE_ANON_KEY", _auth.SUPABASE_ANON_KEY)
+os.environ.setdefault("MT_EVAL_TOKEN_PATH", str(_auth.TOKEN_PATH))
 
 
 def _card_exists(card_id: str) -> bool:
@@ -103,7 +126,18 @@ def main() -> int:
         "--reports-dir", default=str(REPORTS_DIR),
         help=f"Directory to glob for run_*_report.json (default: {REPORTS_DIR})",
     )
+    parser.add_argument(
+        "--allow-prod", action="store_true",
+        help="Publish to the PRODUCTION leaderboard (harness defaults + "
+             "~/.mt-eval/auth.json) instead of staging. Founder-gated.",
+    )
     args = parser.parse_args()
+
+    if args.allow_prod:
+        print("\n" + "!" * 70)
+        print("! TARGET: PRODUCTION leaderboard "
+              f"({os.environ.get('MT_EVAL_SUPABASE_URL', 'harness default')})")
+        print("!" * 70)
 
     reports = sorted(Path(args.reports_dir).glob("run_*_report.json"))
     if not reports:

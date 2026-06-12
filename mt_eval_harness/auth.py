@@ -22,6 +22,8 @@ import http.server
 import json
 import os
 import secrets
+import sys
+import time
 import urllib.parse
 import urllib.request
 import webbrowser
@@ -194,6 +196,17 @@ def get_session() -> dict:
     """
     tokens = _load_tokens()
 
+    # Reuse a still-valid access token as-is. Batch callers (e.g.
+    # publish_all_reports.py) hit get_session once per report; refreshing
+    # unconditionally rotates the refresh token on every call and trips
+    # Supabase Auth's token-endpoint rate limit, stranding the batch.
+    if tokens and tokens.get("access_token"):
+        try:
+            if float(tokens.get("expires_at", 0)) - time.time() > 60:
+                return tokens
+        except (TypeError, ValueError):
+            pass  # malformed expires_at — fall through to refresh
+
     # Try refreshing an existing session first
     if tokens and tokens.get("refresh_token"):
         try:
@@ -207,6 +220,15 @@ def get_session() -> dict:
             logger.debug(
                 "Token refresh failed (will prompt for login): %s", e
             )
+
+    # The interactive flow needs a human at a terminal; in batch/CI contexts
+    # fail fast instead of EOFError-ing on input().
+    if not sys.stdin.isatty():
+        raise SystemExit(
+            "Authentication required: no valid session and no interactive "
+            "terminal for the sign-in flow. Re-run interactively to sign in "
+            "(tokens are saved to ~/.mt-eval/auth.json), then retry."
+        )
 
     return _interactive_login()
 
