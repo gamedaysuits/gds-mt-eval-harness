@@ -593,7 +593,14 @@ def args_to_config(args) -> RunConfig:
     """Convert parsed CLI args to a RunConfig."""
     entry_ids = None
     if hasattr(args, "ids") and args.ids:
-        entry_ids = [int(x.strip()) for x in args.ids.split(",")]
+        # Corpus ids are ints in some corpora (EdTeKLA) and strings in
+        # others (Tatoeba: 'tatoeba_2289') — accept both. The loader
+        # matches string-normalized, so the int/str distinction here is
+        # cosmetic.
+        entry_ids = [
+            int(x.strip()) if x.strip().lstrip("-").isdigit() else x.strip()
+            for x in args.ids.split(",")
+        ]
 
     tools_list = None
     if hasattr(args, "tools_list") and args.tools_list:
@@ -1058,6 +1065,18 @@ def main():
 
     # Default: run
     config = args_to_config(args)
+
+    # Tool-calling needs a ToolProvider registered programmatically
+    # (mt_eval_harness.plugins.tools.ToolProvider); nothing ships one in
+    # plain CLI runs, so fail here with instructions instead of a
+    # ValueError traceback deep in strategy resolution.
+    if getattr(config, "tools_enabled", False) and args.command == "run":
+        sys.exit(
+            "  --tools requires a ToolProvider plugin registered via the "
+            "programmatic API\n  (execute_run(..., tool_provider=...)); the "
+            "CLI ships none yet. Use --method\n  <plugin-dir> for method "
+            "plugins, or run without --tools."
+        )
 
     if not config.corpus_path and not (config.source_file and config.reference_file):
         print("ERROR: --corpus or (--source-file + --reference-file) is required.")

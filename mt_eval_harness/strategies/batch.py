@@ -96,8 +96,18 @@ class BatchStrategy:
             # Check batch-level cache
             cached = cache.get_batch(source_texts)
             if cached is not None:
+                # Cached results carry the entry ids of the run that wrote
+                # them; a corpus rebuilt with the same source texts but new
+                # ids would resurrect the stale ones (eng-tuk 2026-06-12
+                # came back with its pre-rebuild duplicate ids). Re-key the
+                # cached model outputs onto the CURRENT batch entries, as
+                # the single strategy already does.
+                rekeyed = [
+                    {**result, "id": entry["id"]}
+                    for result, entry in zip(cached, batch)
+                ]
                 cache_hits += len(batch)
-                all_results.extend(cached)
+                all_results.extend(rekeyed)
                 done_count += len(batch)
                 report_progress(done_count, total)
                 continue
@@ -133,6 +143,21 @@ class BatchStrategy:
             )
 
             if result["error"]:
+                # A config-shaped failure (bad model id, bad key, no credit)
+                # on the very first batch will fail every later batch the
+                # same way — abort now instead of grinding through the whole
+                # corpus into a vacuous all-error run. Transient errors
+                # (429/5xx/timeouts) keep the never-throw behavior.
+                err_text = str(result["error"])
+                fatal = any(f"HTTP {code}" in err_text
+                            for code in (400, 401, 402, 403, 404))
+                if fatal and not all_results and not cache_hits:
+                    raise RuntimeError(
+                        f"First batch failed for all {n} entries "
+                        f"({err_text[:160]}); aborting before sending the "
+                        f"remaining {total - n} entries. Check the model id, "
+                        "API key, and account credit."
+                    )
                 # All entries in this batch get the same error.
                 # Divide usage across entries so cost aggregation is correct.
                 per_usage = _split_usage(result["usage"], n)

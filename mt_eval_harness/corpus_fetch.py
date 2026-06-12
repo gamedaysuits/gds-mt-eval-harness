@@ -323,8 +323,11 @@ def _confirm_fetch(card: dict[str, Any], *, assume_yes: bool) -> bool:
     print()
     print("  You are responsible for complying with this license.")
 
-    if assume_yes or os.environ.get("CI", "").lower() in ("1", "true", "yes"):
-        print("  --yes/CI set, proceeding automatically.")
+    if assume_yes or any(
+        os.environ.get(var, "").lower() in ("1", "true", "yes")
+        for var in ("CI", "MT_EVAL_AUTO_SETUP")
+    ):
+        print("  --yes/CI/MT_EVAL_AUTO_SETUP set, proceeding automatically.")
         return True
 
     if _non_interactive():
@@ -382,8 +385,11 @@ def _confirm_fetch_export(
     print()
     print("  You are responsible for complying with this license.")
 
-    if assume_yes or os.environ.get("CI", "").lower() in ("1", "true", "yes"):
-        print("  --yes/CI set, proceeding automatically.")
+    if assume_yes or any(
+        os.environ.get(var, "").lower() in ("1", "true", "yes")
+        for var in ("CI", "MT_EVAL_AUTO_SETUP")
+    ):
+        print("  --yes/CI/MT_EVAL_AUTO_SETUP set, proceeding automatically.")
         return True
 
     if _non_interactive():

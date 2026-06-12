@@ -373,6 +373,16 @@ def assemble_run_card(
     config = run_log.get("config", {})
     overall = report.get("overall", {})
 
+    # Vacuous runs (every entry errored) score nothing — their 0.0 rates are
+    # computed over zero evaluated entries. Refuse to mint a card for one.
+    if overall.get("evaluated", 0) == 0:
+        raise ValueError(
+            f"Refusing to assemble a run card for {report_path}: evaluated=0 "
+            f"({overall.get('error_count', '?')}/{overall.get('total_entries', '?')} "
+            "entries errored). Re-run the evaluation; vacuous runs are never "
+            "publishable."
+        )
+
     # Provenance block (from runs using the updated pipeline.py).
     # Falls back to empty dict for legacy RunLogs that predate provenance.
     provenance = run_log.get("provenance", {})

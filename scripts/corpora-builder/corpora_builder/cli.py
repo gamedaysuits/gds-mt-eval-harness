@@ -583,3 +583,10 @@ def main() -> None:
 
     # --- Step 8: Print summary ---
     _print_summary(corpus)
+
+
+if __name__ == "__main__":  # pragma: no cover
+    # `python -m corpora_builder.cli` must behave exactly like the
+    # `build-corpus` console script — a silent no-op here cost a corpus
+    # rebuild that never happened (eng-tuk, 2026-06-12).
+    main()

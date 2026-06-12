@@ -5384,6 +5384,42 @@
       }
     },
     {
+      "id": "tatoeba-eng-tuk-dev",
+      "name": "Tatoeba eng→tuk Development Corpus",
+      "version": "0.1.1",
+      "language_pair": {
+        "source": "eng",
+        "target": "tuk"
+      },
+      "size": 118,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 35,
+        "ecommerce": 7,
+        "edu": 17,
+        "gov": 1,
+        "legal": 9,
+        "literary": 1,
+        "marketing": 2,
+        "medical": 1,
+        "news": 1,
+        "scientific": 1,
+        "support": 21,
+        "tech": 2,
+        "ui": 20
+      },
+      "url": null,
+      "sha256": "75c92acf3cea10e6eb58b50eea6bcb68a6fb2f269eaf1bfb253a69e3e8134c4d",
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tuk-dev-v1.json",
+      "segment": "development",
+      "notes": "Rebuilt 2026-06-12 by corpora-builder (seed 42) after the original 0.1.0 build shipped 118 entries all sharing the duplicated id 'tatoeba_eng' (OPUS id-file language labels parsed as sentence ids; adapter now falls back to positional ids when id files are non-unique). 118 entries, stratified across 13 domain(s). Registered for the first time with this rebuild.",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
       "id": "tatoeba-por-tgl-dev",
       "name": "Tatoeba por→tgl Development Corpus",
       "version": "0.1.0",

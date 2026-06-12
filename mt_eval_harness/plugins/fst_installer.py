@@ -325,17 +325,19 @@ def _download_divvun_macos_pkg(
             gunzip = subprocess.Popen(
                 ["gunzip"], stdin=payload_f, stdout=subprocess.PIPE,
             )
+            # NB: Popen has no capture_output kwarg (that's subprocess.run) —
+            # passing it crashed every divvun-pkg FST install (sme et al.).
             cpio = subprocess.Popen(
                 ["cpio", "-id"],
                 stdin=gunzip.stdout, cwd=str(payload_dir),
-                capture_output=True,
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE,
             )
             gunzip.stdout.close()
-            cpio.communicate(timeout=30)
+            _, cpio_stderr = cpio.communicate(timeout=30)
 
         if cpio.returncode != 0:
             raise RuntimeError(
-                f"cpio extraction failed: {cpio.stderr.decode()}"
+                f"cpio extraction failed: {cpio_stderr.decode(errors='replace')}"
             )
 
         # Find the speller.zhfst inside the bundle

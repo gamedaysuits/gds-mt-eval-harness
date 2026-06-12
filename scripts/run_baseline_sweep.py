@@ -146,8 +146,9 @@ def main() -> int:
 
     lock = threading.Lock()
     state = {"spent": spent, "stopped": False}
-    # Stagger launches: run IDs are second-granular timestamps; simultaneous
-    # starts of the same model+condition would collide on the log filename.
+    # Run ids carry an entropy suffix (runner._build_run_id) and run-log
+    # writes are collision-proof (pipeline.write_run_log), so simultaneous
+    # starts no longer need a stagger; the gate only serializes spawns.
     launch_gate = threading.Lock()
 
     def worker(item: tuple[Path, str, str, int]) -> None:
@@ -161,7 +162,6 @@ def main() -> int:
                       f"≥ {args.stop_fraction:.0%} of ${args.budget:.2f}. Stopping queue.")
                 return
         with launch_gate:
-            time.sleep(1.2)
             proc = subprocess.Popen(
                 [sys.executable, "-m", "mt_eval_harness.cli", "run",
                  "--corpus", str(corpus), "--model", slug, "--target-lang", lang],

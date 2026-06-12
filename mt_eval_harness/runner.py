@@ -43,6 +43,7 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import json
+import secrets
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -212,6 +213,12 @@ async def execute_run(
             print(f"  CONFIG ERROR: {e}")
         raise ValueError(f"Invalid config: {'; '.join(errors)}")
 
+    # Canonicalize the model slug to the resolved OpenRouter id. Aliases and
+    # shorthand ("gemini-flash", "gpt-5.5") are conveniences for humans; if
+    # they leak into the run log they become the published model_slug, and
+    # one model fragments across leaderboard rows and fingerprints.
+    config.model = config.model_id
+
     print("=" * 60)
     print("MT Eval Harness — Run Execution")
     print("=" * 60)
@@ -250,6 +257,19 @@ async def execute_run(
         ).hexdigest()
 
     # --- Post-load validation ---
+    # An empty selection must abort BEFORE any API/log activity. The common
+    # cause is positional --ids against a corpus with string ids (Tatoeba
+    # corpora use 'tatoeba_<sentence-id>'); the old code fell through and
+    # crashed on corpus[0] while trying to print a different error.
+    if not corpus:
+        print(
+            f"\n  ❌ ERROR: 0 entries selected from {config.corpus_path}."
+            f"\n  If you passed --ids, they must match the corpus's own id"
+            f"\n  values (e.g. 'tatoeba_2289'), not positional indices."
+            f"\n  Use --dataset all to run the full corpus."
+        )
+        raise SystemExit(1)
+
     # Catch field name mismatches before burning money on API calls.
     ref_count = sum(1 for e in corpus if e.get(config.target_field))
     if ref_count == 0:
@@ -391,6 +411,21 @@ async def execute_run(
 
     output_path = write_run_log(run_log, config.output_dir)
 
+    # A run where every entry errored has nothing to score — its report
+    # would be all vacuous 0.0 rates. Keep the log for forensics, but fail
+    # the run loudly so automation (sweep drivers, queue contributors)
+    # never analyzes or publishes it.
+    error_count = sum(1 for r in enriched if r.get("error"))
+    if enriched and error_count == len(enriched):
+        first_error = next(r["error"] for r in enriched if r.get("error"))
+        print(f"\n  RUN FAILED: all {len(enriched)} entries errored.")
+        print(f"  First error:  {str(first_error)[:200]}")
+        print(f"  Forensic log: {output_path}")
+        raise RuntimeError(
+            f"Vacuous run: every entry errored (first: {str(first_error)[:120]}). "
+            f"Log kept at {output_path} for forensics; do not analyze or publish it."
+        )
+
     print(f"\n{'=' * 60}")
     print(f"  Run complete: {run_id}")
     print(f"  Entries:      {len(enriched)}")
@@ -451,7 +486,13 @@ async def execute_run(
 # ---------------------------------------------------------------------------
 
 def _build_run_id(config: RunConfig) -> str:
-    """Build a human-readable run ID from config."""
+    """Build a human-readable run ID from config.
+
+    Ends with a 6-hex-char entropy suffix: timestamps are second-granular,
+    and two runs of the same model+condition starting in the same second
+    used to collide on the log filename — each overwrote half of the
+    other's run/report pair, corrupting both (2026-06-11 sweep).
+    """
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     # Sanitize model name: full slugs like "google/gemini-3.1-pro-preview"
     # contain slashes that would create nested directories in the run log path
@@ -468,6 +509,7 @@ def _build_run_id(config: RunConfig) -> str:
         parts.append(f"b{config.batch_size}")
     if config.run_name:
         parts.append(config.run_name)
+    parts.append(secrets.token_hex(3))
 
     return "_".join(parts)
 

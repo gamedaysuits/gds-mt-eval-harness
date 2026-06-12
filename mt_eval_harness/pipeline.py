@@ -17,6 +17,7 @@ Why a separate module instead of a base class:
 from __future__ import annotations
 
 import json
+import secrets
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -197,6 +198,12 @@ def write_run_log(run_log: dict, output_dir: str) -> Path:
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     output_path = out_dir / f"{run_log['run_id']}.json"
+    if output_path.exists():
+        # Defense in depth behind the entropy suffix in run ids: a log must
+        # never clobber another run's — a collision corrupts BOTH run/report
+        # pairs (the report of one run paired with the log of another).
+        run_log["run_id"] = f"{run_log['run_id']}_{secrets.token_hex(3)}"
+        output_path = out_dir / f"{run_log['run_id']}.json"
     output_path.write_text(
         json.dumps(run_log, ensure_ascii=False, indent=2),
         encoding="utf-8",

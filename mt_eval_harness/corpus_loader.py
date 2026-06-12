@@ -48,7 +48,16 @@ def _load_harness_json(path: Path, config: RunConfig) -> tuple[list[dict], dict]
     Returns:
         (entries, dataset_metadata) — metadata dict may be empty for flat format.
     """
-    corpus = json.loads(path.read_text(encoding="utf-8"))
+    try:
+        corpus = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        # A truncated download or hand-edited corpus must abort with a
+        # human-readable message, not a raw decoder traceback.
+        raise SystemExit(
+            f"\n  ❌ ERROR: corpus file is not valid JSON: {path}\n"
+            f"  {exc}\n"
+            f"  Re-download or fix the file, then re-run."
+        )
 
     if isinstance(corpus, dict) and "entries" in corpus:
         dataset_meta = corpus.get("dataset", {})
@@ -317,10 +326,13 @@ def _apply_filters(entries: list[dict], config: RunConfig) -> list[dict]:
 
     # Explicit entry IDs take precedence
     if config.entry_ids is not None:
-        id_set = set(config.entry_ids)
-        filtered = [e for e in entries if e["id"] in id_set]
+        # String-normalize both sides: corpora store ids as ints (EdTeKLA)
+        # or strings (Tatoeba 'tatoeba_2289'), and CLI input arrives as
+        # text. Exact-type matching silently selected nothing.
+        id_set = {str(i) for i in config.entry_ids}
+        filtered = [e for e in entries if str(e["id"]) in id_set]
         if len(filtered) != len(id_set):
-            found = {e["id"] for e in filtered}
+            found = {str(e["id"]) for e in filtered}
             missing = id_set - found
             print(f"  WARNING: {len(missing)} entry IDs not found: {sorted(missing)[:10]}")
         return filtered

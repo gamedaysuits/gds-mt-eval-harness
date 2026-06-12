@@ -495,16 +495,7 @@ def _stream_tar_to_tsv(url: str, tsv_path: Path) -> Path:
         )
 
     # Parse IDs
-    src_ids = []
-    trg_ids = []
-    if id_lines and len(id_lines) == len(src_lines):
-        for line in id_lines:
-            parts = line.split("\t")
-            src_ids.append(parts[0].strip())
-            trg_ids.append(parts[1].strip() if len(parts) > 1 else parts[0].strip())
-    else:
-        src_ids = [str(i + 1) for i in range(len(src_lines))]
-        trg_ids = [str(i + 1) for i in range(len(src_lines))]
+    src_ids, trg_ids = _parse_id_lines(id_lines, len(src_lines))
 
     # Write synthesized TSV (only thing that touches disk)
     with open(tsv_path, "w", encoding="utf-8") as fh:
@@ -519,6 +510,36 @@ def _stream_tar_to_tsv(url: str, tsv_path: Path) -> Path:
         url.rsplit("/", 1)[-1],
     )
     return tsv_path
+
+
+def _parse_id_lines(id_lines: list[str] | None, n: int) -> tuple[list[str], list[str]]:
+    """Parse OPUS ``test.id``/``train.id`` lines into per-entry ids.
+
+    The id file format varies BY PACK across Tatoeba Challenge releases:
+    some carry sentence ids ("12345\\t67890"), others carry language
+    labels on every line ("eng\\ttuk"). Language labels are useless as
+    entry ids — every entry collapses onto one duplicated id (the
+    eng-tuk corpus shipped 118 entries all named ``tatoeba_eng``), and
+    duplicated ids silently overwrite each other on leaderboard entry
+    upserts. Ids are only trusted when they are unique across the file;
+    otherwise positional ids are generated (stable across rebuilds of
+    the same release).
+    """
+    if id_lines and len(id_lines) == n:
+        src_ids, trg_ids = [], []
+        for line in id_lines:
+            parts = line.split("\t")
+            src_ids.append(parts[0].strip())
+            trg_ids.append(parts[1].strip() if len(parts) > 1 else parts[0].strip())
+        if len(set(src_ids)) == n:
+            return src_ids, trg_ids
+        logger.warning(
+            "id file carries non-unique values (%d distinct over %d lines — "
+            "language labels?); falling back to positional ids",
+            len(set(src_ids)), n,
+        )
+    positional = [str(i + 1) for i in range(n)]
+    return positional, list(positional)
 
 
 def _extract_tar_to_tsv(tar_path: Path, tsv_path: Path) -> Path:
@@ -600,17 +621,7 @@ def _extract_tar_to_tsv(tar_path: Path, tsv_path: Path) -> Path:
         )
 
     # Parse IDs — format is either "src_id\ttrg_id" or just "src_id" per line
-    src_ids = []
-    trg_ids = []
-    if id_lines and len(id_lines) == len(src_lines):
-        for line in id_lines:
-            parts = line.split("\t")
-            src_ids.append(parts[0].strip())
-            trg_ids.append(parts[1].strip() if len(parts) > 1 else parts[0].strip())
-    else:
-        # Generate sequential IDs if the id file is missing or misaligned
-        src_ids = [str(i + 1) for i in range(len(src_lines))]
-        trg_ids = [str(i + 1) for i in range(len(src_lines))]
+    src_ids, trg_ids = _parse_id_lines(id_lines, len(src_lines))
 
     # Write synthesized TSV
     with open(tsv_path, "w", encoding="utf-8") as fh:

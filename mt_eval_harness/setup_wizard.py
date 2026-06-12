@@ -190,6 +190,51 @@ def print_status():
 
 # ── Installation helpers ─────────────────────────────────────────
 
+def _pip_subprocess_env() -> dict | None:
+    """Environment for pip-driven subprocesses on imperfect systems.
+
+    Two real-world walls between `--yes` automation and a clean install:
+
+    1. PEP 668: Homebrew/Debian pythons mark their site-packages
+       EXTERNALLY-MANAGED and bare `pip install` exits 1. When we're NOT
+       in a venv and the marker is present, route installs to the user
+       site (PIP_USER) with the managed-environment override. Inside a
+       venv (pipx, the curl installer, CI) pip works as-is.
+    2. Tools that shell out to a `pip` EXECUTABLE (`spacy download` does)
+       fail on systems that only ship `pip3`. Provide a `pip` shim in
+       ~/.mt-eval/bin and prepend it to PATH.
+
+    Returns None when the ambient environment needs neither.
+    """
+    import os
+    import shutil
+    import sysconfig
+
+    env = None
+
+    in_venv = sys.prefix != getattr(sys, "base_prefix", sys.prefix)
+    marker = Path(sysconfig.get_path("stdlib")) / "EXTERNALLY-MANAGED"
+    if not in_venv and marker.exists():
+        env = os.environ.copy()
+        env["PIP_BREAK_SYSTEM_PACKAGES"] = "1"
+        env["PIP_USER"] = "1"
+
+    if shutil.which("pip") is None:
+        shim_dir = Path.home() / ".mt-eval" / "bin"
+        shim = shim_dir / "pip"
+        if not shim.exists():
+            shim_dir.mkdir(parents=True, exist_ok=True)
+            shim.write_text(
+                f'#!/bin/sh\nexec "{sys.executable}" -m pip "$@"\n',
+                encoding="utf-8",
+            )
+            shim.chmod(0o755)
+        env = env or os.environ.copy()
+        env["PATH"] = f"{shim_dir}{os.pathsep}{env.get('PATH', '')}"
+
+    return env
+
+
 def _pip_install(package_spec: str, description: str) -> bool:
     """Run pip install with user feedback.
 
@@ -202,6 +247,10 @@ def _pip_install(package_spec: str, description: str) -> bool:
     """
     print(f"\n  Installing {description}...")
     print(f"  → pip install {package_spec}")
+    pip_env = _pip_subprocess_env()
+    if pip_env is not None:
+        print("  (externally-managed python detected — installing to the "
+              "user site)")
     print()
 
     try:
@@ -210,6 +259,7 @@ def _pip_install(package_spec: str, description: str) -> bool:
             capture_output=False,  # Show pip output in real-time
             text=True,
             timeout=600,  # 10 min timeout (COMET model downloads are large)
+            env=pip_env,
         )
         if result.returncode == 0:
             print(f"\n  ✅ {description} installed successfully.")
@@ -410,6 +460,7 @@ def install_lang(lang_code: str, interactive: bool = True) -> bool:
             result = sp.run(
                 [sys.executable, "-m"] + command.split(),
                 capture_output=False, text=True, timeout=300,
+                env=_pip_subprocess_env(),  # spacy download shells out to pip
             )
             if result.returncode != 0:
                 print(f"  ❌ Post-install step failed: {label}")

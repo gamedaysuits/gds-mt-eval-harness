@@ -2,10 +2,12 @@
 Semantic Validator — Fully deterministic lemma-level translation quality assessment.
 
 Validates non-exact-match translations through a three-step process that
-requires ZERO Cree knowledge and ZERO API calls:
+requires ZERO Cree knowledge and ZERO LLM calls:
 
   1. FST ANALYZE both pipeline output and textbook reference → extract lemmas
-  2. DICTIONARY LOOKUP → get English gloss for each lemma
+  2. DICTIONARY LOOKUP → get English gloss for each lemma (operator's own
+     local lemmas.json when present, else cached itwêwina API lookups —
+     see the Dictionary loader section for the licensing rules)
   3. CONTENT-WORD OVERLAP → compare glosses using spaCy lemmatization
 
 The core insight: if the pipeline chose lemma A (gloss: "s/he writes on a
@@ -38,9 +40,13 @@ Usage:
 # free word order (Wolfart 1973 §3.2); linear token order is never evaluated.
 
 import argparse
+import hashlib
 import json
 import logging
 import re
+import time
+import urllib.parse
+import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -138,20 +144,156 @@ def extract_content_words(nlp, text: str) -> set[str]:
 # ---------------------------------------------------------------------------
 # Dictionary loader
 # ---------------------------------------------------------------------------
+#
+# Gloss data is NOT distributed with the harness. The dictionary content
+# (Wolvengrey CW, Maskwacîs MD, AECD) is not openly licensed — permission
+# is pending — so no lemma dump may ship in this repo, the public mirror,
+# or any built artifact. Glosses come from one of:
+#
+#   1. data/lemmas.json beside this file — the operator's OWN licensed
+#      working copy (gitignored). Fast path; never required.
+#   2. The public itwêwina API (https://itwewina.altlab.app, morphodict,
+#      Apache-2.0 server) — per-lemma lookups, rate-limited, cached under
+#      ~/.mt-eval/itwewina-cache/. Cached responses are for the operator's
+#      own local use only: never commit, publish, or bundle them.
+#
+# With neither available (offline, API down) glosses resolve to "" and the
+# semantic verdicts degrade gracefully (words count as gloss-unknown).
 
-def load_gloss_map() -> dict[str, str]:
-    """Load lemma → English gloss mapping from the Wolvengrey dictionary."""
-    dict_path = Path(__file__).parent / "data" / "lemmas.json"
-    with open(dict_path) as f:
-        db = json.load(f)
+ITWEWINA_API_URL = "https://itwewina.altlab.app/api/search/"
+ITWEWINA_CACHE_DIR = Path.home() / ".mt-eval" / "itwewina-cache"
+_ITWEWINA_MIN_INTERVAL_S = 0.25  # politeness floor between API hits
+_ITWEWINA_TIMEOUT_S = 10
 
-    gloss_map = {}
-    for category in ["verbs", "nouns", "particles", "pronouns"]:
-        if category in db:
-            for lemma, info in db[category].items():
-                if isinstance(info, dict) and "gloss" in info:
-                    gloss_map[lemma] = info["gloss"]
-    return gloss_map
+_ITWEWINA_CACHE_README = """\
+itwêwina API response cache — mt-eval harness (LYSS-sem glosses)
+================================================================
+Cached responses from https://itwewina.altlab.app for the operator's own
+local use. The dictionary content (Wolvengrey CW, Maskwacîs MD, AECD) is
+NOT openly licensed. DO NOT commit, redistribute, publish, or bundle.
+"""
+
+
+class GlossSource:
+    """Lemma → English gloss source with a dict-like .get() interface.
+
+    Local lemmas.json when the operator has one; otherwise lazy per-lemma
+    itwêwina API lookups with an on-disk cache. Lookup failures resolve to
+    the caller's default — the validator treats those words as
+    gloss-unknown rather than erroring the run.
+    """
+
+    def __init__(self) -> None:
+        self._local = None
+        self._api_cache: dict[str, str] = {}
+        self._last_request = 0.0
+        self._api_warned = False
+
+        dict_path = Path(__file__).parent / "data" / "lemmas.json"
+        if dict_path.exists():
+            with open(dict_path) as f:
+                db = json.load(f)
+            local = {}
+            for category in ["verbs", "nouns", "particles", "pronouns"]:
+                for lemma, info in (db.get(category) or {}).items():
+                    if isinstance(info, dict) and "gloss" in info:
+                        local[lemma] = info["gloss"]
+            self._local = local
+            logger.info("Gloss source: local lemmas.json (%d lemmas)", len(local))
+        else:
+            logger.info(
+                "Gloss source: itwêwina API (no local lemmas.json; cache at %s)",
+                ITWEWINA_CACHE_DIR,
+            )
+
+    # -- dict-like surface used by the validator ----------------------------
+
+    def get(self, lemma: str, default: str = "") -> str:
+        if self._local is not None:
+            return self._local.get(lemma, default)
+        gloss = self._lookup_api(lemma)
+        return gloss if gloss else default
+
+    def __len__(self) -> int:
+        if self._local is not None:
+            return len(self._local)
+        return len(self._api_cache)
+
+    # -- itwêwina API path ---------------------------------------------------
+
+    def _cache_path(self, lemma: str) -> Path:
+        digest = hashlib.sha256(lemma.encode("utf-8")).hexdigest()[:24]
+        return ITWEWINA_CACHE_DIR / f"{digest}.json"
+
+    def _lookup_api(self, lemma: str) -> str:
+        if lemma in self._api_cache:
+            return self._api_cache[lemma]
+
+        cache_file = self._cache_path(lemma)
+        if cache_file.exists():
+            try:
+                gloss = json.loads(cache_file.read_text(encoding="utf-8"))["gloss"]
+                self._api_cache[lemma] = gloss
+                return gloss
+            except (ValueError, KeyError, OSError):
+                pass  # corrupt cache entry — refetch
+
+        try:
+            self._rate_limit()
+            query = urllib.parse.urlencode({"query": lemma})
+            req = urllib.request.Request(
+                f"{ITWEWINA_API_URL}?{query}",
+                headers={"User-Agent": "champollion-mt-eval-harness/LYSS-sem "
+                                       "(https://champollion.dev)"},
+            )
+            with urllib.request.urlopen(req, timeout=_ITWEWINA_TIMEOUT_S) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+            gloss = self._best_gloss(lemma, payload.get("search_results") or [])
+        except Exception as exc:  # offline / 5xx / schema drift — degrade
+            if not self._api_warned:
+                logger.warning(
+                    "itwêwina lookup failed (%s) — glosses degrade to "
+                    "unknown for this run", exc)
+                self._api_warned = True
+            return ""
+
+        self._api_cache[lemma] = gloss
+        try:
+            ITWEWINA_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            readme = ITWEWINA_CACHE_DIR / "README.txt"
+            if not readme.exists():
+                readme.write_text(_ITWEWINA_CACHE_README, encoding="utf-8")
+            cache_file.write_text(
+                json.dumps({"lemma": lemma, "gloss": gloss}, ensure_ascii=False),
+                encoding="utf-8",
+            )
+        except OSError:
+            pass  # cache write failure is never fatal
+        return gloss
+
+    def _rate_limit(self) -> None:
+        wait = _ITWEWINA_MIN_INTERVAL_S - (time.monotonic() - self._last_request)
+        if wait > 0:
+            time.sleep(wait)
+        self._last_request = time.monotonic()
+
+    @staticmethod
+    def _best_gloss(lemma: str, search_results: list[dict]) -> str:
+        """Pick the definition of the exact-lemma wordform, if any."""
+        for result in search_results:
+            wordform = result.get("lemma_wordform") or {}
+            if wordform.get("text") != lemma:
+                continue
+            for definition in result.get("definitions") or []:
+                text = (definition.get("text") or "").strip()
+                if text and not definition.get("is_auto_translation"):
+                    return text
+        return ""
+
+
+def load_gloss_map() -> GlossSource:
+    """Lemma → English gloss source (see GlossSource for sourcing rules)."""
+    return GlossSource()
 
 
 # ---------------------------------------------------------------------------

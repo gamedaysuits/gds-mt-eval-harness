@@ -32,6 +32,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
@@ -79,14 +80,16 @@ def load_registry(registry_path: Path | None = None) -> dict:
 # (the language card). The harness checks it generically.
 
 
-def _check_eval_pack(dataset_entry: dict) -> None:
+def _check_eval_pack(dataset_entry: dict, assume_yes: bool = False) -> None:
     """Verify that eval pack dependencies for a dataset's target language
     are installed.
 
     Reads the target language from the dataset's ``language_pair.target``,
     looks up the language card, and checks its ``evalPack`` requirements.
-    If dependencies are missing, raises a RuntimeError with a clear
-    message telling the user exactly which command to run.
+    If dependencies are missing: with consent (``assume_yes``, CI=true, or
+    MT_EVAL_AUTO_SETUP=1) they are auto-installed from the language card's
+    declarations; otherwise a RuntimeError tells the user exactly which
+    command to run.
 
     This is fully data-driven — the language card is the SSOT. No
     language-specific code exists in this function.
@@ -127,6 +130,49 @@ def _check_eval_pack(dataset_entry: dict) -> None:
     setup_cmd = f"mt-eval setup --lang {target_code}"
     missing_str = "\n".join(f"    ✗ {m}" for m in missing)
 
+    # Automation path: with explicit consent (--yes, CI=true, or
+    # MT_EVAL_AUTO_SETUP=1) install the eval pack now instead of failing —
+    # FSTs, python deps, and post-install steps all come from the language
+    # card (SSOT), exactly as `mt-eval setup --lang` would install them.
+    # Consent is required because this downloads third-party tools (e.g.
+    # AGPL GiellaLT FSTs) and pip-installs packages into the current env.
+    auto = assume_yes or any(
+        os.environ.get(var, "").lower() in ("1", "true", "yes")
+        for var in ("CI", "MT_EVAL_AUTO_SETUP")
+    )
+    if auto:
+        # FSTs that cannot be fetched programmatically (card format
+        # 'manual', or Divvun-manager-only) must not hard-block automated
+        # runs forever — the run proceeds WITHOUT fst_acceptance_rate and
+        # the composite re-normalizes over the available metrics
+        # (SCORING_SPEC §4.1); coverage is visibly reduced on the card.
+        # A failed install of an AUTO-installable FST still hard-fails.
+        if any(m.startswith("FST ") for m in missing):
+            from mt_eval_harness.language_cards import get_fst_install_info
+            info = get_fst_install_info(target_code) or {}
+            if info.get("format") not in ("legacy-zip", "divvun-macos-pkg"):
+                print(
+                    f"  ⚠ FST for {lang_name} is not auto-installable "
+                    f"(format {info.get('format', 'none')!r}); proceeding "
+                    "WITHOUT fst_acceptance_rate — reduced metric coverage. "
+                    f"Install manually via `{setup_cmd}` for full coverage."
+                )
+                missing = [m for m in missing if not m.startswith("FST ")]
+                if not missing:
+                    return
+                # NOTE: install_lang below will still try (and fail) the
+                # manual FST after installing the python deps; the re-check
+                # at the top of this gate passes on the next run.
+        print(f"  Eval pack for {lang_name} ({target_code}) missing; "
+              "auto-installing (consent via --yes/CI/MT_EVAL_AUTO_SETUP):")
+        for m in missing:
+            print(f"    → {m}")
+        from mt_eval_harness.setup_wizard import install_lang
+        if install_lang(target_code, interactive=False):
+            return
+        print("  Auto-install failed; falling through to the manual "
+              "instructions below.")
+
     raise RuntimeError(
         f"\n"
         f"  ┌──────────────────────────────────────────────────────────┐\n"
@@ -146,7 +192,8 @@ def _check_eval_pack(dataset_entry: dict) -> None:
 
 
 
-def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
+def resolve_dataset(id_or_path: str, registry_path: Path | None = None,
+                    assume_yes: bool = False) -> Path:
     """Resolve a dataset identifier to a local file path.
 
     Accepts either:
@@ -224,7 +271,7 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
     # Datasets can declare `eval_pack` (e.g., "crk") to require specific
     # evaluation dependencies. This ensures nobody runs CRK evaluation
     # without the FST, linter, and other required tools installed.
-    _check_eval_pack(match)
+    _check_eval_pack(match, assume_yes=assume_yes)
 
     # Check for a local_path (relative to monorepo root)
     local_path = match.get("local_path")
@@ -242,7 +289,21 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
 
     url = match.get("url")
     if not url:
-        # Private dataset — no URL available
+        # No directly downloadable URL. Before declaring the dataset
+        # unreachable, try the corpora-card fetch-from-source path: cards
+        # in cli/shared/corpora-cards/ can rebuild a corpus from its
+        # upstream repo into the gitignored cache (license consent via
+        # --yes / CI). This is how registry-ID runs work on a cold machine
+        # where nothing is materialized locally.
+        from mt_eval_harness.corpus_fetch import try_fetch_missing_corpus
+        for fetch_key in (local_path, match.get("path"), match.get("id")):
+            if not fetch_key:
+                continue
+            built = try_fetch_missing_corpus(fetch_key, assume_yes=assume_yes)
+            if built is not None:
+                return built
+
+        # Private dataset — no URL and no fetchable corpora card
         access = match.get("access", "unknown")
         notes = match.get("notes", "")
         hint = f"\n  local_path: {local_path}" if local_path else ""
@@ -908,7 +969,8 @@ class RunConfig:
         # resolving it through the dataset registry before erroring.
         if self.corpus_path and not Path(self.corpus_path).exists():
             try:
-                resolved_path = resolve_dataset(self.corpus_path)
+                resolved_path = resolve_dataset(
+                    self.corpus_path, assume_yes=self.assume_yes)
                 self.corpus_path = str(resolved_path)
             except (FileNotFoundError, ValueError) as e:
                 # Fetch-from-source fallback: if a corpora card with a
@@ -921,6 +983,27 @@ class RunConfig:
                     errors.append(
                         f"Corpus file not found: {self.corpus_path} ({e})"
                     )
+
+        # Eval-pack gate for direct file paths. Registry-ID resolution runs
+        # the gate inside resolve_dataset(), but queue contributors download
+        # the corpus JSON and pass the file path — that branch skipped the
+        # gate entirely, so FST-language runs silently proceeded without the
+        # FST metric (different metric coverage than baseline runs). Derive
+        # the target language from the config and gate on it.
+        target_code = self.target_lang_code
+        if not target_code and self.target_lang:
+            from mt_eval_harness.language_cards import resolve_name
+            target_code = resolve_name(self.target_lang) or ""
+        if target_code:
+            try:
+                _check_eval_pack(
+                    {"id": Path(self.corpus_path).stem if self.corpus_path
+                           else "(inline)",
+                     "language_pair": {"target": target_code}},
+                    assume_yes=self.assume_yes,
+                )
+            except RuntimeError as e:
+                errors.append(str(e))
 
         # Positive integers
         if self.batch_size < 1:
