@@ -1,6 +1,21 @@
 ---
 sidebar_position: 5
 title: Support a Low-Resource Language
+related:
+  - label: "Cookbook: Corpus Creation"
+    to: /docs/tutorials/corpus-creation
+    kind: cookbook
+    note: "The first step for an uncovered language"
+  - label: "Cookbook: FST-Gated Translation Pipeline"
+    to: /docs/tutorials/fst-gated-pipeline
+    kind: cookbook
+  - label: "For Language Communities"
+    to: /docs/community/for-language-communities
+    kind: doc
+  - label: "Plains Cree, the trading card"
+    to: https://champollion.dev/trading-cards?q=crk
+    kind: card
+    note: "The proof-of-concept language, as a card"
 ---
 
 # Support a Low-Resource Language

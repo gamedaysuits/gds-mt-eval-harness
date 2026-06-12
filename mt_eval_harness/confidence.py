@@ -231,7 +231,9 @@ def _entries_have_fst_data(entries: list[dict]) -> bool:
     """Check if any entry has FST plugin data in plugin_metrics.
 
     Returns True if at least one non-error entry has a numeric
-    fst_validity value under plugin_metrics.crk_fst_validity.
+    fst_validity value under plugin_metrics.giellalt_fst_validity.
+    There is no language-specific fallback — all FST languages use
+    the same GiellaLTFSTMetric key.
     """
     for entry in entries:
         if entry.get("error"):
@@ -239,7 +241,7 @@ def _entries_have_fst_data(entries: list[dict]) -> bool:
         pm = entry.get("plugin_metrics", {})
         if not isinstance(pm, dict):
             continue
-        fst_data = pm.get("crk_fst_validity", {})
+        fst_data = pm.get("giellalt_fst_validity", {})
         if not isinstance(fst_data, dict):
             continue
         fst_val = fst_data.get("fst_validity")
@@ -357,9 +359,9 @@ def compute_all_cis(
 
 def compute_per_tier_cis(
     entries: list[dict],
-    n_bootstrap: int = 1000,
-    alpha: float = 0.05,
-    seed: int = 42,
+    n_bootstrap: int = DEFAULT_N_BOOTSTRAP,
+    alpha: float = DEFAULT_ALPHA,
+    seed: int = DEFAULT_SEED,
 ) -> dict[int, dict]:
     """Compute bootstrap CIs grouped by difficulty tier.
 

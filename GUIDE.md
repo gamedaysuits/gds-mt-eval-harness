@@ -21,8 +21,8 @@ mt-eval run \
   --target-field french \
   --model gemini-3.1-pro
 
-mt-eval test logs/run_*.json
-mt-eval dashboard logs/*_report.json -o results.html
+mt-eval test eval/logs/harness/run_*.json
+mt-eval dashboard eval/logs/harness/*_report.json -o results.html
 ```
 
 Open `results.html` in your browser. Done. You have exact match rates, chrF++ scores, per-segment breakdowns, and a searchable entry explorer.
@@ -161,7 +161,7 @@ pip install mt-eval-harness[comet]
 
 When installed, COMET scores are automatically computed during `mt-eval test`. No flag required. The model downloads on first use.
 
-> **AfriCOMET for African languages:** For 35 African languages (yor, hau, ibo, amh, swa, etc.), the harness auto-selects `masakhane/africomet-mtl` — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. This happens automatically via `resolve_comet_model()`. Override with `--comet-model <model_name>` if needed.
+> **AfriCOMET for African languages:** For 35 African languages (yor, hau, ibo, amh, swa, etc.), the harness auto-selects `masakhane/africomet-mtl` — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. This happens automatically via `resolve_comet_model()`. COMET model selection is not yet configurable via CLI.
 
 > **Low-resource languages:** COMET uses XLM-R embeddings trained on ~100 languages. For languages like Plains Cree (crk) that are underrepresented in XLM-R training data, COMET scores are still computed but the harness emits a warning that scores should be interpreted as relative ranking signals, not absolute quality measures.
 
@@ -297,8 +297,9 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 | `corpus_path` | `--corpus` | `None` | Path to corpus file (`.json`, `.jsonl`, or `.tsv`) |
 | `source_file` | `--source-file` | `None` | Path to source text file (parallel text mode) |
 | `reference_file` | `--reference-file` | `None` | Path to reference text file (parallel text mode) |
+| `source_lang` | `--source-lang` | `"English"` | Source language name (used in prompt templates) |
 | `source_field` | `--source-field` | `"source"` | Field name for source text |
-| `target_field` | `--target-field` | `"target"` | Field name for reference translation |
+| `target_field` | `--target-field` | `"reference"` | Field name for reference translation |
 
 > **Note:** Use either `--corpus` (single file: JSON/JSONL/TSV) or `--source-file` + `--reference-file` (parallel text). Not both.
 
@@ -336,8 +337,8 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
 | `prompt_version` | `--prompt`, `-p` | `"naive"` | Prompt version. Built-in: `naive`, `custom`, `champollion` |
-| `coaching_file_path` | `--coaching-file` | `None` | Path to coaching prompt .txt file |
-| `coaching_text` | `--coaching` | `None` | Inline coaching text (quoted string) |
+| `coaching_file` | `--coaching-file` | `None` | Path to coaching prompt .txt file |
+| — | `--coaching` | `None` | Inline coaching text (quoted string). This is a CLI-only flag that writes a temp file; not a standalone config field |
 
 ### Champollion Config Interop ("Test What You Ship")
 
@@ -373,6 +374,8 @@ Explicit CLI flags always override imported values. When importing, the harness 
 | Parameter | CLI Flag | Default | Description |
 |---|---|---|---|
 | `post_hooks` | `--hooks` | `[]` | Comma-separated hook names to apply |
+| `fst_retries` | `--fst-retries` | `0` | Number of retry attempts for FST validation failures |
+| — | `--skip-fst` | `False` | Skip FST morphological validation (for non-CRK targets) |
 
 ### Output
 
@@ -381,6 +384,9 @@ Explicit CLI flags always override imported values. When importing, the harness 
 | `output_dir` | `--output-dir`, `-o` | `"eval/logs/harness"` | Output directory |
 | `run_name` | `--name`, `-n` | `None` | Human-readable label for the run |
 | `dry_run` | `--dry-run` | `False` | Validate config without API calls |
+| `method_path` | `--method` | `None` | Path to a custom method plugin directory |
+| — | `--method-card` | `None` | Path to a method card JSON file for publish |
+| `style_profile` | `--style-profile` | `None` | Path to a writing style profile JSON for style consistency scoring |
 
 ---
 
@@ -428,7 +434,7 @@ Key flags:
 
 | Flag | Default | Notes |
 |---|---|---|
-| `-m, --model` | `gemini-3.1-pro` | Comma-separated for parallel multi-model |
+| `-m, --model` | `gemini-pro` | Comma-separated for parallel multi-model |
 | `--corpus` | — | `.json`, `.jsonl`, or `.tsv` |
 | `--source-file` / `--reference-file` | — | Parallel text files (alternative to --corpus) |
 | `--champollion-config` | — | Path to `champollion.config.json` (auto-sets `--prompt champollion`) |
@@ -794,7 +800,7 @@ The harness caches translation results to avoid re-running identical queries.
 ### How it works
 
 - **Cache key** = `hash(config_hash + source_text)`
-- **Config hash** includes: model, prompt, tools, temperature, hooks
+- **Config hash** includes: model, prompt, tools, temperature, hooks, coaching file content, FST retries, batch size
 - Changing any of these creates a new cache namespace
 - Cache files are plain JSON, one per entry — human-inspectable
 
@@ -1106,8 +1112,8 @@ mt-eval contest create \
   --name "EN→CRK Open Challenge" \
   --corpus edtekla-v1.json \
   --visibility public \
-  --primary-metric chrf \
-  --deadline 2026-09-30
+  --primary-metric chrf \          # 🔲 Planned
+  --deadline 2026-09-30             # 🔲 Planned
 
 # Private contest — invite-only, blind evaluation
 mt-eval contest create \
@@ -1121,7 +1127,7 @@ mt-eval contest create \
   --name "ACME Localization Shootout" \
   --corpus acme_test_set.json \
   --visibility team \
-  --org acme-corp
+  --org acme-corp                   # 🔲 Planned
 ```
 
 ### Visibility Modes
@@ -1161,8 +1167,8 @@ Prizes are set by the contest creator and held in escrow (or simply stated as bo
 mt-eval contest create   # Create a new contest
 mt-eval contest list     # List active contests
 mt-eval contest submit   # Submit a run to a contest
-mt-eval contest close    # Close a contest and finalize rankings
-mt-eval contest export   # Export contest results as JSON
+mt-eval contest close    # 🔲 Planned — Close a contest and finalize rankings
+mt-eval contest export   # 🔲 Planned — Export contest results as JSON
 ```
 
 ---
@@ -1229,8 +1235,8 @@ mt-eval run --corpus brand_samples.json \
   --name "brand_voice_benchmark"
 
 # Analyze with your custom metric
-mt-eval test eval/logs/harness/run_*.json \
-  --plugin brand_alignment.py
+mt-eval test eval/logs/harness/run_*.json
+# --plugin flag is 🔲 Planned; for now, register MetricPlugins programmatically (see §7)
 
 # Compare results side by side
 mt-eval dashboard eval/logs/harness/*_report.json \
@@ -1242,11 +1248,15 @@ mt-eval dashboard eval/logs/harness/*_report.json \
 Once you've identified the best model + prompt combination:
 
 ```bash
-# Export as an champollion production config
+# Export as a champollion production config snippet
+mt-eval export-config \
+  --report eval/logs/harness/run_mistral_large_report.json \
+  --target-lang-code fr
+
+# Or create a full method plugin directory
 mt-eval export \
-  --run eval/logs/harness/run_mistral_large_*.json \
-  --format champollion-config \
-  -o champollion.config.json
+  --report eval/logs/harness/run_mistral_large_report.json \
+  --name brand_voice --type llm-coached --locales fr
 ```
 
 This generates a production-ready champollion config with the winning model, prompt, and all quality gates pre-configured.

@@ -1,0 +1,5837 @@
+{
+  "corpus_id": "tatoeba-eng-tha-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "tha"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:49:16.587074+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "legal",
+    "literary",
+    "marketing",
+    "medical",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_3818358",
+      "source": "I arrived yesterday.",
+      "reference": "ฉันมาถึงเมื่อวานนี้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3818358",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8817568",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3818358",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3818358"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_5574965",
+      "source": "They did not see anything.",
+      "reference": "พวกเค้าไม่ได้เห็นอะไร",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5574965",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4558232",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5574965",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5574965"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2235755",
+      "source": "I'll miss Tom.",
+      "reference": "ฉันจะคิดถึงทอม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2235755",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7879117",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2235755",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2235755"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2311549",
+      "source": "I'm not like Tom!",
+      "reference": "ฉันไม่เหมือนทอม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2311549",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8817778",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2311549",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2311549"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_239977",
+      "source": "How deep is the lake?",
+      "reference": "ทะเลสาบมีความลึกแค่ไหน?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "239977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8743347",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "239977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/239977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2540794",
+      "source": "Tom rides his bicycle everywhere.",
+      "reference": "ทอมขี่จักรยานไปทุกที่",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2540794",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10288734",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2540794",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2540794"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.6
+      }
+    },
+    {
+      "id": "tatoeba_740067",
+      "source": "I've forgotten his name.",
+      "reference": "ผมลืมชื่อของเขา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "740067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "822124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "740067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/740067"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5255817",
+      "source": "Tom breakfasted alone.",
+      "reference": "ทอมกินอาหารเช้าคนเดียว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5255817",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11084461",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5255817",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5255817"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_1213515",
+      "source": "I'm so hungry!",
+      "reference": "ผมหิวมาก",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1213515",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1131077",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1213515",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1213515"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_687366",
+      "source": "What is your job?",
+      "reference": "คุณทำอาชีพอะไร?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "687366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692071",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "687366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/687366"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1699699",
+      "source": "He died of gastric cancer.",
+      "reference": "เขาตายด้วยโรคมะเร็งกระเพาะอาหาร",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1699699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12572681",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1699699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1699699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_5310549",
+      "source": "Maria's very favorite drink is green tea.",
+      "reference": "เครื่องดื่มที่มาเรียชอบมากที่สุดคือชาเขียว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5310549",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11470558",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5310549",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5310549"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_3178454",
+      "source": "We need to leave here at once.",
+      "reference": "เราต้องออกจากที่นี่ทันที",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3178454",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10174179",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3178454",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3178454"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_2451573",
+      "source": "I wrote a letter in French.",
+      "reference": "ฉันเขียนจดหมายเป็นภาษาฝรั่งเศส",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2360210",
+      "source": "I've played sports all my life.",
+      "reference": "ผมเล่นกีฬามาทั้งชีวิต",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2360210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10130371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2360210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2360210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_2544790",
+      "source": "I'm going out for a drink.",
+      "reference": "ผมจะออกไปดื่ม",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2544790",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10486741",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2544790",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2544790"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2406549",
+      "source": "I spend my free time with my kids.",
+      "reference": "ฉันใช้เวลาว่างกับลูกๆ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2406549",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10716697",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2406549",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2406549"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2541579",
+      "source": "Don't forget to wash your hands.",
+      "reference": "อย่าลืมล้างมือนะ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2541579",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10486393",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2541579",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2541579"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_679024",
+      "source": "The room charge is $100 a night plus tax.",
+      "reference": "ค่าใช้จ่าย ไม่รวมภาษีคืนละ 100 ดอลล่า",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "679024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11464351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "679024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/679024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_300630",
+      "source": "He went to America last week.",
+      "reference": "เขาไปอเมริกาเมื่อสัปดาห์ก่อน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "300630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12589206",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "300630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/300630"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_248645",
+      "source": "We enjoyed swimming in the lake.",
+      "reference": "พวกเรามีความสุขกับการว่ายน้ำในทะเลสาบ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "248645",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12569551",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "248645",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/248645"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_418642",
+      "source": "\"How old are you?\" \"I'm sixteen.\"",
+      "reference": "\"คุณอายุเท่าไหร่?\" \"ฉันอายุสิบหกปี\"",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "418642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8703205",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "418642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/418642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5603330",
+      "source": "Tom and Mary built a sand castle on the beach.",
+      "reference": "ทอมกับแมรี่สร้างปราสาททรายที่ชายหาด",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5603330",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12745269",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5603330",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5603330"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_4884188",
+      "source": "We will eat lunch together at 12:30.",
+      "reference": "เราจะทานอาหารเที่ยงด้วยกันตอนเที่ยงครึ่ง",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4884188",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4840870",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4884188",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4884188"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_49210",
+      "source": "Its flower is beautiful, but it bears no fruit.",
+      "reference": "ดอกของต้นไม้นี้สวยแต่ผลกินไม่ได้",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "49210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11464368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "49210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/49210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_262839",
+      "source": "We were caught in a shower while we were on a picnic.",
+      "reference": "ฝนตกลงมาตอนที่เรากำลังปิกนิคพอดี",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262839",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12542890",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262839",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262839"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.42
+      }
+    },
+    {
+      "id": "tatoeba_37932",
+      "source": "Which one do you think is correct?",
+      "reference": "คุณคิดว่าอันไหนถูก?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37932",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "6537584",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37932",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37932"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_1286917",
+      "source": "As a singer, she's well known.",
+      "reference": "หล่อนมีชื่อเสียงในฐานะนักร้อง",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1286917",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1286917",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1286917"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_262242",
+      "source": "I am a man who can't stand being alone.",
+      "reference": "ฉันเป็นคนทนต่อความเหงาไม่ได้",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262242",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12670145",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262242",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262242"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3181728",
+      "source": "Look at me when I talk to you.",
+      "reference": "มองมาที่ฉันเมื่อฉันคุยกับคุณ!",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3181728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878807",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3181728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3181728"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_2527422",
+      "source": "I didn't like my name when I was young.",
+      "reference": "ตอนฉันเด็ก ๆ ฉันไม่ชอบชื่อของฉัน",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2527422",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12503738",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2527422",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2527422"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3075816",
+      "source": "\"Do you know me?\" \"No, I do not know you.\"",
+      "reference": "คุณรู้จักผมไหม — ไม่ ฉันไม่รู้จักคุณ",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3075816",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "753085",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3075816",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3075816"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_5257476",
+      "source": "You've already had breakfast, haven't you?",
+      "reference": "คุณทานอาหารเช้าแล้วใช่ไหม",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5257476",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10670503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5257476",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5257476"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.83
+      }
+    },
+    {
+      "id": "tatoeba_1923440",
+      "source": "I'm not sure what it was, but it sounded like a gunshot.",
+      "reference": "ฉันไม่แน่ในว่ามันคืออะไร แต่เหมือนกับว่าเป็นเสียงปืน",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1923440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11466597",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1923440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1923440"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.58
+      }
+    },
+    {
+      "id": "tatoeba_277626",
+      "source": "If you work day and night, you will lose your health.",
+      "reference": "ถ้าเธอทำงานทั้งวันทั้งคืน ร่างกายเธอจะพังเอาได้",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277626",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12529299",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277626",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277626"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_1189738",
+      "source": "The winter chaos is driving me crazy, but soon the holidays will come.",
+      "reference": "ฤดูหนาวที่แปรปรวน มันทำให้ฉันใกล้จะบ้าไปแล้ว ยังดีที่ใกล้จะปิดเทอมแล้ว",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1189738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1189745",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1189738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1189738"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.31
+      }
+    },
+    {
+      "id": "tatoeba_4281730",
+      "source": "I hate working out, but I know it’s good for one's health.",
+      "reference": "ฉันเกลียดการออกกำลังกาย แต่ฉันก็รู้ว่ามันดีต่อสุขภาพ",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4281730",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4284528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4281730",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4281730"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1792192",
+      "source": "In the summer, I go to the sea. In the winter, I go to the mountains.",
+      "reference": "ช่วงฤดูร้อนฉันไปทะเล ช่วงฤดูหนาวฉันไปภูเขา",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1792192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1792805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1792192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1792192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_56477",
+      "source": "This train left Aomori thirty minutes late, so we won't arrive at Tokyo before noon, I'm afraid.",
+      "reference": "รถไฟขบวนนี้ออกจากอาโอโมริสายสามสิบนาที น่าเสียดายที่เราจะไปไม่ถึงโตเกียวก่อนเที่ยง",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "3182659",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56477"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.53
+      }
+    },
+    {
+      "id": "tatoeba_3192924",
+      "source": "If I got a boyfriend, I'd want one who's at least 180 centimeters tall.",
+      "reference": "ถ้าฉันจะมีแฟน ฉันอยากได้คนตัวสูงประมาณ 180",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3192924",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11470626",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3192924",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3192924"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_275797",
+      "source": "The important thing is not to win the game, but to take part in it.",
+      "reference": "สิ่งสำคัญของการแข่งขันไม่ใช่การชนะ แต่เป็นการได้เข้าร่วมต่างหาก",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "275797",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12858396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "275797",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/275797"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_662573",
+      "source": "If I had known about it, I would have told you.",
+      "reference": "ถ้าผมรู้ผมจะบอกคุณ",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "662573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10567688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "662573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/662573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.18
+      }
+    },
+    {
+      "id": "tatoeba_810151",
+      "source": "You cannot compare the strength of a man to that of a tiger, but nevertheless, the tiger is still the inferior creature.",
+      "reference": "แม้ว่าคุณไม่สามารถเทียบพละกำลังคนกับเสือได้ แต่กระนั้นเสือก็เป็นแค่เดรัจฉาน",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "810151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "810152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "810151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/810151"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.36
+      }
+    },
+    {
+      "id": "tatoeba_1349965",
+      "source": "The price is going up.",
+      "reference": "ราคากำลังขึ้น",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1349965",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "9165720",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1349965",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1349965"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_319915",
+      "source": "Prices dropped suddenly.",
+      "reference": "จู่ ๆ ราคาก็ลดลง",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "319915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12500383",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "319915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/319915"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_2260491",
+      "source": "That's an order!",
+      "reference": "นี่เป็นคำสั่ง",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2260491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12532562",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2260491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2260491"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_57128",
+      "source": "What is the price of this cap?",
+      "reference": "หมวกนี้ราคาเท่าไหร่?",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "57128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8703232",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "57128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/57128"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_22213",
+      "source": "I work for a shipping company.",
+      "reference": "ฉันทำงานให้กับบริษัทขนส่ง",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "22213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669062",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "22213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/22213"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3825009",
+      "source": "The exam was very easy.",
+      "reference": "การสอบนั้นง่ายมาก",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3825009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10081798",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3825009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3825009"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_62932",
+      "source": "Our class has forty-five students.",
+      "reference": "ห้องเรียนของเรามีนักเรียน 45 คน",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62932",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579433",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62932",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62932"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_242907",
+      "source": "I have math homework today.",
+      "reference": "วันนี้ฉันมีการบ้านวิชาคณิตศาสตร์",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242907",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12564439",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242907",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242907"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_41040",
+      "source": "A lot of students do part-time jobs.",
+      "reference": "นักเรียนจำนวนมากทำงานนอกเวลา",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "41040",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8671153",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "41040",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/41040"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_17660",
+      "source": "Who is your teacher?",
+      "reference": "ครูของคุณคือใคร?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17660",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878446",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17660",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17660"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2451239",
+      "source": "Have you finished your French homework yet?",
+      "reference": "คุณทำการบ้านภาษาฝรั่งเศสเสร็จแล้วหรือยัง?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8728820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451239"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_370763",
+      "source": "Are you a teacher or a student?",
+      "reference": "คุณเป็นครูเหรอ หรือว่าเป็นนักเรียน",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579422",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370763"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_4134185",
+      "source": "Tom was asked by Mary to mow the lawn.",
+      "reference": "แมรี่ขอให้ทอมตัดหญ้า",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4134185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10577351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4134185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4134185"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_49645",
+      "source": "The will was declared void by the court.",
+      "reference": "พินัยกรรมถูกตัดสินเป็นโมฆะโดยศาล",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "49645",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "810201",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "49645",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/49645"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_254988",
+      "source": "I tried writing a novel.",
+      "reference": "ฉันจะลองเขียนนิยายดู",
+      "domain": "literary",
+      "difficulty": 1,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "254988",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12561963",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "254988",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/254988"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_3509527",
+      "source": "Did you know Tom was writing a novel?",
+      "reference": "รู้ไหมว่าทอมกำลังเขียนนิยาย",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3509527",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11464320",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3509527",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3509527"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_16581",
+      "source": "Have you finished reading the novel?",
+      "reference": "คุณอ่านนิยายจบแล้วหรือยัง?",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16581",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8679058",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16581",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16581"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_39901",
+      "source": "At last, we reached our destination.",
+      "reference": "ไปๆ มาๆ พวกเราถึงจุดหมายปลายทางแล้ว",
+      "domain": "marketing",
+      "difficulty": 3,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2185511",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39901"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_21063",
+      "source": "Patients often die simply because they yield to their diseases.",
+      "reference": "ผู้ป่วยมักจะเสียชีวิตไปง่ายๆเพราะพวกเขายอมแพ้ให้กับความเจ็บป่วย",
+      "domain": "medical",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21063",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4287203",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21063",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21063"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.3
+      }
+    },
+    {
+      "id": "tatoeba_1401744",
+      "source": "I think she'll help me.",
+      "reference": "ฉันคิดว่าหล่อนจะช่วยฉัน",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1401744",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12715651",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1401744",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1401744"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2240295",
+      "source": "We helped Tom.",
+      "reference": "พวกเราช่วยทอม",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8671198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240295"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_20664",
+      "source": "I will gladly help you.",
+      "reference": "ฉันยินดีที่จะช่วยคุณ",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20664",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20664",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20664"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2661904",
+      "source": "This is not my ticket.",
+      "reference": "นี่ไม่ใช่ตั๋วของฉัน",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2661904",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8675726",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2661904",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2661904"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_64396",
+      "source": "Let me help you.",
+      "reference": "ให้ฉันช่วยคุณ",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "64396",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8718045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "64396",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/64396"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1892806",
+      "source": "Two adult tickets, please.",
+      "reference": "ผู้ใหญ่สองคนค่ะ/ครับ",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1892806",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "810183",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1892806",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1892806"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_29612",
+      "source": "I am eating an apple.",
+      "reference": "ฉันกินแอปเปิ้ล",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29612",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29612",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29612"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_255926",
+      "source": "I like to eat apples.",
+      "reference": "ผมชอบกินแอปเปิ้ล",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1184734",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255926"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2096",
+      "source": "He disappeared without a trace.",
+      "reference": "ขาหายตัวไปอย่างไร้ร่องรอย",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878682",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2096"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_404565",
+      "source": "What is happiness?",
+      "reference": "อะไรคือความสุข?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "404565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "9165532",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "404565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/404565"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_16164",
+      "source": "Are you happy?",
+      "reference": "คุณมีความสุขไหม?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16164",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878486",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16164",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16164"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_317443",
+      "source": "She is an appalling cook.",
+      "reference": "หล่อนทำอาหารได้แย่มาก",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317443",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12563989",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317443",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317443"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4260723",
+      "source": "May I open the window?",
+      "reference": "ฉันขอเปิดหน้าต่างได้ไหม?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4260723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4260723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4260723"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_25162",
+      "source": "I wonder what happened.",
+      "reference": "ฉันสงสัยว่าเกิดอะไรขึ้น",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25162"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_2445198",
+      "source": "I'm eating an apple.",
+      "reference": "ฉันกินแอปเปิ้ล",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2445198",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2445198",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2445198"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_29615",
+      "source": "Apples grow on trees.",
+      "reference": "แอปเปิ้ลเติบโตบนต้นไม้",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29615",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8670351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29615",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29615"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_308808",
+      "source": "She appears to have a lot of friends.",
+      "reference": "เธอดูเหมือนว่ามีเพื่อนมากมาย",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "308808",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8671185",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "308808",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/308808"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_312298",
+      "source": "She gave the children two apples each.",
+      "reference": "เธอให้แอปเปิ้ลแก่เด็กคนละสองลูก",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312298",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669325",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312298",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312298"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_660464",
+      "source": "What time does the store open?",
+      "reference": "ร้านค้าเปิดกี่โมง?",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "660464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8850965",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "660464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/660464"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_259185",
+      "source": "I like sitting by the window.",
+      "reference": "ฉันชอบนั่งติดหน้าต่าง",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12727156",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259185"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_36418",
+      "source": "Why did you open the box?",
+      "reference": "ทำไมคุณถึงเปิดกล่อง?",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "36418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8850923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "36418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/36418"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_26818",
+      "source": "The rain is beating against the window.",
+      "reference": "ฝนตกใส่หน้าต่างอย่างแรง",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26818",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12659828",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26818",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26818"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_32315",
+      "source": "I can't sleep at all!",
+      "reference": "ผมนอนไม่หลับเลย",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "32315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10239113",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "32315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/32315"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_241566",
+      "source": "I'm busy now.",
+      "reference": "ตอนนี้ฉันไม่ว่าง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241566",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8709463",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241566",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241566"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2249574",
+      "source": "Make a list.",
+      "reference": "จดใว้ว่ามีอะไรบ้าง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7766176",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_574185",
+      "source": "I'm a tennis player.",
+      "reference": "ฉันเป็นนักเทนนิส",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "574185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8743295",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "574185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/574185"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1280382",
+      "source": "You look very beautiful.",
+      "reference": "คุณสวยมาก",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1280382",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8675854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1280382",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1280382"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_249896",
+      "source": "I don't have any brothers.",
+      "reference": "ฉันไม่มีพี่น้องที่เป็นผู้ชายเลย",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12586709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_5842341",
+      "source": "How long did it take for the ambulance to arrive?",
+      "reference": "นานไหมกว่ารถพยาบาลจะมาถึง",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5842341",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10543073",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5842341",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5842341"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.9
+      }
+    },
+    {
+      "id": "tatoeba_1578584",
+      "source": "I don't go to school.",
+      "reference": "ฉันไม่ไปโรงเรียน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1578584",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7879011",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1578584",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1578584"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2733312",
+      "source": "I went to the airport to meet my father.",
+      "reference": "ฉันไปที่สนามบินเพื่ิอพบกับพ่อของฉัน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2733312",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2733312",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2733312"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_2415233",
+      "source": "Tom likes to play soccer.",
+      "reference": "ทอมชอบเล่นฟุตบอล",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2415233",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8671190",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2415233",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2415233"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_64956",
+      "source": "I was hungry.",
+      "reference": "ฉันหิว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "64956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692166",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "64956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/64956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_50027",
+      "source": "The bucket was full of water.",
+      "reference": "ถังเต็มไปด้วยน้ำ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "50027",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669330",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "50027",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/50027"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2674574",
+      "source": "I've lost my wallet.",
+      "reference": "ฉันทำกระเป๋าเงินของฉันหาย",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2674574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7878683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2674574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2674574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2570934",
+      "source": "I love the sound of wind chimes.",
+      "reference": "ฉันชอบเสียงของกระดิ่งลม",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2570934",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12517805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2570934",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2570934"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_2871518",
+      "source": "Tom works for a bank.",
+      "reference": "ทอมทำงานให้ธนาคาร",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2871518",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10681119",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2871518",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2871518"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2645036",
+      "source": "Mary is my ex-girlfriend.",
+      "reference": "แมรี่เป็นแฟนเก่าของฉัน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2645036",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8675727",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2645036",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2645036"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_2648121",
+      "source": "How is your father?",
+      "reference": "พ่อคุณเป็นอย่างไร",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2648121",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7784389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2648121",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2648121"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_337417",
+      "source": "I can't fall asleep.",
+      "reference": "ฉันนอนไม่หลับ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "337417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579059",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "337417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/337417"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2872185",
+      "source": "She knows nothing.",
+      "reference": "เขาไม่รู้อะไร",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2872185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4558377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2872185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2872185"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1318688",
+      "source": "I ran into my aunt by chance in Europe.",
+      "reference": "ฉันเจอน้าที่ยุโรปโดยบังเอิน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1318688",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12581743",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1318688",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1318688"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1744753",
+      "source": "I have to change my clothes.",
+      "reference": "ฉันต้องเปลี่ยนชุด",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1744753",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12632252",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1744753",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1744753"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2402215",
+      "source": "Why don't you believe me?",
+      "reference": "ทำไมถึงไม่เชื่อฉัน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2402215",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12729849",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2402215",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2402215"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_276415",
+      "source": "Anyone can make mistakes.",
+      "reference": "ทุกคนสามารถทำผิดพลาดได้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "276415",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8728829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "276415",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/276415"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_54201",
+      "source": "Here comes the bus.",
+      "reference": "รถเมล์มาแล้ว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54201",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "697601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54201",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54201"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_55738",
+      "source": "This is a dog.",
+      "reference": "นี่คือหมา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2978348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55738"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_300168",
+      "source": "He's used to speaking in public.",
+      "reference": "เขาคุ้นเคยที่จะพูดต่อหน้าคนมาก ๆ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "300168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12564484",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "300168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/300168"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3436508",
+      "source": "Tom lives here all by himself.",
+      "reference": "ทอมอาศัยอยู่ที่นี่คนเดียว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3436508",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10777058",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3436508",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3436508"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4496177",
+      "source": "Don't forget to bring bug spray.",
+      "reference": "อย่าลืมนำสเปรย์กันแมลงมาด้วย",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4496177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10713279",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4496177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4496177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_56033",
+      "source": "There's a hole in this.",
+      "reference": "อันนี้มันมีรูอยู่",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56033",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12858383",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56033",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56033"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_4616253",
+      "source": "They had nothing to eat.",
+      "reference": "เขาไม่มีอะไรกินเลย",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4616253",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12586943",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4616253",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4616253"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_3330200",
+      "source": "I hope Tom's right.",
+      "reference": "ฉันหวังว่าทอมถูกต้อง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3330200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8695450",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3330200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3330200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_60050",
+      "source": "This flower is beautiful, isn't it?",
+      "reference": "ดอกไม้นี้มีสวยไม่ใช่เหรอ",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "60050",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8670362",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "60050",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/60050"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1777",
+      "source": "Rome wasn't built in a day.",
+      "reference": "กรุงโรมไม่ได้สร้างเสร็จภายในวันเดียว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1777",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8850919",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1777",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1777"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2713546",
+      "source": "There's a page missing.",
+      "reference": "มีหน้าหายไป",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713546",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692191",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713546",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713546"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_281794",
+      "source": "Where is the Japanese Embassy?",
+      "reference": "สถานทูตญี่ปุ่นอยู่ที่ไหน?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281794",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692211",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281794",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281794"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_293926",
+      "source": "He is afraid of swimming.",
+      "reference": "เขากลัวที่จะว่ายน้ำ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8675801",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2280325",
+      "source": "I'm feeling much better.",
+      "reference": "ฉันรู้สึกดีขึ้นมาก",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2280325",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8714337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2280325",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2280325"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_948281",
+      "source": "This is my email address.",
+      "reference": "นี่คืออีเมล์แอดเดรสของฉัน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "948281",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11471521",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "948281",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/948281"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2389844",
+      "source": "I own this store.",
+      "reference": "ผมเป็นเจ้าของร้านนี้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2389844",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10670517",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2389844",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2389844"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3342839",
+      "source": "You've got to fix it.",
+      "reference": "คุณต้องแก้ไขมัน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3342839",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10455729",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3342839",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3342839"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_242787",
+      "source": "I don't feel like eating anything today.",
+      "reference": "วันนี้ฉันไม่อยากกินอะไรเลย",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242787",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8714351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242787",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242787"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_266244",
+      "source": "Trees give off oxygen and absorb carbon dioxide.",
+      "reference": "ต้นไม้ให้ออกซิเจนและดูดซับคาร์บอนไดออกไซด์",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "266244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669289",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "266244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/266244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2663180",
+      "source": "Our main problem remains unsolved.",
+      "reference": "ปัญหาหลักของเรายังไม่ได้รับการแก้ไข",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2663180",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10632600",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2663180",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2663180"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_30359",
+      "source": "You must be more polite.",
+      "reference": "คุณต้องสุภาพมากกว่านี้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30359",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8728787",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30359",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30359"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_3312116",
+      "source": "We'll stay here until Monday.",
+      "reference": "เราจะอยู่ที่นี่จนถึงวันจันทร์",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3312116",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10202249",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3312116",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3312116"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_403609",
+      "source": "I couldn't understand his ideas.",
+      "reference": "ฉันไม่เข้าใจความคิดของเขา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403609",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2978343",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403609",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403609"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_5756711",
+      "source": "Tom wants vengeance.",
+      "reference": "ทอมต้องการแก้แค้น",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5756711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8709478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5756711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5756711"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_5304475",
+      "source": "Like my new shirt?",
+      "reference": "คุณชอบเสื้อตัวใหม่ของผมไหม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5304475",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10252926",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5304475",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5304475"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1841526",
+      "source": "Where's the butter?",
+      "reference": "เนยอยู่ที่ไหน?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8720257",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_53320",
+      "source": "Jim had his camera stolen.",
+      "reference": "จิมถูกขโมยกล้องถ่ายรูป",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12745489",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2261048",
+      "source": "What were you thinking?",
+      "reference": "คิดอะไรของคุณ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2261048",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11533367",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2261048",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2261048"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_19163",
+      "source": "Would you be kind enough to explain it to me?",
+      "reference": "คุณช่วยกรุณาอธิบายให้ฉันฟังได้ไหม",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11084440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_308447",
+      "source": "She has been in hospital for a month.",
+      "reference": "เธออยู่ในโรงพยาบาลมาแล้วหนึ่งเดือน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "308447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8679134",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "308447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/308447"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_31290",
+      "source": "Please speak a little more slowly.",
+      "reference": "ขอพูดช้าลงหน่อยได้ไหมครับ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31290",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "822119",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31290",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31290"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1841625",
+      "source": "I'm not married.",
+      "reference": "ผมโสด",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2167124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841625"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2713780",
+      "source": "I'm a bachelor.",
+      "reference": "ผมโสด",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2167124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713780"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_321895",
+      "source": "I'll get in.",
+      "reference": "ฉันจะเข้าไป",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321895",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8715725",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321895",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321895"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5128012",
+      "source": "I don't know!",
+      "reference": "ไม่รู้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5128012",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1126936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5128012",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5128012"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2276114",
+      "source": "I don't like your suggestion.",
+      "reference": "ผมไม่ชอบคำแนะนำของคุณ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276114",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10487209",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276114",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276114"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_4017134",
+      "source": "Are you sure everyone's already asleep?",
+      "reference": "คุณแน่ใจนะว่าทุกคนหลับกันหมดแล้ว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4017134",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12586482",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4017134",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4017134"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2451596",
+      "source": "I don't understand French.",
+      "reference": "ฉันไม่เข้าใจภาษาฝรั่งเศส",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8850987",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451596"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2262070",
+      "source": "Is Tom at home?",
+      "reference": "ทอมอยู่ที่บ้านไหม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2262070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579040",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2262070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2262070"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_55324",
+      "source": "I cannot walk any farther.",
+      "reference": "เดินต่อไปไม่ไหวแล้ว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11466424",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_673868",
+      "source": "Five times seven is thirty-five.",
+      "reference": "ห้าคูณเจ็ดได้สามสิบห้า",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "673868",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "673868",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/673868"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_4761215",
+      "source": "How far is New York from London?",
+      "reference": "นิวยอร์กกับลอนดอนห่างกันเท่าไหร่",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4761215",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12581747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4761215",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4761215"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_1479263",
+      "source": "I drank two cups of coffee.",
+      "reference": "ฉันดื่มกาแฟสองแก้ว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1479263",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1479263",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1479263"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_283422",
+      "source": "I don't care what he does.",
+      "reference": "ฉันไม่สนใจสิ่งที่เขาทำ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "283422",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8743348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "283422",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/283422"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_253859",
+      "source": "I can play soccer.",
+      "reference": "ผมเล่นฟุตบอลได้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "253859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1452805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "253859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/253859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2245348",
+      "source": "Don't hang up.",
+      "reference": "อย่าวางสายนะ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12632196",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3314156",
+      "source": "I've been very busy this week.",
+      "reference": "สัปดาห์นี้ผมยุ่งมาก",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3314156",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10264713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3314156",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3314156"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4048962",
+      "source": "Where's the train station?",
+      "reference": "สถานีรถไฟอยู่ตรงไหน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4048962",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12532658",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4048962",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4048962"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_261770",
+      "source": "I do not have a sister.",
+      "reference": "ฉันไม่มีพี่สาวหรือน้องสาว",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261770"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_248453",
+      "source": "We must study English.",
+      "reference": "พวกเราต้องเรียนภาษาอังกฤษ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "248453",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12579423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "248453",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/248453"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3741071",
+      "source": "I think English is hard, but it's worth learning.",
+      "reference": "ฉันคิดว่าภาษาอังกฤษยาก แต่ถึงอย่างนั้นฉันคิดว่ามันคุ้มค่าที่จะเรียน",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3741071",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12529534",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3741071",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3741071"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_39247",
+      "source": "I watched an old movie on TV.",
+      "reference": "ฉันดูภาพยนต์เก่า ๆ ทางทีวี",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39247",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "11471527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39247",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39247"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_314032",
+      "source": "She runs faster than I do.",
+      "reference": "เธอวิ่งเร็วกว่าฉัน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12550092",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314032"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2544859",
+      "source": "I'll go with Tom and Mary.",
+      "reference": "ฉันจะไปกับทอมกับแมรี่",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2544859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "7784381",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2544859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2544859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1886431",
+      "source": "Would Tom like that?",
+      "reference": "ทอมจะชอบสิ่งนั้นไหม?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1886431",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8728827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1886431",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1886431"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1431661",
+      "source": "I will be right back!",
+      "reference": "เดี๋ยวฉันจะกลับมา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1431661",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8679109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1431661",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1431661"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1842272",
+      "source": "He isn't at home.",
+      "reference": "เขาไม่ได้อยู่บ้าน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1842272",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692122",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1842272",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1842272"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3378980",
+      "source": "This is my younger sister.",
+      "reference": "นี่คือน้องสาวของฉัน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3378980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8709497",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3378980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3378980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_264054",
+      "source": "A clock has two hands.",
+      "reference": "นาฬิกามีมือสองข้าง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264054",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2928692",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264054",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264054"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_887555",
+      "source": "She was ready to give him back all his money.",
+      "reference": "เธอพร้อมที่จะคืนเงินทั้งหมดให้เขา",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8720105",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_887513",
+      "source": "She wants him.",
+      "reference": "เธอต้องการเขา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8669193",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887513"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_317194",
+      "source": "She has attractive eyes.",
+      "reference": "เธอมีดวงตาที่น่าดึงดูด",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317194",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8743305",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317194",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317194"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3018943",
+      "source": "They don't like cats.",
+      "reference": "พวกเขาไม่ชอบแมว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3018943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8673158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3018943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3018943"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_280729",
+      "source": "Black hens lay white eggs.",
+      "reference": "อะไรก็เกิดขึ้นได้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12567024",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2451611",
+      "source": "I have some French books.",
+      "reference": "ฉันมีหนังสือภาษาฝรั่งเศส",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8720351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451611"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1293296",
+      "source": "His house is near the subway station.",
+      "reference": "บ้านของเขาอยู่ใกล้รถไฟใต้ดิน",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1293296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8679091",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1293296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1293296"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_1867702",
+      "source": "Tom won't listen.",
+      "reference": "ทอมไม่ฟัง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1867702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8817564",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1867702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1867702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_303959",
+      "source": "He is asleep.",
+      "reference": "เขากำลังหลับ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "303959",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "303959",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/303959"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3410933",
+      "source": "Just call the police.",
+      "reference": "แค่โทรหาตำรวจ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3410933",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10519300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3410933",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3410933"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1756836",
+      "source": "That's a fact.",
+      "reference": "นั่นคือความจริง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1756836",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10220363",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1756836",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1756836"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1444746",
+      "source": "Do you understand what I am saying?",
+      "reference": "คุณเข้าใจสิ่งที่ฉันพูดไหม?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1444746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8703187",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1444746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1444746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1556507",
+      "source": "Do you have any siblings?",
+      "reference": "คุณมีพี่น้องไหม?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1556507",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8675706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1556507",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1556507"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2451502",
+      "source": "Tom has a lot of French books.",
+      "reference": "ทอมมีหนังสือภาษาฝรั่งเศสมากมาย",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451502",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8695414",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451502",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451502"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_4504485",
+      "source": "Ask any woman.",
+      "reference": "ถามผู้หญิงที่ไหนก็ได้",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4504485",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "6537618",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4504485",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4504485"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_281592",
+      "source": "Japan is in eastern Asia.",
+      "reference": "ประเทศญี่ปุ่นอยู่ในเอเชียตะวันออก",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "3573429",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2543223",
+      "source": "I thought you knew this area.",
+      "reference": "ผมคิดว่าคุณรู้จักแถวนี้",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2543223",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10143929",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2543223",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2543223"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_3181824",
+      "source": "Are you ready to talk to me now?",
+      "reference": "คุณพร้อมที่จะคุยกับฉันตอนนี้ไหม",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3181824",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10704023",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3181824",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3181824"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1935448",
+      "source": "Let me go.",
+      "reference": "ปล่อยฉันไป",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1935448",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8743334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1935448",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1935448"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_312812",
+      "source": "What does she have?",
+      "reference": "เธอมีอะไร?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312812",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8703071",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312812",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312812"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1868226",
+      "source": "Tom is at the airport.",
+      "reference": "ทอมอยู่ที่สนามบิน",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868226",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8695453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868226",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868226"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_21662",
+      "source": "I'd like a corner room.",
+      "reference": "ฉันขอห้องหัวมุม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12589225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_325073",
+      "source": "I will teach you how to fish next Sunday.",
+      "reference": "ผมจะสอนวิธีตกปลาให้คุณวันอาทิตย์หน้า",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "325073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "10613109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "325073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/325073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_614438",
+      "source": "My younger brother is watching TV.",
+      "reference": "น้องชายของฉันกำลังดูทีวี",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "614438",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1128545",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "614438",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/614438"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_68814",
+      "source": "Can I call you Bob?",
+      "reference": "ขอเรียกคุณว่า บ๊อบ ได้ไหมครับ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "68814",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1454122",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "68814",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/68814"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_514761",
+      "source": "I am a tourist.",
+      "reference": "ฉันเป็นนักท่องเที่ยว",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "514761",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8681570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "514761",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/514761"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_3075831",
+      "source": "It's so expensive!",
+      "reference": "แพงจังเลยนะ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3075831",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "1762947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3075831",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3075831"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1485",
+      "source": "I learned to live without her.",
+      "reference": "ฉันเรียนรู้การอยู่โดยที่ไม่มีเธอ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1485",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8681571",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1485",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1485"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2245901",
+      "source": "I have time.",
+      "reference": "ฉันมีเวลา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4558382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_292747",
+      "source": "He's staying at a hotel.",
+      "reference": "เขากำลังพักอยู่ที่โรงแรม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "292747",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12729434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "292747",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/292747"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_376424",
+      "source": "Are you ready?",
+      "reference": "พร้อมรึยัง",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376424",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "4846815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376424",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376424"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_324151",
+      "source": "There is a black sheep in every flock.",
+      "reference": "ไม่ว่าที่ไหนก็มีคนนอกคอก",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "12589343",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324151"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2345890",
+      "source": "Is your mum at home?",
+      "reference": "แม่คุณอยู่ที่บ้านไหม",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2345890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "2345935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2345890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2345890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_239730",
+      "source": "I like languages.",
+      "reference": "ฉันชอบภาษา",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "239730",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tha",
+        "target_sentence_id": "8692189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "239730",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/239730"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

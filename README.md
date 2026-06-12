@@ -42,11 +42,11 @@ export OPENROUTER_API_KEY=sk-or-...
 
 # Run a translation experiment with optimal defaults
 # (batch_size=25, max_tokens=32768, concurrency=8, cache=on)
-mt-eval run --corpus data/corpus.json --model gemini-3.1-pro
+mt-eval run --corpus data/corpus.json --model gemini-pro
 
 # Multi-model parallel run — all models execute simultaneously
 mt-eval run --corpus data/corpus.json \
-  -m gemini-3.1-pro,claude-opus-4.7,gpt-5.5,deepseek-v4-pro
+  -m gemini-pro,claude-opus-4.7,gpt-5.5,deepseek-v4-pro
 
 # Use a standard parallel text corpus (FLORES+, WMT, NTREX)
 mt-eval run \
@@ -64,10 +64,10 @@ mt-eval run --corpus data/corpus.json \
   --target-lang-code fr
 
 # Analyze the results
-mt-eval test eval/logs/run_*.json
+mt-eval test eval/logs/harness/run_*.json
 
 # Generate a comparison dashboard
-mt-eval dashboard eval/logs/*.json
+mt-eval dashboard eval/logs/harness/*_report.json
 ```
 
 ## Performance Defaults
@@ -139,14 +139,28 @@ mt_eval_harness/
 ├── api.py                 # OpenRouter HTTP client
 ├── cache.py               # Deterministic result caching
 ├── config.py              # Typed configuration + protocols
+├── language_cards.py      # Language card loader + validation
 ├── cli.py                 # Command-line interface
 ├── dashboard.py           # Interactive HTML report generator
+├── eval_standards/         # Language-specific evaluation standards (referee)
+│   └── crk/                # Plains Cree: LYSS linter + semantic validator
+│       ├── linter.py       # Variant-class equivalence detection
+│       ├── semantic_validator.py  # FST lemma + gloss + spaCy overlap
+│       ├── metrics.py      # MetricPlugin wrappers
+│       └── fst_adapter.py  # Harness FST interface (replaces CrkGenerator)
 └── plugins/               # Extension protocols
     ├── prompts.py          # PromptProvider
     ├── champollion_prompts.py  # ChampollionPromptProvider (built-in champollion interop)
     ├── metrics.py          # MetricPlugin
     ├── hooks.py            # PostTranslationHook
-    └── tools.py            # ToolProvider
+    ├── tools.py            # ToolProvider
+    ├── giellalt_fst.py     # GiellaLT FST morphological validity
+    ├── code_switching.py   # Code-switching detection
+    ├── hallucination.py    # Hallucination detection
+    ├── terminology.py      # Terminology adherence
+    ├── double_pass_compliance.py  # Language card compliance
+    ├── writing_style.py    # Writing style consistency
+    └── fst_installer.py    # FST binary installer
 ```
 
 ## Extending the Harness
@@ -201,7 +215,7 @@ pip install -e ".[dev]"              # Development
 - **[GUIDE.md](GUIDE.md)** — Full user guide and API reference
 - **[CHANGELOG.md](CHANGELOG.md)** — Versioned change log
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — Development standards and contribution workflow
-- **[Plugin Specification](../cli/website/docs/reference/plugin-spec.md)** — champollion plugin specification
+- **[Plugin Specification](website/docs/specifications/benchmark-spec.md#9-champollion-plugin-export)** — champollion plugin export format (§9 of benchmark spec)
 - **[Scoring Specification](website/docs/specifications/scoring.md)** — SSOT for metrics, composite weights, quality tiers
 
 ## Contests & Leaderboards

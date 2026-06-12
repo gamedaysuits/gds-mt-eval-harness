@@ -1,6 +1,24 @@
 ---
 sidebar_position: 2
 title: Eval Harness v2.0
+related:
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+    note: "What the harness metrics feed into"
+  - label: "Statistical Significance Testing"
+    to: /docs/specifications/significance
+    kind: spec
+  - label: "Method Interface"
+    to: /docs/specifications/methods
+    kind: spec
+  - label: "Run Card Specification"
+    to: /docs/specifications/run-card
+    kind: spec
+  - label: "Cookbook: Translate 30 Languages"
+    to: https://champollion.dev/docs/tutorials/translate-30-languages
+    kind: champollion
+    note: "Use the harness to audit registers in production"
 ---
 
 # Eval Harness v2.0
@@ -56,6 +74,7 @@ This runs every entry in the corpus through the configured model (or method plug
 | `--tools-list` | — | — | Comma-separated tool names |
 | `--max-tool-rounds` | — | `8` | Maximum tool-calling rounds per entry |
 | `--hooks` | — | — | Post-translation hook names |
+| `--style-profile` | — | — | Path to a style profile JSON. Enables writing-style consistency metrics (informational — never part of the composite score; see [§ Writing-style and register metrics](#writing-style-and-register-metrics-informational)) |
 | `-b, --batch-size` | — | `25` | Entries per API call |
 | `-c, --concurrency` | — | `8` | Parallel API calls |
 | `--max-tokens` | — | `32768` | Max tokens per API call |
@@ -184,6 +203,28 @@ The [Benchmark Specification](/docs/specifications/benchmark) is the single sour
   "reasoning_ratio": 0.0
 }
 ```
+
+---
+
+## Writing-style and register metrics (informational)
+
+The harness can evaluate whether translations match a target **register** and **writing style**, via the `WritingStyleConsistency` metric plugin (`mt_eval_harness/plugins/writing_style.py`). A translation can be linguistically correct but in the wrong register — informal phrasing in a legal document, formal boilerplate in marketing copy — and string metrics won't notice. These metrics do.
+
+**What is measured (per entry):**
+
+| Metric | Scale | Meaning |
+|--------|-------|---------|
+| `style_register_match` | boolean | Does the output match the expected register? The target comes from the corpus entry's `register` field (see [Benchmark Spec §2.6](/docs/specifications/benchmark)) or from a style profile |
+| `style_sentence_length_ratio` | float | Predicted vs reference average sentence length (1.0 = match; divergence = style drift) |
+| `style_formality_score` | 0.0–1.0 | Presence of formal/informal markers (T–V pronouns, contractions, …) using per-language marker resources |
+
+**Aggregate:** `style_consistency_rate` — the fraction of entries with no detected register mismatch.
+
+Enable a custom target with `--style-profile path/to/profile.json` (e.g. a brand-voice profile); without one, the plugin falls back to each corpus entry's `register` metadata where present.
+
+:::caution Honest scoping
+These metrics are **informational only** — they are never part of the composite score, and the formality detection is marker-based (a heuristic), not a learned judgment. Treat them as a drift detector for register adherence, not a verdict on style quality.
+:::
 
 ---
 

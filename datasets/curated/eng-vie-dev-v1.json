@@ -1,0 +1,5839 @@
+{
+  "corpus_id": "tatoeba-eng-vie-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "vie"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:52:40.516635+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "gov",
+    "legal",
+    "literary",
+    "news",
+    "scientific",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_2957354",
+      "source": "Tom is very unreliable.",
+      "reference": "Tom rất là không thể tin cậy được.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2957354",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11449703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2957354",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2957354"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_276931",
+      "source": "The men have mustaches.",
+      "reference": "Ông ta có ria mép.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "276931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "4580335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "276931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/276931"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_2253876",
+      "source": "Wash the dishes.",
+      "reference": "Rửa bát đi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2253876",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13896336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2253876",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2253876"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2549515",
+      "source": "I'm getting hot.",
+      "reference": "Tôi đang nóng.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2549515",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3109178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2549515",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2549515"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1742986",
+      "source": "Did you read it entirely?",
+      "reference": "Bạn đã đọc hết chưa?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1742986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5161422",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1742986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1742986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1547504",
+      "source": "He won't like this.",
+      "reference": "Nó sẽ không thích cái này.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1547504",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1552431",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1547504",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1547504"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2663369",
+      "source": "You'll have no more problems.",
+      "reference": "Bạn sẽ không có thêm bất cứ một vấn đề nào nữa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2663369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5150877",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2663369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2663369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_2868498",
+      "source": "Tom believes you.",
+      "reference": "Tom tin tưởng bạn.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2868498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13640332",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2868498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2868498"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1302458",
+      "source": "I have some time.",
+      "reference": "Có có một ít thời gian.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1302458",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1541888",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1302458",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1302458"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_287776",
+      "source": "It is difficult to understand his theory.",
+      "reference": "Lý luận của anh ấy rất khó hiểu.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "287776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13021702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "287776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/287776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_1546291",
+      "source": "Tom doesn't have the money to buy a car.",
+      "reference": "Tom không có tiền để mua một chiếc ô tô.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1546291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9012757",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1546291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1546291"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_4719489",
+      "source": "Don't use a language other than Esperanto!",
+      "reference": "Không nói ngôn ngữ khác!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4719489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1772877",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4719489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4719489"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_275951",
+      "source": "Most Japanese opposed a tax increase.",
+      "reference": "Đại bộ phận người dân Nhật phản đối việc tăng thuế.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "275951",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8835021",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "275951",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/275951"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_913459",
+      "source": "I eat Chinese food once in a blue moon.",
+      "reference": "Tôi hiếm khi ăn đồ ăn Trung Quốc.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "913459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8833086",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "913459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/913459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_21899",
+      "source": "It is not easy to learn a foreign language.",
+      "reference": "Học tiếng nước ngoài không hề dễ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21899",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13249709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21899",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21899"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_5403001",
+      "source": "I have been to the United States.",
+      "reference": "Tôi đã từng tới Mỹ rồi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5403001",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5404925",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5403001",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5403001"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_1025631",
+      "source": "Tom grabbed a hold of the rope.",
+      "reference": "Tom đã giữ chặt sợi dây.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1025631",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8978162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1025631",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1025631"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_295008",
+      "source": "He came near being hit by a car.",
+      "reference": "Tôi mém bị xe hơi tông.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "295008",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1543730",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "295008",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/295008"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1312933",
+      "source": "When he spoke, everyone became silent.",
+      "reference": "Khi anh ấy nói, mọi người bắt đầu im lặng.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1312933",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1552959",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1312933",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1312933"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_241455",
+      "source": "The whole nation was sad to hear that their king died.",
+      "reference": "Cả nước buồn khi biết nhà vua băng hà.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241455",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "518577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241455",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241455"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.91
+      }
+    },
+    {
+      "id": "tatoeba_3958104",
+      "source": "Dan and Linda split up two years ago.",
+      "reference": "Dam và Linda đã chia tay hai năm trước.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3958104",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9843981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3958104",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3958104"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_1989874",
+      "source": "You're probably too young to understand why we have to do this.",
+      "reference": "Có lẽ bạn quá trẻ để hiểu vì sao chúng ta phải làm điều này.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1989874",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10460197",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1989874",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1989874"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2877612",
+      "source": "I was tired, so I went to bed early.",
+      "reference": "Tôi mệt nên tôi đi ngủ sớm.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2877612",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10274108",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2877612",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2877612"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.89
+      }
+    },
+    {
+      "id": "tatoeba_4493328",
+      "source": "Tom sat next to his father and watched the football game with him.",
+      "reference": "Tom đã ngồi cạnh bố mình và xem bóng đá với ông ấy.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4493328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13841632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4493328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4493328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.08
+      }
+    },
+    {
+      "id": "tatoeba_4496974",
+      "source": "It could take years before this bridge is ready to use.",
+      "reference": "Phải mất nhiều năm thì cây cầu này mới có thể sẵn sàng đi vào hoạt động.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4496974",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8997675",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4496974",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4496974"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_837024",
+      "source": "Let's go to the beach. I got time off from work for the next 6 days.",
+      "reference": "Chúng ta hãy đi ra biển đi. Tôi được nghỉ làm trong 6 ngày tới.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "837024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "837116",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "837024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/837024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.19
+      }
+    },
+    {
+      "id": "tatoeba_30226",
+      "source": "At last, I graduated from junior high school.",
+      "reference": "Cuối cùng tôi đã tốt nghiệp cấp hai.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30226",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9726058",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30226",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30226"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1415",
+      "source": "I don't like it when mathematicians who know much more than I do can't express themselves explicitly.",
+      "reference": "Tôi không thích khi các nhà toán học, những người biết nhiều hơn tôi, không thể diễn đạt rõ ràng.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1415",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11141237",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1415",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1415"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.94
+      }
+    },
+    {
+      "id": "tatoeba_2629818",
+      "source": "Tom is more than my friend, but he's not quite my boyfriend.",
+      "reference": "Tom với tôi có mối quan hệ trên tình bạn dưới tình yêu.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2629818",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9053802",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2629818",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2629818"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.92
+      }
+    },
+    {
+      "id": "tatoeba_870620",
+      "source": "Marriage, if one will face the truth, is an evil, but a necessary evil.",
+      "reference": "Hôn nhân, nếu một người phải đối diện với sự thật, là một cái ác, nhưng là cái ác cần thiết.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "870620",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13173337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "870620",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/870620"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_5941374",
+      "source": "If you make fun of our company again, we certainly won’t be polite to you.",
+      "reference": "Nếu cậu lại làm mất mặt công ty chúng ta, tôi không khách khí nữa đâu.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5941374",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3709293",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5941374",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5941374"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.87
+      }
+    },
+    {
+      "id": "tatoeba_434546",
+      "source": "\"Do you have a match?\" \"I'm sorry, but I don't smoke.\"",
+      "reference": "Ông có quẹt diêm không? Xin lỗi nhưng tôi không hút thuốc.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "434546",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3364910",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "434546",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/434546"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.36
+      }
+    },
+    {
+      "id": "tatoeba_5367070",
+      "source": "I don't think it will rain, but I'll take an umbrella just in case.",
+      "reference": "Tôi không nghĩ trời sẽ mưa, nhưng tôi sẽ mang theo một cái ô để đề phòng.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5367070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8961971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5367070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5367070"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_30712",
+      "source": "If it were not for electricity, our civilized life would be impossible.",
+      "reference": "Nếu không có điện thì sẽ không thể có đời sống văn minh của chúng ta.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30712",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8944137",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30712",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30712"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_1286693",
+      "source": "First they ignore you, then they laugh at you, then they fight you, then you win.",
+      "reference": "Ban đầu họ mặc kệ bạn, rồi họ cười vào mặt bạn, rồi họ đánh bạn, rồi bạn thắng.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1286693",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13860714",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1286693",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1286693"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_326727",
+      "source": "\"It's right after yesterday so ... that is ... do your genitals hurt or ...?\" \"It still smarts a little but...\"",
+      "reference": "\"Chuyện đó xảy ra ngay sau ngày hôm qua.. vậy cái.. cái bộ phận sinh dục của bạn có đau không?\" \"Vẫn còn hơi đau rát một chút.\"",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326727",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9090755",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326727",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326727"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_1725",
+      "source": "\"If you're tired, why don't you go to sleep?\" \"Because if I go to sleep now I will wake up too early.\"",
+      "reference": "\"Nếu mệt thì ngủ một chút đi?\" \"Bây giờ mà ngủ thì sẽ dậy sớm lắm.\"",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1725",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1725",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1725"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 3.36
+      }
+    },
+    {
+      "id": "tatoeba_1468746",
+      "source": "The Solar System has only eight planets now as Pluto, which was the ninth, has been reclassified as a dwarf planet.",
+      "reference": "Thái dương hệ chỉ có 8 hành tinh bây giờ là Pluto, hành tinh thứ 9, đã được công nhận là một hành tinh lùn.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1468746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1574472",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1468746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1468746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 21,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_1264372",
+      "source": "Mahatma Gandhi once told me: \"Live as if you were to die tomorrow. Learn as if you were to live forever.\"",
+      "reference": "Có lần Mahatma Gandhi đã nói với tôi rằng: \"Hãy sống như thể ngày mai bạn sẽ chết. Hãy học như thể bạn bất lão trường sinh.\"",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1264372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9752679",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1264372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1264372"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 21,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.81
+      }
+    },
+    {
+      "id": "tatoeba_356103",
+      "source": "When I moved to the United States four years ago, I had problems adapting to a new language and culture.",
+      "reference": "Khi tôi dọn sang Hoa Kỳ ở bốn năm trước đây, tôi đã gặp khó khăn để thích nghi với ngôn ngữ và văn hóa mới.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356103",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "516591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356103",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356103"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 20,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.15
+      }
+    },
+    {
+      "id": "tatoeba_1230823",
+      "source": "If you translate from your second language into your own native language, rather than the other way around, you're less likely to make mistakes.",
+      "reference": "Dịch từ tiếng nước ngoài sang tiếng mẹ đẻ thì sẽ ít bị sai hơn dịch từ tiếng mẹ đẻ sang tiếng nước ngoài.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1230823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8956097",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1230823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1230823"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 24,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.92
+      }
+    },
+    {
+      "id": "tatoeba_328966",
+      "source": "All things considered, and it's just my opinion but, I think that the value of a present changes depending on how much thought is put into it.",
+      "reference": "Sau khi suy nghĩ rất nhiều, và đây chỉ là ý kiến cá nhân của tôi, nhưng tôi cho rằng giá trị của một món quà sẽ thay đổi tùy thuộc vào việc có bao nhiêu tình cảm được đặt vào trong món quà đó.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328966",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8960045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328966",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328966"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 27,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.19
+      }
+    },
+    {
+      "id": "tatoeba_5229061",
+      "source": "Why are there so many motorcycles in this city? Well, it's because they're cheaper than cars and there are more poor people than rich ones.",
+      "reference": "Tại sao thành phố này lại có nhiều xe máy thế? Chà, đó là vì xe máy rẻ hơn ô tô và có nhiều người nghèo hơn người giàu.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5229061",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13897626",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5229061",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5229061"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 25,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.48
+      }
+    },
+    {
+      "id": "tatoeba_2234121",
+      "source": "What's the price?",
+      "reference": "Giá cả bao nhiêu?",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2234121",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11267974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2234121",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2234121"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_761927",
+      "source": "He returned at six.",
+      "reference": "Anh ta quay trở lại vào lúc 6 giờ.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "761927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8839854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "761927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/761927"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_789770",
+      "source": "Prices will continue to rise.",
+      "reference": "Giá cả sẽ tiếp tục tăng.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "789770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "2507772",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "789770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/789770"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_256110",
+      "source": "I hurried in order to catch the first train.",
+      "reference": "Tôi thật nhanh để gặp được chuyến tàu đầu tiên.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256110",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "886799",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256110",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256110"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_318661",
+      "source": "I agree with the opinion that real estate is overpriced.",
+      "reference": "Tôi đồng ý với ý kiến rằng bất động sản bị định giá quá cao.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "318661",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5149405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "318661",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/318661"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1090086",
+      "source": "When are you going to return from Milan?",
+      "reference": "Khi nào bạn từ Milan trở về?",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1090086",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "604708",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1090086",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1090086"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_435638",
+      "source": "Did you grade the tests?",
+      "reference": "Bạn chấm bài chưa?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "435638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8832976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "435638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/435638"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_395402",
+      "source": "Show me an example.",
+      "reference": "Hãy cho tôi một ví dụ.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "395402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9058141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "395402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/395402"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_5850576",
+      "source": "I hate homework.",
+      "reference": "Tôi ghét bài tập về nhà.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5850576",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13340851",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5850576",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5850576"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_258552",
+      "source": "I've finished my homework.",
+      "reference": "Tôi đã làm xong bài tập về nhà.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "558886",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258552"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2642662",
+      "source": "Tom has completed his homework.",
+      "reference": "Tom đã hoàn thành bài tập về nhà của anh.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2642662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13426404",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2642662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2642662"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_259075",
+      "source": "I'd like to be a teacher.",
+      "reference": "Tôi thích trở thành nhà giáo.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "624309",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259075"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_24522",
+      "source": "Some boys came into the classroom.",
+      "reference": "Một vài em trai vào lớp.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "556990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24522"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_837188",
+      "source": "It's my pleasure to come to your university.",
+      "reference": "Tôi rất vui khi đến thăm quý tr­ường.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "837188",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "837196",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "837188",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/837188"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3050944",
+      "source": "My mother is a high school teacher.",
+      "reference": "Mẹ tôi là giáo viên dạy cấp 3.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3050944",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10146673",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3050944",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3050944"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4877372",
+      "source": "In the future, Firefox will upgrade plugins for you.",
+      "reference": "Trong tương lai, Firefox sẽ nâng cấp trình cắm cho bạn.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4877372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13594933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4877372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4877372"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_401759",
+      "source": "\"Are you a teacher?\" \"Yes, I am.\"",
+      "reference": "\"Ông là nhà giáo à?\" \"Vâng, đúng thế.\"",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "401759",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "554222",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "401759",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/401759"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_1847005",
+      "source": "The Japanese embassy has warned Japanese citizens to be careful.",
+      "reference": "Đại sứ quán Nhật Bản đã và đang cảnh báo người dân Nhật phải cẩn trọng.",
+      "domain": "gov",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1847005",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8956679",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1847005",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1847005"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_317887",
+      "source": "The prisoner was brought before a judge.",
+      "reference": "Phạm nhân được đưa đến trước thẩm phán.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5148059",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317887"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_259390",
+      "source": "I like short poems.",
+      "reference": "Tôi thích những bài thơ ngắn.",
+      "domain": "literary",
+      "difficulty": 1,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259390",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13726702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259390",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259390"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_329430",
+      "source": "A protagonist as plain and ordinary as him is rare indeed.",
+      "reference": "Hiếm có nhân vật chính nào giản đơn như cậu ta.",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "329430",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10235849",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "329430",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/329430"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.27
+      }
+    },
+    {
+      "id": "tatoeba_324597",
+      "source": "After he finished supper, he began to read the novel.",
+      "reference": "Ngay sau khi ăn tối xong, anh ấy đã bắt đầu đọc cuốn tiểu thuyết đó.",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324597",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9022473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324597",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324597"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_4731101",
+      "source": "Esperanto, official language of the European Union, now!",
+      "reference": "Bạn hãy vui lòng ký vào kiến nghị này",
+      "domain": "news",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4731101",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3307662",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4731101",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4731101"
+        },
+        "classification_confidence": 0.1111,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_278070",
+      "source": "I hope you won't expect results immediately.",
+      "reference": "Bạn nên nhìn xa hơn.",
+      "domain": "scientific",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "278070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8947192",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "278070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/278070"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.29
+      }
+    },
+    {
+      "id": "tatoeba_3824047",
+      "source": "I'm sorry I can't help.",
+      "reference": "Tôi lấy làm tiếc tôi không thể giúp được.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3824047",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "4195500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3824047",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3824047"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1028567",
+      "source": "Tom is helping Mary.",
+      "reference": "Tom giúp Mary.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1028567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13599427",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1028567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1028567"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_31871",
+      "source": "Mary is going to help us tomorrow.",
+      "reference": "Marie sẽ giúp chúng ta ngày mai.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31871",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "513684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31871",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31871"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_259571",
+      "source": "I helped my brother move his desk.",
+      "reference": "Tôi giúp em trai di chuyển cái bàn.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8961405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259571"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_1164378",
+      "source": "Tom needs two tickets to Boston.",
+      "reference": "Tom cần 2 vé để đi Boston.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1164378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1838414",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1164378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1164378"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3735383",
+      "source": "I think I should've asked for help.",
+      "reference": "Tôi nghĩ rằng đáng lẽ tôi nên nhờ giúp đỡ mới phải.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3735383",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "4608332",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3735383",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3735383"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3161974",
+      "source": "Tom has helped me many times.",
+      "reference": "Tom đã giúp tôi không biết bao nhiêu lần.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3161974",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9051355",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3161974",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3161974"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_41871",
+      "source": "I'll help you as soon as I've done that.",
+      "reference": "Ngay sau khi tôi làm xong việc đó, tôi sẽ giúp bạn.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "41871",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9016805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "41871",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/41871"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_433656",
+      "source": "Capitalism is the exploitation of man by man. Communism is the exact opposite.",
+      "reference": "Chủ nghĩa tư bản là sự bóc lột loài người do loài người gây ra. Chủ nghĩa cộng sản thì hoàn toàn trái ngược với điều đó.",
+      "domain": "tech",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "433656",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9056983",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "433656",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/433656"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.92
+      }
+    },
+    {
+      "id": "tatoeba_4228344",
+      "source": "Are you open on Sunday?",
+      "reference": "Chủ Nhật quán có làm không?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4228344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9015818",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4228344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4228344"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1990338",
+      "source": "Tom has trouble opening bottles.",
+      "reference": "Tom gặp khó khăn với việc mở chai.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1990338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10460202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1990338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1990338"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_2713738",
+      "source": "They're all happy.",
+      "reference": "Họ đều vui vẻ.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13581057",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713738"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3413045",
+      "source": "The curtains are open.",
+      "reference": "Những cái rèm đã được mở.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3413045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3481609",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3413045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3413045"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2389577",
+      "source": "I opened the window.",
+      "reference": "Tôi đã mở cửa sổ.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2389577",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3304586",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2389577",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2389577"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2875855",
+      "source": "She saved money.",
+      "reference": "Cô ấy tiết kiệm tiền.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2875855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13430905",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2875855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2875855"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_240551",
+      "source": "Open your mouth.",
+      "reference": "Mở miệng ra!",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "240551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "240551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/240551"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1283",
+      "source": "The password is \"Muiriel\".",
+      "reference": "Mật mã là \"Muiriel\".",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1283"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_69766",
+      "source": "All you have to do is press the button.",
+      "reference": "Tất cả những gì bạn phải làm là nhấn cái nút.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1541934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69766"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_262807",
+      "source": "We happened to meet at the station.",
+      "reference": "Chúng tôi thỉnh thoảng có gặp nhau tại nhà ga.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262807",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8794969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262807",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262807"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2595681",
+      "source": "Your login attempt was not successful. Please try again.",
+      "reference": "Đăng nhập không thành công. Xin hãy đăng nhập lại.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2595681",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8991302",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2595681",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2595681"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.11
+      }
+    },
+    {
+      "id": "tatoeba_3553396",
+      "source": "This store here is open around the clock.",
+      "reference": "Quán này mở cửa suốt ngày đêm.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3553396",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9040891",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3553396",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3553396"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_296267",
+      "source": "He never opens his mouth without complaining about something.",
+      "reference": "Anh ta hễ mở mồm ra là y như rằng sẽ phàn nàn về điều gì đó.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "296267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9035714",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "296267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/296267"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.78
+      }
+    },
+    {
+      "id": "tatoeba_4499120",
+      "source": "Tom never warned Mary about what might happen.",
+      "reference": "Tom chưa bao giờ nói trước cho Mary biết điều gì có thể xảy ra.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4499120",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9815453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4499120",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4499120"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_238989",
+      "source": "Health is an important factor of happiness.",
+      "reference": "Sức khỏe là một yếu tố quan trọng của hạnh phúc.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "238989",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "568600",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "238989",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/238989"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_1188679",
+      "source": "I like this kind of apple.",
+      "reference": "Tôi thích loại táo này.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1188679",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11368535",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1188679",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1188679"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6029294",
+      "source": "A hacker gained access to sensitive files in the company's database.",
+      "reference": "Một tin tặc đã lấy được quyền truy cập vào các tệp nhạy cảm trong cơ sở dữ liệu của công ty.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6029294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13334147",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6029294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6029294"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.18
+      }
+    },
+    {
+      "id": "tatoeba_28495",
+      "source": "Wishing you peace and happiness at Christmas.",
+      "reference": "Chúc bạn bình an và hạnh phúc nhân mùa giáng sinh.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "28495",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1564365",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "28495",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/28495"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.43
+      }
+    },
+    {
+      "id": "tatoeba_3132889",
+      "source": "Whatever happens, we'll always be friends.",
+      "reference": "Dùng chuyện gì xảy ra, chúng ta vẫn sẽ là bạn.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3132889",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5160008",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3132889",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3132889"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.83
+      }
+    },
+    {
+      "id": "tatoeba_326001",
+      "source": "No matter what happens, I won't give up.",
+      "reference": "Cho dù có chuyện gì xảy ra đi chăng nữa, tôi cũng sẽ không bỏ cuộc.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326001",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8963818",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326001",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326001"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_71619",
+      "source": "I was disappointed when I heard that you couldn't come.",
+      "reference": "Tôi đã thất vọng khi nghe tin bạn không thể tới.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "71619",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9510883",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "71619",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/71619"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_4022691",
+      "source": "The exact same thing happened to my friend a week later!",
+      "reference": "Bạn tôi gặp chuyện tương tự như thế sau đó một tuần.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4022691",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5910950",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4022691",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4022691"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.09
+      }
+    },
+    {
+      "id": "tatoeba_2698639",
+      "source": "The answers for the practice problems are at the end of the book.",
+      "reference": "Đáp án của những câu hỏi ôn tập được tổng hợp ở cuối sách.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2698639",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8843173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2698639",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2698639"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_25096",
+      "source": "I should have done something.",
+      "reference": "Đáng lẽ ra tôi nên làm gì đó.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13344280",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25096"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_1318878",
+      "source": "There are a lot of things I have to do.",
+      "reference": "Tôi có nhiều việc phải làm.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1318878",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8943989",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1318878",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1318878"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.9
+      }
+    },
+    {
+      "id": "tatoeba_2865356",
+      "source": "She scared us.",
+      "reference": "Cô ta doạ chúng tôi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2865356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5162204",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2865356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2865356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2355483",
+      "source": "Her recurrent nightmare involved a tsunami.",
+      "reference": "Cơn ác mộng dai dẳng của cô ấy là về một cơn sóng thần.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2355483",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13598289",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2355483",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2355483"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.17
+      }
+    },
+    {
+      "id": "tatoeba_862331",
+      "source": "Yes, I did this intentionally.",
+      "reference": "Ừ, tôi làm nó có chủ đích đấy.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "862331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10257861",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "862331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/862331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_3906701",
+      "source": "I'll certainly talk to him.",
+      "reference": "Tôi chắc chắn sẽ nói chuyện với cậu ta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3906701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5150291",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3906701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3906701"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_326192",
+      "source": "The train is made up of fifteen cars.",
+      "reference": "Đoàn tầu gồm 15 toa tầu.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "509209",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_618405",
+      "source": "You have very sexy legs.",
+      "reference": "Bạn có đôi chân rất sexy.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "618405",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1564052",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "618405",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/618405"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_52727",
+      "source": "John is an American boy.",
+      "reference": "John là một thanh niên người Mỹ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52727",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "337920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52727",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52727"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_20379",
+      "source": "Are you crazy?",
+      "reference": "Anh bị điên à?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8958176",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_387567",
+      "source": "You can't drink seawater because it is too salty.",
+      "reference": "Bạn không thể uống nước biển vì nó quá mặn.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "387567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "337930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "387567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/387567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.44
+      }
+    },
+    {
+      "id": "tatoeba_1393",
+      "source": "I wish I could go to Japan.",
+      "reference": "tôi ước tôi có thể tới nhật bản",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9555126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1393"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_5398356",
+      "source": "Tom and Mary gave me that.",
+      "reference": "Tom và Mary đã cho tôi cái đó.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5398356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9010236",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5398356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5398356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4494204",
+      "source": "Everybody is hungry again.",
+      "reference": "Mọi người lại đói.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4494204",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5148898",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4494204",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4494204"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4493699",
+      "source": "We have a dishwasher.",
+      "reference": "Chúng tôi có một máy rửa chén.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4493699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11371411",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4493699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4493699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2011551",
+      "source": "I don't want to look.",
+      "reference": "Tôi không muốn nhìn.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2011551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3313254",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2011551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2011551"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2745410",
+      "source": "Would you like me to do that for you?",
+      "reference": "Bạn có muốn tôi làm việc đó hộ bạn không?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2745410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9752149",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2745410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2745410"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.11
+      }
+    },
+    {
+      "id": "tatoeba_5071640",
+      "source": "Chris will come here.",
+      "reference": "Chris sẽ tới đây.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5071640",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5071822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5071640",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5071640"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1394236",
+      "source": "USSR stands for Union of Soviet Socialist Republics.",
+      "reference": "USSR là từ viết tắt của \"Cộng hòa Xã hội chủ nghĩa Liên bang Xô Viết\".",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1394236",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8850490",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1394236",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1394236"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_5422326",
+      "source": "Tom likes fruit.",
+      "reference": "Tom thích hoa quả.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5422326",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13340925",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5422326",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5422326"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5366258",
+      "source": "Please take next Sunday off.",
+      "reference": "Hãy nghỉ ngơi vào thứ hai tuần sau.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5366258",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8836669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5366258",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5366258"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_2206604",
+      "source": "The chicken is overcooked.",
+      "reference": "Con gà đó bị nấu quá chín.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2206604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9071102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2206604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2206604"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_276209",
+      "source": "Who will take care of the baby?",
+      "reference": "Ai sẽ chăm sóc đứa bé sơ sinh này?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "276209",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13841684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "276209",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/276209"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_35717",
+      "source": "Please say hello to Nancy if you see her at the party.",
+      "reference": "Nếu bạn thấy Mary trong buổi tiệc, hãy chào cô ấy giúp tôi.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8943109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2541377",
+      "source": "I'm going to sleep here tonight.",
+      "reference": "Tôi sẽ ngủ ở đây tối nay.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2541377",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3481608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2541377",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2541377"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_680959",
+      "source": "Did you find your keys?",
+      "reference": "Bạn tìm thấy chìa khóa chưa?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "680959",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9759637",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "680959",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/680959"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2538540",
+      "source": "I'm going to have a little talk with Tom.",
+      "reference": "Tôi và Tom sẽ nói một câu chuyện nhỏ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2538540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3486714",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2538540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2538540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_264381",
+      "source": "Prevention is better than cure.",
+      "reference": "Phòng bệnh hơn chữa bệnh.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8989698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264381"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_51104",
+      "source": "I don't agree.",
+      "reference": "Tôi không nghĩ như vậy.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51104",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "893213",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51104",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51104"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_264786",
+      "source": "Keep your room as neat as you can.",
+      "reference": "Hãy cố giữ cho phòng mình thật ngăn nắp.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264786",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8942152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264786",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264786"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_817966",
+      "source": "He's running very quickly.",
+      "reference": "Anh ta đang chạy rất nhanh.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "817966",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1542126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "817966",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/817966"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2315134",
+      "source": "I do like you.",
+      "reference": "Em yêu anh!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2315134",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "405410",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2315134",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2315134"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_2745924",
+      "source": "You have a healthy baby boy.",
+      "reference": "Bạn đã sinh ra được một bé trai khỏe mạnh đấy.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2745924",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9418788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2745924",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2745924"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_268983",
+      "source": "I closed my eyes to calm down.",
+      "reference": "Tôi nhắm mắt mình lại để giữ bình tĩnh.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "268983",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "870249",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "268983",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/268983"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_59254",
+      "source": "The climate is mild in this country.",
+      "reference": "Khí hậu ở đất nước này ôn hòa.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "59254",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1697318",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "59254",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/59254"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_4929470",
+      "source": "I love to watch people's reactions when I say who I am.",
+      "reference": "Tôi thích xem phản ứng của mọi người không tôi nói tôi là ai.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4929470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "4929472",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4929470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4929470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.58
+      }
+    },
+    {
+      "id": "tatoeba_317701",
+      "source": "They showed me a lot of beautiful photos.",
+      "reference": "Họ cho tôi xem rất nhiều ảnh đẹp.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11318283",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317701"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_11373531",
+      "source": "I won’t buy that house even if I am rich.",
+      "reference": "Tôi sẽ không mua cái nhà đó kể cả khi tôi giàu.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11373531",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11373532",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11373531",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11373531"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.1
+      }
+    },
+    {
+      "id": "tatoeba_1786887",
+      "source": "As long as a woman can look ten years younger than her own daughter, she is perfectly satisfied.",
+      "reference": "Chừng nào một phụ nữ trông có vẻ trẻ hơn con gái mình mười tuổi, thì bà ấy hoàn toàn hài lòng.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1786887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3316838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1786887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1786887"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.28
+      }
+    },
+    {
+      "id": "tatoeba_40618",
+      "source": "Don't you smoke?",
+      "reference": "Bạn không hút thuốc sao?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8976413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40618"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5757800",
+      "source": "Tom wasn't famous.",
+      "reference": "Tom không nổi tiếng.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5757800",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "6275717",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5757800",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5757800"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_61595",
+      "source": "Do not come here.",
+      "reference": "Đừng đến đây.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "61595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8961970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "61595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/61595"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4498706",
+      "source": "Fire is dangerous.",
+      "reference": "Hỏa hoạn là nguy hiểm.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4498706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11352167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4498706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4498706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2359573",
+      "source": "I've got a family.",
+      "reference": "Tôi có gia đình.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2359573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "554194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2359573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2359573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2270205",
+      "source": "Who is that guy?",
+      "reference": "Gã đó là ai?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2270205",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13726668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2270205",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2270205"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_52481",
+      "source": "I'm from Singapore.",
+      "reference": "Tôi từ Singapore đến.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "510437",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52481"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_39342",
+      "source": "Debbie! Can you hear me?",
+      "reference": "Debbie! Có nghe thấy tôi nói gì không?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8956787",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1570761",
+      "source": "She's very pretty.",
+      "reference": "Cô ấy là một người rất xinh đẹp.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1570761",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8836680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1570761",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1570761"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_434202",
+      "source": "Am I pregnant?",
+      "reference": "Tôi đang mang thai?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "434202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "12279644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "434202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/434202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_293125",
+      "source": "He is unquestionably the oldest man in the village.",
+      "reference": "Chắc chắn ông ta là người cao tuổi nhất thôn.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293125",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8796376",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293125",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293125"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1764728",
+      "source": "I want to live in the city.",
+      "reference": "Tôi muốn sống trong thành phố.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1764728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13726724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1764728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1764728"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_408163",
+      "source": "We have two kids.",
+      "reference": "Chúng tôi có hai đứa con.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "408163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13173498",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "408163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/408163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_34326",
+      "source": "The proof of the pudding is in the eating.",
+      "reference": "Lửa thử vàng, gian nan thử sức.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34326",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8943003",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34326",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34326"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_257706",
+      "source": "I received a letter written in English yesterday.",
+      "reference": "Hôm qua, tôi có nhận một bức thư viết bằng tiếng Anh.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5647141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.12
+      }
+    },
+    {
+      "id": "tatoeba_5936486",
+      "source": "I bought a new notebook and a couple of pencils.",
+      "reference": "Tôi đã mua một quyển vở mới và vài cái bút chì.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5936486",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9000501",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5936486",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5936486"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_1026095",
+      "source": "Tom doesn't know that I'm Canadian.",
+      "reference": "Tom không biết tui là người Canada.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1026095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11534482",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1026095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1026095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_5825531",
+      "source": "I teased Tom.",
+      "reference": "Tôi trêu chọc Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5825531",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13340878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5825531",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5825531"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_68238",
+      "source": "Who is that woman?",
+      "reference": "Người phụ nữ đó là ai?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "68238",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13666110",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "68238",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/68238"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2170155",
+      "source": "Don't fix it if it ain't broke.",
+      "reference": "Nếu nó không bị hỏng thì đừng sửa.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2170155",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8991824",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2170155",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2170155"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_2543492",
+      "source": "I'm really glad you're here.",
+      "reference": "Tôi rất mừng vì gặp bạn ở đây.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2543492",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "3667551",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2543492",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2543492"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_42354",
+      "source": "It gave me the creeps.",
+      "reference": "Điều đó làm tôi thấy rợn người.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42354",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1716337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42354",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42354"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_954174",
+      "source": "Most people studying a foreign language will never be able to speak like a native speaker.",
+      "reference": "Hầu hết những người đang học ngoại ngữ đều sẽ không bao giờ có thể nói chuyện được như người bản xứ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954174",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8991740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954174",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954174"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_29175",
+      "source": "Our country is in a crisis.",
+      "reference": "Đất nước của chúng tôi đang trong thời kỳ khủng hoảng.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29175",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1573194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29175",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29175"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_307900",
+      "source": "It is no exaggeration to call him a genius.",
+      "reference": "Nếu gọi anh ấy là thiên tài thì cũng không phải là nói quá.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "307900",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9011003",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "307900",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/307900"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_3737907",
+      "source": "Who'll be there?",
+      "reference": "Ai sẽ ở đó?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3737907",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11449503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3737907",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3737907"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9588",
+      "source": "You have to learn standard English.",
+      "reference": "Bạn phải học tiếng Anh tiêu chuẩn.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1570315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_326412",
+      "source": "It's hard for an old man to change his way of living.",
+      "reference": "Rất khó để 1 ông già để thay đổi cách sống",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "12576910",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326412"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.42
+      }
+    },
+    {
+      "id": "tatoeba_26302",
+      "source": "We have English third period.",
+      "reference": "Anh văn là tiết thứ 3.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1706022",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_5134228",
+      "source": "Quit going around in circles and get to the point.",
+      "reference": "Đừng nói vòng vo nữa mà hãy vào vấn đề chính luôn đi.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5134228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9733407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5134228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5134228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6143",
+      "source": "During winter I sleep with two blankets.",
+      "reference": "Suốt mùa đông, tôi ngủ với hai cái chăn",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6143",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1581190",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6143",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6143"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_1513728",
+      "source": "Tom is pursuing a successful career in New York.",
+      "reference": "Tom đang theo đuổi một công việc thành đạt ở New York.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1513728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1513732",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1513728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1513728"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_238548",
+      "source": "Before deciding, I would like to consult with my family.",
+      "reference": "Trước khi quyết định, tôi muốn bàn bạc với gia đình mình.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "238548",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13841084",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "238548",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/238548"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_72095",
+      "source": "Am I hungry!",
+      "reference": "Tôi đói.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "654283",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2516930",
+      "source": "He's a Frenchman.",
+      "reference": "Anh ấy là người Pháp.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2516930",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13022648",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2516930",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2516930"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1773402",
+      "source": "He doesn't have a computer.",
+      "reference": "Anh ấy không có máy tính.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1773402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "12286406",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1773402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1773402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2548734",
+      "source": "I'm at Tom's house.",
+      "reference": "Tôi đang ở nhà Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548734",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13726706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548734",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548734"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_257763",
+      "source": "I caught five fish yesterday.",
+      "reference": "Hôm qua tôi câu được 5 con cá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8914644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257763"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_5756779",
+      "source": "We gave it to them.",
+      "reference": "Bọn tớ đưa nó cho họ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5756779",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "6275455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5756779",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5756779"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_982273",
+      "source": "Are you alright?",
+      "reference": "Bạn có sao không?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "982273",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9040886",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "982273",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/982273"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5411398",
+      "source": "This wasn't expensive.",
+      "reference": "Cái đó không đắt.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5411398",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "568442",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5411398",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5411398"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_29511",
+      "source": "There are several customers in the restaurant.",
+      "reference": "Có nhiều khách đến ăn tại nhà hang.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "29511",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "4456399",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "29511",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/29511"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.57
+      }
+    },
+    {
+      "id": "tatoeba_1415809",
+      "source": "Muiriel has turned twenty.",
+      "reference": "Bây giờ Muiriel được 20 tuổi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1415809",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1415809",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1415809"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_66197",
+      "source": "Come and see me whenever you like.",
+      "reference": "Hãy đến gặp tôi bất cứ lúc nào mà bạn thích.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "66197",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9474327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "66197",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/66197"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_45318",
+      "source": "The man is wanted for murder.",
+      "reference": "Người đàn ông bị truy nã về tội giết người.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "45318",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "5161377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "45318",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/45318"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_30608",
+      "source": "If I should fail again, I would give up the plan.",
+      "reference": "Nếu tôi thất bại lần nữa, tôi sẽ từ bỏ kế hoạch.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30608",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1598587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30608",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30608"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.36
+      }
+    },
+    {
+      "id": "tatoeba_254456",
+      "source": "It is not that I don't like the car, but that I can't afford to buy it.",
+      "reference": "Vấn không phải là tôi không thích chiếc xe hơi, mà là tôi không thể tự cho phép tiêu số tiền.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "254456",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "592817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "254456",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/254456"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_1551163",
+      "source": "She is too weak.",
+      "reference": "Nó yếu quá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1551163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1552010",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1551163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1551163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5172732",
+      "source": "Birds are the natural enemies of insects.",
+      "reference": "Chim là kẻ thù tự nhiên của côn trùng.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5172732",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "724137",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5172732",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5172732"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_4783689",
+      "source": "I get the feeling that I've heard that somewhere before.",
+      "reference": "Hình như tôi có nghe qua cái đó ở đâu rồi thì phải.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4783689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "10235839",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4783689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4783689"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1770346",
+      "source": "I am tired!",
+      "reference": "Tôi mệt.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1770346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13173474",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1770346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1770346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_887328",
+      "source": "She picked him up at the station.",
+      "reference": "Cô ấy đi đón anh ấy ở nhà ga.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "887328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8836636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "887328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/887328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_567463",
+      "source": "She traveled around Japan.",
+      "reference": "Cô ấy đã đi du lịch vòng quanh Nhật Bản.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "567463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8795409",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "567463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/567463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1888",
+      "source": "Your glasses fell on the floor.",
+      "reference": "Kính của bạn đã rơi trên sàn",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "12562827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_2360212",
+      "source": "I have plenty of money.",
+      "reference": "Tôi có nhiều tiền.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2360212",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13769733",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2360212",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2360212"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_38007",
+      "source": "Tell me which you want.",
+      "reference": "Nói cho tôi biết bạn muốn cái nào.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38007",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "11380314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38007",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38007"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1934661",
+      "source": "I'm coming back next week.",
+      "reference": "Tuần sau tôi sẽ về.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1934661",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "8962790",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1934661",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1934661"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_49031",
+      "source": "The broken doll is mine.",
+      "reference": "Con búp bê bị hỏng đó là của tôi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "49031",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9024433",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "49031",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/49031"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_3022259",
+      "source": "Tom never smiles.",
+      "reference": "Tom không bao giờ cười.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3022259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "13341098",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3022259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3022259"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2045",
+      "source": "We could see the sunset from the window.",
+      "reference": "Chúng tôi có thể thấy mặt trời từ cửa sổ",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "12562916",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2045"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4197964",
+      "source": "We should have bought another bottle of wine.",
+      "reference": "Đáng lẽ ra chúng ta nên mua thêm một chai rượu vang mới phải.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4197964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "9005930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4197964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4197964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_3140021",
+      "source": "Black suits you.",
+      "reference": "màu đen hợp với bạn",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3140021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "vie",
+        "target_sentence_id": "1510594",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3140021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3140021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

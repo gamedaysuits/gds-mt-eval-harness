@@ -102,7 +102,8 @@ class GiellaLTFSTMetric:
         try:
             results = analyzer.lookup(word)
             return len(results) > 0
-        except Exception:
+        except Exception as e:
+            logger.warning("FST lookup error for word %r: %s", word, e)
             return False
 
     def compute(self, entry: dict) -> dict:
@@ -152,8 +153,13 @@ class GiellaLTFSTMetric:
 
         Reports both micro-average (corpus-wide word ratio) and
         macro-average (mean of per-entry rates).
+
+        Filters out error entries (e.g., from pyhfst not being installed).
         """
-        if not entry_results:
+        # Filter out entries that errored during compute()
+        valid_results = [r for r in entry_results if "error" not in r]
+
+        if not valid_results:
             return {
                 "avg_fst_validity": 0.0,
                 "total_words_checked": 0,
@@ -162,12 +168,12 @@ class GiellaLTFSTMetric:
             }
 
         # Macro-average: mean of per-entry validity rates
-        rates = [r["fst_validity_rate"] for r in entry_results]
+        rates = [r["fst_validity_rate"] for r in valid_results]
         avg_validity = sum(rates) / len(rates)
 
         # Micro-average: total valid / total words across all entries
-        total_words = sum(r["fst_total_words"] for r in entry_results)
-        total_valid = sum(r["fst_valid_words"] for r in entry_results)
+        total_words = sum(r["fst_total_words"] for r in valid_results)
+        total_valid = sum(r["fst_valid_words"] for r in valid_results)
         corpus_rate = total_valid / max(total_words, 1)
 
         return {

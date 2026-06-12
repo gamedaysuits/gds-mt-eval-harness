@@ -37,6 +37,11 @@ comet = [
 fst = [
     "pyhfst>=1.4",
 ]
+crk = [
+    "spacy>=3.7",
+    "pyhfst>=1.4",
+    "requests>=2.28",
+]
 dev = [
     "pytest>=8.0",
     "pytest-asyncio>=0.23",

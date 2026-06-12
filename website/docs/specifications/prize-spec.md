@@ -2,6 +2,20 @@
 sidebar_position: 8
 title: 'Prize Specification'
 slug: '/specifications/prizes'
+related:
+  - label: "How Speakers Get Paid"
+    to: /docs/perspectives/how-speakers-get-paid
+    kind: position
+    note: "The plain-language version of these numbers"
+  - label: "The Economic Model"
+    to: /docs/sovereignty/economic-model
+    kind: doc
+  - label: "MT Evaluation Rules"
+    to: /docs/leaderboard/rules
+    kind: doc
+  - label: "Submit a Method"
+    to: /docs/getting-started/submit-a-method
+    kind: guide
 ---
 
 # Prize Specification
@@ -31,6 +45,28 @@ Methods that claim a prize are subject to the ownership transfer clause (BENCHMA
 ### 1.4 Anti-Gaming
 
 Prize thresholds are defined against **gold-standard evaluation** (secret test set, run by governance org in sandbox). Developers never see the test data. This is architecturally enforced — not a policy that relies on honor. See BENCHMARK_SPEC §8.2.
+
+### 1.5 Corpus Licensing: Non-Commercial Corpora Stay Out of the Prize Lane
+
+Some corpora used during method development carry non-commercial licenses — for example, the EdTeKLA Cree Language Textbook corpus is **CC BY-NC-SA 4.0**. These corpora are **research/development-lane only**:
+
+1. **Prize gold-standard corpora must not embed NC-licensed corpus content.** Gold-standard test segments are community-commissioned originals (see Corpus Partnership Strategy) — human-authored for the prize, with rights cleared for evaluation and commercial deployment from the start.
+2. **A method that claims a prize must not embed NC-licensed corpus content** (e.g., as coaching data, embedded examples, or lookup tables). The transferred method is intended for commercial deployment by the governance org (BENCHMARK_SPEC §8.3, Method Submission Agreement §6); NC-licensed content inside it would poison that deployment.
+3. **Developers may freely use NC-licensed corpora to develop and self-evaluate** — that is what the development lane is for. The restriction applies to what is submitted and what is deployed, not to how a developer learns.
+
+### 1.6 Dependency Classes Gate Prize Eligibility
+
+All prize evaluation happens in a sandbox (§1.4), and prize-winning methods transfer to the governance org (§1.3). Both facts impose the same constraint: **everything a method depends on must be something the developer has the right to put in the sandbox and convey to the community.** Every submission declares a dependency class — defined in the [Method Interface spec](/docs/specifications/methods#method-validity-and-dependency-classes), with admissibility terms in the Method Submission Agreement §2.6 — and eligibility follows the class:
+
+| Dependency class | Prize-eligible? | Conditions |
+|------------------|----------------|------------|
+| **S** — self-contained | ✅ Yes | None beyond the threshold conditions in §2 |
+| **O** — open external (e.g., AGPL FST mirrored at submission) | ✅ Yes | Artifacts pinned and vendored into the submission; licenses permit community transfer; copyleft terms preserved (the community receives the same rights the license grants everyone) |
+| **A1** — substitutable LLM inference | ⚠️ Conditional | Model declared, pinned, and substitutable (must run against a community-hosted open-weight model); evaluation routed through the sandbox LLM gateway (🔲 planned — A1 methods cannot produce gold-standard scores until the gateway is operational); transfer conveys the full recipe (prompts, coaching, code), not the model |
+| **A2** — non-substitutable external data/service API | ❌ Not yet | Ineligible until the rights holder grants sandbox-inclusion and transfer permissions. Allowed on the open leaderboard with a visible "external dependency" flag |
+| **X** — bundled content without rights | ❌ Never | Inadmissible in every lane |
+
+A method's class is the most restrictive class among its declared dependencies. Undeclared dependencies of any class are disqualifying (§5).
 
 ---
 
@@ -171,7 +207,7 @@ A submission is disqualified if:
 
 1. **Training on evaluation data.** Method was exposed to `gold_standard` or `held_out` corpus entries. (Architecturally prevented by sandboxed execution — but if evidence of contamination is found, the result is voided.)
 2. **Non-reproducible.** Governance org cannot reproduce scores within ±2%.
-3. **Method is not self-contained.** Requires runtime access to external services not declared in the submission. (API calls to LLM providers are allowed and expected — undeclared dependencies are not.)
+3. **Undeclared or ineligible dependencies.** The method requires runtime access to external services beyond what its dependency manifest declares, or its effective dependency class is A2 or X (§1.6). Declared Class A1 LLM inference routed through the evaluation gateway is permitted; any other runtime network dependency — and any undeclared dependency of any class — is disqualifying.
 4. **Terms of participation not signed.** All team members must agree to ownership transfer.
 5. **Gaming detected.** Output is optimized for the metric rather than translation quality (caught by community review and/or anti-gaming checks per BENCHMARK_SPEC §9.3).
 
@@ -185,6 +221,7 @@ A submission is disqualified if:
 | §2 community validation | BENCHMARK_SPEC §7 | Human review protocol |
 | §3 sandbox execution | BENCHMARK_SPEC §8.2 | Sovereignty mechanism |
 | §3 ownership transfer | BENCHMARK_SPEC §8.3 | IP transfer terms |
+| §1.6 dependency classes | Method Interface spec; Method Submission Agreement §2.6; BENCHMARK_SPEC §8.6 | Class definitions, admissibility terms, sandbox network policy |
 | §4 cost-adjusted prizes | SCORING_SPEC §6.3 | Cost-adjusted formula |
 
 ---

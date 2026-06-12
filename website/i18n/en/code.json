@@ -327,19 +327,13 @@
     "description": "The title of the tag list page"
   },
   "homepage.hero.subtext": {
-    "message": "An open proving ground for machine translation methods — especially for languages that commercial services will never support."
+    "message": "The independent benchmark for low-resource machine translation — 48 development corpora, a 19-metric scoring inventory, bootstrap confidence intervals, and FST morphological validation for languages that commercial services will never support."
   },
   "homepage.cta.docs": {
     "message": "Read the Docs"
   },
   "homepage.cta.github": {
     "message": "View on GitHub"
-  },
-  "homepage.badge.label": {
-    "message": "Status"
-  },
-  "homepage.badge.value": {
-    "message": "Pre-release — Coming Soon"
   },
   "homepage.pitch.benchmarks.title": {
     "message": "Standardized Benchmarks"
@@ -433,5 +427,12 @@
   },
   "homepage.layout.description": {
     "message": "An open benchmarking platform for machine translation methods, with a focus on languages that commercial services will never support."
+  },
+  "homepage.hero.hub": {
+    "message": "MT Eval Arena is the evaluation engine of the {champollionLink} project."
+  },
+  "theme.docs.relatedRail.title": {
+    "message": "If this interested you →",
+    "description": "Heading of the related-content rail at the bottom of a doc page"
   }
 }

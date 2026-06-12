@@ -2,6 +2,25 @@
 sidebar_position: 5
 title: 'Scoring Specification'
 slug: '/specifications/scoring'
+related:
+  - label: "Statistical Significance Testing"
+    to: /docs/specifications/significance
+    kind: spec
+    note: "When a score difference actually means something"
+  - label: "Benchmark Specification"
+    to: /docs/specifications/benchmark
+    kind: spec
+  - label: "Eval Harness v2.0"
+    to: /docs/specifications/harness
+    kind: spec
+    note: "The tool that computes these metrics"
+  - label: "MT Evaluation Rules"
+    to: /docs/leaderboard/rules
+    kind: doc
+  - label: "Live Leaderboard"
+    to: https://champollion.dev/leaderboard
+    kind: leaderboard
+    note: "These scores, live"
 ---
 
 # Scoring Specification
@@ -34,7 +53,7 @@ No single metric captures translation quality. A translation can have perfect ch
 
 ### 1.4 Extensibility
 
-This metric inventory is not closed. New languages bring new requirements: tone accuracy for tonal languages, diacritical precision for Semitic scripts, syllabary correctness for Cree. The architecture (MetricPlugin protocol, weighted composite with re-normalization) is designed for metrics to be added without breaking existing scores. Language-specific metrics (e.g., CRK's linter and semantic validator) are provided by method plugins — the harness ships with generic behavioral metrics only (code-switching, hallucination, terminology).
+This metric inventory is not closed. New languages bring new requirements: tone accuracy for tonal languages, diacritical precision for Semitic scripts, syllabary correctness for Cree. The architecture (MetricPlugin protocol, weighted composite with re-normalization) is designed for metrics to be added without breaking existing scores. Language-specific metrics (e.g., CRK's linter and semantic validator) are declared on language cards under `evalMetrics` and loaded from `eval_standards/` — the harness ships with generic behavioral metrics only (code-switching, hallucination, terminology).
 
 ### 1.5 Three Dimensions of Evaluation
 
@@ -81,7 +100,7 @@ Surface metrics compare the predicted translation to the reference translation a
 | ID | Metric | Status | Scale | Level | Implementation |
 |----|--------|--------|-------|-------|---------------|
 | `exact_match_rate` | Exact Match | ✅ Implemented | 0.0–1.0 | Both | Binary: does predicted == reference? Corpus rate = matches / total. |
-| `equivalent_match_rate` | Equivalent Match | ⚡ Partial | 0.0–1.0 | Both | Does the predicted output match any accepted variant? For CRK: implemented via the CRK method plugin's `CrkLinterMetric` using deterministic variant-class rules (word order, orthographic, optional particle, lemma synonym, progressive ambiguity). The CRK linter is loaded automatically when the CRK method plugin is active. Generic cross-language implementation requires per-entry `variants[]` in corpus. |
+| `equivalent_match_rate` | Equivalent Match | ⚡ Partial | 0.0–1.0 | Both | Does the predicted output match any accepted variant? For CRK: implemented via the CRK eval standard's `CrkLinterMetric` (in `eval_standards/crk/`) using deterministic variant-class rules (word order, orthographic, optional particle, lemma synonym, progressive ambiguity). Loaded automatically via the CRK language card's `evalMetrics` declaration. Generic cross-language implementation requires per-entry `variants[]` in corpus. |
 | `chrf_plus_plus` | chrF++ | ✅ Implemented | 0–100 | Both | Character n-gram F-score (sacrebleu). Robust to morphological variation. The primary surface metric for agglutinative/polysynthetic languages. Per-entry uses `sentence_chrf`; corpus uses `corpus_chrf`. |
 | `bleu` | BLEU | ✅ Implemented | 0–100 | Corpus | Word-level n-gram precision (sacrebleu). **Excluded from composite** — word-level scoring penalizes morphological variation unfairly. Computed and reported for compatibility with MT literature. |
 | `ter` | Translation Edit Rate | ✅ Implemented | 0–∞ (lower is better) | Both | Minimum edit distance between predicted and reference, normalized by reference length (sacrebleu `corpus_ter`). Computed alongside chrF++ and BLEU. Excluded from composite — correlates with chrF++ so including both would double-count surface similarity. |
@@ -105,12 +124,12 @@ Semantic metrics measure meaning preservation using embeddings or learned models
 
 | ID | Metric | Status | Scale | Level | Implementation |
 |----|--------|--------|-------|-------|---------------|
-| `semantic_score` | Semantic Similarity | ⚡ Partial | 0.0–1.0 | Both | CRK: verdict-weighted score from the CRK method plugin's `CrkSemanticMetric` (proxy). Universal: cosine similarity of sentence embeddings (source + predicted vs source + reference). Model TBD — must support low-resource languages, which rules out most English-centric embedding models. |
+| `semantic_score` | Semantic Similarity | ⚡ Partial | 0.0–1.0 | Both | CRK: verdict-weighted score from the CRK eval standard's `CrkSemanticMetric` (in `eval_standards/crk/`, proxy). Universal: cosine similarity of sentence embeddings (source + predicted vs source + reference). Model TBD — must support low-resource languages, which rules out most English-centric embedding models. |
 | `comet_score` | COMET | ✅ Implemented | ~0.0–1.0 | Both | Learned MT evaluation metric (Unbabel). Trained on human quality judgments. **Excluded from composite** — training data is biased toward high-resource European languages; scores for LRLs are unreliable. Computed when `unbabel-comet` is installed. Reported with a low-resource warning flag. For 35 African languages, the harness auto-selects AfriCOMET (`masakhane/africomet-mtl`) via `resolve_comet_model()`, which has better human-judgment correlation for those languages. |
 
 > **Why COMET is excluded from the composite.** COMET is trained on WMT human evaluation data, which is overwhelmingly high-resource European language pairs. When applied to Plains Cree or other LRLs, the model's internal representations have no exposure to those languages — it's extrapolating from languages with fundamentally different morphological systems. The scores are still directionally useful (higher COMET ≈ more fluent-sounding output in general) but the absolute values are not calibrated. We report COMET for transparency but don't let it influence the composite score until we can validate it against human judgments for each target language.
 
-> **AfriCOMET for African languages.** The harness includes a COMET model registry (`COMET_MODEL_REGISTRY`) that maps language codes to specialized COMET models. For 35 African languages (yor, hau, ibo, amh, swa, etc.), it auto-selects `masakhane/africomet-mtl` — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. This selection happens automatically via `resolve_comet_model()` but can be overridden with `--comet-model`. The registry is extensible: new language→model mappings can be added to `COMET_MODEL_REGISTRY` in `metrics_comet.py`.
+> **AfriCOMET for African languages.** Each language card has a `metricModelSupport` field (see language card spec §9) that declares which specialized COMET models are trained for that language. For 35 African languages (yor, hau, ibo, amh, swa, etc.), the card declares AfriCOMET (`masakhane/africomet-mtl`) — a COMET model fine-tuned on African language MT human judgments by the Masakhane community. The harness auto-selects the recommended model via `resolve_comet_model()` reading from language cards, but this can be overridden with `--comet-model`. Adding new language→model mappings is done by enriching the language card (not editing Python code).
 
 ### 2.4 Behavioral Metrics
 
@@ -224,10 +243,10 @@ For languages that have a GiellaLT finite-state transducer available. Structural
 | `hallucination_rate` | **0.05** | Penalizes fabricated content. Inverted: 0% hallucination = 1.0. |
 | `exact_match_rate` | **0.05** | Lowest weight. Too strict for polysynthetic languages — multiple correct translations exist. Kept as a ceiling check. |
 
-> **Total: 1.00.** When metrics are unavailable, their weights are redistributed proportionally across available metrics. For example, if only `fst_acceptance_rate`, `chrf_plus_plus`, and `exact_match_rate` are available (current state), the effective weights become:
-> - FST: 0.25/0.45 = 0.556
-> - chrF++: 0.15/0.45 = 0.333
-> - EM: 0.05/0.45 = 0.111
+> **Total: 1.00.** When metrics are unavailable, their weights are redistributed proportionally across available metrics. Currently, `morphological_accuracy` (0.15 weight) is the only Profile A metric not yet computed — it requires per-entry gold-standard morphological annotations. With this metric absent, the remaining 8 metrics (total weight 0.85) are each scaled by 1/0.85 ≈ 1.176. For example:
+> - FST: 0.25/0.85 = 0.294
+> - chrF++: 0.15/0.85 = 0.176
+> - semantic: 0.15/0.85 = 0.176
 
 #### Profile B: Languages WITHOUT FST Coverage
 
@@ -243,6 +262,8 @@ For languages without morphological validation tools. Semantic and surface metri
 | `terminology_adherence` | **0.05** | Coached vocabulary compliance. |
 | `hallucination_rate` | **0.05** | Fabricated content detection. |
 | `orthographic_accuracy` | **0.05** | Script-specific correctness fills part of the gap left by absent FST. |
+
+> **Total: 1.00.** `orthographic_accuracy` (0.05 weight) is planned but not yet computed. With it absent, the remaining 7 metrics (total weight 0.95) are scaled by 1/0.95 ≈ 1.053 — a negligible impact on the composite.
 
 > **Note on weight evolution.** These weights are provisional and will be recalibrated as human validation data accumulates. The long-term goal is to derive weights empirically: which automated metrics best predict human quality judgments for each language family?
 
@@ -306,7 +327,7 @@ Cost metrics measure the financial efficiency of a translation method. They are 
 | `reasoning_tokens` | Chain-of-thought tokens | Sum of `usage.completion_tokens_details.reasoning_tokens` (0 for most models) |
 | `cached_tokens` | Provider-cached tokens | Sum of `usage.prompt_tokens_details.cached_tokens` |
 | `total_tokens` | Total tokens consumed | `prompt_tokens + completion_tokens` |
-| `tokens_per_entry` | Average tokens per translation | `total_tokens / entry_count` |
+| `tokens_per_entry` | Average tokens per translation | ✅ `total_tokens / entry_count` |
 
 ### 6.2 Cost Metrics
 
@@ -314,7 +335,7 @@ Cost metrics measure the financial efficiency of a translation method. They are 
 |----|--------|-------------|----------|
 | `total_cost_usd` | Total run cost | Provider-reported pricing × token counts | "How much did this benchmark cost?" |
 | `cost_per_entry_usd` | Cost per corpus entry | `total_cost_usd / entry_count` | Comparing methods on the same corpus |
-| `cost_per_1k_tokens` | Cost per 1,000 tokens | `total_cost_usd / total_tokens × 1000` | Universal LLM efficiency — comparable across corpora |
+| `cost_per_1k_tokens` | Cost per 1,000 tokens | ✅ `total_cost_usd / total_tokens × 1000` | Universal LLM efficiency — comparable across corpora |
 | `cost_per_source_char` | Cost per source character | `total_cost_usd / total_source_chars` | Comparable across languages with different tokenization |
 
 > **Why multiple cost metrics?** An "entry" varies in length — a 3-word phrase costs less than a paragraph. `cost_per_entry_usd` is useful for comparing methods on the *same* corpus (same entries = same lengths = fair comparison). `cost_per_1k_tokens` is the standard LLM efficiency metric, comparable *across* corpora. `cost_per_source_char` normalizes for tokenization differences — the same sentence may tokenize into different numbers of tokens depending on the model's vocabulary.
@@ -386,8 +407,8 @@ This section defines the hierarchical structure of the `scores` block in a run c
     // §2.1 Surface metrics
     "exact_match_rate":       0.6613,       // 0.0–1.0
     "exact_matches":          41,           // count
-    "equivalent_match_rate":  0.7258,       // ⚡ partial (CRK: CrkLinterMetric)
-    "equivalent_matches":     45,           // ⚡ partial (CRK: CrkLinterMetric)
+    "equivalent_match_rate":  0.7258,       // ⚡ partial (CRK: eval_standards/crk CrkLinterMetric)
+    "equivalent_matches":     45,           // ⚡ partial (CRK: eval_standards/crk CrkLinterMetric)
     "chrf_plus_plus":         80.65,        // 0–100 (sacrebleu native scale)
     "bleu":                   54.78,        // 0–100, NOT in composite
     "ter":                    42.3,         // ✅ implemented, 0–∞ (lower=better)
@@ -400,7 +421,7 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "orthographic_accuracy":  null,         // 🔲 planned
 
     // §2.3 Semantic metrics
-    "semantic_score":         0.6842,       // ⚡ partial (CRK: CrkSemanticMetric)
+    "semantic_score":         0.6842,       // ⚡ partial (CRK: eval_standards/crk CrkSemanticMetric)
     "comet_score":            null,         // nullable, NOT in composite
     "comet_model":            "",           // model ID used for COMET
 
@@ -414,6 +435,13 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "composite":              0.8988,       // 0.0–1.0
     "quality_tier":           "fluent",     // §5 tier label
     "cost_adjusted":          null,         // §6.3 secondary ranking
+
+    // §7 Speed metrics (merged into scores block)
+    "tokens_per_second":      4462.5,       // ✅ total_tokens / elapsed
+    "entries_per_minute":     82.30,        // ✅ entry_count / (elapsed/60)
+    "avg_latency_seconds":    0.234,
+    "median_latency_seconds": 0.190,
+    "p95_latency_seconds":    0.415,
 
     // §8.1 Confidence intervals
     "confidence_intervals": {
@@ -436,32 +464,21 @@ This section defines the hierarchical structure of the `scores` block in a run c
     "errors":                 0
   },
 
-  "cost": {
-    "total_cost_usd":         1.7114,
-    "cost_per_entry_usd":     0.027603,
-    "cost_per_1k_tokens":     0.00848,
-    "cost_per_source_char":   null          // 🔲 needs source char counting
-  },
-
-  "speed": {
-    "elapsed_seconds":        45.2,
-    "avg_latency_seconds":    0.234,
-    "median_latency_seconds": 0.190,
-    "p95_latency_seconds":    0.415,
-    "tokens_per_second":      4462.5,       // ✅ total_tokens / elapsed
-    "entries_per_minute":     82.30         // ✅ entry_count / (elapsed/60)
-  },
-
-  "tokens": {
+  "totals": {
+    // §6.1 Token metrics
     "prompt_tokens":          13985,
     "completion_tokens":      187822,
     "reasoning_tokens":       175726,
     "cached_tokens":          0,
-    "total_tokens":           201807,       // prompt + completion
-    "tokens_per_entry":       3255          // total / entry_count
+    // §6.2 Cost metrics
+    "total_cost_usd":         1.7114,
+    "cost_per_entry_usd":     0.027603,
+    "cost_per_source_char":   null          // 🔲 needs source char counting
   }
 }
 ```
+
+> **Schema history.** Earlier spec drafts proposed separate `cost`, `speed`, and `tokens` blocks. These were merged into `scores` and `totals` respectively for simplicity. Speed metrics (`tokens_per_second`, `entries_per_minute`, latencies) live in `scores`; token counts and cost figures live in `totals`.
 
 ### 9.1 Schema–Database Mapping
 
@@ -476,14 +493,25 @@ The run card JSON is stored in full as a `jsonb` column in Supabase. Key metrics
 | `scores.fst_acceptance_rate` | `fst_acceptance_rate` | `real` | — |
 | `scores.bleu` | `corpus_bleu` | `real` | — |
 | `scores.comet_score` | `comet_score` | `real` | — |
-| `cost.total_cost_usd` | `total_cost_usd` | `real` | — |
-| `cost.cost_per_1k_tokens` | `cost_per_1k_tokens` | `real` | — |
-| `speed.avg_latency_seconds` | `avg_latency_seconds` | `real` | — |
+| `totals.total_cost_usd` | `total_cost_usd` | `real` | — |
+| `totals.cost_per_entry_usd` | `cost_per_entry_usd` | `real` | — |
+| `totals.cost_per_source_char` | `cost_per_source_char` | `real` | — |
+| `scores.avg_latency_seconds` | `avg_latency_seconds` | `real` | — |
 | `model_slug` | `model_slug` | `text` | `idx_model` |
 | `condition` | `condition` | `text` | — |
 | `dataset.id` | `dataset_id` | `text` | `idx_leaderboard` |
 | `dataset.language_pair` | `language_pair` | `text` | — |
 | `fingerprint.hash` | `fingerprint_hash` | `text` | `idx_fingerprint` |
+| `scores.equivalent_match_rate` | `equivalent_match_rate` | `real` | — |
+| `scores.semantic_score` | `semantic_score` | `real` | — |
+| `scores.ter` | `ter` | `real` | — |
+| `scores.length_ratio` | `length_ratio` | `real` | — |
+| `scores.code_switching_rate` | `code_switching_rate` | `real` | — |
+| `scores.hallucination_rate` | `hallucination_rate` | `real` | — |
+| `scores.terminology_adherence` | `terminology_adherence` | `real` | — |
+| `scores.tokens_per_second` | `tokens_per_second` | `real` | — |
+| `scores.entries_per_minute` | `entries_per_minute` | `real` | — |
+| `elapsed_seconds` | `elapsed_seconds` | `real` | — |
 | *(full card)* | `run_card` | `jsonb` | — |
 
 When new metrics are implemented, the corresponding column should be added via a numbered migration in `arena/migrations/`.
@@ -541,14 +569,13 @@ The **LYSS** framework (Linguistically-informed Yield & Structural Scoring) prov
 
 > **Validation status: 🔶 Engineering heuristic.** LYSS metrics have NOT been validated against human quality judgments. They are designed from linguistic principles (FSTs, dictionaries, grammar rules built by linguists at UAlberta ALTLab), but the correlation between LYSS scores and actual translation quality has not been measured. See the [Speaker Validation Protocol](/docs/specifications/speaker-validation) for the required validation experiments.
 
-| Language | Plugin | LYSS Component | Metric Key | Notes |
-|----------|--------|----------------|------------|-------|
-| CRK (Plains Cree) | `CrkLinterMetric` | **LYSS-eq** | `equivalent_match_rate` | Deterministic variant-class rules: word order, orthographic, optional particle, lemma synonym, progressive ambiguity, inclusive/exclusive. Produces per-entry `lint_verdict` (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
-| CRK | `CrkFSTMetric` | **LYSS-fst** | `fst_acceptance_rate` | Superseded by `GiellaLTFSTMetric` but produces identical results. |
-| CRK | `CrkSemanticMetric` | **LYSS-sem** | `semantic_score` | Deterministic: FST lemma extraction + dictionary glosses + spaCy content-word overlap. Produces verdicts (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
-| GiellaLT langs | `GiellaLTFSTMetric` | **LYSS-fst** | `fst_acceptance_rate` | Generic: works for CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — any language with a `.hfstol` analyzer. |
+| Language | Plugin | Location | LYSS Component | Metric Key | Notes |
+|----------|--------|----------|----------------|------------|-------|
+| CRK (Plains Cree) | `CrkLinterMetric` | `eval_standards/crk/metrics.py` | **LYSS-eq** | `equivalent_match_rate` | Deterministic variant-class rules: word order, orthographic, optional particle, lemma synonym, progressive ambiguity, inclusive/exclusive. Produces per-entry `lint_verdict` (EXACT/EQUIVALENT/MISS/NO_OUTPUT). |
+| CRK | `CrkSemanticMetric` | `eval_standards/crk/metrics.py` | **LYSS-sem** | `semantic_score` | Deterministic: FST lemma extraction + dictionary glosses + spaCy content-word overlap. Produces verdicts (EXACT_MATCH/VALID/GRAMMAR_ISSUES/PARTIAL/INCOMPLETE/WRONG/NO_OUTPUT). |
+| GiellaLT langs | `GiellaLTFSTMetric` | `plugins/giellalt_fst.py` | **LYSS-fst** | `fst_acceptance_rate` | Generic: works for CRK, SME, SMA, SMJ, SMN, SMS, FIN, NOB, IKU — any language with a `.hfstol` analyzer. |
 
-When a language has a specific implementation, it takes precedence over the generic. The generic implementation is the fallback for languages without specialized tooling. Future LYSS challenges will calibrate per-language overrides as new language communities are onboarded.
+> **Architecture note (June 2026).** Language-specific LYSS metrics are now declared on the language card under `evalMetrics` and loaded from `eval_standards/<lang>/` by `plugin_discovery.py`. They are **evaluation standards** (referee), not method plugin metrics (contestant). This means any translation method targeting CRK is automatically scored by LYSS — no method-specific configuration needed. `CrkFSTMetric` was removed; its functionality is fully covered by the generic `GiellaLTFSTMetric`.
 
 ## Appendix C: Metrics Under Consideration
 

@@ -1,6 +1,20 @@
 ---
 sidebar_position: 2
 title: "Cookbook: Coached LLM Prompting"
+related:
+  - label: "Cookbook: Few-Shot Prompting"
+    to: /docs/tutorials/few-shot-prompting
+    kind: cookbook
+  - label: "Cookbook: Fine-Tuned Model"
+    to: /docs/tutorials/fine-tuned-model
+    kind: cookbook
+  - label: "Coaching Data"
+    to: https://champollion.dev/docs/concepts/coaching-data
+    kind: champollion
+    note: "How coaching data ships to production"
+  - label: "Submit a Method"
+    to: /docs/getting-started/submit-a-method
+    kind: guide
 ---
 
 # Coached LLM Prompting

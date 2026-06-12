@@ -115,23 +115,39 @@ def load_system_prompt(
     """
     version = config.prompt_version
 
-    # Built-in: naive
-    if version == "naive":
-        return build_naive_prompt(config)
-
-    # Built-in: custom file (legacy — use coaching_file instead)
-    if version == "custom":
-        path = Path(config.custom_prompt_path or config.coaching_file)
-        return path.read_text(encoding="utf-8")
-
-    # Coaching file takes precedence over prompt_version
-    # (coaching_file is the modern replacement for custom_prompt_path)
-    if config.coaching_file and version == "naive":
+    # Coaching file takes precedence over prompt_version.
+    # This is the modern replacement for custom_prompt_path — if a user
+    # passes --coaching-file, their coaching prompt should be used even
+    # if --prompt is left at the default "naive".
+    if config.coaching_file:
         path = Path(config.coaching_file)
         if path.exists():
             return path.read_text(encoding="utf-8")
         raise ValueError(
             f"Coaching file not found: {config.coaching_file}"
+        )
+
+    # Built-in: naive (only used if no coaching file is provided)
+    if version == "naive":
+        return build_naive_prompt(config)
+
+    # Built-in: coached — the auto-derived label when --coaching-file or
+    # --coaching is passed with the default --prompt. The coaching branch
+    # above already returned the prompt text; reaching here means no
+    # coaching source is configured.
+    if version == "coached":
+        raise ValueError(
+            "prompt_version='coached' requires --coaching-file or --coaching."
+        )
+
+    # Built-in: custom file (legacy — use coaching_file instead)
+    if version == "custom":
+        coaching_path = config.custom_prompt_path
+        if coaching_path:
+            return Path(coaching_path).read_text(encoding="utf-8")
+        raise ValueError(
+            "prompt_version='custom' requires custom_prompt_path or "
+            "--coaching-file to be set."
         )
 
     # Plugin providers
@@ -185,7 +201,7 @@ async def execute_run(
         The complete RunLog dict (also written to disk).
     """
     # --- Validate ---
-    available_prompts = ["naive", "custom"]
+    available_prompts = ["naive", "custom", "coached"]
     if prompt_providers:
         for pp in prompt_providers:
             available_prompts.extend(pp.list_versions())
@@ -353,7 +369,7 @@ async def execute_run(
             coaching_text = Path(config.coaching_file).read_text(encoding="utf-8")
             coaching_sha = hashlib.sha256(coaching_text.encode("utf-8")).hexdigest()
         except FileNotFoundError:
-            pass  # Already loaded via system_prompt path
+            print(f"  ⚠ Coaching file not found: {config.coaching_file}")
 
     run_id = _build_run_id(config)
     run_log = build_run_log(
@@ -398,6 +414,7 @@ async def execute_run(
     metric_plugins = discover_metric_plugins(
         run_log.get("config", {}),
         skip_fst=True,
+        method_dir=config.method_path,
     )
 
     report_path = output_path.with_name(output_path.stem + "_report.json")
@@ -405,7 +422,26 @@ async def execute_run(
         run_log,
         output_path=report_path,
         metric_plugins=metric_plugins or None,
+        source_log_path=str(output_path.resolve()),
     )
+
+    # --- Auto-print run card ---
+    # Show a human-readable summary immediately after scoring so users
+    # don't need to parse JSON or run 'mt-eval card' separately.
+    try:
+        from mt_eval_harness.run_card import render_run_card
+        print(render_run_card(output_path, report_path))
+    except Exception as e:
+        # Card rendering should never block the run — log and move on
+        print(f"  ⚠️  Failed to render run card: {e}")
+
+    # --- Offer to publish ---
+    try:
+        from mt_eval_harness.cli import _prompt_publish
+        _prompt_publish(report_path)
+    except Exception:
+        # Publishing is optional — never block the run
+        pass
 
     return run_log
 
@@ -442,6 +478,7 @@ def _build_run_id(config: RunConfig) -> str:
 
 async def execute_multi_run(
     configs: list[RunConfig],
+    prompt_providers: dict | None = None,
 ) -> list[dict | None]:
     """Execute multiple model runs in parallel.
 
@@ -465,6 +502,8 @@ async def execute_multi_run(
         configs: List of RunConfig objects, typically one per model.
                  All other config fields (corpus, batch_size, etc.)
                  can vary per model if needed.
+        prompt_providers: Optional prompt provider registry (for champollion
+                          prompts). Passed through to each execute_run().
 
     Returns:
         List of RunLog dicts, one per config. Failed runs return None.
@@ -472,13 +511,17 @@ async def execute_multi_run(
     """
     async def _safe_run(config: RunConfig) -> dict | None:
         """Execute a single model, catching exceptions to avoid
-        killing the entire parallel batch on one failure."""
+        killing the entire parallel batch on one failure.
+
+        Returns a RunLog dict on success, or a dict with an 'error'
+        key on failure (so callers can distinguish from None).
+        """
         try:
-            return await execute_run(config)
+            return await execute_run(config, prompt_providers=prompt_providers)
         except Exception as exc:
             model_label = config.model_id
             print(f"\n  ERROR [{model_label}]: {exc}")
-            return None
+            return {"error": str(exc), "model_id": model_label}
 
     print(f"\n  Launching {len(configs)} models in parallel...")
     return await asyncio.gather(*[_safe_run(c) for c in configs])

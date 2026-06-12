@@ -1,6 +1,20 @@
 ---
 sidebar_position: 2
 title: FAQ
+related:
+  - label: "How It Works"
+    to: /docs/how-it-works
+    kind: doc
+  - label: "What Counts as a Language Here?"
+    to: /docs/context/what-counts-as-a-language
+    kind: doc
+  - label: "MT Evaluation Rules"
+    to: /docs/leaderboard/rules
+    kind: doc
+  - label: "Glossary"
+    to: https://champollion.dev/glossary
+    kind: glossary
+    note: "Plain-language definitions for every technical term"
 ---
 
 # Frequently Asked Questions

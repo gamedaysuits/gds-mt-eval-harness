@@ -22,7 +22,7 @@ async def main():
         corpus_path=str(corpus_path),
         source_field="english",        # Which field is the source text
         target_field="spanish",         # Which field is the reference translation
-        model="gemini-3.1-pro",         # Model to use
+        model="gemini-pro",              # Model to use (alias for google/gemini-3.1-pro-preview)
         prompt_version="naive",         # Built-in minimal prompt
         dataset="all",                  # Use all entries
         batch_size=1,                   # One entry per API call

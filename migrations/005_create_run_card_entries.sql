@@ -70,8 +70,8 @@ CREATE POLICY "Public read" ON run_card_entries
 
 -- RLS: authenticated insert (must be logged in to publish results)
 CREATE POLICY "Authenticated insert" ON run_card_entries
-  FOR INSERT WITH CHECK (true);
+  FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
 
 -- RLS: authenticated update (for idempotent re-publishes)
 CREATE POLICY "Authenticated update" ON run_card_entries
-  FOR UPDATE USING (true);
+  FOR UPDATE USING (auth.uid() IS NOT NULL);

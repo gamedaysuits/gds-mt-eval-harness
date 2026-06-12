@@ -89,24 +89,26 @@ class DoublePassCompliancePlugin:
 
     def aggregate(self, entry_results: list[dict]) -> dict:
         """Compute corpus-level structural compliance aggregates."""
-        total = len(entry_results)
+        # Filter out entries that errored during compute()
+        valid_results = [r for r in entry_results if "error" not in r]
+        total = len(valid_results)
         if not total:
             return {}
 
-        avg_raw_var = sum(r["raw_var_integrity"] for r in entry_results) / total
-        avg_raw_quote = sum(r["raw_quote_compliance"] for r in entry_results) / total
-        avg_raw_casing = sum(r["raw_casing_compliance"] for r in entry_results) / total
-        avg_raw_compliance = sum(r["raw_compliance_index"] for r in entry_results) / total
+        avg_raw_var = sum(r["raw_var_integrity"] for r in valid_results) / total
+        avg_raw_quote = sum(r["raw_quote_compliance"] for r in valid_results) / total
+        avg_raw_casing = sum(r["raw_casing_compliance"] for r in valid_results) / total
+        avg_raw_compliance = sum(r["raw_compliance_index"] for r in valid_results) / total
 
-        avg_final_var = sum(r["final_var_integrity"] for r in entry_results) / total
-        avg_final_quote = sum(r["final_quote_compliance"] for r in entry_results) / total
-        avg_final_casing = sum(r["final_casing_compliance"] for r in entry_results) / total
-        avg_final_compliance = sum(r["final_compliance_index"] for r in entry_results) / total
+        avg_final_var = sum(r["final_var_integrity"] for r in valid_results) / total
+        avg_final_quote = sum(r["final_quote_compliance"] for r in valid_results) / total
+        avg_final_casing = sum(r["final_casing_compliance"] for r in valid_results) / total
+        avg_final_compliance = sum(r["final_compliance_index"] for r in valid_results) / total
 
-        repaired_vars = sum(1 for r in entry_results if r["repair_delta_vars"] > 0)
-        repaired_quotes = sum(1 for r in entry_results if r["repair_delta_quotes"] > 0)
-        repaired_casing = sum(1 for r in entry_results if r["repair_delta_casing"] > 0)
-        total_repaired = sum(1 for r in entry_results if r["repaired"])
+        repaired_vars = sum(1 for r in valid_results if r["repair_delta_vars"] > 0)
+        repaired_quotes = sum(1 for r in valid_results if r["repair_delta_quotes"] > 0)
+        repaired_casing = sum(1 for r in valid_results if r["repair_delta_casing"] > 0)
+        total_repaired = sum(1 for r in valid_results if r["repaired"])
 
         return {
             "raw_avg_variable_integrity": round(avg_raw_var, 4),

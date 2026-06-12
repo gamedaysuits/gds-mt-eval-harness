@@ -2,6 +2,21 @@
 sidebar_position: 6
 title: "Cookbook: FST-Gated Translation Pipeline"
 description: "Build a decomposition pipeline with morphological validation and benchmark it on the Arena leaderboard."
+related:
+  - label: "Cookbook: Coached LLM Prompting"
+    to: /docs/tutorials/coached-llm-prompting
+    kind: cookbook
+  - label: "Cookbook: Dictionary-Augmented LLM"
+    to: /docs/tutorials/dictionary-augmented-llm
+    kind: cookbook
+  - label: "Method Interface"
+    to: /docs/specifications/methods
+    kind: spec
+    note: "Wrap the pipeline for submission"
+  - label: "FST"
+    to: https://champollion.dev/glossary#term-fst
+    kind: glossary
+    note: "Finite-state transducer, in plain language"
 ---
 
 # Cookbook: FST-Gated Translation Pipeline

@@ -2,6 +2,21 @@
 sidebar_position: 7
 title: 'Statistical Significance Testing'
 slug: '/specifications/significance'
+related:
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+    note: "The scores these tests protect"
+  - label: "MT Evaluation Rules"
+    to: /docs/leaderboard/rules
+    kind: doc
+  - label: "Benchmark Specification"
+    to: /docs/specifications/benchmark
+    kind: spec
+  - label: "Live Leaderboard"
+    to: https://champollion.dev/leaderboard
+    kind: leaderboard
+    note: "Where significance gates what ranks"
 ---
 
 # Statistical Significance Testing — Implementation Spec

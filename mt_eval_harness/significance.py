@@ -192,7 +192,8 @@ def fst_acceptance_rate(entries: list[dict]) -> float:
     """Compute FST acceptance rate from a list of entry dicts.
 
     Each entry may have FST validity data under plugin_metrics, stored
-    under 'giellalt_fst_validity' (current) or 'crk_fst_validity' (legacy).
+    under 'giellalt_fst_validity'. All FST languages use the same
+    GiellaLTFSTMetric key — there is no language-specific fallback.
     The value is a float 0.0–1.0 representing the proportion of FST-valid
     words in that entry's output. We average these across entries that have
     FST data and are not errors.
@@ -207,8 +208,7 @@ def fst_acceptance_rate(entries: list[dict]) -> float:
         plugin_metrics = entry.get("plugin_metrics", {})
         if not isinstance(plugin_metrics, dict):
             continue
-        # Check both current and legacy FST plugin keys
-        fst_data = plugin_metrics.get("giellalt_fst_validity") or plugin_metrics.get("crk_fst_validity", {})
+        fst_data = plugin_metrics.get("giellalt_fst_validity", {})
         if not isinstance(fst_data, dict):
             continue
         fst_val = fst_data.get("fst_validity")
@@ -246,17 +246,13 @@ def composite_score(entries: list[dict]) -> float:
     fst_val = fst_acceptance_rate(non_error)
 
     # Determine whether FST data is present in this sample
-    # Check both current (giellalt_fst_validity) and legacy (crk_fst_validity) keys
     has_fst = any(
         isinstance(
-            e.get("plugin_metrics", {}).get("giellalt_fst_validity")
-            or e.get("plugin_metrics", {}).get("crk_fst_validity", {}),
+            e.get("plugin_metrics", {}).get("giellalt_fst_validity", {}),
             dict,
         )
         and isinstance(
-            (e.get("plugin_metrics", {}).get("giellalt_fst_validity")
-             or e.get("plugin_metrics", {}).get("crk_fst_validity", {})
-             ).get("fst_validity"),
+            e.get("plugin_metrics", {}).get("giellalt_fst_validity", {}).get("fst_validity"),
             (int, float),
         )
         for e in non_error

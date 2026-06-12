@@ -43,6 +43,31 @@ const config = {
 
   onBrokenLinks: 'warn',
 
+  // Preload the self-hosted variable fonts used above the fold
+  // (Fraunces display serif + Inter UI — see static/fonts/LICENSES.md)
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/fraunces-latin-opsz-normal.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/inter-latin-opsz-normal.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
+  ],
+
   // Enable Mermaid diagrams in Markdown
   markdown: {
     mermaid: true,
@@ -81,6 +106,13 @@ const config = {
 
       navbar: {
         title: 'MT Eval Arena',
+        logo: {
+          alt: 'MT Eval Arena — rosetta stela mark, shared with champollion.dev',
+          src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
+          width: 28,
+          height: 28,
+        },
         items: [
           {
             type: 'docSidebar',
@@ -95,7 +127,7 @@ const config = {
           },
           {
             href: 'https://champollion.dev',
-            label: 'Champollion',
+            label: 'Champollion ↗',
             position: 'right',
           },
           {

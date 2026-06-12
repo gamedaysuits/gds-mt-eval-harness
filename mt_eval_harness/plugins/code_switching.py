@@ -203,7 +203,13 @@ class CodeSwitchingPlugin:
             ['Cyrillic'] for Russian). If None, auto-detected from the first
             batch of entries.
         source_script: Expected script of the source language. Defaults to
-            'Latin' (English is the most common source).
+            'Latin' (English is the most common source). If None, resolved
+            from source_lang's language card.
+        source_lang: ISO 639-3 code (or alias) for the source language.
+            When provided and source_script is None, the plugin reads the
+            language card's ``scriptUnicodeName`` field (e.g., 'Latin',
+            'Arabic', 'Cyrillic') to auto-detect the source script.
+            This avoids hardcoding Latin for non-English source languages.
     """
 
     name = "code_switching"
@@ -211,11 +217,22 @@ class CodeSwitchingPlugin:
     def __init__(
         self,
         target_scripts: list[str] | None = None,
-        source_script: str = "Latin",
+        source_script: str | None = None,
+        source_lang: str | None = None,
     ):
         self.target_scripts = target_scripts
-        self.source_script = source_script
         self._auto_detected = False
+
+        # Resolve source script from language card if not explicitly provided.
+        # Cards store scriptUnicodeName (e.g., 'Latin', 'Arabic', 'Cyrillic')
+        # which matches the Unicode script names used by _dominant_script().
+        if source_script is None and source_lang:
+            from mt_eval_harness.language_cards import get_card
+            card = get_card(source_lang)
+            if card and card.get("scriptUnicodeName"):
+                source_script = card["scriptUnicodeName"]
+
+        self.source_script = source_script or "Latin"
 
     def compute(self, entry: dict) -> dict:
         """Compute code-switching metrics for a single entry.

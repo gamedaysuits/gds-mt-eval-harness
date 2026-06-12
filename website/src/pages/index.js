@@ -7,9 +7,9 @@ import styles from './index.module.css';
 /**
  * Landing page for mtevalarena.org
  *
- * Intentionally minimal — "coming soon" with the key pitch points
- * and links to the docs that already exist. All user-facing strings
- * are wrapped with <Translate> for i18n support.
+ * Intentionally minimal — the key pitch points and links to the docs
+ * that already exist. All user-facing strings are wrapped with
+ * <Translate> for i18n support.
  */
 
 function HeroSection() {
@@ -22,8 +22,10 @@ function HeroSection() {
         <p className={styles.heroTagline}>{siteConfig.tagline}</p>
         <p className={styles.heroSubtext}>
           <Translate id="homepage.hero.subtext">
-            An open proving ground for machine translation methods — especially
-            for languages that commercial services will never support.
+            The independent benchmark for low-resource machine translation —
+            48 development corpora, a 19-metric scoring inventory, bootstrap
+            confidence intervals, and FST morphological validation for
+            languages that commercial services will never support.
           </Translate>
         </p>
 
@@ -41,14 +43,24 @@ function HeroSection() {
           </a>
         </div>
 
-        <div className={styles.badge}>
-          <span className={styles.badgeLabel}>
-            <Translate id="homepage.badge.label">Status</Translate>
-          </span>
-          <span className={styles.badgeValue}>
-            <Translate id="homepage.badge.value">Pre-release — Coming Soon</Translate>
-          </span>
-        </div>
+        <p className={styles.heroHub}>
+          <Translate
+            id="homepage.hero.hub"
+            values={{
+              champollionLink: (
+                <a
+                  href="https://champollion.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Champollion
+                </a>
+              ),
+            }}
+          >
+            {'MT Eval Arena is the evaluation engine of the {champollionLink} project.'}
+          </Translate>
+        </p>
       </div>
     </header>
   );

@@ -16,6 +16,7 @@ Security model:
 from __future__ import annotations
 
 import base64
+import logging
 import hashlib
 import http.server
 import json
@@ -26,17 +27,35 @@ import urllib.request
 import webbrowser
 from pathlib import Path
 
+logger = logging.getLogger(__name__)
+
 # ---------------------------------------------------------------------------
 # Supabase public config
 # These are safe to embed — identical to the values in the website frontend.
 # The anon key only grants read access; writes require a valid user JWT.
+#
+# Both values are env-overridable so the harness can publish to a
+# non-production Supabase project (e.g. a staging branch) without code
+# changes. Without the env vars, behavior is identical to before:
+#   MT_EVAL_SUPABASE_URL       — overrides the project URL
+#   MT_EVAL_SUPABASE_ANON_KEY  — overrides the anon/publishable key
 # ---------------------------------------------------------------------------
 
-SUPABASE_URL = "https://sjdomynysdljkbemupqa.supabase.co"
-SUPABASE_ANON_KEY = "sb_publishable_bV6CFNFnzxhQI0wlBx2J0A_5Vm5gFBp"
+SUPABASE_URL = os.environ.get(
+    "MT_EVAL_SUPABASE_URL",
+    "https://sjdomynysdljkbemupqa.supabase.co",
+)
+SUPABASE_ANON_KEY = os.environ.get(
+    "MT_EVAL_SUPABASE_ANON_KEY",
+    "sb_publishable_bV6CFNFnzxhQI0wlBx2J0A_5Vm5gFBp",
+)
 
-# Where we persist the user's refresh token between sessions
-TOKEN_PATH = Path.home() / ".mt-eval" / "auth.json"
+# Where we persist the user's refresh token between sessions.
+# Env-overridable (MT_EVAL_TOKEN_PATH) so scripted/staging publishes can
+# use a separate credential file without touching the default session.
+TOKEN_PATH = Path(
+    os.environ.get("MT_EVAL_TOKEN_PATH", str(Path.home() / ".mt-eval" / "auth.json"))
+)
 
 
 # ---------------------------------------------------------------------------
@@ -184,9 +203,10 @@ def get_session() -> dict:
             identity = _extract_identity(user)
             print(f"  Authenticated as {identity}")
             return session
-        except Exception:
-            # Refresh token expired or revoked — need fresh login
-            pass
+        except Exception as e:
+            logger.debug(
+                "Token refresh failed (will prompt for login): %s", e
+            )
 
     return _interactive_login()
 

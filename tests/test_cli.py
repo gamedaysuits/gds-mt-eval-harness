@@ -13,6 +13,7 @@ Covers:
 
 import sys
 from io import StringIO
+from pathlib import Path
 from unittest.mock import patch, MagicMock
 
 import pytest
@@ -76,6 +77,43 @@ class TestParserConstruction:
             "--locales", "fr",
         ])
         assert args.command == "export"
+
+
+# ---------------------------------------------------------------------------
+# Publish argument parsing
+# ---------------------------------------------------------------------------
+
+class TestPublishArgParsing:
+    """Verify publish arguments parse correctly (incl. non-interactive --yes)."""
+
+    def test_basic_publish(self):
+        parser = build_parser()
+        args = parser.parse_args(["publish", "report.json"])
+        assert args.command == "publish"
+        assert args.report_path == "report.json"
+
+    def test_yes_defaults_false(self):
+        """Prompts (wizard offer + confirm) remain the default behavior."""
+        parser = build_parser()
+        args = parser.parse_args(["publish", "report.json"])
+        assert args.yes is False
+
+    def test_yes_long_flag(self):
+        parser = build_parser()
+        args = parser.parse_args(["publish", "report.json", "--yes"])
+        assert args.yes is True
+
+    def test_yes_short_flag(self):
+        parser = build_parser()
+        args = parser.parse_args(["publish", "report.json", "-y"])
+        assert args.yes is True
+
+    def test_method_card_option(self):
+        parser = build_parser()
+        args = parser.parse_args(
+            ["publish", "report.json", "--method-card", "mc.json"]
+        )
+        assert args.method_card == "mc.json"
 
 
 # ---------------------------------------------------------------------------
@@ -320,6 +358,62 @@ class TestArgsToConfig:
 
         assert config.prompt_version == "custom"
         assert config.custom_prompt_path == "p.txt"
+
+    def test_coaching_file_derives_coached_condition(self):
+        # --coaching-file with the default -p relabels the condition so
+        # publish doesn't record a coached run as "naive".
+        parser = build_parser()
+        args = parser.parse_args(
+            ["run", "--corpus", "x.json", "--coaching-file", "c.txt"]
+        )
+        config = args_to_config(args)
+
+        assert config.prompt_version == "coached"
+        assert config.coaching_file == "c.txt"
+
+    def test_inline_coaching_derives_coached_condition(self):
+        parser = build_parser()
+        args = parser.parse_args(
+            ["run", "--corpus", "x.json", "--coaching", "Be formal."]
+        )
+        config = args_to_config(args)
+
+        try:
+            assert config.prompt_version == "coached"
+            assert config.coaching_file is not None
+        finally:
+            Path(config.coaching_file).unlink(missing_ok=True)
+
+    def test_custom_prompt_alias_derives_coached_condition(self):
+        # Deprecated --custom-prompt without -p flows through coaching_file
+        # and gets the same coached label.
+        parser = build_parser()
+        args = parser.parse_args(
+            ["run", "--corpus", "x.json", "--custom-prompt", "p.txt"]
+        )
+        config = args_to_config(args)
+
+        assert config.prompt_version == "coached"
+        assert config.coaching_file == "p.txt"
+
+    def test_explicit_prompt_wins_over_coached_derivation(self):
+        parser = build_parser()
+        args = parser.parse_args(
+            ["run", "--corpus", "x.json", "-p", "champollion",
+             "--coaching-file", "c.txt"]
+        )
+        config = args_to_config(args)
+
+        assert config.prompt_version == "champollion"
+        assert config.coaching_file == "c.txt"
+
+    def test_no_coaching_keeps_naive_default(self):
+        parser = build_parser()
+        args = parser.parse_args(["run", "--corpus", "x.json"])
+        config = args_to_config(args)
+
+        assert config.prompt_version == "naive"
+        assert config.coaching_file is None
 
 
 # ---------------------------------------------------------------------------

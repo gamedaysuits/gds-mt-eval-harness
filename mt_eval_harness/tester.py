@@ -153,6 +153,7 @@ def analyze_run(
         metric_plugins=metric_plugins,
         compute_ci=compute_ci,
         n_bootstrap_ci=n_bootstrap_ci,
+        source_log_path=str(log_path.resolve()),
     )
 
 
@@ -162,6 +163,7 @@ def analyze_run_log(
     metric_plugins: list | None = None,
     compute_ci: bool = True,
     n_bootstrap_ci: int = 1000,
+    source_log_path: str | None = None,
 ) -> dict:
     """Analyze an in-memory RunLog dict and produce a TestReport.
 
@@ -174,6 +176,9 @@ def analyze_run_log(
         metric_plugins: Optional list of MetricPlugin instances.
         compute_ci: If True, compute bootstrap 95% CIs. Default: True.
         n_bootstrap_ci: Number of bootstrap iterations for CI. Default: 1000.
+        source_log_path: Path to the source RunLog file. Stored in the
+            TestReport so publish.py can find the RunLog without
+            relying on filename inference.
 
     Returns:
         Complete TestReport dict.
@@ -184,6 +189,7 @@ def analyze_run_log(
         metric_plugins=metric_plugins,
         compute_ci=compute_ci,
         n_bootstrap_ci=n_bootstrap_ci,
+        source_log_path=source_log_path,
     )
 
 
@@ -193,6 +199,7 @@ def _analyze(
     metric_plugins: list | None = None,
     compute_ci: bool = True,
     n_bootstrap_ci: int = 1000,
+    source_log_path: str | None = None,
 ) -> dict:
     """Core analysis logic shared by file-based and in-memory entry points."""
     results = run_log.get("results", [])
@@ -227,7 +234,7 @@ def _analyze(
                     # Avoid adding it twice
                     if not any(isinstance(p, DoublePassCompliancePlugin) for p in plugins):
                         plugins.append(DoublePassCompliancePlugin(card))
-        except Exception as e:
+        except (ImportError, FileNotFoundError, KeyError, TypeError) as e:
             print(f"  WARNING: Failed to auto-load compliance plugin: {e}")
 
     if plugins:
@@ -271,8 +278,9 @@ def _analyze(
                 em.chrf_score = chrf_metric.corpus_score(
                     [em.predicted], [[em.expected]]
                 ).score
-            except Exception:
-                em.chrf_score = 0.0
+            except Exception as exc:
+                em.chrf_score = None
+                print(f"  ⚠ chrF++ failed for entry {em.id}: {exc}")
 
         # --- BLEU ---
         if em.expected and em.predicted:
@@ -280,8 +288,9 @@ def _analyze(
                 em.bleu_score = bleu_metric.corpus_score(
                     [em.predicted], [[em.expected]]
                 ).score
-            except Exception:
-                em.bleu_score = 0.0
+            except Exception as exc:
+                em.bleu_score = None
+                print(f"  ⚠ BLEU failed for entry {em.id}: {exc}")
 
         # --- TER (Translation Edit Rate) ---
         # Lower is better: minimum edit distance / reference length.
@@ -291,8 +300,9 @@ def _analyze(
                 em.ter_score = ter_metric.corpus_score(
                     [em.predicted], [[em.expected]]
                 ).score
-            except Exception:
-                em.ter_score = 0.0
+            except Exception as exc:
+                em.ter_score = None
+                print(f"  ⚠ TER failed for entry {em.id}: {exc}")
 
         # --- Length Ratio ---
         # Character-level: len(predicted) / len(expected).
@@ -344,8 +354,9 @@ def _analyze(
             overall["corpus_chrf"] = round(
                 chrf_metric.corpus_score(all_preds, [all_refs]).score, 2
             )
-        except Exception:
-            pass
+        except Exception as exc:
+            print(f"  ⚠ Corpus chrF++ computation failed: {exc}")
+            overall["corpus_chrf"] = None
 
     all_preds = [em.predicted for em in entry_metrics if not em.error]
     all_refs = [em.expected for em in entry_metrics if not em.error]
@@ -354,8 +365,9 @@ def _analyze(
             overall["corpus_bleu"] = round(
                 bleu_metric.corpus_score(all_preds, [all_refs]).score, 2
             )
-        except Exception:
-            pass
+        except Exception as exc:
+            print(f"  ⚠ Corpus BLEU computation failed: {exc}")
+            overall["corpus_bleu"] = None
 
     # --- Corpus-level TER ---
     if all_preds and all_refs:
@@ -363,8 +375,9 @@ def _analyze(
             overall["corpus_ter"] = round(
                 ter_metric.corpus_score(all_preds, [all_refs]).score, 2
             )
-        except Exception:
-            pass
+        except Exception as exc:
+            print(f"  ⚠ Corpus TER computation failed: {exc}")
+            overall["corpus_ter"] = None
 
     # --- Average Length Ratio ---
     # Averaged across non-error entries. A corpus-level diagnostic:
@@ -520,6 +533,10 @@ def _analyze(
     report = {
         "run_id": run_log.get("run_id", "unknown"),
         "config": run_log.get("config", {}),
+        # Absolute path to the source RunLog — used by publish.py to find
+        # the original run data. Without this, publish relies on fragile
+        # filename inference (_report.json → .json).
+        "source_log": source_log_path,
         "overall": overall,
         "by_segment": {k: asdict(v) for k, v in segments.items()},
         "by_difficulty": {str(k): asdict(v) for k, v in sorted(difficulties.items())},
@@ -618,8 +635,8 @@ def _aggregate_group(name: str, items: list[EntryMetrics]) -> SegmentMetrics:
         else:
             sm.miss_count += 1
 
-        chrf_sum += em.chrf_score
-        bleu_sum += em.bleu_score
+        chrf_sum += (em.chrf_score or 0.0)
+        bleu_sum += (em.bleu_score or 0.0)
 
     if non_error_count > 0:
         sm.avg_chrf = round(chrf_sum / non_error_count, 2)
@@ -650,8 +667,10 @@ def _compute_overall(entries: list[EntryMetrics]) -> dict:
     }
 
     if n:
-        overall["avg_chrf"] = round(sum(em.chrf_score for em in non_error) / n, 2)
-        overall["avg_bleu"] = round(sum(em.bleu_score for em in non_error) / n, 2)
+        chrf_values = [em.chrf_score for em in non_error if em.chrf_score is not None]
+        bleu_values = [em.bleu_score for em in non_error if em.bleu_score is not None]
+        overall["avg_chrf"] = round(sum(chrf_values) / len(chrf_values), 2) if chrf_values else 0.0
+        overall["avg_bleu"] = round(sum(bleu_values) / len(bleu_values), 2) if bleu_values else 0.0
         overall["avg_latency_s"] = round(
             sum(em.latency_s for em in non_error) / n, 3
         )

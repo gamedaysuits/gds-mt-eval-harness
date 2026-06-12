@@ -91,11 +91,17 @@ def build_parser() -> argparse.ArgumentParser:
             "  export           Package a TestReport as a champollion method plugin\n"
             "  export-config    Generate a champollion.config.json snippet from a TestReport\n"
             "  generate-plugin  Alias for 'export'\n"
+            "  card               Pretty-print a human-readable run card\n"
+            "  contest          Manage evaluation contests (create, submit, list)\n"
             "  logout           Remove stored auth credentials\n"
         ),
     )
 
     sub = parser.add_subparsers(dest="command", help="Subcommand")
+
+    # --- CARD command ---
+    card_p = sub.add_parser("card", help="Pretty-print a human-readable run card")
+    card_p.add_argument("log_paths", nargs="+", help="Run log JSON file(s) to render")
 
     # --- RUN command ---
     run_p = sub.add_parser("run", help="Execute a translation run")
@@ -202,6 +208,72 @@ def build_parser() -> argparse.ArgumentParser:
         help="Skip confirmation prompt (required for scripted/batch publishing)",
     )
 
+    # --- CONTEST command ---
+    contest_p = sub.add_parser(
+        "contest",
+        help="Manage evaluation contests (create, submit, list)",
+    )
+    contest_sub = contest_p.add_subparsers(
+        dest="contest_command",
+        help="Contest subcommand",
+    )
+
+    # contest create
+    cc = contest_sub.add_parser("create", help="Create a new evaluation contest")
+    cc.add_argument("--name", required=True, help="Contest name (e.g. 'EN→CRK Open')")
+    cc.add_argument(
+        "--corpus", required=True,
+        help="Corpus file or dataset ID to evaluate against",
+    )
+    cc.add_argument(
+        "--language-pair", required=True,
+        help="Language pair (e.g. 'en>crk', 'es>que')",
+    )
+    cc.add_argument(
+        "--visibility", choices=["public", "private", "team"],
+        default="public",
+        help="Access mode. public: anyone; private: visible but scores hidden; "
+             "team: invite-only. Default: public",
+    )
+    cc.add_argument(
+        "--teams",
+        help="Comma-separated team slugs (required for --visibility team)",
+    )
+    cc.add_argument(
+        "--description", default="",
+        help="Human-readable contest description",
+    )
+
+    # contest submit
+    cs = contest_sub.add_parser("submit", help="Submit a run to a contest")
+    cs.add_argument(
+        "--contest", required=True,
+        help="Contest slug (e.g. 'en-crk-open-2026')",
+    )
+    cs.add_argument(
+        "--run", required=True,
+        help="Path to TestReport JSON or a run_card_id",
+    )
+    cs.add_argument("--team", help="Team attribution")
+    cs.add_argument("--notes", default="", help="Submission notes")
+
+    # contest list
+    cl = contest_sub.add_parser("list", help="List active contests")
+    cl.add_argument(
+        "--status", choices=["open", "closed", "all"], default="open",
+        help="Filter by status. Default: open",
+    )
+    cl.add_argument(
+        "--language-pair",
+        help="Filter by language pair (e.g. 'en>crk')",
+    )
+
+    # contest submissions (view submissions for a contest)
+    csub = contest_sub.add_parser(
+        "submissions", help="List submissions for a contest",
+    )
+    csub.add_argument("contest_id", help="Contest slug")
+
     # --- LOGOUT command ---
     sub.add_parser(
         "logout",
@@ -232,6 +304,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--status",
         action="store_true",
         help="Show what's currently installed",
+    )
+    setup_p.add_argument(
+        "--lang",
+        metavar="CODE",
+        help="Install eval pack for a specific language (e.g., --lang crk, --lang sme)",
     )
 
     # --- EXPORT command ---
@@ -318,8 +395,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     # Language pair — used in prompts and run cards
     parser.add_argument(
         "--source-lang",
-        default="English",
-        help="Source language name (used in prompt). Default: English",
+        default="",
+        help="Source language name (auto-detected from config if empty)",
     )
     parser.add_argument(
         "--target-lang",
@@ -410,7 +487,8 @@ def _add_run_args(parser: argparse.ArgumentParser):
     parser.add_argument(
         "--coaching-file",
         help="Path to coaching prompt text file. The full text is recorded "
-             "in the run card for reproducibility.",
+             "in the run card for reproducibility, and the run's condition "
+             "is labelled 'coached' unless --prompt is set explicitly.",
     )
     parser.add_argument(
         "--coaching",
@@ -420,6 +498,14 @@ def _add_run_args(parser: argparse.ArgumentParser):
     parser.add_argument(
         "--custom-prompt",
         help=argparse.SUPPRESS,  # DEPRECATED: hidden, use --coaching-file
+    )
+
+    # Writing style
+    parser.add_argument(
+        "--style-profile",
+        help="Path to a style profile JSON for brand voice analysis. "
+             "Enables writing style consistency metrics (informational, "
+             "not in composite score). See docs for format.",
     )
 
     # Output
@@ -444,6 +530,13 @@ def _add_run_args(parser: argparse.ArgumentParser):
         "--dry-run",
         action="store_true",
         help="Validate config without making API calls",
+    )
+    parser.add_argument(
+        "-y", "--yes",
+        action="store_true",
+        help="Skip confirmation prompts (e.g. accept the upstream data "
+             "license when a missing corpus is fetched from source). "
+             "Required for non-interactive/CI runs that trigger a fetch.",
     )
 
     # Method card
@@ -531,6 +624,15 @@ def args_to_config(args) -> RunConfig:
         tmp.close()
         coaching_file = tmp.name
 
+    # Condition label: coaching replaces the naive system prompt at runtime
+    # (runner.load_system_prompt gives coaching_file precedence), so a run
+    # with coaching but the default -p would otherwise be recorded — and
+    # published — as condition "naive". Relabel it "coached" unless the user
+    # explicitly chose a prompt version.
+    prompt_version = args.prompt if hasattr(args, "prompt") else "naive"
+    if coaching_file and prompt_version == "naive":
+        prompt_version = "coached"
+
     return RunConfig(
         dataset=args.dataset,
         entry_ids=entry_ids,
@@ -550,15 +652,17 @@ def args_to_config(args) -> RunConfig:
         cache_dir=args.cache_dir if hasattr(args, "cache_dir") else DEFAULT_CACHE_DIR,
         batch_size=args.batch_size if hasattr(args, "batch_size") else DEFAULT_BATCH_SIZE,
         concurrency=args.concurrency if hasattr(args, "concurrency") else DEFAULT_CONCURRENCY,
-        prompt_version=args.prompt if hasattr(args, "prompt") else "naive",
+        prompt_version=prompt_version,
         custom_prompt_path=custom_prompt,  # Legacy field
         coaching_file=coaching_file,
+        style_profile=getattr(args, "style_profile", None),
         post_hooks=post_hooks,
         fst_retries=getattr(args, "fst_retries", 0),
         output_dir=args.output_dir if hasattr(args, "output_dir") else DEFAULT_OUTPUT_DIR,
         run_name=args.name if hasattr(args, "name") else None,
         temperature=args.temperature if hasattr(args, "temperature") else 0.0,
         dry_run=args.dry_run if hasattr(args, "dry_run") else False,
+        assume_yes=getattr(args, "yes", False),
         method_path=getattr(args, "method", None),
         champollion_config_path=args.champollion_config if hasattr(args, "champollion_config") else None,
         champollion_cards_dir=args.champollion_cards_dir if hasattr(args, "champollion_cards_dir") else None,
@@ -587,7 +691,9 @@ def cmd_list(what: str, live: bool = False):
         print("\n  Coaching prompts (recommended):")
         print("    --coaching-file path.txt   Load coaching prompt from file")
         print("    --coaching 'text'          Inline coaching text (short prompts)")
-        print("\n  The full coaching text is recorded in the run card for reproducibility.")
+        print("\n  The full coaching text is recorded in the run card for reproducibility,")
+        print("  and the run's condition is labelled 'coached' automatically (override")
+        print("  with an explicit --prompt).")
 
     elif what == "datasets":
         print(format_registry_table())
@@ -755,6 +861,42 @@ def cmd_export(args):
         sys.exit(1)
 
 
+# ---------------------------------------------------------------------------
+# Publish prompt — shared by run and test commands
+# ---------------------------------------------------------------------------
+
+def _prompt_publish(report_path) -> None:
+    """Offer to publish a report to the arena leaderboard.
+
+    Only prompts in interactive mode (TTY stdin). In non-interactive
+    environments (piped stdin, CI), silently skips with a hint.
+    """
+    from pathlib import Path
+    report_path = Path(report_path)
+    if not report_path.exists():
+        return
+
+    if not sys.stdin.isatty():
+        # Non-interactive — just print the command for reference
+        print(f"  → To publish: mt-eval publish {report_path.name}")
+        return
+
+    print()
+    try:
+        answer = input("  → Publish this run to the arena? [y/N]: ").strip().lower()
+    except (EOFError, KeyboardInterrupt):
+        print()
+        return
+
+    if answer in ("y", "yes"):
+        try:
+            from mt_eval_harness.publish import publish_to_supabase
+            publish_to_supabase(str(report_path), auto_confirm=True)
+        except Exception as e:
+            print(f"  ✗ Publish failed: {e}")
+            print(f"  → Retry with: mt-eval publish {report_path.name}")
+
+
 def main():
     """CLI entry point."""
     parser = build_parser()
@@ -764,16 +906,32 @@ def main():
         cmd_list(args.what, live=getattr(args, "live", False))
         return
 
+    if args.command == "card":
+        from mt_eval_harness.run_card import render_run_card
+        from pathlib import Path
+        for filepath in args.log_paths:
+            path = Path(filepath)
+            if path.name.endswith("_report.json"):
+                continue  # Skip report files — auto-detected from run log
+            if not path.exists():
+                print(f"  ✗ File not found: {filepath}", file=sys.stderr)
+                continue
+            print(render_run_card(path))
+        return
+
     if args.command == "test":
         from mt_eval_harness.tester import run_test
         from mt_eval_harness.plugin_discovery import discover_metric_plugins
+        from pathlib import Path
         import json
 
         # Load the run log to detect target language for plugin auto-discovery
-        log_data = json.loads(Path(args.log_path).read_text(encoding="utf-8"))
+        log_path = Path(args.log_path)
+        log_data = json.loads(log_path.read_text(encoding="utf-8"))
         metric_plugins = discover_metric_plugins(
             log_data.get("config", {}),
             skip_fst=getattr(args, "skip_fst", False),
+            method_dir=log_data.get("config", {}).get("method_path"),
         )
 
         run_test(
@@ -783,6 +941,17 @@ def main():
             compute_ci=not getattr(args, "no_ci", False),
             n_bootstrap_ci=getattr(args, "n_bootstrap_ci", 1000),
         )
+
+        # Auto-print the run card after scoring
+        report_path = log_path.with_name(log_path.stem + "_report.json")
+        try:
+            from mt_eval_harness.run_card import render_run_card
+            print(render_run_card(log_path, report_path))
+        except Exception as e:
+            logger.warning("Failed to render run card: %s", e)
+
+        # Offer to publish to the arena (interactive only)
+        _prompt_publish(report_path)
         return
 
     if args.command == "publish":
@@ -792,6 +961,46 @@ def main():
             method_card_path=getattr(args, "method_card", None),
             auto_confirm=getattr(args, "yes", False),
         )
+        return
+
+    if args.command == "contest":
+        from mt_eval_harness.contest import (
+            create_contest, submit_to_contest,
+            list_contests, list_submissions,
+            resolve_run_card_id,
+        )
+
+        if args.contest_command == "create":
+            teams = None
+            if getattr(args, "teams", None):
+                teams = [t.strip() for t in args.teams.split(",")]
+            create_contest(
+                name=args.name,
+                corpus_id=args.corpus,
+                language_pair=getattr(args, "language_pair", "en>crk"),
+                visibility=args.visibility,
+                teams=teams,
+                description=getattr(args, "description", ""),
+            )
+        elif args.contest_command == "submit":
+            run_card_id = resolve_run_card_id(args.run)
+            submit_to_contest(
+                contest_id=args.contest,
+                run_card_id=run_card_id,
+                team=getattr(args, "team", None),
+                notes=getattr(args, "notes", ""),
+            )
+        elif args.contest_command == "list":
+            list_contests(
+                status=getattr(args, "status", "open"),
+                language_pair=getattr(args, "language_pair", None),
+            )
+        elif args.contest_command == "submissions":
+            list_submissions(args.contest_id)
+        else:
+            # No subcommand — show usage
+            print("Usage: mt-eval contest {create,submit,list,submissions}")
+            print("Run 'mt-eval contest --help' for details.")
         return
 
     if args.command == "logout":
@@ -805,6 +1014,7 @@ def main():
             install_all=getattr(args, "all", False),
             comet_only=getattr(args, "comet", False),
             fst_only=getattr(args, "fst", False),
+            lang_code=getattr(args, "lang", None),
             status_only=getattr(args, "status", False),
         )
         return
@@ -919,28 +1129,32 @@ def main():
     model_str = config.model
     if "," in model_str:
         from mt_eval_harness.runner import execute_multi_run
-        from mt_eval_harness.config import MODEL_REGISTRY
+        from mt_eval_harness.config import MODEL_REGISTRY, fuzzy_resolve_model
         from dataclasses import replace
 
         model_slugs = [m.strip() for m in model_str.split(",") if m.strip()]
         configs = []
         for slug in model_slugs:
-            # Resolve short names through the registry
+            # Resolve short names through the registry, then fuzzy match
             resolved = MODEL_REGISTRY.get(slug, slug)
-            # Validate: must contain a "/" (full OpenRouter ID) or be in registry
             if "/" not in resolved and slug not in MODEL_REGISTRY:
-                print(f"  ERROR: Unknown model '{slug}'. "
-                      f"Available shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
-                      f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4').")
-                sys.exit(1)
-            model_config = replace(config, model=slug)
+                fuzzy = fuzzy_resolve_model(slug)
+                if fuzzy:
+                    print(f"  ℹ Resolved '{slug}' → '{fuzzy}' (fuzzy match)")
+                    resolved = fuzzy
+                else:
+                    print(f"  ERROR: Unknown model '{slug}'. "
+                          f"Available shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
+                          f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4').")
+                    sys.exit(1)
+            model_config = replace(config, model=resolved)
             configs.append(model_config)
 
         print(f"\n  Multi-model run: {len(configs)} models")
         for c in configs:
             print(f"    • {c.model} → {c.model_id}")
 
-        asyncio.run(execute_multi_run(configs))
+        asyncio.run(execute_multi_run(configs, prompt_providers=prompt_providers))
     else:
         from mt_eval_harness.runner import execute_run
         asyncio.run(execute_run(config, prompt_providers=prompt_providers))

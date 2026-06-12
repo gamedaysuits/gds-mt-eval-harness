@@ -64,11 +64,23 @@ class TestResolveDataset:
         with pytest.raises(FileNotFoundError, match="not found in registry"):
             resolve_dataset("nonexistent-dataset-xyz")
 
-    def test_private_dataset_raises_valueerror(self):
-        """A registry entry with url=null should raise ValueError."""
-        # The bundled registry has edtekla-dev-v1 with url=null
+    def test_private_dataset_raises_valueerror(self, tmp_path):
+        """A registry entry with url=null and no local_path should raise ValueError."""
+        # Use a synthetic private dataset to test the error path
+        # (bundled edtekla-dev-v1 now has local_path and resolves)
+        registry = tmp_path / "registry.json"
+        registry.write_text(json.dumps({
+            "registry_version": "1.0.0",
+            "datasets": [{
+                "id": "private-only-ds",
+                "name": "Private Dataset",
+                "url": None,
+                "access": "private",
+                "notes": "Contact the owner for access.",
+            }]
+        }))
         with pytest.raises(ValueError, match="private"):
-            resolve_dataset("edtekla-dev-v1")
+            resolve_dataset("private-only-ds", registry_path=registry)
 
     def test_nonexistent_path_falls_through_to_registry(self):
         """A path that doesn't exist should be checked against the registry."""

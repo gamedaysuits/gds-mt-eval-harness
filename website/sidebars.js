@@ -5,11 +5,23 @@ const sidebars = {
     'how-it-works',
     {
       type: 'category',
+      label: 'Position Pieces',
+      collapsed: false,
+      items: [
+        'perspectives/translation-is-not-revitalization',
+        'perspectives/how-speakers-get-paid',
+        'perspectives/from-benchmark-to-daily-use',
+        'perspectives/reporting-errors-and-owning-corrections',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       collapsed: false,
       items: [
         'getting-started/submit-a-method',
         'getting-started/agent-guide',
+        'getting-started/contributing-compute',
         'getting-started/deploy-to-production',
         'getting-started/faq',
       ],
@@ -55,6 +67,7 @@ const sidebars = {
       label: 'Context & History',
       items: [
         'context/history-of-language-and-computation',
+        'context/what-counts-as-a-language',
       ],
     },
     {

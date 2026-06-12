@@ -1,0 +1,5841 @@
+{
+  "corpus_id": "tatoeba-eng-fra-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "fra"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:17:59.292901+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "gov",
+    "legal",
+    "literary",
+    "marketing",
+    "medical",
+    "religious",
+    "scientific",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_2245783",
+      "source": "I got arrested.",
+      "reference": "J'ai été arrêté.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245783",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2388312",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245783",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245783"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1893859",
+      "source": "We got married.",
+      "reference": "Nous nous mariions.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1893859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2563596",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1893859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1893859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2258236",
+      "source": "Hang on tight!",
+      "reference": "Accroche-toi bien !",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2258236",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1901187",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2258236",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2258236"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2391514",
+      "source": "I received your message yesterday.",
+      "reference": "J'ai reçu votre message hier.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2391514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2392456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2391514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2391514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_3712805",
+      "source": "There's nowhere you can hide.",
+      "reference": "Il n'y a nulle part où tu puisses te cacher.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3712805",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1533946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3712805",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3712805"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_2248415",
+      "source": "I've sacrificed everything.",
+      "reference": "J'ai tout sacrifié.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248415",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2527485",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248415",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248415"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.0
+      }
+    },
+    {
+      "id": "tatoeba_1098185",
+      "source": "Is he Malaysian?",
+      "reference": "Est-il malaisien ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8731388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098185"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5728826",
+      "source": "We have to figure something out.",
+      "reference": "Nous devons trouver une solution.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5728826",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5441552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5728826",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5728826"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2122",
+      "source": "I don't want to hear any more of your complaining.",
+      "reference": "Je ne veux plus t'entendre te plaindre.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2122",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2122",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2122"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3050628",
+      "source": "He's cute and funny.",
+      "reference": "Elle est mignonne et marrante.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3050628",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1774364",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3050628",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3050628"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_254081",
+      "source": "I stayed there for three days.",
+      "reference": "Je suis resté trois jours là-bas.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "254081",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7187",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "254081",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/254081"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_899469",
+      "source": "It was a mess in the department store.",
+      "reference": "C'était un bordel dans le grand magasin.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "899469",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "899468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "899469",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/899469"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_4576461",
+      "source": "The tall woman is listening to the brown horse.",
+      "reference": "La grande femme écoute le cheval brun.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4576461",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6794685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4576461",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4576461"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.22
+      }
+    },
+    {
+      "id": "tatoeba_437071",
+      "source": "I want to take a bath.",
+      "reference": "Je veux prendre un bain.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "437071",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "453145",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "437071",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/437071"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_23515",
+      "source": "Our train had already pulled out when we arrived at the station.",
+      "reference": "Notre train était déjà parti lorsque nous arrivâmes à la gare.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23515",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1091118",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23515",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23515"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_30928",
+      "source": "If it's raining, we don't plan to go hiking.",
+      "reference": "S'il pleut, nous n'irons pas en randonnée.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30928",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1084626",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30928",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30928"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_2214388",
+      "source": "I wonder if she likes me.",
+      "reference": "Je me demande si elle m'apprécie.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2214388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2214968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2214388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2214388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_245859",
+      "source": "My mother died when I was a kid.",
+      "reference": "Ma mère est morte lorsque j'étais enfant.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_898582",
+      "source": "For the past 10 years, I've fed my dog dry dog food.",
+      "reference": "Pendant les dix dernières années, j'ai nourri mon chien avec des croquettes sèches.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "898582",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1645967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "898582",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/898582"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5342179",
+      "source": "Where did he get that crazy idea from?",
+      "reference": "D'où tient-il cette folle idée ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5342179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5341279",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5342179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5342179"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_256285",
+      "source": "I was unable to breathe because of the smoke.",
+      "reference": "Je ne pouvais pas respirer à cause de la fumée.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256285",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "12033241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256285",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256285"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_612528",
+      "source": "It's taken him a year, but I think he's finally come to grips with the death of his wife.",
+      "reference": "Ça lui a pris un an, mais je pense qu'il s'est finalement fait à l'idée du décès de son épouse.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "612528",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "816634",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "612528",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/612528"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.63
+      }
+    },
+    {
+      "id": "tatoeba_532657",
+      "source": "Every Tatoeba sentence should be commented and its translation discussed, unless it's completely obvious.",
+      "reference": "Chaque phrase de Tatoeba devrait être commentée, et sa traduction discutée, à moins qu'elle ne soit complètement évidente.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "532657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "633784",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "532657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/532657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 6.43
+      }
+    },
+    {
+      "id": "tatoeba_3259822",
+      "source": "If you have pain in your chest, consult your doctor right away.",
+      "reference": "Si tu as mal à la poitrine, consulte tout de suite ton médecin.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3259822",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3259821",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3259822",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3259822"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_3720652",
+      "source": "Once or twice, I had a feeling of intense fear for which I could perceive no definite reason.",
+      "reference": "Une ou deux fois, je ressentis une peur intense dont je ne pouvais percevoir une cause définie.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3720652",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3745154",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3720652",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3720652"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_2653764",
+      "source": "My name is not \"Mr. Ricardo\"; it's just Ricardo or Rick.",
+      "reference": "Je ne m'appelle pas M. Ricardo mais simplement Ricardo ou Rick.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2653764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6880338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2653764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2653764"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_820792",
+      "source": "Although I have studied English at school for the past six years, I'm still not good at speaking it.",
+      "reference": "Bien qu'ayant étudié l'anglais à l'école ces six dernières années, je ne le parle toujours pas bien.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "820792",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8328222",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "820792",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/820792"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.21
+      }
+    },
+    {
+      "id": "tatoeba_3470578",
+      "source": "This plan, while looking great on paper, turned out to be a disaster.",
+      "reference": "Ce plan, qui avait l'air bien sur le papier, se révéla être un désastre.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3470578",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3471100",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3470578",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3470578"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.15
+      }
+    },
+    {
+      "id": "tatoeba_579190",
+      "source": "There is a good number of problems for which the Karush-Kuhn-Tucker conditions are insufficient to guarantee optimality, but this doesn't change the fact that these conditions are an indispensable tool for doing optimization.",
+      "reference": "Il y a pas mal de problèmes pour lesquels les conditions de Karush-Kuhn-Tucker ne sont pas suffisantes pour garantir l'optimalité, mais ça ne change pas le fait que ces conditions sont un outil indispensable quand on fait de l'optimisation.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "579190",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "579189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "579190",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/579190"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 33,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 5.79
+      }
+    },
+    {
+      "id": "tatoeba_6671011",
+      "source": "In chess, castling may only be carried out when both the king and the involved rook have not been moved, all the squares between them are free and not dominated by any opposing piece and the king is not in check and would not be put in check by castling.",
+      "reference": "Aux échecs, le roque ne peut être effectué que lorsque le roi et la tour impliquée n'ont pas été déplacés, toutes les cases entre eux sont libres et non dominées par une pièce adverse et le roi n'est pas en échec et ne serait pas mis en échec en roquant.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6671011",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "9949494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6671011",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6671011"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 50,
+        "difficulty_estimated_clauses": 8,
+        "difficulty_avg_word_length": 4.04
+      }
+    },
+    {
+      "id": "tatoeba_6814542",
+      "source": "\"By his words made wise / this steed, for stol'n Palladium, they devise, / to soothe the outrag'd goddess.\"",
+      "reference": "« Cependant, de Pallas pour remplacer l'image, surtout pour expier leur sacrilège outrage, ils ont à la déesse offert ce nouveau don. »",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6814542",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6699566",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6814542",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6814542"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.37
+      }
+    },
+    {
+      "id": "tatoeba_1919800",
+      "source": "Honor! truly a very convenient coin, which those who know how to pass it may lay out with great advantage.",
+      "reference": "Un nom respectable - monnaie au cours vraiment substantiel qui se négocie admirablement pour qui comprend comment la présenter.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1919800",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1919943",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1919800",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1919800"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 20,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_3735149",
+      "source": "Prices are going down.",
+      "reference": "Les prix baissent.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3735149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "134967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3735149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3735149"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_436519",
+      "source": "I don't know what to order.",
+      "reference": "Je ne sais pas quoi commander.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436519",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "911034",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436519",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436519"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3476683",
+      "source": "Tom returned the book to the library.",
+      "reference": "Tom a rendu le livre à la bibliothèque.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3476683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6837308",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3476683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3476683"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_954322",
+      "source": "That psychiatrist specialized in eating disorders.",
+      "reference": "Ce psychiatre s'est spécialisé dans les désordres alimentaires.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954322",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1254045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954322",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954322"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_298649",
+      "source": "He worked hard in order to support his family.",
+      "reference": "Il a travaillé dur afin d'entretenir sa famille.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1516450",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298649"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_19260",
+      "source": "In communism, the means of production are owned by the state.",
+      "reference": "Dans le communisme, les moyens de production sont propriété de l'État.",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "435514",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19260"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.45
+      }
+    },
+    {
+      "id": "tatoeba_298417",
+      "source": "He reads the newspaper in order to keep up with the times.",
+      "reference": "Il lit le journal pour suivre l'actualité.",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "132419",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298417"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_305418",
+      "source": "They are both good teachers.",
+      "reference": "Ce sont tous les deux de bons professeurs.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "333277",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305418"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_418829",
+      "source": "She used to be a teacher.",
+      "reference": "Elle a été chargée de cours.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "418829",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7547438",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "418829",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/418829"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_298271",
+      "source": "He studied hard to pass the exam.",
+      "reference": "Il a travaillé dur afin de réussir l'examen.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298271",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "136022",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298271",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298271"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_1258669",
+      "source": "Is it OK to drink beer on your university campus?",
+      "reference": "Est-il autorisé de boire de la bière sur le campus de votre université ?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1258669",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1259585",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1258669",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1258669"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.9
+      }
+    },
+    {
+      "id": "tatoeba_273030",
+      "source": "The teacher treated all the students fairly.",
+      "reference": "L'enseignant traita équitablement tous les étudiants.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273030",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "841593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273030",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273030"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.29
+      }
+    },
+    {
+      "id": "tatoeba_5069234",
+      "source": "She rents out a room to a student.",
+      "reference": "Elle loue une chambre à un étudiant.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5069234",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "339413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5069234",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5069234"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1099043",
+      "source": "The teacher sits on the chair.",
+      "reference": "Le professeur est assis sur la chaise.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1099043",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1049584",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1099043",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1099043"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4011588",
+      "source": "You haven't been a teacher very long, have you?",
+      "reference": "Ça ne fait pas longtemps que tu es enseignant, pas vrai ?",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4011588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4096816",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4011588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4011588"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_328433",
+      "source": "Obviously the teacher can understand both English and French.",
+      "reference": "C'est évident, mais le professeur comprend le français et l'anglais.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "391202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328433"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.78
+      }
+    },
+    {
+      "id": "tatoeba_1068355",
+      "source": "The Lisbon treaty envisions a citizens' initiative.",
+      "reference": "Le traité de Lisbonne prévoit une initiative citoyenne.",
+      "domain": "gov",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1068355",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "591910",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1068355",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1068355"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.14
+      }
+    },
+    {
+      "id": "tatoeba_3579671",
+      "source": "Tom is a law-abiding citizen.",
+      "reference": "Tom est un citoyen loyal.",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3579671",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5682990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3579671",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3579671"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_714836",
+      "source": "Bad laws are the worst sort of tyranny.",
+      "reference": "Les mauvaises lois sont la pire forme de tyrannie.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "714836",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "844251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "714836",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/714836"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_298214",
+      "source": "He was learning a poem.",
+      "reference": "Il apprenait un poème.",
+      "domain": "literary",
+      "difficulty": 1,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2293502",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298214"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_286349",
+      "source": "I found his latest novel interesting.",
+      "reference": "J'ai trouvé son dernier roman intéressant.",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "286349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11962418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "286349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/286349"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_286823",
+      "source": "When will his new novel come out?",
+      "reference": "Quand sortira son nouveau roman ?",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "286823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11436585",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "286823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/286823"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_298217",
+      "source": "He is a poet and novelist.",
+      "reference": "C'est un poète et un romancier.",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298217",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "132381",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298217",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298217"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_410404",
+      "source": "The salts and minerals found in these mountains are quite diverse.",
+      "reference": "Les sels et les minéraux qu'on peut trouver dans cette montagne sont très divers.",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "410404",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "410418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "410404",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/410404"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_51995",
+      "source": "Scott was the first man to reach the pole.",
+      "reference": "Scott fut le premier homme à atteindre le pôle.",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "424448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51995"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1024132",
+      "source": "Tom stood on a chair so he could reach the top shelf.",
+      "reference": "Tom grimpa sur une chaise pour atteindre la plus haute étagère.",
+      "domain": "marketing",
+      "difficulty": 3,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1024132",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1549336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1024132",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1024132"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.42
+      }
+    },
+    {
+      "id": "tatoeba_18164",
+      "source": "Hungry and thirsty, we at last reached the inn.",
+      "reference": "Affamés et assoiffés, nous atteignîmes enfin l'auberge.",
+      "domain": "marketing",
+      "difficulty": 3,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "18164",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "478114",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "18164",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/18164"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_264380",
+      "source": "About how much will I have to pay for all the treatments?",
+      "reference": "À peu près combien devrai-je payer pour tous les traitements ?",
+      "domain": "medical",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264380",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "483913",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264380",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264380"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_238734",
+      "source": "The wedding ceremony was performed in the morning.",
+      "reference": "La cérémonie de mariage a eu lieu le matin.",
+      "domain": "religious",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "238734",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "181723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "238734",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/238734"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_3735905",
+      "source": "That's an interesting hypothesis.",
+      "reference": "C'est une hypothèse intéressante.",
+      "domain": "scientific",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3735905",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6452580",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3735905",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3735905"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.25
+      }
+    },
+    {
+      "id": "tatoeba_3590845",
+      "source": "I do need your help.",
+      "reference": "J'ai vraiment besoin de votre aide.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3590845",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2045475",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3590845",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3590845"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_252697",
+      "source": "I am glad that you have helped me.",
+      "reference": "Je suis content que tu m'aies aidé.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252697",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "580439",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252697",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252697"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_297262",
+      "source": "He helped me carry the chair.",
+      "reference": "Il m'a aidé à porter la chaise.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "297262",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1186265",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "297262",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/297262"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_6036328",
+      "source": "A loyal brother helps his sister.",
+      "reference": "Un frère dévoué aide sa sœur.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6036328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8553101",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6036328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6036328"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5659105",
+      "source": "Tom didn't help Mary as much as he should've.",
+      "reference": "Tom n'a pas aidé Marie autant qu'il aurait dû.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5659105",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5667978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5659105",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5659105"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_748693",
+      "source": "I'd be very grateful if you could help me.",
+      "reference": "Je serais très reconnaissant si vous pouviez m'aider.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "748693",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "786441",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "748693",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/748693"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1588728",
+      "source": "You are the only one who can help me.",
+      "reference": "Tu es le seul qui puisse m'aider.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1588728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "945523",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1588728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1588728"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.11
+      }
+    },
+    {
+      "id": "tatoeba_3651054",
+      "source": "In December 2013, the Department of Agriculture announced it will provide up to $250 million to help businesses and residential customers in rural areas cut their energy bills through energy efficiency and renewable energy use.",
+      "reference": "En décembre 2013, le département de l'Agriculture a annoncé qu'il consacrerait jusqu'à 250 millions de dollars pour aider les entreprises et les clients particuliers des régions rurales à réduire leurs factures d'énergie au moyen de mesures d'optimalisation énergétique et d'utilisation d'énergies renouvelables.",
+      "domain": "support",
+      "difficulty": 5,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3651054",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7025202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3651054",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3651054"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 35,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 5.46
+      }
+    },
+    {
+      "id": "tatoeba_318016",
+      "source": "Airplanes enable people to travel great distances rapidly.",
+      "reference": "Les avions permettent aux gens de rapidement parcourir de grandes distances.",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "318016",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1117875",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "318016",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/318016"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_405769",
+      "source": "We're eating apples.",
+      "reference": "Nous sommes en train de manger des pommes.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "405769",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1333247",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "405769",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/405769"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3132924",
+      "source": "I'm responsible for what's happened.",
+      "reference": "Je suis responsable de ce qui s'est passé.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3132924",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "9731165",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3132924",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3132924"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.2
+      }
+    },
+    {
+      "id": "tatoeba_2249744",
+      "source": "Open the box.",
+      "reference": "Ouvre le tiroir !",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249744",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8856481",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249744",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249744"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1208119",
+      "source": "How could this have happened?",
+      "reference": "Comment cela a pu se passer ?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1208119",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "995349",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1208119",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1208119"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_2389573",
+      "source": "I opened the door.",
+      "reference": "J’ouvrais la porte.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2389573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2206384",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2389573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2389573"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_237692",
+      "source": "I'll make you happy.",
+      "reference": "Je vais te rendre heureux.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "237692",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "237692",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/237692"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1950853",
+      "source": "I can't believe this is happening to us.",
+      "reference": "Je n'arrive pas à croire que ça nous arrive à nous.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1950853",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1951044",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1950853",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1950853"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5270378",
+      "source": "Where did the accident happen?",
+      "reference": "À quel endroit a eu lieu l'accident ?",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5270378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1472828",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5270378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5270378"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_413513",
+      "source": "The miner asked the lamp spirit for a happy life.",
+      "reference": "Le mineur a demandé au génie de la lampe une vie heureuse.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "413513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1585173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "413513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/413513"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.9
+      }
+    },
+    {
+      "id": "tatoeba_4456356",
+      "source": "Loneliness is a disease that makes me no longer happy.",
+      "reference": "La solitude est une maladie qui ne me rend plus heureux.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4456356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4472192",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4456356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4456356"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_4001811",
+      "source": "I'd appreciate an answer as soon as possible.",
+      "reference": "J'aimerais bien avoir une réponse dès que possible.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4001811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4002111",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4001811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4001811"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_1140135",
+      "source": "I was happy to help you.",
+      "reference": "J'étais heureux de vous aider.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1140135",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1140463",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1140135",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1140135"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_925023",
+      "source": "Merry Christmas and a Happy New Year!",
+      "reference": "Joyeux Noël et bonne année !",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "925023",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3708474",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "925023",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/925023"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_3647252",
+      "source": "May I have the menu and the wine list?",
+      "reference": "Puis-je voir le menu et la carte des vins ?",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3647252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5442396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3647252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3647252"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_276360",
+      "source": "Who broke the window? Tell the truth.",
+      "reference": "Qui a brisé la fenêtre ? Dis-moi la vérité.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "276360",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "354770",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "276360",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/276360"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_889692",
+      "source": "Appetite comes with eating, the thirst goes away with drinking.",
+      "reference": "L'appétit vient en mangeant, la soif s'en va en buvant.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "889692",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "411231",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "889692",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/889692"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_18140",
+      "source": "It happened that I saw my friend walking in the distance.",
+      "reference": "Il se trouve que j'ai vu mon ami marcher au loin.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "18140",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "426027",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "18140",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/18140"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.18
+      }
+    },
+    {
+      "id": "tatoeba_5776915",
+      "source": "You forgot to close the windows before you left the office last Friday.",
+      "reference": "Tu as oublié de fermer les fenêtres avant de quitter le bureau, vendredi dernier.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5776915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5777632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5776915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5776915"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.46
+      }
+    },
+    {
+      "id": "tatoeba_1336145",
+      "source": "When a woman's angry, you only need four little kisses to make her happy.",
+      "reference": "Quand une femme est en colère, quatre petits baisers suffisent pour la consoler.",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1336145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "918903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1336145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1336145"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_1270380",
+      "source": "Before being able to write data on a hard disk, you first need to create a partition, then to create a filesystem on it, and finally to mount this filesystem.",
+      "reference": "Avant de pouvoir écrire des données sur un disque, vous devez d'abord créer une partition, ensuite un système de fichiers par dessus, et finalement monter ce système de fichiers.",
+      "domain": "ui",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1270380",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1270385",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1270380",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1270380"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 30,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_603587",
+      "source": "That car dealership has a reputation for selling lemons.",
+      "reference": "Ce concessionnaire automobile a la réputation de vendre des poubelles.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "603587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "882984",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "603587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/603587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.22
+      }
+    },
+    {
+      "id": "tatoeba_1741999",
+      "source": "It took me several hours to iron all your shirts.",
+      "reference": "Repasser toutes tes chemises m'a pris plusieurs heures.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1741999",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1744427",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1741999",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1741999"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.9
+      }
+    },
+    {
+      "id": "tatoeba_281102",
+      "source": "Let's take a rest in the shade.",
+      "reference": "Faisons une pause à l'ombre.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281102",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "14603",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281102",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281102"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_388833",
+      "source": "He told us a lie.",
+      "reference": "Il nous a menti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "388833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "389592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "388833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/388833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.4
+      }
+    },
+    {
+      "id": "tatoeba_2288155",
+      "source": "You don't swim very well, do you?",
+      "reference": "Tu ne nages pas très bien, pas vrai ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2288155",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2740455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2288155",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2288155"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_287742",
+      "source": "His prophecy was fulfilled.",
+      "reference": "Sa prophétie se réalisa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "287742",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "453754",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "287742",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/287742"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_1277898",
+      "source": "Spiders, scorpions, and ticks are arachnids.",
+      "reference": "Les araignées, les scorpions et les tiques sont des arachnides.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1277898",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6005749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1277898",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1277898"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2183022",
+      "source": "Take a hike!",
+      "reference": "Dégagez !",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2183022",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1112432",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2183022",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2183022"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1025975",
+      "source": "Tom doesn't put sugar in his coffee.",
+      "reference": "Tom ne met pas de sucre dans son café.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1025975",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1181473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1025975",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1025975"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_2887752",
+      "source": "A lady is waiting for me.",
+      "reference": "Une dame m’attend !",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2887752",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2887692",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2887752",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2887752"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_3510729",
+      "source": "What were they talking about?",
+      "reference": "De quoi ont-ils parlé ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3510729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8165948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3510729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3510729"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_2248824",
+      "source": "It was exciting.",
+      "reference": "C'était excitant.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248824",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6474148",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248824",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248824"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4666846",
+      "source": "Change is what we need.",
+      "reference": "Le changement est ce dont nous avons besoin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4666846",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "12141932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4666846",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4666846"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_6706213",
+      "source": "Tom was very unhappy, wasn't he?",
+      "reference": "Tom était très malheureux, n'est-ce pas ?",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6706213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "9126591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6706213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6706213"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_6971632",
+      "source": "Do you spend more time with your friends or your family?",
+      "reference": "Passez-vous davantage de temps avec vos amis ou avec votre famille ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6971632",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1402900",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6971632",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6971632"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.09
+      }
+    },
+    {
+      "id": "tatoeba_3308964",
+      "source": "Tom sat down across from Mary.",
+      "reference": "Tom s'assit en face de Marie.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3308964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4565071",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3308964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3308964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5184936",
+      "source": "I didn't walk for a year.",
+      "reference": "Je n'ai pas marché pendant un an.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5184936",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5185923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5184936",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5184936"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_269489",
+      "source": "The forest was very still.",
+      "reference": "La forêt était très calme.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "269489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "762090",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "269489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/269489"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_19290",
+      "source": "Kyoto gets thousands of visitors from all over the world each year.",
+      "reference": "À chaque année, Kyoto reçoit des milliers de visiteurs provenus de partout à travers le monde.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19290",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1569115",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19290",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19290"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.58
+      }
+    },
+    {
+      "id": "tatoeba_2279430",
+      "source": "Tom doesn't love me anymore.",
+      "reference": "Tom ne m'aime plus.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2279430",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5224162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2279430",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2279430"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_617667",
+      "source": "Have you heard the latest rumours?",
+      "reference": "As-tu entendu les dernières rumeurs ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "617667",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "617702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "617667",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/617667"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_4870645",
+      "source": "Not everything in this world is measured in money.",
+      "reference": "Tout dans ce monde ne se mesure pas en argent.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4870645",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7702307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4870645",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4870645"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.56
+      }
+    },
+    {
+      "id": "tatoeba_266064",
+      "source": "Let me do this.",
+      "reference": "Laissez-moi faire ça.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "266064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "181334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "266064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/266064"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_59470",
+      "source": "I would like to talk with you about this matter.",
+      "reference": "Je voudrais vous parler à ce sujet.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "59470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "431241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "59470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/59470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2539196",
+      "source": "I'm not going to answer that question.",
+      "reference": "Je ne vais pas répondre à cette question.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2539196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7554965",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2539196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2539196"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_16108",
+      "source": "You had better take an umbrella with you.",
+      "reference": "Vous feriez mieux de prendre un parapluie avec vous.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11126915",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16108"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_1658402",
+      "source": "Hackers are adept at getting around computer security measures.",
+      "reference": "Les pirates sont experts dans l'art de contourner les mesures de sécurité informatiques.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1658402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1660198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1658402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1658402"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_355624",
+      "source": "I must fix it.",
+      "reference": "Je dois le réparer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "355624",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1592334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "355624",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/355624"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_2040309",
+      "source": "Dad gave me a computer game.",
+      "reference": "Mon papa m'a donné un jeu informatique.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2040309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1528294",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2040309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2040309"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_308229",
+      "source": "I will be gone by the time she comes back.",
+      "reference": "Je partirai avant qu'elle ne revienne.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "308229",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1417972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "308229",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/308229"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2327024",
+      "source": "The cat sneaked up on the unsuspecting bird.",
+      "reference": "Le chat s'approcha sans bruit de l'oiseau qui ne se doutait de rien.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2327024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2329850",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2327024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2327024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2240588",
+      "source": "We're here now.",
+      "reference": "Nous y sommes, actuellement.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4801652",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1096179",
+      "source": "I'm looking for Tom. Have you seen him?",
+      "reference": "Je cherche Tom. L'avez-vous vu ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1096179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "10710964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1096179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1096179"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_31769",
+      "source": "Mary will sit still and look at the sea for hours.",
+      "reference": "Marie se tient immobile et regarde la mer pendant des heures.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31769",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "890817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31769",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31769"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_1687499",
+      "source": "She's a successful businesswoman.",
+      "reference": "C'est une femme d'affaire à succès.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1687499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1688153",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1687499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1687499"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.25
+      }
+    },
+    {
+      "id": "tatoeba_33951",
+      "source": "Betty was the first girl who came to the party.",
+      "reference": "Betty fut la première fille à venir à la fête.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33951",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "426657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33951",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33951"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.7
+      }
+    },
+    {
+      "id": "tatoeba_4664642",
+      "source": "I'm going to send Tom some money.",
+      "reference": "Je vais envoyer de l'argent à Tom.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4664642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5741630",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4664642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4664642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_430203",
+      "source": "We hadn't credited this report.",
+      "reference": "Nous avons considéré ce rapport comme étant faux.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "430203",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "429247",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "430203",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/430203"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1392588",
+      "source": "Who did you hear this news from?",
+      "reference": "Par qui avez-vous entendu cette nouvelle ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1392588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1153204",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1392588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1392588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_752998",
+      "source": "All the words underlined in red should be checked for spelling.",
+      "reference": "L'orthographe de tous les mots soulignés de rouge devrait être vérifiée.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "752998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "799841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "752998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/752998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.73
+      }
+    },
+    {
+      "id": "tatoeba_261238",
+      "source": "I am concerned for her safety.",
+      "reference": "Je me fais des soucis pour sa sécurité.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261238",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "127810",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261238",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261238"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5622706",
+      "source": "The human hand is astonishingly versatile.",
+      "reference": "La main humaine est étonnamment polyvalente.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5622706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11058275",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5622706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5622706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2276256",
+      "source": "I don't want the money.",
+      "reference": "Je ne veux pas d'argent.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "782351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3183538",
+      "source": "Why the heck did you do this?",
+      "reference": "Pourquoi diable as-tu fait ça ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3183538",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "12408942",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3183538",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3183538"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_39403",
+      "source": "Tennis is my favorite sport.",
+      "reference": "Le tennis est mon sport préféré.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39403",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "507644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39403",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39403"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1585394",
+      "source": "Termites are destroying the houses.",
+      "reference": "Les termites détruisent les maisons.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1585394",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1480195",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1585394",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1585394"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3916787",
+      "source": "You frightened them.",
+      "reference": "Tu leur as fait peur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3916787",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6760103",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3916787",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3916787"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_1203169",
+      "source": "It happened one year ago.",
+      "reference": "C'est arrivé il y a plus d'un an.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1203169",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3602427",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1203169",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1203169"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5305864",
+      "source": "Is it free of charge?",
+      "reference": "Est-ce gratuit ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5305864",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "873491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5305864",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5305864"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_3093811",
+      "source": "She's going into labor.",
+      "reference": "Elle entre dans les contractions.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3093811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4765598",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3093811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3093811"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_965586",
+      "source": "A samurai without a sword is like a samurai with one, but only without one.",
+      "reference": "Un samouraï sans sabre est comme un samouraï avec, mais seulement sans.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "965586",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "965672",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "965586",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/965586"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.93
+      }
+    },
+    {
+      "id": "tatoeba_290842",
+      "source": "He is still too young for the job.",
+      "reference": "Il est encore trop jeune pour ce travail.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "290842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "131027",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "290842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/290842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_869569",
+      "source": "I have a huge amount of clothes in my closet.",
+      "reference": "J'ai une énorme quantité de vêtements dans mon placard.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "869569",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11242160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "869569",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/869569"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1931995",
+      "source": "The fugitive crossed the river.",
+      "reference": "Le fugitif a traversé la rivière.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1931995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1932648",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1931995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1931995"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_5708385",
+      "source": "I knew Tom would win.",
+      "reference": "Je savais que Tom gagnerait.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5708385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5708649",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5708385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5708385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2952560",
+      "source": "I want to go there by myself.",
+      "reference": "Je veux y aller tout seul.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2952560",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11222398",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2952560",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2952560"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_1110893",
+      "source": "He's got the bends.",
+      "reference": "Il a la maladie des caissons.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1110893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1111947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1110893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1110893"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1944106",
+      "source": "Don't come in my room without knocking.",
+      "reference": "N'entre pas dans ma chambre sans frapper !",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1944106",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1945284",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1944106",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1944106"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_255923",
+      "source": "I don't like apples.",
+      "reference": "Je n'aime pas les pommes.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255923",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6846",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255923",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255923"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1950782",
+      "source": "You can't believe anything Tom says about me.",
+      "reference": "Tu ne dois rien croire de ce que Tom raconte sur moi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1950782",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8381824",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1950782",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1950782"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_1848867",
+      "source": "He used a fake I.D.",
+      "reference": "Il a utilisé une fausse carte d'identité.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1848867",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4308164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1848867",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1848867"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_258721",
+      "source": "I was in good spirits.",
+      "reference": "J'étais de bonne humeur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1640488",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_834828",
+      "source": "Danger makes mute.",
+      "reference": "Le danger rend muet.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "834828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7166444",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "834828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/834828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1531065",
+      "source": "We already know each other.",
+      "reference": "Nous nous connaissons déjà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1531065",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1531820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1531065",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1531065"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_5811756",
+      "source": "Tom was born in the nineties.",
+      "reference": "Tom est né dans les années 90.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5811756",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6195491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5811756",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5811756"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2887788",
+      "source": "You came to Bergerac every summer!",
+      "reference": "Vous veniez tous les étés à Bergerac !",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2887788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2887630",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2887788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2887788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_309736",
+      "source": "All you have to do is to wait for her reply.",
+      "reference": "Tout ce que tu as à faire est d'attendre sa réponse.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "309736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "332335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "309736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/309736"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1495890",
+      "source": "Tom is doing fine.",
+      "reference": "Tom va bien.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1495890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1643838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1495890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1495890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_325956",
+      "source": "The man next door said he goes for a jog every morning.",
+      "reference": "Le voisin dit faire du jogging chaque matin.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "325956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "12689233",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "325956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/325956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.58
+      }
+    },
+    {
+      "id": "tatoeba_2198917",
+      "source": "I didn't find it funny at all.",
+      "reference": "Je n'ai pas trouvé ça drôle du tout.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2198917",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2201041",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2198917",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2198917"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_311411",
+      "source": "She passed the jewel off as her own.",
+      "reference": "Elle a fait passer ce bijou pour le sien.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "311411",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "357500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "311411",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/311411"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4011529",
+      "source": "Do you expect me to believe you did this by yourself?",
+      "reference": "Tu veux me faire croire que tu as fait ça tout seul ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4011529",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "9689844",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4011529",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4011529"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.82
+      }
+    },
+    {
+      "id": "tatoeba_5666331",
+      "source": "Tom didn't get paid for the work he did.",
+      "reference": "Tom n'a pas été payé pour le travail qu'il a fait.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5666331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5666438",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5666331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5666331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_3534652",
+      "source": "He became very elated at the news.",
+      "reference": "Il est devenu fou de joie en apprenant la nouvelle.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3534652",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8987133",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3534652",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3534652"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_914047",
+      "source": "He knows where we live.",
+      "reference": "Il sait où nous habitons.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "914047",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1334539",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "914047",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/914047"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_5112275",
+      "source": "I am living the good life.",
+      "reference": "Je passe du bon temps.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5112275",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "7011743",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5112275",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5112275"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1025940",
+      "source": "Tom doesn't think it's his fault.",
+      "reference": "Tom ne pense pas que ce soit sa faute.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1025940",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1181445",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1025940",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1025940"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2045771",
+      "source": "It's beautiful, isn't it?",
+      "reference": "C'est beau, n'est-ce pas ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2045771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "10895394",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2045771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2045771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2424263",
+      "source": "French is one of the languages I've always wanted to learn.",
+      "reference": "Le français est une des langues que j'ai toujours voulu apprendre.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2424263",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6454507",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2424263",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2424263"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.36
+      }
+    },
+    {
+      "id": "tatoeba_2538880",
+      "source": "I'm tired of dealing with this problem.",
+      "reference": "J'en ai assez de traiter ce problème.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2538880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6863796",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2538880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2538880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_317376",
+      "source": "She will make a business trip to London next week.",
+      "reference": "Elle a planifié un voyage d'affaire à Londres, la semaine prochaine.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "317376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "15670",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "317376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/317376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_670934",
+      "source": "The best player of all time was Pelé.",
+      "reference": "Le meilleur joueur de tous les temps fut Pelé.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "670934",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "822250",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "670934",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/670934"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_3736753",
+      "source": "Make an effort.",
+      "reference": "Fais un effort.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3736753",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4486757",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3736753",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3736753"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1277916",
+      "source": "We'll decide it like men. Bring the dice!",
+      "reference": "On va décider ça en hommes. Amène les dés !",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1277916",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1598127",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1277916",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1277916"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_289547",
+      "source": "He was blazing with anger.",
+      "reference": "Il était rouge de colère.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "289547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "130229",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "289547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/289547"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_3311131",
+      "source": "We're in good condition.",
+      "reference": "Nous sommes en bonne santé.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3311131",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "380229",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3311131",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3311131"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5205175",
+      "source": "Tom maintains his innocence.",
+      "reference": "Tom continue de clamer son innocence.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5205175",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "11350644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5205175",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5205175"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_18518",
+      "source": "The rich are often misers.",
+      "reference": "Les riches sont souvent radins.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "18518",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8553315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "18518",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/18518"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1240571",
+      "source": "I am thankful for sunshine.",
+      "reference": "Quelle chance j'ai de profiter du soleil.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1240571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6877082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1240571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1240571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2663098",
+      "source": "This could become a serious problem.",
+      "reference": "Ceci pourrait devenir un problème sérieux.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2663098",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "6322004",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2663098",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2663098"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2270527",
+      "source": "Don't run away.",
+      "reference": "Ne t’enfuis pas.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2270527",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "3577594",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2270527",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2270527"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_530790",
+      "source": "We're going dancing tonight.",
+      "reference": "Ce soir nous allons danser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "530790",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "378811",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "530790",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/530790"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_33120",
+      "source": "Here he comes.",
+      "reference": "Le voilà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33120",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "13389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33120",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33120"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2949281",
+      "source": "Take the street on the right.",
+      "reference": "Prends la rue à droite.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2949281",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8027009",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2949281",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2949281"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_34136",
+      "source": "I want to eat French cuisine.",
+      "reference": "Je veux manger un plat de cuisine française.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "391133",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34136"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_299384",
+      "source": "He is an adept climber.",
+      "reference": "C'est un escaladeur expérimenté.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "299384",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "10745686",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "299384",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/299384"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2007347",
+      "source": "Let's find Tom before Mary does.",
+      "reference": "Trouvons Tom avant Mary.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2007347",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "5707303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2007347",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2007347"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_296506",
+      "source": "He is swimming in the pool.",
+      "reference": "Il nage dans la piscine.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "296506",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "430311",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "296506",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/296506"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4915367",
+      "source": "I've decided to go a little further.",
+      "reference": "J'ai décidé d'aller un peu plus loin.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4915367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1752082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4915367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4915367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_4063780",
+      "source": "Tom said he had a great time with you.",
+      "reference": "Tom a dit qu'il a passé un très bon moment avec toi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4063780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4063883",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4063780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4063780"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_5975607",
+      "source": "I wish to do that.",
+      "reference": "Je veux le faire.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5975607",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "2435613",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5975607",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5975607"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_4435777",
+      "source": "What is soap made of?",
+      "reference": "De quoi le savon est-il fait ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4435777",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "8568494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4435777",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4435777"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_324556",
+      "source": "Can you direct me to the post office?",
+      "reference": "Pouvez-vous m'indiquer la direction du bureau de poste.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324556",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "135496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324556",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324556"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_5996048",
+      "source": "At the moment, platinum jewellery is in fashion.",
+      "reference": "À l'heure actuelle, les bijoux en platine sont en vogue.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5996048",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "822082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5996048",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5996048"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_319883",
+      "source": "Everything has its limit.",
+      "reference": "Il y a une limite à toutes choses.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "319883",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1206623",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "319883",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/319883"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_710903",
+      "source": "I have many discs.",
+      "reference": "J'ai beaucoup de disques.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "710903",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "976059",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "710903",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/710903"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1716505",
+      "source": "Thank you for clearing the backyard.",
+      "reference": "Merci beaucoup d'avoir nettoyé l'arrière-cour !",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1716505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "1716829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1716505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1716505"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_63555",
+      "source": "Don't forget to take a camera with you.",
+      "reference": "N'oublie pas de prendre un appareil photo avec toi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "63555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "10993",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "63555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/63555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_4463912",
+      "source": "I disagree with it.",
+      "reference": "Je ne suis pas d'accord avec cela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4463912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "fra",
+        "target_sentence_id": "4470953",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4463912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4463912"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

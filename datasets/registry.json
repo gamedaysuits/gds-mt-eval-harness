@@ -3,6 +3,11 @@
   "datasets": [
     {
       "id": "edtekla-textbook",
+      "aliases": [
+        "edtekla-full",
+        "edtekla",
+        "crk-textbook"
+      ],
       "name": "EDTeKLA Textbook Corpus",
       "version": "1.0.0",
       "language_pair": {
@@ -13,14 +18,26 @@
       "domain": "educational",
       "url": null,
       "sha256": null,
-      "access": "private",
+      "access": "fetch-from-source",
       "do_not_train": true,
       "license": "CC BY-NC-SA 4.0",
       "source": "EDTeKLA project, University of Alberta",
-      "notes": "Canonical textbook corpus: 486 entries (436 dev + 50 held-out) across difficulty tiers 1-5."
+      "notes": "Canonical textbook corpus. NOT hosted in git (CC BY-NC-SA 4.0, University of Alberta) — rebuilt from the EdTeKLA repo by corpora_builder.adapters.edtekla_adapter; see corpora card cli/shared/corpora-cards/eval-eng-crk-edtekla-textbook.json. local_path file (full_minus_holdout.json) contains 480 entries; the canonical 486-entry figure (436 dev + 50 held-out) refers to the full seed-42 split of the parsed corpus.",
+      "local_path": "datasets/crk/full_minus_holdout.json",
+      "source_repo": {
+        "repo_url": "https://github.com/EdTeKLA/IndigenousLanguages_Corpora",
+        "ref": "f85a31abc52e1610251e21e6bdd1b5ce9c96c10b",
+        "builder": "edtekla",
+        "license": "CC-BY-NC-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
     },
     {
       "id": "edtekla-dev-v1",
+      "aliases": [
+        "edtekla-dev",
+        "crk-dev"
+      ],
       "name": "EDTeKLA Development Corpus v1",
       "version": "1.0.0",
       "language_pair": {
@@ -30,12 +47,21 @@
       "size": 436,
       "domain": "educational",
       "url": null,
-      "sha256": null,
-      "access": "private",
+      "sha256": "3f335236437d07cf540389544c942a8049af06b164300592c571142031783f8d",
+      "access": "fetch-from-source",
       "do_not_train": true,
       "license": "CC BY-NC-SA 4.0",
       "source": "EDTeKLA project, University of Alberta",
-      "notes": "Full EDTeKLA textbook dev corpus: 436 entries across difficulty tiers 1-5 (from 486 total: 436 dev + 50 held-out test)."
+      "notes": "Full EDTeKLA textbook dev corpus: 436 entries across difficulty tiers 1-5 (from 486 total: 436 dev + 50 held-out test). NOT hosted in git — rebuilt deterministically from the EdTeKLA repo by corpora_builder.adapters.edtekla_adapter (verified entry-for-entry and byte-identical on 2026-06-11); see corpora card cli/shared/corpora-cards/eval-eng-crk-edtekla-dev-v1.json. The harness fetches it into arena/datasets/.cache/ on demand.",
+      "local_path": "datasets/crk/textbook_dev_436.json",
+      "source_repo": {
+        "repo_url": "https://github.com/EdTeKLA/IndigenousLanguages_Corpora",
+        "ref": "f85a31abc52e1610251e21e6bdd1b5ce9c96c10b",
+        "builder": "edtekla",
+        "license": "CC-BY-NC-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "path": "curated/eng-crk-dev-v1.json"
     },
     {
       "id": "tatoeba-spa-que-dev",
@@ -59,7 +85,9 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/spa-que-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 95 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 95 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code que; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
     },
     {
       "id": "tatoeba-eng-haw-dev",
@@ -84,7 +112,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-haw-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 194 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 194 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-ceb-dev",
@@ -107,7 +136,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-ceb-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 132 entries, stratified across 1 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 132 entries, stratified across 1 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-ilo-dev",
@@ -132,7 +162,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-ilo-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 105 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 105 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-war-dev",
@@ -157,7 +188,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-war-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 131 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 131 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-hil-dev",
@@ -182,7 +214,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-hil-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 56 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 56 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-pam-dev",
@@ -208,7 +241,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-pam-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 48 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 48 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-pag-dev",
@@ -232,7 +266,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-pag-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 60 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 60 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-yor-dev",
@@ -255,7 +290,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-yor-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 1 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 1 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-hau-dev",
@@ -282,7 +318,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-hau-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 140 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 140 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-fra-hau-dev",
@@ -307,7 +344,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/fra-hau-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-ibo-dev",
@@ -331,7 +369,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-ibo-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 35 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 35 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-zul-dev",
@@ -358,7 +397,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-zul-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 112 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 112 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-xho-dev",
@@ -384,7 +424,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-xho-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 75 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 75 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-sna-dev",
@@ -408,7 +449,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-sna-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-lug-dev",
@@ -434,7 +476,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-lug-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 183 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 183 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-tir-dev",
@@ -464,7 +507,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-tir-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 54 entries, stratified across 8 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 54 entries, stratified across 8 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-amh-dev",
@@ -491,7 +535,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-amh-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 73 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 73 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-cym-dev",
@@ -516,7 +561,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-cym-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 47 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-fra-eus-dev",
@@ -540,7 +586,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/fra-eus-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-fra-cat-dev",
@@ -563,7 +610,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/fra-cat-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 57 entries, stratified across 1 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 57 entries, stratified across 1 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-por-glg-dev",
@@ -589,7 +637,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/por-glg-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 102 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 102 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-fra-ltz-dev",
@@ -613,7 +662,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/fra-ltz-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 196 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 196 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-deu-ltz-dev",
@@ -639,7 +689,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/deu-ltz-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 179 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 179 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-nld-fry-dev",
@@ -664,7 +715,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/nld-fry-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-mlt-dev",
@@ -689,7 +741,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-mlt-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 129 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 129 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-ita-mlt-dev",
@@ -713,7 +766,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/ita-mlt-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 180 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 180 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-dan-fao-dev",
@@ -737,7 +791,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/dan-fao-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 2 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 168 entries, stratified across 2 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-sme-dev",
@@ -765,7 +820,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-sme-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 6 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 58 entries, stratified across 6 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-tam-dev",
@@ -791,7 +847,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-tam-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 153 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 153 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-tel-dev",
@@ -818,7 +875,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-tel-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 71 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 71 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-kan-dev",
@@ -846,7 +904,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-kan-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 6 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 6 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-mal-dev",
@@ -873,7 +932,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-mal-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 59 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-guj-dev",
@@ -898,7 +958,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-guj-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 165 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 165 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-pan-dev",
@@ -926,7 +987,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-pan-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 6 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 6 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-sin-dev",
@@ -951,7 +1013,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-sin-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 69 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 69 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-urd-dev",
@@ -978,7 +1041,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-urd-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 181 entries, stratified across 5 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 181 entries, stratified across 5 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-mya-dev",
@@ -1001,7 +1065,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-mya-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 77 entries, stratified across 1 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 77 entries, stratified across 1 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-lao-dev",
@@ -1030,7 +1095,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-lao-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 7 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 68 entries, stratified across 7 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-zsm-dev",
@@ -1056,7 +1122,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-zsm-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 148 entries, stratified across 4 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 148 entries, stratified across 4 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-mon-dev",
@@ -1081,7 +1148,9 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-mon-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 138 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 138 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code mon; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
     },
     {
       "id": "tatoeba-eng-kaz-dev",
@@ -1106,7 +1175,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-kaz-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 113 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 113 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-uzb-dev",
@@ -1131,7 +1201,9 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-uzb-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 167 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 167 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
     },
     {
       "id": "tatoeba-rus-uzb-dev",
@@ -1154,7 +1226,9 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/rus-uzb-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 51 entries, stratified across 1 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 51 entries, stratified across 1 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code uzb; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
     },
     {
       "id": "tatoeba-eng-bos-dev",
@@ -1179,7 +1253,8 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-bos-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 64 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 64 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     },
     {
       "id": "tatoeba-eng-sqi-dev",
@@ -1204,7 +1279,483 @@
       "source": "Tatoeba (https://tatoeba.org)",
       "path": "curated/eng-sqi-dev-v1.json",
       "segment": "development",
-      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 3 domain(s)."
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0. 61 entries, stratified across 3 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26",
+      "taxonomy_note": "Tatoeba aggregates under ISO macrolanguage code sqi; member variety not disambiguated. See docs/LANGUAGE_TAXONOMY.md."
+    },
+    {
+      "id": "crk-master-corpus",
+      "name": "CRK Master Corpus (local-only)",
+      "version": "1.0.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "crk"
+      },
+      "size": 404,
+      "domain": "educational",
+      "url": null,
+      "sha256": null,
+      "access": "local-only",
+      "do_not_train": true,
+      "license": "CC BY-NC-SA 4.0 (EdTeKLA-derived segments) / project-curated gold standard",
+      "source": "Built by crk-translate/eval/datasets/build_master_corpus.py",
+      "local_path": null,
+      "quarantine": false,
+      "notes": "Custody: crk-translate/eval/datasets/master_corpus.json exists only in local working trees — it was untracked from git on 2026-06-11 because it re-exposes sealed gold_standard and phase1 segments in a single unsealed file (see arena/datasets/DATA_INTEGRITY.md). It is regenerable via build_master_corpus.py and must not be redistributed or used for held-out evaluation.",
+      "aliases": [
+        "master_corpus"
+      ]
+    },
+    {
+      "id": "crk-phase1-test-90-quarantined",
+      "name": "QUARANTINED: phase1_test_90.json",
+      "version": "1.0.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "crk"
+      },
+      "url": null,
+      "sha256": null,
+      "access": "quarantined",
+      "do_not_train": true,
+      "license": "CC BY-NC-SA 4.0 (EdTeKLA-derived)",
+      "source": "EDTeKLA project, University of Alberta",
+      "local_path": null,
+      "quarantine": true,
+      "notes": "2026-06-11 audit: all 74 current entries (originally 90) appear verbatim in the 436-entry textbook dev corpus. Treat all phase1 results as dev-set results. Untracked from git; local copy lives at crk-translate/eval/datasets/curated/quarantine/phase1_test_90.json. MUST NOT be used for held-out evaluation. See arena/datasets/DATA_INTEGRITY.md and the quarantine/README.md beside the file."
+    },
+    {
+      "id": "crk-edtekla-dev-124-quarantined",
+      "name": "QUARANTINED: edtekla_dev_124.json",
+      "version": "1.0.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "crk"
+      },
+      "url": null,
+      "sha256": null,
+      "access": "quarantined",
+      "do_not_train": true,
+      "license": "CC BY-NC-SA 4.0 (EdTeKLA-derived)",
+      "source": "EDTeKLA project, University of Alberta",
+      "local_path": null,
+      "quarantine": true,
+      "notes": "2026-06-11 audit: all 62 sealed gold_standard entries appear verbatim in this 124-entry file (deliberate per its own metadata, but score-invalidating). Untracked from git; local copy lives at crk-translate/eval/datasets/curated/quarantine/edtekla_dev_124.json. MUST NOT be used for held-out evaluation. See arena/datasets/DATA_INTEGRITY.md and the quarantine/README.md beside the file."
+    },
+    {
+      "id": "tatoeba-eng-fra-dev",
+      "name": "Tatoeba eng→fra Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "fra"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 138,
+        "ecommerce": 7,
+        "edu": 9,
+        "gov": 1,
+        "legal": 2,
+        "literary": 5,
+        "marketing": 3,
+        "medical": 1,
+        "religious": 1,
+        "scientific": 1,
+        "support": 8,
+        "tech": 1,
+        "ui": 23
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-fra-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-deu-dev",
+      "name": "Tatoeba eng→deu Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "deu"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 132,
+        "ecommerce": 6,
+        "edu": 10,
+        "financial": 1,
+        "gov": 1,
+        "legal": 2,
+        "literary": 5,
+        "marketing": 3,
+        "medical": 3,
+        "news": 1,
+        "support": 16,
+        "tech": 3,
+        "ui": 17
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-deu-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-nld-dev",
+      "name": "Tatoeba eng→nld Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "nld"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 142,
+        "ecommerce": 7,
+        "edu": 9,
+        "financial": 3,
+        "gov": 1,
+        "legal": 3,
+        "literary": 1,
+        "medical": 2,
+        "religious": 1,
+        "scientific": 2,
+        "support": 11,
+        "tech": 2,
+        "ui": 16
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-nld-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-tgl-dev",
+      "name": "Tatoeba eng→tgl Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "tgl"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 141,
+        "ecommerce": 5,
+        "edu": 13,
+        "legal": 7,
+        "literary": 1,
+        "medical": 2,
+        "news": 1,
+        "religious": 1,
+        "support": 8,
+        "ui": 21
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tgl-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 10 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-spa-dev",
+      "name": "Tatoeba eng→spa Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "spa"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 130,
+        "ecommerce": 5,
+        "edu": 10,
+        "financial": 2,
+        "legal": 5,
+        "literary": 2,
+        "marketing": 3,
+        "medical": 4,
+        "news": 1,
+        "religious": 1,
+        "scientific": 2,
+        "support": 13,
+        "ui": 22
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-spa-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 13 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-cmn-dev",
+      "name": "Tatoeba eng→cmn Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "cmn"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 137,
+        "ecommerce": 4,
+        "edu": 14,
+        "financial": 1,
+        "legal": 1,
+        "literary": 1,
+        "marketing": 1,
+        "medical": 3,
+        "support": 17,
+        "ui": 21
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-cmn-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 10 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-jpn-dev",
+      "name": "Tatoeba eng→jpn Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "jpn"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 128,
+        "ecommerce": 7,
+        "edu": 20,
+        "financial": 1,
+        "legal": 5,
+        "literary": 3,
+        "marketing": 2,
+        "medical": 2,
+        "news": 3,
+        "religious": 1,
+        "scientific": 1,
+        "subtitles": 1,
+        "support": 12,
+        "tech": 1,
+        "ui": 13
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-jpn-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 15 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-kor-dev",
+      "name": "Tatoeba eng→kor Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "kor"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 134,
+        "ecommerce": 6,
+        "edu": 17,
+        "financial": 1,
+        "legal": 4,
+        "literary": 1,
+        "news": 1,
+        "religious": 1,
+        "scientific": 1,
+        "support": 13,
+        "tech": 2,
+        "ui": 19
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-kor-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 12 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-por-dev",
+      "name": "Tatoeba eng→por Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "por"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 143,
+        "ecommerce": 4,
+        "edu": 13,
+        "legal": 4,
+        "marketing": 4,
+        "medical": 1,
+        "support": 8,
+        "tech": 1,
+        "ui": 22
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-por-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 9 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-tha-dev",
+      "name": "Tatoeba eng→tha Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "tha"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 159,
+        "ecommerce": 5,
+        "edu": 7,
+        "legal": 2,
+        "literary": 3,
+        "marketing": 1,
+        "medical": 1,
+        "support": 6,
+        "ui": 16
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-tha-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 9 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-vie-dev",
+      "name": "Tatoeba eng→vie Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "vie"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 144,
+        "ecommerce": 6,
+        "edu": 11,
+        "gov": 1,
+        "legal": 1,
+        "literary": 3,
+        "news": 1,
+        "scientific": 1,
+        "support": 8,
+        "tech": 1,
+        "ui": 23
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-vie-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 11 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
+    },
+    {
+      "id": "tatoeba-eng-arb-dev",
+      "name": "Tatoeba eng→arb Development Corpus",
+      "version": "0.1.0",
+      "language_pair": {
+        "source": "eng",
+        "target": "arb"
+      },
+      "size": 200,
+      "domain": "mixed",
+      "domain_distribution": {
+        "conv": 146,
+        "ecommerce": 3,
+        "edu": 9,
+        "gov": 3,
+        "legal": 2,
+        "literary": 3,
+        "marketing": 1,
+        "religious": 1,
+        "support": 13,
+        "tech": 3,
+        "ui": 16
+      },
+      "url": null,
+      "sha256": null,
+      "access": "local",
+      "do_not_train": true,
+      "license": "CC-BY-2.0",
+      "source": "Tatoeba (https://tatoeba.org)",
+      "path": "curated/eng-arb-dev-v1.json",
+      "segment": "development",
+      "notes": "Auto-built via Tatoeba API by corpora-builder v0.1.0 (build_website_corpora: 1000-result fetch window, stratified sampling with seeded top-up). 200 entries, stratified across 11 domain(s).",
+      "attribution": "Tatoeba (CC-BY-2.0), via Tatoeba Challenge 2023-09-26"
     }
   ]
 }

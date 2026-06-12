@@ -46,7 +46,6 @@ from mt_eval_harness.metrics_comet import (
     corpus_comet,
     DEFAULT_COMET_MODEL,
     resolve_comet_model,
-    COMET_MODEL_REGISTRY,
 )
 
 __all__ = [
@@ -74,7 +73,6 @@ __all__ = [
     "corpus_comet",
     "DEFAULT_COMET_MODEL",
     "resolve_comet_model",
-    "COMET_MODEL_REGISTRY",
     "load_registry",
     "resolve_dataset",
     "load_method_card",

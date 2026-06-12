@@ -1,6 +1,21 @@
 ---
 sidebar_position: 1
 title: MT Evaluation
+related:
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+    note: "How the composite score is computed"
+  - label: "Statistical Significance Testing"
+    to: /docs/specifications/significance
+    kind: spec
+  - label: "Evaluation Datasets"
+    to: /docs/leaderboard/datasets
+    kind: doc
+  - label: "Live Leaderboard"
+    to: https://champollion.dev/leaderboard
+    kind: leaderboard
+    note: "The rules, applied"
 ---
 
 # MT Evaluation

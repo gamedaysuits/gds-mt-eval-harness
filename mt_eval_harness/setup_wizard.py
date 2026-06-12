@@ -56,23 +56,36 @@ def check_pyhfst_installed() -> bool:
         return False
 
 
+def check_spacy_installed() -> bool:
+    """Check if spaCy and en_core_web_md model are importable."""
+    try:
+        import spacy
+        spacy.load("en_core_web_md")
+        return True
+    except (ImportError, OSError):
+        return False
+
+
 def get_installed_fsts() -> list[dict]:
     """List FSTs that have been downloaded to the cache."""
     from mt_eval_harness.plugins.fst_installer import (
         FST_CACHE_ROOT,
-        GIELLALT_FST_REGISTRY,
         find_analyzer_hfstol,
     )
+    from mt_eval_harness import language_cards as _lc
 
     installed = []
-    for code, entry in GIELLALT_FST_REGISTRY.items():
+    for code in _lc.get_all_codes():
+        info = _lc.get_fst_install_info(code)
+        if info is None:
+            continue
         fst_dir = FST_CACHE_ROOT / code
         if fst_dir.exists():
             analyzer = find_analyzer_hfstol(fst_dir)
             if analyzer:
                 installed.append({
                     "code": code,
-                    "name": entry.get("name", code),
+                    "name": _lc.get_name(code) or code,
                     "analyzer": analyzer.name,
                     "path": str(fst_dir),
                 })
@@ -128,19 +141,35 @@ def print_status():
         print("       polysynthetic languages (crk, sme, etc.).")
     print()
 
+    # spaCy
+    spacy_ok = check_spacy_installed()
+    if spacy_ok:
+        print(f"  Semantic validation:")
+        print(f"    ✅ spaCy         — NLP library")
+        print(f"    ✅ en_core_web_md — Word vectors for content-word overlap")
+    else:
+        print("  Semantic validation:")
+        print("    ❌ spaCy         — Not installed")
+        print("       Required for LYSS-sem semantic validation (content-word overlap).")
+        print("       Install with: mt-eval setup --crk")
+    print()
+
     # Available FSTs not yet installed
-    from mt_eval_harness.plugins.fst_installer import GIELLALT_FST_REGISTRY
+    from mt_eval_harness import language_cards as _lc
     installed_codes = {f["code"] for f in fst_list}
-    available = [
-        (code, entry)
-        for code, entry in GIELLALT_FST_REGISTRY.items()
-        if code not in installed_codes
-    ]
+    available = []
+    for code in _lc.get_all_codes():
+        if code in installed_codes:
+            continue
+        info = _lc.get_fst_install_info(code)
+        if info is not None:
+            available.append((code, info))
     if available and fst_ok:
         print("  Available FSTs (auto-download on first eval):")
-        for code, entry in available:
-            fmt = entry.get("format", "")
-            maturity = entry.get("maturity", "")
+        for code, info in available:
+            fmt = info.get("format", "")
+            maturity = info.get("maturity", "")
+            lang_name = _lc.get_name(code) or code
             status = ""
             if maturity == "stub":
                 status = " (dev/stub — limited vocabulary)"
@@ -148,13 +177,14 @@ def print_status():
                 status = " (manual install required)"
             elif fmt == "divvun":
                 status = " (Divvun manager required)"
-            print(f"    ○ {code:3s} — {entry.get('name', code)}{status}")
+            print(f"    ○ {code:3s} — {lang_name}{status}")
         print()
 
     print("  ─────────────────────────────────────────────────────────")
     print("  Install everything:  mt-eval setup --all")
     print("  Install COMET only:  mt-eval setup --comet")
     print("  Install FST only:    mt-eval setup --fst")
+    print("  Install CRK deps:    mt-eval setup --crk")
     print()
 
 
@@ -278,12 +308,140 @@ def install_pyhfst(interactive: bool = True) -> bool:
     return _pip_install("pyhfst>=1.4", "FST runtime (pyhfst)")
 
 
+# ---------------------------------------------------------------------------
+# Generic language eval pack installer
+# ---------------------------------------------------------------------------
+#
+# Reads the evalPack field from the language card and installs whatever
+# it declares. No language-specific code. Adding support for a new
+# language = editing the language card JSON.
+
+def install_lang(lang_code: str, interactive: bool = True) -> bool:
+    """Install eval pack for any language, driven by language card data.
+
+    Reads the ``evalPack`` field from the language card and installs:
+    1. Python dependencies (pip install)
+    2. Post-install commands (e.g., spaCy model downloads)
+    3. FST morphological analyzer files (if requiresFst is set)
+
+    Args:
+        lang_code: ISO 639-3 language code (e.g., "crk", "sme").
+        interactive: If True and TTY is available, prompt before installing.
+
+    Returns:
+        True if all dependencies were installed successfully.
+    """
+    from mt_eval_harness.language_cards import get_eval_pack, get_name
+
+    pack = get_eval_pack(lang_code)
+    if not pack:
+        lang_name = get_name(lang_code) or lang_code
+        print(f"  ℹ️  No eval pack defined for {lang_name} ({lang_code}).")
+        print(f"     This language can be evaluated with default metrics.")
+        return True
+
+    lang_name = get_name(lang_code) or lang_code
+    description = pack.get("description", "Language-specific evaluation tools")
+    python_deps = pack.get("pythonDeps", {})
+    post_install = pack.get("postInstall", [])
+    requires_fst = pack.get("requiresFst", False)
+
+    # Check what's already installed
+    missing_deps = {}
+    for import_name, pip_spec in python_deps.items():
+        try:
+            __import__(import_name)
+        except ImportError:
+            missing_deps[import_name] = pip_spec
+
+    fst_needed = False
+    if requires_fst:
+        try:
+            from mt_eval_harness.plugins.fst_installer import is_fst_installed
+            fst_needed = not is_fst_installed(lang_code)
+        except ImportError:
+            fst_needed = True
+
+    if not missing_deps and not fst_needed:
+        print(f"  ✅ {lang_name} ({lang_code}) eval pack already installed.")
+        return True
+
+    # Interactive confirmation
+    if interactive and sys.stdin.isatty():
+        print()
+        print(f"  ┌──────────────────────────────────────────────────────────┐")
+        print(f"  │  Install Eval Pack: {lang_name:<36} │")
+        print(f"  │                                                          │")
+        print(f"  │  {description:<56} │")
+        print(f"  │                                                          │")
+        if missing_deps:
+            print(f"  │  Python packages:                                        │")
+            for pip_spec in missing_deps.values():
+                print(f"  │    • {pip_spec:<52} │")
+        if fst_needed:
+            print(f"  │  FST morphological analyzer (GiellaLT)                  │")
+        if post_install:
+            print(f"  │  Post-install steps: {len(post_install):<34} │")
+        print(f"  └──────────────────────────────────────────────────────────┘")
+        print()
+        try:
+            answer = input(f"  Install {lang_name} eval pack? [Y/n]: ").strip().lower()
+            if answer in ("n", "no"):
+                print(f"  Skipped {lang_name} eval pack installation.")
+                return False
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return False
+
+    # Install Python dependencies
+    for import_name, pip_spec in missing_deps.items():
+        if not _pip_install(pip_spec, import_name):
+            return False
+
+    # Run post-install commands (e.g., spaCy model downloads)
+    for step in post_install:
+        command = step.get("command", "")
+        label = step.get("label", command)
+        if not command:
+            continue
+        print(f"\n  Running post-install: {label}...")
+        try:
+            import subprocess as sp
+            result = sp.run(
+                [sys.executable, "-m"] + command.split(),
+                capture_output=False, text=True, timeout=300,
+            )
+            if result.returncode != 0:
+                print(f"  ❌ Post-install step failed: {label}")
+                return False
+            print(f"  ✅ {label} completed.")
+        except Exception as e:
+            print(f"  ❌ Post-install step failed: {label}: {e}")
+            return False
+
+    # Download FST files if required
+    if fst_needed:
+        print(f"\n  Downloading FST for {lang_name}...")
+        try:
+            from mt_eval_harness.plugins.fst_installer import install_fst
+            install_fst(lang_code)
+            print(f"  ✅ {lang_name} FST installed.")
+        except Exception as e:
+            print(f"  ❌ FST download failed: {e}")
+            return False
+
+    print(f"  ✅ {lang_name} ({lang_code}) eval pack installed successfully.")
+    return True
+
+
+
 # ── Interactive wizard ───────────────────────────────────────────
 
 def run_setup(
     install_all: bool = False,
     comet_only: bool = False,
     fst_only: bool = False,
+    lang_code: str | None = None,
     status_only: bool = False,
 ):
     """Run the interactive setup wizard.
@@ -292,6 +450,7 @@ def run_setup(
         install_all: Install everything without prompts
         comet_only: Install just COMET
         fst_only: Install just FST support
+        lang_code: Install eval pack for a specific language (e.g., "crk")
         status_only: Just show current status
     """
     if status_only:
@@ -315,6 +474,10 @@ def run_setup(
 
     if fst_only:
         install_pyhfst(interactive=False)
+        return
+
+    if lang_code:
+        install_lang(lang_code, interactive=False)
         return
 
     # Full interactive wizard

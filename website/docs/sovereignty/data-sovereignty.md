@@ -2,6 +2,20 @@
 sidebar_position: 7
 title: Data Sovereignty
 description: "OCAP, CARE, and Māori Data Sovereignty principles for Indigenous language translation. Why community consent comes before deployment."
+related:
+  - label: "Ownership Transfer"
+    to: /docs/sovereignty/ownership-transfer
+    kind: doc
+    note: "How control of language data moves to communities"
+  - label: "The Economic Model"
+    to: /docs/sovereignty/economic-model
+    kind: doc
+  - label: "Reporting Errors and Owning Corrections"
+    to: /docs/perspectives/reporting-errors-and-owning-corrections
+    kind: position
+  - label: "For Language Communities"
+    to: /docs/community/for-language-communities
+    kind: doc
 ---
 
 # Data Sovereignty

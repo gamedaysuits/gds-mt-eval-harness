@@ -26,37 +26,20 @@ from pathlib import Path
 
 
 # ---------------------------------------------------------------------------
-# Language code aliases — mirrors lib/registers.js resolveCode()
+# Language code resolution — delegates to language_cards SSOT
 # ---------------------------------------------------------------------------
+#
+# Previously this module contained a 54-entry CODE_ALIASES dict duplicating
+# what the language cards already provide. Deleted in v8 — all resolution
+# now goes through the shared language_cards module which indexes all 7,928
+# cards at startup.
 
-# Common aliases that map non-canonical codes to their canonical form.
-# This is the same mapping as resolveCode() in registers.js.
-CODE_ALIASES: dict[str, str] = {
-    "no": "nb",       # Norwegian → Bokmål
-    "iw": "he",       # Legacy Hebrew
-    "in": "id",       # Legacy Indonesian
-    "ji": "yi",       # Legacy Yiddish
-    "jw": "jv",       # Legacy Javanese
-    "mo": "ro",       # Moldavian → Romanian
-    "sh": "sr",       # Serbo-Croatian → Serbian
-    "tl": "fil",      # Tagalog → Filipino (note: we have a card for "tl")
-}
-
-# Region fallbacks: pt-PT → pt, es-MX → es, fr-CA → fr, zh-TW → zh
-# These are checked if no exact card match exists.
-
-
-def resolve_code(code: str) -> str:
-    """Resolve a language code to its canonical form.
-
-    Mirrors the resolveCode() function in lib/registers.js:
-    1. Check direct alias mapping
-    2. Try base language (strip region subtag)
-    3. Return as-is if no resolution found
-    """
-    if code in CODE_ALIASES:
-        return CODE_ALIASES[code]
-    return code
+from mt_eval_harness.language_cards import (
+    resolve_code,
+    resolve_name,
+    get_card as get_language_card_from_ssot,
+    get_name as get_language_name,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -248,6 +231,7 @@ class ChampollionRunConfig:
     prompt_context: str | None   # Global context string from config
 
     # --- Canonical MethodConfig fields ---
+    source_lang_name: str = "English"  # Human-readable source name, resolved from sourceLocale
     model: str | None = None           # OpenRouter model slug
     temperature: float | None = None   # LLM sampling temperature
     batch_size: int | None = None      # Entries per API call
@@ -330,6 +314,11 @@ def load_champollion_config(
     # then pairs override).
     preset_override = None
     source_locale = champollion_config.get("sourceLocale", "en")
+
+    # Resolve source language name from its language card
+    from mt_eval_harness.language_cards import get_name as lc_get_name
+    source_lang_name = lc_get_name(source_locale) or "English"
+
     canonical = resolve_code(target_lang_code)
 
     # Check "languages" block first
@@ -436,6 +425,7 @@ def load_champollion_config(
     return ChampollionRunConfig(
         target_lang_name=lang_name,
         target_lang_code=target_lang_code,
+        source_lang_name=source_lang_name,
         register=register,
         gender_guidance=gender_guidance,
         prompt_context=prompt_context,
@@ -503,7 +493,7 @@ def build_champollion_system_prompt(rc: ChampollionRunConfig) -> str:
 
     return (
         f"You are translating UI strings for a web/mobile application "
-        f"from English to {rc.target_lang_name}.\n"
+        f"from {rc.source_lang_name} to {rc.target_lang_name}.\n"
         f"{context_block}\n"
         f"Register/tone: {rc.register}\n"
         f"{coaching_block}\n"
@@ -512,7 +502,7 @@ def build_champollion_system_prompt(rc: ChampollionRunConfig) -> str:
         f"- Proper nouns (product names, company names, place names) "
         f"should NOT be translated.\n"
         f"- Technical terms and role descriptions that are industry-standard "
-        f"should stay in English.\n"
+        f"should stay in {rc.source_lang_name}.\n"
         f"{gender_rule}\n"
         f"- Respect the UI element type: button labels should be concise, "
         f"descriptions can be natural-length, error messages should be clear "

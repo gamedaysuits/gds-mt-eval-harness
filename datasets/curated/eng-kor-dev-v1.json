@@ -1,0 +1,5840 @@
+{
+  "corpus_id": "tatoeba-eng-kor-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "kor"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:42:35.710082+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "financial",
+    "legal",
+    "literary",
+    "news",
+    "religious",
+    "scientific",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_499617",
+      "source": "Nice to meet you.",
+      "reference": "반갑습니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "499617",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "9466292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "499617",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/499617"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_267675",
+      "source": "Flour is made from wheat.",
+      "reference": "밀가루는 밀로 만든다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "267675",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11597124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "267675",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/267675"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5916207",
+      "source": "I still sometimes do that.",
+      "reference": "난 아직도 가끔씩 그것을 한다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5916207",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11107045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5916207",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5916207"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_73497",
+      "source": "Is one thousand yen enough?",
+      "reference": "1000엔으로 충분한가요?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "73497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "73497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/73497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_1421919",
+      "source": "They are funny.",
+      "reference": "그들은 웃기다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1421919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3684949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1421919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1421919"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3280576",
+      "source": "Does she like orange?",
+      "reference": "그녀는 오렌지를 좋아하나요?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3280576",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10603084",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3280576",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3280576"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2245539",
+      "source": "Have a look.",
+      "reference": "보세요!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10596595",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245539"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_255770",
+      "source": "I must be going now.",
+      "reference": "지금 떠나야 한다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106730",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255770"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_277364",
+      "source": "Please pardon me for coming late.",
+      "reference": "늦게 온 것을 용서해 주세요.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277364",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "911509",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277364",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277364"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3171095",
+      "source": "Tom will be here in less than an hour.",
+      "reference": "톰은 한시간 안에 여기로 올 것 같아.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3171095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8358608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3171095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3171095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_1077576",
+      "source": "This is not something that anyone can do.",
+      "reference": "아무나 할 수 있는 것이 아닙니다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1077576",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5386",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1077576",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1077576"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_3171217",
+      "source": "Tom respects me, I think.",
+      "reference": "톰이 나를 존중한다고 생각해.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3171217",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13118841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3171217",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3171217"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_6003767",
+      "source": "The war ended about three months later.",
+      "reference": "전쟁은 대략 3달이 지나고 끝났어.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6003767",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8366691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6003767",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6003767"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_4208260",
+      "source": "Can I find you on Facebook?",
+      "reference": "페이스북 계정 있으신가요?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4208260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4208260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4208260"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_288662",
+      "source": "He has been studying French for eight years.",
+      "reference": "그는 8년동안 불어를 공부하고 있다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "288662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "507555",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "288662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/288662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1077996",
+      "source": "I killed two birds with one stone.",
+      "reference": "일석이조 (一石二鳥).",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1077996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "907715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1077996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1077996"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_6525111",
+      "source": "Both Tom and Mary miss you.",
+      "reference": "톰이랑 메리 둘 다 널 그리워해.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6525111",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10788997",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6525111",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6525111"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3619063",
+      "source": "I don't think Tom is going to admit that he's wrong.",
+      "reference": "톰이 자신이 틀렸다고 인정할 것 같지 않아.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3619063",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11054691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3619063",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3619063"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_252434",
+      "source": "I was born on June 4, 1974.",
+      "reference": "나는 1974년 6월 4일에 태어났다.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "911966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_487901",
+      "source": "I could swim well when I was a child.",
+      "reference": "나는 내가 어릴 때 수영을 잘할 수 있었다.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "487901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13118508",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "487901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/487901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.11
+      }
+    },
+    {
+      "id": "tatoeba_3384312",
+      "source": "Peel the potatoes and the carrots.",
+      "reference": "감자와 당근의 껍질을 벗겨주세요.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3384312",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7999539",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3384312",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3384312"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_954014",
+      "source": "Is it safe to eat food that has dropped on the floor?",
+      "reference": "바닥에 떨어진 음식을 먹어도 안전할까?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954014",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10789000",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954014",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954014"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.42
+      }
+    },
+    {
+      "id": "tatoeba_10930403",
+      "source": "My house is small and cramped.",
+      "reference": "제 집은 작고 좁습니다.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10930403",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13167624",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10930403",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10930403"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1567440",
+      "source": "I don't know where to start.",
+      "reference": "어디서부터 시작할지 잘 모르겠어.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1567440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8362091",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1567440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1567440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_704135",
+      "source": "Sentences bring context to the words. Sentences have personalities. They can be funny, smart, silly, insightful, touching, hurtful.",
+      "reference": "문장은 단어들의 맥락을 제공한다. 문장은 개성을 가지고 있다. 재밌기도 하고 영리하기도 하며 바보 같음과 통찰력도 가지기도 하고 감동과 상처를 주기도 한다.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "704135",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1533390",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "704135",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/704135"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 5.89
+      }
+    },
+    {
+      "id": "tatoeba_1136681",
+      "source": "If you go into the forest, watch out for the man-eating ogres!",
+      "reference": "숲에 가면, 식인 요괴를 조심하세요!",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1136681",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7999624",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1136681",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1136681"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.08
+      }
+    },
+    {
+      "id": "tatoeba_273246",
+      "source": "Since the war, Japan has advanced greatly in science and technology.",
+      "reference": "전쟁 이래로 일본은 과학과 기술에서 큰 진보를 이루었어.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273246",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8363700",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273246",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273246"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.09
+      }
+    },
+    {
+      "id": "tatoeba_24406",
+      "source": "Mr. Kato, living in Paris, misses the family he left behind.",
+      "reference": "파리에 사는 카토씨는 고향에 남겨둔 가족들을 그리워합니다.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13264324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24406"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.18
+      }
+    },
+    {
+      "id": "tatoeba_1887522",
+      "source": "I know you didn't want Tom to wear your clothes, but his were all wet.",
+      "reference": "난 텀이 너의 옷을 입는 걸 네가 싫어하는지 알았는데, 그의 옷이 함빡 젖었었어.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1887522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3604081",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1887522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1887522"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1986867",
+      "source": "The poor widow with her two young children - herself an orphan - struggled bravely for a while against the fearful tide of adversity.",
+      "reference": "불쌍한 고아인 과부와 그녀의 어린 애들 2명은 온갖 역경에 맞서 용감하게 싸웠다.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1986867",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3684974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1986867",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1986867"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 24,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.54
+      }
+    },
+    {
+      "id": "tatoeba_2172",
+      "source": "Holy crap, who's the asshole who dares call me in the middle of the night?!",
+      "reference": "세상에, 감히 나한테 한밤중에 전화거는 놈이 누구야?!",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2172",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4568842",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2172",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2172"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.87
+      }
+    },
+    {
+      "id": "tatoeba_22199",
+      "source": "If you are going abroad, it's necessary to have a passport.",
+      "reference": "외국에 가려면 여권이 필요합니다.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "22199",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8026872",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "22199",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/22199"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.27
+      }
+    },
+    {
+      "id": "tatoeba_896178",
+      "source": "She said that a good gin and tonic is like summertime in a glass, and it struck me as being too true.",
+      "reference": "그녀는 고급 진과 토닉 한 잔은 여름과도 같다고 했다, 그리고 그것은 나에게 진실함을 느끼게 해주었다.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "896178",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3604051",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "896178",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/896178"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_595563",
+      "source": "When I first took a C course, I couldn't understand a single thing explained in class. Thank God I got a friend of mine who's a programmer to explain to me how the whole caboodle works.",
+      "reference": "내가 C 수업을 처음 들었을 때, 난 강의 내용의 한 글자도 이해를 못 했었어. 진짜 다행스럽게도 나한텐 모든 것이 어떻게 작동하는지 알려줄 수 있는 프로그래머 친구를 뒀지 뭐야.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "595563",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8376452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "595563",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/595563"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 36,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.08
+      }
+    },
+    {
+      "id": "tatoeba_2378774",
+      "source": "He's not beaten by the rain; he's not beaten by the wind; neither the snow nor the heat of the summer will beat him; his body is robust, without greed; he never angers, but is always serenely smiling.",
+      "reference": "비에도 지지 않고, 바람에도 지지 않고, 눈에도 여름의 더위에도 지지 않는 튼튼한 몸을 가지고 결코 화내지 않으면서 언제나 조용히 웃고 있다.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2378774",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2378211",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2378774",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2378774"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 38,
+        "difficulty_estimated_clauses": 9,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_45249",
+      "source": "The price includes tax.",
+      "reference": "그 가격에는 세금이 포함되어 있다.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "45249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "45249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/45249"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_45246",
+      "source": "The price includes postage.",
+      "reference": "우편료가 가격에 포함되어 있다.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "45246",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5269360",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "45246",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/45246"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_302539",
+      "source": "He ordered them to release the prisoners.",
+      "reference": "그는 그들에게 죄수들을 풀어주라고 명령했다.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106229",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302539"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_65505",
+      "source": "Our refrigerator is out of order.",
+      "reference": "우리 냉장고가 고장났다.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "65505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5269589",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "65505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/65505"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_58916",
+      "source": "What is the price of this watch?",
+      "reference": "이 시계 얼마야?",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "58916",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11078187",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "58916",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/58916"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_270683",
+      "source": "I returned the books I borrowed from the library, and I borrowed some new ones.",
+      "reference": "도서관에서 빌렸던 책은 반납하고, 다시 새로운 책을 빌려왔어.",
+      "domain": "ecommerce",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13145956",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270683"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_314945",
+      "source": "She has done her homework.",
+      "reference": "그녀는 숙제를 다 했다.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314945"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_3618423",
+      "source": "Teachers also make mistakes.",
+      "reference": "선생님이어도 틀리는 일은 있을 수 있다.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3618423",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13250346",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3618423",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3618423"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_31331",
+      "source": "Have you finished your homework?",
+      "reference": "숙제 다 끝냈니?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1587188",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31331"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_55893",
+      "source": "Whose textbook is this?",
+      "reference": "이 책은 누구 것이지?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1637165",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55893"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_1416128",
+      "source": "Why did you become a teacher?",
+      "reference": "당신은 왜 선생님이 됐어요?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1416128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2799629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1416128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1416128"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_19044",
+      "source": "Do you eat it in the classroom?",
+      "reference": "교실에서 그걸 먹어요?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13576005",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19044"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_273040",
+      "source": "The teacher looked over the papers.",
+      "reference": "선생님은 숙제를 살펴봤다.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273040",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3684944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273040",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273040"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_247610",
+      "source": "Our teacher comes to school by car.",
+      "reference": "우리 선생님은 차를 타고 학교에 가셔요.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "247610",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11112163",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "247610",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/247610"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_293991",
+      "source": "He is a teacher of English.",
+      "reference": "그분은 영어 선생님이다.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293991",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10587622",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293991",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293991"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_261625",
+      "source": "I am a student at Hyogo University.",
+      "reference": "효고 대학생입니다.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "330718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261625"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_893831",
+      "source": "The transfer student in the other class is a super good-looking guy.",
+      "reference": "옆 반에 온 전학생, 완전 꽃미남이래",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "893831",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13135571",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "893831",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/893831"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_326004",
+      "source": "For example, this is a pen.",
+      "reference": "예를 들면, 이것은 펜이다.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326004",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3684965",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326004",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326004"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_33507",
+      "source": "I used to keep a diary in English when I was a student.",
+      "reference": "나는 학생일 때 영어로 일기를 쓰곤 했다.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33507",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7965208",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33507",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33507"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.23
+      }
+    },
+    {
+      "id": "tatoeba_5099471",
+      "source": "I don't like teachers who dislike students that ask questions.",
+      "reference": "난 질문하는 학생을 종아하지 않은 선생님을 싫어합니다.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5099471",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4986684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5099471",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5099471"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_2811793",
+      "source": "If we don't thoroughly examine the cause of bullying, bullying will probably never go away.",
+      "reference": "우리가 따돌림의 원인을 철저히 조사하지 않는다면, 따돌림은 결코 사라지지 않을 것이다.",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2811793",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2811793",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2811793"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_275479",
+      "source": "When I grow up, I want to be an English teacher.",
+      "reference": "제가 어른이되면, 나는 영어 교사가되고 싶어요.",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "275479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "982191",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "275479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/275479"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.27
+      }
+    },
+    {
+      "id": "tatoeba_953635",
+      "source": "I think it's a shame that some foreign language teachers were able to graduate from college without ever having studied with a native speaker.",
+      "reference": "몇몇 외국어 선생님이 한 번도 원어민과 공부해본 적도 없으면서 대학을 나올 수 있었다는 건 창피한 일인 것 같아.",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953635",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8384140",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953635",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953635"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 24,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.92
+      }
+    },
+    {
+      "id": "tatoeba_1267633",
+      "source": "The Governor did not like the news reports relating to the transaction and viewed them as a personal attack.",
+      "reference": "주지사는 그 거래 관련 보도들을 마음에 들어 하지 않았고, 개인적인 공격으로 받아들였어.",
+      "domain": "financial",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1267633",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13755125",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1267633",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1267633"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.68
+      }
+    },
+    {
+      "id": "tatoeba_847127",
+      "source": "Lawyers are all liars.",
+      "reference": "변호사들은 모두 거짓말쟁이다.",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "847127",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6305449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "847127",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/847127"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_321019",
+      "source": "All men are equal under the law.",
+      "reference": "모든 사람은 법 아래에 동등해.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321019",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365154",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321019",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321019"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_545601",
+      "source": "This is the law of the jungle.",
+      "reference": "이것이 정글의 법칙이야.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "545601",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4739068",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "545601",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/545601"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_890393",
+      "source": "Enter in a contractual agreement with me and become a young magical girl!",
+      "reference": "나와 계약해서 마법소녀가 되어줘.",
+      "domain": "legal",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "890393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "9583870",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "890393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/890393"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_1183525",
+      "source": "Who translated this poem into the Tajik language?",
+      "reference": "이 시를 타지크어로 누가 번역했나요?",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1183525",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13250657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1183525",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1183525"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.12
+      }
+    },
+    {
+      "id": "tatoeba_5838968",
+      "source": "Fadil called the police and reported his child missing.",
+      "reference": "파딜은 경찰에 전화해서 자기 아이가 실종되었다고 신고했다.",
+      "domain": "news",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5838968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11104566",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5838968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5838968"
+        },
+        "classification_confidence": 0.1111,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.11
+      }
+    },
+    {
+      "id": "tatoeba_1345046",
+      "source": "I have faith in you.",
+      "reference": "나는 너를 믿어.",
+      "domain": "religious",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1345046",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1345046",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1345046"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2629819",
+      "source": "I'd like to hear Tom's opinion at least once before we come to a conclusion.",
+      "reference": "결론을 내기 전에 일단 톰의 의견을 들어 두고 싶구먼.",
+      "domain": "scientific",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2629819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8466160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2629819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2629819"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.07
+      }
+    },
+    {
+      "id": "tatoeba_2240453",
+      "source": "Why should I help Tom?",
+      "reference": "톰을 왜 도와줘야 하는데?",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240453",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13146414",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240453",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240453"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_1224044",
+      "source": "Help me paint the house!",
+      "reference": "집 칠하는 것을 도와줘!",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1224044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4717729",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1224044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1224044"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_1580138",
+      "source": "How could I help you?",
+      "reference": "어떻게 도와드릴까요?",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1580138",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1587218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1580138",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1580138"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1553498",
+      "source": "Help me out.",
+      "reference": "나 좀 도와줘.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1553498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605426",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1553498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1553498"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3333937",
+      "source": "Will you help us now?",
+      "reference": "이제 우릴 도와줄 거야?",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3333937",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7965206",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3333937",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3333937"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_323560",
+      "source": "Guide dogs help blind people.",
+      "reference": "안내견은 맹인을 돕는다.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323560",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106295",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323560",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323560"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_1868020",
+      "source": "Tom needs help.",
+      "reference": "톰은 도움이 필요하다.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868020",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868020",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868020"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_69296",
+      "source": "I hope that you'll help me.",
+      "reference": "당신이 나를 도와주길 바란다.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105926",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69296"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2290270",
+      "source": "I didn't ask for your help.",
+      "reference": "너한테 도와달라고 안했거든.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2290270",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4748406",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2290270",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2290270"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_40232",
+      "source": "The tickets are 20 yen each.",
+      "reference": "티켓은 각각 20엔 입니다.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40232",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1533347",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40232",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40232"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1424501",
+      "source": "Please feel free to help yourself to anything in the fridge.",
+      "reference": "냉장고에 있는 거 아무거나 편하게 마음껏 드세요.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1424501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7497228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1424501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1424501"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.45
+      }
+    },
+    {
+      "id": "tatoeba_3659291",
+      "source": "I wanted to invite Mr. Jinsu this evening to thank him for helping me earlier.",
+      "reference": "진수 씨가 저를 도와주신 것을 감사하는 뜻으로 저녁에 초대하려고 해요.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3659291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2658175",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3659291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3659291"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.13
+      }
+    },
+    {
+      "id": "tatoeba_68790",
+      "source": "I'm sorry, I can't help you.",
+      "reference": "미안한데, 내가 도와줄 수가 없어.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "68790",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8361969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "68790",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/68790"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3992009",
+      "source": "Seoul is the capital of South Korea.",
+      "reference": "서울은 남한의 도시다.",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3992009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6305089",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3992009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3992009"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_1551873",
+      "source": "Previously, Mr Johnson also proposed banning the consumption of alcohol on public transport in the capital, which is believed to have reduced the crime rate on trains and buses.",
+      "reference": "존슨 씨는 이전에 수도의 대중교통에서 음주를 금지할 것을 제안했으며, 일부 사람들은 이 제안이 기차와 버스에서의 범죄율을 효과적으로 줄였다고 믿는다.",
+      "domain": "tech",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1551873",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13548020",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1551873",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1551873"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 29,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 5.03
+      }
+    },
+    {
+      "id": "tatoeba_2546381",
+      "source": "Tom opened the windows.",
+      "reference": "톰은 창문을 열었어.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2546381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8368450",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2546381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2546381"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_62726",
+      "source": "Kate made an apple pie.",
+      "reference": "케이트는 사과 파이를 만들었어.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62726",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8367801",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62726",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62726"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_5099489",
+      "source": "She couldn't open that bottle.",
+      "reference": "그녀는 그 병을 열 수 없었다.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5099489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4963297",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5099489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5099489"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2548955",
+      "source": "Tom was not happy.",
+      "reference": "톰은 기분이 좋지 않았어.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548955",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13756373",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548955",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548955"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1664",
+      "source": "Open your mouth!",
+      "reference": "입을 벌리세요!",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1664",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "912396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1664",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1664"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_279603",
+      "source": "Winter is approaching.",
+      "reference": "겨울이 오고 있다.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "279603",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11597175",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "279603",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/279603"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_4501289",
+      "source": "Tom is open-minded.",
+      "reference": "톰은 개방적이야.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4501289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8361795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4501289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4501289"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_18406",
+      "source": "Open your book to page nine.",
+      "reference": "그 책 9쪽을 펴시오.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "18406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "915481",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "18406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/18406"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_17072",
+      "source": "This happened prior to receiving your letter.",
+      "reference": "그건 네 편지를 받기 전에 일어났어.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "9294444",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17072"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.43
+      }
+    },
+    {
+      "id": "tatoeba_1196919",
+      "source": "I really appreciate all your help.",
+      "reference": "도와 주셔서 아주 고맙습니다.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1196919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7792928",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1196919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1196919"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1771909",
+      "source": "Don't be fooled by her appearance.",
+      "reference": "그 여자 겉모습만 보고 속지 마라.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1771909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11104596",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1771909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1771909"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6011112",
+      "source": "All my software is open source.",
+      "reference": "내 소프트웨어들은 전부 오픈 소스야.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6011112",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6011112",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6011112"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_290510",
+      "source": "He tried to open the door.",
+      "reference": "그가 문을 열려고 하였다.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "290510",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4032528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "290510",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/290510"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6011113",
+      "source": "All of my software is open source.",
+      "reference": "내 소프트웨어들은 전부 오픈 소스야.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6011113",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6011113",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6011113"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_331941",
+      "source": "Since I don't have a job, I can't save money.",
+      "reference": "일을 안하니까, 돈을 못 모으겠어.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "331941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1587270",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "331941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/331941"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_925023",
+      "source": "Merry Christmas and a Happy New Year!",
+      "reference": "즐거운 성탄절과 복된 새해를 기원합니다.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "925023",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5269466",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "925023",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/925023"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_20862",
+      "source": "Correct the mistake and return the file to Mr Luxemburg.",
+      "reference": "파일 수정해서 룩셈부르크 씨한테 다시 보내.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20862",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13756508",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20862",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20862"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_322524",
+      "source": "Should that happen, what will you do?",
+      "reference": "만약 그 일이 일어나면 너는 뭘 할꺼니?",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322524",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1533379",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322524",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322524"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_17393",
+      "source": "What are you fond of?",
+      "reference": "무엇을 좋아하세요?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5383158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17393"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1135020",
+      "source": "Which browser are you using?",
+      "reference": "너는 어떤 브라우저를 사용하니?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1135020",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4032547",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1135020",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1135020"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_414905",
+      "source": "Let's have a try.",
+      "reference": "뭔가 해보자!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "414905",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "414905",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/414905"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3343280",
+      "source": "You know I'm married.",
+      "reference": "당신은 내가 결혼한 것을 안다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3343280",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105142",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3343280",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3343280"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_24278",
+      "source": "The house is on fire.",
+      "reference": "집이 불타고 있다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24278",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "911993",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24278",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24278"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1404442",
+      "source": "Nobody talked about the movie.",
+      "reference": "아무도 그 영화에 대해 말하지 않았다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1404442",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11104413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1404442",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1404442"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_497663",
+      "source": "I have to take my medicine every six hours.",
+      "reference": "나는 약을 여섯 시간마다 먹어야 해.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "497663",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "497663",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/497663"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_2833986",
+      "source": "The night was long.",
+      "reference": "밤은 길었다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2833986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11072579",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2833986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2833986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_750488",
+      "source": "Of course you have to pay! What did you think?",
+      "reference": "당연히 돈을 내야한다. 어떻게 생각했니?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "750488",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "9689696",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "750488",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/750488"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_954591",
+      "source": "What're you doing here?",
+      "reference": "이런 곳에서 뭘 하고 있어?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954591",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13253044",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954591",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954591"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_442022",
+      "source": "Please think about it.",
+      "reference": "생각해 주세요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "442022",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11110761",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "442022",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/442022"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_495565",
+      "source": "Her eyes filled with tears.",
+      "reference": "그녀의 눈이 눈물로 가득했다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "495565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10576551",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "495565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/495565"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_456027",
+      "source": "Is it hot?",
+      "reference": "뜨겁나요?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456027",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10587563",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456027",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456027"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_3953987",
+      "source": "My older sister plays the piano every day.",
+      "reference": "우리 누나는 날마다 피아노를 친다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3953987",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3677082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3953987",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3953987"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_5332605",
+      "source": "She speaks Japanese well.",
+      "reference": "그녀는 일본어를 잘 한다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5332605",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105620",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5332605",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5332605"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_1789243",
+      "source": "I'm all right.",
+      "reference": "괜찮아.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1789243",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8624552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1789243",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1789243"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4574678",
+      "source": "I want to learn guitar.",
+      "reference": "기타 치는 법을 배우고 싶어.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4574678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8363831",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4574678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4574678"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2732594",
+      "source": "Nice to meet you!",
+      "reference": "반갑습니다!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2732594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10669518",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2732594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2732594"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3903002",
+      "source": "I like working with them.",
+      "reference": "나는 그들과 일하는 것이 좋다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3903002",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11110790",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3903002",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3903002"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_724404",
+      "source": "She is my daughter.",
+      "reference": "내 딸이에요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "724404",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13259290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "724404",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/724404"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1222430",
+      "source": "Please sit down!",
+      "reference": "앉으세요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1222430",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13162865",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1222430",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1222430"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_16567",
+      "source": "Do you know the reason?",
+      "reference": "왜 그런지 알아?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11072583",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2968936",
+      "source": "This is just my personal opinion.",
+      "reference": "이건 그저 제 의견입니다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2968936",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11110719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2968936",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2968936"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2099931",
+      "source": "How many were they?",
+      "reference": "얼마나 많은 사람들이 거기에 있었어?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2099931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11128396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2099931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2099931"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_953293",
+      "source": "Have you ever donated blood?",
+      "reference": "헌혈해 본 적이 있니?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6304952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1454989",
+      "source": "Your lips are red.",
+      "reference": "네 입술 빨개.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1454989",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1454989",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1454989"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_663923",
+      "source": "He's not a doctor.",
+      "reference": "그분은 의사가 아닙니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "663923",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2812863",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "663923",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/663923"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4214587",
+      "source": "I will try to find them.",
+      "reference": "내가 그들을 찾아 볼게.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4214587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3681019",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4214587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4214587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2543338",
+      "source": "Tom turned off his computer.",
+      "reference": "톰은 자기 컴퓨터를 껐어.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2543338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8363706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2543338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2543338"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_3038937",
+      "source": "Let's get started!",
+      "reference": "시작하자!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3038937",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10574028",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3038937",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3038937"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4979447",
+      "source": "The sun will set in two hours.",
+      "reference": "두 시간 후에 해가 질 거야.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4979447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8533892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4979447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4979447"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_243373",
+      "source": "It's raining hard tonight.",
+      "reference": "오늘 밤에 비가 억수 같이 온다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "243373",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605461",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "243373",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/243373"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1152017",
+      "source": "Are you kidding me?",
+      "reference": "거짓말!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1152017",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11104622",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1152017",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1152017"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3953943",
+      "source": "Where did you spend your summer?",
+      "reference": "여름방학을 어디서 보내셨어요?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3953943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3684988",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3953943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3953943"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1334433",
+      "source": "The former President's death was announced.",
+      "reference": "전 대통령의 사망이 발표되었다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1334433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11054693",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1334433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1334433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.17
+      }
+    },
+    {
+      "id": "tatoeba_3725257",
+      "source": "Well, you obviously have romantic feelings for Tom.",
+      "reference": "흠, 너는 확실히 톰에게 연애감정을 가지고 있군.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3725257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8357737",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3725257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3725257"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_1156571",
+      "source": "What's the meaning of that?",
+      "reference": "이게 무슨 뜻이야?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1156571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11132396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1156571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1156571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_1702592",
+      "source": "How about a cup of coffee?",
+      "reference": "커피 한 잔 어때요?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1702592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2148055",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1702592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1702592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2323284",
+      "source": "I don't want pizza. I'm not hungry.",
+      "reference": "피자는 됐어. 배고프지 않아.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2323284",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11107548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2323284",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2323284"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_2451517",
+      "source": "Do you study French every day?",
+      "reference": "너는 매일 프랑스어를 공부하니?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451517",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10587565",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451517",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451517"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_51301",
+      "source": "I do hope you'll come again.",
+      "reference": "부디 또 들러주세요.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13250486",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51301"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_241849",
+      "source": "Are you busy now?",
+      "reference": "지금 바빠?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7788267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5196313",
+      "source": "Did you just insult me?",
+      "reference": "방금 날 모욕했어?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5196313",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8362120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5196313",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5196313"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2756723",
+      "source": "Don't you worry.",
+      "reference": "너 걱정마.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2756723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "924036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2756723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2756723"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1641791",
+      "source": "You have forgotten your change.",
+      "reference": "잔돈을 잊어버리셨네요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1641791",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6845290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1641791",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1641791"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_961990",
+      "source": "Peter wanted to become a doctor.",
+      "reference": "피터는 의사가 되고 싶어했어요.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "961990",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "961988",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "961990",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/961990"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_456449",
+      "source": "My name is Henry.",
+      "reference": "제 이름은 헨리 입니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "3841865",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5001791",
+      "source": "I think they're happy.",
+      "reference": "그가 행복한 것 같다.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5001791",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8370324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5001791",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5001791"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2635765",
+      "source": "The plane crashed.",
+      "reference": "비행기가 추락했습니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2635765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13238496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2635765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2635765"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_326916",
+      "source": "Please take a bath.",
+      "reference": "목욕 좀 해 주세요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326916",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10603110",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326916",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326916"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1853760",
+      "source": "He's a good guy.",
+      "reference": "그는 좋은 사람이다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1853760",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "978601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1853760",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1853760"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5297847",
+      "source": "How long can a person live without water?",
+      "reference": "사람은 물 없이 얼마나 살 수 있어?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5297847",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8364907",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5297847",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5297847"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_23556",
+      "source": "We must promote commerce with neighboring countries.",
+      "reference": "우리는 인접 국가들과의 교역을 촉진하여야 합니다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23556",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7794480",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23556",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23556"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.43
+      }
+    },
+    {
+      "id": "tatoeba_2245356",
+      "source": "Don't kid around.",
+      "reference": "농담은 그만 둬.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13182899",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8040077",
+      "source": "Several other people were wounded.",
+      "reference": "몇몇 다른 사람들이 부상을 입었다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8040077",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8422613",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8040077",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8040077"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_3140113",
+      "source": "She's a basket case.",
+      "reference": "그녀는 머리가 약간 이상한 사람이다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3140113",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8543881",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3140113",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3140113"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3616228",
+      "source": "Good luck on your test.",
+      "reference": "시험 잘쳐.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3616228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4710395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3616228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3616228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_37115",
+      "source": "Tom sat two rows ahead of me.",
+      "reference": "탐은 나보다 2줄 앞에 앉았다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37115",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6200921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37115",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37115"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_257026",
+      "source": "I am afraid of bears.",
+      "reference": "나는 곰이 무섭다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257026",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10585911",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257026",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257026"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_269489",
+      "source": "The forest was very still.",
+      "reference": "숲은 매우 고요했다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "269489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4568906",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "269489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/269489"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_5937933",
+      "source": "Why don't you ever talk to Tom?",
+      "reference": "왜 너는 톰에게 말조차 안 하려고 하는 거야?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5937933",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11110702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5937933",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5937933"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_30785",
+      "source": "If I had wings, I would fly to you.",
+      "reference": "나에게 날개가 달렸다면 너에게 날아갈 것이다.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30785",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11105377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30785",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30785"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.78
+      }
+    },
+    {
+      "id": "tatoeba_1112157",
+      "source": "What is wrong with you?",
+      "reference": "무슨 일이야?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1112157",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "1240298",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1112157",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1112157"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2243183",
+      "source": "Rainy season has begun.",
+      "reference": "장마철이 시작되었어요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243183",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13105982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243183",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243183"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_5729656",
+      "source": "We're not all in the same boat.",
+      "reference": "우리는 다 같은 처지에 있지 않는다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5729656",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6305270",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5729656",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5729656"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_6048329",
+      "source": "Give me one good reason why I shouldn't do that.",
+      "reference": "내가 그걸 하지 말아야 할 딱 한 가지 이유만 대봐.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6048329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13755240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6048329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6048329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_33911",
+      "source": "I was very scared of snakes.",
+      "reference": "나는 뱀을 매우 무서워했다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13306329",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33911"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_326833",
+      "source": "Alkalis neutralize acids.",
+      "reference": "알칼리는 산을 중화한다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13153597",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_2249818",
+      "source": "Please tell me.",
+      "reference": "나한테 말 좀 해줘.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249818",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10576250",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249818",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249818"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_554581",
+      "source": "Don't be too strict. They're just kids.",
+      "reference": "너무 엄격하게 굴지마라. 그냥 아이들일 뿐이다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "554581",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2852512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "554581",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/554581"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_1045006",
+      "source": "Tom was trying hard not to laugh out loud.",
+      "reference": "톰은 필사적으로 웃음을 참고 있었다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1045006",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13250259",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1045006",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1045006"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8221437",
+      "source": "I must sleep.",
+      "reference": "자야 합니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8221437",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8221437",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8221437"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_402363",
+      "source": "We saw monkeys at the zoo.",
+      "reference": "우리는 동물원에서 원숭이를 보았다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "402363",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13571385",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "402363",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/402363"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_403053",
+      "source": "Where's the airport?",
+      "reference": "공항은 어디에 있습니까?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403053",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "6004122",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403053",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403053"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_490138",
+      "source": "I like tennis and golf.",
+      "reference": "저는 테니스와 골프 치는 것을 좋아해요.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "490138",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13547323",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "490138",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/490138"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_40045",
+      "source": "Hold on a moment, please.",
+      "reference": "잠시만 기다려 주세요.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13146489",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40045"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_689932",
+      "source": "Someone stole my bag.",
+      "reference": "가방을 도난당했어요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "689932",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "7966856",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "689932",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/689932"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1500314",
+      "source": "It's getting cold.",
+      "reference": "갈수록 추워요.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1500314",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "961617",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1500314",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1500314"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4764614",
+      "source": "What floor is it?",
+      "reference": "몇 층입니까?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4764614",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "9083592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4764614",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4764614"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_679859",
+      "source": "My cell phone doesn't work.",
+      "reference": "내 핸드폰은 동작하지 않아.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "679859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8365255",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "679859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/679859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_424259",
+      "source": "Long time, no see. I hear that you've changed your job again.",
+      "reference": "오랜만이네. 또 이직했다며?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "424259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8358442",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "424259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/424259"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.92
+      }
+    },
+    {
+      "id": "tatoeba_1570761",
+      "source": "She's very pretty.",
+      "reference": "그녀는 정말 예쁘다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1570761",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11106341",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1570761",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1570761"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1868405",
+      "source": "Tom couldn't find his shoes.",
+      "reference": "톰은 자기 신발을 못 찾았다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1868405",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13151248",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1868405",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1868405"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_265489",
+      "source": "I've lost my car key.",
+      "reference": "나는 자동차 열쇠를 분실했다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265489"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1028007",
+      "source": "Tom spends all his time thinking about Mary.",
+      "reference": "톰은 메리 생각 하느라 시간을 다 보낸다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1028007",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2852340",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1028007",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1028007"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5210202",
+      "source": "I bought this umbrella three years ago.",
+      "reference": "나는 3년 전에 이 우산을 샀어.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5210202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8362086",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5210202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5210202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_2147",
+      "source": "I'm crazy about you.",
+      "reference": "당신에게 반했습니다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2147",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "2730498",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2147",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2147"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_258847",
+      "source": "I do not believe in the existence of God.",
+      "reference": "나는 신의 존재를 믿지 않는다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258847",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "978625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258847",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258847"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_4282342",
+      "source": "What school do you want to go to?",
+      "reference": "어떤 학교로 가려고 하니?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4282342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "11093672",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4282342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4282342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_38646",
+      "source": "Why don't you come in?",
+      "reference": "너는 왜 안 들어와?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10605378",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_4573417",
+      "source": "Is it a son or a daughter?",
+      "reference": "아들이야, 딸이야?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4573417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "911969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4573417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4573417"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_393134",
+      "source": "Today was a very tough day.",
+      "reference": "오늘 힘든 하루를 보냈다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "393134",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "935721",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "393134",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/393134"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1092617",
+      "source": "Tom tried to speak, but couldn't.",
+      "reference": "톰은 이야기하려 했지만 그러지 못했다.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1092617",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "13248394",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1092617",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1092617"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_279525",
+      "source": "Do you have any plans for Saturday?",
+      "reference": "토요일에는, 뭔가 예정 있어?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "279525",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8000371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "279525",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/279525"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_305457",
+      "source": "They did not give up hope.",
+      "reference": "그들은 희망을 버리지 않았다.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305457",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "417224",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305457",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305457"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_70153",
+      "source": "Do you like tea or coffee?",
+      "reference": "차 마실래, 아니면 커피 마실래?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "70153",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "5262084",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "70153",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/70153"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_43958",
+      "source": "What do you think about the book?",
+      "reference": "책에 대해서 어떻게 생각하세요?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "43958",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8726670",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "43958",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/43958"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_2245881",
+      "source": "I have eyes.",
+      "reference": "나도 눈이 있다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "10607102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245881"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_6873463",
+      "source": "Our baby can't talk yet.",
+      "reference": "우리 아기는 아직 말을 못해.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6873463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "8358264",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6873463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6873463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2264601",
+      "source": "A Mexican taught him Spanish.",
+      "reference": "멕시코인에 그에게 스페인어를 가르쳐 주었다.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2264601",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kor",
+        "target_sentence_id": "4717728",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2264601",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2264601"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -2,6 +2,25 @@
 sidebar_position: 0
 title: 'How It Works'
 slug: '/how-it-works'
+related:
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+    note: "How the composite score is computed"
+  - label: "Eval Harness v2.0"
+    to: /docs/specifications/harness
+    kind: spec
+    note: "The tool that runs every evaluation"
+  - label: "Submit a Method"
+    to: /docs/getting-started/submit-a-method
+    kind: guide
+  - label: "Evaluation Datasets"
+    to: /docs/leaderboard/datasets
+    kind: doc
+  - label: "Trading Cards"
+    to: https://champollion.dev/trading-cards
+    kind: card
+    note: "Each benchmarked language as a stat card"
 ---
 
 # How It Works: Competitive Crowdsourcing for Machine Translation
@@ -312,9 +331,9 @@ This section exists because these tensions were identified in an invited critiqu
 |-------|------|--------|
 | Baseline sweep | 12 models × 3 temperatures × 2 coaching configs on EDTeKLA | 🔲 Planned |
 | Composite score | Weighted metric implementation in harness | ✅ Done |
-| Semantic score | Verdict-weighted score from CrkSemanticMetric plugin | ✅ Done |
+| Semantic score | Verdict-weighted score from CrkSemanticMetric (eval standard) | ✅ Done |
 | Morphological accuracy | Per-morpheme scoring against gold-standard analysis | 🔲 Planned |
-| Equivalent match | Variant-class matching via CrkLinterMetric plugin | ✅ Done |
+| Equivalent match | Variant-class matching via CrkLinterMetric (eval standard) | ✅ Done |
 | Champollion API | Metered API for community-owned methods | 🔲 Planned |
 | Second language | Expand to a second language pair (Inuktitut, Quechua, or Sámi) | 🔲 Planned |
 

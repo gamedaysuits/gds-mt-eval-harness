@@ -1,0 +1,5843 @@
+{
+  "corpus_id": "tatoeba-eng-jpn-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "jpn"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:39:07.573533+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "financial",
+    "legal",
+    "literary",
+    "marketing",
+    "medical",
+    "news",
+    "religious",
+    "scientific",
+    "subtitles",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_1844225",
+      "source": "Don't make a sound.",
+      "reference": "音を立てないでください。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1844225",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "5845217",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1844225",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1844225"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_593242",
+      "source": "They are good people.",
+      "reference": "いい人です。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "593242",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "229344",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "593242",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/593242"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_39181",
+      "source": "Don't keep the TV on!",
+      "reference": "テレビをつけっぱなしにするな！",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39181",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "201971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39181",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39181"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_250707",
+      "source": "My brother became an engineer.",
+      "reference": "私の兄は技師になった。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "163804",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_954536",
+      "source": "What does this paragraph mean?",
+      "reference": "この段落はどういう意味なんですか？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954536",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2907543",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954536",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954536"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2713335",
+      "source": "We're next-door neighbors.",
+      "reference": "私達は隣同士です。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713335",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "151234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713335",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713335"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_53798",
+      "source": "Jane is a most charming girl.",
+      "reference": "ジェーンはたいへん魅力的な女の子だ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53798",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "216494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53798",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53798"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_1456867",
+      "source": "I'm only three years older than he is.",
+      "reference": "私は彼よりも３歳だけ年上です。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1456867",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "153731",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1456867",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1456867"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1027860",
+      "source": "Tom tried to get the splinter out of Mary's finger.",
+      "reference": "トムはメアリーの指からとげを抜こうとした。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1027860",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2091668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1027860",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1027860"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.1
+      }
+    },
+    {
+      "id": "tatoeba_31905",
+      "source": "Mary gazed at George in admiration.",
+      "reference": "メアリーは尊敬の意味を込めてジョージを見つめた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31905",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "194731",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31905",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31905"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_314167",
+      "source": "She is very dear to me.",
+      "reference": "彼女は私にとっていとしい人だ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "89548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_306808",
+      "source": "They were lying on the grass.",
+      "reference": "彼らは芝生の上に横になっていた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "306808",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "96896",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "306808",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/306808"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_52781",
+      "source": "John and I have patched up our troubles.",
+      "reference": "ジョンとは仲直りした。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "215479",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52781"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_52840",
+      "source": "I swear, John. As of today, I quit smoking.",
+      "reference": "ジョン、私は今日から煙草をやめると誓います。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "215538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52840"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_265179",
+      "source": "To tell the truth, I did not make it myself.",
+      "reference": "実を言うと、自分で作ったわけではないんです。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "149379",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265179"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.3
+      }
+    },
+    {
+      "id": "tatoeba_2641610",
+      "source": "Tom stooped and picked up the coin.",
+      "reference": "トムは立ち止まりコインを拾った。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2641610",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "9089375",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2641610",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2641610"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_65611",
+      "source": "She lives a block away and her name is Susan.",
+      "reference": "ウチからすぐそこんとこに住んでてね、スーザンって名前なんだよ？",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "65611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "228257",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "65611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/65611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_54342",
+      "source": "Let's throw it away and start over with a clean slate.",
+      "reference": "ご破算にしよう。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "217035",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.91
+      }
+    },
+    {
+      "id": "tatoeba_417953",
+      "source": "However, the princess had barricaded herself in her room and wouldn't come out.",
+      "reference": "しかし王女は部屋に立てこもって出てこなかった。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "417953",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "417952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "417953",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/417953"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_19121",
+      "source": "Education must not be limited to our youth, but it must be a continuing process through our entire lives.",
+      "reference": "教育は若い時代に限られてはならず、われわれの全生涯を通じて継続して行われるものでなければならない。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19121",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "180344",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19121",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19121"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.47
+      }
+    },
+    {
+      "id": "tatoeba_16991",
+      "source": "If it had not been for your advice, I would have failed.",
+      "reference": "君の忠告がなかったら、失敗していただろう。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16991",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "178139",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16991",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16991"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.58
+      }
+    },
+    {
+      "id": "tatoeba_320382",
+      "source": "No news is good news. If you haven't heard from your son it's because he's doing well.",
+      "reference": "便りの無いのは良い便り。息子さんから連絡がないのは、元気でやってるからよ。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320382",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "83334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320382",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320382"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5906977",
+      "source": "\"I forgot to tell you but, I need sandals so bring them.\" \"Huh? You should have told me earlier.\"",
+      "reference": "「言い忘れてたけどサンダル要るから持ってきてね」「え、それもっと早く言ってよ」",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5906977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4478280",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5906977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5906977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.74
+      }
+    },
+    {
+      "id": "tatoeba_320887",
+      "source": "With his mother out of the way, Duke was able to proceed with his plan to embezzle the money from the company.",
+      "reference": "母親がいなくなったので、ヂュークは会社からお金を横領する計画をすすめた。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "82829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.95
+      }
+    },
+    {
+      "id": "tatoeba_34047",
+      "source": "Miss Baker knew that the young man would have to leave very soon, so she decided to ask him to move his car a bit, so that she could park hers in the proper place for the night before going to bed.",
+      "reference": "ベイカーさんは若い男がすぐに去っていくと確信した。それで彼女は、寝る前までに自分の車を本来の場所に駐車できるように、若い男に少し車を動かすように頼もうと思った。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34047",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "196868",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34047",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34047"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 42,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.64
+      }
+    },
+    {
+      "id": "tatoeba_1016923",
+      "source": "Iaido is a form of swordsmanship in which one strikes down an attacking opponent with one blow of the sword quickly drawn out of its sheath, whether the practitioner is sitting or walking.",
+      "reference": "居合道とは、座っているとき、歩行しているときに、敵からふいに襲撃された際、鞘ばなれの一刀で敵を倒す刀法である。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1016923",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1016917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1016923",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1016923"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 33,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_942823",
+      "source": "If it were OK for me to only work on weekends, would I do it? Of course, I would.",
+      "reference": "週末しか働かなくていいのなら、そうするかって？もちろんそうするだろうね。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "942823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "942814",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "942823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/942823"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.11
+      }
+    },
+    {
+      "id": "tatoeba_26666",
+      "source": "Although rainforests make up only two percent of the earth's surface, over half the world's wild plant, animal and insect species live there.",
+      "reference": "雨林は地表のわずか２％をしめるに過ぎないが、世界の野生の動植物、及び昆虫の半分以上の種類がそこで生息している。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26666",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "189514",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26666",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26666"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 23,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 5.04
+      }
+    },
+    {
+      "id": "tatoeba_263749",
+      "source": "In fact, there is a joke about passport photos: If you really look like the picture in your passport, you certainly need a vacation!",
+      "reference": "事実、パスポートの写真については、次のような冗談話がある。—本当にパスポートの写真のような顔をしていれば、明らかに休暇が必要だ、というものである。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "263749",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "150808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "263749",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/263749"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 24,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_23977",
+      "source": "A scientist had to know how to ask the correct question and to state it so clearly that the answer would be, in effect, a definite yes or no, not \"maybe\".",
+      "reference": "科学者は、正しい質問を問いかける方法と、答えが、「かもしれない」ではなく、事実上、明確なイエスかノーになるほど明確にその質問を述べる方法を知っていなければならなかったのである。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "186840",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 31,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 3.81
+      }
+    },
+    {
+      "id": "tatoeba_3732668",
+      "source": "I had to shout in order to be heard.",
+      "reference": "聞こえるように、僕は叫ばなければいけなかった。",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3732668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "11859632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3732668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3732668"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_320199",
+      "source": "The price of rice rose by three percent.",
+      "reference": "米の値段が３パーセント上がった。",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320199",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "83517",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320199",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320199"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_249601",
+      "source": "Our new product has received a lot of attention from all who have heard about it.",
+      "reference": "私どもの新製品は、耳にされた全ての方々から、たいへん注目されています。",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249601",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "164906",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249601",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249601"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.06
+      }
+    },
+    {
+      "id": "tatoeba_387440",
+      "source": "In order to buy a foreign car, he worked very hard.",
+      "reference": "彼は外国車を買うために一生懸命働いた。",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "387440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "108948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "387440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/387440"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_23643",
+      "source": "We haven't had a price increase in the last five years.",
+      "reference": "過去５年間価格を上げてません。",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23643",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "186507",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23643",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23643"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_505444",
+      "source": "Ah! I forgot again! I was supposed to go to the library to return a book today!",
+      "reference": "あ！また忘れてた！図書館に本を返しにいく日だった！",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "505444",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "385325",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "505444",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/505444"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.53
+      }
+    },
+    {
+      "id": "tatoeba_66034",
+      "source": "He hasn't told me when he will return.",
+      "reference": "いつ帰るか彼は私にいいませんでした。",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "66034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "228675",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "66034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/66034"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3264701",
+      "source": "Are you the new teacher?",
+      "reference": "新しい先生ですか？",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3264701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "9932160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3264701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3264701"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_259839",
+      "source": "I was impressed by the general knowledge of Japanese students.",
+      "reference": "私は日本人学生の「一般常識」に感銘した。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259839",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "154701",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259839",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259839"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_408051",
+      "source": "I already talked to this student.",
+      "reference": "この生徒にはもう話したよ。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "408051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "440732",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "408051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/408051"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_21373",
+      "source": "All of the students stood up together.",
+      "reference": "学生は皆一斉に立ち上がった。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21373",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "184246",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21373",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21373"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_283596",
+      "source": "Few students could understand what he said.",
+      "reference": "彼が言うことを理解できた生徒はほとんどいなかった。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "283596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "120413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "283596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/283596"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_2490903",
+      "source": "My French teacher is the same age as I am.",
+      "reference": "私のフランス語の教授なんだけど、私と同い年なのよ。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2490903",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "10191518",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2490903",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2490903"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_283964",
+      "source": "The examination he took last week was very hard.",
+      "reference": "彼が先週受けた試験は大変難しかった。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "283964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "119697",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "283964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/283964"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_73590",
+      "source": "\"He's a tiger when he's angry\" is an example of metaphor.",
+      "reference": "「怒ると彼はトラになる」というのは隠喩の例である。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "73590",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "236214",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "73590",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/73590"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_241269",
+      "source": "I used to stay up late when I was a high school student.",
+      "reference": "高校生の頃は夜更かしをしたものでした。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "173202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241269"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.31
+      }
+    },
+    {
+      "id": "tatoeba_242514",
+      "source": "I am going to do my homework when I get home this afternoon.",
+      "reference": "今日の午後、家に着いたら私は宿題をするつもりだ。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "171961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242514"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_293768",
+      "source": "He studied hard, only to fail in the exam.",
+      "reference": "彼は一生懸命勉強したが試験に落ちた。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293768",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "109921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293768",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293768"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_1392",
+      "source": "My physics teacher doesn't care if I skip classes.",
+      "reference": "私の物理の先生は授業をサボっても気にしない。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1392",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4811",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1392",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1392"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.56
+      }
+    },
+    {
+      "id": "tatoeba_2290153",
+      "source": "Could someone make an example sentence in German using the word \"Beispiel?\"",
+      "reference": "どなたか Beispiel という言葉を使ったドイツ語の例文を作っていただけないでしょうか？",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2290153",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2286002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2290153",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2290153"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.08
+      }
+    },
+    {
+      "id": "tatoeba_1396357",
+      "source": "What's important isn't which university you've graduated from, but what you learned while you were there.",
+      "reference": "大切なのはどの大学を出たかではなくて、大学で何を学んだかである。",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1396357",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "137442",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1396357",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1396357"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_3052528",
+      "source": "\"Hey, were you able to complete your maths homework?\" \"Oops, I completely forgot about it.\"",
+      "reference": "「ねえ、数学の宿題できた？」「あ、やばい、完全に忘れてた」",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3052528",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "3012827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3052528",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3052528"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_328194",
+      "source": "About the same time as he entered the classroom and arrived at his seat, the chime to announce class rings across the school.",
+      "reference": "教室に入って席に着くのとほぼ同時に、始業を知らせるチャイムの音が鳴り響く。",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328194",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "75524",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328194",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328194"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 23,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.39
+      }
+    },
+    {
+      "id": "tatoeba_30875",
+      "source": "If you are to succeed in the exam, you must study hard.",
+      "reference": "もし君が試験に合格したいのなら、一生懸命に勉強しなければならない。",
+      "domain": "edu",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "193707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30875"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_328668",
+      "source": "The future progressive tense is used when expressing events and action in progress at some future point, however the example sentence cannot be understood in that way.",
+      "reference": "未来進行形は、未来の時点で進行中の動作や出来事を表現するときに用いられますが、例文は進行中の動作とは考えられません。",
+      "domain": "edu",
+      "difficulty": 5,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "75051",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328668"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 27,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 5.15
+      }
+    },
+    {
+      "id": "tatoeba_248791",
+      "source": "We were held up for two hours on account of the accident.",
+      "reference": "私たちは事故のため二時間遅れた。",
+      "domain": "financial",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "248791",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "165714",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "248791",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/248791"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_68516",
+      "source": "A contract with that company is worth next to nothing.",
+      "reference": "あの会社との契約はあってなきに等しいものです。",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "68516",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "231149",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "68516",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/68516"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_44001",
+      "source": "The law will be effective from the 1st of April.",
+      "reference": "その法律は４月１日から実施される。",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "44001",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "206753",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "44001",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/44001"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_329280",
+      "source": "What a waste of your lawyer qualifications!",
+      "reference": "せっかく弁護士の資格があるのにもったいない。",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "329280",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "74439",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "329280",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/329280"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_240503",
+      "source": "He realizes that public officials are human, and that as human beings they are capable of misjudgement.",
+      "reference": "公僕も人間であること、また、人間である以上過ちを犯す可能性があることを、彼は認識している。",
+      "domain": "legal",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "240503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "173967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "240503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/240503"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_28807",
+      "source": "While we hate force, we recognize the need for law and order.",
+      "reference": "われわれは権力を憎むが法と秩序の必要は認める。",
+      "domain": "legal",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "28807",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "191643",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "28807",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/28807"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_930292",
+      "source": "Please say the alphabet in reverse.",
+      "reference": "アルファベットを逆から言ってください。",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "930292",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "929902",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "930292",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/930292"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_59043",
+      "source": "This poem is attributed to him.",
+      "reference": "この詩は彼の作とされている。",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "59043",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "221717",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "59043",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/59043"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_56331",
+      "source": "This is the house where the famous novelist was born.",
+      "reference": "これがあの有名な小説家が生まれた家です。",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "219015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56331"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.3
+      }
+    },
+    {
+      "id": "tatoeba_298813",
+      "source": "He concealed his anger from the audience.",
+      "reference": "彼は自分の怒りを観客に見えないように隠した。",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298813",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "104876",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298813",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298813"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_250536",
+      "source": "My house is within easy reach of the station.",
+      "reference": "私の家は駅からすぐ近くにあります。",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250536",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "163974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250536",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250536"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_245713",
+      "source": "One must be patient with children.",
+      "reference": "子供たちのやることにいちいち腹を立ててはいけない。",
+      "domain": "medical",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245713",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "168779",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245713",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245713"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_285915",
+      "source": "His brother is more patient than he is.",
+      "reference": "彼の兄さんは彼よりも我慢強い。",
+      "domain": "medical",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "285915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "117749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "285915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/285915"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_288019",
+      "source": "He reported the accident to his insurance company.",
+      "reference": "彼は、その事故を保険会社に報告した。",
+      "domain": "news",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "288019",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "115651",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "288019",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/288019"
+        },
+        "classification_confidence": 0.1111,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_72269",
+      "source": "According to the ABC news, another jet-liner was hi-jacked in the Middle East.",
+      "reference": "ＡＢＣニュースによれば、もう一機のジェット旅客機が、中近東でハイジャックされたそうだ。",
+      "domain": "news",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "234892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72269"
+        },
+        "classification_confidence": 0.1111,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.92
+      }
+    },
+    {
+      "id": "tatoeba_271635",
+      "source": "Officially it is his responsibility, but in fact his secretary does all the work.",
+      "reference": "正式にはそれは彼の責任ではあるが、実際は秘書が全部こなしている。",
+      "domain": "news",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "271635",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "142934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "271635",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/271635"
+        },
+        "classification_confidence": 0.1111,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_1362455",
+      "source": "One important person and the stable boy arrived to the cow cabin the first of January. Therefore, there is only one plastic bowl left at the tea ceremony arbor.",
+      "reference": "一人物と馬丁が騎馬で一月一日に牛小屋に至たりました。 だから数奇屋のなかで、可塑物の大口が一つだけあります。",
+      "domain": "religious",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1362455",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1362453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1362455",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1362455"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 29,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.45
+      }
+    },
+    {
+      "id": "tatoeba_329479",
+      "source": "Depending on the results both companies may be put under administrative guidance from February.",
+      "reference": "結果次第では、両社に対して2月以来の行政指導が行われる。",
+      "domain": "scientific",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "329479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "74241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "329479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/329479"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.79
+      }
+    },
+    {
+      "id": "tatoeba_328472",
+      "source": "If the more advanced want to improve English ability (especially reading comprehension) increasing vocabulary is the way to go.",
+      "reference": "上級者が英語力（特に読解力）をつけたければ、語彙を増やすのが王道ですね。",
+      "domain": "subtitles",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328472",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "75247",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328472",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328472"
+        },
+        "classification_confidence": 0.3333,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.58
+      }
+    },
+    {
+      "id": "tatoeba_582309",
+      "source": "I need help.",
+      "reference": "助けてください。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "582309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1039551",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "582309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/582309"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3701579",
+      "source": "That's another issue.",
+      "reference": "それは別問題だ。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3701579",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "204872",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3701579",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3701579"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_476447",
+      "source": "He came to ask us for our help.",
+      "reference": "彼は我々にどうか助けてくれと頼んできた。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "476447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "109146",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "476447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/476447"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.88
+      }
+    },
+    {
+      "id": "tatoeba_251105",
+      "source": "My hand came into contact with her hand.",
+      "reference": "私の手が彼女の手に触れた。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251105",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "163407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251105",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251105"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_71403",
+      "source": "I am glad to help you whenever you need me.",
+      "reference": "あなたが私を必要とするときはいつでも、喜んでお手伝いします。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "71403",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "234031",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "71403",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/71403"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.3
+      }
+    },
+    {
+      "id": "tatoeba_272473",
+      "source": "All the tickets are sold out.",
+      "reference": "切符はすべて売り切れです。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "272473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "142097",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "272473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/272473"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_5296643",
+      "source": "When did you start using contact lenses?",
+      "reference": "コンタクトレンズをつけ始めたのは、いつですか？",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5296643",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "8866513",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5296643",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5296643"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_292289",
+      "source": "How kind of him to help us move on such a rainy day!",
+      "reference": "彼はなんて親切なんだ。こんなひどい雨の日にぼくたちの引っ越しを手伝ってくれるなんて。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "292289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "111394",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "292289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/292289"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_31071",
+      "source": "Were it not for your help, I could never succeed.",
+      "reference": "もしあなたの助けがなければ、私は決して成功しないだろう。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31071",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "193903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31071",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31071"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_53932",
+      "source": "Two tickets to San Diego, please.",
+      "reference": "サンディエゴ２枚ください。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53932",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "216627",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53932",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53932"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_30870",
+      "source": "If it were not for your help, I could not run this store.",
+      "reference": "もし君の援助がなかったら、私はこの店を経営できないだろう。",
+      "domain": "support",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30870",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "193702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30870",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30870"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.31
+      }
+    },
+    {
+      "id": "tatoeba_5380881",
+      "source": "If there's anything I can do to help, let me know.",
+      "reference": "力になれることがあったら、言ってね。",
+      "domain": "support",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5380881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "12302068",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5380881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5380881"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.45
+      }
+    },
+    {
+      "id": "tatoeba_245899",
+      "source": "A child develops rapidly between the ages of 13 and 16.",
+      "reference": "子供は１３歳から１６歳の間で急速に成長する。",
+      "domain": "tech",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245899",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "168593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245899",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245899"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1867864",
+      "source": "Tom tapped on the window.",
+      "reference": "トムは窓をコンコンと叩いた。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1867864",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2098581",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1867864",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1867864"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2263364",
+      "source": "It could happen to anybody.",
+      "reference": "誰にでも起こりうることだ。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2263364",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2263563",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2263364",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2263364"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_71168",
+      "source": "I'm happy to see you.",
+      "reference": "私はあなたに会えて嬉しいです。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "71168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "161758",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "71168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/71168"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1181701",
+      "source": "It's a happy thing.",
+      "reference": "めでたい事じゃ。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1181701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1180377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1181701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1181701"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_73599",
+      "source": "\"A stitch in time saves nine\" is a proverb.",
+      "reference": "「転ばぬ先の杖」はことわざである。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "73599",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "236223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "73599",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/73599"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_19252",
+      "source": "We suggested Kyoritsu Bussan approach you for assistance.",
+      "reference": "共立物産に、貴社にご助力をお願いするよう提案しました。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "180586",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19252"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.12
+      }
+    },
+    {
+      "id": "tatoeba_49610",
+      "source": "Her application to join the party was rejected.",
+      "reference": "その一行に加わりたいと言う彼女の申し出は拒否された。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "49610",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "212328",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "49610",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/49610"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_296308",
+      "source": "He seems to be very happy.",
+      "reference": "彼はとても幸福そうだ。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "296308",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "107378",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "296308",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/296308"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_39111",
+      "source": "The door was suddenly opened by Mike.",
+      "reference": "ドアが突然マイクによってあけられました。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39111",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "201900",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39111",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39111"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_1092410",
+      "source": "Tom was happy to be home after being away for so long.",
+      "reference": "長年家から離れていた後だけに、トムは家にいて幸せだった。",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1092410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1641240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1092410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1092410"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_929172",
+      "source": "Could you close the window, please?",
+      "reference": "窓を閉めていただけませんか。",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "929172",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1037865",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "929172",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/929172"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_5713590",
+      "source": "Apparently, Tom was late because there was a traffic jam on Route 19.",
+      "reference": "どうやら１９号線で交通渋滞があったもんだから、トムは遅刻したらしいよ。",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5713590",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "8853301",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5713590",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5713590"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.23
+      }
+    },
+    {
+      "id": "tatoeba_299686",
+      "source": "He plays the guitar well.",
+      "reference": "彼は上手にギターをひきます。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "299686",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "104006",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "299686",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/299686"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_262226",
+      "source": "I was able to get my parents to consent to my marriage.",
+      "reference": "私は両親に結婚を納得してもらうことが出来た。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262226",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "152324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262226",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262226"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.58
+      }
+    },
+    {
+      "id": "tatoeba_56078",
+      "source": "I've finished all the work for today.",
+      "reference": "これで今日の仕事は全部終わった。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56078",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "218763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56078",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56078"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_245897",
+      "source": "Children need loving.",
+      "reference": "子供は、人に愛されることが必要なのです。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245897",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "168595",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245897",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245897"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_5355762",
+      "source": "Tom is going to college in Boston.",
+      "reference": "トムはボストンの大学に行くんだよ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5355762",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "8866506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5355762",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5355762"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_2661941",
+      "source": "Please complete this sentence.",
+      "reference": "この文章を完成させてください。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2661941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "679891",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2661941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2661941"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_52196",
+      "source": "You will soon adjust to living in a dormitory.",
+      "reference": "すぐに君は寮で生活するのになじみますよ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "214900",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52196"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_44222",
+      "source": "The room is now ready for you.",
+      "reference": "その部屋はあなたが使えるよう用意ができています。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "44222",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "206971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "44222",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/44222"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_250888",
+      "source": "I owe what I am today to you.",
+      "reference": "私の今日あるのは貴方のお陰です。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "163624",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.62
+      }
+    },
+    {
+      "id": "tatoeba_2871678",
+      "source": "Tom, I found the picture you were looking for.",
+      "reference": "トムが探してた写真見つけたよ。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2871678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2871654",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2871678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2871678"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_55964",
+      "source": "This is as large as that.",
+      "reference": "これはあれと同じくらい大きい。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "218650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_242666",
+      "source": "He is not himself today.",
+      "reference": "今日はいつもの彼ではない。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242666",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "171809",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242666",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242666"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_51981",
+      "source": "Now that we've got off the mark, we must get through this work.",
+      "reference": "スタートを切ってしまった以上、私達はこの仕事を最後までやり通さねばならない。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51981",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "214688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51981",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51981"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.77
+      }
+    },
+    {
+      "id": "tatoeba_298992",
+      "source": "He did it for the good of the community.",
+      "reference": "彼は社会によかれと思ってそれをした。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "298992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "104698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "298992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/298992"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_21441",
+      "source": "Each of the students has his own locker.",
+      "reference": "学生たちはめいめい個人用のロッカーがある。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21441",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "184314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21441",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21441"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_35840",
+      "source": "Oh, have a heart.",
+      "reference": "ねぇ、お願い。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "198647",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35840"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2144021",
+      "source": "No one can resist.",
+      "reference": "誰も抵抗できない。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2144021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4898060",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2144021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2144021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_302741",
+      "source": "He is in love with her, but he tries to conceal his feelings.",
+      "reference": "彼は彼女に恋をしているが、それを隠そうとする。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "100956",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_3825328",
+      "source": "Tom is discouraged.",
+      "reference": "トムは落ち込んでいる。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3825328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2098016",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3825328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3825328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_281414",
+      "source": "How many different pieces are there in Japanese chess?",
+      "reference": "日本の将棋には何種類の駒がありますか。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281414",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "122589",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281414",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281414"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1619774",
+      "source": "Let's go to the beach!",
+      "reference": "海岸に行こうよ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1619774",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1622579",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1619774",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1619774"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_284336",
+      "source": "It's evident to everybody that he's in love.",
+      "reference": "彼が恋をしているのは明らかだ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "284336",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "119327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "284336",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/284336"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_271887",
+      "source": "My period is five weeks late.",
+      "reference": "生理が５週間遅れています。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "271887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "142683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "271887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/271887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_301139",
+      "source": "He had to master a lot of new information and spend some time in different parts of the country.",
+      "reference": "彼は多量の新しい情報を覚えたり、地方の色々な場所に行って時間を過ごさなければならなくなった。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "301139",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "102555",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "301139",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/301139"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.05
+      }
+    },
+    {
+      "id": "tatoeba_252099",
+      "source": "The man sitting next to me spoke to me.",
+      "reference": "私の隣に座っていた人が話し掛けてきた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "162415",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252099"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_46837",
+      "source": "The car has been kicking around the roadside for weeks.",
+      "reference": "その車は何週間も放ってある。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "46837",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "209575",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "46837",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/46837"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_244244",
+      "source": "I had a close shave.",
+      "reference": "際どいところを辛うじて助かった。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "244244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "170240",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "244244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/244244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2547749",
+      "source": "I'm going to make it.",
+      "reference": "僕がやります。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2547749",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "82393",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2547749",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2547749"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_302220",
+      "source": "I thought that he knew everything about Japan.",
+      "reference": "彼は日本のことなら何でも知っていると私は思いました。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302220",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "101475",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302220",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302220"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_1619900",
+      "source": "Jorgen loves his wife.",
+      "reference": "ユルゲンは妻を愛している。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1619900",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1622578",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1619900",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1619900"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2102218",
+      "source": "\"Christmas is not tomorrow, it's today!\"\"No, it's tomorrow!\"",
+      "reference": "「クリスマスは、明日じゃなくて今日よ！」「違うよ。明日よ！」",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2102218",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "10914246",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2102218",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2102218"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_240837",
+      "source": "You can't judge happiness in terms of money.",
+      "reference": "幸福を金銭の面から判断することは出来ない。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "240837",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "173633",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "240837",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/240837"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_262175",
+      "source": "I spent hours looking for the key that I had dropped.",
+      "reference": "私は落とした鍵を探すのに何時間も費やした。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262175",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "152375",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262175",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262175"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.82
+      }
+    },
+    {
+      "id": "tatoeba_1474786",
+      "source": "Tom's dreams came true.",
+      "reference": "トムの夢が叶いました。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1474786",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "8868800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1474786",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1474786"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_4666586",
+      "source": "Tom eats less than Mary.",
+      "reference": "トムはメアリーほど食べない。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4666586",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4067632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4666586",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4666586"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_16865",
+      "source": "I don't mean to challenge your theory.",
+      "reference": "君の理論が間違っていると言いたいのではない。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16865",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "178014",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16865",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16865"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_3183435",
+      "source": "Who am I speaking to?",
+      "reference": "私は誰と話しているの？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3183435",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "5194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3183435",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3183435"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_3636433",
+      "source": "Did you foresee this?",
+      "reference": "あなたは、これがわかっていたのですか。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3636433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "3957510",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3636433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3636433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_40166",
+      "source": "I'm just about to check in.",
+      "reference": "ちょうどチェックインするところです。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40166",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "202931",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40166",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40166"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_57698",
+      "source": "This telephone is connected to the fax machine.",
+      "reference": "この電話はファックスにつながっている。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "57698",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "220377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "57698",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/57698"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_534984",
+      "source": "Just as a thorn stuck in one's throat.",
+      "reference": "喉に刺さった棘の如く。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534984",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "344764",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534984",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534984"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_288144",
+      "source": "He made a box yesterday.",
+      "reference": "彼は、昨日箱を作った。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "288144",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "115526",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "288144",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/288144"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_241629",
+      "source": "It will be to your advantage to study hard now.",
+      "reference": "今しっかり勉強するのが君のためになる。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241629",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "172843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241629",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241629"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.7
+      }
+    },
+    {
+      "id": "tatoeba_72355",
+      "source": "I saw it after the seven o'clock news.",
+      "reference": "７時のニュースの後で私はそれを見た。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72355",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "234978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72355",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72355"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_265146",
+      "source": "To tell the truth, I don't really like him.",
+      "reference": "実を言うと、私はあまり彼が好きではない。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265146",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "149412",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265146",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265146"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_257003",
+      "source": "I went to the airport to see my mother off.",
+      "reference": "私は空港へ母を見送りに行った。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "157528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.3
+      }
+    },
+    {
+      "id": "tatoeba_1183214",
+      "source": "Last night there was a big fire in the neighbourhood.",
+      "reference": "昨夜、近所で火事があった。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1183214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "169707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1183214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1183214"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.3
+      }
+    },
+    {
+      "id": "tatoeba_266228",
+      "source": "School begins at 8:30 a.m.",
+      "reference": "授業は午前８時３０分に始まる。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "266228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "148331",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "266228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/266228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1024422",
+      "source": "Tom must choose between honor and death.",
+      "reference": "トムさんは、名誉か死のどちらかを選ばなければなりません。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1024422",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1513322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1024422",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1024422"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_3650972",
+      "source": "Tom believes that as long as you speak English, you'll have no problems going anywhere in the world.",
+      "reference": "トムは英語さえできれば世界中どこへ行っても不自由しないと思っている。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3650972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2720736",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3650972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3650972"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_17738",
+      "source": "Whether you like her or not, you can't marry her.",
+      "reference": "君が彼女を好きであろうとなかろうと、彼女とは結婚できない。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "178884",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17738"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_252179",
+      "source": "I doubt the truth of the report.",
+      "reference": "私は、その報告の真実性を疑う。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "162335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252179"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_21741",
+      "source": "Each party shall consist of no less than fifteen people.",
+      "reference": "各隊は少なくとも十五人以上で構成すること。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "184613",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_43166",
+      "source": "He died three days later.",
+      "reference": "それから三日後に彼は死んだ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "43166",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "205920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "43166",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/43166"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2157394",
+      "source": "I am nineteen years old.",
+      "reference": "１９歳です。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2157394",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "235870",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2157394",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2157394"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_4254589",
+      "source": "He didn't give a precise answer.",
+      "reference": "彼の答えは正確ではなかった。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4254589",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "116424",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4254589",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4254589"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1396177",
+      "source": "I'm afraid of dogs.",
+      "reference": "私は犬が恐い。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1396177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "157297",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1396177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1396177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_250120",
+      "source": "Do you think it looks good on me?",
+      "reference": "私に似合いますか。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250120",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "164389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250120",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250120"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_240908",
+      "source": "Our principal wanted to admit Bob to our school.",
+      "reference": "校長先生はボブを私たちの学校に入学させたいとおもっています。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "240908",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "173562",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "240908",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/240908"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1408999",
+      "source": "I think she was planning to go visit her mother in the hospital.",
+      "reference": "彼女は、入院中のお母さんのお見舞いに行くつもりだったんじゃないかな。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1408999",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "11786408",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1408999",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1408999"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.92
+      }
+    },
+    {
+      "id": "tatoeba_30149",
+      "source": "I had a dreadful dream last night.",
+      "reference": "昨夜恐ろしい夢を見ました。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "169619",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_285776",
+      "source": "His pictures were hung on the wall.",
+      "reference": "彼の絵が壁に飾られていた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "285776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "117888",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "285776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/285776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3738924",
+      "source": "Is that really necessary?",
+      "reference": "それ本当に必要なの？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738924",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4212774",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738924",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738924"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_328821",
+      "source": "But there's only one pair of chopsticks. What shall we do?",
+      "reference": "でも、お箸、一膳しかないの。どうしよう・・・。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "328821",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "74899",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "328821",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/328821"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.18
+      }
+    },
+    {
+      "id": "tatoeba_310449",
+      "source": "She is constantly writing letters.",
+      "reference": "彼女はいつも手紙を書いている。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "310449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "93259",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "310449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/310449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_4721",
+      "source": "Brian repeatedly told Chris that he owed him a pretty large amount of money.",
+      "reference": "君は僕に多額の借金があるのだと、ブライアンはくり返しクリスに言いました。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "176884",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_316352",
+      "source": "She accommodated her schedule to his.",
+      "reference": "彼女は彼のスケジュールに自分のスケジュールを合わせた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "316352",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "87356",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "316352",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/316352"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_265477",
+      "source": "Why don't you give me a ride?",
+      "reference": "車に乗せてくれないか。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "149082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265477"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_41214",
+      "source": "It was in 1912 that the Titanic sank during her first voyage.",
+      "reference": "タイタニック号が最初の航海中に沈没したのは１９１２年のことだ。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "41214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "203972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "41214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/41214"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.08
+      }
+    },
+    {
+      "id": "tatoeba_1564968",
+      "source": "Fish like carp and trout live in fresh water.",
+      "reference": "鯉や鱒のような魚は淡水に住んでいる。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1564968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "174198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1564968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1564968"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_280257",
+      "source": "A tiger has escaped from the zoo.",
+      "reference": "動物園から一頭のトラが脱走した。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "123738",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280257"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_23547",
+      "source": "Skim through this pamphlet before you take the examination for our company.",
+      "reference": "我が社の試験を受ける前に、このパンフレットを読んで下さい。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "186411",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23547"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_23540",
+      "source": "Our company has a long, long history.",
+      "reference": "我が社はとても長い歴史をもっています。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "186404",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_1860512",
+      "source": "Don't be rude.",
+      "reference": "失礼のないようにしなさい。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1860512",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2125061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1860512",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1860512"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_265257",
+      "source": "In fact, I did not know it.",
+      "reference": "実際私はそれを知らなかった。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "149302",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265257"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_4515062",
+      "source": "Tom doesn't seem like a boy.",
+      "reference": "トムは男じゃないらしい。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4515062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "4480985",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4515062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4515062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_278275",
+      "source": "I'm looking for an apartment to rent.",
+      "reference": "賃貸アパートをさがしています。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "278275",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "125717",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "278275",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/278275"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_1315768",
+      "source": "He got fired for slacking off at work.",
+      "reference": "仕事をサボったからクビになった。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1315768",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "76109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1315768",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1315768"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_56908",
+      "source": "This book belongs to the library.",
+      "reference": "この本は図書館のものです。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56908",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "219587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56908",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56908"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_293468",
+      "source": "He admitted having done wrong.",
+      "reference": "彼は罪を犯したことを認めた。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293468",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "106847",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293468",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293468"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_388838",
+      "source": "She said that I should come home soon.",
+      "reference": "彼女は私に早く帰ったほうが良いと言った。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "388838",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "89478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "388838",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/388838"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_27820",
+      "source": "Nothing could be more reasonable, on the face of it.",
+      "reference": "一見したところそれ以上に理にかなったことはないであろう。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "27820",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "190659",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "27820",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/27820"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.1
+      }
+    },
+    {
+      "id": "tatoeba_246969",
+      "source": "Our company supports several cultural events.",
+      "reference": "私たちが働いている会社は、いくつかの文化事業を後援しています。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "246969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "167531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "246969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/246969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1743",
+      "source": "If you don't understand something, it's because you aren't aware of its context.",
+      "reference": "何かが理解できないのはその中身を知らないからである。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1743",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "5143",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1743",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1743"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 5.08
+      }
+    },
+    {
+      "id": "tatoeba_249048",
+      "source": "We felt the earth tremble.",
+      "reference": "私たちは大地が揺れるのを感じた。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249048",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "165457",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249048",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249048"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_406349",
+      "source": "They are about the same age.",
+      "reference": "彼らは同じくらいの年だ。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "406349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "97215",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "406349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/406349"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_52333",
+      "source": "There's a hair in my soup.",
+      "reference": "スープに髪の毛が入ってます。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52333",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "215037",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52333",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52333"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_238914",
+      "source": "Ken plays soccer every day.",
+      "reference": "健は毎日サッカーをする。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "238914",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "175551",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "238914",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/238914"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2711995",
+      "source": "Are you stupid?",
+      "reference": "お前は馬鹿か。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2711995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2217820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2711995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2711995"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1586520",
+      "source": "Call me Ismaël.",
+      "reference": "イスマエルと呼んでください。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1586520",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2975791",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1586520",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1586520"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2406465",
+      "source": "I should've told Tom.",
+      "reference": "トムに話しておくべきだった。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2406465",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "2409468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2406465",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2406465"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_18072",
+      "source": "What time will you leave?",
+      "reference": "君、何時に出るの。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "18072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "179216",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "18072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/18072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_63969",
+      "source": "Don't answer your mother back.",
+      "reference": "お母さんに口答えしてはいけませんよ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "63969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "226625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "63969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/63969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5918489",
+      "source": "Her mother is a pretty woman.",
+      "reference": "彼女のお母さんはきれいな女の人です。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5918489",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "5918651",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5918489",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5918489"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_43355",
+      "source": "The old man tripped over his own feet.",
+      "reference": "その老人は足がもつれてよろけた。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "43355",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "206110",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "43355",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/43355"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1052804",
+      "source": "Winter is coming soon.",
+      "reference": "冬はもうすぐだ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1052804",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "124357",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1052804",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1052804"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2271759",
+      "source": "I didn't see that.",
+      "reference": "それは見なかったなあ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2271759",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "1509089",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2271759",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2271759"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_388296",
+      "source": "Does she have a piano?",
+      "reference": "彼女はピアノを持っていますか。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "388296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "91673",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "388296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/388296"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_55535",
+      "source": "This is too big.",
+      "reference": "これは大きすぎるよ。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55535",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "9828817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55535",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55535"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_569804",
+      "source": "Washing is my work.",
+      "reference": "洗濯は私の仕事です。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "569804",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "141215",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "569804",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/569804"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_38106",
+      "source": "You can go anywhere you like.",
+      "reference": "どこへでも好きな所に行ってよろしい。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38106",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "jpn",
+        "target_sentence_id": "200902",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38106",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38106"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -1,6 +1,25 @@
 ---
 sidebar_position: 1
 title: Submit a Method
+related:
+  - label: "Method Interface"
+    to: /docs/specifications/methods
+    kind: spec
+    note: "The contract your method implements"
+  - label: "Run Card Specification"
+    to: /docs/specifications/run-card
+    kind: spec
+    note: "What every published run must disclose"
+  - label: "MT Evaluation Rules"
+    to: /docs/leaderboard/rules
+    kind: doc
+  - label: "Cookbook: Few-Shot Prompting"
+    to: /docs/tutorials/few-shot-prompting
+    kind: cookbook
+    note: "The fastest first method to submit"
+  - label: "Agent Guide: Winning the Arena"
+    to: /docs/getting-started/agent-guide
+    kind: guide
 ---
 
 # Submit a Method

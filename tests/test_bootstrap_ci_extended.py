@@ -32,7 +32,7 @@ def _make_entry(
 ) -> dict:
     """Create a mock entry dict matching TestReport format.
 
-    Optionally includes FST plugin data under plugin_metrics.crk_fst_validity.
+    Optionally includes FST plugin data under plugin_metrics.giellalt_fst_validity.
     """
     entry = {
         "id": entry_id,
@@ -46,7 +46,7 @@ def _make_entry(
         "plugin_metrics": {},
     }
     if fst_validity is not None:
-        entry["plugin_metrics"]["crk_fst_validity"] = {
+        entry["plugin_metrics"]["giellalt_fst_validity"] = {
             "fst_validity": fst_validity,
         }
     return entry

@@ -173,6 +173,21 @@ entries = adapter.fetch(
     file_path="europarl_en_de.tmx",
     license_id="CC-BY-SA-4.0",
 )
+
+# EdTeKLA (eng→crk only) — downloads the Cree Language Textbook files
+# from github.com/EdTeKLA/IndigenousLanguages_Corpora at a pinned ref,
+# after a CC BY-NC-SA 4.0 license-acceptance prompt (auto_yes for CI).
+# Champollion never hosts this data; the module's build_corpus_file()
+# rebuilds the published 436-entry dev corpus deterministically
+# (byte-for-byte — see cli/shared/corpora-cards/eval-eng-crk-edtekla-dev-v1.json).
+from corpora_builder.adapters.edtekla_adapter import EdTeKLAAdapter
+
+adapter = EdTeKLAAdapter()
+entries = adapter.fetch(
+    "eng", "crk",
+    cache_dir="~/.cache/edtekla",
+    ref="f85a31abc52e1610251e21e6bdd1b5ce9c96c10b",
+)
 ```
 
 ## Validation

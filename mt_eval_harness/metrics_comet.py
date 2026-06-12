@@ -78,105 +78,26 @@ except ImportError:
 # Default model — community standard since WMT 2022
 DEFAULT_COMET_MODEL = "Unbabel/wmt22-comet-da"
 
-# Languages well-represented in XLM-R training data.
-# For languages NOT in this set, we print a reliability note.
-# Source: XLM-R paper (Conneau et al., 2020) — top-100 languages
-# by CommonCrawl training data volume.
-_XLMR_HIGH_RESOURCE = {
-    "en", "fr", "de", "es", "it", "pt", "nl", "pl", "ru", "uk",
-    "cs", "ro", "bg", "hr", "sk", "sl", "sr", "hu", "fi", "sv",
-    "da", "no", "nb", "nn", "et", "lv", "lt", "el", "tr", "ar",
-    "he", "fa", "ur", "hi", "bn", "ta", "te", "ml", "kn", "gu",
-    "mr", "pa", "ne", "si", "th", "lo", "km", "vi", "id", "ms",
-    "tl", "zh", "ja", "ko", "ka", "hy", "az", "kk", "uz", "ky",
-    "mn", "my", "sw", "af", "sq", "mk", "bs", "mt", "is", "ga",
-    "cy", "eu", "gl", "ca", "oc", "ast", "la",
-}
+# XLM-R high-resource and AfriCOMET data now live on the language cards
+# (metricModelSupport field), queried through language_cards.py.
+# See: enrich-metric-model-support.mjs for how cards are enriched.
+from mt_eval_harness.language_cards import (
+    is_xlmr_high_resource as _is_xlmr_high_resource,
+    has_africomet as _has_africomet,
+    get_metric_model_for as _get_metric_model_for,
+)
 
 
-# ── Language-Aware Model Registry ────────────────────────────────
+# ── Language-Aware Model Selection ───────────────────────────────
 #
-# AfriCOMET (masakhane/africomet-mtl) is trained on African language
-# human judgments from the Masakhane community. For African languages,
-# AfriCOMET provides better correlation with human quality assessments
-# than the default wmt22-comet-da model, which was trained primarily
-# on European language pairs.
+# Model selection is now driven by language cards' metricModelSupport
+# field. Each card knows which COMET model variant is best for it.
+# This replaced the hardcoded COMET_MODEL_REGISTRY and
+# _AFRICOMET_LANGUAGES set.
 #
-# The registry maps ISO 639-3 codes to recommended COMET models.
-# Languages not in any registry entry fall back to DEFAULT_COMET_MODEL.
-#
-# Reference: Wan et al. (2022). "AfriCOMET: An Automatic Metric
-# for Machine Translation Evaluation of African Languages." Masakhane.
-#
-# NOTE: AfriCOMET requires `pip install unbabel-comet` (same package).
-# The model downloads on first use (~600 MB).
-
-_AFRICOMET_MODEL = "masakhane/africomet-mtl"
-
-# African languages covered by AfriCOMET training data.
-# These are languages with human judgment data from the Masakhane
-# community. AfriCOMET should provide more reliable scores for
-# these than generic COMET.
-# Source: AfriCOMET paper + Masakhane evaluation datasets.
-_AFRICOMET_LANGUAGES = {
-    # Niger-Congo
-    "yor",  # Yorùbá
-    "ibo",  # Igbo
-    "hau",  # Hausa (Chadic, not Niger-Congo, but in Masakhane)
-    "swa", "swh", "swc",  # Swahili variants
-    "zul",  # Zulu
-    "xho",  # Xhosa
-    "sot",  # Southern Sotho
-    "tsn",  # Tswana
-    "nso",  # Pedi / Northern Sotho
-    "ssw",  # Swati
-    "tso",  # Tsonga
-    "ven",  # Venda
-    "nbl",  # South Ndebele
-    "lin",  # Lingala
-    "lug",  # Luganda
-    "kin",  # Kinyarwanda
-    "run",  # Kirundi
-    "nya",  # Chichewa
-    "sna",  # Shona
-    "wol",  # Wolof
-    "bam",  # Bambara
-    "ewe",  # Ewe
-    "twi",  # Twi
-    "aka",  # Akan
-    "ful", "fuc",  # Fula variants
-    "mos",  # Mossi / Mooré
-
-    # Afroasiatic
-    "amh",  # Amharic
-    "tir",  # Tigrinya
-    "orm",  # Oromo
-    "som",  # Somali
-
-    # Nilo-Saharan
-    "luo",  # Luo (Dholuo)
-
-    # Creoles
-    "pcm",  # Nigerian Pidgin
-}
-
-# Registry: maps language code patterns to COMET model.
-# Checked in order; first match wins.
-COMET_MODEL_REGISTRY = [
-    {
-        "name": "AfriCOMET",
-        "model": _AFRICOMET_MODEL,
-        "languages": _AFRICOMET_LANGUAGES,
-        "note": "Masakhane African language evaluation model",
-    },
-    # Future entries can go here for other regional models, e.g.:
-    # {
-    #     "name": "IndicCOMET",
-    #     "model": "ai4bharat/indiccomet",
-    #     "languages": {"hin", "ben", "tam", "tel", ...},
-    #     "note": "Indic language evaluation model",
-    # },
-]
+# References:
+#   AfriCOMET: Wan et al. (2022), Masakhane community
+#   XLM-R: Conneau et al. (2020)
 
 
 def resolve_comet_model(
@@ -187,8 +108,10 @@ def resolve_comet_model(
 
     Priority order:
         1. Explicit CLI override (--comet-model flag) — always wins
-        2. Registry match for target language code
+        2. Language card metricModelSupport recommendation
         3. DEFAULT_COMET_MODEL fallback
+
+    Data source: language card metricModelSupport field (SSOT).
 
     Args:
         target_lang: ISO 639-3 or BCP-47 code for the target language.
@@ -203,16 +126,16 @@ def resolve_comet_model(
     if explicit_model:
         return explicit_model
 
-    # 2. Check registry for language-specific model
+    # 2. Check language card for specialized model recommendation
     lang_base = target_lang.split("-")[0].lower() if target_lang else ""
     if lang_base:
-        for entry in COMET_MODEL_REGISTRY:
-            if lang_base in entry["languages"]:
-                print(
-                    f"  COMET: Auto-selecting {entry['name']} "
-                    f"({entry['model']}) for {target_lang}"
-                )
-                return entry["model"]
+        recommended = _get_metric_model_for(lang_base)
+        if recommended:
+            print(
+                f"  COMET: Auto-selecting specialized model "
+                f"({recommended}) for {target_lang}"
+            )
+            return recommended
 
     # 3. Default fallback
     return DEFAULT_COMET_MODEL
@@ -311,9 +234,10 @@ def compute_comet(
         print("  COMET: No valid entries to score (all errors or empty)")
         return None
 
-    # Check for low-resource language
+    # Check for low-resource language — queries language card SSOT
+    # (metricModelSupport.xlmr.tier). Handles both 639-1 and 639-3.
     lang_base = target_lang.split("-")[0].lower() if target_lang else ""
-    is_low_resource = bool(lang_base) and lang_base not in _XLMR_HIGH_RESOURCE
+    is_low_resource = bool(lang_base) and not _is_xlmr_high_resource(lang_base)
 
     if is_low_resource:
         print(

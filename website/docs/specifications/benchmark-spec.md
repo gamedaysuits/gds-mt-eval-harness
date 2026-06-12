@@ -2,6 +2,20 @@
 sidebar_position: 6
 title: 'Benchmark Specification'
 slug: '/specifications/benchmark'
+related:
+  - label: "Corpus Design Framework"
+    to: /docs/specifications/corpus-design
+    kind: spec
+  - label: "Evaluation Datasets"
+    to: /docs/leaderboard/datasets
+    kind: doc
+    note: "The corpora currently in play"
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+  - label: "Speaker Validation Protocol"
+    to: /docs/specifications/speaker-validation
+    kind: spec
 ---
 
 # Benchmark Specification
@@ -116,26 +130,18 @@ Each entry in the corpus represents one translation challenge:
 | `id` | integer | ✅ | Unique identifier within the corpus |
 | `source` | string | ✅ | Source text in the source language |
 | `reference` | string | ✅ | Gold-standard reference translation in the target language |
-| `segment` | string | ✅ | Corpus partition: `gold_standard`, `held_out`, `development`, or `diagnostic` |
-| `difficulty` | integer | ✅ | Difficulty rating 1–5 (see §2.4) |
-| `provenance` | string | ✅ | Origin of this entry (see §2.5) |
-| `register` | string | ✅ | Register/formality level (see §2.6) |
-| `context` | string | ✅ | Communicative function (see §2.6) |
-| `domain` | string | ✅ | Use-case domain from the 16-code taxonomy (see §2.7). Must be one of: `conv`, `ecommerce`, `edu`, `financial`, `gov`, `legal`, `literary`, `marketing`, `medical`, `news`, `religious`, `scientific`, `subtitles`, `support`, `tech`, `ui`. Validated at construction time. |
+| `segment` | string | 📎 | Corpus partition: `gold_standard`, `held_out`, `development`, or `diagnostic` |
+| `difficulty` | integer | 📎 | Difficulty rating 1–5 (see §2.4) |
+| `provenance` | string | 📎 | Origin of this entry (see §2.5) |
+| `register` | string | 📎 | Register/formality level (see §2.6) |
+| `context` | string | 📎 | Communicative function (see §2.6) |
+| `domain` | string | 📎 | Use-case domain from the 16-code taxonomy (see §2.7). Must be one of: `conv`, `ecommerce`, `edu`, `financial`, `gov`, `legal`, `literary`, `marketing`, `medical`, `news`, `religious`, `scientific`, `subtitles`, `support`, `tech`, `ui`. Validated at construction time. |
+
+> **📎 = RECOMMENDED.** The harness handles missing optional fields gracefully via defaults. Third-party corpora need only provide `id`, `source`, and `reference` per entry.
 | `morphological_analysis` | string | ❌ | Gold-standard morphological breakdown |
 | `notes` | string | ❌ | Translator notes, dialectal variants, ambiguity flags |
 | `variant_class` | string | ❌ | Class label grouping acceptable translation variants |
 
-> **Implementation note (2026-05):** The current harness uses `index` for `id`, `source_text` for `source`, and `target_expected` for `reference`. The harness also uses three string difficulty tiers (`easy`, `medium`, `hard`) instead of the five integer tiers defined here. These will be aligned to this spec in a future harness version. The mapping is:
->
-> | This spec | Current harness |
-> |-----------|----------------|
-> | `id` | `index` |
-> | `source` | `source_text` |
-> | `reference` | `target_expected` |
-> | `difficulty` 1–2 | `easy` |
-> | `difficulty` 3 | `medium` |
-> | `difficulty` 4–5 | `hard` |
 
 ### 2.3 Corpus Segments
 
@@ -147,6 +153,8 @@ The corpus is divided into segments with different access levels:
 | `diagnostic` | Targeted tests for specific linguistic phenomena. | **Public** | 10 entries |
 | `gold_standard` | Official benchmark evaluation. Leaderboard scores come from here. | **Secret** — held by governance org | 50 entries |
 | `held_out` | Reserved for future evaluation. Never used until activated. | **Secret** — held by governance org | 10 entries |
+
+> **Current state:** Only the `development` segment exists in shipped datasets. The `diagnostic`, `gold_standard`, and `held_out` segments are defined for future use as corpora grow.
 
 The `gold_standard` and `held_out` segments are fully secret. Both the source sentences and the reference translations are held on governance-controlled infrastructure. Method developers never see the questions or the answers. See §8 for the sovereignty mechanism.
 
@@ -173,6 +181,8 @@ Every entry must indicate its origin:
 | `elicited` | Produced through structured elicitation sessions |
 | `corpus` | Extracted from a parallel corpus |
 
+> **Note:** In practice, provenance values are free-form strings. The tags above are conventions, not a validated enum — datasets may use other descriptive provenance strings.
+
 ### 2.6 Register and Context
 
 **Register** describes the formality and social context:
@@ -186,6 +196,8 @@ Every entry must indicate its origin:
 | `educational` | Language teaching materials |
 
 **Context** describes the communicative function:
+
+> 🔲 **Planned.** The `context` field is defined in the schema but not yet populated in current datasets. It is reserved for future corpus enrichment.
 
 | Context | Description |
 |---------|-------------|
@@ -302,6 +314,13 @@ Aggregate metrics for the entire run. All quality metrics are **automated** — 
 | `scores.morphological_accuracy` | number | 0.0–1.0, `null` if no gold-standard analysis |
 | `scores.chrf_plus_plus` | number | Corpus-level chrF++ score (0–100) |
 | `scores.semantic_score` | number | Embedding-based semantic similarity (0.0–1.0) |
+| `scores.ter` | number | Translation Edit Rate (0–∞, lower is better) |
+| `scores.length_ratio` | number | avg(len(predicted)/len(reference)), ideal = 1.0 |
+| `scores.code_switching_rate` | number | 0.0–1.0, fraction of entries with source-language leakage |
+| `scores.hallucination_rate` | number | 0.0–1.0, fraction of entries with hallucinated content |
+| `scores.terminology_adherence` | number | 0.0–1.0, adherence to glossary terms (`null` if no glossary) |
+| `scores.tokens_per_second` | number | total_tokens / elapsed_seconds |
+| `scores.entries_per_minute` | number | entries translated per minute |
 | `scores.composite` | number | Weighted composite score (0.0–1.0). See SCORING_SPEC §4 |
 | `scores.errors` | number | Entries that failed (API error, timeout, etc.) |
 | `scores.by_difficulty` | object | Scores broken down by difficulty tier |
@@ -318,6 +337,7 @@ Aggregate metrics for the entire run. All quality metrics are **automated** — 
 | `totals.cached_tokens` | number | Tokens served from provider's prompt cache |
 | `totals.total_cost_usd` | number | Total cost in USD |
 | `totals.cost_per_entry_usd` | number | `total_cost_usd / entry_count` |
+| `totals.cost_per_source_char` | number | USD per source character — comparable across languages |
 
 ### 3.6 Timing (Speed)
 
@@ -330,23 +350,31 @@ Aggregate metrics for the entire run. All quality metrics are **automated** — 
 
 ### 3.7 Per-Entry Results
 
-Each entry in the `results[]` array records one translation:
+Each entry in the `results[]` array records one translation. Per-entry data is persisted in the `run_card_entries` table (migration 005) with denormalized LYSS verdicts (migration 006).
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `entry_id` | number | Matches `entries[].id` in the corpus |
+| `entry_id` | string | Matches `entries[].id` in the corpus |
 | `source` | string | Source text that was translated |
-| `reference` | string | Gold-standard reference |
-| `predicted` | string | Method's actual output |
+| `expected` | string | Gold-standard reference translation |
+| `raw_predicted` | string \| null | Raw model output before post-processing |
+| `predicted` | string | Method's actual output (post-processed) |
+| `segment` | string | Segment identifier (e.g., sentence index) |
+| `difficulty` | string \| null | Difficulty tier from the corpus |
+| `domain` | string | Domain tag from the corpus (§2.7) |
 | `exact_match` | boolean | Whether output exactly matched reference |
-| `entry_chrf` | number | Sentence-level chrF++ (0–100) |
-| `fst_accepted` | boolean \| null | FST acceptance, `null` if no analyzer |
-| `fst_analysis` | string[] | FST analysis strings for the output |
-| `difficulty` | integer | Difficulty tier from the corpus |
-| `provenance` | string | Provenance tag from the corpus |
-| `latency_seconds` | number | Response time for this entry |
-| `usage` | object | `{ prompt_tokens, completion_tokens, reasoning_tokens }` |
+| `chrf_score` | number \| null | Sentence-level chrF++ (0–100) |
+| `bleu_score` | number \| null | Sentence-level BLEU (0–100) |
+| `latency_s` | number \| null | Response time in seconds |
+| `cost_usd` | number \| null | Cost in USD for this entry |
+| `tool_call_count` | integer | Number of tool calls used (0 if none) |
 | `error` | string \| null | Error message if this entry failed |
+| `plugin_metrics` | object | Full per-entry plugin output (JSONB) |
+| `fst_valid` | boolean \| null | GiellaLT FST accepted the prediction (denormalized LYSS-fst) |
+| `equivalent_match` | boolean \| null | CRK linter confirmed structural equivalence (denormalized LYSS-eq) |
+| `semantic_verdict` | string \| null | LYSS-sem verdict: `VALID`, `MISMATCH`, `UNKNOWN`, `ERROR` |
+| `code_switching_detected` | boolean \| null | Source-language tokens detected in output |
+| `hallucination_detected` | boolean \| null | Fabricated content detected in output |
 
 
 
@@ -361,6 +389,10 @@ The fingerprint is the SHA-256 hash of the sorted concatenation of:
 - `system_prompt_sha256`
 - `temperature`
 - `harness_version`
+- `batch_size`
+- `tools_enabled`
+
+> **Why 8 components?** Batch size and tool-calling materially affect output quality and must be included in the identity. Two runs with different batch sizes or different tools enabled are different experimental setups, even if all other parameters match.
 
 Two runs with identical fingerprints should produce comparable results. Differences are due to API non-determinism (temperature > 0) or provider-side model updates.
 
@@ -382,8 +414,8 @@ All metrics in this section are machine-computed. See §1.1.
 | **FST acceptance rate** | ✅ Implemented | Fraction of predicted words accepted by the morphological analyzer (GiellaLT HFST) as valid forms in the target language. A word the FST accepts is a real, structurally valid word — not a hallucination. | 0.0–1.0 |
 | **Exact match** | ✅ Implemented | Fraction of predictions that exactly match the reference after Unicode normalization. Strict but unambiguous — useful as a ceiling check. | 0.0–1.0 |
 | **Morphological accuracy** | 🔲 Planned | For entries with gold-standard morphological analysis: fraction of morphemes correctly generated. More granular than FST acceptance — a word can be FST-valid but have the wrong morpheme structure (right root, wrong tense). | 0.0–1.0 |
-| **Equivalent match** | ⚡ Partial | Fraction matching an acceptable variant of the reference — accounting for word order, dialectal differences, and orthographic conventions. Currently implemented for CRK via the CRK method plugin's `CrkLinterMetric`; generic implementation requires per-entry `variants[]` in corpus. | 0.0–1.0 |
-| **Semantic score** | ⚡ Partial | Meaning preservation regardless of surface form. Currently implemented for CRK via the CRK method plugin's `CrkSemanticMetric` (verdict-weighted proxy). Universal embedding-based cosine similarity is planned — see SCORING_SPEC §2.3. | 0.0–1.0 |
+| **Equivalent match** | ⚡ Partial | Fraction matching an acceptable variant of the reference — accounting for word order, dialectal differences, and orthographic conventions. Currently implemented for CRK via the CRK eval standard's `CrkLinterMetric` (in `eval_standards/crk/`); loaded automatically via the CRK language card's `evalMetrics` declaration. Generic implementation requires per-entry `variants[]` in corpus. | 0.0–1.0 |
+| **Semantic score** | ⚡ Partial | Meaning preservation regardless of surface form. Currently implemented for CRK via the CRK eval standard's `CrkSemanticMetric` (in `eval_standards/crk/`, verdict-weighted proxy). Universal embedding-based cosine similarity is planned — see SCORING_SPEC §2.3. | 0.0–1.0 |
 
 ### 4.2 Composite Score
 
@@ -580,6 +612,22 @@ To serve as key custodian for a language benchmark:
 | **Authority to Control** (CARE) | Sandboxed execution is the technical implementation. |
 | **Responsibility** (CARE) | Developers accept responsibility through terms of participation. |
 | **Ethics** (CARE) | Community rights over researcher convenience. |
+
+### 8.6 Dependency Classes and the Sandbox Network Policy
+
+Sandboxed execution (§8.2) and ownership transfer (§8.3) both depend on knowing exactly what a method needs at runtime. The [Method Interface spec](/docs/specifications/methods#method-validity-and-dependency-classes) defines five **dependency classes** — S (self-contained), O (open external), A1 (substitutable LLM inference), A2 (non-substitutable external API), X (closed) — and the dependency manifest every method must declare. This subsection records how the sandbox network policy enforces them.
+
+**Default-deny egress.** The sandbox specification requires that method containers have no network access by default. This is not a firewall rule — the specification removes the network from the execution environment, so an undeclared network dependency fails at the architecture layer, not the policy layer. Class S and O methods run entirely from artifacts vendored into the submission (Class O artifacts are pinned and mirrored in at submission time).
+
+**The LLM gateway (🔲 planned).** Most methods call LLMs, so the sandbox specification defines exactly one egress exception: an **LLM gateway** operated by the evaluation infrastructure. The gateway:
+
+- proxies inference requests to an **explicit allowlist of pinned models** — the model identifiers recorded in the method's manifest and run card;
+- **logs every request and response** in the sealed audit log, so gateway traffic can be reviewed for data-exfiltration attempts before scores are released;
+- is the *only* network path — there is no general egress, no DNS, no other endpoints.
+
+This is what makes Class A1 methods evaluable without abandoning the verifiability guarantees of §8.2 — but it is a real trade-off, and the specification names it plainly: translating a secret source sentence through an external model **discloses that source sentence to the model provider**. Reference translations never leave (they are held by the harness, outside the container; see §8.2), and the method itself still cannot exfiltrate anything beyond what the logged, allowlisted inference calls contain. Whether that bounded disclosure is acceptable for a given corpus is a steward decision: authorizing a Class A1 evaluation means authorizing it knowingly, per run, like every other use of the data.
+
+**Status.** The sandbox and its gateway are specified but not yet built. Until the gateway is operational, only Class S and O methods can produce gold-standard scores; Class A1 methods remain prize-eligible in principle (see [Prize Specification §1.6](/docs/specifications/prizes)) but cannot yet be evaluated against secret segments. Class A2 dependencies cannot enter the sandbox at all until the rights holder grants permission — the artifact has to be allowed to *exist* in the sandbox before any network question arises.
 
 ---
 

@@ -2,6 +2,26 @@
 sidebar_position: 1
 slug: /
 title: The MT Eval Arena
+related:
+  - label: "How It Works"
+    to: /docs/how-it-works
+    kind: doc
+    note: "Corpora, methods, metrics, leaderboard — the loop"
+  - label: "Submit a Method"
+    to: /docs/getting-started/submit-a-method
+    kind: guide
+    note: "Get on the leaderboard"
+  - label: "Translation Is Not Revitalization"
+    to: /docs/perspectives/translation-is-not-revitalization
+    kind: position
+    note: "What MT can and cannot do — stated plainly"
+  - label: "Scoring Specification"
+    to: /docs/specifications/scoring
+    kind: spec
+  - label: "Live Leaderboard"
+    to: https://champollion.dev/leaderboard
+    kind: leaderboard
+    note: "The scoreboard this arena feeds"
 ---
 
 # The MT Eval Arena

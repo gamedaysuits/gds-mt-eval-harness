@@ -18,7 +18,7 @@ import json
 import os
 import sys
 import glob
-from pathlib import Path
+
 from datetime import datetime
 
 from ._dashboard_css import CSS
@@ -77,14 +77,8 @@ def generate(reports: list[dict], output_path: str = "dashboard.html") -> str:
 
     Returns the output path for caller convenience.
     """
-    # Read version from pyproject.toml
-    version = "0.1.0"
-    pyproject = Path(__file__).parent.parent / "pyproject.toml"
-    if pyproject.exists():
-        for line in pyproject.read_text().splitlines():
-            if line.strip().startswith("version"):
-                version = line.split("=")[1].strip().strip('"').strip("'")
-                break
+    from mt_eval_harness import __version__
+    version = __version__
 
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
     run_count = len(reports)

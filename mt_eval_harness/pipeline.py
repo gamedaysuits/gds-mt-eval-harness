@@ -108,6 +108,7 @@ def enrich_results(
             "predicted": result.get("predicted", ""),
             "segment": entry.get("segment", ""),
             "difficulty": entry.get("difficulty", 0),
+            "domain": entry.get("domain", ""),
             "latency_s": result.get("latency_s", 0),
             "usage": result.get("usage", {}),
             "cost_usd": entry_cost,

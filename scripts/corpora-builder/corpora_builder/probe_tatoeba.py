@@ -188,105 +188,37 @@ def probe_all_pairs(
 # Language card loading
 # ---------------------------------------------------------------------------
 
-# Map from champollion language card filenames (ISO 639-1/3 codes)
-# to Tatoeba/ISO 639-3 codes.  Cards use short codes (e.g., "fr.json")
-# but Tatoeba uses 3-letter codes (e.g., "fra").
+# Map from champollion language card codes to Tatoeba/OPUS corpus codes.
 #
-# Only entries where the card code DIFFERS from the Tatoeba code
-# need to appear here.  3-letter codes like "crk", "moe" pass through.
+# POST-MIGRATION (ISO 639-3):
+#   Card filenames are now 3-letter ISO 639-3 codes (e.g., "fra.json"),
+#   which are also the Tatoeba/OPUS corpus codes. So most cards pass through
+#   without needing an entry here.
+#
+#   Only entries where the CARD CODE differs from the Tatoeba code need
+#   to appear:
+#     - Regional variants (fra-CA → fra, spa-MX → spa)
+#     - Macrolanguage cards that map to a different OPUS code
+#     - Special cases (Bosnian/Serbian → Serbo-Croatian macro)
 _CARD_TO_TATOEBA: dict[str, str] = {
-    # ISO 639-1 → ISO 639-3
-    # Sorted alphabetically by card code
-    "am": "amh",
-    "ar": "ara",
-    "ay": "aym",
-    "az": "aze",
-    "be": "bel",
-    "bg": "bul",
-    "bn": "ben",
-    "bs": "hbs",       # Bosnian → OPUS uses Serbo-Croatian macro code
-    "ca": "cat",
-    "cs": "ces",
-    "cy": "cym",
-    "da": "dan",
-    "de": "deu",
-    "el": "ell",
-    "es": "spa",
-    "es-MX": "spa",   # Mexican Spanish → Tatoeba's generic Spanish
-    "et": "est",
-    "eu": "eus",
-    "fa": "fas",
-    "fi": "fin",
-    "fo": "fao",
-    "fr": "fra",
-    "fr-CA": "fra",   # Canadian French → Tatoeba's generic French
-    "fy": "fry",
-    "ga": "gle",
-    "gl": "glg",
-    "gn": "grn",
-    "gu": "guj",
-    "ha": "hau",
-    "he": "heb",
-    "hi": "hin",
-    "hu": "hun",
-    "id": "ind",
-    "ig": "ibo",
-    "is": "isl",
-    "it": "ita",
-    "ja": "jpn",
-    "ka": "kat",
-    "kk": "kaz",
-    "km": "khm",
-    "kn": "kan",
-    "ko": "kor",
-    "lb": "ltz",
-    "lg": "lug",
-    "lo": "lao",
-    "lt": "lit",
-    "lv": "lav",
-    "mi": "mri",
-    "mk": "mkd",
-    "ml": "mal",
-    "mn": "mon",
-    "mr": "mar",
-    "ms": "msa",       # Malay → OPUS uses macrolanguage code
-    "mt": "mlt",
-    "my": "mya",
-    "nb": "nor",       # Norwegian Bokmål → OPUS uses macrolanguage code
-    "ne": "nep",
-    "nl": "nld",
-    "pa": "pan",
-    "pl": "pol",
-    "pt": "por",
-    "pt-PT": "por",   # European Portuguese → Tatoeba's generic Portuguese
-    "qu": "que",
-    "ro": "ron",
-    "ru": "rus",
-    "rw": "kin",
-    "se": "sme",       # Northern Sámi
-    "si": "sin",
-    "sk": "slk",
-    "sn": "sna",
-    "sq": "sqi",
-    "sr": "hbs",       # Serbian → OPUS uses Serbo-Croatian macro code
-    "sv": "swe",
-    "sw": "swa",
-    "ta": "tam",
-    "te": "tel",
-    "th": "tha",
-    "ti": "tir",
-    "tk": "tuk",
-    "tl": "tgl",
-    "tr": "tur",
-    "uk": "ukr",
-    "ur": "urd",
-    "uz": "uzb",
-    "vi": "vie",
-    "xh": "xho",
-    "yo": "yor",
-    "zh": "zho",       # Chinese → OPUS uses macrolanguage code
-    "zh-TW": "zho",   # Traditional Chinese → same OPUS macro code
-    "zu": "zul",
+    # Regional variants → Tatoeba's generic language code
+    "fra-CA": "fra",      # Canadian French → Tatoeba's French
+    "spa-MX": "spa",      # Mexican Spanish → Tatoeba's Spanish
+    "por-PT": "por",      # European Portuguese → Tatoeba's Portuguese
+    "por-BR": "por",      # Brazilian Portuguese → Tatoeba's Portuguese
+    "cmn-Hant": "cmn",    # Traditional Chinese → Tatoeba's Mandarin
+
+    # Macrolanguage → OPUS corpus code
+    # (OPUS sometimes uses the macrolanguage code for corpus files)
+    "nob": "nor",         # Norwegian Bokmål → OPUS uses 'nor'
+    "nno": "nor",         # Norwegian Nynorsk → OPUS uses 'nor'
+    "zsm": "msa",         # Standard Malay → OPUS uses 'msa'
+
+    # Serbo-Croatian complex
+    # OPUS stores all three under the macrolanguage code 'hbs'
+    "bos": "hbs",         # Bosnian → OPUS Serbo-Croatian
+    "srp": "hbs",         # Serbian → OPUS Serbo-Croatian
+    "hrv": "hbs",         # Croatian → OPUS Serbo-Croatian
 }
 
 

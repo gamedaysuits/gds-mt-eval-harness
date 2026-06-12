@@ -1,6 +1,21 @@
 ---
 sidebar_position: 3
 title: Evaluation Datasets
+related:
+  - label: "Corpus Design Framework"
+    to: /docs/specifications/corpus-design
+    kind: spec
+    note: "How evaluation corpora are constructed"
+  - label: "Cookbook: Corpus Creation"
+    to: /docs/tutorials/corpus-creation
+    kind: cookbook
+    note: "Build a corpus for your language"
+  - label: "Benchmark Specification"
+    to: /docs/specifications/benchmark
+    kind: spec
+  - label: "What Counts as a Language Here?"
+    to: /docs/context/what-counts-as-a-language
+    kind: doc
 ---
 
 # Evaluation Datasets

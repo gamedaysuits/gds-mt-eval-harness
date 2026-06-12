@@ -1,0 +1,5841 @@
+{
+  "corpus_id": "tatoeba-eng-nld-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "nld"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:24:49.396308+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "financial",
+    "gov",
+    "legal",
+    "literary",
+    "medical",
+    "religious",
+    "scientific",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_2258206",
+      "source": "Don't talk nonsense.",
+      "reference": "Zeg geen onzin!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2258206",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1117491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2258206",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2258206"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_953193",
+      "source": "Do you have any gum?",
+      "reference": "Heb je kauwgom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953193",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5582710",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953193",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953193"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_20116",
+      "source": "You are my best friend.",
+      "reference": "Je bent mijn beste vriend.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20116",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "605229",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20116",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20116"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3824530",
+      "source": "Are you still studying French?",
+      "reference": "Studeert u nog Frans?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3824530",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5458794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3824530",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3824530"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1221980",
+      "source": "The weather was very good.",
+      "reference": "Het weer was erg goed.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1221980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8078143",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1221980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1221980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2010244",
+      "source": "Do you like to cook?",
+      "reference": "Hou je van koken?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2010244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7897885",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2010244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2010244"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_461170",
+      "source": "The job is practically done.",
+      "reference": "De taak is zo goed als afgewerkt.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "461170",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "462177",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "461170",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/461170"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_3765595",
+      "source": "What time did you get up today?",
+      "reference": "Hoe laat ben je vandaag opgestaan?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3765595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11762194",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3765595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3765595"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_6711385",
+      "source": "Sami waited until the next day.",
+      "reference": "Sami heeft tot de volgende dag gewacht.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6711385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9768708",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6711385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6711385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_38875",
+      "source": "Don't be so noisy, please.",
+      "reference": "Maak alstublieft niet zoveel lawaai.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "743396",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38875"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2438453",
+      "source": "I would like to learn standard English.",
+      "reference": "Ik wil standaard Engels leren.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2438453",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "962715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2438453",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2438453"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_417021",
+      "source": "I haven't seen you in ages.",
+      "reference": "Lang niet gezien.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "417021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "466294",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "417021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/417021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1816348",
+      "source": "Does he still live in Luxembourg?",
+      "reference": "Woont hij nog in Luxemburg?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1816348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2963909",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1816348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1816348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_25688",
+      "source": "Round trip or one-way?",
+      "reference": "Heen en terug of enkele reis?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25688",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3627116",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25688",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25688"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_6038308",
+      "source": "Fish, amphibians, and reptiles are cold-blooded animals.",
+      "reference": "Vissen, amfibieën en reptielen zijn koudbloedige dieren.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6038308",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8673594",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6038308",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6038308"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 6.71
+      }
+    },
+    {
+      "id": "tatoeba_31093",
+      "source": "What would you say if you were in my place?",
+      "reference": "Wat zou jij zeggen als je mij was?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31093",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "560777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31093",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31093"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.3
+      }
+    },
+    {
+      "id": "tatoeba_954745",
+      "source": "You don't know how to do it, do you?",
+      "reference": "Je weet niet hoe je het moet doen, of wel?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "954745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9843544",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "954745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/954745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.89
+      }
+    },
+    {
+      "id": "tatoeba_1027128",
+      "source": "Tom and I are old friends.",
+      "reference": "Tom en ik zijn oude vrienden.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1027128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9178974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1027128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1027128"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1167466",
+      "source": "We're less than halfway to the top of the mountain. Are you already tired?",
+      "reference": "We zijn op minder dan halverwege de top van de berg. Ben je al moe?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1167466",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8537552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1167466",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1167466"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.21
+      }
+    },
+    {
+      "id": "tatoeba_2292668",
+      "source": "When you start looking like your passport photo you should go on vacation.",
+      "reference": "Als je op de foto in je paspoort begint te lijken moet je op vakantie gaan.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2292668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1057217",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2292668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2292668"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.69
+      }
+    },
+    {
+      "id": "tatoeba_437499",
+      "source": "One for all, all for one.",
+      "reference": "Eén voor allen, allen voor één.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "437499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "437986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "437499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/437499"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2674346",
+      "source": "Even though she's allergic, I gave an egg to the child.",
+      "reference": "Ondanks dat ze allergisch is, heb ik een ei aan het kind gegeven.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2674346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7645258",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2674346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2674346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.91
+      }
+    },
+    {
+      "id": "tatoeba_589268",
+      "source": "\"Noobs,\" Al-Sayib stated. \"If 25 people got killed by you, Dima, then they must have been noobs.\"",
+      "reference": "\"Noobs,\" stelde Al-Sayib. \"Als 25 mensen door jou vermoord zijn, Dima, dan moeten het wel noobs geweest zijn.\"",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "589268",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "591547",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "589268",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/589268"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.24
+      }
+    },
+    {
+      "id": "tatoeba_34649",
+      "source": "Even though I was sitting in the sun, I still felt chilly.",
+      "reference": "Ook al zat ik in de zon, ik had het alsnog een beetje koud.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11794953",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34649"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_4506564",
+      "source": "\"Are you single?\" \"Technically yes, but I got a date this Friday.\"",
+      "reference": "\"Ben je single?\" \"Technisch gezien wel, maar ik heb komende vrijdag een date.\"",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4506564",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4506983",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4506564",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4506564"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1428037",
+      "source": "Because of the storm, we had no choice but to stay at home.",
+      "reference": "Door de storm hadden wij geen andere keus dan thuis te blijven.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1428037",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8167484",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1428037",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1428037"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.46
+      }
+    },
+    {
+      "id": "tatoeba_62662",
+      "source": "It's my fault that the cake was burned. I was talking on the phone and didn't notice the time.",
+      "reference": "Het is mijn schuld dat de taart is aangebrand. Ik was aan de telefoon en lette niet op de tijd.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9713817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_391745",
+      "source": "On my bed is a coloured bedspread, which my grandma once made.",
+      "reference": "Op mijn bed ligt een gekleurde sprei, die mijn oma ooit gemaakt heeft.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "391745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "391651",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "391745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/391745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.08
+      }
+    },
+    {
+      "id": "tatoeba_6287126",
+      "source": "Ideas do not respect national frontiers, and this is especially so where language and other traditions are in common.",
+      "reference": "Ideeën houden geen rekening met de nationale grenzen, en dit is vooral het geval op gebieden waar taal en andere tradities gemeengoed zijn.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6287126",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8288015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6287126",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6287126"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 5.11
+      }
+    },
+    {
+      "id": "tatoeba_1636093",
+      "source": "You know, when that guy drinks he changes. He keeps talking on and on, so I don't really want to drink with him.",
+      "reference": "Weet je, wanneer die kerel drinkt, verandert hij. Hij praat maar door en door, dus ik wil niet echt met hem drinken.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1636093",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3600695",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1636093",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1636093"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 23,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 3.74
+      }
+    },
+    {
+      "id": "tatoeba_5860193",
+      "source": "What seems to us serious, significant and important will, in future times, be forgotten or won't seem important at all.",
+      "reference": "Wat ons ernstig, betekenisvol en belangrijk lijkt, zal later vergeten of totaal onbelangrijk geacht worden.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5860193",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5865667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5860193",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5860193"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 20,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_3368372",
+      "source": "Everything has a price.",
+      "reference": "Alles heeft zijn prijs.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3368372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11568920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3368372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3368372"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_508843",
+      "source": "I would rather order beer.",
+      "reference": "Ik bestel liever bier.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "508843",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "418248",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "508843",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/508843"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_252283",
+      "source": "I ordered new furniture.",
+      "reference": "Ik bestelde nieuwe meubels.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2807674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252283"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_303412",
+      "source": "He ordered me to clean the room.",
+      "reference": "Hij beval me de kamer schoon te maken.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "303412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10749760",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "303412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/303412"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_27239",
+      "source": "I got up early in order to catch the first train.",
+      "reference": "Ik stond vroeg op om de eerste trein te nemen.",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "27239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2284171",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "27239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/27239"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.45
+      }
+    },
+    {
+      "id": "tatoeba_1446738",
+      "source": "When are you returning to Italy?",
+      "reference": "Wanneer keert ge terug naar Italië?",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1446738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "715411",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1446738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1446738"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3064575",
+      "source": "My little brother wanted to read that comic you lent me the other day, so I'll be returning it after he's done.",
+      "reference": "Mijn broertje wou dat stripverhaal dat je onlangs aan mij hebt geleend lezen, dus ik zal het teruggeven nadat hij het uitgelezen heeft.",
+      "domain": "ecommerce",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3064575",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3064734",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3064575",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3064575"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_294855",
+      "source": "He is a student.",
+      "reference": "Hij is een student.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "294855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5783412",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "294855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/294855"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_838706",
+      "source": "Few students understand Latin.",
+      "reference": "Er zijn weinig studenten die Latijn begrijpen.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "838706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "379306",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "838706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/838706"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_2617198",
+      "source": "She's a young student.",
+      "reference": "Ze is een jonge student.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2617198",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7897493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2617198",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2617198"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_41198",
+      "source": "Most students study hard.",
+      "reference": "De meeste studenten studeren hard.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "41198",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "526976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "41198",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/41198"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_568945",
+      "source": "I'm a university student.",
+      "reference": "Ik ben student aan een universiteit.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "568945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2782251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "568945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/568945"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_2451578",
+      "source": "Who's your French teacher?",
+      "reference": "Wie is jouw leraar Frans?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451578",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8443169",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451578",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451578"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_69521",
+      "source": "Are you a student?",
+      "reference": "Zijt ge student?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69521",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "674906",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69521",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69521"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_370681",
+      "source": "The teacher is with the school principal.",
+      "reference": "De professor is bij de directeur.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370681",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4987412",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370681",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370681"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_5463984",
+      "source": "We have a lot of homework.",
+      "reference": "We hebben veel huiswerk.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5463984",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8000711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5463984",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5463984"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_349461",
+      "source": "There's no accounting for taste.",
+      "reference": "Over smaak valt niet te twisten.",
+      "domain": "financial",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "349461",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "387813",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "349461",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/349461"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_315450",
+      "source": "She went in for the audition last week.",
+      "reference": "Ze heeft afgelopen week auditie gedaan.",
+      "domain": "financial",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "315450",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8227825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "315450",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/315450"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_638554",
+      "source": "The revenues go to a charitable foundation.",
+      "reference": "De opbrengst gaat naar een stichting zonder winstoogmerk.",
+      "domain": "financial",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "638554",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8582397",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "638554",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/638554"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_907436",
+      "source": "Asked from what country he came, he replied, \"I am a citizen of the world.\"",
+      "reference": "Vroeg uit welk land hij kwam, antwoordde hij: \"Ik ben een wereldburger.\"",
+      "domain": "gov",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "907436",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7451307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "907436",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/907436"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_1594112",
+      "source": "All lawyers are liars.",
+      "reference": "Alle advocaten zijn leugenaars.",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1594112",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "13049939",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1594112",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1594112"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5298862",
+      "source": "An attorney's job is proving that his client is innocent.",
+      "reference": "Het werk van een advocaat is om te bewijzen dat zijn cliënt onschuldig is.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5298862",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10028322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5298862",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5298862"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.7
+      }
+    },
+    {
+      "id": "tatoeba_1048291",
+      "source": "Jim isn't a lawyer, but a doctor.",
+      "reference": "Jim is geen advokaat, maar dokter.",
+      "domain": "legal",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1048291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "700140",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1048291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1048291"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_1315801",
+      "source": "He translated the verse into English.",
+      "reference": "Hij vertaalde het vers in het Engels.",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1315801",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10021334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1315801",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1315801"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_48875",
+      "source": "The patient requires constant care.",
+      "reference": "De patiënt vereist voortdurend zorg.",
+      "domain": "medical",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "48875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7039470",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "48875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/48875"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2834343",
+      "source": "Cosmetic stem cell therapy is in the early stages of development.",
+      "reference": "Cosmetische stamceltherapie staat nog in de kinderschoenen.",
+      "domain": "medical",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2834343",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3959065",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2834343",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2834343"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.91
+      }
+    },
+    {
+      "id": "tatoeba_1869",
+      "source": "The slowest one to make a promise is the most faithful one in keeping it.",
+      "reference": "Zij die er het langst over doen om te beloven zijn degenen die zich het meest aan de belofte houden.",
+      "domain": "religious",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1869",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7463487",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1869",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1869"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.87
+      }
+    },
+    {
+      "id": "tatoeba_2722402",
+      "source": "The experiment was a success.",
+      "reference": "Het experiment was een succes.",
+      "domain": "scientific",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2722402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8499064",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2722402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2722402"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_5079342",
+      "source": "The results were very bad.",
+      "reference": "De resultaten waren erg slecht.",
+      "domain": "scientific",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5079342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12194559",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5079342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5079342"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2387224",
+      "source": "I might need your help.",
+      "reference": "Misschien heb ik je hulp nodig.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2387224",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7960874",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2387224",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2387224"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3914832",
+      "source": "I've been helping him out.",
+      "reference": "Ik hielp hem.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3914832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7799090",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3914832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3914832"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_3914963",
+      "source": "Let us help her.",
+      "reference": "Laten we haar helpen!",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3914963",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10849418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3914963",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3914963"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_15839",
+      "source": "You have only to give him a little help.",
+      "reference": "Ge moet hem maar een klein beetje helpen.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "15839",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "688556",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "15839",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/15839"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_322005",
+      "source": "We queued up to get tickets for the concert.",
+      "reference": "We gingen in de rij staan om aan kaarten voor het concert te komen.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322005",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2813719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322005",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322005"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_3619476",
+      "source": "I was only trying to help.",
+      "reference": "Ik wou alleen maar helpen.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3619476",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6075056",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3619476",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3619476"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3826653",
+      "source": "I've never seen Tom help anyone.",
+      "reference": "Ik heb nog nooit Tom iemand zien helpen.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3826653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11516028",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3826653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3826653"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3818874",
+      "source": "Tom won't be able to help us.",
+      "reference": "Tom zal ons niet kunnen helpen.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3818874",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9598719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3818874",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3818874"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_37133",
+      "source": "Did Tom help his mother yesterday?",
+      "reference": "Heeft Tom gisteren zijn moeder geholpen?",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37133",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "628071",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37133",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37133"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_19710",
+      "source": "Having been written in haste, the book has a lot of errors.",
+      "reference": "Omdat het in haast is geschreven, wemelt het in het boek van fouten.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19710",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8425158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19710",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19710"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2986073",
+      "source": "Come over here and help me.",
+      "reference": "Kom hier en help me.",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2986073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3376769",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2986073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2986073"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6168194",
+      "source": "Tom has already been to all European capital cities.",
+      "reference": "Tom is al in alle Europese hoofdsteden geweest.",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6168194",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7495815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6168194",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6168194"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.78
+      }
+    },
+    {
+      "id": "tatoeba_35962",
+      "source": "I'm from Wellington, the capital of New Zealand.",
+      "reference": "Ik kom uit Wellington, de hoofdstad van Nieuw-Zeeland.",
+      "domain": "tech",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35962",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7463272",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35962",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35962"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_430055",
+      "source": "Apples are red.",
+      "reference": "Appels zijn rood.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "430055",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3588546",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "430055",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/430055"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3826053",
+      "source": "I opened that box.",
+      "reference": "Ik heb die doos geopend.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3826053",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4807529",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3826053",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3826053"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3757072",
+      "source": "She ate an apple.",
+      "reference": "Ze at een appel.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3757072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7924846",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3757072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3757072"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4501288",
+      "source": "The door was opened.",
+      "reference": "De deur was open.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4501288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9714411",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4501288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4501288"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_56499",
+      "source": "This apple is bad.",
+      "reference": "Deze appel is slecht.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7434476",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56499"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4471299",
+      "source": "Tom clapped his hands together.",
+      "reference": "Tom klapte.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4471299",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7487389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4471299",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4471299"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_541073",
+      "source": "There were many rotten apples in the basket.",
+      "reference": "Er waren veel rotte appels in de mand.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "541073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "549288",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "541073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/541073"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_797498",
+      "source": "My thanks in advance for not opening the windows.",
+      "reference": "Doe alsjeblieft de ramen niet open.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "797498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8506514",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "797498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/797498"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.44
+      }
+    },
+    {
+      "id": "tatoeba_251998",
+      "source": "I had to postpone my appointment.",
+      "reference": "Ik moest mijn afspraak uitstellen.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8490790",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251998"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_38523",
+      "source": "Open the door, please.",
+      "reference": "Doe de deur open alstublieft.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38523",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "793361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38523",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38523"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1954934",
+      "source": "I can't stop thinking about what happened.",
+      "reference": "Ik kan niet stoppen met denken aan wat er gebeurd is.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1954934",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3039591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1954934",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1954934"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3066973",
+      "source": "Tom opened the door to the interrogation room.",
+      "reference": "Tom deed de deur van de ondervragingskamer open.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3066973",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3147829",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3066973",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3066973"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_5992",
+      "source": "I heard a cotton candy shop has just opened. Let's go, dudes.",
+      "reference": "Ik hoorde dat er onlangs een suikerspinwinkel geopend werd. Laten we gaan, jongens.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7263561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5992"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.92
+      }
+    },
+    {
+      "id": "tatoeba_3647252",
+      "source": "May I have the menu and the wine list?",
+      "reference": "Zou ik de menu- en wijnkaart mogen zien?",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3647252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5459147",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3647252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3647252"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_6128",
+      "source": "No, I'm not mad at you, I'm just disappointed.",
+      "reference": "Nee, ik ben niet kwaad op je, ik ben gewoon teleurgesteld.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2217244",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6128"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_1745702",
+      "source": "It was her fault.",
+      "reference": "Het was haar schuld.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1745702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10110996",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1745702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1745702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1401986",
+      "source": "At motorway service areas in Germany, many people eat currywurst with chips.",
+      "reference": "Bij tankstations langs autosnelwegen in Duitsland eten veel mensen curryworst met patat.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1401986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7487992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1401986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1401986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_1387256",
+      "source": "We will wait for you there.",
+      "reference": "We zullen daar op je wachten.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1387256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8478626",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1387256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1387256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_497129",
+      "source": "She wrote a book about birds.",
+      "reference": "Ze schreef een boek over vogels.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "497129",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1033882",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "497129",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/497129"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2206534",
+      "source": "These boots are expensive.",
+      "reference": "Deze laarzen zijn duur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2206534",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4515586",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2206534",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2206534"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_277811",
+      "source": "I skipped my breakfast.",
+      "reference": "Ik heb het onbijt overgeslagen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "377983",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277811"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_273329",
+      "source": "During the war, we had to do without sugar.",
+      "reference": "Tijdens de oorlog moesten we het zonder suiker doen.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11307459",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1586536",
+      "source": "He's got a large family.",
+      "reference": "Hij heeft een grote familie.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1586536",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "722736",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1586536",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1586536"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_1713750",
+      "source": "It's a ghost, and only I can speak to him.",
+      "reference": "Het is een geest, en ik ben de enige die met hem kan praten.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1713750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2339272",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1713750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1713750"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.1
+      }
+    },
+    {
+      "id": "tatoeba_3439595",
+      "source": "What can I do about it?",
+      "reference": "Wat kan ik eraan doen?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3439595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7465895",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3439595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3439595"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_680944",
+      "source": "What's your favorite movie?",
+      "reference": "Wat is jouw lievelingsfilm?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "680944",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7546304",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "680944",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/680944"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_3508914",
+      "source": "My favourite colour is red.",
+      "reference": "Mijn favoriete kleur is rood.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3508914",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "462362",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3508914",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3508914"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_265420",
+      "source": "The car got stuck in the mud.",
+      "reference": "De auto kwam vast te zitten in de modder.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "265420",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7323341",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "265420",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/265420"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_3766216",
+      "source": "How many people do you see?",
+      "reference": "Hoeveel mensen zien jullie?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3766216",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9937496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3766216",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3766216"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3090030",
+      "source": "Tom has braces.",
+      "reference": "Tom heeft een beugel.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3090030",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7135509",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3090030",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3090030"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3728009",
+      "source": "Let's see about that.",
+      "reference": "Laten we dat eens zien.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3728009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11145929",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3728009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3728009"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_5966478",
+      "source": "It's a delusion.",
+      "reference": "Het is een waanvoorstelling.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5966478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10024304",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5966478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5966478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2258643",
+      "source": "He's shorter than his brother.",
+      "reference": "Hij is kleiner dan zijn broer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2258643",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3710812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2258643",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2258643"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2548254",
+      "source": "I'm going into town.",
+      "reference": "Ik ga naar de stad.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548254",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5412609",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548254",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548254"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_66722",
+      "source": "A good idea came into my head.",
+      "reference": "Er kwam bij mij een goed idee naar boven.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "66722",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "418285",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "66722",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/66722"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_4214729",
+      "source": "I have seen a dog.",
+      "reference": "Ik heb een hond gezien.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4214729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4215603",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4214729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4214729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_6028302",
+      "source": "I thought you were downstairs.",
+      "reference": "Ik dacht dat je beneden was.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6028302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10650345",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6028302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6028302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_280430",
+      "source": "Could you tell me the way?",
+      "reference": "Kan je me de weg wijzen?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280430",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "554455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280430",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280430"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2387285",
+      "source": "I must meet Tom.",
+      "reference": "Ik moet Tom ontmoeten.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2387285",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2965588",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2387285",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2387285"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4499942",
+      "source": "Where are my gloves?",
+      "reference": "Waar zijn mijn handschoenen?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4499942",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9825421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4499942",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4499942"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3135724",
+      "source": "Would you like another sandwich?",
+      "reference": "Wilt u nog een sandwich?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3135724",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3493041",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3135724",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3135724"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_262418",
+      "source": "Don't treat me like a child.",
+      "reference": "Behandel mij niet als een kind.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "262418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "13049899",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "262418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/262418"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4717491",
+      "source": "Put some clothes on, you'll catch a cold.",
+      "reference": "Doe wat kleren aan, anders wordt je nog verkouden.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4717491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6070092",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4717491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4717491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_289412",
+      "source": "He was brought up by his uncle.",
+      "reference": "Hij werd opgevoed door zijn oom.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "289412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6610410",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "289412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/289412"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_5853052",
+      "source": "I'm not winning.",
+      "reference": "Ik ben niet aan het winnen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5853052",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8229418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5853052",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5853052"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2275790",
+      "source": "Do you want to dance?",
+      "reference": "Wil je dansen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2275790",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4479962",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2275790",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2275790"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_244608",
+      "source": "Yesterday I had my bicycle stolen.",
+      "reference": "Mijn fiets is gisteren gestolen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "244608",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "377968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "244608",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/244608"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2026940",
+      "source": "I've got some things I want to do right now.",
+      "reference": "Er zijn wat dingen die ik nu wil doen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2026940",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11524389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2026940",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2026940"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_895691",
+      "source": "I prefer not to eat meat because I'm vegetarian.",
+      "reference": "Ik eet liever geen vlees want ik ben vegetariër.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "895691",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "783960",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "895691",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/895691"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4012561",
+      "source": "Everybody is having a good time.",
+      "reference": "Iedereen heeft het naar zijn zin.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4012561",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10341946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4012561",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4012561"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2249572",
+      "source": "Make a decision.",
+      "reference": "Neem een beslissing!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249572",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8775750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249572",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249572"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1858739",
+      "source": "\"How many times have you eaten here?\" \"Many, many times.\"",
+      "reference": "\"Hoe vaak heeft u hier gegeten?\" \"Heel, heel vaak.\"",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1858739",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11821027",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1858739",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1858739"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.1
+      }
+    },
+    {
+      "id": "tatoeba_329193",
+      "source": "Please tell me how to use laundry starch to starch things.",
+      "reference": "Zeg me alsjeblieft hoe je waszetmeel gebruikt om iets te stijven.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "329193",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10867858",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "329193",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/329193"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.27
+      }
+    },
+    {
+      "id": "tatoeba_23179",
+      "source": "We marveled at the little boy's eloquence.",
+      "reference": "We stonden versteld van de welbespraaktheid van de kleine jongen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3274160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23179"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2164562",
+      "source": "The two things aren't necessarily mutually exclusive.",
+      "reference": "De twee zaken sluiten elkaar niet noodzakelijkerwijs uit.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2164562",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3222287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2164562",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2164562"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.57
+      }
+    },
+    {
+      "id": "tatoeba_2905557",
+      "source": "She died without an heir.",
+      "reference": "Ze stierf zonder een erfgenaam.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2905557",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7455807",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2905557",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2905557"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4736704",
+      "source": "I've looked everywhere, but I can't find my book.",
+      "reference": "Ik kan mijn boek nergens vinden.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4736704",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "765350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4736704",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4736704"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3619605",
+      "source": "I'm probably going to make a few mistakes.",
+      "reference": "Ik zal waarschijnlijk wat fouten gaan maken.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3619605",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8579971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3619605",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3619605"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1110707",
+      "source": "It's not easy to speak a foreign language.",
+      "reference": "Het is niet makkelijk om een vreemde taal te spreken.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1110707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1402088",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1110707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1110707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_8859406",
+      "source": "We're not going anywhere in this rain.",
+      "reference": "Met deze regen gaan we nergens heen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8859406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11525119",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8859406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8859406"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_2318215",
+      "source": "I cannot be without you.",
+      "reference": "Zonder jou kan ik niet leven.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2318215",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "448461",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2318215",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2318215"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_4397612",
+      "source": "It was a dream.",
+      "reference": "Het was een droom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397612",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12999342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397612",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397612"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_5576968",
+      "source": "Where is Tom from?",
+      "reference": "Waar komt Tom vandaan?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5576968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8097103",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5576968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5576968"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3772527",
+      "source": "I'm translating this sentence from English into Icelandic.",
+      "reference": "Ik vertaal deze zin vanuit het Engels naar het IJslands.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3772527",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9934991",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3772527",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3772527"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_6870260",
+      "source": "You could have told me earlier.",
+      "reference": "Dat had je me wel eerder kunnen zeggen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6870260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8103230",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6870260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6870260"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_3564265",
+      "source": "He's my stepbrother.",
+      "reference": "Hij is mijn stiefbroer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3564265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6046692",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3564265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3564265"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2196912",
+      "source": "How many players are there?",
+      "reference": "Hoeveel spelers zijn er?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2196912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4641466",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2196912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2196912"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_44680",
+      "source": "The road is too narrow for cars.",
+      "reference": "De weg is te smal voor auto's.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "44680",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8436465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "44680",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/44680"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_2871287",
+      "source": "What is a Christmas market?",
+      "reference": "Wat is een kerstmarkt?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2871287",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7643976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2871287",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2871287"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_16849",
+      "source": "When did you begin learning German?",
+      "reference": "Wanneer zijt ge begonnen met Duits te leren?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "674667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_276609",
+      "source": "Heaven knows why.",
+      "reference": "Joost mag het weten.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "276609",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9429274",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "276609",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/276609"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2483636",
+      "source": "What is your room number?",
+      "reference": "Wat is je kamernummer?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2483636",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2795735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2483636",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2483636"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3724553",
+      "source": "This is the real deal.",
+      "reference": "Dit is het neusje van de zalm.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3724553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12332896",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3724553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3724553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_1398206",
+      "source": "Tom is a teen idol.",
+      "reference": "Tom is een tieneridool.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1398206",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1480633",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1398206",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1398206"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_62191",
+      "source": "Bring me a cup of coffee, please.",
+      "reference": "Breng me een kopje koffie, alsjeblieft.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62191",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10676527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62191",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62191"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_42337",
+      "source": "It is in fact your fault.",
+      "reference": "Eigenlijk is het uw fout.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42337",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "750758",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42337",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42337"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_247776",
+      "source": "We talked in low voices so as not to wake the baby.",
+      "reference": "Wij praatten zachtjes zodat de baby niet wakker zou worden.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "247776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "432715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "247776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/247776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_906756",
+      "source": "What's your favorite fairy tale?",
+      "reference": "Wat is jouw favoriete sprookje?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "906756",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11044603",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "906756",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/906756"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_2360614",
+      "source": "I have to work this weekend.",
+      "reference": "Ik moet dit weekend werken.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2360614",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10969142",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2360614",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2360614"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3668491",
+      "source": "Oregon is just south of Washington.",
+      "reference": "Oregon ligt net ten zuiden van Washington.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3668491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8371136",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3668491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3668491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_3005499",
+      "source": "Tom heard the entire conversation.",
+      "reference": "Tom hoorde het hele gesprek.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3005499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11554576",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3005499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3005499"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_3563953",
+      "source": "I have no children.",
+      "reference": "Ik heb geen kinderen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3563953",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1227036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3563953",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3563953"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1662611",
+      "source": "The wound is healing.",
+      "reference": "De wond geneest.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1662611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10039215",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1662611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1662611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1880811",
+      "source": "Where did you circumcise them?",
+      "reference": "Waar heb je hun besneden?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1880811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6199751",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1880811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1880811"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6433541",
+      "source": "Tom works for a company that sells charcoal.",
+      "reference": "Tom werkt voor een bedrijf dat houtskool verkoopt.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6433541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "13057185",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6433541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6433541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_69910",
+      "source": "You don't have to get up so early.",
+      "reference": "Je hoeft niet zo vroeg op te staan.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69910",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2784934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69910",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69910"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1664201",
+      "source": "Dry air causes thirst and coughing.",
+      "reference": "Als de lucht uitdroogt, krijg je dorst en hoestbuien.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1664201",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8005965",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1664201",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1664201"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_8984145",
+      "source": "Political systems change, but people always stay the same.",
+      "reference": "Politieke systemen veranderen, maar de mensen blijven altijd gelijk.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8984145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4070725",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8984145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8984145"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3422694",
+      "source": "He is gone.",
+      "reference": "Hij ging.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3422694",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7959727",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3422694",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3422694"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_515406",
+      "source": "The difference between Facebook and Twitter is that Twitter is a microblogging service.",
+      "reference": "Het verschil tussen Facebook en Twitter is dat Twitter een microblogging-dienst is.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "515406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2963751",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "515406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/515406"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.69
+      }
+    },
+    {
+      "id": "tatoeba_1723958",
+      "source": "She wants more.",
+      "reference": "Ze wil meer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1723958",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10046623",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1723958",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1723958"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_273277",
+      "source": "How old were you when the war broke out?",
+      "reference": "Hoe oud was je toen de oorlog begon?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "273277",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12772524",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "273277",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/273277"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_270062",
+      "source": "One should take care of oneself.",
+      "reference": "Men moet voor zich zelf zorgen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "4228511",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1815445",
+      "source": "Philippines is called \"Pilipinas\" in Tagalog.",
+      "reference": "De Filipijnen worden \"Pilipinas\" genoemd in het Tagalog.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1815445",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7462570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1815445",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1815445"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.17
+      }
+    },
+    {
+      "id": "tatoeba_3812514",
+      "source": "Kindly clear the table after your meal.",
+      "reference": "Gelieve de tafel na het eten af te ruimen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3812514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12349242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3812514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3812514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_5526890",
+      "source": "Tom can't work this evening.",
+      "reference": "Tom kan vanavond niet werken.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5526890",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5514763",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5526890",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5526890"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_5217973",
+      "source": "How does Tom know all this?",
+      "reference": "Hoe weet Tom dit allemaal?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5217973",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10634435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5217973",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5217973"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2545882",
+      "source": "I'm tired of this place.",
+      "reference": "Ik ben deze plek zat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2545882",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "13747995",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2545882",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2545882"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_5152700",
+      "source": "No, not me, you!",
+      "reference": "Nee, ik ben het niet, jij bent het!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5152700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "379566",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5152700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5152700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_4755745",
+      "source": "None of us saw Tom do that.",
+      "reference": "Niemand van ons heeft Tom dat zien doen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4755745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11086945",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4755745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4755745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_25514",
+      "source": "I have a strong backhand.",
+      "reference": "Ik heb een sterke backhand.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3159975",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_270771",
+      "source": "I would like some more water.",
+      "reference": "Ik zou graag wat meer water willen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9085141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_6051476",
+      "source": "Click to edit.",
+      "reference": "Klik om te bewerken.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6051476",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "6062896",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6051476",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6051476"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2688939",
+      "source": "The divorce felt like a liberation.",
+      "reference": "De scheiding voelde als een bevrijding.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2688939",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11522490",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2688939",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2688939"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_1026087",
+      "source": "Tom doesn't know what time it is.",
+      "reference": "Tom weet niet hoe laat het is.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1026087",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "3645072",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1026087",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1026087"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_1531065",
+      "source": "We already know each other.",
+      "reference": "We kennen elkaar al.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1531065",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "1531733",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1531065",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1531065"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_3765180",
+      "source": "I still think about him.",
+      "reference": "Ik denk nog altijd aan hem.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3765180",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12900418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3765180",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3765180"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_403362",
+      "source": "I wonder if I should answer his letter.",
+      "reference": "Ik vraag mij af of ik zijn brief moet beantwoorden.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403362",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "738682",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403362",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403362"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_68378",
+      "source": "There was hatred between us then.",
+      "reference": "Er was toen haat tussen ons.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "68378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "13200702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "68378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/68378"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_6271551",
+      "source": "I wanted to go fishing.",
+      "reference": "Ik wil gaan vissen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6271551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "10040922",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6271551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6271551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_7159107",
+      "source": "Tom likes Australia.",
+      "reference": "Tom houdt van Australië.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7159107",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7926545",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7159107",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7159107"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_1637880",
+      "source": "I am almost scared to talk with you.",
+      "reference": "Ik ben bijna bang om met je te praten.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1637880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7997134",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1637880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1637880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1866436",
+      "source": "Don't be naive.",
+      "reference": "Wees niet naïef!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1866436",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9460422",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1866436",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1866436"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_312725",
+      "source": "She wanted to wash the dirty clothes.",
+      "reference": "Ze wou de vuile kleren wassen.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312725",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "763388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312725",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312725"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_1334703",
+      "source": "Take your seat.",
+      "reference": "Zit!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1334703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8227856",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1334703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1334703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1522432",
+      "source": "It was preventable.",
+      "reference": "Het was te voorkomen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1522432",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9482004",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1522432",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1522432"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_30833",
+      "source": "I would be more careful if I were you.",
+      "reference": "Als ik jou was, zou ik voorzichtiger zijn.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11521676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.22
+      }
+    },
+    {
+      "id": "tatoeba_5819093",
+      "source": "How many clocks did you have?",
+      "reference": "Hoeveel klokken had je?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5819093",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "7894780",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5819093",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5819093"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_238160",
+      "source": "The thief ran away when he saw a policeman.",
+      "reference": "De dief liep weg toen hij een politieman zag.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "238160",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "2102715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "238160",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/238160"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_26304",
+      "source": "Her English is better than mine.",
+      "reference": "Zij spreekt beter Engels dan ik.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26304",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "12331257",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26304",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26304"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_44249",
+      "source": "There were two hundred people in the room.",
+      "reference": "Er waren tweehonderd mensen in de zaal.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "44249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "11553543",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "44249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/44249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1915771",
+      "source": "How often do you wash your jeans?",
+      "reference": "Hoe vaak wast u uw spijkerbroeken?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1915771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9433972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1915771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1915771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_22828",
+      "source": "We arrived at a compromise.",
+      "reference": "Wij bereikten een compromis.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "22828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "639061",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "22828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/22828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2543894",
+      "source": "Would you please excuse us?",
+      "reference": "Wil je ons even excuseren?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2543894",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "8437839",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2543894",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2543894"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2361613",
+      "source": "I knew something Tom didn't know.",
+      "reference": "Ik wist iets wat Tom niet wist.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2361613",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "5331595",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2361613",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2361613"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_54256",
+      "source": "Try and swim!",
+      "reference": "Probeer te zwemmen!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "9428731",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4645703",
+      "source": "The government listens to the people in the end.",
+      "reference": "Eindelijk luistert de regering naar het volk.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4645703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "nld",
+        "target_sentence_id": "773742",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4645703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4645703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

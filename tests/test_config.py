@@ -61,3 +61,22 @@ class TestRunConfigOverrides:
     def test_custom_max_tokens(self):
         config = RunConfig(max_tokens=13680)
         assert config.max_tokens == 13680
+
+
+class TestCoachedPromptVersion:
+    """'coached' is the auto-derived condition for coaching runs."""
+
+    def test_coached_is_a_valid_builtin_version(self):
+        config = RunConfig(prompt_version="coached", coaching_file="c.txt")
+        errors = config.validate()
+        assert not any("Unknown prompt_version" in e for e in errors)
+
+    def test_coached_requires_a_coaching_source(self):
+        config = RunConfig(prompt_version="coached")
+        errors = config.validate()
+        assert any("prompt_version='coached'" in e for e in errors)
+
+    def test_coached_accepts_legacy_custom_prompt_path(self):
+        config = RunConfig(prompt_version="coached", custom_prompt_path="p.txt")
+        errors = config.validate()
+        assert not any("prompt_version='coached'" in e for e in errors)

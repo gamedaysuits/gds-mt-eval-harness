@@ -31,9 +31,12 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
+
+logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
@@ -64,14 +67,95 @@ def load_registry(registry_path: Path | None = None) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+# ---------------------------------------------------------------------------
+# Eval pack dependency gate
+# ---------------------------------------------------------------------------
+#
+# The eval pack gate prevents evaluation against a dataset whose target
+# language requires tools that aren't installed. It reads requirements
+# from the language card's `evalPack` field — no language-specific code.
+#
+# Adding eval pack support for a new language = editing ONE JSON file
+# (the language card). The harness checks it generically.
+
+
+def _check_eval_pack(dataset_entry: dict) -> None:
+    """Verify that eval pack dependencies for a dataset's target language
+    are installed.
+
+    Reads the target language from the dataset's ``language_pair.target``,
+    looks up the language card, and checks its ``evalPack`` requirements.
+    If dependencies are missing, raises a RuntimeError with a clear
+    message telling the user exactly which command to run.
+
+    This is fully data-driven — the language card is the SSOT. No
+    language-specific code exists in this function.
+    """
+    # Determine the target language from the dataset entry
+    lang_pair = dataset_entry.get("language_pair", {})
+    target_code = lang_pair.get("target")
+    if not target_code:
+        return  # No target language declared — skip check
+
+    # Look up the language card's eval pack requirements
+    from mt_eval_harness.language_cards import get_eval_pack, get_name
+    pack = get_eval_pack(target_code)
+    if not pack:
+        return  # No eval pack for this language — proceed
+
+    missing = []
+
+    # Check Python dependencies declared in the eval pack
+    for import_name, pip_spec in pack.get("pythonDeps", {}).items():
+        try:
+            __import__(import_name)
+        except ImportError:
+            missing.append(f"{pip_spec} ({import_name})")
+
+    # Check FST files if required
+    if pack.get("requiresFst"):
+        from mt_eval_harness.plugins.fst_installer import is_fst_installed
+        if not is_fst_installed(target_code):
+            lang_name = get_name(target_code) or target_code
+            missing.append(f"FST morphological analyzer ({lang_name})")
+
+    if not missing:
+        return  # Everything installed — proceed
+
+    dataset_id = dataset_entry["id"]
+    lang_name = get_name(target_code) or target_code
+    setup_cmd = f"mt-eval setup --lang {target_code}"
+    missing_str = "\n".join(f"    ✗ {m}" for m in missing)
+
+    raise RuntimeError(
+        f"\n"
+        f"  ┌──────────────────────────────────────────────────────────┐\n"
+        f"  │  EVAL PACK REQUIRED: {lang_name:<36} │\n"
+        f"  │                                                          │\n"
+        f"  │  Dataset '{dataset_id}' targets {target_code.upper()} which requires     │\n"
+        f"  │  evaluation tools that are not yet installed.             │\n"
+        f"  └──────────────────────────────────────────────────────────┘\n"
+        f"\n"
+        f"  Missing:\n"
+        f"{missing_str}\n"
+        f"\n"
+        f"  To install everything at once:\n"
+        f"    {setup_cmd}\n"
+    )
+
+
+
+
 def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
     """Resolve a dataset identifier to a local file path.
 
     Accepts either:
         - A filesystem path (absolute or relative) → returned directly
         - A registry dataset ID (e.g. 'edtekla-dev-v1') → looked up in
-          the registry. If the registry entry has a URL, the dataset is
-          downloaded and cached. If url is null, raises with instructions.
+          the registry. Resolution chain:
+            1. local_path → resolved relative to monorepo root
+            2. url → downloaded and cached
+            3. Neither → error with instructions
 
     Args:
         id_or_path: Filesystem path or registry dataset ID.
@@ -82,7 +166,7 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
 
     Raises:
         FileNotFoundError: If the path doesn't exist and the ID isn't in the registry.
-        ValueError: If the registry entry has no download URL (private dataset).
+        ValueError: If the registry entry has no download URL or local path.
     """
     # First, check if it's a path that exists
     candidate = Path(id_or_path)
@@ -99,12 +183,61 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
         )
 
     datasets = registry.get("datasets", [])
+
+    # Match by ID or alias
     match = next((d for d in datasets if d["id"] == id_or_path), None)
     if not match:
-        available = ", ".join(d["id"] for d in datasets) or "(none)"
+        # Check aliases — datasets can declare alternative names
+        # (e.g., "edtekla-full" → "edtekla-textbook")
+        match = next(
+            (d for d in datasets
+             if id_or_path in d.get("aliases", [])),
+            None,
+        )
+
+    if not match:
+        # No exact match or alias — suggest closest with fuzzy matching
+        import difflib
+        all_ids = [d["id"] for d in datasets]
+        # Also include aliases for matching
+        all_searchable = list(all_ids)
+        for d in datasets:
+            all_searchable.extend(d.get("aliases", []))
+        close = difflib.get_close_matches(id_or_path, all_searchable, n=5, cutoff=0.4)
+        if close:
+            suggestions = ", ".join(close)
+            raise FileNotFoundError(
+                f"Dataset '{id_or_path}' not found in registry. "
+                f"Did you mean: {suggestions}? "
+                f"Or provide a local file path."
+            )
+        # No close match — show a truncated list
+        shown = all_ids[:10]
+        suffix = f" (and {len(all_ids) - 10} more)" if len(all_ids) > 10 else ""
         raise FileNotFoundError(
             f"Dataset '{id_or_path}' not found in registry. "
-            f"Available: {available}. Or provide a local file path."
+            f"Available: {', '.join(shown)}{suffix}. "
+            f"Or provide a local file path."
+        )
+
+    # --- Eval pack dependency gate ---
+    # Datasets can declare `eval_pack` (e.g., "crk") to require specific
+    # evaluation dependencies. This ensures nobody runs CRK evaluation
+    # without the FST, linter, and other required tools installed.
+    _check_eval_pack(match)
+
+    # Check for a local_path (relative to monorepo root)
+    local_path = match.get("local_path")
+    if local_path:
+        # Resolve relative to the monorepo root (parent of arena/)
+        monorepo_root = _PACKAGE_DIR.parent.parent
+        resolved = monorepo_root / local_path
+        if resolved.exists():
+            return resolved
+        # Local path declared but file not found — fall through to URL/error
+        logger.debug(
+            "local_path '%s' for dataset '%s' resolved to '%s' but not found",
+            local_path, id_or_path, resolved,
         )
 
     url = match.get("url")
@@ -112,8 +245,9 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None) -> Path:
         # Private dataset — no URL available
         access = match.get("access", "unknown")
         notes = match.get("notes", "")
+        hint = f"\n  local_path: {local_path}" if local_path else ""
         raise ValueError(
-            f"Dataset '{id_or_path}' is {access} and has no download URL.\n"
+            f"Dataset '{id_or_path}' is {access} and has no download URL.{hint}\n"
             f"  {notes}\n"
             f"  Provide the local path with --corpus instead."
         )
@@ -168,20 +302,35 @@ def format_registry_table(registry_path: Path | None = None) -> str:
         "",
         "  Available Evaluation Datasets:",
         "",
-        f"  {'ID':25s} {'Name':35s} {'Pair':10s} {'Size':>5s} {'Access':8s}",
-        f"  {'-'*25} {'-'*35} {'-'*10} {'-'*5} {'-'*8}",
+        f"  {'ID':25s} {'Name':35s} {'Pair':10s} {'Size':>5s} {'Avail':5s}",
+        f"  {'-'*25} {'-'*35} {'-'*10} {'-'*5} {'-'*5}",
     ]
+
+    monorepo_root = _PACKAGE_DIR.parent.parent
+
     for d in datasets:
         pair_info = d.get("language_pair", {})
         pair = f"{pair_info.get('source', '?')}→{pair_info.get('target', '?')}"
+
+        # Check if the dataset is locally available
+        local_path = d.get("local_path")
+        avail = ""
+        if local_path:
+            resolved = monorepo_root / local_path
+            avail = "✓" if resolved.exists() else "✗"
+        elif d.get("url"):
+            avail = "↓"  # downloadable
+
         lines.append(
             f"  {d['id']:25s} {d.get('name', ''):35s} {pair:10s} "
-            f"{d.get('size', '?'):>5} {d.get('access', '?'):8s}"
+            f"{d.get('size', '?'):>5} {avail:5s}"
         )
 
     lines.append("")
-    lines.append("  Use: mt-eval run --corpus <local_path.json>")
-    lines.append("  Or:  mt-eval run --corpus <dataset-id>  (if URL is set in registry)")
+    lines.append("  Avail: ✓ = local  ↓ = downloadable  ✗ = path not found  (blank) = private")
+    lines.append("")
+    lines.append("  Use: mt-eval run --corpus <dataset-id>       (resolves from registry)")
+    lines.append("       mt-eval run --corpus <local_path.json>  (direct file path)")
     return "\n".join(lines)
 
 
@@ -338,7 +487,10 @@ def _load_model_aliases() -> dict[str, str]:
                 aliases = json.loads(candidate.read_text(encoding="utf-8"))
                 # Strip non-alias keys (like _comment)
                 return {k: v for k, v in aliases.items() if not k.startswith("_")}
-            except Exception:
+            except Exception as e:
+                logger.debug(
+                    "Failed to load model aliases from %s: %s", candidate, e
+                )
                 break
         check = check.parent
 
@@ -365,6 +517,69 @@ def _load_model_aliases() -> dict[str, str]:
 
 
 MODEL_REGISTRY: dict[str, str] = _load_model_aliases()
+
+
+def fuzzy_resolve_model(name: str) -> str | None:
+    """Try to resolve a partial model name to a full OpenRouter slug.
+
+    Resolution chain:
+        1. Exact match in MODEL_REGISTRY → return the full slug
+        2. Name already contains "/" → assume it's a full slug, return as-is
+        3. Check known vendor prefixes (anthropic, google, openai, etc.)
+           and try "{vendor}/{name}" as a plausible OpenRouter slug
+        4. Check if the name is a substring of any registry value
+           (handles e.g. 'fable-5' matching 'anthropic/claude-fable-5')
+
+    This avoids requiring a live OpenRouter API call for common cases.
+    Returns None if no match can be inferred.
+    """
+    # 1. Exact registry match
+    if name in MODEL_REGISTRY:
+        return MODEL_REGISTRY[name]
+
+    # 2. Already a full slug (contains vendor prefix)
+    if "/" in name:
+        return name
+
+    # 3. Known vendor prefix heuristics
+    # Map common model name prefixes → vendor namespace on OpenRouter
+    _VENDOR_PREFIXES = {
+        "claude":    "anthropic",
+        "gemini":    "google",
+        "gpt":       "openai",
+        "o1":        "openai",
+        "o3":        "openai",
+        "o4":        "openai",
+        "deepseek":  "deepseek",
+        "qwen":      "qwen",
+        "llama":     "meta-llama",
+        "mistral":   "mistralai",
+        "command":   "cohere",
+        "glm":       "z-ai",
+    }
+
+    name_lower = name.lower()
+    for prefix, vendor in _VENDOR_PREFIXES.items():
+        if name_lower.startswith(prefix):
+            candidate = f"{vendor}/{name}"
+            logger.info(
+                "Fuzzy model match: '%s' → '%s' (inferred from '%s' prefix)",
+                name, candidate, prefix,
+            )
+            return candidate
+
+    # 4. Substring match against registry values
+    # Handles cases like 'fable-5' appearing in 'anthropic/claude-fable-5'
+    for alias, full_slug in MODEL_REGISTRY.items():
+        if name_lower in full_slug.lower():
+            logger.info(
+                "Fuzzy model match: '%s' → '%s' (substring of '%s')",
+                name, full_slug, alias,
+            )
+            return full_slug
+
+    return None
+
 
 DEFAULT_MODEL = "gemini-pro"
 
@@ -559,6 +774,7 @@ class RunConfig:
     prompt_version: str = "naive"
     custom_prompt_path: str | None = None  # DEPRECATED: use coaching_file
     coaching_file: str | None = None  # Path to coaching prompt text file
+    style_profile: str | None = None  # Path to style profile JSON (informational metrics)
 
     # --- Post-translation hooks ---
     # List of hook names to apply (e.g. ["fst_gate"])
@@ -578,6 +794,10 @@ class RunConfig:
     # --- Misc ---
     temperature: float = DEFAULT_TEMPERATURE
     dry_run: bool = False      # Validate config without API calls
+    # Skip interactive confirmation prompts (--yes). Required for
+    # fetch-from-source corpus builds in CI/scripted runs: accepting
+    # the upstream data license non-interactively.
+    assume_yes: bool = False
 
     # --- Method plugin ---
     # Path to a method plugin directory containing method.json + Python
@@ -605,14 +825,25 @@ class RunConfig:
         """
         errors = []
 
-        # Model resolution — allow both short names and full IDs
-        # (full IDs just pass through)
+        # Model resolution — allow short names, full IDs, and fuzzy matches.
+        # Full IDs (containing "/") pass through. Short names are looked up
+        # in MODEL_REGISTRY. Unrecognized names get fuzzy-matched via
+        # vendor prefix heuristics before erroring.
         if self.model not in MODEL_REGISTRY and "/" not in self.model:
-            errors.append(
-                f"Unknown model '{self.model}'. "
-                f"Available: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
-                f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4')."
-            )
+            resolved = fuzzy_resolve_model(self.model)
+            if resolved:
+                import sys
+                print(
+                    f"  ℹ Resolved '{self.model}' → '{resolved}' (fuzzy match)",
+                    file=sys.stderr,
+                )
+                self.model = resolved
+            else:
+                errors.append(
+                    f"Unknown model '{self.model}'. "
+                    f"Available: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
+                    f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4')."
+                )
 
         # Tool-calling requires batch_size=1 — auto-override with warning
         # instead of erroring, so the default batch_size=25 doesn't block
@@ -627,12 +858,21 @@ class RunConfig:
             self.batch_size = 1
 
         # Prompt version validation
-        available = prompt_versions or ["naive", "custom"]
+        available = prompt_versions or ["naive", "custom", "coached"]
         if self.prompt_version not in available:
             errors.append(
                 f"Unknown prompt_version '{self.prompt_version}'. "
                 f"Available: {', '.join(available)}"
             )
+
+        # "coached" is the auto-derived label for runs where a coaching
+        # prompt replaces the naive one — it is meaningless without one.
+        if self.prompt_version == "coached":
+            if not (self.coaching_file or self.custom_prompt_path):
+                errors.append(
+                    "prompt_version='coached' requires --coaching-file or "
+                    "--coaching (it is auto-set when coaching is provided)."
+                )
 
         # Custom prompt file must exist
         if self.prompt_version == "custom":
@@ -662,9 +902,25 @@ class RunConfig:
         if self.reference_file and not self.source_file:
             errors.append("--reference-file requires --source-file.")
 
-        # Corpus path validation
+        # Corpus path validation — try registry resolution for non-path IDs.
+        # Users can pass either a filesystem path or a registry dataset ID
+        # (e.g. 'edtekla-dev-v1'). If the raw path doesn't exist, try
+        # resolving it through the dataset registry before erroring.
         if self.corpus_path and not Path(self.corpus_path).exists():
-            errors.append(f"Corpus file not found: {self.corpus_path}")
+            try:
+                resolved_path = resolve_dataset(self.corpus_path)
+                self.corpus_path = str(resolved_path)
+            except (FileNotFoundError, ValueError) as e:
+                # Fetch-from-source fallback: if a corpora card with a
+                # `source` block matches this path, the corpus can be
+                # rebuilt from the upstream repo at load time. Don't
+                # error here — corpus_loader performs the fetch (with a
+                # license prompt, or automatically with --yes/CI).
+                from mt_eval_harness.corpus_fetch import find_card_for_corpus
+                if find_card_for_corpus(self.corpus_path) is None:
+                    errors.append(
+                        f"Corpus file not found: {self.corpus_path} ({e})"
+                    )
 
         # Positive integers
         if self.batch_size < 1:
@@ -709,9 +965,33 @@ class RunConfig:
             # Otherwise switching target_lang would serve stale translations.
             "source_lang": self.source_lang,
             "target_lang": self.target_lang,
+            # Coaching prompt content hash — different coaching files should
+            # produce different cache keys. We hash the content, not the path,
+            # so identical prompts in different files still share cache.
+            "coaching_sha": self._coaching_content_hash(),
+            # FST retry count affects the final translation output (retried
+            # translations may differ from first-pass ones).
+            "fst_retries": self.fst_retries,
         }
         raw = json.dumps(relevant, sort_keys=True)
         return hashlib.sha256(raw.encode()).hexdigest()[:12]
+
+    def _coaching_content_hash(self) -> str | None:
+        """Hash the coaching file content for cache keying.
+
+        Returns None if no coaching file is set, so the cache key
+        doesn't change for non-coached runs.
+        """
+        path = self.coaching_file or self.custom_prompt_path
+        if not path:
+            return None
+        try:
+            content = Path(path).read_bytes()
+            return hashlib.sha256(content).hexdigest()[:12]
+        except (FileNotFoundError, OSError):
+            # If the file doesn't exist, include the path as a fallback
+            # so different missing paths don't share cache keys.
+            return hashlib.sha256(path.encode()).hexdigest()[:12]
 
     def to_dict(self) -> dict:
         """Serialize config to dict for JSON storage."""

@@ -1,0 +1,5838 @@
+{
+  "corpus_id": "tatoeba-eng-cmn-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "cmn"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:35:44.651957+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "financial",
+    "legal",
+    "literary",
+    "marketing",
+    "medical",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_2244639",
+      "source": "Is Tom sick?",
+      "reference": "汤姆是不是身体不太好？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244639",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8696445",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244639",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244639"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_64068",
+      "source": "My father runs a restaurant.",
+      "reference": "我的父親經營一家餐館。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "64068",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "834658",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "64068",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/64068"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_2505825",
+      "source": "This is Tom's room.",
+      "reference": "這是Tom的房間。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2505825",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3947656",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2505825",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2505825"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3821506",
+      "source": "Are you in this picture?",
+      "reference": "這張裡有你嗎？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3821506",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "12321712",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3821506",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3821506"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_1329084",
+      "source": "Nobody supported her.",
+      "reference": "没人支持她。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1329084",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "7772134",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1329084",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1329084"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2377636",
+      "source": "I like your shoes.",
+      "reference": "我喜欢你的鞋子。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2377636",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4845043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2377636",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2377636"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_244487",
+      "source": "It was terribly cold yesterday.",
+      "reference": "昨天相当的冷啊！",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "244487",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "638944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "244487",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/244487"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_72357",
+      "source": "I'll call you at seven.",
+      "reference": "七点钟我打电话给你.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72357",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "341937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72357",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72357"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_282404",
+      "source": "Stop making a fool of yourself.",
+      "reference": "停止愚弄你自己。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "282404",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "859351",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "282404",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/282404"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_280823",
+      "source": "This is the cheaper of the two.",
+      "reference": "這是兩件裡便宜的那個。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "280823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6101330",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "280823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/280823"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_2640249",
+      "source": "We have more important things to do right now.",
+      "reference": "我們現在有較重要的事情要做。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2640249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "7909713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2640249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2640249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_4770613",
+      "source": "I didn't pay attention to what they were saying.",
+      "reference": "他们说了什么，我并不注意。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4770613",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4267320",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4770613",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4770613"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_299310",
+      "source": "He writes me once a week.",
+      "reference": "他一週給我寫一封信。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "299310",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6535137",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "299310",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/299310"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_1557594",
+      "source": "I always go to school on foot.",
+      "reference": "我總是走路到學校。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1557594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "832966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1557594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1557594"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_65597",
+      "source": "Won't you come over to my place?",
+      "reference": "你不會來我家嗎?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "65597",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "903041",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "65597",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/65597"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_432828",
+      "source": "She turned down the subsidy that I offered.",
+      "reference": "她拒绝了我的资助。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "432828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "334379",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "432828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/432828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_56454",
+      "source": "This story may sound strange, but it's absolutely true.",
+      "reference": "這個故事聽起來可能很奇怪，但卻是千真萬確的。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "56454",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13575724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "56454",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/56454"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_508306",
+      "source": "It's good if you can sing.",
+      "reference": "如果你会唱歌就好了。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "508306",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "407287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "508306",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/508306"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4736828",
+      "source": "The source of many of our mistakes is a lack of patience.",
+      "reference": "许多错误源自于我们缺乏耐心。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4736828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4522499",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4736828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4736828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_302722",
+      "source": "He walked as fast as he could to catch up with her.",
+      "reference": "為了趕上她，他儘快的走。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302722",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13117528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302722",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302722"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2641142",
+      "source": "Tom and Mary were both born in Boston.",
+      "reference": "湯姆和瑪麗都生在波士頓。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2641142",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6094831",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2641142",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2641142"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_72333",
+      "source": "Subtract three from eight and you get five.",
+      "reference": "八减去三就能得到五。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72333",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8727890",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72333",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72333"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_2301951",
+      "source": "I can't believe your parents let you come here by yourself.",
+      "reference": "我不敢相信你父母让你自己过来。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2301951",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5670781",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2301951",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2301951"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.36
+      }
+    },
+    {
+      "id": "tatoeba_49862",
+      "source": "One hundred and fifty people entered the marathon race.",
+      "reference": "150个人参加了马拉松比赛。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "49862",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1426564",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "49862",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/49862"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.11
+      }
+    },
+    {
+      "id": "tatoeba_1543629",
+      "source": "If you need my advice, I'd be glad to give it to you.",
+      "reference": "如果你需要我的建议，我很愿意告诉你。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1543629",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2581473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1543629",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1543629"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3537586",
+      "source": "One needs to do their best in all things, and more importantly work within their abilities.",
+      "reference": "凡事要尽力而为，更要量力而行。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3537586",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3537585",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3537586",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3537586"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_4599998",
+      "source": "\"Hahaha! We're going to make it rain, boys! By this time next week, we'll be swimming in cash!\"",
+      "reference": "“哈哈哈！錢要像雨一樣下，小子們！下周這時候，我們就在錢裡游泳了！”",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4599998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5581837",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4599998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4599998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.94
+      }
+    },
+    {
+      "id": "tatoeba_888662",
+      "source": "After, cook it on a low flame for 30 minutes and you're done.",
+      "reference": "然後用慢火煮約三十分鐘即成。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "888662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1391127",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "888662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/888662"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_760574",
+      "source": "I saw a red car and a white one. The red one was nicer looking than the white one.",
+      "reference": "我见到了两辆汽车：一辆红的和一辆白的。红的比白的好看。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "760574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "760827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "760574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/760574"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.26
+      }
+    },
+    {
+      "id": "tatoeba_727335",
+      "source": "People living on coastlines might lose their homes, and cities might be completely submerged.",
+      "reference": "住在海边的人可能失去他们的家，并且城市可能会被完全淹没。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "727335",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "727337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "727335",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/727335"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 5.57
+      }
+    },
+    {
+      "id": "tatoeba_1208552",
+      "source": "They used the Internet too much because they had some underlying problem that also caused them to neglect their child.",
+      "reference": "他们是因为患有一种使他门忽视孩子的基础精神病而过于上网。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1208552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1208550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1208552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1208552"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 20,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.9
+      }
+    },
+    {
+      "id": "tatoeba_53095",
+      "source": "Jack broke his mother's valuable vase, but he didn't do it on purpose, so she wasn't angry.",
+      "reference": "捷克打破了他母亲心爱的花瓶。但是他母亲没生气，因为他不是故意的。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "53095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "939228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "53095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/53095"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.24
+      }
+    },
+    {
+      "id": "tatoeba_330443",
+      "source": "But above all, I will never forget who this victory truly belongs to. It belongs to you. It belongs to you.",
+      "reference": "但最重要的是，我永远不会忘记这场胜利真正属于谁，它属于你们，它属于你们。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "330443",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "347827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "330443",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/330443"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 21,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.95
+      }
+    },
+    {
+      "id": "tatoeba_727976",
+      "source": "With a high, closed collar, figure-hugging cut, and large slits at either side of a straight skirt, the qipao is unique in its ability to communicate both modesty and sensuousness.",
+      "reference": "因为有高而闭合的领子、紧身的剪裁和在笔直裙子两边的开口，旗袍有着独一无二传达端庄和性感的能力。",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "727976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "727990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "727976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/727976"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 30,
+        "difficulty_estimated_clauses": 7,
+        "difficulty_avg_word_length": 4.87
+      }
+    },
+    {
+      "id": "tatoeba_453418",
+      "source": "I ordered two hamburgers.",
+      "reference": "點了兩個漢堡。",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "453418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "805870",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "453418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/453418"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_3526281",
+      "source": "Today is mom's birthday. I ordered a cake.",
+      "reference": "今天妈妈生日，我订了一个蛋糕。",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3526281",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3526280",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3526281",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3526281"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_789750",
+      "source": "I'll return at half past six.",
+      "reference": "我六點半回來。",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "789750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "771640",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "789750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/789750"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_34526",
+      "source": "Bill got up early in order that he might catch the first train.",
+      "reference": "為了能夠趕上第一班火車, 比爾很早就起床了。",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "34526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "793221",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "34526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/34526"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.85
+      }
+    },
+    {
+      "id": "tatoeba_521976",
+      "source": "He's a high school student.",
+      "reference": "他是一名高中學生。",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "521976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "832968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "521976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/521976"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_250972",
+      "source": "My sister became a college student.",
+      "reference": "我妹妹成為了一個大學生。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "856386",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250972"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_258993",
+      "source": "I inspired my students to work harder.",
+      "reference": "我鼓励学生们更努力地学习。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258993",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2254413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258993",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258993"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_590016",
+      "source": "Do you eat in the classroom?",
+      "reference": "你在客廳吃飯嗎？",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "590016",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "9037048",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "590016",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/590016"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_251514",
+      "source": "My brother is a first-year student.",
+      "reference": "我弟弟是個一年級的學生。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "860533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251514"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_763441",
+      "source": "My English teacher has advised me to read these books.",
+      "reference": "我的英语老师建议我读这些书。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "763441",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1423362",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "763441",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/763441"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_33174",
+      "source": "Bob asked the teacher some questions.",
+      "reference": "Bob问了老师几个问题。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33174",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "401012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33174",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33174"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_252948",
+      "source": "I got scolded severely by that teacher.",
+      "reference": "我被那位老師嚴厲斥責了。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252948",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "802313",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252948",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252948"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_4011811",
+      "source": "Tom was a teacher for nearly thirty years.",
+      "reference": "湯姆當教師約有三十年了。",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4011811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5698050",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4011811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4011811"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1567778",
+      "source": "Shihai is carrying a Chinese grammar book to go to Teacher Wang's place and ask questions.",
+      "reference": "世海拿着一本中文语法书去王老师那儿问问题。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1567778",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1567777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1567778",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1567778"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_246796",
+      "source": "The friend who I thought would pass the exam failed it.",
+      "reference": "那个我认为会通过考试的朋友失败了。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "246796",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "333765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "246796",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/246796"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_263462",
+      "source": "He said that he would let us know later about the results of the examination.",
+      "reference": "他说之后会告诉我考试成绩。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "263462",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3667762",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "263462",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/263462"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.13
+      }
+    },
+    {
+      "id": "tatoeba_52770",
+      "source": "The student who is talking with John is from Canada.",
+      "reference": "正在和John说话的学生是从加拿大来的。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "405021",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52770"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_241173",
+      "source": "When listening to a lecture, you should be quiet.",
+      "reference": "听讲座时，你应该保持安静。",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241173",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5819704",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241173",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241173"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_69928",
+      "source": "How do you account for that?",
+      "reference": "你怎么解释那个？",
+      "domain": "financial",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69928",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1450435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69928",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69928"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_26131",
+      "source": "The British have a lot of respect for law and order.",
+      "reference": "英國人很尊重法序和秩序。",
+      "domain": "legal",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26131",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "364837",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26131",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26131"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_417548",
+      "source": "It's not immoral for a novelist to tell lies. In fact, the bigger the lies, the better lies, and the more the common folks and critics will praise you.",
+      "reference": "小說家說謊並不是不道德的事。其實，謊話說得愈離譜、愈有技巧，就愈會受到公眾和批評家的表揚。",
+      "domain": "literary",
+      "difficulty": 5,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "417548",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "486734",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "417548",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/417548"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 29,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 4.07
+      }
+    },
+    {
+      "id": "tatoeba_46380",
+      "source": "The boy reached out for another piece of cake.",
+      "reference": "男孩伸手又拿了一塊蛋糕。",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "46380",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13753043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "46380",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/46380"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_1366466",
+      "source": "Do I need the surgery?",
+      "reference": "我需要做手术吗？",
+      "domain": "medical",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1366466",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "367904",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1366466",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1366466"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_2237413",
+      "source": "Tom needed treatment.",
+      "reference": "汤姆需要接受治疗。",
+      "domain": "medical",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237413",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4970091",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237413",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237413"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_242967",
+      "source": "Dad's in an impatient mood today.",
+      "reference": "爸爸今天很不耐烦。",
+      "domain": "medical",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242967",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "332864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242967",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242967"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3735364",
+      "source": "Tom would've liked to help.",
+      "reference": "汤姆很乐意帮忙。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3735364",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13878980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3735364",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3735364"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_3680838",
+      "source": "You'll need their help.",
+      "reference": "你會需要他們的幫助。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3680838",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5640724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3680838",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3680838"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_268417",
+      "source": "I can't find my ticket.",
+      "reference": "我找不到我的票。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "268417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "926811",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "268417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/268417"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1893762",
+      "source": "We need help.",
+      "reference": "我們需要幫助。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1893762",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6284531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1893762",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1893762"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_17302",
+      "source": "I count on your help.",
+      "reference": "我就指望你了。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "793297",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17302"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_33256",
+      "source": "Bob helped me.",
+      "reference": "Bob帮助了我。",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "33256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "336465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "33256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/33256"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3819730",
+      "source": "Where's Tom's ticket?",
+      "reference": "湯姆的門票在哪兒呀？",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3819730",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "10305847",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3819730",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3819730"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_244290",
+      "source": "Will you help me look for my purse?",
+      "reference": "你不能帮我找找钱包吗？",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "244290",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3078815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "244290",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/244290"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.38
+      }
+    },
+    {
+      "id": "tatoeba_3914970",
+      "source": "Are you willing to help me?",
+      "reference": "你愿意帮我吗？",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3914970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8630997",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3914970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3914970"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4091852",
+      "source": "We were very sorry we couldn't help them.",
+      "reference": "我們很遺憾無法幫助他們。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4091852",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4071836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4091852",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4091852"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_1095236",
+      "source": "Tom complained that Mary never helped him.",
+      "reference": "汤姆埋怨玛丽从来不帮他。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1095236",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4759992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1095236",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1095236"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3162088",
+      "source": "Is there anything else I can help Tom with?",
+      "reference": "我还能帮汤姆做些别的什么吗？",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3162088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13901062",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3162088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3162088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_765315",
+      "source": "It will also help to strengthen the city's economy.",
+      "reference": "它也会促进城市的经济发展。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "765315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "765314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "765315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/765315"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_312711",
+      "source": "She refused my offer to help her.",
+      "reference": "她拒絕讓我幫助她。",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "894031",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312711"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_277231",
+      "source": "A map helps us to know where we are.",
+      "reference": "地图帮助我们知道所在的位置。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277231",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "346480",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277231",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277231"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_309781",
+      "source": "It was John who helped make her dream come true.",
+      "reference": "是约翰让她的梦想成真。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "309781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5624968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "309781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/309781"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_297111",
+      "source": "He had his sister help him paint the wall of his room.",
+      "reference": "他让妹妹帮他涂他房间的墙。",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "297111",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5655395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "297111",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/297111"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2549588",
+      "source": "We'll be happy.",
+      "reference": "我們將會快樂。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2549588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13256978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2549588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2549588"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_36784",
+      "source": "Stay calm whatever happens.",
+      "reference": "無論發生甚麼事，你也要保持鎮定。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "36784",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "498478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "36784",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/36784"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_2700317",
+      "source": "What happened that night?",
+      "reference": "这个晚上发生了什么？",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2700317",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4845126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2700317",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2700317"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_687347",
+      "source": "The audience applauded his efforts.",
+      "reference": "观众们为他的付出的努力而鼓掌。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "687347",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1193455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "687347",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/687347"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_700006",
+      "source": "I'm open to suggestions.",
+      "reference": "我愿意接受建议。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "700006",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "805607",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "700006",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/700006"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_302013",
+      "source": "He saves what he earns.",
+      "reference": "他把賺到的錢都存了起來。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "302013",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "339499",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "302013",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/302013"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_52819",
+      "source": "John broke the window.",
+      "reference": "John打碎了窗户。",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "405256",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52819"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2642375",
+      "source": "Tom gave Mary half of the apple.",
+      "reference": "汤姆给玛丽半个苹果。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2642375",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5903467",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2642375",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2642375"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_403315",
+      "source": "I wonder what happened to his sister.",
+      "reference": "我想知道他姊姊發生了什麼事。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "893533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403315"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_2044507",
+      "source": "Are you happy now, Tom?",
+      "reference": "汤姆你现在幸福吗？",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2044507",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4956726",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2044507",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2044507"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_908915",
+      "source": "My wife likes apple pie a lot.",
+      "reference": "我老婆非常喜欢苹果饼。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "908915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "910530",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "908915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/908915"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_456151",
+      "source": "It seems that you are very happy today.",
+      "reference": "你今天似乎很高興。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4189393",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456151"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_21846",
+      "source": "Save it on the external hard drive.",
+      "reference": "把它保存在外接式硬碟。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21846",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "798183",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21846",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21846"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2705678",
+      "source": "All of his friends thought that he was happy.",
+      "reference": "他的所有朋友都认为他很幸福。",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2705678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1966116",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2705678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2705678"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_875403",
+      "source": "Don't worry, be happy.",
+      "reference": "不要担心，开心点！",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "875403",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "501586",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "875403",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/875403"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3430441",
+      "source": "In order to make life happy, you must love the everyday trifles.",
+      "reference": "熱愛生活中的日常瑣事，人生才會快樂。",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3430441",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "7484380",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3430441",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3430441"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_652406",
+      "source": "Since I installed solar panels on my house, my energy bill has been cut in half.",
+      "reference": "自从我在我的房子上装了太阳能电池板，我的电费单就减半了。",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "652406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "812359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "652406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/652406"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.94
+      }
+    },
+    {
+      "id": "tatoeba_5901297",
+      "source": "No one could guess why that thing had happened to him.",
+      "reference": "没有人猜得出为什么那种事会发生在他身上。",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5901297",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2188433",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5901297",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5901297"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.91
+      }
+    },
+    {
+      "id": "tatoeba_4736821",
+      "source": "Look guys, the window and even the kitchen door have both been left open!",
+      "reference": "你们看，窗开着，厨房门也没关！",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4736821",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "420078",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4736821",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4736821"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_5067378",
+      "source": "If you laugh a great deal, you are happy; if you cry a great deal, you are unhappy.",
+      "reference": "如果你笑了很多，你很开心；如果你哭了很多，你不开心。",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5067378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8928658",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5067378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5067378"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 6,
+        "difficulty_avg_word_length": 3.44
+      }
+    },
+    {
+      "id": "tatoeba_1911185",
+      "source": "I applied my heart to know wisdom, and to know madness and folly. I perceived that this also was a chasing after wind. For in much wisdom is much grief; and he who increases knowledge increases sorrow.",
+      "reference": "我一心追求智識，也了解了瘋狂與愚蠢。我覺得這就像是追著風跑。智識的背後是傷悲，所以追求智識之人也多了幾分悲傷。",
+      "domain": "ui",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1911185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2511491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1911185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1911185"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 37,
+        "difficulty_estimated_clauses": 7,
+        "difficulty_avg_word_length": 4.32
+      }
+    },
+    {
+      "id": "tatoeba_286115",
+      "source": "He makes sense.",
+      "reference": "他說得没錯。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "286115",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "12166256",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "286115",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/286115"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_284757",
+      "source": "I can't put up with him.",
+      "reference": "我受不了他。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "284757",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "782167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "284757",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/284757"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2451638",
+      "source": "Please teach me French.",
+      "reference": "能教我法語嗎 ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13245689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_42366",
+      "source": "That runs against my principles.",
+      "reference": "那違背了我做人的原則。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "535790",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42366"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_285161",
+      "source": "Ask him if he can speak Japanese.",
+      "reference": "问问他会不会说日语。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "285161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "334656",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "285161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/285161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_42833",
+      "source": "It can be done in a day.",
+      "reference": "它可以在一天之內完成。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "893493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.43
+      }
+    },
+    {
+      "id": "tatoeba_63551",
+      "source": "I should've brought my camera.",
+      "reference": "我應該把我的相機帶來。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "63551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "860749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "63551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/63551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2077780",
+      "source": "Don't let her drive your car.",
+      "reference": "别让她开你的车。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2077780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2440683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2077780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2077780"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_762136",
+      "source": "That car is his.",
+      "reference": "那是她的车．",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "762136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1928564",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "762136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/762136"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_270616",
+      "source": "I don't like to sing in public.",
+      "reference": "我不喜歡在公共場合唱歌。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270616",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "881562",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270616",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270616"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_8770365",
+      "source": "He's speaking German to me.",
+      "reference": "他同我说德语。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8770365",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "4270718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8770365",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8770365"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_324418",
+      "source": "Do you have many friends?",
+      "reference": "你有很多朋友吗？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "324418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "397549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "324418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/324418"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_72284",
+      "source": "Can you come at nine?",
+      "reference": "你能9点过来吗？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72284",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "788605",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72284",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72284"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_646044",
+      "source": "Just pull the door shut. It'll lock by itself.",
+      "reference": "只要推门就好了。它自己会锁上的。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "646044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "812338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "646044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/646044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3519311",
+      "source": "That's really nice of you.",
+      "reference": "你真是太好了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3519311",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "471295",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3519311",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3519311"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_305906",
+      "source": "They referred to Chaucer as the father of English poetry.",
+      "reference": "他們視喬叟為英詩之父。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305906",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1229001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305906",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305906"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.7
+      }
+    },
+    {
+      "id": "tatoeba_4666803",
+      "source": "No one came except Tom.",
+      "reference": "除了汤姆没有人来。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4666803",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5663448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4666803",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4666803"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2328997",
+      "source": "Lots of Italians went to Australia.",
+      "reference": "許多義大利人去了澳大利亞。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2328997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6119440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2328997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2328997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_383016",
+      "source": "We don't know him.",
+      "reference": "我们不认识他。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "383016",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "383003",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "383016",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/383016"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4030956",
+      "source": "Will you pass me the salt, please?",
+      "reference": "請你把鹽遞過來好嗎？",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4030956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "874472",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4030956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4030956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_2272762",
+      "source": "Tom is a bookworm.",
+      "reference": "汤姆是只书虫。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2272762",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5072402",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2272762",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2272762"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_853149",
+      "source": "She works at a bank.",
+      "reference": "她在银行工作。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "853149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1419300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "853149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/853149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_60523",
+      "source": "This boat has six oars.",
+      "reference": "這艘船有六個槳。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "60523",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "9179853",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "60523",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/60523"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_255914",
+      "source": "I am listening to the radio.",
+      "reference": "我在聽收音機。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255914",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "835485",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255914",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255914"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1890892",
+      "source": "I'll dream about you.",
+      "reference": "我会梦到你的。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1890892",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "7771848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1890892",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1890892"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3620196",
+      "source": "I think it was a good day.",
+      "reference": "我認為那是個好日子。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3620196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6624677",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3620196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3620196"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_2660306",
+      "source": "Must we really go to this party?",
+      "reference": "我们真的必须去这个聚会吗？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2660306",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8589272",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2660306",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2660306"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_4410136",
+      "source": "This is too expensive.",
+      "reference": "这太贵了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4410136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "7771677",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4410136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4410136"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2783841",
+      "source": "This must be my book.",
+      "reference": "这肯定是我的书。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2783841",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5650487",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2783841",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2783841"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_275231",
+      "source": "The body quickly adjusts itself to changes in temperature.",
+      "reference": "人體能夠快速地適應氣溫的轉變。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "275231",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "642888",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "275231",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/275231"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.44
+      }
+    },
+    {
+      "id": "tatoeba_5850457",
+      "source": "I'm already over thirty.",
+      "reference": "我已经三十多了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5850457",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "10019662",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5850457",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5850457"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_23919",
+      "source": "He makes his living by singing.",
+      "reference": "他以唱歌為生。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "848208",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23919"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_60161",
+      "source": "This house is not very large.",
+      "reference": "这房子并不是那么大。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "60161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "429401",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "60161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/60161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_4584564",
+      "source": "Is there an elevator here?",
+      "reference": "你們有電梯嗎？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4584564",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "10495851",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4584564",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4584564"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_3467785",
+      "source": "Tell him I'm on my way.",
+      "reference": "告诉他我在路上。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3467785",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3467921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3467785",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3467785"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_48044",
+      "source": "I was frightened by the sight.",
+      "reference": "我被这情景吓到了。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "48044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1358453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "48044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/48044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_270410",
+      "source": "People once believed the world was flat.",
+      "reference": "人们曾经相信地球是方的。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "426354",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270410"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_263657",
+      "source": "Don't talk to others during the class.",
+      "reference": "上課中不要跟別人講話。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "263657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "881681",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "263657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/263657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_2422608",
+      "source": "Today, I watched a play written by a friend of mine.",
+      "reference": "今天我看了一场演出，剧本是我的一个朋友写的。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2422608",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13893814",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2422608",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2422608"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.64
+      }
+    },
+    {
+      "id": "tatoeba_4282336",
+      "source": "You guys are not going to believe this!",
+      "reference": "他們不相信！",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4282336",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6481384",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4282336",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4282336"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_2409797",
+      "source": "The rain didn't stop, and went on for the entire day.",
+      "reference": "雨没有停，连着下了整天。",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2409797",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "2409722",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2409797",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2409797"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_1600443",
+      "source": "Is this seat free?",
+      "reference": "这个座位空着吗？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1600443",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3805065",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1600443",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1600443"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_403607",
+      "source": "I can't stand his arrogance.",
+      "reference": "我受不了他的傲慢。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "403607",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "832962",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "403607",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/403607"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_2141493",
+      "source": "It's bad manners to talk during meals.",
+      "reference": "在吃饭的时候说话是不礼貌的行为。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2141493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8798301",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2141493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2141493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_460639",
+      "source": "He is one of my neighbors.",
+      "reference": "他是我的一個鄰居。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "460639",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "795249",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "460639",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/460639"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2682192",
+      "source": "What do you feel like doing tonight?",
+      "reference": "你們今晚想做什麼？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2682192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5708692",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2682192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2682192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_42834",
+      "source": "It will be finished in a day or two.",
+      "reference": "一兩天內就能結束。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42834",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "6145397",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42834",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42834"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_287244",
+      "source": "He answered incorrectly.",
+      "reference": "他用不正确的方式作了回答。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "287244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "406197",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "287244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/287244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_2327",
+      "source": "People should understand that the world is changing.",
+      "reference": "人应该明白世界在变。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2327",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "389825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2327",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2327"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_753344",
+      "source": "It doesn't start until eight thirty.",
+      "reference": "8点半之前不会开始。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "753344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "334462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "753344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/753344"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3439587",
+      "source": "That can't be it.",
+      "reference": "不可能的。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3439587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "9962371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3439587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3439587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4450236",
+      "source": "I'm from Thailand.",
+      "reference": "我来自泰国。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4450236",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "10320036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4450236",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4450236"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_494182",
+      "source": "This is why I came back.",
+      "reference": "這就是我為什麼回來的原因。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "494182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "473711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "494182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/494182"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5222386",
+      "source": "I bought a camera for thirty dollars.",
+      "reference": "我花30美元買了一台照相機。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5222386",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "881239",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5222386",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5222386"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_318115",
+      "source": "The plane crash took 200 lives.",
+      "reference": "飞机失事导致200人丧命。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "318115",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1928575",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "318115",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/318115"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_3767559",
+      "source": "Are you an American?",
+      "reference": "你是美国人吗？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3767559",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3804964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3767559",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3767559"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_275087",
+      "source": "The sun is about to set.",
+      "reference": "太陽都要下山了。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "275087",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1636161",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "275087",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/275087"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_24758",
+      "source": "Tell me what to do.",
+      "reference": "告訴我該做什麼。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24758",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "844619",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24758",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24758"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_277151",
+      "source": "Is there life on other worlds?",
+      "reference": "地球以外的天體上有生命嗎？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13605145",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277151"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5057632",
+      "source": "The two sentences are both coherent.",
+      "reference": "兩個句子是一致的。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5057632",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "3477042",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5057632",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5057632"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_706996",
+      "source": "They have drunk two bottles of wine.",
+      "reference": "他們喝了兩瓶酒。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "706996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "337249",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "706996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/706996"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_3918241",
+      "source": "I have to find him.",
+      "reference": "我得找到他。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3918241",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5632421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3918241",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3918241"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_3316857",
+      "source": "They always go skiing in the winter.",
+      "reference": "他們總是在冬天去滑雪。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3316857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "874733",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3316857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3316857"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_4726425",
+      "source": "I'll send it to you tomorrow.",
+      "reference": "我明天把它寄给你。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4726425",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5632413",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4726425",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4726425"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_51803",
+      "source": "A little knowledge of Spanish will go a long way toward making your trip to Mexico enjoyable.",
+      "reference": "懂一點西班牙語的話，你去墨西哥一定會玩得更愉快。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "51803",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "424970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "51803",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/51803"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.47
+      }
+    },
+    {
+      "id": "tatoeba_300633",
+      "source": "He quit school last week.",
+      "reference": "他上週退學了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "300633",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13498469",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "300633",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/300633"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1694865",
+      "source": "This landscape is of indescribable beauty.",
+      "reference": "這風景美得無法形容。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1694865",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "795259",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1694865",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1694865"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_24647",
+      "source": "What do you think caused him to lose his job?",
+      "reference": "你认为，是什么导致他失业？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24647",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1323976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24647",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24647"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_5075493",
+      "source": "Because he is there.",
+      "reference": "因为它在那儿。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5075493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "792798",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5075493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5075493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2951896",
+      "source": "How do you want your eggs?",
+      "reference": "请问鸡蛋要什么做法？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2951896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8940739",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2951896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2951896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_321526",
+      "source": "Walk ahead of me.",
+      "reference": "在我前面走。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "517553",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5284324",
+      "source": "My room's a mess.",
+      "reference": "我的房間亂七八糟。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5284324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "348622",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5284324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5284324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5414451",
+      "source": "Everybody was confused.",
+      "reference": "每个人都很困惑",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5414451",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5414469",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5414451",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5414451"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_1355087",
+      "source": "Xiaoming Wang has never been to the United States. He really wants to go next year.",
+      "reference": "王小明还没有去过美国,他很想明年去.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1355087",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "333619",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1355087",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1355087"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.12
+      }
+    },
+    {
+      "id": "tatoeba_288982",
+      "source": "How old is he?",
+      "reference": "他多大了？",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "288982",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "454259",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "288982",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/288982"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_314772",
+      "source": "She got to the station at seven.",
+      "reference": "她七點鐘到車站。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314772",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "894241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314772",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314772"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_348392",
+      "source": "I am not going anywhere.",
+      "reference": "我哪也不去。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "348392",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1329982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "348392",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/348392"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2230772",
+      "source": "Go on home.",
+      "reference": "回家吧。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2230772",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "5102214",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2230772",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2230772"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1560361",
+      "source": "Turn here to get on the subway.",
+      "reference": "你到这儿拐弯角上去坐地铁。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1560361",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "391196",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1560361",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1560361"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_1396235",
+      "source": "She wants to know who sent the flowers.",
+      "reference": "她很想知道那束花是誰寄來的。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1396235",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "672302",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1396235",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1396235"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_843929",
+      "source": "He hid behind the door.",
+      "reference": "他藏到了门后。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "843929",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8780275",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "843929",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/843929"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_991386",
+      "source": "Because there was traffic, I was late to the meeting.",
+      "reference": "因为堵车， 我开会迟到了。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "991386",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "8775992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "991386",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/991386"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_388376",
+      "source": "She disliked her husband.",
+      "reference": "她不喜歡她的丈夫。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "388376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "832761",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "388376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/388376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_245012",
+      "source": "If you need an umbrella I'll lend you one.",
+      "reference": "你如果需要雨伞，那我借你一把。",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245012",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13119400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245012",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245012"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1260143",
+      "source": "I've already eaten dinner.",
+      "reference": "我已經吃晚飯了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1260143",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "835390",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1260143",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1260143"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4013599",
+      "source": "It's already started to rain.",
+      "reference": "已经开始下雨了。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4013599",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13893352",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4013599",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4013599"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_258835",
+      "source": "I lost my way in the woods.",
+      "reference": "我在树林里迷路了。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258835",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "678189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258835",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258835"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_297237",
+      "source": "He was condemned to death.",
+      "reference": "他被判處死刑。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "297237",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "823007",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "297237",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/297237"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1477146",
+      "source": "Can I use your dictionary for a minute?",
+      "reference": "我能用一下你的字典吗？",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1477146",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "333296",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1477146",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1477146"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_19409",
+      "source": "I had a stroke last year.",
+      "reference": "去年我得了中風。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19409",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "686708",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19409",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19409"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_2712947",
+      "source": "I can't stand that noise anymore.",
+      "reference": "我无法再忍受那噪音了。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2712947",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "335537",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2712947",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2712947"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_304074",
+      "source": "I'm sure he will come tomorrow.",
+      "reference": "我確定他明天會來。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "304074",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "861454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "304074",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/304074"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_762691",
+      "source": "I'm against the war.",
+      "reference": "我反對戰爭。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "762691",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13231945",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "762691",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/762691"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_281850",
+      "source": "I hope the weather will clear up on Sunday.",
+      "reference": "希望星期天是晴天呢。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281850",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "13607689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281850",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281850"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_3357812",
+      "source": "You've got to be joking.",
+      "reference": "你一定是开玩笑！",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3357812",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1878342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3357812",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3357812"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_260055",
+      "source": "I don't like what he said.",
+      "reference": "我不喜歡他說的話。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "260055",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "883469",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "260055",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/260055"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3439666",
+      "source": "You have a good job.",
+      "reference": "你有一份好工作。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3439666",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "10054254",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3439666",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3439666"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_668099",
+      "source": "This is my father.",
+      "reference": "这是我的父亲。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "668099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "709081",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "668099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/668099"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_46045",
+      "source": "They are having a chat.",
+      "reference": "他們正在聊天。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "46045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "919689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "46045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/46045"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2744092",
+      "source": "We're drinking tea and waiting.",
+      "reference": "我们边喝茶边等。",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2744092",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "1323999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2744092",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2744092"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_508370",
+      "source": "The pain was terrible.",
+      "reference": "疼痛令人难以忍受。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "508370",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "336004",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "508370",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/508370"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_563730",
+      "source": "Did you pick up on that strange tone in his voice?",
+      "reference": "你有沒有發現他說話的語氣有點古怪？",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "563730",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "565566",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "563730",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/563730"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_26397",
+      "source": "I wish I could swim.",
+      "reference": "我希望我會游泳。",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26397",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "cmn",
+        "target_sentence_id": "834878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26397",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26397"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

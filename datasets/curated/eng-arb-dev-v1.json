@@ -1,0 +1,5839 @@
+{
+  "corpus_id": "tatoeba-eng-arb-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "arb"
+  },
+  "segment": "development",
+  "created": "2026-06-11T11:56:00.588349+00:00",
+  "entry_count": 200,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "gov",
+    "legal",
+    "literary",
+    "marketing",
+    "religious",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_26456",
+      "source": "Did you enjoy the film?",
+      "reference": "هل استمتعت بمشاهدة الفلم؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26456",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1245504",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26456",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26456"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1879698",
+      "source": "Please accept my apologies.",
+      "reference": "تقبل إعتذاري من فضلك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1879698",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1879699",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1879698",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1879698"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_2486742",
+      "source": "Meat is expensive.",
+      "reference": "اللحم غالي الثمن.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2486742",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "8539812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2486742",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2486742"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5896369",
+      "source": "Fadil had a criminal mind.",
+      "reference": "كان لفاضل عقل إجرامي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5896369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5908711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5896369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5896369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_2868498",
+      "source": "Tom believes you.",
+      "reference": "توم يصدقك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2868498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11984436",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2868498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2868498"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2546446",
+      "source": "Tom apologized to Mary.",
+      "reference": "اعتذر توم لماري.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2546446",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10515314",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2546446",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2546446"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_2158897",
+      "source": "I miss my mom.",
+      "reference": "اشتقت لأمي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2158897",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11787432",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2158897",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2158897"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_2786909",
+      "source": "I respect you.",
+      "reference": "أحترمك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2786909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11779266",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2786909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2786909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1651764",
+      "source": "Tom realized that he had fallen in love with Mary.",
+      "reference": "أتضح لتوم أنه وقع في حبّ ماري.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1651764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3054149",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1651764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1651764"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6711406",
+      "source": "Sami wanted to buy Layla clothes.",
+      "reference": "كان سامي يريد أن يشتري ملابسا لليلى.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6711406",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6981650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6711406",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6711406"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_4014099",
+      "source": "Are you ready to go home now?",
+      "reference": "هل أنت جاهز للذهاب للبيت الآن؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4014099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4942341",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4014099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4014099"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_1535765",
+      "source": "They should do the same thing.",
+      "reference": "عليهم عمل الشيء ذاته.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1535765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4926038",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1535765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1535765"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5756802",
+      "source": "Walk when possible.",
+      "reference": "إمشي إن إستطعت.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5756802",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11397029",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5756802",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5756802"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_281642",
+      "source": "How do you say \"thank you\" in Japanese?",
+      "reference": "كيف تقول \" شكراً لك \" باليابانية؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2000907",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_1164896",
+      "source": "I am loved by my mother.",
+      "reference": "أمي تحبني.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1164896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1797822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1164896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1164896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2014256",
+      "source": "I didn't want to humiliate Tom.",
+      "reference": "لم أكن أقصد أن أهين توم.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2014256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2775771",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2014256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2014256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_463210",
+      "source": "They looked for him everywhere but didn't find him.",
+      "reference": "بحثوا عنه في كل مكان، لكنهم لم يجدوه.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "463210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "670879",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "463210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/463210"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_372040",
+      "source": "This book is about a king who loses his crown.",
+      "reference": "يتحدث الكتاب عن ملك يفقد تاجه.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "372040",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "372041",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "372040",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/372040"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_704144",
+      "source": "Languages that would have never found themselves together in a traditional system, can be connected in Tatoeba.",
+      "reference": "لغاتٌ لم نكن لنجدها معًا في النظام التقليدي يمكن التوصيل بينها في تتويبا.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "704144",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "855855",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "704144",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/704144"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.47
+      }
+    },
+    {
+      "id": "tatoeba_5921222",
+      "source": "Sami locked Layla in a closet without food or water for almost a week.",
+      "reference": "حجز سامي ليلى في خزانة بدون طعام و لا ماء لمدّة قاربت الأسبوع.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5921222",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6572765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5921222",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5921222"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4426066",
+      "source": "At this very moment, nearly 10,000 Tweets are being sent.",
+      "reference": "تُرسل حوالي عشرة آلاف تغريدة في هذه اللحظة.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4426066",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4480107",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4426066",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4426066"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_4160383",
+      "source": "My antipathy toward telemarketers is so strong that I am often rude to them.",
+      "reference": "كراهيتي اتجاه المسوقين عبر الهاتف قوية جداً بحيث غالباً أكون فظاً معهم .",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4160383",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4160389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4160383",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4160383"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_4378849",
+      "source": "Say, I seek refuge in the Lord of mankind.",
+      "reference": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4378849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4378843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4378849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4378849"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_2034587",
+      "source": "Sometimes you have to do things you don't want to do.",
+      "reference": "بعض الأحيان، علينا أن نقوم ببعض الأشياء التي لا نرغب بفعلها.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2034587",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6557506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2034587",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2034587"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.82
+      }
+    },
+    {
+      "id": "tatoeba_5576455",
+      "source": "Is this sold by the kilo, by the package or individually?",
+      "reference": "هل هذا يباع بالكيلو أم بالعبوة أم بالواحدة؟",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5576455",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5576472",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5576455",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5576455"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.09
+      }
+    },
+    {
+      "id": "tatoeba_4239296",
+      "source": "The left side of Tom's home is in Connecticut, while the right side is in New York.",
+      "reference": "الجانب الأيسر من منزل توم يقع في كونيتيكت، بينما الأيمن يقع في نيويورك.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4239296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4483653",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4239296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4239296"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 17,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.82
+      }
+    },
+    {
+      "id": "tatoeba_2354",
+      "source": "If you think education is expensive, wait till you see what ignorance costs you.",
+      "reference": "إن كنت تظن التعليم مكلفًا، فانتظر حتى ترى ما يكلفك الجهل.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2354",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "607968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2354",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2354"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.64
+      }
+    },
+    {
+      "id": "tatoeba_377088",
+      "source": "Make no mistake: we do not want to keep our troops in Afghanistan. We seek no military bases there.",
+      "reference": "ولا بد أن تكونوا على علم بأننا لا نريد من جيشنا أن يبقى في أفغانستان ولا نسعى لإقامة قواعد عسكرية هناك",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "377088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "377089",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "377088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/377088"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_399359",
+      "source": "You're the last person in the world I would like to see cloned; you're boring enough on your own.",
+      "reference": "أنت آخر شخص في العالم سيسرني رؤيته مستنسخاً؛ إنك ممل بما فيه الكفاية من دون نسخة.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "399359",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "399360",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "399359",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/399359"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.05
+      }
+    },
+    {
+      "id": "tatoeba_3804003",
+      "source": "There are sentences whose translation into certain languages doesn't make sense and, therefore, should be avoided.",
+      "reference": "هناك جمل لا معنى لترجمتها إلى لغات معينة ، وبالتالي يجب تجنبها.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3804003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11621298",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3804003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3804003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_62710",
+      "source": "Kate glanced at Chris and then ignored him, making him feel miserable.",
+      "reference": "ألقت كايت نظرة على كريس ثم تجاهلته، الشيء الذي جعله يحزن.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62710",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1569101",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62710",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62710"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_528236",
+      "source": "There is no god but God, and Muhammad is the messenger of God.",
+      "reference": "لا إله إلا الله محمد رسول الله.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "528236",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "528234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "528236",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/528236"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.69
+      }
+    },
+    {
+      "id": "tatoeba_3681674",
+      "source": "I hear the buzz of a fan, the drip of the faucet, the hum of the fridge, the tick of the clock, the whoosh of cars passing by the house.",
+      "reference": "انا اسمع ضجيج المروحة و صوت نزول قطرات الماء من الصنبور و همهمة الثلاجة و تكتكة الساعة و هبوب الهواء عند مرور السيارات بالقرب من المنزل .",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3681674",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4115375",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3681674",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3681674"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 30,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_1922702",
+      "source": "'Is that vodka?' Margarita asked weakly. The cat jumped up from its chair in indignation. 'Excuse me, your majesty,' he squeaked, 'do you think I would give vodka to a lady? That is pure spirit!'",
+      "reference": "سألت مرغريتا بصوت ضعيف: - \"أهي فودكا هذه؟\". نظّ القط على الكرسي استياءً. قال بصوت مبحوح: - \"العفو أيتها الملكة, أأسمح لنفسي بأن أسكب فودكا لسيدة؟ إنها كحول خالصة!\"",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1922702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5305091",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1922702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1922702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 35,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1355343",
+      "source": "The road ahead will be long. Our climb will be steep. We may not get there in one year or even in one term. But, US Americans, I have never been more hopeful than I am tonight that we WILL get there.",
+      "reference": "إن الطريق سيكون طويلاً. وصعود المنحدر شاقاً. وربما لا نصل إليه خلال عام واحد، بل ولا خلال ولاية رئاسية. لكنني أقول إليكِ أمريكا، إنه لم يسبق لي أن كنت مفعماً بالأمل ببلوغ نهاية هذا الطريق مثلما أنا مفعمٌ به اليوم.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1355343",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "376808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1355343",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1355343"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 42,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_621957",
+      "source": "January, February, March, April, May, June, July, August, September, October, November and December are the twelve months of the year.",
+      "reference": "يناير، فبراير، مارس، أبريل، مايو، يونيو، يوليو، أغسطس، سبتمبر، أكتوبر، نوفمبر و ديسمبر هي أشهر السنة الإثنة عشر.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "621957",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1568776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "621957",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/621957"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 20,
+        "difficulty_estimated_clauses": 12,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1795657",
+      "source": "My words are like a mirror; if a jackass read them, then don't expect he'd see an angel's face.",
+      "reference": "إن كلامي كالمرآة فإذا قرأهُ حمارٌ فلا تتوقع أن يرى وجه ملاك .",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1795657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1795656",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1795657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1795657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_6043630",
+      "source": "Layla returned home.",
+      "reference": "عادت ليلى إلى المنزل.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6043630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6130981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6043630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6043630"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2595642",
+      "source": "France has a common border with Italy.",
+      "reference": "لدى فرنسا حدود مشتركة مع إيطاليا.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2595642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2606028",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2595642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2595642"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_1872678",
+      "source": "I learn German in order to have more opportunities in the profession.",
+      "reference": "أتعلم اللغة الألمانية من أجل الحصول على المزيد من الفرص في المهنة.",
+      "domain": "ecommerce",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1872678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1872680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1872678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1872678"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_370609",
+      "source": "The students laughed.",
+      "reference": "ضحك الطلاب.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370609",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "370608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370609",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370609"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_424866",
+      "source": "I'm a new student.",
+      "reference": "أنا طالب جديد",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "424866",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6679644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "424866",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/424866"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1098155",
+      "source": "Those students are Korean.",
+      "reference": "هؤلاء الطلاب كورييون.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098155",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5157156",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098155",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098155"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1579407",
+      "source": "Students study in school.",
+      "reference": "التلاميذ يدرسون في المدرسة.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1579407",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1579843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1579407",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1579407"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_251708",
+      "source": "My father is a teacher.",
+      "reference": "أبي مدرّس.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251708",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "370923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251708",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251708"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_371004",
+      "source": "The student came back from London.",
+      "reference": "جاء الطالب من لندن.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "371004",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "371003",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "371004",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/371004"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_285296",
+      "source": "His mother is an English teacher.",
+      "reference": "أمه مدرسة اللغة الإنجليزية.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "285296",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "454367",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "285296",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/285296"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_418848",
+      "source": "I have a lot of homework.",
+      "reference": "لدي الكثير من الواجبات.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "418848",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "422630",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "418848",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/418848"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_493786",
+      "source": "He failed the exam because he had not studied enough.",
+      "reference": "رسب في امتحاناته بسبب قلة المذاكرة.",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "493786",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "373048",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "493786",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/493786"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.3
+      }
+    },
+    {
+      "id": "tatoeba_4707915",
+      "source": "He has Ukrainian citizenship.",
+      "reference": "لديه الجنسيّة الأوكرانيّة.",
+      "domain": "gov",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4707915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7320425",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4707915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4707915"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_312703",
+      "source": "She is a British citizen, but she was born in France.",
+      "reference": "إنها مواطنة بريطانية و لكن بلدها الأم فرنسا.",
+      "domain": "gov",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "521895",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312703"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_376847",
+      "source": "We meet at a time of tension between the United States and Muslims around the world – tension rooted in historical forces that go beyond any current policy debate.",
+      "reference": "إننا نلتقي في وقت يشوبه التوتر بين الولايات المتحدة والعالم الإسلامي وهو توتر تمتد جذوره إلى قوى تاريخية تتجاوز أي نقاش سياسي راهن",
+      "domain": "gov",
+      "difficulty": 4,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376847",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "376848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376847",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376847"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 29,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_1821432",
+      "source": "They want to be lawyers.",
+      "reference": "يريدون أن يصبحوا محامين.",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1821432",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11648245",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1821432",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1821432"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_4167858",
+      "source": "I am not a lawyer.",
+      "reference": "انا لست محامي",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4167858",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5544074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4167858",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4167858"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_264284",
+      "source": "Study the next chapter.",
+      "reference": "ادرس للفصل القادم.",
+      "domain": "literary",
+      "difficulty": 1,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264284",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "8107791",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264284",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264284"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_46522",
+      "source": "The novel has been translated into many languages.",
+      "reference": "ترجمت الرواية إلى العديد من اللغات.",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "46522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1406881",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "46522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/46522"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_4198271",
+      "source": "Tom showed me the poems that he'd written when he was a teenager.",
+      "reference": "أراني توم القصائد التي كتبها حين كان مراهقا.",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4198271",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4459114",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4198271",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4198271"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_57075",
+      "source": "Give me your impression of this book.",
+      "reference": "أعطني انطباعك عن هذا الكتاب.",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "57075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "370625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "57075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/57075"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_5990960",
+      "source": "Why are cows sacred in India?",
+      "reference": "لماذا تعتبر الأبقار حيوانات مقدّسة في الهند؟",
+      "domain": "religious",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5990960",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "9626238",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5990960",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5990960"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2861736",
+      "source": "He helped me.",
+      "reference": "لقد ساعدني.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2861736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10799545",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2861736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2861736"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_314978",
+      "source": "She screamed for help.",
+      "reference": "صرخت طالبة المساعدة.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314978",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "371335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314978",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314978"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1816861",
+      "source": "You help us.",
+      "reference": "أنت تساعدنا.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1816861",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11668949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1816861",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1816861"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_259349",
+      "source": "I called for help.",
+      "reference": "طلبت النجدة.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259349",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "371325",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259349",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259349"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1572812",
+      "source": "They need your help.",
+      "reference": "هم في حاجة لمساعدتك.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1572812",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1578426",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1572812",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1572812"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1572819",
+      "source": "That cat needs help to climb off a table.",
+      "reference": "هذا القط يحتاج للمساعدة كي ينزل من الطاولة.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1572819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1578432",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1572819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1572819"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.56
+      }
+    },
+    {
+      "id": "tatoeba_1025641",
+      "source": "Tom got these tickets for nothing.",
+      "reference": "حصل توم على هذه التذاكر دون مقابل.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1025641",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6391693",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1025641",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1025641"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3734770",
+      "source": "I'll never forget how helpful you've been.",
+      "reference": "لن أنس مدى مساعدتك لي.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3734770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7981735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3734770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3734770"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1313",
+      "source": "I told them to send me another ticket.",
+      "reference": "أخبرتُهُم أن يُرْسِلُوا لي تذِكرةً أُخرى.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1313",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "549625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1313",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1313"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_987493",
+      "source": "Please help me take this down.",
+      "reference": "ساعدني في حمل هذا إلى الأسفل من فضلك.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "987493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1108648",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "987493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/987493"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5892415",
+      "source": "This book really helped Fadil learn Arabic faster.",
+      "reference": "ساعد هذا الكتاب فاضل على تعلّم العربيّة بشكل أسرع.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5892415",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6543355",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5892415",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5892415"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_3428447",
+      "source": "Tom got the ticket for free.",
+      "reference": "حصل توم على تلك التذاكر مجانا.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3428447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11692159",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3428447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3428447"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_436399",
+      "source": "I am lost. Can you help me, please?",
+      "reference": "لقد تهتُ، هل بإمكانك مساعدتي؟",
+      "domain": "support",
+      "difficulty": 3,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436399",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1597632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436399",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436399"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_859813",
+      "source": "Washington is the capital of the United States.",
+      "reference": "واشنطن هي عاصمة الولايات المتحدة.",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "859813",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "13190052",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "859813",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/859813"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.88
+      }
+    },
+    {
+      "id": "tatoeba_1888819",
+      "source": "Wherever you live, there's the capital.",
+      "reference": "أينما كنت تعيش, هناك العاصمة.",
+      "domain": "tech",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1888819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1890727",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1888819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1888819"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_478029",
+      "source": "M insults D - the Tatoeba database is one sentence better. D insults M - the Tatoeba database is one sentence better. D and M are even, and everyone else wins.",
+      "reference": "\"م\" تشتم \"د\" فتصبح قاعدة بيانات تتويبا أغنى جملة. \"د\" يشتم \"م\" فتصبح قاعدة بيانات تتويبا أغنى جملة. \"م\" و \"د\" يتعادلان و الجميع يستفيد.",
+      "domain": "tech",
+      "difficulty": 5,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "478029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "478044",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "478029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/478029"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 31,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.03
+      }
+    },
+    {
+      "id": "tatoeba_249158",
+      "source": "We clapped our hands.",
+      "reference": "لقد صفقنا.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249158",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7328273",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249158",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249158"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1372408",
+      "source": "Are you happy here?",
+      "reference": "هل أنت سعيد هنا؟",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1372408",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1372405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1372408",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1372408"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_42793",
+      "source": "It happened one night.",
+      "reference": "حدث ذلك ذات ليلة.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42793",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "371200",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42793",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42793"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5062402",
+      "source": "He disappointed me.",
+      "reference": "لقد خذلني.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5062402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7320360",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5062402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5062402"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_52834",
+      "source": "John broke the window yesterday.",
+      "reference": "البارحة كسر جون النافذة.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "52834",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "498944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "52834",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/52834"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_2044397",
+      "source": "You look happy.",
+      "reference": "تبدو سعيداً",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2044397",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6679560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2044397",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2044397"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_321673",
+      "source": "I'm so happy.",
+      "reference": "أنا سعيد جداً.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321673",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "617430",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321673",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321673"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5059252",
+      "source": "I haven't downloaded the file yet.",
+      "reference": "لم أقم بتنزيل الملف.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5059252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5055599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5059252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5059252"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3550079",
+      "source": "Do you have a menu in English?",
+      "reference": "هل لديك قائمة في اللغة الإنجليزية؟",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3550079",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "13121264",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3550079",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3550079"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_816099",
+      "source": "The apple does not fall far from the trunk.",
+      "reference": "هذا الشبل من ذاك الأسد.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "816099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "372178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "816099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/816099"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_319141",
+      "source": "My father is to appear on TV tonight.",
+      "reference": "سيظهر أبي على التلفاز الليلة.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "319141",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1569059",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "319141",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/319141"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_2359481",
+      "source": "I haven't downloaded the files yet.",
+      "reference": "لم أقم بتنزيل الملف.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2359481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5055599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2359481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2359481"
+        },
+        "classification_confidence": 0.1176,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_63895",
+      "source": "I'm very happy to know you.",
+      "reference": "أنا سعيدٌ بمعرفتك.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "63895",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1406689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "63895",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/63895"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_314282",
+      "source": "She applied a bandage to my hurt finger.",
+      "reference": "وضعت ضمادة على أصبعي المصاب.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "314282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7085382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "314282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/314282"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2811464",
+      "source": "Tom's boss appreciates his work, but he doesn't want to give him a pay raise.",
+      "reference": "يقدّر ربّ عمل سامي عمله ولكنه لا يريد أن يرفع أجره.",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2811464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11896423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2811464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2811464"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.07
+      }
+    },
+    {
+      "id": "tatoeba_27842",
+      "source": "The whole family is out for a walk.",
+      "reference": "خرجت العائلة كلّها لتتمشّى.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "27842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "370745",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "27842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/27842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.38
+      }
+    },
+    {
+      "id": "tatoeba_320462",
+      "source": "Speech is silver, silence is golden.",
+      "reference": "الكلام فضة، لكن الصمت ذهب.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "320462",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "607985",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "320462",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/320462"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_2854106",
+      "source": "She forgave me.",
+      "reference": "لقد سامحتني.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2854106",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11747549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2854106",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2854106"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1898431",
+      "source": "All Tom really wanted was something to eat.",
+      "reference": "كل ما كان يحتاجه توم حقاً كان شيئاً ما ليأكله.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1898431",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1898605",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1898431",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1898431"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.38
+      }
+    },
+    {
+      "id": "tatoeba_54201",
+      "source": "Here comes the bus.",
+      "reference": "ها قد أتت الحافلة.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "54201",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "400777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "54201",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/54201"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_775416",
+      "source": "He screams a lot.",
+      "reference": "هو يصرخ كثيرا.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "775416",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1037883",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "775416",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/775416"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1742204",
+      "source": "\"Whose cats are these?\" \"They are Fatima's.\"",
+      "reference": "\"لمن هذه القطط؟\" \"هي لفاطمة\".",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1742204",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1744235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1742204",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1742204"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_2288251",
+      "source": "You were there, weren't you?",
+      "reference": "كنتَ هناك، أليس كذلك؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2288251",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6557466",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2288251",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2288251"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_2549261",
+      "source": "This is not fair.",
+      "reference": "هذا ليس عدلاً.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2549261",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "370538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2549261",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2549261"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4059012",
+      "source": "What time are you coming back?",
+      "reference": "متى سترجع؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4059012",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "419560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4059012",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4059012"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2245947",
+      "source": "I liked it.",
+      "reference": "أعجبني.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245947",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11745820",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245947",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245947"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2548876",
+      "source": "Clean up your room.",
+      "reference": "نظف غرفتك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548876",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "443002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548876",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548876"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2643950",
+      "source": "Tom kicked Mary repeatedly.",
+      "reference": "ركل توم ماري عدة مرات.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2643950",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10515338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2643950",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2643950"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_1908472",
+      "source": "Go brush your teeth.",
+      "reference": "إذهب واغسل أسنانك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1908472",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1908538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1908472",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1908472"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_264540",
+      "source": "Do unto others as you would have others do unto you.",
+      "reference": "عامل الناس كما تحب أن يعاملوك.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "264540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "9079255",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "264540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/264540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_1441287",
+      "source": "I am very happy in Georgia.",
+      "reference": "أنا سعيدٌ جداً في جورجيا.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1441287",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3052127",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1441287",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1441287"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_755333",
+      "source": "Be quiet while we're eating.",
+      "reference": "ابق ساكتا بينما نأكل.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "755333",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1593511",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "755333",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/755333"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1802693",
+      "source": "Angola became independent in 1975.",
+      "reference": "نالت أنغولا استقلالها عام 1975.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1802693",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11651574",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1802693",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1802693"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_242909",
+      "source": "It is sunny today.",
+      "reference": "الجو مشمس اليوم.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "475801",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_989331",
+      "source": "Learning Korean is difficult.",
+      "reference": "تعلم الكورية صعب.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "989331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2944903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "989331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/989331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_2439737",
+      "source": "I told him to stop.",
+      "reference": "قلت له أن يتوقف.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2439737",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11572408",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2439737",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2439737"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_5991384",
+      "source": "I am not your slave.",
+      "reference": "أنا لست عبدك.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5991384",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1935788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5991384",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5991384"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3142893",
+      "source": "I have just a few questions.",
+      "reference": "فقط لدي بعض الأسئلة.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3142893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2464292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3142893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3142893"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3447180",
+      "source": "Did you know that foxes live on this mountain?",
+      "reference": "هل تعلم أن على هذا الجّبَل تعيش الثّعالب؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3447180",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "9626417",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3447180",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3447180"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_2828115",
+      "source": "She can speak.",
+      "reference": "بإمكانها الكلام.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2828115",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11432776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2828115",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2828115"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2860235",
+      "source": "Ken shot Tom.",
+      "reference": "أطلق كان النار على توم.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2860235",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11676980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2860235",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2860235"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_21621",
+      "source": "School starts in April.",
+      "reference": "تبدأ المدرسة في إبريل.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21621",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "568766",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21621",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21621"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_2858669",
+      "source": "You believe Tom, don't you?",
+      "reference": "أنت تصدّق توم، أليس كذلك؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2858669",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11877182",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2858669",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2858669"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1069917",
+      "source": "That's a table.",
+      "reference": "تلك طاولةٌ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1069917",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4420951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1069917",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1069917"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1803045",
+      "source": "That is my sister.",
+      "reference": "هذه أختي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1803045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3276154",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1803045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1803045"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_37342",
+      "source": "Tom is a friend of mine.",
+      "reference": "توم صديق لي.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "628960",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3831724",
+      "source": "My parents are both doctors.",
+      "reference": "والداي كلاهما طبيب.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3831724",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11991864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3831724",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3831724"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1780024",
+      "source": "It's all your fault.",
+      "reference": "الخطأ خطؤك أنت!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1780024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11896846",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1780024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1780024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2865440",
+      "source": "He rewrote it.",
+      "reference": "أعاد كتابته.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2865440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10799584",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2865440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2865440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_59583",
+      "source": "These shoes don't fit my feet.",
+      "reference": "هذا الحذاء ليس بمقاسي.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "59583",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7677838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "59583",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/59583"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2870630",
+      "source": "You will notify Tom, won't you?",
+      "reference": "ستخبر توم، أليس كذلك؟",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2870630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11995668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2870630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2870630"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3910474",
+      "source": "They saw her.",
+      "reference": "رأوها.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3910474",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11987811",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3910474",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3910474"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2064654",
+      "source": "Did you break something?",
+      "reference": "هل كسرت شيئًا؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2064654",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2603111",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2064654",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2064654"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2057655",
+      "source": "Thanks a lot.",
+      "reference": "شكراً جزيلاً!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2057655",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "373034",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2057655",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2057655"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_251968",
+      "source": "My daughter likes egg yolks.",
+      "reference": "ابنتي تحب صفار البيض.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1408991",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251968"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_3788799",
+      "source": "She didn't notice me.",
+      "reference": "هي لم تلاحظني.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3788799",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "13681132",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3788799",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3788799"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3879637",
+      "source": "Just leave my house.",
+      "reference": "فقط غادر منزلي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3879637",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11248255",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3879637",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3879637"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1762323",
+      "source": "I like to build bridges.",
+      "reference": "أحب بناء الجسور.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1762323",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11250376",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1762323",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1762323"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_43733",
+      "source": "I concentrated my attention on the subject.",
+      "reference": "قمت بتوجيه تركيزي على الموضوع.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "43733",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "8179042",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "43733",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/43733"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_19674",
+      "source": "Hurry up, or you'll miss your plane.",
+      "reference": "أسرع و إلا فاتتك الطائرة.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "19674",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "419638",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "19674",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/19674"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2870529",
+      "source": "We want you.",
+      "reference": "نريدك أنت.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2870529",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11783043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2870529",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2870529"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1147206",
+      "source": "Put away the bread.",
+      "reference": "أبعد الخبز.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1147206",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "12251328",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1147206",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1147206"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6064878",
+      "source": "Sami assaulted Layla.",
+      "reference": "هاجم سامي ليلى.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6064878",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7027160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6064878",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6064878"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1663462",
+      "source": "Tom is repeating what he said.",
+      "reference": "توم يكرر ما قاله.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1663462",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11978900",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1663462",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1663462"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3910871",
+      "source": "I recognized him.",
+      "reference": "تعرفت عليه.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3910871",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11672268",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3910871",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3910871"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1398330",
+      "source": "His condition could have been worse.",
+      "reference": "كان يمكن أن تكون حالته أكثر سوءً.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1398330",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1398325",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1398330",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1398330"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2873227",
+      "source": "I lighted one.",
+      "reference": "أشعلت واحدا.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2873227",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11787041",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2873227",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2873227"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_24579",
+      "source": "What time do you get up?",
+      "reference": "متى تستيقظ؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24579",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "419556",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24579",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24579"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_255449",
+      "source": "I'm a baker.",
+      "reference": "أنا خباز.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "255449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3714072",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "255449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/255449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_309784",
+      "source": "Her dream is to become a nurse.",
+      "reference": "حلمها هو أن تصبح ممرضة.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "309784",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "422654",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "309784",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/309784"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_5958301",
+      "source": "I made a run for it.",
+      "reference": "هربت.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5958301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11981385",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5958301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5958301"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_1879585",
+      "source": "Where did you plant them?",
+      "reference": "أين غرستهم؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1879585",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11976573",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1879585",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1879585"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6064851",
+      "source": "It's swim or die here.",
+      "reference": "من كان هنا، فإمّا أن يسبح أو يغرق.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6064851",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6981718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6064851",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6064851"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_250998",
+      "source": "My business is prospering.",
+      "reference": "شركتي تنمو.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "250998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11946141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "250998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/250998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_21203",
+      "source": "The stock market has dropped today.",
+      "reference": "انخفضت الأسعار في سوق الأسهم اليوم.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "21203",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "383350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "21203",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/21203"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_2862616",
+      "source": "We told him.",
+      "reference": "أخبرناه.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2862616",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11648935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2862616",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2862616"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1582010",
+      "source": "How may I serve you?",
+      "reference": "كيف بإمكاني مساعدتك ؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1582010",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3661311",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1582010",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1582010"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1761955",
+      "source": "He knows everything about Germany.",
+      "reference": "يعرف كل شيء عن ألمانيا.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1761955",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11500267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1761955",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1761955"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_2549080",
+      "source": "I'm an only child.",
+      "reference": "أنا طفل وحيد أبي و أمي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2549080",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "372077",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2549080",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2549080"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_249479",
+      "source": "We were late because of the storm.",
+      "reference": "تأخرنا بسبب العاصفة.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "374815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249479"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_2719968",
+      "source": "I am watering the garden.",
+      "reference": "إني أسقي البستان.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2719968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11283291",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2719968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2719968"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_253725",
+      "source": "I don't know this neighborhood too well.",
+      "reference": "لا أعرف هذا الحي جيدا.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "253725",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "2603109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "253725",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/253725"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_691415",
+      "source": "There is a book about dancing on the desk.",
+      "reference": "يوجد كتاب عن الرقص على المنضدة .",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "691415",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1499090",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "691415",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/691415"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3895699",
+      "source": "It was enjoyed.",
+      "reference": "كنت اغني.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3895699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4221162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3895699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3895699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6043076",
+      "source": "The situation got out of hand.",
+      "reference": "خرج الوضع عن السّيطرة.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6043076",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6129450",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6043076",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6043076"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_27534",
+      "source": "To kill two birds with one stone.",
+      "reference": "اضرب عصفورين بحجر.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "27534",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "371319",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "27534",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/27534"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_2480204",
+      "source": "This is a hard question to answer.",
+      "reference": "ذلك سؤال صعبٌ الإجابة عليه.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2480204",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "508691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2480204",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2480204"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_3008700",
+      "source": "You abandoned me!",
+      "reference": "لقد تركتني!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3008700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11747711",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3008700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3008700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2033133",
+      "source": "I don't want to remember.",
+      "reference": "لا أريد أن أتذكّر.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2033133",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "8000034",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2033133",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2033133"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3918780",
+      "source": "They caught him.",
+      "reference": "قبضوا عليه.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3918780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11724046",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3918780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3918780"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2254699",
+      "source": "Who asked you?",
+      "reference": "من طلب منك هذا؟",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11759957",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_39080",
+      "source": "The bicycle by the door is mine.",
+      "reference": "الدراجة التي بجانب الباب هي دراجتي.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "39080",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "497646",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "39080",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/39080"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_3916818",
+      "source": "Have you found them?",
+      "reference": "هل وجدتموهم؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3916818",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11855989",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3916818",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3916818"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3581067",
+      "source": "You have only three options to select.",
+      "reference": "أمامك ثلاث خيارات لا غير للاختيار بينها.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3581067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3583986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3581067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3581067"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_305843",
+      "source": "They admired the lovely scenery.",
+      "reference": "هم تعجّبوا بالمنظر الجميل.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305843",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10952428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305843",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305843"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_2380434",
+      "source": "I caused this.",
+      "reference": "هذا بسببي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2380434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3060203",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2380434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2380434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1395167",
+      "source": "May God hear you!",
+      "reference": "من فمك إلى باب السماء!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1395167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1395164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1395167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1395167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2865503",
+      "source": "He took risks.",
+      "reference": "لقد خاطر.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2865503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11283478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2865503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2865503"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1095921",
+      "source": "Tom answered the phone.",
+      "reference": "ردّ توم على الإتصال.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1095921",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4531904",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1095921",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1095921"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_313617",
+      "source": "She can jump high.",
+      "reference": "يمكنها القفز عالياً.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "313617",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "376287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "313617",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/313617"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2237129",
+      "source": "Tom knows him.",
+      "reference": "توم يعرفه.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237129",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11500213",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237129",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237129"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3519313",
+      "source": "That's why I like you.",
+      "reference": "لذلك أحبك",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3519313",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6679789",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3519313",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3519313"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_1879763",
+      "source": "I am from the USA.",
+      "reference": "أنا من الولايات المتحدة الأمريكية.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1879763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1879764",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1879763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1879763"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_69060",
+      "source": "You must not come to meet me again.",
+      "reference": "عليك أن تأتي لزيارتي مرة أخرى.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69060",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1586712",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69060",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69060"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.38
+      }
+    },
+    {
+      "id": "tatoeba_1786",
+      "source": "I give you my word.",
+      "reference": "أعدك بذلك",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1786",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "6679671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1786",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1786"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_3914344",
+      "source": "The problem is them.",
+      "reference": "المُشكِلةُ مُشكِلتهم",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3914344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "9307403",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3914344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3914344"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_24338",
+      "source": "Summer is gone.",
+      "reference": "انتهى الصيف.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "617361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24338"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4477330",
+      "source": "Now, Europe seems to be a paradise.",
+      "reference": "تبدو أوروبا الآن مثل الجنة.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4477330",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "4477482",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4477330",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4477330"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_4630283",
+      "source": "Tom came upstairs.",
+      "reference": "جاء توم إلى الطابق العلوي.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4630283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11677210",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4630283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4630283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3821961",
+      "source": "I need to go now.",
+      "reference": "يجب علي أن أذهب الأن.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3821961",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1881671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3821961",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3821961"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.4
+      }
+    },
+    {
+      "id": "tatoeba_2235710",
+      "source": "I called Tom.",
+      "reference": "اتصلت بتوم.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2235710",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "617447",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2235710",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2235710"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5839028",
+      "source": "Fadil used his money to romance Layla.",
+      "reference": "استعمل فاضل ماله لمغازلة ليلى.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5839028",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "5928207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5839028",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5839028"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_2911939",
+      "source": "The dog is man's best friend.",
+      "reference": "الكلب أفضل صديق للإنسان.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2911939",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "13858754",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2911939",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2911939"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_5465187",
+      "source": "Something was going on.",
+      "reference": "شيء ما حدث.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5465187",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "7299787",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5465187",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5465187"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_55503",
+      "source": "This is the worst hotel in town.",
+      "reference": "هذا هو الفندق الأسوأ في المدينة.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3053478",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55503"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_3273418",
+      "source": "He's waiting for the train to leave.",
+      "reference": "هو ينتظر إقلاع القطار.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3273418",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11671121",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3273418",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3273418"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_483690",
+      "source": "When I entered the room, she was playing the piano.",
+      "reference": "كانت تعزف على البيانو عندما دخلتُ إلى الغرفة.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "483690",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "489087",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "483690",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/483690"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2275762",
+      "source": "I don't want to sleep.",
+      "reference": "لا أريد النوم",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2275762",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "3664111",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2275762",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2275762"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_2546931",
+      "source": "Tom watched Mary swim.",
+      "reference": "شاهد توم ماري و هي تسبح.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2546931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "10515315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2546931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2546931"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1894541",
+      "source": "Let's go somewhere else.",
+      "reference": "هيا بنا نذهب إلى أي مكان آخر.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1894541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1894657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1894541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1894541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_297305",
+      "source": "He wouldn't allow me to drive his car.",
+      "reference": "لم يسمح لي أن أقود سيارته إطلاقاً.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "297305",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "498853",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "297305",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/297305"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2487648",
+      "source": "Is your language endangered?",
+      "reference": "هل لغتك في خطر؟",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2487648",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11244705",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2487648",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2487648"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1877157",
+      "source": "He believes in an afterlife.",
+      "reference": "إنهُ يؤمن بالحياة الآخرة.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1877157",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1877166",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1877157",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1877157"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_6037992",
+      "source": "Technology is continually improving.",
+      "reference": "التكنولوجيا تتطور بدون توقف.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6037992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "11901050",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6037992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6037992"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.0
+      }
+    },
+    {
+      "id": "tatoeba_297007",
+      "source": "He seems not to agree.",
+      "reference": "يبدو أنه ليس موافقا.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "297007",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "ara",
+        "target_sentence_id": "1579717",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "297007",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/297007"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "builder_module": "build_website_corpora",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "fetch_window": 1000,
+    "sampling": "stratified + seeded top-up to max_entries",
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

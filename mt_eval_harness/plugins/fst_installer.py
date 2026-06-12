@@ -23,8 +23,9 @@ DESIGN DECISIONS:
       are 5-30MB binaries from third-party repos.
     - Provenance tracking: Every install records version, URL, SHA256,
       and timestamp so we can audit and reproduce.
-    - Legacy format only: We handle standalone .hfstol zips (lang-crk
-      style). Divvun-packaged FSTs require their own toolchain.
+    - Language cards as SSOT: Install metadata lives in the language
+      card JSON files (resources.fsts[0].install), accessed via
+      language_cards.get_fst_install_info(). No hardcoded registry.
 """
 
 from __future__ import annotations
@@ -39,6 +40,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from mt_eval_harness import language_cards
+
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -46,129 +49,6 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 FST_CACHE_ROOT = Path.home() / ".mt-eval" / "fsts"
-
-# ---------------------------------------------------------------------------
-# Known GiellaLT FST repositories
-#
-# This registry maps ISO 639-3 codes to their GiellaLT repo metadata.
-# Only languages with standalone FST releases (legacy format) are listed.
-# Languages using Divvun packaging are noted but handled differently.
-#
-# WHY A STATIC REGISTRY:
-#   The harness is a standalone Python package — it can't reach into the
-#   champollion language cards at runtime. This registry mirrors what the
-#   language card's resources.fsts field documents, but is self-contained.
-#   The card generator and this registry should stay in sync.
-# ---------------------------------------------------------------------------
-
-GIELLALT_FST_REGISTRY: dict[str, dict[str, Any]] = {
-    # -----------------------------------------------------------------------
-    # FORMAT: "legacy-zip"
-    #   Standalone FST zip releases on GitHub. Contains .hfstol files directly.
-    #   Download zip → extract .hfstol → cache.
-    # -----------------------------------------------------------------------
-    "crk": {
-        "name": "Plains Cree",
-        "repo": "giellalt/lang-crk",
-        "release_tag": "fst-v2021.7.8",
-        "asset_pattern": "plains-cree-fsts-",
-        "format": "legacy-zip",
-    },
-    # -----------------------------------------------------------------------
-    # FORMAT: "divvun-macos-pkg"
-    #   Divvun speller macOS .pkg releases. The .pkg is a xar archive
-    #   containing a Payload (gzip-compressed cpio) which contains a
-    #   .bundle with a speller.zhfst (zip) inside. The zhfst contains
-    #   acceptor.default.hfst — the morphological acceptor transducer.
-    #
-    #   Extraction chain:
-    #     .pkg → pkgutil --expand → Payload → gunzip | cpio → .zhfst → unzip → .hfst
-    #     Then: hfst-fst2fst -O → .hfstol (optimised lookup format)
-    #
-    #   Requires: pkgutil (macOS built-in), gzip, cpio, unzip
-    #   Optional: hfst-fst2fst for conversion (falls back to raw .hfst)
-    # -----------------------------------------------------------------------
-    "sme": {
-        "name": "Northern Sámi",
-        "repo": "giellalt/lang-sme",
-        "release_tag": "speller-sme/v4.5.2",
-        "asset_pattern": "_noarch-macos.pkg",
-        "bundle_pattern": "no.divvun.MacDivvun.se.bundle",
-        "format": "divvun-macos-pkg",
-        "maturity": "production",  # 29MB transducer, comprehensive coverage
-    },
-    "amh": {
-        "name": "Amharic",
-        "repo": "giellalt/lang-amh",
-        "release_tag": "speller-amh/dev-latest",
-        "asset_pattern": "_noarch-macos.pkg",
-        "bundle_pattern": "no.divvun.MacDivvun.am.bundle",
-        "format": "divvun-macos-pkg",
-        "maturity": "stub",  # 11KB — dev build, essentially empty
-    },
-    "eus": {
-        "name": "Basque",
-        "repo": "giellalt/lang-eus",
-        "release_tag": "speller-eus/dev-latest",
-        "asset_pattern": "_noarch-macos.pkg",
-        "bundle_pattern": "no.divvun.MacDivvun.eu.bundle",
-        "format": "divvun-macos-pkg",
-        "maturity": "stub",  # 53KB — dev build, limited vocabulary
-    },
-    # -----------------------------------------------------------------------
-    # FORMAT: "manual" (pre-compiled from external project, no auto-download)
-    #   These FSTs were compiled from source outside the GiellaLT/Divvun
-    #   ecosystem and must be manually installed to ~/.mt-eval/fsts/{code}/.
-    # -----------------------------------------------------------------------
-    "que": {
-        "name": "Quechua (Cusco)",
-        "repo": "a-rios/squoia",
-        "format": "manual",
-        "maturity": "production",  # 1.1MB, full Cusco Quechua morphology
-        "notes": "Compiled from SQUOIA analyzeCuzco.fst (foma → hfst-invert → hfst-fst2fst -O)",
-    },
-    # -----------------------------------------------------------------------
-    # FORMAT: "divvun" (legacy marker — no auto-install support yet)
-    #   These languages have Divvun FSTs but no macOS .pkg with a usable
-    #   acceptor has been verified. Users can manually install .hfstol files
-    #   to ~/.mt-eval/fsts/{code}/ or use the Divvun manager.
-    # -----------------------------------------------------------------------
-    "sma": {
-        "name": "Southern Sámi",
-        "repo": "giellalt/lang-sma",
-        "format": "divvun",
-    },
-    "smj": {
-        "name": "Lule Sámi",
-        "repo": "giellalt/lang-smj",
-        "format": "divvun",
-    },
-    "smn": {
-        "name": "Inari Sámi",
-        "repo": "giellalt/lang-smn",
-        "format": "divvun",
-    },
-    "sms": {
-        "name": "Skolt Sámi",
-        "repo": "giellalt/lang-sms",
-        "format": "divvun",
-    },
-    "fin": {
-        "name": "Finnish",
-        "repo": "giellalt/lang-fin",
-        "format": "divvun",
-    },
-    "nob": {
-        "name": "Norwegian Bokmål",
-        "repo": "giellalt/lang-nob",
-        "format": "divvun",
-    },
-    "iku": {
-        "name": "Inuktitut",
-        "repo": "giellalt/lang-iku",
-        "format": "divvun",
-    },
-}
 
 
 # ---------------------------------------------------------------------------
@@ -178,21 +58,12 @@ GIELLALT_FST_REGISTRY: dict[str, dict[str, Any]] = {
 def get_fst_cache_dir(lang_code: str) -> Path:
     """Return the standard cache directory for a language's FST files.
 
-    Checks multiple locations in priority order:
-        1. ~/.mt-eval/fsts/{code}/          (harness-managed, preferred)
-        2. ~/.crk-translate/models/         (legacy CRK location)
+    Checks the standard location:
+        1. ~/.mt-eval/fsts/{code}/          (harness-managed, all languages)
     """
     primary = FST_CACHE_ROOT / lang_code
     if primary.exists() and any(primary.glob("*.hfstol")):
         return primary
-
-    # Legacy CRK fallback — check the old location
-    if lang_code == "crk":
-        legacy = Path.home() / ".crk-translate" / "models"
-        # Check any version subdirectory
-        for version_dir in sorted(legacy.glob("fst-v*"), reverse=True):
-            if any(version_dir.glob("*.hfstol")):
-                return version_dir
 
     return primary
 
@@ -308,7 +179,7 @@ def _install_legacy_zip(lang_code: str, entry: dict) -> Path:
 
     Args:
         lang_code: ISO 639-3 language code (e.g. "crk")
-        entry: Registry entry dict with repo, tag, asset_pattern
+        entry: Install metadata dict from language card (camelCase keys)
 
     Returns:
         Path to the installed FST cache directory
@@ -316,8 +187,8 @@ def _install_legacy_zip(lang_code: str, entry: dict) -> Path:
     # Download the zip
     content = _download_legacy_zip(
         repo=entry["repo"],
-        tag=entry["release_tag"],
-        asset_pattern=entry["asset_pattern"],
+        tag=entry["releaseTag"],
+        asset_pattern=entry["assetPattern"],
     )
 
     # Calculate SHA256 for provenance
@@ -510,16 +381,16 @@ def _install_divvun_pkg(lang_code: str, entry: dict) -> Path:
 
     Args:
         lang_code: ISO 639-3 language code
-        entry: Registry entry dict with repo, tag, patterns
+        entry: Install metadata dict from language card (camelCase keys)
 
     Returns:
         Path to the installed FST cache directory
     """
     acceptor_bytes = _download_divvun_macos_pkg(
         repo=entry["repo"],
-        tag=entry["release_tag"],
-        asset_pattern=entry["asset_pattern"],
-        bundle_pattern=entry.get("bundle_pattern", ""),
+        tag=entry["releaseTag"],
+        asset_pattern=entry["assetPattern"],
+        bundle_pattern=entry.get("bundlePattern", ""),
     )
 
     sha256 = hashlib.sha256(acceptor_bytes).hexdigest()
@@ -537,8 +408,9 @@ def _install_divvun_pkg(lang_code: str, entry: dict) -> Path:
 
     # Warn about stub/dev transducers
     maturity = entry.get("maturity", "unknown")
+    lang_name = language_cards.get_name(lang_code) or lang_code
     if maturity == "stub":
-        print(f"  ⚠ Warning: {entry['name']} FST is a dev/stub build. "
+        print(f"  ⚠ Warning: {lang_name} FST is a dev/stub build. "
               f"Vocabulary coverage may be very limited.")
 
     _write_provenance(install_dir, lang_code, entry, sha256)
@@ -554,9 +426,9 @@ def _write_provenance(
     """Write provenance metadata for an installed FST."""
     provenance = {
         "lang_code": lang_code,
-        "name": entry.get("name", lang_code),
+        "name": language_cards.get_name(lang_code) or lang_code,
         "repo": entry.get("repo", ""),
-        "release_tag": entry.get("release_tag", ""),
+        "release_tag": entry.get("releaseTag", ""),
         "format": entry.get("format", ""),
         "maturity": entry.get("maturity", "unknown"),
         "sha256": sha256,
@@ -571,6 +443,9 @@ def _write_provenance(
 def install_fst(lang_code: str) -> Path:
     """Download and install the FST for a language.
 
+    Reads install metadata from the language card via
+    ``language_cards.get_fst_install_info()``.
+
     Supports multiple distribution formats:
         - "legacy-zip": Standalone FST zip releases with .hfstol files
         - "divvun-macos-pkg": Divvun speller macOS .pkg packages
@@ -584,13 +459,14 @@ def install_fst(lang_code: str) -> Path:
 
     Raises:
         RuntimeError: If download or extraction fails
-        KeyError: If language not in registry
+        KeyError: If language has no FST install metadata
     """
-    if lang_code not in GIELLALT_FST_REGISTRY:
-        raise KeyError(f"No GiellaLT FST registered for '{lang_code}'")
+    entry = language_cards.get_fst_install_info(lang_code)
+    if entry is None:
+        raise KeyError(f"No FST install metadata in language card for '{lang_code}'")
 
-    entry = GIELLALT_FST_REGISTRY[lang_code]
     fmt = entry["format"]
+    lang_name = language_cards.get_name(lang_code) or lang_code
 
     if fmt == "legacy-zip":
         return _install_legacy_zip(lang_code, entry)
@@ -598,14 +474,14 @@ def install_fst(lang_code: str) -> Path:
         return _install_divvun_pkg(lang_code, entry)
     elif fmt == "divvun":
         raise RuntimeError(
-            f"FST for {entry['name']} uses Divvun packaging without a "
+            f"FST for {lang_name} uses Divvun packaging without a "
             f"verified macOS .pkg. Install the Divvun manager from "
             f"https://divvun.no/ and copy .hfstol files to "
             f"~/.mt-eval/fsts/{lang_code}/"
         )
     else:
         raise RuntimeError(
-            f"Unknown FST format '{fmt}' for {entry['name']}"
+            f"Unknown FST format '{fmt}' for {lang_name}"
         )
 
 
@@ -622,9 +498,14 @@ def prompt_fst_install(lang_code: str, lang_name: str) -> bool:
     In non-interactive environments (no TTY), always returns False.
     """
     if not sys.stdin.isatty():
-        return False
+        # Non-interactive (agent, CI, piped stdin) — auto-consent.
+        # FST downloads are safe (read-only morphological data from GiellaLT)
+        # and required for accurate evaluation. Refusing silently would cause
+        # confusing evaluation failures downstream.
+        print(f"  FST: auto-downloading for {lang_name} (non-interactive mode)")
+        return True
 
-    entry = GIELLALT_FST_REGISTRY.get(lang_code, {})
+    entry = language_cards.get_fst_install_info(lang_code) or {}
     repo = entry.get("repo", f"giellalt/lang-{lang_code}")
     fmt = entry.get("format", "unknown")
 
@@ -691,16 +572,15 @@ def ensure_fst_available(
         print(f"  FST: found ({analyzer.name}) at {fst_dir}")
         return fst_dir
 
-    # Check if this language has a known FST
-    if lang_code not in GIELLALT_FST_REGISTRY:
-        # No FST registered — this isn't gated
+    # Check if this language has a known FST in its language card
+    entry = language_cards.get_fst_install_info(lang_code)
+    if entry is None:
+        # No FST install info in language card — this isn't gated
         return None
-
-    entry = GIELLALT_FST_REGISTRY[lang_code]
 
     # FST exists but not installed
     if skip_fst:
-        print(f"  ⚠ FST: skipped (--skip-fst). {entry['name']} FST not installed.")
+        print(f"  ⚠ FST: skipped (--skip-fst). {lang_name} FST not installed.")
         print(f"    Results will lack morphological validation.")
         return None
 

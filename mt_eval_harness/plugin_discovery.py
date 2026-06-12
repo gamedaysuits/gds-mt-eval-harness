@@ -35,13 +35,14 @@ BEHAVIORAL PLUGINS (language-agnostic):
     terminology_adherence), so they must be loaded for the composite to include them.
 
 DESIGN DECISIONS:
-    - The FST gate applies only to languages in GIELLALT_FST_REGISTRY.
+    - The FST gate applies only to languages with FST install info in their card.
       Languages without known FSTs proceed normally without any gate.
     - Language-specific LYSS plugins (linters, semantic validators) are
-      loaded when a matching language is detected. Currently supported:
-        * CRK (Plains Cree): CrkLinterMetric (LYSS-eq), CrkSemanticMetric (LYSS-sem)
-      These plugins live in crk-translate/eval/harness_plugins/ and are
-      imported conditionally to avoid hard dependencies.
+      loaded from method.json manifests via the general method metric
+      plugin loader. When --method is not provided, the harness auto-detects
+      method plugins from the monorepo by matching supported_pairs to the
+      target language. Any method module can declare its own metrics —
+      no language gets hardcoded special treatment in this file.
     - Behavioral plugins load unconditionally — they're stdlib-only,
       language-agnostic, and zero-config.
     - The --skip-fst flag exists for CI/automation where interactive
@@ -50,46 +51,34 @@ DESIGN DECISIONS:
 
 from __future__ import annotations
 
+import importlib.util
 import logging
+import sys
+from pathlib import Path
+from typing import Any
+
+from mt_eval_harness.language_cards import resolve_code, resolve_name
 
 logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
-# Language detection
+# Language detection — uses language_cards SSOT
 # ---------------------------------------------------------------------------
-
-# Maps common language names/patterns to ISO 639-3 codes
-# Used to resolve the target_lang field (which can be a human-readable name
-# like "Plains Cree (nêhiyawêwin, SRO)") to a code we can look up.
-_LANG_NAME_TO_CODE = {
-    # Polysynthetic / morphologically-complex
-    "cree": "crk",
-    "plains cree": "crk",
-    "nêhiyawêwin": "crk",
-    "quechua": "que",
-    "cusco quechua": "que",
-    # Sámi family
-    "northern sámi": "sme",
-    "davvisámegiella": "sme",
-    "southern sámi": "sma",
-    "lule sámi": "smj",
-    "inari sámi": "smn",
-    "skolt sámi": "sms",
-    # Other FST-supported
-    "finnish": "fin",
-    "inuktitut": "iku",
-    "norwegian bokmål": "nob",
-    "basque": "eus",
-    "amharic": "amh",
-    "welsh": "cym",
-}
+#
+# Previously contained a hardcoded _LANG_NAME_TO_CODE dict with 14 entries.
+# Deleted in v8 — all name→code resolution now goes through the shared
+# language_cards module which indexes all 7,928 language card files.
 
 
 def _detect_lang_code(config: dict) -> str | None:
     """Extract the ISO 639-3 language code from the run config.
 
-    Checks target_lang, target_language, and language_pair fields.
+    Resolution chain:
+        1. Check target_lang / target_language config fields
+        2. Fall back to language_pair field (extract target half)
+        3. Resolve via language_cards SSOT (handles codes, aliases, names)
+
     Returns None if the language can't be identified.
     """
     target = (
@@ -102,7 +91,6 @@ def _detect_lang_code(config: dict) -> str | None:
         # Try language_pair field (e.g. "en>crk" or "en-crk")
         pair = config.get("language_pair", "")
         if pair:
-            # Extract target from pair — it's the second part
             for sep in [">", "-", "_"]:
                 if sep in pair:
                     target = pair.split(sep)[-1].strip()
@@ -111,17 +99,28 @@ def _detect_lang_code(config: dict) -> str | None:
     if not target:
         return None
 
-    target_lower = target.lower()
+    # Try resolving as a code or alias first (handles "crk", "fr", etc.)
+    resolved = resolve_code(target)
+    if resolved != target or (len(target) == 3 and target.isalpha()):
+        # Either the code resolved to something different (alias match),
+        # or it's already a 3-letter ISO code
+        return resolved.lower() if len(resolved) <= 3 else resolved
 
-    # Direct 3-letter code match (e.g. "crk")
-    if len(target) == 3 and target.isalpha():
+    # Try resolving as a human-readable name
+    # Handles "Plains Cree (nêhiyawêwin, SRO)" → "crk"
+    code = resolve_name(target)
+    if code:
+        return code
+
+    # Last resort: if it looks like a code (2-3 alpha chars), return as-is
+    if len(target) <= 3 and target.isalpha():
         return target.lower()
 
-    # Name-based lookup
-    for pattern, code in _LANG_NAME_TO_CODE.items():
-        if pattern in target_lower:
-            return code
-
+    logger.warning(
+        "Could not resolve target language '%s' to an ISO code. "
+        "Consider using a 3-letter ISO 639-3 code instead.",
+        target,
+    )
     return None
 
 
@@ -179,12 +178,401 @@ def _load_terminology(config: dict) -> object:
 
 
 # ---------------------------------------------------------------------------
+# Method-declared metric plugins (general loader)
+# ---------------------------------------------------------------------------
+#
+# Any method module can declare its own metric plugins in method.json
+# under the "metric_plugins" key. This is the general mechanism that
+# replaces the old CRK-hardcoded plugin loading. Works for any language,
+# any method — just declare your metrics in the manifest.
+#
+# Example method.json excerpt:
+#   {
+#     "metric_plugins": [
+#       {
+#         "entry_point": "metrics:CrkLinterMetric",
+#         "name": "LYSS-eq",
+#         "description": "Deterministic variant-class equivalence linter",
+#         "dependencies": [],
+#         "spacy_models": []
+#       }
+#     ]
+#   }
+
+import json as _json
+import subprocess as _subprocess
+
+
+def _load_method_metric_plugins(method_dir: str | Path) -> list:
+    """Load metric plugins declared in a method module's method.json.
+
+    Reads the 'metric_plugins' field from method.json and imports each
+    class via importlib. Follows the same import pattern as method_loader.py:
+    adds the method directory to sys.path so the plugin module can import
+    its own siblings.
+
+    For each declared plugin, checks runtime dependencies (pip packages,
+    spaCy models) and offers to install if missing and stdin is interactive.
+
+    Args:
+        method_dir: Path to the method plugin directory containing method.json
+                    and the metric module files.
+
+    Returns:
+        List of instantiated MetricPlugin instances (may be empty if
+        the method declares no metrics or imports fail).
+    """
+    method_dir = Path(method_dir)
+    manifest_path = method_dir / "method.json"
+
+    if not manifest_path.exists():
+        logger.debug("No method.json at %s — skipping metric plugin discovery", method_dir)
+        return []
+
+    try:
+        manifest = _json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, _json.JSONDecodeError) as e:
+        logger.warning("Failed to read method.json at %s: %s", manifest_path, e)
+        return []
+
+    metric_declarations = manifest.get("metric_plugins", [])
+    if not metric_declarations:
+        return []
+
+    plugins = []
+
+    # Ensure method directory is on sys.path for imports
+    # (same pattern as method_loader.py L119-131)
+    paths_to_add = []
+    dir_str = str(method_dir)
+    parent_str = str(method_dir.parent)
+    if dir_str not in sys.path:
+        paths_to_add.append(dir_str)
+    if parent_str not in sys.path:
+        paths_to_add.append(parent_str)
+    for p in paths_to_add:
+        sys.path.insert(0, p)
+
+    for decl in metric_declarations:
+        entry_point = decl.get("entry_point", "")
+        name = decl.get("name", entry_point)
+        description = decl.get("description", "")
+
+        if ":" not in entry_point:
+            logger.warning(
+                "Invalid metric_plugins entry_point '%s' in %s — "
+                "expected format 'module:ClassName'",
+                entry_point, manifest_path,
+            )
+            continue
+
+        module_name, class_name = entry_point.split(":", 1)
+
+        # Check runtime dependencies before attempting import
+        deps_ok = _check_metric_dependencies(decl, name)
+        if not deps_ok:
+            continue
+
+        # Import the metric class
+        module_file = method_dir / f"{module_name}.py"
+        if not module_file.exists():
+            logger.warning(
+                "Metric plugin module not found: %s (declared by %s in method.json)",
+                module_file, name,
+            )
+            print(f"  {name}: NOT loaded (module {module_name}.py not found)")
+            continue
+
+        try:
+            spec = importlib.util.spec_from_file_location(
+                f"method_metric_plugin.{module_name}",
+                module_file,
+            )
+            if spec is None or spec.loader is None:
+                raise ImportError(f"Could not create module spec for {module_file}")
+
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+
+            if not hasattr(module, class_name):
+                raise ImportError(
+                    f"Module {module_name}.py does not export '{class_name}'. "
+                    f"Available: {[n for n in dir(module) if not n.startswith('_')]}"
+                )
+
+            metric_class = getattr(module, class_name)
+            instance = metric_class()
+            plugins.append(instance)
+            desc_suffix = f" — {description}" if description else ""
+            print(f"  {name}: loaded ({class_name}{desc_suffix})")
+
+        except Exception as e:
+            print(f"  {name}: NOT loaded (error: {e})")
+            logger.warning(
+                "Failed to load metric plugin %s from %s: %s",
+                name, module_file, e,
+            )
+
+    return plugins
+
+
+def _check_metric_dependencies(decl: dict, name: str) -> bool:
+    """Check and optionally install runtime dependencies for a metric plugin.
+
+    Checks pip dependencies and spaCy models listed in the metric declaration.
+    If anything is missing and stdin is interactive, offers to install.
+
+    Returns True if all dependencies are satisfied, False otherwise.
+    """
+    dependencies = decl.get("dependencies", [])
+    spacy_models = decl.get("spacy_models", [])
+
+    if not dependencies and not spacy_models:
+        return True
+
+    # Check pip dependencies
+    missing_deps = []
+    for dep in dependencies:
+        # Extract package name from requirement spec (e.g., "spacy>=3.5" → "spacy")
+        pkg_name = dep.split(">=")[0].split("==")[0].split("<")[0].strip()
+        try:
+            __import__(pkg_name)
+        except ImportError:
+            missing_deps.append(dep)
+
+    # Check spaCy models
+    missing_models = []
+    for model_name in spacy_models:
+        try:
+            import spacy
+            spacy.load(model_name)
+        except (ImportError, OSError):
+            missing_models.append(model_name)
+
+    if not missing_deps and not missing_models:
+        return True
+
+    # Report what's missing
+    all_missing = missing_deps + [f"spaCy model: {m}" for m in missing_models]
+    print(f"  {name}: missing dependencies: {', '.join(all_missing)}")
+
+    # Offer to install if interactive
+    if sys.stdin.isatty():
+        try:
+            answer = input(f"  Install dependencies for {name}? [y/N]: ").strip().lower()
+            if answer in ("y", "yes"):
+                # Install pip packages
+                for dep in missing_deps:
+                    print(f"  Installing {dep}...")
+                    _subprocess.check_call(
+                        [sys.executable, "-m", "pip", "install", dep],
+                        stdout=_subprocess.DEVNULL,
+                    )
+                # Download spaCy models
+                for model_name in missing_models:
+                    print(f"  Downloading spaCy model {model_name}...")
+                    _subprocess.check_call(
+                        [sys.executable, "-m", "spacy", "download", model_name],
+                        stdout=_subprocess.DEVNULL,
+                    )
+                print(f"  ✓ Dependencies installed for {name}.")
+                return True
+        except (EOFError, KeyboardInterrupt):
+            print()
+        except (_subprocess.CalledProcessError, ImportError, OSError) as e:
+            print(f"  ✗ Dependency install failed: {e}")
+
+    print(f"  {name}: skipped (metrics from this plugin will be null in composite)")
+    logger.warning(
+        "Metric plugin %s skipped — missing: %s",
+        name, ", ".join(all_missing),
+    )
+    return False
+
+
+# ---------------------------------------------------------------------------
+# Auto-detect method plugins from monorepo structure
+# ---------------------------------------------------------------------------
+
+def _auto_detect_method_dir(lang_code: str) -> Path | None:
+    """Scan the monorepo for a method plugin that supports the target language.
+
+    When no explicit --method is passed, this function walks the monorepo
+    looking for method.json files whose 'supported_pairs' field matches
+    the detected target language code. If found AND the manifest declares
+    metric_plugins, returns the method directory path.
+
+    Scan strategy:
+        1. Walk up from this file's directory to find the monorepo root
+           (the directory containing 'arena/' as a child).
+        2. Scan sibling directories for 'method_plugin/method.json' files.
+        3. Also check one level deeper (e.g., 'crk-translate/method_plugin/').
+
+    This keeps the discovery generic — any language-specific module that
+    follows the convention of 'method_plugin/method.json' with metric_plugins
+    declared will be auto-detected. No hardcoded language knowledge needed.
+
+    Args:
+        lang_code: ISO 639-3 code for the target language (e.g., 'crk').
+
+    Returns:
+        Path to the method plugin directory, or None if no match found.
+    """
+    import json as _json_mod
+
+    # Walk up from the arena package directory to find the monorepo root
+    package_dir = Path(__file__).parent  # mt_eval_harness/
+    arena_dir = package_dir.parent       # arena/
+
+    # The monorepo root is the parent of arena/
+    monorepo_root = arena_dir.parent
+    if not monorepo_root.exists():
+        return None
+
+    # Scan sibling directories of arena/ for method.json files
+    candidates = []
+    try:
+        for sibling in monorepo_root.iterdir():
+            if not sibling.is_dir() or sibling.name.startswith("."):
+                continue
+
+            # Check method_plugin/ subdirectory (standard convention)
+            method_dir = sibling / "method_plugin"
+            manifest_path = method_dir / "method.json"
+
+            if manifest_path.exists():
+                candidates.append((method_dir, manifest_path))
+
+            # Also check one level deeper for nested structures
+            # (e.g., 'lang-translate/method_plugin/method.json')
+            for child in sibling.iterdir():
+                if not child.is_dir() or child.name.startswith("."):
+                    continue
+                nested_method = child / "method_plugin"
+                nested_manifest = nested_method / "method.json"
+                if nested_manifest.exists() and nested_method not in [c[0] for c in candidates]:
+                    candidates.append((nested_method, nested_manifest))
+    except PermissionError:
+        return None
+
+    # Check each candidate's supported_pairs for a match
+    lang_lower = lang_code.lower()
+    for method_dir, manifest_path in candidates:
+        try:
+            manifest = _json_mod.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, _json_mod.JSONDecodeError):
+            continue
+
+        # Only consider manifests that actually declare metric plugins
+        metric_plugins = manifest.get("metric_plugins", [])
+        if not metric_plugins:
+            continue
+
+        # Check supported_pairs for a target language match
+        # Format: "eng>crk", "fra>crk", etc. We match the target half.
+        supported_pairs = manifest.get("supported_pairs", [])
+        for pair in supported_pairs:
+            # Split on common separators
+            for sep in [">", "-", "_"]:
+                if sep in pair:
+                    target_half = pair.split(sep)[-1].strip().lower()
+                    if target_half == lang_lower:
+                        logger.info(
+                            "Auto-detected method plugin at %s "
+                            "(supported_pairs includes '%s', "
+                            "declares %d metric plugin(s))",
+                            method_dir, pair, len(metric_plugins),
+                        )
+                        return method_dir
+
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Language-card-declared evaluation metrics
+# ---------------------------------------------------------------------------
+
+def _load_language_card_metrics(lang_code: str) -> list:
+    """Load evaluation metrics declared on the language card.
+
+    The language card's ``evalMetrics`` field declares metrics that apply
+    to ALL evaluations targeting this language, regardless of which
+    translation method produced the output. This is the referee's
+    scoring rubric — it lives with the language, not the contestant.
+
+    Each metric declaration has:
+        - module: Python module path relative to mt_eval_harness
+                  (e.g., "eval_standards.crk.metrics")
+        - class: Class name to instantiate
+        - dependencies: (optional) pip packages required
+        - spacy_models: (optional) spaCy models required
+        - description: (optional) human-readable description
+
+    Returns:
+        List of MetricPlugin instances (may be empty).
+    """
+    from mt_eval_harness import language_cards as _lc
+
+    eval_metrics = _lc.get_eval_metrics(lang_code)
+    if not eval_metrics:
+        return []
+
+    plugins = []
+
+    for metric_name, decl in eval_metrics.items():
+        module_path = decl.get("module", "")
+        class_name = decl.get("class", "")
+        description = decl.get("description", "")
+
+        if not module_path or not class_name:
+            logger.warning(
+                "Invalid evalMetrics entry '%s' on language card for %s — "
+                "missing 'module' or 'class'",
+                metric_name, lang_code,
+            )
+            continue
+
+        # Check runtime dependencies before attempting import
+        deps_ok = _check_metric_dependencies(decl, metric_name)
+        if not deps_ok:
+            continue
+
+        # Import the metric class via importlib
+        full_module = f"mt_eval_harness.{module_path}"
+        try:
+            import importlib
+            module = importlib.import_module(full_module)
+
+            if not hasattr(module, class_name):
+                raise ImportError(
+                    f"Module {full_module} does not export '{class_name}'. "
+                    f"Available: {[n for n in dir(module) if not n.startswith('_')]}"
+                )
+
+            metric_class = getattr(module, class_name)
+            instance = metric_class()
+            plugins.append(instance)
+            desc_suffix = f" — {description}" if description else ""
+            print(f"  {metric_name}: loaded ({class_name}{desc_suffix})")
+
+        except Exception as e:
+            print(f"  {metric_name}: NOT loaded (error: {e})")
+            logger.warning(
+                "Failed to load eval metric %s from %s: %s",
+                metric_name, full_module, e,
+            )
+
+    return plugins
+
+
+# ---------------------------------------------------------------------------
 # Main entry point
 # ---------------------------------------------------------------------------
 
 def discover_metric_plugins(
     config: dict,
     skip_fst: bool = False,
+    method_dir: str | Path | None = None,
 ) -> list:
     """Auto-discover metric plugins appropriate for the target language.
 
@@ -192,12 +580,21 @@ def discover_metric_plugins(
         1. Detects the target language from the config dict
         2. Checks if the language has a known GiellaLT FST
         3. Enforces the FST quality gate (prompt → install → or abort)
-        4. Loads any additional language-specific plugins
+        4. Loads language-card-declared eval metrics (e.g., LYSS for CRK)
+        5. Falls back to method-declared metrics only if the language
+           card has no evalMetrics
+
+    The harness is **language-neutral**. No language gets hardcoded special
+    treatment. Language-specific metrics are declared on the language card
+    under the "evalMetrics" key and loaded generically from eval_standards/.
 
     Args:
         config: Dict containing at least 'target_lang' or 'target_language'.
                 Can be a RunConfig.__dict__, a run_log['config'], or similar.
         skip_fst: If True, skip the FST gate (for --skip-fst flag).
+        method_dir: Path to the method plugin directory containing method.json.
+                    If provided, loads metric plugins declared in the manifest.
+                    If None, auto-detects from monorepo structure.
 
     Returns:
         List of MetricPlugin instances (may be empty).
@@ -222,12 +619,11 @@ def discover_metric_plugins(
         return plugins
 
     # --- FST quality gate ---
-    from mt_eval_harness.plugins.fst_installer import (
-        GIELLALT_FST_REGISTRY,
-        ensure_fst_available,
-    )
+    from mt_eval_harness.plugins.fst_installer import ensure_fst_available
+    from mt_eval_harness import language_cards as _lc
 
-    if lang_code in GIELLALT_FST_REGISTRY:
+    fst_install_info = _lc.get_fst_install_info(lang_code)
+    if fst_install_info is not None:
         fst_dir = ensure_fst_available(
             lang_code, lang_name, skip_fst=skip_fst
         )
@@ -240,141 +636,31 @@ def discover_metric_plugins(
             print(f"  FST metric: registered (GiellaLTFSTMetric for {lang_code})")
         elif not skip_fst:
             # FST is required but not available — abort
-            entry = GIELLALT_FST_REGISTRY[lang_code]
+            card_name = _lc.get_name(lang_code) or lang_code
             print()
             print(f"  ✗ Evaluation aborted.")
-            print(f"    {entry['name']} ({lang_code}) requires FST validation.")
+            print(f"    {card_name} ({lang_code}) requires FST validation.")
             print(f"    Use --skip-fst to run without morphological checking.")
             raise SystemExit(1)
 
-    # --- Language-specific LYSS plugins ---
-    # These provide linguistically-informed metrics that go beyond surface
-    # comparison. They are loaded conditionally based on target language.
-    # Each plugin lazy-initializes its heavy resources on first use.
-    #
-    # LYSS-eq (CrkLinterMetric): deterministic variant-class equivalence
-    # LYSS-sem (CrkSemanticMetric): FST lemma + dictionary + spaCy overlap
+    # --- Language-card-declared eval metrics (REFEREE — applies to all methods) ---
+    # These are the official evaluation standards for this language.
+    # They come from the language card's evalMetrics field, NOT from any
+    # translation method's method.json. This ensures fair scoring.
+    if lang_code:
+        card_metrics = _load_language_card_metrics(lang_code)
+        if card_metrics:
+            plugins.extend(card_metrics)
+            print(f"  Language card eval metrics: {len(card_metrics)} loaded for {lang_code}")
 
-    if lang_code == "crk":
-        # The CRK LYSS plugins live in crk-translate/eval/harness_plugins/,
-        # which is a separate subtree from arena/mt_eval_harness/. We need
-        # to add crk-translate/ to sys.path so `from eval.harness_plugins`
-        # resolves. This follows the same pattern as method_loader.py
-        # (lines 119-131) which adds plugin directories to sys.path.
-        import sys
-        from pathlib import Path
-
-        # Detect monorepo root: plugin_discovery.py lives at
-        # <monorepo>/arena/mt_eval_harness/plugin_discovery.py
-        # so monorepo root is 2 levels up from this file's directory.
-        _this_dir = Path(__file__).resolve().parent        # mt_eval_harness/
-        _arena_dir = _this_dir.parent                      # arena/
-        _monorepo_root = _arena_dir.parent                 # Champollion/
-        _crk_dir = _monorepo_root / "crk-translate"
-
-        _crk_path_added = False
-        if _crk_dir.is_dir():
-            crk_dir_str = str(_crk_dir)
-            if crk_dir_str not in sys.path:
-                sys.path.insert(0, crk_dir_str)
-                _crk_path_added = True
-                logger.debug("Added %s to sys.path for CRK plugin imports", crk_dir_str)
-        else:
-            logger.warning(
-                "crk-translate directory not found at %s. "
-                "CRK-specific LYSS plugins will not be loaded.", _crk_dir
-            )
-
-        try:
-            from eval.harness_plugins.metrics import CrkLinterMetric
-            plugins.append(CrkLinterMetric())
-            print("  LYSS-eq: loaded (CrkLinterMetric — variant-class equivalence)")
-        except ImportError as e:
-            logger.warning(
-                "CrkLinterMetric not available (import error: %s). "
-                "equivalent_match_rate will be null in composite.", e
-            )
-
-        try:
-            from eval.harness_plugins.metrics import CrkSemanticMetric
-
-            # Probe whether LYSS-sem's runtime dependencies are available.
-            # CrkSemanticMetric lazy-loads spaCy + en_core_web_md + CrkGenerator
-            # on first compute(). If spaCy isn't installed, every entry gets
-            # verdict=ERROR and semantic_score is null. Better to tell the
-            # user upfront and offer to install, like the FST prompt does.
-            _sem_ready = True
-            try:
-                import spacy
-                spacy.load("en_core_web_md")
-            except ImportError:
-                _sem_ready = False
-                _missing = "spaCy"
-            except OSError:
-                # spaCy installed but model not downloaded
-                _sem_ready = False
-                _missing = "spaCy English model (en_core_web_md)"
-
-            if _sem_ready:
-                plugins.append(CrkSemanticMetric())
-                print("  LYSS-sem: loaded (CrkSemanticMetric — semantic validation)")
-            else:
-                # Prompt for CRK eval pack install (parallels FST prompt)
-                print(f"  LYSS-sem: {_missing} not found.")
-                _installed = False
-                if sys.stdin.isatty():
-                    print()
-                    print("  ┌─────────────────────────────────────────────────────────────┐")
-                    print("  │  CRK Eval Pack — Semantic Validation Dependencies           │")
-                    print("  │                                                             │")
-                    print("  │  LYSS-sem validates meaning preservation by comparing       │")
-                    print("  │  FST lemma glosses via English content-word overlap.         │")
-                    print("  │  It requires:                                               │")
-                    print("  │    • spaCy (NLP library for English lemmatization)           │")
-                    print("  │    • en_core_web_md model (~40 MB download)                 │")
-                    print("  │                                                             │")
-                    print("  │  Without this, semantic_score will be null in the composite. │")
-                    print("  └─────────────────────────────────────────────────────────────┘")
-                    print()
-                    try:
-                        answer = input("  Install CRK eval pack now? [y/N]: ").strip().lower()
-                        if answer in ("y", "yes"):
-                            import subprocess
-                            print("  Installing spaCy...")
-                            subprocess.check_call(
-                                [sys.executable, "-m", "pip", "install", "spacy>=3.5"],
-                                stdout=subprocess.DEVNULL,
-                            )
-                            print("  Downloading en_core_web_md model...")
-                            subprocess.check_call(
-                                [sys.executable, "-m", "spacy", "download", "en_core_web_md"],
-                                stdout=subprocess.DEVNULL,
-                            )
-                            # Re-import after install
-                            import importlib
-                            import spacy
-                            importlib.reload(spacy)
-                            plugins.append(CrkSemanticMetric())
-                            print("  ✓ CRK eval pack installed. LYSS-sem active.")
-                            _installed = True
-                    except (EOFError, KeyboardInterrupt):
-                        print()
-                    except Exception as e:
-                        print(f"  ✗ CRK eval pack install failed: {e}")
-
-                if not _installed:
-                    print("  LYSS-sem: skipped (semantic_score will be null in composite)")
-                    logger.warning(
-                        "CrkSemanticMetric loaded but %s is missing. "
-                        "Run: pip install spacy && python -m spacy download en_core_web_md",
-                        _missing,
-                    )
-
-        except ImportError as e:
-            logger.warning(
-                "CrkSemanticMetric not available (import error: %s). "
-                "semantic_score will be null in composite.", e
-            )
+    # --- Method-declared metric plugins (CONTESTANT-SPECIFIC) ---
+    # These are method-specific metrics that a translation pipeline
+    # declares for its own diagnostic purposes. They are NOT evaluation
+    # standards — they supplement the language card metrics.
+    # Only loaded if explicitly provided via --method flag.
+    if method_dir is not None:
+        method_plugins = _load_method_metric_plugins(method_dir)
+        plugins.extend(method_plugins)
 
     # --- Behavioral plugins (language-agnostic, always loaded) ---
     # These detect specific failure modes in translation output.
@@ -395,6 +681,36 @@ def discover_metric_plugins(
     plugins.append(term_plugin)
     glossary_status = "with glossary" if config.get("glossary") else "no glossary (metric inactive)"
     print(f"  Terminology: loaded (TerminologyPlugin — {glossary_status})")
+
+    # --- Writing style metric (informational, NOT in composite) ---
+    # Measures register consistency, sentence length similarity, and
+    # formality alignment. Always loaded but only produces meaningful
+    # results when the corpus has register metadata or a style profile
+    # is provided via --style-profile.
+    try:
+        from mt_eval_harness.plugins.writing_style import (
+            WritingStyleMetric, StyleProfile,
+        )
+        style_profile = None
+        style_profile_path = config.get("style_profile")
+        if style_profile_path:
+            import json
+            from pathlib import Path
+            profile_path = Path(style_profile_path)
+            if profile_path.exists():
+                profile_data = json.loads(profile_path.read_text(encoding="utf-8"))
+                style_profile = StyleProfile.from_dict(profile_data)
+                print(f"  Writing style: loaded with profile from {profile_path.name}")
+            else:
+                print(f"  Writing style: ⚠ profile not found at {style_profile_path}")
+        else:
+            print("  Writing style: loaded (no profile — auto-detecting from corpus)")
+
+        style_plugin = WritingStyleMetric(style_profile=style_profile)
+        plugins.append(style_plugin)
+    except ImportError as e:
+        # Should not happen — plugin ships with the harness
+        logger.warning("WritingStyleMetric failed to import: %s", e)
 
     if plugins:
         print(f"  Auto-discovered {len(plugins)} metric plugin(s) for {lang_code}")

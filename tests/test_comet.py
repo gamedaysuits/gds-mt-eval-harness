@@ -1,15 +1,3 @@
-"""Tests for COMET metric integration.
-
-These tests validate the guard logic and interface contract of
-metrics_comet.py. Tests that require the actual COMET model
-(~2.3 GB download) are marked @pytest.mark.slow and skipped
-in standard CI runs.
-
-Run the full suite (including slow tests) with:
-    pytest tests/test_comet.py -v -m "not slow"
-    pytest tests/test_comet.py -v               # includes slow tests
-"""
-
 import pytest
 from unittest.mock import patch, MagicMock
 from mt_eval_harness.metrics_comet import (
@@ -18,7 +6,11 @@ from mt_eval_harness.metrics_comet import (
     COMETResult,
     compute_comet,
     corpus_comet,
-    _XLMR_HIGH_RESOURCE,
+)
+from mt_eval_harness.language_cards import (
+    is_xlmr_high_resource,
+    has_africomet,
+    get_metric_model_for,
 )
 
 
@@ -88,19 +80,41 @@ class TestCOMETResult:
 
 
 # ---------------------------------------------------------------------------
-# Test: low-resource language detection
+# Test: low-resource language detection (SSOT-driven)
 # ---------------------------------------------------------------------------
 
 class TestLowResourceDetection:
-    """Verify XLM-R coverage table logic."""
+    """Verify XLM-R coverage from language cards (metricModelSupport)."""
 
-    def test_high_resource_languages_present(self):
-        for lang in ["en", "fr", "de", "es", "zh", "ja", "ko", "ar", "ru"]:
-            assert lang in _XLMR_HIGH_RESOURCE, f"{lang} should be high-resource"
+    def test_high_resource_languages(self):
+        # Uses ISO 639-3 codes — data comes from language cards SSOT
+        for lang in ["eng", "fra", "deu", "spa", "cmn", "jpn", "kor", "rus"]:
+            assert is_xlmr_high_resource(lang), f"{lang} should be high-resource"
+
+    def test_639_1_codes_resolve(self):
+        # 639-1 codes should also work via resolve_code
+        for lang in ["en", "fr", "de"]:
+            assert is_xlmr_high_resource(lang), f"{lang} (639-1) should resolve"
 
     def test_low_resource_not_present(self):
         # Plains Cree is not in XLM-R top tier
-        assert "crk" not in _XLMR_HIGH_RESOURCE
+        assert not is_xlmr_high_resource("crk")
+
+    def test_africomet_languages(self):
+        for lang in ["yor", "zul", "amh"]:
+            assert has_africomet(lang), f"{lang} should have AfriCOMET"
+
+    def test_non_african_no_africomet(self):
+        assert not has_africomet("fra")
+        assert not has_africomet("crk")
+
+    def test_africomet_model_recommendation(self):
+        model = get_metric_model_for("yor")
+        assert model == "masakhane/africomet-mtl"
+
+    def test_no_model_for_default(self):
+        model = get_metric_model_for("fra")
+        assert model is None
 
 
 # ---------------------------------------------------------------------------

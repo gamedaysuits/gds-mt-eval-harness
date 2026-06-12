@@ -147,7 +147,12 @@ class ToolCallStrategy:
             total_latency += result.get("latency_s", 0)
             if result.get("usage"):
                 for k, v in result["usage"].items():
-                    total_usage[k] = total_usage.get(k, 0) + v
+                    if isinstance(v, bool):
+                        total_usage[k] = v  # Pass through flags
+                    elif isinstance(v, (int, float)):
+                        total_usage[k] = total_usage.get(k, 0) + v
+                    # Skip nested dicts (e.g., prompt_tokens_details) —
+                    # the top-level token counts are what we need for cost
 
             if result.get("error"):
                 return {

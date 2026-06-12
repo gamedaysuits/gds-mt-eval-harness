@@ -236,7 +236,22 @@ def load_corpus(config: RunConfig) -> tuple[list[dict], dict]:
 
     corpus_path = Path(config.corpus_path)
     if not corpus_path.exists():
-        raise FileNotFoundError(f"Corpus not found: {corpus_path}")
+        # Fetch-from-source: a missing corpus may be described by a
+        # corpora card (cli/shared/corpora-cards/) with a `source`
+        # block — Champollion doesn't host third-party corpora, it
+        # rebuilds them from the upstream repo into a gitignored cache
+        # (arena/datasets/.cache/).
+        from mt_eval_harness.corpus_fetch import try_fetch_missing_corpus
+
+        fetched = try_fetch_missing_corpus(
+            corpus_path,
+            assume_yes=getattr(config, "assume_yes", False),
+        )
+        if fetched is None:
+            raise FileNotFoundError(f"Corpus not found: {corpus_path}")
+        print(f"  Corpus:      fetched from source → {fetched}")
+        corpus_path = fetched
+        config.corpus_path = str(fetched)
 
     suffix = corpus_path.suffix.lower()
 
@@ -315,9 +330,12 @@ def _apply_filters(entries: list[dict], config: RunConfig) -> list[dict]:
     if dataset == "all":
         return entries
 
-    # Check for segment name
-    if dataset in segment_names:
-        return [e for e in entries if e.get("segment") == dataset]
+    # Check for segment name (case-insensitive — corpus segments may be
+    # mixed case like "Development" while CLI input is lowercased)
+    segment_names_lower = {s.lower(): s for s in segment_names}
+    if dataset in segment_names_lower:
+        actual_name = segment_names_lower[dataset]
+        return [e for e in entries if e.get("segment") == actual_name]
 
     # Check for ID range (e.g., "0-61")
     if "-" in dataset:

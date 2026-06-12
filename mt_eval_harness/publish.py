@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import time
 import urllib.error
 import urllib.request
 import uuid
@@ -34,66 +35,167 @@ from mt_eval_harness.auth import (
 
 
 # ---------------------------------------------------------------------------
-# Language pair helpers
+# Language pair helpers — uses language_cards SSOT
 # ---------------------------------------------------------------------------
-
-# ISO 639-3 shortcodes for common language names.
-# Used to build compact pair codes like "en>crk" for the leaderboard.
 #
-# WHY THE NORMALIZATION:
-#   The harness target_lang field often contains parenthetical annotations
-#   like "Plains Cree (nêhiyawêwin, SRO)" or "French (Canada)". We strip
-#   these before lookup so "Plains Cree (anything)" → "plains cree" → "crk".
-_LANG_CODES = {
-    "english": "en",
-    "plains cree": "crk",
-    "plains cree (sro)": "crk",
-    "plains cree (nêhiyawêwin, sro)": "crk",
-    "french": "fr",
-    "french (canada)": "fr-ca",
-    "spanish": "es",
-    "german": "de",
-    "japanese": "ja",
-    "chinese": "zh",
-    "arabic": "ar",
-    "korean": "ko",
-    "portuguese": "pt",
-    "dutch": "nl",
-    "vietnamese": "vi",
-    "filipino": "fil",
-}
+# Previously contained a hardcoded 17-entry _LANG_CODES dict that could
+# only resolve names for a handful of languages. Deleted in v8 — all
+# resolution now goes through language_cards which indexes all 7,928 cards.
+
+from mt_eval_harness.language_cards import (
+    resolve_code as _lc_resolve_code,
+    resolve_name as _lc_resolve_name,
+)
 
 
-def _normalize_lang_name(name: str) -> str:
-    """Normalize a language name for lookup.
+def _resolve_lang_to_code(name_or_code: str) -> str:
+    """Resolve a language name or code to its ISO 639-3 code.
 
-    Strips parenthetical annotations and extra whitespace:
-        "Plains Cree (nêhiyawêwin, SRO)" → "plains cree"
-    Also tries the full string (lowered) first for exact matches.
+    Tries multiple strategies via the language_cards SSOT:
+        1. Direct code/alias resolution (e.g., "fr" → "fra", "crk" → "crk")
+        2. Name resolution (e.g., "French" → "fra", "Plains Cree" → "crk")
+        3. Name with parenthetical stripped (e.g., "French (Canada)" → "fra")
+        4. Fallback: first 3 chars lowered
+
+    This replaces the old hardcoded _LANG_CODES dict.
     """
-    return name.strip().lower()
+    cleaned = name_or_code.strip()
+    if not cleaned:
+        return "?"
+
+    # Try as code/alias first
+    resolved = _lc_resolve_code(cleaned)
+    if resolved != cleaned:
+        return resolved
+
+    # Try as name
+    code = _lc_resolve_name(cleaned)
+    if code:
+        return code
+
+    # Try stripping parenthetical annotation:
+    # "Plains Cree (nêhiyawêwin, SRO)" → "Plains Cree"
+    if "(" in cleaned:
+        base_name = cleaned.split("(")[0].strip()
+        code = _lc_resolve_name(base_name)
+        if code:
+            return code
+        # Also try the base as a code
+        resolved = _lc_resolve_code(base_name)
+        if resolved != base_name:
+            return resolved
+
+    # If it's already a short code-like string, return as-is
+    if len(cleaned) <= 3 and cleaned.isalpha():
+        return cleaned.lower()
+
+    # Last resort: first 3 chars
+    return cleaned[:3].lower()
 
 
 def _build_language_pair(config: dict) -> str:
-    """Build a compact language pair string like 'en>crk' from config."""
-    src = config.get("source_lang", "English").strip()
+    """Build a compact language pair string like 'eng>crk' from config."""
+    src = config.get("source_lang", "").strip()
     tgt = config.get("target_lang", "").strip()
 
-    src_lower = _normalize_lang_name(src)
-    tgt_lower = _normalize_lang_name(tgt)
+    src_code = _resolve_lang_to_code(src) if src else "?"
+    tgt_code = _resolve_lang_to_code(tgt) if tgt else "?"
 
-    # Try exact match first, then strip parenthetical and retry
-    src_code = _LANG_CODES.get(src_lower)
-    if src_code is None:
-        src_base = src_lower.split("(")[0].strip()
-        src_code = _LANG_CODES.get(src_base, src[:3].lower())
+    return f"{src_code}>{tgt_code}"
 
-    tgt_code = _LANG_CODES.get(tgt_lower)
-    if tgt_code is None:
-        tgt_base = tgt_lower.split("(")[0].strip()
-        tgt_code = _LANG_CODES.get(tgt_base, tgt[:3].lower())
 
-    return f"{src_code}>{tgt_code}" if tgt_code else f"{src_code}>?"
+# ---------------------------------------------------------------------------
+# Corpus license passthrough — datasets registry lookup
+# ---------------------------------------------------------------------------
+
+def _lookup_registry_entry(dataset_id: str) -> dict | None:
+    """Look up a dataset's full entry in the datasets registry.
+
+    Matches by dataset id or alias. Returns the raw registry entry dict,
+    or None when the dataset is not registered (or the registry is missing —
+    e.g. a standalone pip install without the bundled registry).
+    """
+    if not dataset_id:
+        return None
+
+    from mt_eval_harness.config import load_registry
+
+    try:
+        registry = load_registry()
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+    for entry in registry.get("datasets", []):
+        if entry.get("id") == dataset_id or dataset_id in entry.get("aliases", []):
+            return entry
+
+    return None
+
+
+def _resolve_dataset_id(config: dict) -> str:
+    """Resolve the registry dataset id for a run's corpus.
+
+    Older RunLogs record only the segment filter in config["dataset"]
+    (e.g. "all", "dev") and leave config["dataset_id"] empty, so run
+    cards historically published with a meaningless dataset id. When no
+    explicit dataset_id is set, fall back to matching the corpus file's
+    basename against the registry entries' path/local_path so the run
+    card references the real dataset (and inherits its license).
+
+    Resolution order:
+        1. config["dataset_id"] (explicit — always wins)
+        2. registry entry whose path/local_path basename matches
+           config["corpus_path"]'s basename
+        3. config["dataset"] (legacy segment-filter fallback)
+    """
+    explicit = config.get("dataset_id", "")
+    if explicit:
+        return explicit
+
+    corpus_path = config.get("corpus_path") or ""
+    if corpus_path:
+        from mt_eval_harness.config import load_registry
+
+        basename = Path(corpus_path).name
+        try:
+            registry = load_registry()
+        except (FileNotFoundError, json.JSONDecodeError):
+            registry = {}
+        stem = Path(corpus_path).stem
+        for entry in registry.get("datasets", []):
+            for key in ("path", "local_path"):
+                entry_path = entry.get(key)
+                if entry_path and Path(entry_path).name == basename:
+                    return entry["id"]
+            # Fallback: corpus filename stem matches the id or an alias
+            # (covers local-only corpora with no registered path).
+            if stem == entry.get("id") or stem in entry.get("aliases", []):
+                return entry["id"]
+
+    return config.get("dataset", "")
+
+
+def _lookup_corpus_license(dataset_id: str) -> dict | None:
+    """Look up a dataset's license + attribution in the datasets registry.
+
+    The registry (arena/datasets/registry.json, bundled with the harness)
+    records a `license` (SPDX-ish string) and `source` (attribution) for
+    every registered evaluation corpus. Run cards embed these so every
+    leaderboard row carries its corpus license obligations — part of the
+    line-level license tracking described in docs/LICENSING.md.
+
+    Matches by dataset id or alias. Returns:
+        {"license": str | None, "attribution": str | None} on a registry hit,
+        None when the dataset is not registered (or the registry is missing —
+        e.g. a standalone pip install without the bundled registry).
+    """
+    entry = _lookup_registry_entry(dataset_id)
+    if entry is None:
+        return None
+    return {
+        "license": entry.get("license"),
+        "attribution": entry.get("source"),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -280,19 +382,25 @@ def assemble_run_card(
     fst_acceptance_rate = None
     fst_accepted_count = None
 
-    # Check multiple plugin names — the FST plugin was originally CRK-specific
-    # (crk_fst_validity) but is now generic (giellalt_fst_validity) for all
-    # languages with GiellaLT transducers.
-    for fst_key in ("giellalt_fst_validity", "crk_fst_validity", "fst_analyzer"):
+    # giellalt_fst_validity is the canonical FST metric key.
+    # Also check legacy fst_analyzer for pre-plugin standalone reports.
+    for fst_key in ("giellalt_fst_validity", "fst_analyzer"):
         fst_data = plugin_metrics.get(fst_key, {})
         if fst_data and not fst_data.get("error"):
-            # giellalt_fst_validity and crk_fst_validity use avg_fst_validity;
-            # legacy fst_analyzer uses acceptance_rate
-            fst_acceptance_rate = (
-                fst_data.get("avg_fst_validity")
-                or fst_data.get("acceptance_rate")
-            )
-            fst_accepted_count = fst_data.get("accepted")
+            # GiellaLT and CRK FST use 'avg_fst_validity';
+            # legacy fst_analyzer uses 'acceptance_rate'.
+            # Explicit None checks — 0.0 is a valid value (all words invalid)
+            # and must NOT fall through to the legacy key.
+            rate = fst_data.get("avg_fst_validity")
+            if rate is None:
+                rate = fst_data.get("acceptance_rate")
+            fst_acceptance_rate = rate
+            # GiellaLTFSTMetric uses 'total_valid_words';
+            # legacy fst_analyzer uses 'accepted'
+            count = fst_data.get("total_valid_words")
+            if count is None:
+                count = fst_data.get("accepted")
+            fst_accepted_count = count
             break
 
     # If no FST data in TestReport, check for standalone _fst.json file
@@ -310,8 +418,13 @@ def assemble_run_card(
                     "fst_overall_acceptance_rate"
                 )
                 fst_accepted_count = fst_report.get("fst_total_accepted")
-            except (json.JSONDecodeError, KeyError):
-                pass  # Malformed FST report — skip silently
+            except (json.JSONDecodeError, KeyError) as exc:
+                # WARNING: This switches composite scoring to Profile B
+                # (no-FST weights) because fst_acceptance_rate stays None.
+                print(
+                    f"  ⚠ FST report at {fst_report_path} is malformed "
+                    f"({exc}). Composite will use no-FST weights."
+                )
 
     has_fst = fst_acceptance_rate is not None
 
@@ -406,6 +519,12 @@ def assemble_run_card(
     if term_data and not term_data.get("error"):
         terminology_adherence = term_data.get("avg_terminology_adherence")
 
+    # Writing style (informational only — NOT in composite)
+    style_consistency_rate = None
+    ws_data = plugin_metrics.get("writing_style", {})
+    if ws_data and not ws_data.get("error"):
+        style_consistency_rate = ws_data.get("style_consistency_rate")
+
     # -------------------------------------------------------------------
     # Composite score (SCORING_SPEC §4)
     # -------------------------------------------------------------------
@@ -443,11 +562,27 @@ def assemble_run_card(
     ) if entry_count else None
 
     # -------------------------------------------------------------------
+    # Cost-adjusted score (SCORING_SPEC §6.3)
+    # Rewards methods that achieve good composite scores efficiently.
+    # -------------------------------------------------------------------
+    cas = cost_adjusted_score(composite, cost_per_entry)
+
+    # -------------------------------------------------------------------
     # Assemble the run card (BENCHMARK_SPEC §3)
     # -------------------------------------------------------------------
 
     # Detect git provenance from the harness repo
     git_provenance = _detect_git_provenance()
+
+    # Condition label (§3.2). The CLI now derives prompt_version="coached"
+    # when coaching is supplied with the default --prompt, but run logs
+    # produced before that change (or by direct API use) still say "naive"
+    # even though a coaching prompt replaced the naive system prompt at
+    # runtime. Relabel from provenance so the published condition reflects
+    # what actually ran. Explicit non-default labels are preserved.
+    condition = config.get("prompt_version", "")
+    if condition == "naive" and provenance.get("coaching_prompt"):
+        condition = "coached"
 
     run_card = {
         # §3.1 Top-level
@@ -461,13 +596,13 @@ def assemble_run_card(
         # here so that published results can be fully understood and compared.
         "model_slug": config.get("model", ""),
         "model_id": config.get("_model_id", config.get("model", "")),
-        "condition": config.get("prompt_version", ""),
+        "condition": condition,
         "temperature": config.get("_effective_temperature",
                                   config.get("temperature", 0)),
         "max_tokens": config.get("max_tokens"),
         "system_prompt_sha256": provenance.get("system_prompt_sha256", ""),
         "system_prompt_used": provenance.get("system_prompt_used", ""),
-        "coaching_data_sha256": None,  # populated when coaching is used
+        "coaching_data_sha256": provenance.get("coaching_prompt_sha256") or None,
         "fst_version": None,  # populated when FST plugin is registered
         "tools_enabled": config.get("tools_enabled", False),
         "batch_size": config.get("batch_size", 25),
@@ -475,7 +610,7 @@ def assemble_run_card(
 
         # §3.3 Dataset reference
         "dataset": {
-            "id": config.get("dataset_id", "") or config.get("dataset", ""),
+            "id": _resolve_dataset_id(config),
             "version": dataset_meta.get("version", None),
             "language_pair": _build_language_pair(config),
             "source_lang": config.get("source_lang", ""),
@@ -506,7 +641,16 @@ def assemble_run_card(
             "length_ratio": overall.get("avg_length_ratio"),
             # Wired from CrkSemanticMetric: weighted verdict score (0.0–1.0)
             "semantic_score": semantic_score,
+            # §2.4 Behavioral metrics — raw rates, always persisted.
+            # These feed into composite scoring (scoring.py handles inversion)
+            # and must be stored for retroactive rescoring.
+            "code_switching_rate": code_switching_rate,
+            "hallucination_rate": hallucination_rate,
+            "terminology_adherence": terminology_adherence,
+            # §2.5 Writing style (informational — NOT in composite)
+            "style_consistency_rate": style_consistency_rate,
             "composite": composite,
+            "cost_adjusted": cas,
             "quality_tier": quality_tier,
             "errors": overall.get("error_count", 0),
             "by_difficulty": report.get("by_difficulty", {}),
@@ -555,6 +699,28 @@ def assemble_run_card(
     }
 
     # -------------------------------------------------------------------
+    # Corpus license passthrough (docs/LICENSING.md)
+    #
+    # Embed the corpus license + attribution from the datasets registry
+    # so every published run carries its license obligations. Nullable —
+    # unregistered datasets publish fine, with a warning, so ad-hoc
+    # corpora (--corpus path/to/file.json) are not blocked.
+    # -------------------------------------------------------------------
+    license_info = _lookup_corpus_license(run_card["dataset"]["id"])
+    if license_info is None:
+        run_card["corpus_license"] = None
+        run_card["corpus_attribution"] = None
+        print(
+            f"  ⚠ Dataset '{run_card['dataset']['id']}' is not in the "
+            f"datasets registry — corpus_license/corpus_attribution will "
+            f"be null. Register it in arena/datasets/registry.json to "
+            f"track license obligations."
+        )
+    else:
+        run_card["corpus_license"] = license_info["license"]
+        run_card["corpus_attribution"] = license_info["attribution"]
+
+    # -------------------------------------------------------------------
     # Throughput / speed metrics (SCORING_SPEC §7)
     #
     # These are derived from existing RunLog fields. They are NOT in the
@@ -582,9 +748,25 @@ def assemble_run_card(
             total_cost_usd / total_source_chars, 8
         )
 
+    # tokens_per_entry: average token consumption per corpus entry.
+    # Useful for comparing model verbosity across methods.
+    tokens_per_entry = None
+    if entry_count > 0 and total_tokens > 0:
+        tokens_per_entry = round(total_tokens / entry_count, 2)
+
+    # cost_per_1k_tokens: normalize cost by token volume.
+    # Comparable across providers with different pricing models.
+    cost_per_1k_tokens = None
+    if total_tokens > 0 and total_cost_usd > 0:
+        cost_per_1k_tokens = round(
+            total_cost_usd / total_tokens * 1000, 6
+        )
+
     run_card["scores"]["tokens_per_second"] = tokens_per_second
     run_card["scores"]["entries_per_minute"] = entries_per_minute
     run_card["totals"]["cost_per_source_char"] = cost_per_source_char
+    run_card["totals"]["tokens_per_entry"] = tokens_per_entry
+    run_card["totals"]["cost_per_1k_tokens"] = cost_per_1k_tokens
 
     # Add COMET score if computed
     if overall.get("comet_score") is not None:
@@ -611,6 +793,13 @@ def assemble_run_card(
     # Two runs with identical fingerprints used the same experimental
     # setup. Differences are due to API non-determinism or provider
     # model updates.
+    #
+    # NOTE: condition is the DERIVED label (coached runs whose config
+    # still says "naive" are relabelled "coached" above), so a legacy
+    # coached run log republished after that change fingerprints as
+    # "coached" — a different hash/UUID than its original "naive"-labelled
+    # publish. This is intentional: the old label misrepresented the
+    # setup. True naive baselines are unaffected.
     # -------------------------------------------------------------------
     # batch_size and tools_enabled are included because they materially
     # affect output quality — a batch_size=25 run produces different
@@ -664,9 +853,194 @@ def _to_percentage(rate: float) -> float:
     Handles the case where the rate is already in percentage form
     (i.e., > 1.0) by returning it as-is.
     """
+    if rate is None:
+        return None
     if rate > 1.0:
         return round(rate, 1)
     return round(rate * 100, 1)
+
+
+
+def _extract_lyss_verdicts(plugin_metrics: dict | None) -> dict:
+    """Extract per-entry LYSS verdicts from plugin_metrics for SQL columns.
+
+    Maps each plugin's per-entry output key to the denormalized column
+    defined in migration 006 (run_card_entries table). Returns only
+    non-None values to avoid overwriting NULLs with explicit None
+    (Supabase treats them differently).
+
+    Plugin key mapping:
+        giellalt_fst_validity.fst_validity_rate → fst_valid (bool)
+        crk_linter.equivalent_match → equivalent_match (bool)
+        crk_semantic.semantic_verdict → semantic_verdict (str)
+        code_switching.code_switching_rate → code_switching_detected (bool)
+        hallucination.hallucination_rate → hallucination_detected (bool)
+    """
+    if not plugin_metrics:
+        return {}
+
+    verdicts = {}
+
+    # Helper: safely get a plugin result as dict, skipping non-dict values
+    # (e.g., an error string stored by a failed plugin run).
+    def _get_dict(key: str) -> dict:
+        val = plugin_metrics.get(key)
+        return val if isinstance(val, dict) else {}
+
+    # FST validity: rate == 1.0 means all words valid.
+    # giellalt_fst_validity is the sole canonical FST metric key.
+    fst = _get_dict("giellalt_fst_validity")
+    if "fst_validity_rate" in fst:
+        verdicts["fst_valid"] = fst["fst_validity_rate"] == 1.0
+
+    # Linter equivalence: direct boolean from CrkLinterMetric
+    linter = _get_dict("crk_linter")
+    if "equivalent_match" in linter:
+        verdicts["equivalent_match"] = bool(linter["equivalent_match"])
+
+    # Semantic verdict: string from CrkSemanticMetric
+    semantic = _get_dict("crk_semantic")
+    if "semantic_verdict" in semantic:
+        verdicts["semantic_verdict"] = semantic["semantic_verdict"]
+
+    # Code-switching: any rate > 0 means switching detected
+    cs = _get_dict("code_switching")
+    if "code_switching_rate" in cs:
+        verdicts["code_switching_detected"] = cs["code_switching_rate"] > 0
+
+    # Hallucination: any rate > 0 means hallucination detected
+    hall = _get_dict("hallucination")
+    if "hallucination_rate" in hall:
+        verdicts["hallucination_detected"] = hall["hallucination_rate"] > 0
+
+    return verdicts
+
+
+# ---------------------------------------------------------------------------
+# Row validation — required NOT NULL columns (see DATABASE_SCHEMA.md)
+# ---------------------------------------------------------------------------
+
+# Columns that are NOT NULL in run_cards with no DB default, and that must
+# carry a real (non-empty) value for the row to make sense on the leaderboard.
+REQUIRED_ROW_FIELDS = (
+    "id",
+    "submitter",
+    "affirmation",
+    "trust",
+    "model_slug",
+    "dataset_id",
+    "language_pair",
+    "harness_version",
+    "run_card",
+    "fingerprint_hash",
+)
+
+# NOT NULL columns where an empty string is technically valid (e.g. a run
+# without a prompt_version has condition "") — only None/missing is an error.
+REQUIRED_NOT_NULL_FIELDS = (
+    "condition",
+)
+
+# Nullable columns that are explicitly OPTIONAL: a None value must never
+# block a publish. corpus_license/corpus_attribution (migration 015) are
+# null for datasets missing from arena/datasets/registry.json — assembly
+# prints a warning instead of failing, so ad-hoc corpora stay publishable.
+OPTIONAL_NULLABLE_FIELDS = (
+    "corpus_license",
+    "corpus_attribution",
+)
+
+
+def validate_row(row: dict) -> list[str]:
+    """Check a Supabase run_cards row for required NOT NULL fields.
+
+    Returns a list of field names that are missing, None, or empty
+    (empty string / empty dict). An empty list means the row is valid.
+
+    This guards against posting rows that the DB would reject (NOT NULL
+    violations) or that would render as blank leaderboard entries.
+    """
+    problems = []
+
+    for field in REQUIRED_ROW_FIELDS:
+        value = row.get(field)
+        if value is None:
+            problems.append(field)
+        elif isinstance(value, str) and not value.strip():
+            problems.append(field)
+        elif isinstance(value, dict) and not value:
+            problems.append(field)
+
+    for field in REQUIRED_NOT_NULL_FIELDS:
+        if row.get(field) is None:
+            problems.append(field)
+
+    # OPTIONAL_NULLABLE_FIELDS are deliberately NOT checked: a null
+    # corpus_license/corpus_attribution is valid (unregistered dataset)
+    # and must not block the publish.
+
+    return problems
+
+
+# ---------------------------------------------------------------------------
+# Resilient POST — retry with exponential backoff
+# ---------------------------------------------------------------------------
+
+# 3 attempts with 1s/2s/4s exponential backoff between retries.
+UPSERT_MAX_ATTEMPTS = 3
+UPSERT_BACKOFF_S = (1, 2, 4)
+
+
+def _upsert_with_retry(
+    req: urllib.request.Request,
+    timeout: int = 15,
+    max_attempts: int = UPSERT_MAX_ATTEMPTS,
+) -> dict:
+    """POST a prepared request to Supabase, retrying transient failures.
+
+    Retries on HTTP 5xx and network-level errors (URLError, timeouts)
+    with exponential backoff. 4xx responses are real errors (bad payload,
+    auth, RLS rejection) — those fail immediately with the response body.
+
+    Args:
+        req: A fully-prepared urllib Request (headers + body set).
+        timeout: Per-attempt socket timeout in seconds.
+        max_attempts: Total number of attempts (including the first).
+
+    Returns:
+        The parsed JSON response body.
+
+    Raises:
+        SystemExit on a 4xx response or after all attempts are exhausted.
+    """
+    last_error = "unknown error"
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read())
+        except urllib.error.HTTPError as exc:
+            body = exc.read().decode()
+            if exc.code < 500:
+                # Client error — retrying won't help. Show the body so the
+                # user can see what Supabase rejected (RLS, schema, auth).
+                print(f"\n  ❌ Publish failed ({exc.code}): {body}")
+                raise SystemExit(1)
+            last_error = f"HTTP {exc.code}: {body[:200]}"
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            # Network-level failure: DNS, connection refused, timeout.
+            last_error = f"network error: {exc}"
+
+        if attempt < max_attempts:
+            delay = UPSERT_BACKOFF_S[min(attempt - 1, len(UPSERT_BACKOFF_S) - 1)]
+            print(
+                f"  ⚠ Attempt {attempt}/{max_attempts} failed "
+                f"({last_error}). Retrying in {delay}s..."
+            )
+            time.sleep(delay)
+
+    print(f"\n  ❌ Publish failed after {max_attempts} attempts ({last_error})")
+    raise SystemExit(1)
 
 
 def publish_to_supabase(
@@ -740,14 +1114,15 @@ def publish_to_supabase(
             f"Results generated by mt-eval harness v{run_card['harness_version']} "
             f"and submitted by {submitter} via CLI."
         ),
-        # Trust tiers: self-benchmarked, gds-verified, community-validated
-        # CLI submissions are always self-benchmarked; elevated tiers are
-        # granted through manual review.
-        "trust": "self-benchmarked",
+        # Trust tier: CLI submissions are always 'unverified'.
+        # The DB enforces CHECK(trust IN ('unverified','verified','disqualified'))
+        # and the INSERT RLS requires trust='unverified'. Elevated tiers
+        # are granted via admin dashboard using service_role key.
+        "trust": "unverified",
         "model_slug": run_card["model_slug"],
         "condition": run_card["condition"],
         "dataset_id": dataset["id"],
-        "language_pair": dataset.get("language_pair", "en>crk"),
+        "language_pair": dataset.get("language_pair", "unknown>unknown"),
         "harness_version": run_card["harness_version"],
         "chrf_plus_plus": scores.get("chrf_plus_plus"),
         "corpus_bleu": run_card.get("corpus_bleu"),
@@ -791,6 +1166,8 @@ def publish_to_supabase(
         "batch_size": run_card.get("batch_size"),
         "temperature": run_card.get("temperature"),
         "max_tokens": run_card.get("max_tokens"),
+        # Method class from method card (raw-llm, coached-llm, pipeline, etc.)
+        "method_class": (run_card.get("method_card") or {}).get("class"),
         # New surface metrics — TER and length ratio
         "ter": scores.get("ter"),
         "length_ratio": scores.get("length_ratio"),
@@ -798,6 +1175,26 @@ def publish_to_supabase(
         "tokens_per_second": scores.get("tokens_per_second"),
         "entries_per_minute": scores.get("entries_per_minute"),
         "cost_per_source_char": totals.get("cost_per_source_char"),
+        # Latency statistics — top-level columns for leaderboard sorting.
+        # These exist in the run_card JSON scores block but also need
+        # to be top-level for SQL queries (CLI migration 20260528024953).
+        "median_latency_seconds": scores.get("median_latency_seconds"),
+        "p95_latency_seconds": scores.get("p95_latency_seconds"),
+        # Token efficiency metrics (SCORING_SPEC §6.1, §6.2)
+        "tokens_per_entry": totals.get("tokens_per_entry"),
+        "cost_per_1k_tokens": totals.get("cost_per_1k_tokens"),
+        # §2.4 Behavioral metrics — top-level columns for SQL queryability.
+        # Stored as raw rates (0.0–1.0), not percentages.
+        "code_switching_rate": scores.get("code_switching_rate"),
+        "hallucination_rate": scores.get("hallucination_rate"),
+        "terminology_adherence": scores.get("terminology_adherence"),
+        # §2.5 Writing style (informational only — not in composite)
+        "style_consistency_rate": scores.get("style_consistency_rate"),
+        # Corpus license passthrough (migration 015) — nullable TEXT columns.
+        # Sourced from arena/datasets/registry.json at assembly time; null
+        # for unregistered datasets (a warning was printed during assembly).
+        "corpus_license": run_card.get("corpus_license"),
+        "corpus_attribution": run_card.get("corpus_attribution"),
     }
 
     # --- Preview ---
@@ -808,6 +1205,8 @@ def publish_to_supabase(
     print(f"  Temperature:   {run_card.get('temperature', '?')}")
     print(f"  Max tokens:    {run_card.get('max_tokens', '?')}")
     print(f"  Dataset:       {dataset['id']} ({scores.get('total', '?')} entries)")
+    if run_card.get("corpus_license"):
+        print(f"  License:       {run_card['corpus_license']}")
     # Show entry count — entries will be stored individually in run_card_entries
     report_data = json.loads(Path(report_path).read_text(encoding="utf-8"))
     entry_count = len(report_data.get("entries", []))
@@ -836,6 +1235,9 @@ def publish_to_supabase(
     composite = scores.get("composite")
     if composite is not None:
         print(f"  Composite:     {composite:.4f} ({scores.get('quality_tier', 'unscored')})")
+    cost_adj = scores.get("cost_adjusted")
+    if cost_adj is not None:
+        print(f"  Cost-adjusted: {cost_adj:.4f}")
     print(f"  Cost:          ${totals['total_cost_usd']:.4f}")
     if totals.get("cost_per_entry_usd"):
         print(f"  Cost/entry:    ${totals['cost_per_entry_usd']:.6f}")
@@ -857,6 +1259,17 @@ def publish_to_supabase(
             print("  Cancelled.")
             raise SystemExit(0)
 
+    # --- Validate before posting ---
+    # Catch rows the DB would reject (NOT NULL violations) before we
+    # spend a network round-trip — and before partial publishes happen.
+    problems = validate_row(row)
+    if problems:
+        print("\n  ❌ Run card is incomplete — missing or empty required fields:")
+        for field in problems:
+            print(f"       - {field}")
+        print("  Nothing was published. Fix the report/run log and retry.")
+        raise SystemExit(1)
+
     # --- Upsert ---
     print("\n  Publishing...")
     data = json.dumps(row).encode()
@@ -874,20 +1287,103 @@ def publish_to_supabase(
         method="POST",
     )
 
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            result = json.loads(resp.read())
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode()
-        print(f"\n  ❌ Publish failed ({exc.code}): {body}")
-        raise SystemExit(1)
+    result = _upsert_with_retry(req, timeout=15)
 
     print(f"\n  ✅ Published to leaderboard!")
+
+    # --- Upsert dataset metadata ---
+    # Populate the datasets table organically — every publish writes the
+    # corpus metadata so the leaderboard can filter by language pair
+    # without digging into the run_card JSONB blob.
+    #
+    # SCHEMA NOTE: The live datasets table was created by CLI migration
+    # 20260528024953 (with version NOT NULL, segment CHECK, scalar domain).
+    # Arena migration 011 adds difficulty_min/max, domains[], segments[],
+    # updated_at. This upsert is compatible with BOTH pre-011 and post-011
+    # schemas because PostgREST ignores unknown columns in the payload.
+    dataset = run_card.get("dataset", {})
+    dataset_id = dataset.get("id", "")
+
+    # Load report data from disk (needed for dataset metadata and per-entry publishing)
+    report_data = json.loads(Path(report_path).read_text(encoding="utf-8"))
+
+    if dataset_id:
+        # Extract corpus metadata from the loaded report
+        by_difficulty = report_data.get("by_difficulty", {})
+        difficulty_levels = [
+            int(k) for k in by_difficulty.keys() if k.isdigit()
+        ] if by_difficulty else []
+        by_domain = report_data.get("by_domain", {})
+        by_segment = report_data.get("by_segment", {})
+
+        # PostgREST TEXT[] format: {"val1","val2"} not ["val1","val2"]
+        # json.dumps converts Python lists to JSON arrays, which PostgREST
+        # accepts for TEXT[] columns when Content-Type is application/json.
+        domain_list = list(by_domain.keys()) if by_domain else []
+        segment_list = list(by_segment.keys()) if by_segment else []
+
+        # Enrich with license/attribution metadata from the bundled
+        # datasets registry (arena/datasets/registry.json) when the
+        # dataset is registered — keeps the datasets table's license
+        # obligations in sync with the run_cards corpus_license column.
+        registry_entry = _lookup_registry_entry(dataset_id) or {}
+
+        dataset_row = {
+            "id": dataset_id,
+            "name": registry_entry.get("name") or dataset_id,
+            # version is NOT NULL in the CLI schema (until migration 011
+            # relaxes it), so we must provide a fallback.
+            "version": dataset.get("version")
+                or registry_entry.get("version")
+                or "unknown",
+            "source_language": dataset.get("source_lang", "en"),
+            "target_language": dataset.get("target_lang", ""),
+            "language_pair": dataset.get("language_pair", ""),
+            "entry_count": dataset.get("entry_count")
+                or registry_entry.get("size"),
+            "sha256": dataset.get("sha256", ""),
+            # License + attribution from the registry (nullable TEXT columns;
+            # PostgREST ignores them on schemas that predate the columns).
+            "license": registry_entry.get("license"),
+            "source": registry_entry.get("source"),
+            "domain": registry_entry.get("domain"),
+            "notes": registry_entry.get("notes"),
+            # Arena-specific columns (added by migration 011).
+            # PostgREST silently ignores unknown columns, so this is
+            # safe to send even before 011 is applied.
+            "difficulty_min": min(difficulty_levels) if difficulty_levels else None,
+            "difficulty_max": max(difficulty_levels) if difficulty_levels else None,
+            "domains": domain_list,
+            "segments": segment_list,
+        }
+        try:
+            ds_data = json.dumps(dataset_row).encode()
+            ds_req = urllib.request.Request(
+                f"{SUPABASE_URL}/rest/v1/datasets",
+                data=ds_data,
+                headers={
+                    "apikey": SUPABASE_ANON_KEY,
+                    "Authorization": f"Bearer {access_token}",
+                    "Content-Type": "application/json",
+                    "Prefer": "resolution=merge-duplicates",
+                },
+                method="POST",
+            )
+            with urllib.request.urlopen(ds_req, timeout=10) as ds_resp:
+                ds_resp.read()
+            print(f"  ✅ Dataset '{dataset_id}' registered")
+        except (urllib.error.HTTPError, urllib.error.URLError, OSError) as e:
+            # Non-fatal — the datasets table is secondary metadata.
+            # The run_card (primary) is already published.
+            err_detail = ""
+            if hasattr(e, "read"):
+                err_detail = f": {e.read().decode()[:200]}"
+            print(f"  ⚠ Dataset upsert skipped ({e}{err_detail})")
 
     # --- Publish per-entry data ---
     # Load entries from the report and batch-insert into run_card_entries.
     # This enables per-entry drill-down on the leaderboard website.
-    report_data = json.loads(Path(report_path).read_text(encoding="utf-8"))
+    # (report_data already loaded above)
     entries = report_data.get("entries", [])
 
     if entries:
@@ -944,6 +1440,10 @@ def _publish_entries(
             "tool_call_count": entry.get("tool_call_count", 0),
             "error": entry.get("error"),
             "plugin_metrics": entry.get("plugin_metrics", {}),
+            # Per-entry LYSS verdicts — denormalized from plugin_metrics
+            # for SQL-level filtering without JSONB path queries.
+            # These columns mirror migration 006 additions to run_card_entries.
+            **_extract_lyss_verdicts(entry.get("plugin_metrics", {})),
         }
         rows.append(row)
 
@@ -978,7 +1478,20 @@ def _publish_entries(
                 f"  ⚠ Entry batch {i // BATCH_SIZE + 1} failed "
                 f"({exc.code}): {body[:200]}"
             )
+        except (urllib.error.URLError, OSError) as exc:
+            # Network-level failure (DNS, connection refused, timeout).
+            # Don't crash — the run_card is already published and the
+            # entries can be re-published via `mt-eval publish --force`.
+            print(
+                f"  ⚠ Entry batch {i // BATCH_SIZE + 1} failed "
+                f"(network error): {exc}"
+            )
 
     if total_inserted > 0:
         print(f"  ✅ {total_inserted}/{len(rows)} entries published")
+    elif rows:
+        print(
+            f"  ⚠ All {len(rows)} entries failed to publish. "
+            f"Re-run with `mt-eval publish --force` to retry."
+        )
 
