@@ -281,13 +281,31 @@ class TestResolveDatasetId:
         }
         assert publish._resolve_dataset_id(config) == "crk-master-corpus"
 
-    def test_unknown_corpus_falls_back_to_legacy_filter(self):
+    def test_unknown_corpus_falls_back_to_file_stem(self):
+        # Ad-hoc corpora with no registry match publish under their file
+        # stem — never the segment filter ("all"), which is meaningless
+        # as a dataset id and unmatchable by the contribution queue.
         config = {
             "dataset_id": "",
             "corpus_path": "/tmp/some-ad-hoc-corpus.json",
             "dataset": "all",
         }
-        assert publish._resolve_dataset_id(config) == "all"
+        assert publish._resolve_dataset_id(config) == "some-ad-hoc-corpus"
+
+    def test_corpus_self_meta_corpus_id_wins_over_stem(self):
+        # Self-describing curated corpora carry their canonical id —
+        # preferred over registry/stem resolution (works on pip installs
+        # where the bundled registry does not exist).
+        config = {
+            "dataset_id": "",
+            "corpus_path": "/tmp/eng-xyz-dev-v1.json",
+            "dataset": "all",
+        }
+        corpus_meta = {"corpus_id": "tatoeba-eng-xyz-dev"}
+        assert (
+            publish._resolve_dataset_id(config, corpus_meta)
+            == "tatoeba-eng-xyz-dev"
+        )
 
     def test_no_corpus_path_falls_back_to_legacy_filter(self):
         config = {"dataset_id": "", "corpus_path": None, "dataset": "dev"}

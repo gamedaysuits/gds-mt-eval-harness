@@ -22,6 +22,7 @@ import hashlib
 import json
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import uuid
 from pathlib import Path
@@ -93,8 +94,47 @@ def _resolve_lang_to_code(name_or_code: str) -> str:
     return cleaned[:3].lower()
 
 
-def _build_language_pair(config: dict) -> str:
-    """Build a compact language pair string like 'eng>crk' from config."""
+def _load_corpus_self_meta(config: dict) -> dict:
+    """Read self-describing metadata from the run's corpus file, if present.
+
+    Curated corpora built by champollion-corpora-builder embed their own
+    identity: top-level corpus_id, language_pair (with ISO 639-3 codes),
+    version, and provenance.license. For a pip-installed harness this is
+    the only reliable metadata source — the datasets registry and the
+    language-cards SSOT are monorepo files, not package data — so corpus
+    self-metadata is preferred when resolving dataset ids, language pairs,
+    and corpus licenses.
+
+    Returns {} when the corpus file is missing or unreadable (publish may
+    run from a different cwd than the run; that must never block it).
+    """
+    corpus_path = config.get("corpus_path") or ""
+    if not corpus_path:
+        return {}
+    path = Path(corpus_path)
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, UnicodeDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def _build_language_pair(config: dict, corpus_meta: dict | None = None) -> str:
+    """Build a compact language pair string like 'eng>crk'.
+
+    Prefers the ISO 639-3 codes embedded in the corpus file itself
+    (authoritative, and immune to name-resolution fallbacks like
+    "Igbo"[:3] → "igb", which is Ebira's code). Falls back to resolving
+    the configured language names via the language-cards SSOT.
+    """
+    pair = (corpus_meta or {}).get("language_pair") or {}
+    src_code = (pair.get("source") or "").strip().lower()
+    tgt_code = (pair.get("target") or "").strip().lower()
+    if src_code and tgt_code:
+        return f"{src_code}>{tgt_code}"
+
     src = config.get("source_lang", "").strip()
     tgt = config.get("target_lang", "").strip()
 
@@ -132,7 +172,7 @@ def _lookup_registry_entry(dataset_id: str) -> dict | None:
     return None
 
 
-def _resolve_dataset_id(config: dict) -> str:
+def _resolve_dataset_id(config: dict, corpus_meta: dict | None = None) -> str:
     """Resolve the registry dataset id for a run's corpus.
 
     Older RunLogs record only the segment filter in config["dataset"]
@@ -144,13 +184,20 @@ def _resolve_dataset_id(config: dict) -> str:
 
     Resolution order:
         1. config["dataset_id"] (explicit — always wins)
-        2. registry entry whose path/local_path basename matches
+        2. the corpus file's own top-level "corpus_id" (self-describing
+           curated corpora — works for pip installs with no registry)
+        3. registry entry whose path/local_path basename matches
            config["corpus_path"]'s basename
-        3. config["dataset"] (legacy segment-filter fallback)
+        4. the corpus file's stem (still queue-matchable)
+        5. config["dataset"] (legacy segment-filter fallback)
     """
     explicit = config.get("dataset_id", "")
     if explicit:
         return explicit
+
+    self_id = ((corpus_meta or {}).get("corpus_id") or "").strip()
+    if self_id:
+        return self_id
 
     corpus_path = config.get("corpus_path") or ""
     if corpus_path:
@@ -171,6 +218,11 @@ def _resolve_dataset_id(config: dict) -> str:
             # (covers local-only corpora with no registered path).
             if stem == entry.get("id") or stem in entry.get("aliases", []):
                 return entry["id"]
+        # No registry match (e.g. pip install with no bundled registry):
+        # the corpus file stem is still meaningful and queue-matchable —
+        # never publish the segment filter ("all"/"dev") as a dataset id.
+        if stem:
+            return stem
 
     return config.get("dataset", "")
 
@@ -182,7 +234,7 @@ def _lookup_corpus_license(dataset_id: str) -> dict | None:
     records a `license` (SPDX-ish string) and `source` (attribution) for
     every registered evaluation corpus. Run cards embed these so every
     leaderboard row carries its corpus license obligations — part of the
-    line-level license tracking described in docs/LICENSING.md.
+    project's line-level license tracking policy.
 
     Matches by dataset id or alias. Returns:
         {"license": str | None, "attribution": str | None} on a registry hit,
@@ -325,6 +377,10 @@ def assemble_run_card(
     # Falls back to empty dict for legacy RunLogs that predate provenance.
     provenance = run_log.get("provenance", {})
     dataset_meta = provenance.get("dataset_meta", {})
+    # Self-describing metadata from the corpus file itself (corpus_id,
+    # ISO-coded language_pair, provenance.license). Empty dict when the
+    # corpus file isn't reachable from the publish cwd.
+    corpus_meta = _load_corpus_self_meta(config)
 
     # Load method card if provided
     method_card = None
@@ -610,9 +666,10 @@ def assemble_run_card(
 
         # §3.3 Dataset reference
         "dataset": {
-            "id": _resolve_dataset_id(config),
-            "version": dataset_meta.get("version", None),
-            "language_pair": _build_language_pair(config),
+            "id": _resolve_dataset_id(config, corpus_meta),
+            "version": dataset_meta.get("version")
+                or corpus_meta.get("version"),
+            "language_pair": _build_language_pair(config, corpus_meta),
             "source_lang": config.get("source_lang", ""),
             "target_lang": config.get("target_lang", ""),
             "sha256": provenance.get("corpus_sha256", ""),
@@ -699,7 +756,7 @@ def assemble_run_card(
     }
 
     # -------------------------------------------------------------------
-    # Corpus license passthrough (docs/LICENSING.md)
+    # Corpus license passthrough (project licensing policy)
     #
     # Embed the corpus license + attribution from the datasets registry
     # so every published run carries its license obligations. Nullable —
@@ -707,6 +764,18 @@ def assemble_run_card(
     # corpora (--corpus path/to/file.json) are not blocked.
     # -------------------------------------------------------------------
     license_info = _lookup_corpus_license(run_card["dataset"]["id"])
+    if license_info is None and corpus_meta:
+        # Registry unavailable or dataset unregistered (typical for a
+        # pip-installed harness) — fall back to the license the corpus
+        # file carries in its own provenance block.
+        corpus_prov = corpus_meta.get("provenance") or {}
+        self_license = (corpus_prov.get("license") or "").strip()
+        if self_license:
+            attribution = (corpus_prov.get("source_url") or "").strip()
+            license_info = {
+                "license": self_license,
+                "attribution": attribution or None,
+            }
     if license_info is None:
         run_card["corpus_license"] = None
         run_card["corpus_attribution"] = None
@@ -1043,6 +1112,27 @@ def _upsert_with_retry(
     raise SystemExit(1)
 
 
+def _fetch_existing_card(card_id: str) -> dict | None:
+    """Return the existing run_cards row for this id, or None.
+
+    Read-only anon GET — run_cards SELECT is public. Network errors are
+    treated as "not found" so a flaky pre-flight never blocks a publish;
+    the upsert itself remains the authoritative gate.
+    """
+    req = urllib.request.Request(
+        f"{SUPABASE_URL}/rest/v1/run_cards"
+        f"?id=eq.{urllib.parse.quote(card_id)}"
+        "&select=id,submitter,submitted_at,trust",
+        headers={"apikey": SUPABASE_ANON_KEY},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            rows = json.loads(resp.read())
+            return rows[0] if rows else None
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+        return None
+
+
 def publish_to_supabase(
     report_path: str | Path,
     method_card_path: str | Path | None = None,
@@ -1269,6 +1359,28 @@ def publish_to_supabase(
             print(f"       - {field}")
         print("  Nothing was published. Fix the report/run log and retry.")
         raise SystemExit(1)
+
+    # --- Duplicate pre-flight ---
+    # The card id is a deterministic UUID over the experiment fingerprint,
+    # and submissions are immutable by design: migration 019 removed the
+    # UPDATE policy on run_cards, so an upsert that hits an existing row is
+    # rejected by RLS with an opaque 403 ("USING expression"). Check first
+    # and explain, instead of failing.
+    existing = _fetch_existing_card(card_id)
+    if existing is not None:
+        print(
+            "\n  ✓ This exact experiment is already on the leaderboard "
+            "(submissions are immutable):"
+        )
+        print(f"      id:           {card_id}")
+        print(f"      submitter:    {existing.get('submitter', '?')}")
+        print(f"      submitted at: {existing.get('submitted_at', '?')}")
+        print(
+            "    Nothing to publish. Run the experiment with a different "
+            "model/corpus/condition,\n    or contact a moderator if this "
+            "card needs correction."
+        )
+        return existing
 
     # --- Upsert ---
     print("\n  Publishing...")

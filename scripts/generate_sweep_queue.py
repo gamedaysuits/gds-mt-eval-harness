@@ -9,7 +9,8 @@ the artifact behind champollion.dev/queue.json and the /contribute page:
      harness mirror (``access: "local"``, ``segment: "development"``) and
      carry a redistributable license (CC-BY family, non-NC) are queued.
      NC-licensed (EdTeKLA) and quarantined corpora are excluded — see
-     docs/LICENSING.md (NC content stays out of open contribution lanes).
+     the project licensing policy (NC content stays out of open
+     contribution lanes).
   2. ``arena/eval/logs/sweep_manifest.json`` — the validated model lineup
      and observed per-run costs from the 2026-06-11 baseline sweep.
      Cost estimates are either the *observed* cost for that exact
@@ -31,6 +32,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -46,8 +48,14 @@ DEFAULT_OUTPUT = MONOREPO / "cli" / "website" / "static" / "queue.json"
 
 # Public, read-only Supabase config — identical to leaderboard.js.
 # RLS restricts the anon key to SELECT; this script never writes.
-SUPABASE_URL = "https://sjdomynysdljkbemupqa.supabase.co"
-SUPABASE_ANON_KEY = "sb_publishable_bV6CFNFnzxhQI0wlBx2J0A_5Vm5gFBp"
+# Env-overridable (MT_EVAL_SUPABASE_URL / MT_EVAL_SUPABASE_ANON_KEY) so the
+# queue can be regenerated against a staging branch during end-to-end tests.
+SUPABASE_URL = os.environ.get(
+    "MT_EVAL_SUPABASE_URL", "https://sjdomynysdljkbemupqa.supabase.co"
+)
+SUPABASE_ANON_KEY = os.environ.get(
+    "MT_EVAL_SUPABASE_ANON_KEY", "sb_publishable_bV6CFNFnzxhQI0wlBx2J0A_5Vm5gFBp"
+)
 
 # Raw-file base of the public harness mirror (arena/ subtree).
 MIRROR_RAW = (

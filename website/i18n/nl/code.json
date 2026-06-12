@@ -1,0 +1,438 @@
+{
+  "theme.ErrorPageContent.title": {
+    "message": "Deze pagina is gecrasht.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Terug naar boven scrollen",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archief",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archief",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigatie bloglijstpagina",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Nieuwere berichten",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Oudere berichten",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Navigatie blogberichtpagina",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Nieuwer bericht",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Ouder bericht",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "systeemmodus",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "lichte modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "donkere modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Schakelen tussen donkere en lichte modus (momenteel {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Alle tags bekijken",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Broodkruimelnavigatie",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Documentatiepagina's",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Vorige",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Volgende",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Één document getagd|{count} documenten getagd",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} met \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Dit is niet-uitgebrachte documentatie voor {siteTitle} versie {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Dit is documentatie voor {siteTitle} {versionLabel}, die niet langer actief wordt onderhouden.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Raadpleeg voor actuele documentatie de {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "nieuwste versie",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versie: {versionLabel}"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Directe link naar {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " op {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " door {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Laatst bijgewerkt{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.editThisPage": {
+    "message": "Deze pagina bewerken",
+    "description": "The link label to edit the current page"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versies",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina niet gevonden",
+    "description": "The title of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Sluiten",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.caution": {
+    "message": "let op",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "gevaar",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "opmerking",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "waarschuwing",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigatie recente blogberichten",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Zijbalkcategorie '{label}' uitvouwen",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Zijbalkcategorie '{label}' invouwen",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(opent in nieuw tabblad)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Hoofdnavigatie",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "Wij konden niet vinden wat u zocht.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Neem contact op met de eigenaar van de website die u naar de oorspronkelijke URL heeft verwezen en laat hen weten dat de link niet werkt.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Op deze pagina",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Talen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1 min lezen|{readingTime} min lezen",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopiëren",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Gekopieerd",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Code naar klembord kopiëren",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Tekstomloop in-/uitschakelen",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Meer lezen",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Meer lezen over {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Documentatiezijbalk",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Startpagina",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Zijbalk inklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Navigatiebalk sluiten",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Navigatiebalk in-/uitschakelen",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Vervolgkeuzelijst uitvouwen",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Vervolgkeuzelijst inklappen",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Terug naar hoofdmenu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Zijbalk uitvouwen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Zijbalk uitvouwen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.post.plurals": {
+    "message": "1 bericht|{count} berichten",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getagd met \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Auteurs",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Alle auteurs bekijken",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Deze auteur heeft nog geen berichten geschreven.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Niet-vermelde pagina",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Deze pagina is niet vermeld. Zoekmachines indexeren deze pagina niet en alleen gebruikers met een directe link hebben toegang.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Conceptpagina",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Deze pagina is een concept. Deze is alleen zichtbaar in de ontwikkelomgeving en wordt uitgesloten van de productiebuild.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Opnieuw proberen",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Naar hoofdinhoud gaan",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "homepage.hero.subtext": {
+    "message": "De onafhankelijke benchmark voor machine-vertaling van laagbeschikbare talen — 48 ontwikkelcorpora, een scoringsinventaris van 19 metrieken, bootstrap-betrouwbaarheidsintervallen en FST-morfologische validatie voor talen die commerciële diensten nooit zullen ondersteunen."
+  },
+  "homepage.cta.docs": {
+    "message": "Documentatie lezen"
+  },
+  "homepage.cta.github": {
+    "message": "Bekijken op GitHub"
+  },
+  "homepage.pitch.benchmarks.title": {
+    "message": "Gestandaardiseerde benchmarks"
+  },
+  "homepage.pitch.benchmarks.description": {
+    "message": "Reproduceerbare evaluatie met chrF++, exacte overeenkomst, FST-acceptatie, semantische scoring en bootstrap-betrouwbaarheidsintervallen. Elke uitvoering wordt voorzien van een vingerafdruk."
+  },
+  "homepage.pitch.sovereignty.title": {
+    "message": "Gemeenschapszeggenschap"
+  },
+  "homepage.pitch.sovereignty.description": {
+    "message": "Winnende methoden dragen het eigendom over aan de taalgemeenschap. OCAP®-principes. Gemeenschappen beheren hun gegevens, hun methoden en hun inkomsten."
+  },
+  "homepage.pitch.plugin.title": {
+    "message": "Open plugin-architectuur"
+  },
+  "homepage.pitch.plugin.description": {
+    "message": "Gebruik elke methode: een begeleid LLM, een fijnafgestemd model, een FST-gestuurde pipeline of een aangepaste plugin. Als het vertalingen produceert, kan het harness het scoren."
+  },
+  "homepage.pitch.bridge.title": {
+    "message": "Deployment Bridge"
+  },
+  "homepage.pitch.bridge.description": {
+    "message": "Bewezen methoden worden via champollion in productie genomen. Ontwikkelaars gebruiken de API. Inkomsten vloeien terug naar de gemeenschap."
+  },
+  "homepage.benchmarks.title": {
+    "message": "Huidige benchmarks"
+  },
+  "homepage.benchmarks.language": {
+    "message": "Taal:"
+  },
+  "homepage.benchmarks.edtekla.language": {
+    "message": "Engels → Plains Cree (SRO)"
+  },
+  "homepage.benchmarks.entries": {
+    "message": "Vermeldingen:"
+  },
+  "homepage.benchmarks.edtekla.entries": {
+    "message": "486+ gecureerde paren"
+  },
+  "homepage.benchmarks.license": {
+    "message": "Licentie:"
+  },
+  "homepage.benchmarks.source": {
+    "message": "Bron:"
+  },
+  "homepage.benchmarks.edtekla.source": {
+    "message": "University of Alberta"
+  },
+  "homepage.benchmarks.languages": {
+    "message": "Talen:"
+  },
+  "homepage.benchmarks.flores.languages": {
+    "message": "Engels → 39 talen"
+  },
+  "homepage.benchmarks.flores.entries": {
+    "message": "Vermeldingen:"
+  },
+  "homepage.benchmarks.flores.entryCount": {
+    "message": "1.012 zinnen per taal"
+  },
+  "homepage.benchmarks.flores.license": {
+    "message": "Licentie:"
+  },
+  "homepage.benchmarks.flores.source": {
+    "message": "Bron:"
+  },
+  "homepage.links.submit": {
+    "message": "Methode indienen"
+  },
+  "homepage.links.sovereignty": {
+    "message": "Datasoevereiniteit"
+  },
+  "homepage.links.economic": {
+    "message": "Economisch model"
+  },
+  "homepage.links.communities": {
+    "message": "Voor taalgemeenschappen"
+  },
+  "homepage.links.leaderboard": {
+    "message": "Leaderboard"
+  },
+  "homepage.links.cli": {
+    "message": "champollion CLI"
+  },
+  "homepage.links.title": {
+    "message": "Meer informatie"
+  },
+  "homepage.layout.title": {
+    "message": "The MT Eval Arena"
+  },
+  "homepage.layout.description": {
+    "message": "Een open benchmarkplatform voor machine-vertaalmethoden, met een focus op talen die commerciële diensten nooit zullen ondersteunen."
+  },
+  "homepage.hero.hub": {
+    "message": "MT Eval Arena is de evaluatie-engine van het {champollionLink}-project."
+  },
+  "theme.docs.relatedRail.title": {
+    "message": "Als dit u interesseerde →",
+    "description": "Heading of the related-content rail at the bottom of a doc page"
+  }
+}

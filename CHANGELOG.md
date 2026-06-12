@@ -5,6 +5,24 @@ All notable changes to the MT Eval Harness (arena) are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] — 2026-06-12
+
+Stable release. Promotes 3.0.0-rc.1 with the post-rc hardening landed since 2026-06-07:
+
+### Added
+
+- **Fetch-from-source datasets** — EdTeKLA adapter rebuilds NC-licensed eval data byte-identically from the upstream repo at a pinned ref; corpus fetch-on-miss with license prompts and sha256 verification. EdTeKLA-derived data is no longer distributed in the repo.
+- **Contribute queue** — `generate_sweep_queue.py` emits a 798-item public run queue with a curl-able static viewer; `run_baseline_sweep.py` gains parallel workers, manifest-based dedup, and a budget guard.
+- **12 website locale-pair dev corpora** (Tatoeba, CC-BY-2.0) for the dogfood benchmark loop (`eng-{fra,deu,nld,tgl,spa,cmn,jpn,kor,por,tha,vie,arb}-dev-v1`).
+- **Migrations 015–020** — corpus license columns, datasets RLS (held-out hidden), run_cards audit trail, language_experts, insert parity + trust hardening, advisor fixes.
+- **Method validity spec** — dependency classes S/O/A1/A2/X across methods/benchmark/prize docs; dependency manifest in the method.json schema.
+- **Coached-condition labeling** and multi-run parallelism in the harness; auth env overrides; contamination checker with quarantine flow.
+
+### Changed
+
+- `publish.py` hardened: retry/backoff, row validation, license passthrough, dataset metadata upsert, legacy dataset-id resolver, env-overridable Supabase target; idempotent `publish_all_reports.py` (staging-guarded).
+- Test suite grown 534 → 592.
+
 ## [3.0.0-rc.1] — 2026-06-07
 
 ### Added

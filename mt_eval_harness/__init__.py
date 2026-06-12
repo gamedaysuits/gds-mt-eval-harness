@@ -14,7 +14,7 @@ Any translation method can plug into the harness for regularized,
 apple-to-apple comparison. See GUIDE.md for full documentation.
 """
 
-__version__ = "3.0.0-rc.1"
+__version__ = "3.0.0"
 
 # Public API — importable from the top-level package
 from mt_eval_harness.config import (

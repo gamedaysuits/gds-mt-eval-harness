@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mt-eval-harness"
-version = "3.0.0-rc.1"
+version = "3.0.0"
 description = "A configurable, language-agnostic evaluation harness for machine translation pipelines."
 readme = "README.md"
 license = "Apache-2.0"

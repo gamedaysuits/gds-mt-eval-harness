@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "inputLocale": "en",
+  "localesDir": "./i18n",
+  "format": "docusaurus",
+  "model": "google/gemini-3.5-flash",
+  "defaultMethod": "llm",
+  "batchSize": 50,
+  "apiKeyEnvVar": "OPENROUTER_API_KEY",
+  "promptContext": "You are translating the documentation website for the MT Eval Arena, an open benchmarking platform for machine-translation methods (part of the Champollion project). Audience: developers, researchers, and translators. Professional technical register. Preserve ALL markdown/MDX formatting, links, admonitions, tables, code blocks, CLI commands, metric names (chrF++, BLEU, COMET, composite score), config keys, and URLs exactly as-is. Keep proper nouns and metric names in English. Statistical terminology (confidence interval, bootstrap, significance) must be translated with the standard academic term in the target language.",
+  "languages": {
+    "fr": {
+      "register": "formal-vous"
+    },
+    "de": {
+      "register": "formal-Sie"
+    },
+    "nl": {
+      "register": "formal-u"
+    },
+    "fil": {
+      "register": "formal"
+    },
+    "es": {
+      "register": "neutral-latam"
+    },
+    "zh": {
+      "register": "Professional Simplified Chinese (简体中文). Modern technical documentation register. Use established Chinese technical terms (批处理, 缓存, 插件) but keep proper nouns and metric names in English. Developer/researcher-facing — assume the reader writes code."
+    },
+    "ja": {
+      "register": "polite"
+    },
+    "ko": {
+      "register": "polite-haeyo"
+    },
+    "pt": {
+      "register": "professional"
+    },
+    "th": {
+      "register": "neutral-professional"
+    },
+    "vi": {
+      "register": "neutral-ban"
+    },
+    "ar": {
+      "register": "msa-professional"
+    }
+  },
+  "pairs": {
+    "en:fr": {
+      "method": "llm",
+      "model": "anthropic/claude-haiku-4.5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-fra-dev-v1 (run run_20260611_124526_anthropic_claudehaiku45_naive_all_b25): composite 0.5812 [0.542, 0.617], chrF++ 70.57, exact-match 0.27, sweep cost $0.0217. Statistically tied with top scorer google/gemini-3.1-pro-preview (composite 0.602); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:de": {
+      "method": "llm",
+      "model": "anthropic/claude-opus-4.8",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-deu-dev-v1 (run run_20260611_125309_anthropic_claudeopus48_naive_all_b25): composite 0.5895 [0.550, 0.633], chrF++ 70.73, exact-match 0.29, sweep cost $0.1555. Statistically tied with top scorer anthropic/claude-fable-5 (composite 0.593); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:nl": {
+      "method": "llm",
+      "model": "anthropic/claude-sonnet-4.6",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-nld-dev-v1 (run run_20260611_125811_anthropic_claudesonnet46_naive_all_b25): composite 0.5999 [0.558, 0.642], chrF++ 70.19, exact-match 0.34, sweep cost $0.0578. Statistically tied with top scorer anthropic/claude-fable-5 (composite 0.620); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:fil": {
+      "method": "llm",
+      "model": "openai/gpt-5.5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-tgl-dev-v1 (run run_20260611_130619_openai_gpt55_naive_all_b25): composite 0.4993 [0.471, 0.529], chrF++ 63.71, exact-match 0.15, sweep cost $0.2159. Statistically tied with top scorer google/gemini-3.1-pro-preview (composite 0.513); chosen on cost. Tatoeba serves Filipino as Tagalog (tgl) — closest available proxy. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:es": {
+      "method": "llm",
+      "model": "anthropic/claude-haiku-4.5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-spa-dev-v1 (run run_20260611_124638_anthropic_claudehaiku45_naive_all_b25): composite 0.5532 [0.523, 0.584], chrF++ 69.25, exact-match 0.20, sweep cost $0.0212. Statistically tied with top scorer anthropic/claude-fable-5 (composite 0.563); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:zh": {
+      "method": "llm",
+      "model": "anthropic/claude-haiku-4.5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-cmn-dev-v1 (run run_20260611_124518_anthropic_claudehaiku45_naive_all_b25): composite 0.2396 [0.207, 0.278], chrF++ 28.74, exact-match 0.12, sweep cost $0.0209. Corpus uses Tatoeba Mandarin code (cmn). Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:ja": {
+      "method": "llm",
+      "model": "anthropic/claude-sonnet-4.6",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-jpn-dev-v1 (run run_20260611_125827_anthropic_claudesonnet46_naive_all_b25): composite 0.2777 [0.252, 0.304], chrF++ 36.68, exact-match 0.06, sweep cost $0.0819. Statistically tied with top scorer anthropic/claude-opus-4.8 (composite 0.285); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:ko": {
+      "method": "llm",
+      "model": "anthropic/claude-opus-4.8",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-kor-dev-v1 (run run_20260611_125422_anthropic_claudeopus48_naive_all_b25): composite 0.2862 [0.256, 0.318], chrF++ 37.87, exact-match 0.06, sweep cost $0.1432. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:pt": {
+      "method": "llm",
+      "model": "anthropic/claude-haiku-4.5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-por-dev-v1 (run run_20260611_124605_anthropic_claudehaiku45_naive_all_b25): composite 0.6087 [0.576, 0.646], chrF++ 73.41, exact-match 0.29, sweep cost $0.0198. Statistically tied with top scorer openai/gpt-5.5 (composite 0.627); chosen on cost. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:th": {
+      "method": "llm",
+      "model": "anthropic/claude-sonnet-4.6",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-tha-dev-v1 (run run_20260611_130038_anthropic_claudesonnet46_naive_all_b25): composite 0.4682 [0.426, 0.510], chrF++ 56.34, exact-match 0.23, sweep cost $0.0872. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:vi": {
+      "method": "llm",
+      "model": "google/gemini-3.5-flash",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-vie-dev-v1 (run run_20260611_124412_google_gemini35flash_naive_all_b25): composite 0.4631 [0.433, 0.494], chrF++ 60.03, exact-match 0.12, sweep cost $0.1601. Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    },
+    "en:ar": {
+      "method": "llm",
+      "model": "anthropic/claude-fable-5",
+      "temperature": 0.0,
+      "batchSize": 25,
+      "_comment": "Benchmark winner of eng-arb-dev-v1 (run run_20260611_124830_anthropic_claudefable5_naive_all_b25): composite 0.4374 [0.403, 0.478], chrF++ 54.03, exact-match 0.18, sweep cost $0.2712. Statistically tied with top scorer google/gemini-3.1-pro-preview (composite 0.446); chosen on cost. Corpus is MSA (named arb; fetched via Tatoeba code ara). Selected 2026-06-12 per docs/dogfood/DOGFOOD_PLAN.md §4 (highest composite; paired-bootstrap ties -> cheaper)."
+    }
+  }
+}

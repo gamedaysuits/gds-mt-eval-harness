@@ -3,6 +3,7 @@ const sidebars = {
   arenaSidebar: [
     'intro',
     'how-it-works',
+    'how-this-site-is-translated',
     {
       type: 'category',
       label: 'Position Pieces',
