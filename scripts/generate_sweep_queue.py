@@ -313,7 +313,7 @@ def _fetch_run_rows(page_size: int = FETCH_PAGE_SIZE) -> list[dict]:
     while True:
         url = (
             f"{SUPABASE_URL}/rest/v1/run_cards"
-            "?select=dataset_id,model_slug,condition,chrf_plus_plus"
+            "?select=dataset_id,model_slug,condition,chrf_plus_plus,submitted_at"
             "&trust=neq.disqualified&order=id.asc"
             f"&limit={page_size}&offset={offset}"
         )
@@ -367,6 +367,7 @@ def fetch_results() -> tuple[set[tuple[str, str, str]], list[dict]]:
                 "model": model,
                 "condition": cond,
                 "strength": chrf / 100.0,
+                "submitted_at": row.get("submitted_at"),
             })
     return combos, results
 
@@ -652,9 +653,118 @@ def predict_strength(
     }
 
 
+#: chrF++ display bands for the public mesh visualization (champollion.dev/mesh).
+#: Band edges in chrF++ points: <40 red, 40–55 orange, 55–70 yellow,
+#: 70–80 green, 80–90 blue, 90+ white.
+MESH_BANDS = [40, 55, 70, 80, 90]
+
+
+def build_mesh_snapshot(
+    corpora: list[dict],
+    evidence: dict,
+    results: list[dict],
+    registry: dict,
+    *,
+    phi_current: float,
+) -> dict:
+    """Assemble the mesh visualization artifact (static/mesh.json).
+
+    The artifact answers "how did the mesh get filled, and how strong is
+    it?": one node per language (with language-card coordinates for the
+    geographic layout), one edge per registered language pair, and for
+    measured edges the full time-ordered run history so the page can
+    replay growth. Edge ``size`` is the largest registered corpus on the
+    pair (the visualization maps it to stroke thickness).
+    """
+    # token → (pair, size) over the full registry; pair-level max size.
+    token_pair: dict[str, tuple[str, str]] = {}
+    pair_size: dict[frozenset, int] = {}
+    pair_status: dict[frozenset, str] = {}
+    for ds in registry.get("datasets", []):
+        lp = ds.get("language_pair")
+        if not lp:
+            continue
+        pair = (lp["source"], lp["target"])
+        e = frozenset(pair)
+        token_pair[ds["id"].lower()] = pair
+        if ds.get("path"):
+            token_pair[Path(ds["path"]).stem.lower()] = pair
+        pair_size[e] = max(pair_size.get(e, 0), ds.get("size") or 0)
+        pair_status.setdefault(e, "registered")
+
+    # Per-edge run history, time-ordered.
+    edge_runs: dict[frozenset, list[tuple[str, float]]] = {}
+    for r in results:
+        pair = token_pair.get(r["token"])
+        if pair is None or not r.get("submitted_at"):
+            continue
+        e = frozenset(pair)
+        edge_runs.setdefault(e, []).append(
+            (r["submitted_at"], round(r["strength"] * 100, 2))
+        )
+    for runs in edge_runs.values():
+        runs.sort()
+
+    # Nodes: every language in any registered pair, with card coordinates.
+    langs = sorted({lang for e in pair_size for lang in e})
+    nodes = []
+    for lang in langs:
+        card_path = CARDS_DIR / f"{lang}.json"
+        name, lat, lng, family = lang, None, None, None
+        if card_path.exists():
+            try:
+                card = json.loads(card_path.read_text(encoding="utf-8"))
+                name = card.get("name") or lang
+                coords = card.get("coordinates") or {}
+                lat, lng = coords.get("lat"), coords.get("lng")
+                family = (card.get("classification") or {}).get("family")
+            except json.JSONDecodeError:
+                pass
+        nodes.append({
+            "id": lang, "name": name, "lat": lat, "lng": lng,
+            "family": family,
+        })
+
+    edges = []
+    for e in sorted(pair_size, key=lambda x: tuple(sorted(x))):
+        a, b = sorted(e)
+        runs = edge_runs.get(e, [])
+        edges.append({
+            "a": a,
+            "b": b,
+            "size": pair_size[e],
+            "status": "measured" if runs else "registered",
+            "best_chrf": max((c for _t, c in runs), default=None),
+            "runs": [[t, c] for t, c in runs],
+        })
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "generator": "arena/scripts/generate_sweep_queue.py",
+        "formula_version": "ecv-v2",
+        "phi_current": round(phi_current, 6),
+        "bands_chrf": MESH_BANDS,
+        "band_note": (
+            "chrF++ display bands: <40 red, 40-55 orange, 55-70 yellow, "
+            "70-80 green, 80-90 blue, 90+ white. Edge thickness scales "
+            "with the largest registered corpus on the pair. Development-"
+            "set readings — see /docs (scores are baselines, not "
+            "capability claims)."
+        ),
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--output", default=str(DEFAULT_OUTPUT))
+    ap.add_argument(
+        "--mesh-output",
+        default=None,
+        help="Where to write the mesh visualization artifact "
+             "(default: mesh.json next to --output).",
+    )
     ap.add_argument(
         "--offline",
         action="store_true",
