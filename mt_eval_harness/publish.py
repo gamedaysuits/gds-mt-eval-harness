@@ -306,6 +306,90 @@ from mt_eval_harness.scoring import (
 
 
 # ---------------------------------------------------------------------------
+# Pre-publish integrity gate (pre-launch audit 2026-06-13, blocking #3)
+# ---------------------------------------------------------------------------
+
+class PublishIntegrityError(Exception):
+    """Raised when a run card fails a pre-publish integrity check.
+
+    These are hard gates: a run that fails them must not reach the public
+    board. They are the client-runnable complement to the un-bypassable DB
+    triggers (migrations 022 quarantine, 023 score ranges).
+    """
+
+
+def verify_corpus_integrity(run_card: dict) -> list[str]:
+    """Gate a run card against corpus-integrity fraud before publish.
+
+    Stops the two attacks the 2026-06-13 board wipe was caused by:
+      1. Vacuous runs (nothing actually evaluated) — hard fail.
+      2. Running a DIFFERENT corpus than claimed — enforced via sha-parity
+         against the authoritative in-repo registry pin. A submitter
+         computes their own corpus_sha256, but they cannot change the
+         registry, so a mismatch means the published corpus is not the
+         registered one. This check ACTIVATES automatically once the
+         registry pins shas (today many are null — see registry rework /
+         audit #DB2); it is a no-op, with a warning, where no sha is pinned.
+
+    Returns a list of non-fatal warnings. Raises PublishIntegrityError on a
+    hard violation.
+
+    NOT YET ENFORCED HERE (deliberately): entry-count parity against the
+    registry's declared partition (e.g. EdTeKLA's 436-dev vs 486-full). The
+    partition semantics are being reworked alongside the fetch-from-source
+    registry; entry-count enforcement lands WITH that rework so it is built
+    against the final schema rather than a moving one. Until then the DB
+    `evaluated > 0` check (migration 023) plus sha-parity below are the
+    active gates, and the standalone linter (lint_run_reports.py) flags
+    count drift in batch/CI.
+    """
+    warnings: list[str] = []
+    dataset = run_card.get("dataset", {})
+    scores = run_card.get("scores", {})
+
+    # 1. Vacuous-run block.
+    evaluated = scores.get("evaluated")
+    total = dataset.get("entry_count") or scores.get("total") or 0
+    if evaluated is not None and evaluated <= 0:
+        raise PublishIntegrityError(
+            f"Refusing to publish a vacuous run: {evaluated} entries evaluated. "
+            f"A run with no scored entries (e.g. an invalid model id producing "
+            f"all errors) cannot go on the board."
+        )
+    if total <= 0:
+        raise PublishIntegrityError(
+            "Refusing to publish: corpus entry_count is 0."
+        )
+
+    # 2. sha-parity against the authoritative registry pin.
+    dataset_id = dataset.get("id")
+    run_sha = (dataset.get("sha256") or "").strip()
+    entry = _lookup_registry_entry(dataset_id) if dataset_id else None
+    registry_sha = (entry or {}).get("sha256")
+    if registry_sha:  # only enforce where the registry actually pins a sha
+        if not run_sha:
+            raise PublishIntegrityError(
+                f"Dataset '{dataset_id}' is sha-pinned in the registry "
+                f"({registry_sha[:12]}…) but this run reports no corpus sha. "
+                f"Cannot verify you ran the registered corpus."
+            )
+        if run_sha != registry_sha:
+            raise PublishIntegrityError(
+                f"Corpus sha mismatch for '{dataset_id}': run={run_sha[:12]}… "
+                f"vs registry={registry_sha[:12]}…. The corpus you evaluated is "
+                f"not the registered one; publication blocked."
+            )
+    elif entry is not None:
+        warnings.append(
+            f"Dataset '{dataset_id}' has no sha pinned in the registry yet — "
+            f"corpus integrity cannot be fully verified (sha-parity will arm "
+            f"once the registry is sha-pinned)."
+        )
+
+    return warnings
+
+
+# ---------------------------------------------------------------------------
 # Run Card assembly
 # ---------------------------------------------------------------------------
 
@@ -1182,6 +1266,16 @@ def publish_to_supabase(
     run_card, card_id, fingerprint_hash = assemble_run_card(
         report_path, method_card_path
     )
+
+    # --- Pre-publish integrity gate (audit blocking #3) ---
+    # Hard-fail vacuous runs and corpus-sha mismatches before anything
+    # reaches the board. Complements the un-bypassable DB triggers.
+    try:
+        for w in verify_corpus_integrity(run_card):
+            print(f"  ⚠ {w}")
+    except PublishIntegrityError as e:
+        print(f"\n  ✗ INTEGRITY GATE FAILED: {e}")
+        raise SystemExit(1)
 
     # --- Method card wizard ---
     # If no method card was provided and we're interactive, offer the wizard.

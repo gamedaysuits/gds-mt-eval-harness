@@ -452,6 +452,74 @@ class TestCoachedCondition:
 # Row validation
 # ---------------------------------------------------------------------------
 
+class TestVerifyCorpusIntegrity:
+    """verify_corpus_integrity() — pre-publish anti-fraud gate (audit #3)."""
+
+    def _card(self, **over) -> dict:
+        card = {
+            "dataset": {"id": "unregistered_x", "sha256": "abc123", "entry_count": 100},
+            "scores": {"evaluated": 100, "total": 100},
+        }
+        card["dataset"].update(over.get("dataset", {}))
+        card["scores"].update(over.get("scores", {}))
+        return card
+
+    def test_healthy_card_passes(self):
+        # Unregistered dataset -> no registry sha to enforce; no raise.
+        assert publish.verify_corpus_integrity(self._card()) == []
+
+    def test_vacuous_run_blocked(self):
+        with pytest.raises(publish.PublishIntegrityError):
+            publish.verify_corpus_integrity(
+                self._card(scores={"evaluated": 0, "total": 100})
+            )
+
+    def test_zero_entry_count_blocked(self):
+        with pytest.raises(publish.PublishIntegrityError):
+            publish.verify_corpus_integrity(
+                self._card(dataset={"entry_count": 0}, scores={"evaluated": 0, "total": 0})
+            )
+
+    def test_sha_mismatch_blocked_when_registry_pins(self, monkeypatch):
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": "DEADBEEF" + "0" * 56},
+        )
+        with pytest.raises(publish.PublishIntegrityError):
+            publish.verify_corpus_integrity(
+                self._card(dataset={"id": "pinned_ds", "sha256": "WRONGSHA"})
+            )
+
+    def test_sha_match_passes_when_registry_pins(self, monkeypatch):
+        good = "f" * 64
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry", lambda _id: {"sha256": good},
+        )
+        assert publish.verify_corpus_integrity(
+            self._card(dataset={"id": "pinned_ds", "sha256": good})
+        ) == []
+
+    def test_missing_run_sha_blocked_when_registry_pins(self, monkeypatch):
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry", lambda _id: {"sha256": "a" * 64},
+        )
+        with pytest.raises(publish.PublishIntegrityError):
+            publish.verify_corpus_integrity(
+                self._card(dataset={"id": "pinned_ds", "sha256": ""})
+            )
+
+    def test_unpinned_registered_dataset_warns_not_blocks(self, monkeypatch):
+        # Registry entry exists but sha is null (today's schema-debt state):
+        # warn, don't block.
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry", lambda _id: {"sha256": None},
+        )
+        warnings = publish.verify_corpus_integrity(
+            self._card(dataset={"id": "unpinned_ds", "sha256": "whatever"})
+        )
+        assert any("no sha pinned" in w for w in warnings)
+
+
 def _make_valid_row() -> dict:
     """A row carrying every required NOT NULL field."""
     return {
