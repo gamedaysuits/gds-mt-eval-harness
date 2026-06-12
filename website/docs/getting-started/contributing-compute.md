@@ -26,7 +26,7 @@ related:
 
 ## The queue
 
-The live queue is published at [champollion.dev/queue.json](https://champollion.dev/queue.json), and there's a zero-install terminal viewer:
+The live queue is published at [champollion.dev/queue.json](https://champollion.dev/queue.json), and you can watch what your runs build at [champollion.dev/mesh](https://champollion.dev/mesh) — the live map of measured language pairs, with a time scrubber that replays how the mesh got filled. There's also a zero-install terminal viewer:
 
 ```bash
 curl -fsSL champollion.dev/queue | bash

@@ -1087,9 +1087,25 @@ def main() -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(queue, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
+    mesh = build_mesh_snapshot(
+        corpora, evidence, results, registry, phi_current=phi_now,
+    )
+    mesh_out = (
+        Path(args.mesh_output) if args.mesh_output
+        else out.parent / "mesh.json"
+    )
+    mesh_out.parent.mkdir(parents=True, exist_ok=True)
+    mesh_out.write_text(
+        json.dumps(mesh, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
+
     print(f"queue: {len(items)} open items -> {out}")
     print(f"  corpora: {queue['metadata']['corpora']}  models: {len(lineup)}  conditions: {CONDITIONS}")
     print(f"  coverage: {coverage_note}")
+    measured = sum(1 for e in mesh["edges"] if e["status"] == "measured")
+    print(f"  mesh: {len(mesh['nodes'])} languages, {measured} measured / "
+          f"{len(mesh['edges'])} registered edges -> {mesh_out}")
     if skipped_no_card:
         print(f"  skipped (no language card name): {', '.join(skipped_no_card)}")
     return 0
