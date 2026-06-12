@@ -26,6 +26,61 @@ from mt_eval_harness.scoring import classify_quality_tier
 # Version of the export format. Bumped when fields are added/changed.
 EXPORT_FORMAT_VERSION = "1.0.0"
 
+# The CLI's valid `defaultMethod` values — the keys of its METHOD_REGISTRY
+# (cli/lib/translate.js). The harness uses a DIFFERENT vocabulary internally
+# (`prompt_version`: naive | coached | custom | champollion), so an export
+# MUST translate; a raw passthrough writes a config the CLI rejects with
+# "Unknown translation method" (pre-launch audit 2026-06-13, blocking #1).
+_CLI_METHODS = frozenset({
+    "llm", "llm-coached", "google-translate", "api", "deepl",
+    "microsoft-translator", "libretranslate", "openai", "anthropic",
+    "gemini", "external",
+})
+
+# Harness prompt_version -> CLI defaultMethod. `custom` and `champollion`
+# are harness-only prompt strategies with no portable CLI equivalent; we map
+# them to the closest deployable method (coached) and annotate the snippet so
+# the operator knows the prompt nuance is not reproduced by the CLI.
+_PROMPT_VERSION_TO_METHOD = {
+    "naive": "llm",
+    "coached": "llm-coached",
+    "custom": "llm-coached",
+    "champollion": "llm-coached",
+}
+_NON_PORTABLE_PROMPT_VERSIONS = frozenset({"custom", "champollion"})
+
+
+def _resolve_default_method(prompt_version: str | None) -> tuple[str, str | None]:
+    """Map a harness `prompt_version` to a CLI-valid `defaultMethod`.
+
+    Returns (method, note). `note` is a human-readable caveat when the
+    harness prompt strategy has no exact CLI equivalent, else None.
+    Raises ValueError if the result is somehow not a CLI method — the
+    export refuses to emit a config that would crash the CLI.
+    """
+    pv = (prompt_version or "naive").strip()
+    method = _PROMPT_VERSION_TO_METHOD.get(pv)
+    note = None
+    if method is None:
+        # Unknown prompt_version — fail loud rather than passthrough.
+        raise ValueError(
+            f"Cannot export config: unknown prompt_version {pv!r}. "
+            f"Known: {sorted(_PROMPT_VERSION_TO_METHOD)}. "
+            f"Add a mapping in config_exporter._PROMPT_VERSION_TO_METHOD."
+        )
+    if pv in _NON_PORTABLE_PROMPT_VERSIONS:
+        note = (
+            f"Harness prompt mode {pv!r} has no exact CLI equivalent; "
+            f"exported as {method!r}. The CLI will reproduce the model and "
+            f"settings but not the {pv!r} prompt strategy."
+        )
+    if method not in _CLI_METHODS:  # defensive — should be unreachable
+        raise ValueError(
+            f"Internal error: mapped method {method!r} is not a valid CLI "
+            f"method {sorted(_CLI_METHODS)}."
+        )
+    return method, note
+
 
 def _extract_composite_score(overall: dict) -> float | None:
     """Pull the composite score out of a TestReport's `overall` block.
@@ -102,6 +157,12 @@ def export_champollion_config(
     if quality_tier:
         method_config["qualityTier"] = quality_tier
 
+    # Map the harness prompt strategy to a CLI-valid method (never a raw
+    # passthrough — see _resolve_default_method).
+    default_method, method_note = _resolve_default_method(
+        config.get("prompt_version")
+    )
+
     # Detect source language
     source_lang_code = config.get("source_lang_code", "en")
     target_lang_name = config.get("target_lang", target_lang_code)
@@ -117,7 +178,7 @@ def export_champollion_config(
         "model": method_config["model"],
         "temperature": method_config["temperature"],
         "batchSize": method_config["batchSize"],
-        "defaultMethod": config.get("prompt_version", "llm"),
+        "defaultMethod": default_method,
         # Per-language settings
         "languages": {
             target_lang_code: {
@@ -125,14 +186,19 @@ def export_champollion_config(
             },
         },
     }
+    if method_note:
+        snippet["_method_note"] = method_note
 
     # Include coaching file reference if used
     if method_config["coachingFile"]:
         snippet["coachingFile"] = method_config["coachingFile"]
 
-    # Include per-pair override if source isn't English
+    # Include per-pair override if source isn't English. Carry the source
+    # code explicitly (inputLocale) so a non-English-source config doesn't
+    # silently default to English on the CLI side.
     if source_lang_code and source_lang_code != "en":
         pair_key = f"{source_lang_code}:{target_lang_code}"
+        snippet["inputLocale"] = source_lang_code
         snippet["pairs"] = {
             pair_key: {
                 "model": method_config["model"],
