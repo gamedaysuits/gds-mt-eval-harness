@@ -27,34 +27,59 @@ the artifact behind champollion.dev/queue.json and the /contribute page:
      cli/website/src/pages/leaderboard.js) — already-covered
      (dataset, model, condition) combos are dropped from the queue.
 
-Priority model (mesh-chaining v1)
----------------------------------
+Priority model (expected-chain-value v2)
+----------------------------------------
+Normative definition, philosophy, defaults, and citations live in the
+public spec — arena/website/docs/specifications/queue-construction.md
+(https://mtevalarena.org/docs/specifications/queue-construction). The
+implementation here mirrors it exactly; a summary:
+
 The mission is "every language into every language by measured
-individual pair chains": an unbenchmarked pair is served by chaining
-benchmarked edges, so a queue item's value is how much its language
-pair shortens chains across the whole benchmark graph — not how big
-its corpus is. Items are ranked by, in order:
+individual pair chains". The benchmark's value therefore lives in its
+*quality-weighted graph*: each measured language pair carries an edge
+strength s(e) = best published corpus-level chrF++ / 100, an estimated
+chain between two languages composes multiplicatively along a path
+with a per-junction discount λ (pivoting loses fidelity: Utiyama &
+Isahara 2007; Wu & Wang 2007; Fan et al. 2021), and the mesh objective
+is the quality-weighted global efficiency
 
-  1. **Uncovered pairs first** — language pairs with no leaderboard
-     coverage at all come before replications/extensions of covered
-     pairs.
-  2. **Chaining value** (descending) — the gain in *global efficiency*
-     (mean over ordered language pairs of 1/d(u,v), 1/inf = 0) when the
-     item's pair edge is added to the graph of currently covered pairs.
-     Efficiency is used instead of raw average path length because it
-     is well-defined on disconnected graphs: edges that join components
-     — the highest-value chaining edges — rank first instead of
-     dividing by infinity. Identical definition as
-     ``corpora_builder.probe_tatoeba.graph_efficiency``; a parity test
-     in arena/tests keeps the two in lockstep.
-  3. **Corpus size** (ascending) — the low-resource-first proxy,
-     demoted from primary criterion to tiebreak within equal chaining
-     value.
-  4. Naive before coached, then cheapest model first, then item id.
+    Φ = mean over ordered language pairs (u,v) of Q(u,v),
+    Q(u,v) = max over paths P of  λ^(|P|-1) · Π_{e in P} s(e)
 
-With ``--offline`` (or a failed coverage query) the covered graph is
-empty, so every pair's chaining gain is the identical component-join
-value and ordering degrades gracefully to the size/cost tiebreakers.
+(the Latora–Marchiori 2001 efficiency construction with the 1/d kernel
+replaced by multiplicative chain fidelity; v1's unweighted 1/d ranking
+was the binary ancestor of this). Each open queue item — one
+(corpus, model, condition) run nobody has published — is valued by the
+mesh improvement it is expected to buy per dollar:
+
+    ECV(item) = ΔΦ(item) / max(est_cost, COST_FLOOR)
+    ΔΦ = Φ after raising the item's pair edge to max(s(e), ŝ) − Φ now
+
+where ŝ is a transparent prediction with an optimism bonus
+(UCB1-shaped, Auer et al. 2002): pair prior (hierarchical back-off:
+pair mean → target-language mean → source-language mean → global mean
+→ 0.5) + model offset + condition offset + κ·sqrt(2·ln(1+N)/(1+n)).
+ΔΦ uses the exact single-edge closed form
+Q'(u,v) = max(Q(u,v), E(u,a)·s'·E(b,v), E(u,b)·s'·E(a,v)) with
+E(x,y) = λ·Q(x,y) for x≠y and E(x,x) = 1. Ranking by marginal value
+per cost is the greedy rule for budgeted coverage-style maximization
+(Nemhauser et al. 1978; Khuller, Moss & Naor 1999) — see the spec for
+why and for the honesty limits of each ingredient.
+
+Ties break: naive before coached, cheaper first, then item id.
+Unmeasured pairs dominate naturally (s(e)=0 makes ΔΦ large) — there is
+no longer a hard "uncovered first" gate; a covered pair outranks an
+uncovered one only when the formula says the upgrade genuinely buys
+more mesh per dollar. Every item exposes its full formula breakdown
+(edge_strength, pair_prior, model_offset, condition_offset,
+exploration_bonus, predicted_strength, expected_mesh_gain,
+ecv_per_usd) so any ranking can be re-derived by hand.
+
+With ``--offline`` (or a failed query) there are no results: all edge
+strengths are 0, predictions collapse to the 0.5 prior, and the
+ranking degrades to structural chain value per dollar — v1 behavior.
+The legacy v1 field ``chaining_gain`` (binary-efficiency gain) is kept
+on every item for continuity and parity testing.
 
 No claim-locking by design: run-card fingerprints make duplicate runs
 harmless (identical fingerprints dedupe on publish; non-identical
@@ -62,7 +87,9 @@ duplicates are legitimate replications). "Pick any open item" is correct.
 
 Usage:
   python3 scripts/generate_sweep_queue.py [--output ../cli/website/static/queue.json]
-      [--offline]   # skip the leaderboard coverage query
+      [--offline]        # skip the leaderboard query (structural ranking)
+      [--lam 0.9]        # chain junction discount λ
+      [--kappa 0.05]     # exploration bonus scale κ
 """
 from __future__ import annotations
 
@@ -99,6 +126,38 @@ MIRROR_RAW = (
 )
 
 CONDITIONS = ("naive", "coached")
+
+# ---- Expected-chain-value v2 parameters -----------------------------------
+# Normative home: arena/website/docs/specifications/queue-construction.md §4.
+# Change them there first; the queue metadata echoes the values used.
+
+#: Chain junction discount λ: an estimated h-hop chain is worth
+#: λ^(h-1)·Π s(e). Direct measurement always beats a product-equal
+#: estimated chain because pivoting loses fidelity beyond what edge
+#: scores compose to (Utiyama & Isahara 2007; Wu & Wang 2007; Fan et
+#: al. 2021 measure direct-vs-pivot gaps; the ~10% per-junction haircut
+#: is our calibration choice, revisited as chain triangles get measured).
+LAMBDA = 0.9
+
+#: Exploration bonus scale κ, in strength units (chrF/100). 0.05 = the
+#: ~5-chrF noise floor below which differences are noise on n<100
+#: corpora (fair-scoring policy §5 / corpus-design §6.3) — optimism
+#: never exceeds what the measurement could distinguish anyway, scaled
+#: by the UCB1 schedule (Auer, Cesa-Bianchi & Fischer 2002).
+KAPPA = 0.05
+
+#: Predictions are capped here — no estimated edge may claim
+#: near-perfect fidelity it hasn't demonstrated.
+S_CAP = 0.95
+
+#: Uninformed pair prior when there are no results at all (observed
+#: global mean is preferred whenever any result exists; 429 live runs
+#: averaged ≈ 0.54 at v2 ship time).
+S0_FALLBACK = 0.5
+
+#: Floor for the cost denominator (USD) — keeps near-free runs from
+#: claiming unbounded value per dollar.
+COST_FLOOR = 0.01
 
 
 def load_json(path: Path) -> dict:
@@ -234,17 +293,21 @@ def target_lang_name(iso3: str) -> str | None:
         return None
 
 
-def fetch_coverage() -> tuple[set[tuple[str, str, str]], int]:
-    """Fetch (dataset_token, model_short, condition) combos already on the
-    public leaderboard. Returns (combos, row_count).
+def fetch_results() -> tuple[set[tuple[str, str, str]], list[dict]]:
+    """Fetch published runs: coverage combos + scored result rows.
 
-    dataset_token is matched loosely: both the registry id and the corpus
-    file stem are tokens, because publish.py resolves dataset_id from
-    either an explicit id or the corpus file basename.
+    Returns (combos, results):
+      combos  — (dataset_token, model_short, condition) already on the
+                board (dataset_token matched loosely against registry id
+                and corpus file stem, because publish.py resolves
+                dataset_id from either).
+      results — [{token, model, condition, strength}] for rows carrying
+                a corpus-level chrF++ (the canonical published number,
+                fair-scoring policy §4); strength = chrf/100 ∈ [0,1].
     """
     url = (
         f"{SUPABASE_URL}/rest/v1/run_cards"
-        "?select=dataset_id,model_slug,condition"
+        "?select=dataset_id,model_slug,condition,chrf_plus_plus"
         "&trust=neq.disqualified&limit=10000"
     )
     req = urllib.request.Request(
@@ -257,6 +320,7 @@ def fetch_coverage() -> tuple[set[tuple[str, str, str]], int]:
     with urllib.request.urlopen(req, timeout=30) as resp:
         rows = json.loads(resp.read())
     combos = set()
+    results = []
     for row in rows:
         ds = (row.get("dataset_id") or "").strip().lower()
         model = model_short(row.get("model_slug") or "")
@@ -266,7 +330,296 @@ def fetch_coverage() -> tuple[set[tuple[str, str, str]], int]:
         if "coach" in cond:
             cond = "coached"
         combos.add((ds, model, cond))
-    return combos, len(rows)
+        chrf = row.get("chrf_plus_plus")
+        if chrf is not None and 0 <= chrf <= 100:
+            results.append({
+                "token": ds,
+                "model": model,
+                "condition": cond,
+                "strength": chrf / 100.0,
+            })
+    return combos, results
+
+
+# ---------------------------------------------------------------------------
+# Expected-chain-value v2 — evidence, chain matrix, marginal gain, prediction
+# (normative spec: arena/website/docs/specifications/queue-construction.md)
+# ---------------------------------------------------------------------------
+
+def build_evidence(datasets: list[dict], results: list[dict]) -> dict:
+    """Aggregate published results into the quantities the formula needs.
+
+    ``datasets`` should be the FULL registry list, not just
+    queue-eligible corpora: results published on NC or restricted
+    corpora (e.g. the EdTeKLA eng→crk runs) are still legitimate
+    measurements of their language pair. Eligibility gates what the
+    queue can ask contributors to run — never what the mesh is allowed
+    to know.
+
+    Returns a dict with:
+      edge_strength   {frozenset pair: max strength}      — s(e)
+      pair_scores     {frozenset pair: [strengths]}       — back-off lvl 1
+      target_scores   {lang: [strengths]}                 — back-off lvl 2
+      source_scores   {lang: [strengths]}                 — back-off lvl 3
+      all_scores      [strengths]                         — back-off lvl 4
+      cell_counts     {(pair, model): n}                  — bonus n
+      model_deltas    {model: [s − pair-mean-of-others]}  — β̂ inputs
+      cond_deltas_pair    {pair: [coached − naive, same (pair, model)]}
+      cond_deltas_target  {target lang: [same deltas]}
+      n_results       int
+    """
+    token_pair: dict[str, tuple[str, str]] = {}
+    for ds in datasets:
+        lp = ds.get("language_pair")
+        if not lp:
+            continue
+        pair = (lp["source"], lp["target"])
+        token_pair[ds["id"].lower()] = pair
+        if ds.get("path"):
+            token_pair[Path(ds["path"]).stem.lower()] = pair
+
+    pair_scores: dict[frozenset, list[float]] = {}
+    target_scores: dict[str, list[float]] = {}
+    source_scores: dict[str, list[float]] = {}
+    all_scores: list[float] = []
+    cell_counts: dict[tuple[frozenset, str], int] = {}
+    by_pair_model: dict[tuple[frozenset, str], list[float]] = {}
+    by_pair_model_cond: dict[tuple[frozenset, str, str], list[float]] = {}
+
+    for r in results:
+        pair = token_pair.get(r["token"])
+        if pair is None:
+            continue  # row predates the registry or uses a legacy id
+        src, tgt = pair
+        e = frozenset(pair)
+        s = r["strength"]
+        pair_scores.setdefault(e, []).append(s)
+        target_scores.setdefault(tgt, []).append(s)
+        source_scores.setdefault(src, []).append(s)
+        all_scores.append(s)
+        cell = (e, r["model"])
+        cell_counts[cell] = cell_counts.get(cell, 0) + 1
+        by_pair_model.setdefault(cell, []).append(s)
+        by_pair_model_cond.setdefault(
+            (e, r["model"], r["condition"]), []
+        ).append(s)
+
+    # Model offsets: how a model does relative to the other models on the
+    # same pair, averaged over pairs where a comparison exists (a plain
+    # two-way main-effects decomposition — no opaque fitting).
+    model_deltas: dict[str, list[float]] = {}
+    pairs_models: dict[frozenset, dict[str, float]] = {}
+    for (e, m), scores in by_pair_model.items():
+        pairs_models.setdefault(e, {})[m] = sum(scores) / len(scores)
+    for e, per_model in pairs_models.items():
+        if len(per_model) < 2:
+            continue
+        for m, mean_m in per_model.items():
+            others = [v for mm, v in per_model.items() if mm != m]
+            model_deltas.setdefault(m, []).append(
+                mean_m - sum(others) / len(others)
+            )
+
+    # Condition offset: coached − naive on the same (pair, model).
+    # Kept at pair/target-language level only — coaching gains do NOT
+    # generalize globally (the large eng→crk FST-coached uplift says
+    # nothing about coaching Faroese), and on unscored pairs the
+    # baseline-first convention should hold.
+    cond_deltas_pair: dict[frozenset, list[float]] = {}
+    cond_deltas_target: dict[str, list[float]] = {}
+    pair_target = {}
+    for ds in datasets:
+        lp = ds.get("language_pair")
+        if lp:
+            pair_target[frozenset((lp["source"], lp["target"]))] = lp["target"]
+    for (e, m, cond), scores in by_pair_model_cond.items():
+        if cond != "coached":
+            continue
+        naive = by_pair_model_cond.get((e, m, "naive"))
+        if naive:
+            delta = sum(scores) / len(scores) - sum(naive) / len(naive)
+            cond_deltas_pair.setdefault(e, []).append(delta)
+            tgt = pair_target.get(e)
+            if tgt:
+                cond_deltas_target.setdefault(tgt, []).append(delta)
+
+    return {
+        "edge_strength": {e: max(v) for e, v in pair_scores.items()},
+        "pair_scores": pair_scores,
+        "target_scores": target_scores,
+        "source_scores": source_scores,
+        "all_scores": all_scores,
+        "cell_counts": cell_counts,
+        "model_deltas": model_deltas,
+        "cond_deltas_pair": cond_deltas_pair,
+        "cond_deltas_target": cond_deltas_target,
+        "n_results": len(all_scores),
+    }
+
+
+def build_chain_matrix(
+    nodes: list[str],
+    edge_strength: dict[frozenset, float],
+    lam: float = LAMBDA,
+) -> dict[str, dict[str, float]]:
+    """All-pairs best-chain strengths Q(u,v) = max_P λ^(|P|-1)·Π s(e).
+
+    Computed exactly as shortest paths under w(e) = −ln(λ·s(e)) ≥ 0
+    (Dijkstra), then Q = exp(−d)/λ for u≠v and Q(u,u) = 1. λ·s ≤ 1
+    keeps weights non-negative, so Dijkstra applies.
+    """
+    import heapq
+    import math
+
+    adj: dict[str, list[tuple[str, float]]] = {u: [] for u in nodes}
+    for e, s in edge_strength.items():
+        if s <= 0:
+            continue
+        pair = tuple(e)
+        if len(pair) != 2:
+            continue
+        a, b = pair
+        if a in adj and b in adj:
+            w = -math.log(lam * min(s, 1.0))
+            adj[a].append((b, w))
+            adj[b].append((a, w))
+
+    Q: dict[str, dict[str, float]] = {}
+    for src in nodes:
+        dist = {src: 0.0}
+        heap = [(0.0, src)]
+        while heap:
+            d, u = heapq.heappop(heap)
+            if d > dist.get(u, float("inf")):
+                continue
+            for v, w in adj[u]:
+                nd = d + w
+                if nd < dist.get(v, float("inf")) - 1e-15:
+                    dist[v] = nd
+                    heapq.heappush(heap, (nd, v))
+        row = {}
+        for v in nodes:
+            if v == src:
+                row[v] = 1.0
+            elif v in dist:
+                row[v] = math.exp(-dist[v]) / lam
+            else:
+                row[v] = 0.0
+        Q[src] = row
+    return Q
+
+
+def single_edge_gain(
+    nodes: list[str],
+    Q: dict[str, dict[str, float]],
+    a: str,
+    b: str,
+    s_new: float,
+    lam: float = LAMBDA,
+) -> float:
+    """Exact ΔΦ from raising edge (a,b) to strength s_new.
+
+    A best chain in the upgraded graph either ignores the new edge or
+    uses it exactly once (multiplicative weights ≤ 1 make repeat use
+    dominated), so:
+
+        Q'(u,v) = max(Q(u,v), E(u,a)·s_new·E(b,v), E(u,b)·s_new·E(a,v))
+
+    with E(x,y) = λ·Q(x,y) for x≠y (a junction is crossed to continue
+    the chain) and E(x,x) = 1 (the chain starts/ends at the new edge).
+    ΔΦ is the mean increase over ordered pairs.
+    """
+    if s_new <= 0 or a not in Q or b not in Q:
+        return 0.0
+    n = len(nodes)
+    if n < 2:
+        return 0.0
+
+    def E(x: str, y: str) -> float:
+        return 1.0 if x == y else lam * Q[x][y]
+
+    total = 0.0
+    for u in nodes:
+        Eua, Eub = E(u, a), E(u, b)
+        Qu = Q[u]
+        for v in nodes:
+            if u == v:
+                continue
+            cand = s_new * max(Eua * E(b, v), Eub * E(a, v))
+            cur = Qu[v]
+            if cand > cur:
+                total += cand - cur
+    return total / (n * (n - 1))
+
+
+def predict_strength(
+    pair: tuple[str, str],
+    model: str,
+    condition: str,
+    evidence: dict,
+    *,
+    kappa: float = KAPPA,
+) -> dict:
+    """Transparent score prediction for an unrun (pair, model, condition).
+
+    ŝ = clip(pair_prior + model_offset + condition_offset + bonus,
+             0, S_CAP), with every component returned for display.
+
+    pair_prior: hierarchical back-off — mean of published strengths on
+    this pair, else on this target language, else on this source
+    language, else globally, else S0_FALLBACK. model_offset /
+    condition_offset: mean observed deltas (0 without evidence). bonus:
+    κ·sqrt(2·ln(1+N)/(1+n)) — the UCB1 schedule (Auer et al. 2002) with
+    n = published runs on this (pair, model); we borrow the optimism
+    schedule, not the regret theorem.
+    """
+    import math
+
+    e = frozenset(pair)
+    src, tgt = pair
+
+    def _mean(xs: list[float] | None) -> float | None:
+        return sum(xs) / len(xs) if xs else None
+
+    for level, value in (
+        ("pair", _mean(evidence["pair_scores"].get(e))),
+        ("target-language", _mean(evidence["target_scores"].get(tgt))),
+        ("source-language", _mean(evidence["source_scores"].get(src))),
+        ("global", _mean(evidence["all_scores"])),
+        ("default", S0_FALLBACK),
+    ):
+        if value is not None:
+            prior, prior_basis = value, level
+            break
+
+    deltas = evidence["model_deltas"].get(model)
+    model_offset = sum(deltas) / len(deltas) if deltas else 0.0
+    cond_offset = 0.0
+    if condition == "coached":
+        local = (
+            evidence["cond_deltas_pair"].get(e)
+            or evidence["cond_deltas_target"].get(tgt)
+        )
+        if local:
+            cond_offset = sum(local) / len(local)
+
+    n_cell = evidence["cell_counts"].get((e, model), 0)
+    n_total = evidence["n_results"]
+    bonus = kappa * math.sqrt(
+        2.0 * math.log(1.0 + n_total) / (1.0 + n_cell)
+    ) if n_total > 0 else 0.0
+
+    predicted = max(0.0, min(
+        S_CAP, prior + model_offset + cond_offset + bonus,
+    ))
+    return {
+        "pair_prior": round(prior, 4),
+        "prior_basis": prior_basis,
+        "model_offset": round(model_offset, 4),
+        "condition_offset": round(cond_offset, 4),
+        "exploration_bonus": round(bonus, 4),
+        "predicted_strength": round(predicted, 4),
+    }
 
 
 def main() -> int:
@@ -276,6 +629,14 @@ def main() -> int:
         "--offline",
         action="store_true",
         help="Skip the leaderboard coverage query (treat everything as open)",
+    )
+    ap.add_argument(
+        "--lam", type=float, default=LAMBDA,
+        help="Chain junction discount λ (spec §4; default %(default)s)",
+    )
+    ap.add_argument(
+        "--kappa", type=float, default=KAPPA,
+        help="Exploration bonus scale κ (spec §4; default %(default)s)",
     )
     args = ap.parse_args()
 
@@ -311,26 +672,22 @@ def main() -> int:
         m: sum(v) / len(v) for m, v in per_entry_samples.items() if v
     }
 
-    # ---- Coverage from the public leaderboard ---------------------------
+    # ---- Results from the public leaderboard -----------------------------
     coverage: set[tuple[str, str, str]] = set()
-    leaderboard_rows = 0
-    coverage_note = "offline (coverage query skipped — all combos listed)"
+    results: list[dict] = []
+    coverage_note = "offline (leaderboard query skipped — structural ranking)"
     if not args.offline:
         try:
-            coverage, leaderboard_rows = fetch_coverage()
+            coverage, results = fetch_results()
             coverage_note = (
                 f"queried public run_cards (read-only) at generation time; "
-                f"{leaderboard_rows} rows on the board"
+                f"{len(results)} scored runs on the board"
             )
         except Exception as exc:  # noqa: BLE001 — degrade to full queue
-            coverage_note = f"coverage query failed ({exc}); all combos listed"
+            coverage_note = f"leaderboard query failed ({exc}); structural ranking"
 
-    # ---- Build items -----------------------------------------------------
-    # Priority: mesh-chaining v1 (see module docstring) — uncovered
-    # language pairs first, then chaining value (global-efficiency gain
-    # on the covered-pair graph) descending, with corpus size demoted to
-    # a low-resource tiebreaker, naive before coached, cheapest model
-    # first so the entry cost stays low.
+    # ---- Build items: expected-chain-value v2 ----------------------------
+    # (normative spec: arena/website/docs/specifications/queue-construction.md)
     covered_pairs = set()
     for ds in corpora:
         stem = Path(ds["path"]).stem
@@ -339,7 +696,40 @@ def main() -> int:
             if token in tokens:
                 covered_pairs.add(ds["id"])
 
-    gains = chaining_gains(corpora, covered_pairs)
+    gains = chaining_gains(corpora, covered_pairs)  # legacy v1 field
+
+    # Evidence maps results through the FULL registry (NC/restricted
+    # corpora produce knowledge even though they are not queueable).
+    evidence = build_evidence(registry.get("datasets", []), results)
+    # Graph nodes: languages the queue can act on, plus languages with
+    # published evidence — their chain values respond to queue items
+    # even when no item targets their own edges directly.
+    nodes = sorted(
+        {
+            lang
+            for ds in corpora
+            for lang in (ds["language_pair"]["source"],
+                         ds["language_pair"]["target"])
+        }
+        | {lang for e in evidence["edge_strength"] for lang in e}
+    )
+    Q = build_chain_matrix(nodes, evidence["edge_strength"], lam=args.lam)
+    n_nodes = len(nodes)
+    phi_now = (
+        sum(Q[u][v] for u in nodes for v in nodes if u != v)
+        / (n_nodes * (n_nodes - 1))
+    ) if n_nodes > 1 else 0.0
+    # ΔΦ depends only on (edge, upgraded strength) — memoize across the
+    # per-model/per-condition item loop.
+    gain_cache: dict[tuple[frozenset, float], float] = {}
+
+    # Cost fallback chain for the ECV denominator: observed/extrapolated
+    # estimate → global median estimate → COST_FLOOR.
+    all_per_entry = [c for v in per_entry_samples.values() for c in v]
+    median_per_entry = (
+        sorted(all_per_entry)[len(all_per_entry) // 2]
+        if all_per_entry else None
+    )
 
     items = []
     skipped_no_card = []
@@ -378,18 +768,49 @@ def main() -> int:
                     # harness rebuilds the corpus from the pinned upstream
                     # export on first use (--yes accepts the CC-BY terms),
                     # verifying the registry sha256.
+                    # Use the registry id, not a repo-relative path: the
+                    # documented contributor flow runs from a scratch dir,
+                    # where 'datasets/...' resolves to nothing (verified
+                    # 2026-06-12). The harness resolves ids via the
+                    # registry -> local file -> fetch-from-source chain.
                     run_cmd = (
-                        f"mt-eval run --corpus datasets/{ds['path']} "
+                        f"mt-eval run --corpus {ds['id']} "
                         f'--model {slug} --target-lang "{lang}" --yes'
                     )
                 else:
+                    # --yes also covers eval-pack auto-install (FST
+                    # languages) for downloaded-file runs.
                     run_cmd = (
                         f"curl -fsSLO {corpus_url} && "
                         f"mt-eval run --corpus {stem}.json "
-                        f'--model {slug} --target-lang "{lang}"'
+                        f'--model {slug} --target-lang "{lang}" --yes'
                     )
                 if cond == "coached":
                     run_cmd += " --coaching-file YOUR_COACHING.txt"
+
+                # ---- Expected-chain-value v2 (spec §3) -------------------
+                edge = frozenset((src, tgt))
+                s_cur = evidence["edge_strength"].get(edge, 0.0)
+                pred = predict_strength(
+                    (src, tgt), ms, cond, evidence, kappa=args.kappa,
+                )
+                s_new = max(s_cur, pred["predicted_strength"])
+                cache_key = (edge, round(s_new, 6))
+                if cache_key not in gain_cache:
+                    gain_cache[cache_key] = single_edge_gain(
+                        nodes, Q, src, tgt, s_new, lam=args.lam,
+                    )
+                mesh_gain = gain_cache[cache_key]
+                if est is not None:
+                    cost_for_value = max(est, COST_FLOOR)
+                elif median_per_entry and ds.get("size"):
+                    cost_for_value = max(
+                        median_per_entry * ds["size"], COST_FLOOR,
+                    )
+                else:
+                    cost_for_value = COST_FLOOR
+                ecv = mesh_gain / cost_for_value
+
                 item = {
                     "id": f"{stem}__{slug.replace('/', '_')}__{cond}",
                     "language_pair": f"{src}>{tgt}",
@@ -405,6 +826,17 @@ def main() -> int:
                     "est_basis": basis,
                     "pair_covered_on_leaderboard": ds["id"] in covered_pairs,
                     "chaining_gain": round(gains.get(ds["id"], 0.0), 6),
+                    # Full formula breakdown (spec §3) — every ranking is
+                    # re-derivable by hand from these fields.
+                    "edge_strength": round(s_cur, 4),
+                    "pair_prior": pred["pair_prior"],
+                    "prior_basis": pred["prior_basis"],
+                    "model_offset": pred["model_offset"],
+                    "condition_offset": pred["condition_offset"],
+                    "exploration_bonus": pred["exploration_bonus"],
+                    "predicted_strength": pred["predicted_strength"],
+                    "expected_mesh_gain": round(mesh_gain, 8),
+                    "ecv_per_usd": round(ecv, 8),
                     "run_command": run_cmd,
                 }
                 if is_fetch:
@@ -421,9 +853,7 @@ def main() -> int:
 
     def sort_key(it):
         return (
-            it["pair_covered_on_leaderboard"],          # empty squares first
-            -it["chaining_gain"],                        # mesh value first
-            it["entry_count"] or 10**9,                  # low-resource proxy
+            -it["ecv_per_usd"],                          # mesh value per $
             it["condition"] != "naive",                  # naive before coached
             it["est_cost_usd"] if it["est_cost_usd"] is not None else 10**9,
             it["id"],
@@ -446,15 +876,31 @@ def main() -> int:
             "conditions": list(CONDITIONS),
             "coverage_source": coverage_note,
             "priority_model": (
-                "mesh-chaining v1: uncovered pairs first, then chaining "
-                "value (global-efficiency gain of the item's language-pair "
-                "edge on the covered-pair graph) descending, then corpus "
-                "size ascending (low-resource tiebreak), naive before "
-                "coached, cheapest model first. Chaining value reflects the "
-                "mission: every language into every language by measured "
-                "pair chains — items that shorten chains between "
-                "benchmarked languages outrank bigger corpora."
+                "expected-chain-value v2: items are ranked by "
+                "ECV = ΔΦ / cost — the expected gain in quality-weighted "
+                "mesh efficiency Φ from publishing this run, per estimated "
+                "dollar. Φ averages, over all ordered language pairs, the "
+                "best chain strength Q(u,v) = max over paths of "
+                "λ^(hops−1)·Π(chrF++/100 per edge). Each item's "
+                "predicted score is pair prior + model offset + condition "
+                "offset + UCB exploration bonus, and every component is "
+                "published on the item so the ranking can be re-derived "
+                "by hand. Normative definition, philosophy, and citations: "
+                "https://mtevalarena.org/docs/specifications/"
+                "queue-construction"
             ),
+            "priority_parameters": {
+                "formula_version": "ecv-v2",
+                "lambda_junction_discount": args.lam,
+                "kappa_exploration_scale": args.kappa,
+                "strength_cap": S_CAP,
+                "cost_floor_usd": COST_FLOOR,
+                "prior_fallback": S0_FALLBACK,
+                "phi_current": round(phi_now, 6),
+                "scored_runs_used": evidence["n_results"],
+                "scored_edges": len(evidence["edge_strength"]),
+                "languages_in_graph": n_nodes,
+            },
             "cost_basis": (
                 "Cost estimates come from the 2026-06 baseline sweep manifest "
                 f"(arena/eval/logs/sweep_manifest.json: {sweep_ok} successful "

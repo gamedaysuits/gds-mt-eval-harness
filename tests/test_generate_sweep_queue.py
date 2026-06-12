@@ -128,6 +128,171 @@ class TestChainingGains:
 
 
 # ---------------------------------------------------------------------------
+# Expected-chain-value v2 (spec: specifications/queue-construction.md)
+# ---------------------------------------------------------------------------
+
+class TestChainMatrix:
+    def test_known_path_graph(self, queue_mod):
+        strengths = {frozenset(("a", "b")): 0.8, frozenset(("b", "c")): 0.5}
+        Q = queue_mod.build_chain_matrix(["a", "b", "c"], strengths, lam=0.9)
+        assert Q["a"]["a"] == 1.0
+        assert Q["a"]["b"] == pytest.approx(0.8)
+        # two hops: one junction discount — 0.9 · 0.8 · 0.5
+        assert Q["a"]["c"] == pytest.approx(0.9 * 0.8 * 0.5)
+
+    def test_disconnected_is_zero(self, queue_mod):
+        Q = queue_mod.build_chain_matrix(
+            ["a", "b", "c"], {frozenset(("a", "b")): 0.8}, lam=0.9,
+        )
+        assert Q["a"]["c"] == 0.0
+
+    def test_best_path_wins_over_more_hops(self, queue_mod):
+        # a-b-c chain (0.9·0.9·0.9 = 0.729) vs direct a-c at 0.7
+        strengths = {
+            frozenset(("a", "b")): 0.9,
+            frozenset(("b", "c")): 0.9,
+            frozenset(("a", "c")): 0.7,
+        }
+        Q = queue_mod.build_chain_matrix(["a", "b", "c"], strengths, lam=0.9)
+        assert Q["a"]["c"] == pytest.approx(0.9 * 0.9 * 0.9)
+
+
+class TestSingleEdgeGain:
+    def _phi(self, queue_mod, nodes, strengths, lam):
+        Q = queue_mod.build_chain_matrix(nodes, strengths, lam=lam)
+        n = len(nodes)
+        return sum(Q[u][v] for u in nodes for v in nodes if u != v) / (n * (n - 1))
+
+    @pytest.mark.parametrize("upgrade,s_new", [
+        (("a", "c"), 0.6),    # new edge inside a component
+        (("c", "d"), 0.5),    # component join
+        (("a", "b"), 0.95),   # upgrade of an existing edge
+    ])
+    def test_closed_form_matches_rebuild(self, queue_mod, upgrade, s_new):
+        nodes = ["a", "b", "c", "d", "e"]
+        strengths = {
+            frozenset(("a", "b")): 0.8,
+            frozenset(("b", "c")): 0.6,
+            frozenset(("d", "e")): 0.7,
+        }
+        lam = 0.9
+        Q = queue_mod.build_chain_matrix(nodes, strengths, lam=lam)
+        gain = queue_mod.single_edge_gain(
+            nodes, Q, upgrade[0], upgrade[1], s_new, lam=lam,
+        )
+        upgraded = dict(strengths)
+        key = frozenset(upgrade)
+        upgraded[key] = max(upgraded.get(key, 0.0), s_new)
+        rebuilt = (
+            self._phi(queue_mod, nodes, upgraded, lam)
+            - self._phi(queue_mod, nodes, strengths, lam)
+        )
+        assert gain == pytest.approx(rebuilt, abs=1e-12)
+
+    def test_junction_discount_rewards_direct_measurement(self, queue_mod):
+        # Chain a-b-c composes to 0.8·0.8 = 0.64; with λ = 0.9 the
+        # estimated chain is 0.576, so a measured direct 0.6 adds value.
+        # With λ = 1 the chain (0.64) already beats 0.6 — no value.
+        nodes = ["a", "b", "c"]
+        strengths = {frozenset(("a", "b")): 0.8, frozenset(("b", "c")): 0.8}
+        Q9 = queue_mod.build_chain_matrix(nodes, strengths, lam=0.9)
+        Q1 = queue_mod.build_chain_matrix(nodes, strengths, lam=1.0)
+        assert queue_mod.single_edge_gain(nodes, Q9, "a", "c", 0.6, lam=0.9) > 0
+        assert queue_mod.single_edge_gain(nodes, Q1, "a", "c", 0.6, lam=1.0) == 0
+
+    def test_weaker_prediction_adds_nothing(self, queue_mod):
+        nodes = ["a", "b"]
+        strengths = {frozenset(("a", "b")): 0.7}
+        Q = queue_mod.build_chain_matrix(nodes, strengths, lam=0.9)
+        assert queue_mod.single_edge_gain(nodes, Q, "a", "b", 0.5, lam=0.9) == 0.0
+
+
+def _results(*rows):
+    return [
+        {"token": t, "model": m, "condition": c, "strength": s}
+        for t, m, c, s in rows
+    ]
+
+
+def _datasets():
+    return [
+        _ds(id="ds-ab", path="curated/ab.json",
+            language_pair={"source": "aaa", "target": "bbb"}),
+        _ds(id="ds-ac", path="curated/ac.json",
+            language_pair={"source": "aaa", "target": "ccc"}),
+        # NC corpus: not queueable, but its results are still evidence.
+        _ds(id="ds-nc", path="curated/nc.json",
+            license="CC BY-NC-SA 4.0",
+            language_pair={"source": "aaa", "target": "ddd"}),
+    ]
+
+
+class TestEvidence:
+    def test_edge_strength_is_max_and_nc_counts(self, queue_mod):
+        ev = queue_mod.build_evidence(_datasets(), _results(
+            ("ds-ab", "m1", "naive", 0.5),
+            ("ds-ab", "m2", "naive", 0.7),
+            ("ds-nc", "m1", "naive", 0.9),
+        ))
+        assert ev["edge_strength"][frozenset(("aaa", "bbb"))] == 0.7
+        assert ev["edge_strength"][frozenset(("aaa", "ddd"))] == 0.9
+        assert ev["n_results"] == 3
+
+    def test_model_offsets_two_way(self, queue_mod):
+        # m2 beats m1 by 0.2 on the only shared pair.
+        ev = queue_mod.build_evidence(_datasets(), _results(
+            ("ds-ab", "m1", "naive", 0.5),
+            ("ds-ab", "m2", "naive", 0.7),
+        ))
+        assert sum(ev["model_deltas"]["m2"]) == pytest.approx(0.2)
+        assert sum(ev["model_deltas"]["m1"]) == pytest.approx(-0.2)
+
+    def test_condition_deltas_stay_local(self, queue_mod):
+        ev = queue_mod.build_evidence(_datasets(), _results(
+            ("ds-ab", "m1", "naive", 0.5),
+            ("ds-ab", "m1", "coached", 0.6),
+        ))
+        e = frozenset(("aaa", "bbb"))
+        assert ev["cond_deltas_pair"][e] == [pytest.approx(0.1)]
+        assert ev["cond_deltas_target"]["bbb"] == [pytest.approx(0.1)]
+        assert "ccc" not in ev["cond_deltas_target"]
+
+
+class TestPredictStrength:
+    def _ev(self, queue_mod, rows):
+        return queue_mod.build_evidence(_datasets(), _results(*rows))
+
+    def test_backoff_chain(self, queue_mod):
+        ev = self._ev(queue_mod, [("ds-ab", "m1", "naive", 0.6)])
+        # pair evidence exists for aaa>bbb
+        p = queue_mod.predict_strength(("aaa", "bbb"), "mX", "naive", ev)
+        assert p["prior_basis"] == "pair" and p["pair_prior"] == 0.6
+        # aaa>ccc: no pair or target evidence → source-language mean
+        p = queue_mod.predict_strength(("aaa", "ccc"), "mX", "naive", ev)
+        assert p["prior_basis"] == "source-language"
+        # zzz>yyy: nothing matches → global mean of all results
+        p = queue_mod.predict_strength(("zzz", "yyy"), "mX", "naive", ev)
+        assert p["prior_basis"] == "global"
+        # no results at all → documented default
+        empty = queue_mod.build_evidence(_datasets(), [])
+        p = queue_mod.predict_strength(("zzz", "yyy"), "mX", "naive", empty)
+        assert p["prior_basis"] == "default"
+        assert p["pair_prior"] == queue_mod.S0_FALLBACK
+
+    def test_bonus_decays_with_observations(self, queue_mod):
+        rows = [("ds-ab", "m1", "naive", 0.6)] * 9
+        ev = self._ev(queue_mod, rows)
+        seen = queue_mod.predict_strength(("aaa", "bbb"), "m1", "naive", ev)
+        unseen = queue_mod.predict_strength(("aaa", "bbb"), "mX", "naive", ev)
+        assert unseen["exploration_bonus"] > seen["exploration_bonus"] > 0
+
+    def test_prediction_capped(self, queue_mod):
+        ev = self._ev(queue_mod, [("ds-ab", "m1", "naive", 0.94)])
+        p = queue_mod.predict_strength(("aaa", "bbb"), "mX", "naive", ev)
+        assert p["predicted_strength"] <= queue_mod.S_CAP
+
+
+# ---------------------------------------------------------------------------
 # Parity with the corpora-builder implementation
 # ---------------------------------------------------------------------------
 
