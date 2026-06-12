@@ -250,54 +250,43 @@ def render_run_card(
 
         lines.append(_box_sep())
 
-    # LYSS linter metrics (language-specific equivalence linting)
-    crk_linter = plugins.get("crk_linter", {})
-    if crk_linter:
-        lines.append(_box_line("LYSS EQUIVALENCE LINTER"))
+    # Equivalence-linter metrics — GENERIC over any language's custom
+    # linter, not just Cree's. A plugin opts in by emitting
+    # `is_equivalence_linter: True` (or simply an `equivalent_match_rate`)
+    # plus its own `display_name` and `variant_labels`. Language-specific
+    # knowledge (titles, variant-class labels) lives in the plugin, never
+    # here (founder rule: no Cree special-casing in the generic renderer).
+    raw_exact_rate = overall.get("exact_match_rate", 0)
+    for plug_key, plug in plugins.items():
+        if not isinstance(plug, dict):
+            continue
+        is_equiv = plug.get("is_equivalence_linter") or (
+            "equivalent_match_rate" in plug and "variant_class_counts" in plug
+        )
+        if not is_equiv:
+            continue
+
+        title = plug.get("display_name") or plug_key.replace("_", " ").upper()
+        lines.append(_box_line(title.upper()))
         lines.append(_box_line())
 
-        equiv_rate = crk_linter.get("equivalent_match_rate", 0)
-        variant_counts = crk_linter.get("variant_class_counts", {})
+        equiv_rate = plug.get("equivalent_match_rate", 0)
+        variant_counts = plug.get("variant_class_counts", {})
+        variant_labels = plug.get("variant_labels", {})
 
-        # Calculate near-miss count from variant classes
-        # equivalent_match_rate includes exact matches;
-        # exact_match_rate is the raw string-equality rate
-        raw_exact_rate = overall.get("exact_match_rate", 0)
         near_miss_rate = max(0, equiv_rate - raw_exact_rate)
         near_miss_n = int(near_miss_rate * evaluated) if evaluated else 0
         equiv_n = int(equiv_rate * evaluated) if evaluated else 0
 
-        lines.append(_kv(
-            "Equivalent match",
-            f"{equiv_n}/{evaluated} ({equiv_rate:.1%})"
-        ))
-        lines.append(_kv(
-            "  ├ Exact",
-            f"{exact_n}/{evaluated} ({raw_exact_rate:.1%})"
-        ))
-        lines.append(_kv(
-            "  └ Near-miss",
-            f"{near_miss_n}/{evaluated} ({near_miss_rate:.1%})"
-        ))
+        lines.append(_kv("Equivalent match", f"{equiv_n}/{evaluated} ({equiv_rate:.1%})"))
+        lines.append(_kv("  ├ Exact", f"{exact_n}/{evaluated} ({raw_exact_rate:.1%})"))
+        lines.append(_kv("  └ Near-miss", f"{near_miss_n}/{evaluated} ({near_miss_rate:.1%})"))
 
-        # Variant class breakdown
         if variant_counts:
             lines.append(_box_line())
             lines.append(_box_line("Near-miss breakdown:"))
-            for vc_name, vc_count in sorted(
-                variant_counts.items(), key=lambda x: -x[1]
-            ):
-                # Human-readable variant class names
-                vc_labels = {
-                    "LONG_VOWEL_MACRON": "Long vowel diacritics (ā↔â)",
-                    "ORTHOGRAPHIC": "Preverb spacing (ê wâp↔ê-wâp)",
-                    "WORD_ORDER": "Word order permutation",
-                    "OPTIONAL_PARTICLE": "Optional particle (ispîhk…)",
-                    "LEMMA_SYNONYM": "Lemma synonym",
-                    "INCLUSIVE_EXCLUSIVE": "Inclusive/exclusive 'we'",
-                    "PROGRESSIVE_AMBIGUITY": "Progressive aspect (ati-)",
-                }
-                label = vc_labels.get(vc_name, vc_name)
+            for vc_name, vc_count in sorted(variant_counts.items(), key=lambda x: -x[1]):
+                label = variant_labels.get(vc_name, vc_name)
                 lines.append(_kv(f"  {vc_name}", f"{vc_count:>3}  {label}"))
 
         lines.append(_box_sep())

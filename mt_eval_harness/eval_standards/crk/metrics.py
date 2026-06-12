@@ -78,11 +78,32 @@ class CrkLinterMetric:
             "lint_verdict": result.verdict,
         }
 
+    # Display metadata for the run-card renderer. The generic renderer
+    # (run_card.py) shows any equivalence-linter plugin from these fields;
+    # Cree-specific labels live HERE, in the LYSS lane, never in the
+    # language-agnostic renderer (founder rule: Cree is not special-cased
+    # outside crk-translate and its custom linters).
+    DISPLAY_NAME = "LYSS Equivalence Linter"
+    VARIANT_LABELS = {
+        "LONG_VOWEL_MACRON": "Long vowel diacritics (ā↔â)",
+        "ORTHOGRAPHIC": "Preverb spacing (ê wâp↔ê-wâp)",
+        "WORD_ORDER": "Word order permutation",
+        "OPTIONAL_PARTICLE": "Optional particle (ispîhk…)",
+        "LEMMA_SYNONYM": "Lemma synonym",
+        "INCLUSIVE_EXCLUSIVE": "Inclusive/exclusive 'we'",
+        "PROGRESSIVE_AMBIGUITY": "Progressive aspect (ati-)",
+    }
+
     def aggregate(self, entry_results: list[dict]) -> dict:
         """Compute corpus-level linter aggregates."""
         total = len(entry_results)
+        base = {
+            "is_equivalence_linter": True,
+            "display_name": self.DISPLAY_NAME,
+            "variant_labels": self.VARIANT_LABELS,
+        }
         if total == 0:
-            return {"equivalent_match_rate": 0.0, "variant_class_counts": {}}
+            return {**base, "equivalent_match_rate": 0.0, "variant_class_counts": {}}
 
         equiv_count = sum(1 for r in entry_results if r.get("equivalent_match"))
 
@@ -93,6 +114,7 @@ class CrkLinterMetric:
                 class_counts[vc] = class_counts.get(vc, 0) + 1
 
         return {
+            **base,
             "equivalent_match_rate": equiv_count / total,
             "variant_class_counts": class_counts,
         }
