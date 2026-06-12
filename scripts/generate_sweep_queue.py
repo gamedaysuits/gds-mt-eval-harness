@@ -293,8 +293,47 @@ def target_lang_name(iso3: str) -> str | None:
         return None
 
 
+#: Rows per page when reading the leaderboard. Supabase/PostgREST caps
+#: single responses (commonly at 1,000 rows) regardless of the limit
+#: parameter, so the board MUST be read in pages — a single capped GET
+#: would silently rank the queue on a truncated scoreboard once the
+#: board outgrows the cap.
+FETCH_PAGE_SIZE = 1000
+
+
+def _fetch_run_rows(page_size: int = FETCH_PAGE_SIZE) -> list[dict]:
+    """Read the ENTIRE leaderboard, page by page.
+
+    Pages are ordered by the primary key so pagination is stable while
+    rows are being inserted concurrently (an unordered offset walk can
+    skip or duplicate rows between pages).
+    """
+    rows: list[dict] = []
+    offset = 0
+    while True:
+        url = (
+            f"{SUPABASE_URL}/rest/v1/run_cards"
+            "?select=dataset_id,model_slug,condition,chrf_plus_plus"
+            "&trust=neq.disqualified&order=id.asc"
+            f"&limit={page_size}&offset={offset}"
+        )
+        req = urllib.request.Request(
+            url,
+            headers={
+                "apikey": SUPABASE_ANON_KEY,
+                "Authorization": f"Bearer {SUPABASE_ANON_KEY}",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            page = json.loads(resp.read())
+        rows.extend(page)
+        if len(page) < page_size:
+            return rows
+        offset += page_size
+
+
 def fetch_results() -> tuple[set[tuple[str, str, str]], list[dict]]:
-    """Fetch published runs: coverage combos + scored result rows.
+    """Fetch ALL published runs: coverage combos + scored result rows.
 
     Returns (combos, results):
       combos  — (dataset_token, model_short, condition) already on the
@@ -304,21 +343,12 @@ def fetch_results() -> tuple[set[tuple[str, str, str]], list[dict]]:
       results — [{token, model, condition, strength}] for rows carrying
                 a corpus-level chrF++ (the canonical published number,
                 fair-scoring policy §4); strength = chrf/100 ∈ [0,1].
+
+    The whole board is paged in (see _fetch_run_rows) — the formula's
+    contract is "every published, non-disqualified run is evidence",
+    at any board size.
     """
-    url = (
-        f"{SUPABASE_URL}/rest/v1/run_cards"
-        "?select=dataset_id,model_slug,condition,chrf_plus_plus"
-        "&trust=neq.disqualified&limit=10000"
-    )
-    req = urllib.request.Request(
-        url,
-        headers={
-            "apikey": SUPABASE_ANON_KEY,
-            "Authorization": f"Bearer {SUPABASE_ANON_KEY}",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        rows = json.loads(resp.read())
+    rows = _fetch_run_rows()
     combos = set()
     results = []
     for row in rows:

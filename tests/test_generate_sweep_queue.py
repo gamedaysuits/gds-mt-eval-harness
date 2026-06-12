@@ -293,6 +293,71 @@ class TestPredictStrength:
 
 
 # ---------------------------------------------------------------------------
+# Full-board pagination
+# ---------------------------------------------------------------------------
+
+class TestFetchPagination:
+    def test_reads_every_page_of_a_large_board(self, queue_mod, monkeypatch):
+        """A board larger than one page must be read completely.
+
+        Supabase caps single responses; the fetch must keep paging until
+        a short page arrives, not trust one capped GET.
+        """
+        import io
+
+        board = [
+            {"dataset_id": f"ds-{i}", "model_slug": "m", "condition": "naive",
+             "chrf_plus_plus": 50.0}
+            for i in range(2501)
+        ]
+        requested_offsets = []
+
+        def fake_urlopen(req, timeout=None):
+            from urllib.parse import parse_qs, urlparse
+            qs = parse_qs(urlparse(req.full_url).query)
+            offset = int(qs["offset"][0])
+            limit = int(qs["limit"][0])
+            requested_offsets.append(offset)
+            page = board[offset:offset + limit]
+
+            class FakeResp(io.BytesIO):
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+
+            import json as _json
+            return FakeResp(_json.dumps(page).encode())
+
+        monkeypatch.setattr(
+            queue_mod.urllib.request, "urlopen", fake_urlopen,
+        )
+        rows = queue_mod._fetch_run_rows(page_size=1000)
+        assert len(rows) == 2501
+        assert requested_offsets == [0, 1000, 2000]
+
+    def test_single_short_page_stops_immediately(self, queue_mod, monkeypatch):
+        import io
+        import json as _json
+
+        def fake_urlopen(req, timeout=None):
+            class FakeResp(io.BytesIO):
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+
+            return FakeResp(_json.dumps([{"dataset_id": "x"}]).encode())
+
+        monkeypatch.setattr(
+            queue_mod.urllib.request, "urlopen", fake_urlopen,
+        )
+        assert len(queue_mod._fetch_run_rows(page_size=1000)) == 1
+
+
+# ---------------------------------------------------------------------------
 # Parity with the corpora-builder implementation
 # ---------------------------------------------------------------------------
 
