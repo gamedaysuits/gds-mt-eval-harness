@@ -1,0 +1,3543 @@
+{
+  "run_id": "run_20260612_173034_anthropic_claudehaiku45_naive_all_b25_cfe56c",
+  "config": {
+    "dataset": "all",
+    "dataset_id": "",
+    "entry_ids": null,
+    "corpus_path": "/Users/gamedaysuits/local projects/Champollion copy/arena/datasets/.cache/curated/eng-fao-dev-v1.json",
+    "source_file": null,
+    "reference_file": null,
+    "source_field": "source",
+    "target_field": "reference",
+    "source_lang": "",
+    "target_lang": "Faroese",
+    "segment_names": [],
+    "model": "anthropic/claude-haiku-4.5",
+    "max_tokens": 32768,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": true,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 25,
+    "concurrency": 8,
+    "prompt_version": "naive",
+    "custom_prompt_path": null,
+    "coaching_file": null,
+    "style_profile": null,
+    "post_hooks": [],
+    "fst_retries": 0,
+    "output_dir": "eval/logs/harness",
+    "run_name": null,
+    "temperature": 0.0,
+    "dry_run": false,
+    "assume_yes": true,
+    "method_path": null,
+    "process_name": null,
+    "champollion_config_path": null,
+    "champollion_cards_dir": null,
+    "target_lang_code": "",
+    "_model_id": "anthropic/claude-haiku-4.5",
+    "_effective_temperature": 0.0,
+    "_config_hash": "ce2625c6de0b"
+  },
+  "source_log": "/Users/gamedaysuits/local projects/Champollion copy/arena/eval/logs/harness/run_20260612_173034_anthropic_claudehaiku45_naive_all_b25_cfe56c.json",
+  "overall": {
+    "total_entries": 62,
+    "error_count": 0,
+    "evaluated": 62,
+    "exact_match_count": 4,
+    "exact_match_rate": 0.0645,
+    "miss_count": 58,
+    "miss_rate": 0.9355,
+    "avg_chrf": 47.46,
+    "avg_bleu": 26.31,
+    "avg_latency_s": 0.066,
+    "total_cost_usd": 0.0083,
+    "cached_cost_usd": 0,
+    "cached_entries": 0,
+    "total_tool_calls": 0,
+    "corpus_chrf": 43.13,
+    "corpus_bleu": 18.62,
+    "corpus_ter": 63.65,
+    "avg_length_ratio": 1.0133,
+    "comet_score": null,
+    "confidence_intervals": {
+      "corpus_chrf": {
+        "metric_name": "corpus_chrf",
+        "score": 43.1327,
+        "ci_lower": 38.8191,
+        "ci_upper": 48.8433,
+        "ci_width": 10.0242,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 62,
+        "seed": 12345
+      },
+      "corpus_bleu": {
+        "metric_name": "corpus_bleu",
+        "score": 18.6189,
+        "ci_lower": 11.7609,
+        "ci_upper": 26.3598,
+        "ci_width": 14.5989,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 62,
+        "seed": 12345
+      },
+      "exact_match_rate": {
+        "metric_name": "exact_match_rate",
+        "score": 0.0645,
+        "ci_lower": 0.0161,
+        "ci_upper": 0.129,
+        "ci_width": 0.1129,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 62,
+        "seed": 12345
+      },
+      "composite_score": {
+        "metric_name": "composite_score",
+        "score": 0.3265,
+        "ci_lower": 0.2881,
+        "ci_upper": 0.3746,
+        "ci_width": 0.0865,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 62,
+        "seed": 12345
+      }
+    },
+    "confidence_intervals_by_tier": {
+      "1": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier1",
+          "score": 53.1839,
+          "ci_lower": 45.675,
+          "ci_upper": 61.5358,
+          "ci_width": 15.8608,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 22,
+          "seed": 12346
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier1",
+          "score": 0.0909,
+          "ci_lower": 0.0,
+          "ci_upper": 0.2273,
+          "ci_width": 0.2273,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 22,
+          "seed": 12346
+        }
+      },
+      "2": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier2",
+          "score": 42.8175,
+          "ci_lower": 33.8302,
+          "ci_upper": 53.7122,
+          "ci_width": 19.882,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 18,
+          "seed": 12347
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier2",
+          "score": 0.1111,
+          "ci_lower": 0.0,
+          "ci_upper": 0.2778,
+          "ci_width": 0.2778,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 18,
+          "seed": 12347
+        }
+      },
+      "3": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier3",
+          "score": 45.335,
+          "ci_lower": 36.3048,
+          "ci_upper": 56.1827,
+          "ci_width": 19.8779,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 15,
+          "seed": 12348
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier3",
+          "score": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "ci_width": 0.0,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 15,
+          "seed": 12348
+        }
+      }
+    },
+    "plugin_metrics": {
+      "code_switching": {
+        "avg_code_switching_rate": 0.0,
+        "entries_with_code_switching": 0,
+        "entries_with_code_switching_pct": 0.0,
+        "total_wrong_script_tokens": 0
+      },
+      "hallucination": {
+        "avg_hallucination_rate": 0.1,
+        "max_hallucination_rate": 0.2,
+        "entries_flagged_hallucination": 30,
+        "entries_flagged_hallucination_pct": 0.4839,
+        "avg_length_score": 0.0,
+        "avg_repetition_score": 0.0,
+        "avg_entity_score": 0.5
+      },
+      "terminology": {
+        "avg_terminology_adherence": null,
+        "total_term_matches": 0,
+        "total_term_total": 0,
+        "total_term_misses": 0
+      },
+      "writing_style": {
+        "style_consistency_rate": 1.0,
+        "avg_sentence_length_ratio": 1.03,
+        "avg_formality_score": 0.0,
+        "style_register_distribution": {
+          "undetermined": 62
+        }
+      }
+    }
+  },
+  "by_segment": {
+    "unknown": {
+      "name": "unknown",
+      "count": 62,
+      "exact_match_count": 4,
+      "miss_count": 58,
+      "error_count": 0,
+      "avg_chrf": 47.46,
+      "avg_bleu": 26.31,
+      "avg_latency_s": 0.066,
+      "total_cost_usd": 0.0083,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "name": "difficulty_1",
+      "count": 22,
+      "exact_match_count": 2,
+      "miss_count": 20,
+      "error_count": 0,
+      "avg_chrf": 52.66,
+      "avg_bleu": 33.44,
+      "avg_latency_s": 0.072,
+      "total_cost_usd": 0.0022,
+      "plugin_aggregates": {}
+    },
+    "2": {
+      "name": "difficulty_2",
+      "count": 18,
+      "exact_match_count": 2,
+      "miss_count": 16,
+      "error_count": 0,
+      "avg_chrf": 45.14,
+      "avg_bleu": 25.85,
+      "avg_latency_s": 0.069,
+      "total_cost_usd": 0.0018,
+      "plugin_aggregates": {}
+    },
+    "3": {
+      "name": "difficulty_3",
+      "count": 15,
+      "exact_match_count": 0,
+      "miss_count": 15,
+      "error_count": 0,
+      "avg_chrf": 44.72,
+      "avg_bleu": 20.87,
+      "avg_latency_s": 0.058,
+      "total_cost_usd": 0.0029,
+      "plugin_aggregates": {}
+    },
+    "4": {
+      "name": "difficulty_4",
+      "count": 3,
+      "exact_match_count": 0,
+      "miss_count": 3,
+      "error_count": 0,
+      "avg_chrf": 54.71,
+      "avg_bleu": 29.49,
+      "avg_latency_s": 0.055,
+      "total_cost_usd": 0.0006,
+      "plugin_aggregates": {}
+    },
+    "5": {
+      "name": "difficulty_5",
+      "count": 4,
+      "exact_match_count": 0,
+      "miss_count": 4,
+      "error_count": 0,
+      "avg_chrf": 34.09,
+      "avg_bleu": 7.23,
+      "avg_latency_s": 0.055,
+      "total_cost_usd": 0.0008,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_domain": {
+    "conv": {
+      "name": "conv",
+      "count": 44,
+      "exact_match_count": 3,
+      "miss_count": 41,
+      "error_count": 0,
+      "avg_chrf": 47.67,
+      "avg_bleu": 25.89,
+      "avg_latency_s": 0.058,
+      "total_cost_usd": 0.006,
+      "plugin_aggregates": {}
+    },
+    "ecommerce": {
+      "name": "ecommerce",
+      "count": 2,
+      "exact_match_count": 0,
+      "miss_count": 2,
+      "error_count": 0,
+      "avg_chrf": 39.21,
+      "avg_bleu": 8.72,
+      "avg_latency_s": 0.055,
+      "total_cost_usd": 0.0004,
+      "plugin_aggregates": {}
+    },
+    "edu": {
+      "name": "edu",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 76.05,
+      "avg_bleu": 35.36,
+      "avg_latency_s": 0.055,
+      "total_cost_usd": 0.0002,
+      "plugin_aggregates": {}
+    },
+    "legal": {
+      "name": "legal",
+      "count": 2,
+      "exact_match_count": 0,
+      "miss_count": 2,
+      "error_count": 0,
+      "avg_chrf": 35.13,
+      "avg_bleu": 17.04,
+      "avg_latency_s": 0.055,
+      "total_cost_usd": 0.0004,
+      "plugin_aggregates": {}
+    },
+    "support": {
+      "name": "support",
+      "count": 3,
+      "exact_match_count": 1,
+      "miss_count": 2,
+      "error_count": 0,
+      "avg_chrf": 66.48,
+      "avg_bleu": 51.46,
+      "avg_latency_s": 0.084,
+      "total_cost_usd": 0.0004,
+      "plugin_aggregates": {}
+    },
+    "tech": {
+      "name": "tech",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 48.54,
+      "avg_bleu": 12.7,
+      "avg_latency_s": 0.098,
+      "total_cost_usd": 0.0001,
+      "plugin_aggregates": {}
+    },
+    "ui": {
+      "name": "ui",
+      "count": 9,
+      "exact_match_count": 0,
+      "miss_count": 9,
+      "error_count": 0,
+      "avg_chrf": 41.36,
+      "avg_bleu": 26.47,
+      "avg_latency_s": 0.098,
+      "total_cost_usd": 0.0008,
+      "plugin_aggregates": {}
+    }
+  },
+  "entries": [
+    {
+      "id": "tatoeba_challenge_hash_e65c3b29b60b",
+      "source": "He sees your horse.",
+      "expected": "Hann sær tín hestin.",
+      "raw_predicted": "Hann síggur tín hest.",
+      "predicted": "Hann síggur tín hest.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 47.538695216998335,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 50.0,
+      "length_ratio": 1.05,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_abc42d434ea4",
+      "source": "Can I use your dictionary?",
+      "expected": "Kann eg koyra tína orðabók?",
+      "raw_predicted": "Kann eg brúka tín orðabók?",
+      "predicted": "Kann eg brúka tín orðabók?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 52.59463938805929,
+      "bleu_score": 22.957488466614326,
+      "ter_score": 40.0,
+      "length_ratio": 0.963,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_3160422ee5df",
+      "source": "It's all right!",
+      "expected": "Tað er í ordan!",
+      "raw_predicted": "Tað er alt í lagi!",
+      "predicted": "Tað er alt í lagi!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.79826797172794,
+      "bleu_score": 19.304869754804482,
+      "ter_score": 50.0,
+      "length_ratio": 1.2,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_e1aae3edea84",
+      "source": "I'm not sick.",
+      "expected": "Eg eri ikki sjúkur.",
+      "raw_predicted": "Eg er ikki sjúk.",
+      "predicted": "Eg er ikki sjúk.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 52.20191731068887,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 50.0,
+      "length_ratio": 0.8421,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_601e53a1133e",
+      "source": "I'm a doctor.",
+      "expected": "Eg eri lækni.",
+      "raw_predicted": "Eg er lækni.",
+      "predicted": "Eg er lækni.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 56.109390252081056,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9231,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_191bb8ebc1be",
+      "source": "How old are you?",
+      "expected": "Hvussu gamal ert tú?",
+      "raw_predicted": "Hvussu gomul ert tú?",
+      "predicted": "Hvussu gomul ert tú?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 62.066499676793796,
+      "bleu_score": 42.7287006396234,
+      "ter_score": 25.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_b618d078bca5",
+      "source": "He is in hospital.",
+      "expected": "Hann liggur á sjúkrahúsinum.",
+      "raw_predicted": "Hann er á sjúkrahúsi.",
+      "predicted": "Hann er á sjúkrahúsi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 47.18480713548061,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 50.0,
+      "length_ratio": 0.75,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_91fcdd6ad4f0",
+      "source": "Tom is a communist.",
+      "expected": "Tom er kommunistur.",
+      "raw_predicted": "Tom er kommunisti.",
+      "predicted": "Tom er kommunisti.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 74.39527746871019,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9474,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_60ddb6aaa06f",
+      "source": "Grammar is very complicated.",
+      "expected": "Mállæran er sera torfør.",
+      "raw_predicted": "Grammatikk er sera flókin.",
+      "predicted": "Grammatikk er sera flókin.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.332868386988675,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 50.0,
+      "length_ratio": 1.0833,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_39c27aaa5d78",
+      "source": "What are you looking for?",
+      "expected": "Hvat leitar tú eftir?",
+      "raw_predicted": "Hvat leitar tú eftir?",
+      "predicted": "Hvat leitar tú eftir?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_5fa0fd620130",
+      "source": "The car is good.",
+      "expected": "Bilurin er góður.",
+      "raw_predicted": "Billin er góð.",
+      "predicted": "Billin er góð.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.01968404119196,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.8235,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_2ecdf40ad910",
+      "source": "Can you show me?",
+      "expected": "Kunnu tygum vísa mær?",
+      "raw_predicted": "Kanst tú vísa mær?",
+      "predicted": "Kanst tú vísa mær?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.01724507589313,
+      "bleu_score": 39.76353643835254,
+      "ter_score": 50.0,
+      "length_ratio": 0.8571,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1cc89f2c0b96",
+      "source": "Can you see the picture?",
+      "expected": "Sært tú handa myndin?",
+      "raw_predicted": "Kanst tú síggja myndina?",
+      "predicted": "Kanst tú síggja myndina?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.28095516430328,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 75.0,
+      "length_ratio": 1.1429,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_0144615ba5ab",
+      "source": "He has never been to Okinawa before.",
+      "expected": "Hann hevði ongantíð verið í Okinawa fyrr.",
+      "raw_predicted": "Hann hevur aldri verið á Okinawa áðr.",
+      "predicted": "Hann hevur aldri verið á Okinawa áðr.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.4635779956145,
+      "bleu_score": 7.809849842300641,
+      "ter_score": 57.14285714285714,
+      "length_ratio": 0.9024,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_b828244ac33d",
+      "source": "I don't want to go to school.",
+      "expected": "Eg tími ikki í skúla.",
+      "raw_predicted": "Eg vil ikki ganga til skúla.",
+      "predicted": "Eg vil ikki ganga til skúla.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.29436568738032,
+      "bleu_score": 15.619699684601283,
+      "ter_score": 60.0,
+      "length_ratio": 1.3333,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.2,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_d983f1428adb",
+      "source": "I had to go to Boston.",
+      "expected": "Eg mátti fara til Boston.",
+      "raw_predicted": "Eg mátti fara til Boston.",
+      "predicted": "Eg mátti fara til Boston.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_9092f1fc1054",
+      "source": "Tom is leaving Kobe tomorrow morning.",
+      "expected": "Tom fer av Kobe fyrramorgin.",
+      "raw_predicted": "Tom fer burtur frá Kobe í morgin um morgunin.",
+      "predicted": "Tom fer burtur frá Kobe í morgin um morgunin.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.422349603076235,
+      "bleu_score": 9.980099403873663,
+      "ter_score": 120.0,
+      "length_ratio": 1.6071,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 9,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_3b7234fbddf1",
+      "source": "A pond is a little lake.",
+      "expected": "Ein tjørn er eitt lítið vatn.",
+      "raw_predicted": "Ein tjørn er ein lítil vatn.",
+      "predicted": "Ein tjørn er ein lítil vatn.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 62.22897560740803,
+      "bleu_score": 30.739407647563215,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9655,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_f41b2de3eb3a",
+      "source": "Where is Paris?",
+      "expected": "Hvar er París?",
+      "raw_predicted": "Hvar er París?",
+      "predicted": "Hvar er París?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1308ea8ead1c",
+      "source": "I'd like to change some money.",
+      "expected": "Eg skal veksla eitt sindur av pengum.",
+      "raw_predicted": "Eg vildi skipta einum peningum.",
+      "predicted": "Eg vildi skipta einum peningum.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.311438262626456,
+      "bleu_score": 6.916271812933183,
+      "ter_score": 85.71428571428571,
+      "length_ratio": 0.8378,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.714,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_e3b266a0724a",
+      "source": "When can I visit you?",
+      "expected": "Nær kann eg vitja teg?",
+      "raw_predicted": "Nær kann eg heimsøkja teg?",
+      "predicted": "Nær kann eg heimsøkja teg?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 63.54898988737102,
+      "bleu_score": 37.99178428257963,
+      "ter_score": 20.0,
+      "length_ratio": 1.1818,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_24e5b569db0b",
+      "source": "Sunday is the last day of the week.",
+      "expected": "Sunnudagur er síðsti dagur í vikuni.",
+      "raw_predicted": "Sunnudagur er seinasti dagur vikunnar.",
+      "predicted": "Sunnudagur er seinasti dagur vikunnar.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 57.45430708232631,
+      "bleu_score": 16.341219448835542,
+      "ter_score": 50.0,
+      "length_ratio": 1.0556,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.833,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_c4cafc45a915",
+      "source": "I had a bad dream last night.",
+      "expected": "Eg droymdi kaldum dreym í nátt.",
+      "raw_predicted": "Eg átti eina illa dreymin í gær kvøldi.",
+      "predicted": "Eg átti eina illa dreymin í gær kvøldi.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.650261804399822,
+      "bleu_score": 6.27465531099474,
+      "ter_score": 100.0,
+      "length_ratio": 1.2581,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 8,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_657be311d14d",
+      "source": "The days are dragging slowly by.",
+      "expected": "Dagarnir koma akandi.",
+      "raw_predicted": "Dagarnir dragast seint fram.",
+      "predicted": "Dagarnir dragast seint fram.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.72814744802214,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.3333,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1d36691a5619",
+      "source": "I'm not proud of my behaviour.",
+      "expected": "Eg eri ikki errin av framferð mínari.",
+      "raw_predicted": "Eg er ikki stolt av mínum atferli.",
+      "predicted": "Eg er ikki stolt av mínum atferli.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.93194630369923,
+      "bleu_score": 7.809849842300641,
+      "ter_score": 57.14285714285714,
+      "length_ratio": 0.9189,
+      "latency_s": 0.061,
+      "cost_usd": 8.5e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_a3d5c5352c04",
+      "source": "A big car flew off the road today.",
+      "expected": "Í dag fleyg ein stórur bilur av vegnum.",
+      "raw_predicted": "Ein stór bíl flaug av veginum í dag.",
+      "predicted": "Ein stór bíl flaug av veginum í dag.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 28.161749759414516,
+      "bleu_score": 6.27465531099474,
+      "ter_score": 100.0,
+      "length_ratio": 0.9231,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 8,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_6b6efdde44d5",
+      "source": "I noticed that all day long men were working on the quayside.",
+      "expected": "Eg legði til merkis, at teir arbeiddu á keiini allan dag.",
+      "raw_predicted": "Eg lagt merki til at allir daginn vóru menn at arbeiða á kaiinum.",
+      "predicted": "Eg lagt merki til at allir daginn vóru menn at arbeiða á kaiinum.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.396074401497145,
+      "bleu_score": 4.246549372656572,
+      "ter_score": 100.0,
+      "length_ratio": 1.1404,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 13,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.182,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_05abd06f6bf0",
+      "source": "She wants to study music and dance.",
+      "expected": "Hon man at granska tónlist og dans.",
+      "raw_predicted": "Hon vil stúdera tónleik og dans.",
+      "predicted": "Hon vil stúdera tónleik og dans.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.424303049605726,
+      "bleu_score": 22.772101321113862,
+      "ter_score": 57.14285714285714,
+      "length_ratio": 0.9143,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.857,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_cfc731187fc3",
+      "source": "One, two, three, four, five, six, seven, eight, nine, ten.",
+      "expected": "Ein, tveir, tríggir, fýra, fimm, seks, sjey, atta, níggju, tíggju.",
+      "raw_predicted": "Ein, tveir, trír, fýra, fimm, seks, sjey, átta, níggju, tíu.",
+      "predicted": "Ein, tveir, trír, fýra, fimm, seks, sjey, átta, níggju, tíu.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 76.6993647775136,
+      "bleu_score": 60.39435155169261,
+      "ter_score": 30.0,
+      "length_ratio": 0.9091,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 10,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_d1276f785afa",
+      "source": "Many people were there, I didn't know.",
+      "expected": "Har vóru nógv fólk, eg ikki kendi.",
+      "raw_predicted": "Nógvir fólk vóru þar, eg visti ikki.",
+      "predicted": "Nógvir fólk vóru þar, eg visti ikki.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.691957488186638,
+      "bleu_score": 12.549310621989482,
+      "ter_score": 85.71428571428571,
+      "length_ratio": 1.0588,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_c6dce5d1f835",
+      "source": "I don't know when he will come.",
+      "expected": "Eg veit ikki nær fer hann.",
+      "raw_predicted": "Eg viti ikki, nær hann kemur.",
+      "predicted": "Eg viti ikki, nær hann kemur.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.392973588931795,
+      "bleu_score": 8.25791079503452,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1154,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_8c0e62e03f5e",
+      "source": "Here is your dog. Where is mine?",
+      "expected": "Tað er tín hundur. Hvar er mín?",
+      "raw_predicted": "Her er þinn hundur. Hvar er mínn?",
+      "predicted": "Her er þinn hundur. Hvar er mínn?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 62.86912590803553,
+      "bleu_score": 33.03164318013807,
+      "ter_score": 42.857142857142854,
+      "length_ratio": 1.0645,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_b012952c53ad",
+      "source": "She is in Mallorca, sunbathing by the sea.",
+      "expected": "Hon er á Majorca og sólar sær.",
+      "raw_predicted": "Hon er í Mallorca og baðar seg við sjóin.",
+      "predicted": "Hon er í Mallorca og baðar seg við sjóin.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.14258178573696,
+      "bleu_score": 9.980099403873663,
+      "ter_score": 85.71428571428571,
+      "length_ratio": 1.3667,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 9,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.286,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_d903ece62eb9",
+      "source": "You see, my problem is that I am not able to read aloud.",
+      "expected": "Altso, problemið hjá mær er, at eg kan ikki lesa hard.",
+      "raw_predicted": "Tú síggst, mítt vandamál er at eg kann ikki lesa upp.",
+      "predicted": "Tú síggst, mítt vandamál er at eg kann ikki lesa upp.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.05783003601121,
+      "bleu_score": 9.30514025247622,
+      "ter_score": 63.63636363636363,
+      "length_ratio": 0.9815,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 11,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_c26895cef5d9",
+      "source": "Good night, Tatoeba. See you tomorrow.",
+      "expected": "Góða nátt Tatoeba. Vit síggjast í morgin.",
+      "raw_predicted": "Góða nótt, Tatoeba. Síggjast í morgin.",
+      "predicted": "Góða nótt, Tatoeba. Síggjast í morgin.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 61.515216731016665,
+      "bleu_score": 23.356898886410004,
+      "ter_score": 28.57142857142857,
+      "length_ratio": 0.9268,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.857,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_6f9e729173a2",
+      "source": "Rostov and Rostov-on-Don are two different cities located quite far from each other.",
+      "expected": "Rostov og Rostov-on-Don eru tveir ymiskir býir, sum eru rættuliga langt burtur frá hvørjum øðrum.",
+      "raw_predicted": "Rostov og Rostov-on-Don eru tvær ymiskar borgir, sum liggja langt frá hvørjari.",
+      "predicted": "Rostov og Rostov-on-Don eru tvær ymiskar borgir, sum liggja langt frá hvørjari.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 50.366313755822745,
+      "bleu_score": 18.884639165413912,
+      "ter_score": 53.333333333333336,
+      "length_ratio": 0.8144,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 12,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_654238e81a51",
+      "source": "I speak English, French and Spanish.",
+      "expected": "Eg tosi enskt, franskt og spanskt.",
+      "raw_predicted": "Eg tala enskt, franskt og spanskt.",
+      "predicted": "Eg tala enskt, franskt og spanskt.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 80.46282349515108,
+      "bleu_score": 70.71067811865478,
+      "ter_score": 16.666666666666664,
+      "length_ratio": 1.0,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_650e33c95d71",
+      "source": "Who did you see at the party yesterday?",
+      "expected": "Hvørji sást du í dansinum í gjár?",
+      "raw_predicted": "Hvørja sátu tú á partinum í gær?",
+      "predicted": "Hvørja sátu tú á partinum í gær?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 25.689507407527433,
+      "bleu_score": 6.567274736060396,
+      "ter_score": 85.71428571428571,
+      "length_ratio": 0.9697,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_2933b6e91a48",
+      "source": "You are hiding it from Eric as well, so that he won't get to know anything.",
+      "expected": "Tú krógvar tað eisini fyri Eiriki, so hann fær einki at vita.",
+      "raw_predicted": "Tú goymir tað frá Erik eisini, so at hann ikki skal vita nakað.",
+      "predicted": "Tú goymir tað frá Erik eisini, so at hann ikki skal vita nakað.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.96754105662364,
+      "bleu_score": 7.655122720591221,
+      "ter_score": 75.0,
+      "length_ratio": 1.0328,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 13,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.083,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_fdc22ddc23ac",
+      "source": "Life is not a fairytale. If you lose your shoe at midnight, you're drunk.",
+      "expected": "Lívið er ikki eitt ævintýr. Um tú missir tín skógv um dimmið, ert tú fullur.",
+      "raw_predicted": "Lívið er ikki ein sögusøga. Ef tú misst skóin þínar við miðnætti, ertu drukkinn.",
+      "predicted": "Lívið er ikki ein sögusøga. Ef tú misst skóin þínar við miðnætti, ertu drukkinn.",
+      "segment": "",
+      "difficulty": 4,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.267672056024004,
+      "bleu_score": 9.92043523258434,
+      "ter_score": 73.33333333333333,
+      "length_ratio": 1.0526,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 14,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.933,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_49dfd09773ab",
+      "source": "Zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "expected": "Null, ein, tveir, tríggir, fýra, fimm, seks, sjey, atta, níggju, tíggju.",
+      "raw_predicted": "Null, ein, tveir, trír, fýra, fimm, seks, sjey, átta, níggju, tíu.",
+      "predicted": "Null, ein, tveir, trír, fýra, fimm, seks, sjey, átta, níggju, tíu.",
+      "segment": "",
+      "difficulty": 4,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 78.7600773683841,
+      "bleu_score": 64.7084148066781,
+      "ter_score": 27.27272727272727,
+      "length_ratio": 0.9167,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 11,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1524a8014a4e",
+      "source": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "expected": "Øll menniskju eru fødd fræls og jøvn til virðingar og mannarættindi. Tey hava skil og samvitsku og eiga at fara hvørt um annað í bróðuranda.",
+      "raw_predicted": "Allir menniskjur eru borin frjálsir og javnir í virðing og rættindum. Teir eru útbúnir við skynsemi og samvitsku og skulu gera sær til við hvørja aðra í anda bróðurleika.",
+      "predicted": "Allir menniskjur eru borin frjálsir og javnir í virðing og rættindum. Teir eru útbúnir við skynsemi og samvitsku og skulu gera sær til við hvørja aðra í anda bróðurleika.",
+      "segment": "",
+      "difficulty": 5,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.19840284947186,
+      "bleu_score": 6.032401726201459,
+      "ter_score": 88.0,
+      "length_ratio": 1.2143,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 29,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.16,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_51a21509b6ac",
+      "source": "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.",
+      "expected": "Øll hava krav um rættindi og frælsi, sum eru nevnd í hesi yvirlýsing, uttan mun til ættarslag (rasu), húðarlit, kyn, mál, átrúnað, politiska ella aðra sannføring, tjóðskaparligan ella samfelagsligan uppruna, ognarviðurskifti, føðing ella aðra støðu.",
+      "raw_predicted": "Allir hava rættina til allra rættinda og frjálsinda, sum eru sett fram í hesi yrkingu, uttan munur av slag, so sum kynni, litur, kyn, mál, trúarfar, politisk ella aðar skoðun, tjóðkynni ella samfelaglig uppruna, eign, fødding ella aðar støða.",
+      "predicted": "Allir hava rættina til allra rættinda og frjálsinda, sum eru sett fram í hesi yrkingu, uttan munur av slag, so sum kynni, litur, kyn, mál, trúarfar, politisk ella aðar skoðun, tjóðkynni ella samfelaglig uppruna, eign, fødding ella aðar støða.",
+      "segment": "",
+      "difficulty": 5,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 41.48154636728674,
+      "bleu_score": 13.16205653265512,
+      "ter_score": 74.28571428571429,
+      "length_ratio": 0.9719,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 39,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.114,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_79530a136c6f",
+      "source": "Our Father in heaven, hallowed be your name. Your Kingdom come, your will be done, on earth as in heaven Give us today our daily bread. Forgive us our sins, as we forgive those who sin against us. Lead us not into temptation, but deliver us from evil.",
+      "expected": "Faðir vár, tú sum ert í himlunum! Heilagt verði navn títt; komi ríki títt, verði vilji tín sum í himli so á jørð; gev okkum í dag okkara dagliga breyð; og fyrigev okkum skuldir okkara, so sum vit fyrigeva skuldarum okkara; og leið okkum ikki í freistingar; men frels okkum frá tí illa. Tí at um tit fyrigeva monnum misgerðir teirra, so skal himmalski faðir tykkara eisini fyrigeva tykkum; men fyrigeva tit ikki monnum, so skal faðir tykkara ikki heldur fyrigeva misgerðir tykkara.",
+      "raw_predicted": "Okkur Faðir í himli, heilagt vertu títt navn. Komi títt ríki, vertu títt vilji gjørt, á jørðini sum í himli. Gev okkum í dag okkarn dagliga breyð. Fyrirgev okkum okkara syndir, sum vit fyrirgeva teimum, sum synda móti okkum. Leið okkum ikki í freistingu, men frels okkum frá illi.",
+      "predicted": "Okkur Faðir í himli, heilagt vertu títt navn. Komi títt ríki, vertu títt vilji gjørt, á jørðini sum í himli. Gev okkum í dag okkarn dagliga breyð. Fyrirgev okkum okkara syndir, sum vit fyrirgeva teimum, sum synda móti okkum. Leið okkum ikki í freistingu, men frels okkum frá illi.",
+      "segment": "",
+      "difficulty": 5,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.36520780600351,
+      "bleu_score": 6.1124627448765745,
+      "ter_score": 78.3132530120482,
+      "length_ratio": 0.5833,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 49,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.354,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_8dbca39e617e",
+      "source": "When they returned from fishing, or from wherever they had been, they were wont to sing a hymn.",
+      "expected": "Tá ið teir komu av útróðri, ella hvar teir so høvdu verið, plagdu teir at syngja ein sálm.",
+      "raw_predicted": "Tá teir komu aftur frá fiskiskap, ella frá hvar teir høvdu verið, vóru teir vanir at syngja sálm.",
+      "predicted": "Tá teir komu aftur frá fiskiskap, ella frá hvar teir høvdu verið, vóru teir vanir at syngja sálm.",
+      "segment": "",
+      "difficulty": 4,
+      "domain": "ecommerce",
+      "exact_match": false,
+      "chrf_score": 52.089309210232884,
+      "bleu_score": 13.826777579228944,
+      "ter_score": 50.0,
+      "length_ratio": 1.0778,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 18,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_f15c5c792b80",
+      "source": "Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author.",
+      "expected": "Øll hava rætt til vernd av andaligum og evnisligum áhugamálum í sambandi við eitt og hvørt vísindaligt, bókmentaligt ella listarligt verk, sum avvarðandi hevur greitt úr hondum.",
+      "raw_predicted": "Allir hava rættina til verju av siðum og efnislegum hagsmundum, sum koma frá vísindaverkum, bókaverkum ella listverkum, sum hann er høvundur av.",
+      "predicted": "Allir hava rættina til verju av siðum og efnislegum hagsmundum, sum koma frá vísindaverkum, bókaverkum ella listverkum, sum hann er høvundur av.",
+      "segment": "",
+      "difficulty": 5,
+      "domain": "ecommerce",
+      "exact_match": false,
+      "chrf_score": 26.32678364285247,
+      "bleu_score": 3.6079498006719968,
+      "ter_score": 77.77777777777779,
+      "length_ratio": 0.8136,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 22,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.815,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_9f434780df6c",
+      "source": "He is a teacher.",
+      "expected": "Hann er lærari.",
+      "raw_predicted": "Hann er lærar.",
+      "predicted": "Hann er lærar.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 76.0537407634278,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9333,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_d3ad03c70696",
+      "source": "I doubt that he's a lawyer.",
+      "expected": "Eg ivi at hann er sakførari.",
+      "raw_predicted": "Eg iva um at hann er lógmaður.",
+      "predicted": "Eg iva um at hann er lógmaður.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "legal",
+      "exact_match": false,
+      "chrf_score": 40.07164945855138,
+      "bleu_score": 23.356898886410004,
+      "ter_score": 50.0,
+      "length_ratio": 1.0714,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.167,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_39d9995c8f81",
+      "source": "When injustice becomes law, resistance becomes duty.",
+      "expected": "Tá órættvísi gerst lóg, gerst mótstøða ein skylda.",
+      "raw_predicted": "Tá órettlæti verður lóg, verður mótstøða plikt.",
+      "predicted": "Tá órettlæti verður lóg, verður mótstøða plikt.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "legal",
+      "exact_match": false,
+      "chrf_score": 30.180500234874852,
+      "bleu_score": 10.729256185679601,
+      "ter_score": 62.5,
+      "length_ratio": 0.94,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.875,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_5fb07b7752bf",
+      "source": "I need your help.",
+      "expected": "Eg tørvi tíni hjálp.",
+      "raw_predicted": "Eg þarf þína hjálp.",
+      "predicted": "Eg þarf þína hjálp.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 33.46102358955695,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 50.0,
+      "length_ratio": 0.95,
+      "latency_s": 0.055,
+      "cost_usd": 0.000202,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_8b06481c0916",
+      "source": "You can't help me.",
+      "expected": "Tú kanst ikki hjálpa mær.",
+      "raw_predicted": "Tú kanst ikki hjálpa mær.",
+      "predicted": "Tú kanst ikki hjálpa mær.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_6098e47a613e",
+      "source": "You've really helped us a lot.",
+      "expected": "Tú hevur veruliga hjálpt okkum nógv.",
+      "raw_predicted": "Tú hevur virkeliga hjálpað okkum nógv.",
+      "predicted": "Tú hevur virkeliga hjálpað okkum nógv.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 65.97638742798982,
+      "bleu_score": 30.739407647563215,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0556,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_5d58bc2e270e",
+      "source": "Germany has two capital cities.",
+      "expected": "Týskland hevur tveir høvuðstaðir.",
+      "raw_predicted": "Tyskland hevur tvær høvuðsstøðvar.",
+      "predicted": "Tyskland hevur tvær høvuðsstøðvar.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "tech",
+      "exact_match": false,
+      "chrf_score": 48.535707696424915,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 75.0,
+      "length_ratio": 1.0303,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_4205a918e065",
+      "source": "He always looks happy.",
+      "expected": "Hann sær altíð fegin út.",
+      "raw_predicted": "Hann lítur altíð glaðan út.",
+      "predicted": "Hann lítur altíð glaðan út.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 38.21579741826562,
+      "bleu_score": 19.304869754804482,
+      "ter_score": 40.0,
+      "length_ratio": 1.125,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1922c6a21b78",
+      "source": "I don't know the password.",
+      "expected": "Eg veit ikki loyniorðsins.",
+      "raw_predicted": "Eg kanni ikki loyniorðið.",
+      "predicted": "Eg kanni ikki loyniorðið.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 46.17797789972792,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 50.0,
+      "length_ratio": 0.9615,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_b79e2061297a",
+      "source": "The apple is red.",
+      "expected": "Súreplið er reytt.",
+      "raw_predicted": "Eplin er reytt.",
+      "predicted": "Eplin er reytt.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 54.12123998955241,
+      "bleu_score": 59.460355750136046,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.8333,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_557a37fc2f22",
+      "source": "This is an apple tree.",
+      "expected": "Hetta er eitt súreplatræ.",
+      "raw_predicted": "Hetta er eitt epli-træ.",
+      "predicted": "Hetta er eitt epli-træ.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 58.98058634603672,
+      "bleu_score": 42.7287006396234,
+      "ter_score": 25.0,
+      "length_ratio": 0.92,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_be07632589c3",
+      "source": "Tom has disappeared.",
+      "expected": "Tom er horvin.",
+      "raw_predicted": "Tom er burtur.",
+      "predicted": "Tom er burtur.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 33.46906565656566,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_f11428ce8d1e",
+      "source": "The accident happened all of a sudden.",
+      "expected": "Óhappið hendi knappliga.",
+      "raw_predicted": "Ólykkjan hendi allt í einum.",
+      "predicted": "Ólykkjan hendi allt í einum.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 19.149283435157436,
+      "bleu_score": 9.652434877402245,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.1667,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_4ded871ed5fe",
+      "source": "The apple fell from the tree.",
+      "expected": "Súreplið fall av træsins.",
+      "raw_predicted": "Eplin fell úr træinum.",
+      "predicted": "Eplin fell úr træinum.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 16.84672650797908,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 100.0,
+      "length_ratio": 0.88,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_1a10c7662ce3",
+      "source": "Yes, the apple is red.",
+      "expected": "Ja, súreplið er reytt.",
+      "raw_predicted": "Já, eplin er reytt.",
+      "predicted": "Já, eplin er reytt.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 47.321818692721884,
+      "bleu_score": 32.46679154750989,
+      "ter_score": 50.0,
+      "length_ratio": 0.8636,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_challenge_hash_9fc515675fcb",
+      "source": "May I have the menu, please?",
+      "expected": "Kan eg fáa matseðilin?",
+      "raw_predicted": "Kann eg fáa matseðlin, takk?",
+      "predicted": "Kann eg fáa matseðlin, takk?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 57.95885817959151,
+      "bleu_score": 14.535768424205482,
+      "ter_score": 75.0,
+      "length_ratio": 1.2727,
+      "latency_s": 0.098,
+      "cost_usd": 9.3e-05,
+      "cached": false,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    }
+  ]
+}

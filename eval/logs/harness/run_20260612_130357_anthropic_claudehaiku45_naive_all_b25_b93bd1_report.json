@@ -1,0 +1,4784 @@
+{
+  "run_id": "run_20260612_130357_anthropic_claudehaiku45_naive_all_b25_b93bd1",
+  "config": {
+    "dataset": "all",
+    "dataset_id": "",
+    "entry_ids": null,
+    "corpus_path": "datasets/curated/eng-amh-dev-v1.json",
+    "source_file": null,
+    "reference_file": null,
+    "source_field": "source",
+    "target_field": "reference",
+    "source_lang": "English",
+    "target_lang": "Amharic",
+    "segment_names": [],
+    "model": "anthropic/claude-haiku-4.5",
+    "max_tokens": 32768,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": true,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 25,
+    "concurrency": 8,
+    "prompt_version": "naive",
+    "custom_prompt_path": null,
+    "coaching_file": null,
+    "style_profile": null,
+    "post_hooks": [],
+    "fst_retries": 0,
+    "output_dir": "eval/logs/harness",
+    "run_name": null,
+    "temperature": 0.0,
+    "dry_run": false,
+    "assume_yes": true,
+    "method_path": null,
+    "process_name": null,
+    "champollion_config_path": null,
+    "champollion_cards_dir": null,
+    "target_lang_code": "",
+    "_model_id": "anthropic/claude-haiku-4.5",
+    "_effective_temperature": 0.0,
+    "_config_hash": "d1904e428023"
+  },
+  "source_log": "/Users/gamedaysuits/local projects/Champollion copy/arena/eval/logs/harness/run_20260612_130357_anthropic_claudehaiku45_naive_all_b25_b93bd1.json",
+  "overall": {
+    "total_entries": 73,
+    "error_count": 0,
+    "evaluated": 73,
+    "exact_match_count": 7,
+    "exact_match_rate": 0.0959,
+    "miss_count": 66,
+    "miss_rate": 0.9041,
+    "avg_chrf": 49.48,
+    "avg_bleu": 14.54,
+    "avg_latency_s": 0.036,
+    "total_cost_usd": 0.0098,
+    "total_tool_calls": 0,
+    "corpus_chrf": 46.51,
+    "corpus_bleu": 20.15,
+    "corpus_ter": 59.61,
+    "avg_length_ratio": 1.0494,
+    "comet_score": null,
+    "confidence_intervals": {
+      "corpus_chrf": {
+        "metric_name": "corpus_chrf",
+        "score": 46.5125,
+        "ci_lower": 39.4293,
+        "ci_upper": 54.7735,
+        "ci_width": 15.3441,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 73,
+        "seed": 12345
+      },
+      "corpus_bleu": {
+        "metric_name": "corpus_bleu",
+        "score": 20.1546,
+        "ci_lower": 11.7818,
+        "ci_upper": 28.5246,
+        "ci_width": 16.7429,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 73,
+        "seed": 12345
+      },
+      "exact_match_rate": {
+        "metric_name": "exact_match_rate",
+        "score": 0.0959,
+        "ci_lower": 0.0411,
+        "ci_upper": 0.1644,
+        "ci_width": 0.1233,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 73,
+        "seed": 12345
+      },
+      "composite_score": {
+        "metric_name": "composite_score",
+        "score": 0.3596,
+        "ci_lower": 0.2989,
+        "ci_upper": 0.4297,
+        "ci_width": 0.1308,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 73,
+        "seed": 12345
+      }
+    },
+    "confidence_intervals_by_tier": {
+      "1": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier1",
+          "score": 47.7776,
+          "ci_lower": 38.2507,
+          "ci_upper": 57.9566,
+          "ci_width": 19.7059,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 40,
+          "seed": 12346
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier1",
+          "score": 0.15,
+          "ci_lower": 0.05,
+          "ci_upper": 0.275,
+          "ci_width": 0.225,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 40,
+          "seed": 12346
+        }
+      },
+      "2": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier2",
+          "score": 54.9066,
+          "ci_lower": 44.9165,
+          "ci_upper": 64.3929,
+          "ci_width": 19.4764,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 25,
+          "seed": 12347
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier2",
+          "score": 0.04,
+          "ci_lower": 0.0,
+          "ci_upper": 0.12,
+          "ci_width": 0.12,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 25,
+          "seed": 12347
+        }
+      },
+      "3": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier3",
+          "score": 38.4713,
+          "ci_lower": 23.7529,
+          "ci_upper": 54.5359,
+          "ci_width": 30.783,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 7,
+          "seed": 12348
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier3",
+          "score": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "ci_width": 0.0,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 7,
+          "seed": 12348
+        }
+      }
+    },
+    "plugin_metrics": {
+      "giellalt_fst_validity": {
+        "avg_fst_validity": 0.0,
+        "total_words_checked": 274,
+        "total_valid_words": 0,
+        "corpus_validity_rate": 0.0
+      },
+      "code_switching": {
+        "avg_code_switching_rate": 0.0,
+        "entries_with_code_switching": 0,
+        "entries_with_code_switching_pct": 0.0,
+        "total_wrong_script_tokens": 0
+      },
+      "hallucination": {
+        "avg_hallucination_rate": 0.0,
+        "max_hallucination_rate": 0.0,
+        "entries_flagged_hallucination": 0,
+        "entries_flagged_hallucination_pct": 0.0,
+        "avg_length_score": 0.0,
+        "avg_repetition_score": 0.0,
+        "avg_entity_score": 0.0
+      },
+      "terminology": {
+        "avg_terminology_adherence": null,
+        "total_term_matches": 0,
+        "total_term_total": 0,
+        "total_term_misses": 0
+      },
+      "writing_style": {
+        "style_consistency_rate": 1.0,
+        "avg_sentence_length_ratio": 1.12,
+        "avg_formality_score": 0.0,
+        "style_register_distribution": {
+          "undetermined": 73
+        }
+      }
+    }
+  },
+  "by_segment": {
+    "unknown": {
+      "name": "unknown",
+      "count": 73,
+      "exact_match_count": 7,
+      "miss_count": 66,
+      "error_count": 0,
+      "avg_chrf": 49.48,
+      "avg_bleu": 14.54,
+      "avg_latency_s": 0.036,
+      "total_cost_usd": 0.0098,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "name": "difficulty_1",
+      "count": 40,
+      "exact_match_count": 6,
+      "miss_count": 34,
+      "error_count": 0,
+      "avg_chrf": 51.73,
+      "avg_bleu": 5.22,
+      "avg_latency_s": 0.039,
+      "total_cost_usd": 0.0047,
+      "plugin_aggregates": {}
+    },
+    "2": {
+      "name": "difficulty_2",
+      "count": 25,
+      "exact_match_count": 1,
+      "miss_count": 24,
+      "error_count": 0,
+      "avg_chrf": 50.17,
+      "avg_bleu": 26.74,
+      "avg_latency_s": 0.034,
+      "total_cost_usd": 0.0038,
+      "plugin_aggregates": {}
+    },
+    "3": {
+      "name": "difficulty_3",
+      "count": 7,
+      "exact_match_count": 0,
+      "miss_count": 7,
+      "error_count": 0,
+      "avg_chrf": 38.28,
+      "avg_bleu": 26.0,
+      "avg_latency_s": 0.032,
+      "total_cost_usd": 0.0012,
+      "plugin_aggregates": {}
+    },
+    "5": {
+      "name": "difficulty_5",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 20.27,
+      "avg_bleu": 1.91,
+      "avg_latency_s": 0.031,
+      "total_cost_usd": 0.0002,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_domain": {
+    "conv": {
+      "name": "conv",
+      "count": 47,
+      "exact_match_count": 6,
+      "miss_count": 41,
+      "error_count": 0,
+      "avg_chrf": 50.06,
+      "avg_bleu": 17.54,
+      "avg_latency_s": 0.036,
+      "total_cost_usd": 0.0067,
+      "plugin_aggregates": {}
+    },
+    "ecommerce": {
+      "name": "ecommerce",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 18.32,
+      "avg_bleu": 0.0,
+      "avg_latency_s": 0.031,
+      "total_cost_usd": 0.0002,
+      "plugin_aggregates": {}
+    },
+    "edu": {
+      "name": "edu",
+      "count": 22,
+      "exact_match_count": 0,
+      "miss_count": 22,
+      "error_count": 0,
+      "avg_chrf": 46.75,
+      "avg_bleu": 8.78,
+      "avg_latency_s": 0.036,
+      "total_cost_usd": 0.0026,
+      "plugin_aggregates": {}
+    },
+    "support": {
+      "name": "support",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 65.99,
+      "avg_bleu": 19.0,
+      "avg_latency_s": 0.037,
+      "total_cost_usd": 0.0001,
+      "plugin_aggregates": {}
+    },
+    "ui": {
+      "name": "ui",
+      "count": 2,
+      "exact_match_count": 1,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 73.21,
+      "avg_bleu": 12.22,
+      "avg_latency_s": 0.037,
+      "total_cost_usd": 0.0002,
+      "plugin_aggregates": {}
+    }
+  },
+  "entries": [
+    {
+      "id": "tatoeba_1830484",
+      "source": "Why aren't you eating?",
+      "expected": "ለምን አትበላም።",
+      "raw_predicted": "ለምን አትበላ?",
+      "predicted": "ለምን አትበላ?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 57.72856259355282,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.9,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ለምን",
+            "አትበላ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_12975760",
+      "source": "What is my name?",
+      "expected": "ስሜ ማን ነው፧",
+      "raw_predicted": "ስሜ ምን ነው?",
+      "predicted": "ስሜ ምን ነው?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.628642250101173,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ስሜ",
+            "ምን",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3143543",
+      "source": "Are you Ethiopian?",
+      "expected": "ኢትዮጵያዊ ነህ?",
+      "raw_predicted": "ኢትዮጵያዊ ነህ?",
+      "predicted": "ኢትዮጵያዊ ነህ?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ኢትዮጵያዊ",
+            "ነህ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_321793",
+      "source": "I'm never late for school.",
+      "expected": "ዘግይቼ እትምሀርት ቤት ምን ጊዜም አልደርስም።",
+      "raw_predicted": "ለትምህርት ቤት በጭራሽ አይዘገምም።",
+      "predicted": "ለትምህርት ቤት በጭራሽ አይዘገምም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 13.417210918701816,
+      "bleu_score": 9.688464563433238,
+      "ter_score": 83.33333333333334,
+      "length_ratio": 0.7586,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ለትምህርት",
+            "ቤት",
+            "በጭራሽ",
+            "አይዘገምም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1792649",
+      "source": "I'm not dead.",
+      "expected": "ሙት አይደለሁም።",
+      "raw_predicted": "ሞቶ አይደለሁም።",
+      "predicted": "ሞቶ አይደለሁም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 56.35912698412698,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሞቶ",
+            "አይደለሁም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2009658",
+      "source": "She isn't young.",
+      "expected": "ወጣት አይደለችም።",
+      "raw_predicted": "ወጣት አይደለችም።",
+      "predicted": "ወጣት አይደለችም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ወጣት",
+            "አይደለችም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2249346",
+      "source": "It's truly frightening.",
+      "expected": "በውነት ያስፈራል።",
+      "raw_predicted": "በእርግጥ 무섯ስ ነው።",
+      "predicted": "በእርግጥ 무섯ስ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 6.1274509803921555,
+      "bleu_score": 0.0,
+      "ter_score": 150.0,
+      "length_ratio": 1.1818,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "በእርግጥ",
+            "무섯ስ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8386788",
+      "source": "I am learning French.",
+      "expected": "ፈረንሳይኛን እየተመርኩ ነው።",
+      "raw_predicted": "ፈረንሳይ እየተማርኩ ነው።",
+      "predicted": "ፈረንሳይ እየተማርኩ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.715091044152125,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.8889,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ፈረንሳይ",
+            "እየተማርኩ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2476143",
+      "source": "I don't know the truth.",
+      "expected": "ሐቁን አላውቅም።",
+      "raw_predicted": "ሃቁን አላውቅም።",
+      "predicted": "ሃቁን አላውቅም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 68.8045634920635,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሃቁን",
+            "አላውቅም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_20097",
+      "source": "You are beautiful.",
+      "expected": "አንቺ ቆንጆ ነሽ።",
+      "raw_predicted": "아름답다ብ ነሽ።",
+      "predicted": "아름답다ብ ነሽ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 13.801040275923452,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.8182,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "아름답다ብ",
+            "ነሽ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_257922",
+      "source": "I'm looking for work.",
+      "expected": "ስራ እየፈለግሁኝ ነው።",
+      "raw_predicted": "ስራ እየፈለግኩ ነው።",
+      "predicted": "ስራ እየፈለግኩ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 50.019742552387434,
+      "bleu_score": 0.0,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9286,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ስራ",
+            "እየፈለግኩ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3642356",
+      "source": "I'm also learning Amharic.",
+      "expected": "እሱም አማርኛን እየተመርኩ ነው።",
+      "raw_predicted": "አማርኛንም እየተማርኩ ነው።",
+      "predicted": "አማርኛንም እየተማርኩ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.508674909580506,
+      "bleu_score": 0.0,
+      "ter_score": 75.0,
+      "length_ratio": 0.85,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አማርኛንም",
+            "እየተማርኩ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_528533",
+      "source": "Yesterday was Thursday.",
+      "expected": "ትናንት ሐሙስ ነበር።",
+      "raw_predicted": "ትናንት ሐሙስ ነበር።",
+      "predicted": "ትናንት ሐሙስ ነበር።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ትናንት",
+            "ሐሙስ",
+            "ነበር።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2646059",
+      "source": "How're you doing today?",
+      "expected": "አንተ ዛሬ እንዴት ነህ፧",
+      "raw_predicted": "ዛሬ እንዴት ነህ?",
+      "predicted": "ዛሬ እንዴት ነህ?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 55.8505707279187,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 50.0,
+      "length_ratio": 0.7333,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ዛሬ",
+            "እንዴት",
+            "ነህ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_253017",
+      "source": "I am an American.",
+      "expected": "አሜሪካዊ ነኝ።",
+      "raw_predicted": "አሜሪካዊ ነኝ።",
+      "predicted": "አሜሪካዊ ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አሜሪካዊ",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "expected": "መሄድ እፈልጋለሁ።",
+      "raw_predicted": "መሄድ እፈልጋለሁ።",
+      "predicted": "መሄድ እፈልጋለሁ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "መሄድ",
+            "እፈልጋለሁ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2870519",
+      "source": "She wants you.",
+      "expected": "ትፈልግሃለች።",
+      "raw_predicted": "ይህ ሴት ይፈልግሃል።",
+      "predicted": "ይህ ሴት ይፈልግሃል።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.496984358412977,
+      "bleu_score": 0.0,
+      "ter_score": 300.0,
+      "length_ratio": 1.625,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ይህ",
+            "ሴት",
+            "ይፈልግሃል።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_415514",
+      "source": "I will try.",
+      "expected": "እሞክራለሁ።",
+      "raw_predicted": "ሞክራለሁ።",
+      "predicted": "ሞክራለሁ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 66.4894572362513,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8571,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 1,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሞክራለሁ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2388149",
+      "source": "I never loved you.",
+      "expected": "ከቶ አልወደድኩህም።",
+      "raw_predicted": "በጭራሽ አልወደድሁህም።",
+      "predicted": "በጭራሽ አልወደድሁህም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 25.970719016456368,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.1667,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "በጭራሽ",
+            "አልወደድሁህም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2239888",
+      "source": "Tom wasn't fighting.",
+      "expected": "ቶም እየተዋጋ አልነበረም።",
+      "raw_predicted": "ቶም ሊታገል ነበር።",
+      "predicted": "ቶም ሊታገል ነበር።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 14.089238858713134,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.75,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ቶም",
+            "ሊታገል",
+            "ነበር።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_873615",
+      "source": "You're going in the wrong direction.",
+      "expected": "የምትሄደው በተሳሳተ አቅጣጫ ነው።",
+      "raw_predicted": "በተሳሳተ አቅጣጫ ትሄዳለህ።",
+      "predicted": "በተሳሳተ አቅጣጫ ትሄዳለህ።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 46.13631277688708,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.8095,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "በተሳሳተ",
+            "አቅጣጫ",
+            "ትሄዳለህ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4694896",
+      "source": "I don't want to go to school!",
+      "expected": "ወደ ትምህርት ቤት መሄድ አልፈልግም።",
+      "raw_predicted": "ወደ ትምህርት ቤት መሄድ አልፈልግም!",
+      "predicted": "ወደ ትምህርት ቤት መሄድ አልፈልግም!",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 89.04851039483165,
+      "bleu_score": 50.81327481546147,
+      "ter_score": 20.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ወደ",
+            "ትምህርት",
+            "ቤት",
+            "መሄድ",
+            "አልፈልግም"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_698966",
+      "source": "Where is he?",
+      "expected": "እርሱ ወዴት ነው፧",
+      "raw_predicted": "እሱ የት ነው?",
+      "predicted": "እሱ የት ነው?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 12.45243186142558,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8182,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እሱ",
+            "የት",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_12378409",
+      "source": "This content is not available in your country.",
+      "expected": "ይህ ይዘት በእርስዎ አገር ውስጥ አይገኝም።",
+      "raw_predicted": "ይህ ይዘት በአንተ ሀገር ውስጥ አይገኝም።",
+      "predicted": "ይህ ይዘት በአንተ ሀገር ውስጥ አይገኝም።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 59.72284831332642,
+      "bleu_score": 22.957488466614326,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.963,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ይህ",
+            "ይዘት",
+            "በአንተ",
+            "ሀገር",
+            "ውስጥ",
+            "አይገኝም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_11491159",
+      "source": "I am going to the store.",
+      "expected": "ወደ ሱቅ እሄዳለሁ።",
+      "raw_predicted": "ወደ ሱቅ ሄጄ ነው።",
+      "predicted": "ወደ ሱቅ ሄጄ ነው።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.723823092884523,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.041,
+      "cost_usd": 0.000114,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ወደ",
+            "ሱቅ",
+            "ሄጄ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_13087338",
+      "source": "I updated the software to the latest version.",
+      "expected": "ሶፍትዌሩን ወደ የቅርብ ጊዜው ስሪት አዘምነዋለሁ።",
+      "raw_predicted": "ሶፍትዌሩን ወደ ቅርብ ስሪት ዝመንኩ።",
+      "predicted": "ሶፍትዌሩን ወደ ቅርብ ስሪት ዝመንኩ።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 34.19892333002254,
+      "bleu_score": 19.357693493908812,
+      "ter_score": 50.0,
+      "length_ratio": 0.7419,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሶፍትዌሩን",
+            "ወደ",
+            "ቅርብ",
+            "ስሪት",
+            "ዝመንኩ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.833,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9145960",
+      "source": "Is the railroad station far from here?",
+      "expected": "ባቡር ጣቢያው ክዚህ ሩቅ ነው?",
+      "raw_predicted": "የባቡር ጣቢያው ከዚህ ሩቅ ነው?",
+      "predicted": "የባቡር ጣቢያው ከዚህ ሩቅ ነው?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 64.68549978637287,
+      "bleu_score": 32.46679154750989,
+      "ter_score": 40.0,
+      "length_ratio": 1.0526,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "የባቡር",
+            "ጣቢያው",
+            "ከዚህ",
+            "ሩቅ",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5765446",
+      "source": "I do not know the truth.",
+      "expected": "ሐቁን አላውቅም።",
+      "raw_predicted": "እውነቱን አላውቅም።",
+      "predicted": "እውነቱን አላውቅም።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 53.48486905824632,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.2,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እውነቱን",
+            "አላውቅም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4748872",
+      "source": "You are going in the wrong direction.",
+      "expected": "የምትሄደው በተሳሳተ አቅጣጫ ነው።",
+      "raw_predicted": "በተሳሳተ አቅጣጫ ሄዳችሁ ነው።",
+      "predicted": "በተሳሳተ አቅጣጫ ሄዳችሁ ነው።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 50.44460640149412,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 50.0,
+      "length_ratio": 0.9048,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "በተሳሳተ",
+            "አቅጣጫ",
+            "ሄዳችሁ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2968339",
+      "source": "He is a very good doctor.",
+      "expected": "እሱ በጣም ጥሩ ሐኪም ነው።",
+      "raw_predicted": "እሱ በጣም ጥሩ ሐኪም ነው።",
+      "predicted": "እሱ በጣም ጥሩ ሐኪም ነው።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እሱ",
+            "በጣም",
+            "ጥሩ",
+            "ሐኪም",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2147545",
+      "source": "Where is she?",
+      "expected": "እርሱ ወዴት ነው፧",
+      "raw_predicted": "ሷ የት ነች?",
+      "predicted": "ሷ የት ነች?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 4.665920119447555,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.7273,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሷ",
+            "የት",
+            "ነች"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9145962",
+      "source": "Where is a good hotel?",
+      "expected": "ደህና ሆቴል የት አለ?",
+      "raw_predicted": "ጥሩ ሆቴል የት ነው?",
+      "predicted": "ጥሩ ሆቴል የት ነው?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.991129047342326,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 50.0,
+      "length_ratio": 0.9286,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ጥሩ",
+            "ሆቴል",
+            "የት",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_40912",
+      "source": "Flying a kite can be dangerous.",
+      "expected": "ወላንዶን ማብረር አደገኛ ሊሆን ይችላል።",
+      "raw_predicted": "연을 ማንበር አደገኛ ሊሆን ይችላል።",
+      "predicted": "연을 ማንበር አደገኛ ሊሆን ይችላል።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 58.733810110145754,
+      "bleu_score": 39.76353643835254,
+      "ter_score": 40.0,
+      "length_ratio": 0.88,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "연을",
+            "ማንበር",
+            "አደገኛ",
+            "ሊሆን",
+            "ይችላል።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_11483210",
+      "source": "She decided to move to Belgium.",
+      "expected": "ወደ ቤልጂየም ለመሄድ ወሰነች።",
+      "raw_predicted": "ሷ ወደ ቤልጂየም ለመሄድ ወሰነች።",
+      "predicted": "ሷ ወደ ቤልጂየም ለመሄድ ወሰነች።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 97.6187178586315,
+      "bleu_score": 66.87403049764218,
+      "ter_score": 25.0,
+      "length_ratio": 1.1053,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሷ",
+            "ወደ",
+            "ቤልጂየም",
+            "ለመሄድ",
+            "ወሰነች።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1027181",
+      "source": "Tom always drinks coffee in the morning.",
+      "expected": "ቶም ሁልጊዜ ጧት ቡና ይጠጣል",
+      "raw_predicted": "ቶም ሁልጊዜ በጠዋቱ ቡና ይጠጣል።",
+      "predicted": "ቶም ሁልጊዜ በጠዋቱ ቡና ይጠጣል።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 51.893881097997216,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 40.0,
+      "length_ratio": 1.1667,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ቶም",
+            "ሁልጊዜ",
+            "በጠዋቱ",
+            "ቡና",
+            "ይጠጣል።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6026",
+      "source": "Where have you been?",
+      "expected": "የት ነበርክ፧",
+      "raw_predicted": "ሁለታችሁ የት ነበራችሁ?",
+      "predicted": "ሁለታችሁ የት ነበራችሁ?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.99073420335406,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.875,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሁለታችሁ",
+            "የት",
+            "ነበራችሁ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4555682",
+      "source": "Who broke the bottle?",
+      "expected": "ጠርሙሱን ማን ሰበረ?",
+      "raw_predicted": "ጠርሙሱን ማን ሰበረው?",
+      "predicted": "ጠርሙሱን ማን ሰበረው?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 78.91599538758277,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0769,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ጠርሙሱን",
+            "ማን",
+            "ሰበረው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_481895",
+      "source": "Where is her house?",
+      "expected": "ቤቱ የት ነው?",
+      "raw_predicted": "የሷ ቤት የት ነው?",
+      "predicted": "የሷ ቤት የት ነው?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 51.05086863281328,
+      "bleu_score": 39.76353643835254,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.3333,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "የሷ",
+            "ቤት",
+            "የት",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_12975481",
+      "source": "My sisters love to talk about science.",
+      "expected": "እህቶቼ ስለ ሳይንስ ማውራት ይወዳሉ።",
+      "raw_predicted": "የእኔ እህቶች ስለ ሳይንስ መነጋገር ይወዳሉ።",
+      "predicted": "የእኔ እህቶች ስለ ሳይንስ መነጋገር ይወዳሉ።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.898340402390076,
+      "bleu_score": 17.965205598154213,
+      "ter_score": 60.0,
+      "length_ratio": 1.2174,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "የእኔ",
+            "እህቶች",
+            "ስለ",
+            "ሳይንስ",
+            "መነጋገር",
+            "ይወዳሉ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.2,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6261272",
+      "source": "I didn't want to go to school.",
+      "expected": "ወደ ትምህርት ቤት መሄድ አልፈልግም።",
+      "raw_predicted": "ወደ ትምህርት ቤት መሄድ አልፈልግም ነበር።",
+      "predicted": "ወደ ትምህርት ቤት መሄድ አልፈልግም ነበር።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 87.10045392204768,
+      "bleu_score": 50.81327481546147,
+      "ter_score": 40.0,
+      "length_ratio": 1.1739,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ወደ",
+            "ትምህርት",
+            "ቤት",
+            "መሄድ",
+            "አልፈልግም",
+            "ነበር።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.2,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2122322",
+      "source": "In mathematics, he is an ace.",
+      "expected": "በሒሳብ በጣም ጐበዝ ነው።",
+      "raw_predicted": "በሂሳብ ውስጥ እሱ ጠንካራ ነው።",
+      "predicted": "በሂሳብ ውስጥ እሱ ጠንካራ ነው።",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 12.54491317021564,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 100.0,
+      "length_ratio": 1.25,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "በሂሳብ",
+            "ውስጥ",
+            "እሱ",
+            "ጠንካራ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1886618",
+      "source": "Where do you want to eat?",
+      "expected": "የት መብላት ተፈልጋለህ?",
+      "raw_predicted": "የት መብላት ትፈልጋለህ?",
+      "predicted": "የት መብላት ትፈልጋለህ?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 60.76825951825951,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "የት",
+            "መብላት",
+            "ትፈልጋለህ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9145949",
+      "source": "Excuse me, where is the American Embassy?",
+      "expected": "እባክዎ፣ ያሜሪካን ኤምባሲ የት ነው?",
+      "raw_predicted": "ይቅርታ, የአሜሪካ ኤምባሲ የት ነው?",
+      "predicted": "ይቅርታ, የአሜሪካ ኤምባሲ የት ነው?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 48.47210418206587,
+      "bleu_score": 41.11336169005198,
+      "ter_score": 40.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ይቅርታ",
+            "የአሜሪካ",
+            "ኤምባሲ",
+            "የት",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9145955",
+      "source": "Go straight ahead and turn to the left.",
+      "expected": "ወደፊት ይህዱና ወደ ግራ ይዙሩ።",
+      "raw_predicted": "ቀጥ ብለህ ሂድ እና ወደ ግራ ዞር።",
+      "predicted": "ቀጥ ብለህ ሂድ እና ወደ ግራ ዞር።",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.028942635846015,
+      "bleu_score": 13.134549472120794,
+      "ter_score": 100.0,
+      "length_ratio": 1.1,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 7,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ቀጥ",
+            "ብለህ",
+            "ሂድ",
+            "እና",
+            "ወደ",
+            "ግራ",
+            "ዞር።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.4,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_731863",
+      "source": "My native language is the most beautiful gift from my mother.",
+      "expected": "የእናት ቋንቋዬ ከእናቴ የተቀበልኩት በጣም ደጉ በረከት ነው።",
+      "raw_predicted": "የእኔ ሕዝብ ቋንቋ ከእናቴ በጣም 아름다운 ስጦታ ነው።",
+      "predicted": "የእኔ ሕዝብ ቋንቋ ከእናቴ በጣም 아름다운 ስጦታ ነው።",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 17.959722463798368,
+      "bleu_score": 7.267884212102741,
+      "ter_score": 75.0,
+      "length_ratio": 0.8684,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 8,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "የእኔ",
+            "ሕዝብ",
+            "ቋንቋ",
+            "ከእናቴ",
+            "በጣም",
+            "아름다운",
+            "ስጦታ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 8,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_272763",
+      "source": "Last week, I mailed him some souvenirs from the U.S.",
+      "expected": "ባለፈው ሳምንት ከአሜሪካ አንዳንድ ማስታወሻ ላኩለት።",
+      "raw_predicted": "ባለፈው ሳምንት ከአሜሪካ አንዳንድ ስሌቶችን ላክኩት።",
+      "predicted": "ባለፈው ሳምንት ከአሜሪካ አንዳንድ ስሌቶችን ላክኩት።",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 63.9837155598025,
+      "bleu_score": 50.81327481546147,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ባለፈው",
+            "ሳምንት",
+            "ከአሜሪካ",
+            "አንዳንድ",
+            "ስሌቶችን",
+            "ላክኩት።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_338182",
+      "source": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "expected": "የሰው ልጅ ሁሉ ሲወለድ ነጻና በክብርና በመብትም እኩልነት ያለው ነው። የተፈጥሮ የማስተዋልና ሕሊናው አንዱ ሌላውን በወንድማማችነት መንፍስ መመልከት የገባዋል።",
+      "raw_predicted": "ሁሉም ሰዎች ነጻ እና በክብር እና በመብት እኩል ተወልደዋል። ምክር እና 良心 ተሰጥቷቸዋል እና ወደ አንዳቸው በወንድማማችነት መንፈስ መሰራት ይገባቸዋል።",
+      "predicted": "ሁሉም ሰዎች ነጻ እና በክብር እና በመብት እኩል ተወልደዋል። ምክር እና 良心 ተሰጥቷቸዋል እና ወደ አንዳቸው በወንድማማችነት መንፈስ መሰራት ይገባቸዋል።",
+      "segment": "",
+      "difficulty": 5,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.267183742573046,
+      "bleu_score": 1.9146030690102513,
+      "ter_score": 100.0,
+      "length_ratio": 0.96,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 20,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሁሉም",
+            "ሰዎች",
+            "ነጻ",
+            "እና",
+            "በክብር",
+            "እና",
+            "በመብት",
+            "እኩል",
+            "ተወልደዋል።",
+            "ምክር",
+            "እና",
+            "良心",
+            "ተሰጥቷቸዋል",
+            "እና",
+            "ወደ",
+            "አንዳቸው",
+            "በወንድማማችነት",
+            "መንፈስ",
+            "መሰራት",
+            "ይገባቸዋል።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 20,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.053,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3316425",
+      "source": "What would you like to order?",
+      "expected": "ምን ማዘዝ ትፈልጋለህ?",
+      "raw_predicted": "ምን ታዝዛለህ?",
+      "predicted": "ምን ታዝዛለህ?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ecommerce",
+      "exact_match": false,
+      "chrf_score": 18.32334796195028,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.6429,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ምን",
+            "ታዝዛለህ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_248532",
+      "source": "We are students.",
+      "expected": "ተማሪዎች ነን።",
+      "raw_predicted": "እኛ ተማሪዎች ነን።",
+      "predicted": "እኛ ተማሪዎች ነን።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 91.5569593375093,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.3333,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኛ",
+            "ተማሪዎች",
+            "ነን።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_20099",
+      "source": "You are teachers.",
+      "expected": "አስተማሪዎች ናችሁ።",
+      "raw_predicted": "እናንተ መምህራን ናችሁ።",
+      "predicted": "እናንተ መምህራን ናችሁ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 18.954383611014432,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.25,
+      "latency_s": 0.031,
+      "cost_usd": 0.000174,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እናንተ",
+            "መምህራን",
+            "ናችሁ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2968334",
+      "source": "You're a teacher.",
+      "expected": "አንተ አስተማሪ ነህ።",
+      "raw_predicted": "አንተ መምህር ነው።",
+      "predicted": "አንተ መምህር ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 15.08735842179193,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9231,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አንተ",
+            "መምህር",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1163562",
+      "source": "You are a student.",
+      "expected": "አንተ ተማሪ ነህ።",
+      "raw_predicted": "አንተ ተማሪ ነው።",
+      "predicted": "አንተ ተማሪ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 66.08134920634922,
+      "bleu_score": 0.0,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አንተ",
+            "ተማሪ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_567368",
+      "source": "I'm a student.",
+      "expected": "ተማሪ ነኝ።",
+      "raw_predicted": "እኔ ተማሪ ነኝ።",
+      "predicted": "እኔ ተማሪ ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 87.85815351963213,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.4286,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_432340",
+      "source": "I was a teacher.",
+      "expected": "አስተማሪ ነበርኩ።",
+      "raw_predicted": "እኔ መምህር ነበርኩ።",
+      "predicted": "እኔ መምህር ነበርኩ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 27.374510801133766,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.1818,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "ነበርኩ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_259069",
+      "source": "I am a teacher.",
+      "expected": "አስተማሪ ነኝ።",
+      "raw_predicted": "እኔ መምህር ነኝ።",
+      "predicted": "እኔ መምህር ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 15.79370384517443,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.2222,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_256929",
+      "source": "I'm a teacher.",
+      "expected": "አስተማሪ ነኝ።",
+      "raw_predicted": "እኔ መምህር ነኝ።",
+      "predicted": "እኔ መምህር ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 15.79370384517443,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.2222,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_252287",
+      "source": "I am a student.",
+      "expected": "ተማሪ ነኝ።",
+      "raw_predicted": "እኔ ተማሪ ነኝ።",
+      "predicted": "እኔ ተማሪ ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 87.85815351963213,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.4286,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_69521",
+      "source": "Are you a student?",
+      "expected": "አንተ ተማሪ ነህ?",
+      "raw_predicted": "አንተ ተማሪ ነው?",
+      "predicted": "አንተ ተማሪ ነው?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 65.03968253968254,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አንተ",
+            "ተማሪ",
+            "ነው"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_69155",
+      "source": "You are a teacher.",
+      "expected": "አንተ አስተማሪ ነህ።",
+      "raw_predicted": "አንተ መምህር ነው።",
+      "predicted": "አንተ መምህር ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 15.08735842179193,
+      "bleu_score": 0.0,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9231,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "አንተ",
+            "መምህር",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3144667",
+      "source": "She is a good student.",
+      "expected": "ጥሩ ተማሪ ነች።",
+      "raw_predicted": "ሷ ጥሩ ተማሪ ናት።",
+      "predicted": "ሷ ጥሩ ተማሪ ናት።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 43.490452761670475,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.2,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሷ",
+            "ጥሩ",
+            "ተማሪ",
+            "ናት።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2764451",
+      "source": "I'm also a teacher.",
+      "expected": "እኔም አስተማሪ ነኝ።",
+      "raw_predicted": "እኔም መምህር ነኝ።",
+      "predicted": "እኔም መምህር ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 23.229608757160413,
+      "bleu_score": 0.0,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9231,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔም",
+            "መምህር",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2332108",
+      "source": "I'm not a teacher.",
+      "expected": "አስተማሪ የለሁም።",
+      "raw_predicted": "እኔ መምህር አይደለሁም።",
+      "predicted": "እኔ መምህር አይደለሁም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 14.356850453866288,
+      "bleu_score": 0.0,
+      "ter_score": 150.0,
+      "length_ratio": 1.3636,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "አይደለሁም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1354298",
+      "source": "I am not a student.",
+      "expected": "ተማሪ አይደለሁም።",
+      "raw_predicted": "እኔ ተማሪ አይደለሁም።",
+      "predicted": "እኔ ተማሪ አይደለሁም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 93.19437687598102,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.2727,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "አይደለሁም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_293224",
+      "source": "He is a good student.",
+      "expected": "ጥሩ ተማሪ ነው።",
+      "raw_predicted": "እሱ ጥሩ ተማሪ ነው።",
+      "predicted": "እሱ ጥሩ ተማሪ ነው።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 92.63920279432915,
+      "bleu_score": 59.460355750136046,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.3,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እሱ",
+            "ጥሩ",
+            "ተማሪ",
+            "ነው።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_259070",
+      "source": "I am not a teacher.",
+      "expected": "አስተማሪ የለሁም።",
+      "raw_predicted": "እኔ መምህር አይደለሁም።",
+      "predicted": "እኔ መምህር አይደለሁም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 14.356850453866288,
+      "bleu_score": 0.0,
+      "ter_score": 150.0,
+      "length_ratio": 1.3636,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "አይደለሁም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_258994",
+      "source": "I'm not a student.",
+      "expected": "ተማሪ አይደለሁም።",
+      "raw_predicted": "እኔ ተማሪ አይደለሁም።",
+      "predicted": "እኔ ተማሪ አይደለሁም።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 93.19437687598102,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.2727,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "አይደለሁም።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2764444",
+      "source": "I, too, am a teacher.",
+      "expected": "እኔም አስተማሪ ነኝ።",
+      "raw_predicted": "እኔም መምህር ነኝ።",
+      "predicted": "እኔም መምህር ነኝ።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 23.229608757160413,
+      "bleu_score": 0.0,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9231,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔም",
+            "መምህር",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3784764",
+      "source": "I'm a student. And you?",
+      "expected": "እኔ ተማሪ ነኝ። እርስዎስ?",
+      "raw_predicted": "እኔ ተማሪ ነኝ። አንተስ?",
+      "predicted": "እኔ ተማሪ ነኝ። አንተስ?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 54.642171305603426,
+      "bleu_score": 42.7287006396234,
+      "ter_score": 25.0,
+      "length_ratio": 0.9412,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "ነኝ።",
+            "አንተስ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2546806",
+      "source": "I used to be a teacher.",
+      "expected": "አስተማሪ ነበርኩ።",
+      "raw_predicted": "እኔ መምህር ነበርኩ።",
+      "predicted": "እኔ መምህር ነበርኩ።",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 27.374510801133766,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.1818,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "መምህር",
+            "ነበርኩ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3864277",
+      "source": "I am a student, and you?",
+      "expected": "እኔ ተማሪ ነኝ። እርስዎስ?",
+      "raw_predicted": "እኔ ተማሪ ነኝ፣ አንተስ?",
+      "predicted": "እኔ ተማሪ ነኝ፣ አንተስ?",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 42.21724612713688,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 50.0,
+      "length_ratio": 0.9412,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ተማሪ",
+            "ነኝ፣",
+            "አንተስ"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3904461",
+      "source": "Do you want her to help you?",
+      "expected": "እሷ እንድትረዳህ ትፈልጋለህ?",
+      "raw_predicted": "ሷ እንድትረዳህ ትፈልጋለች?",
+      "predicted": "ሷ እንድትረዳህ ትፈልጋለች?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 65.98988957725582,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9444,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ሷ",
+            "እንድትረዳህ",
+            "ትፈልጋለች"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_244928",
+      "source": "I'm from Sapporo.",
+      "expected": "እኔ ከሳፖሮ ነኝ።",
+      "raw_predicted": "እኔ ከሳፖሮ ነኝ።",
+      "predicted": "እኔ ከሳፖሮ ነኝ።",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "እኔ",
+            "ከሳፖሮ",
+            "ነኝ።"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3082628",
+      "source": "Happy International Women's Day!",
+      "expected": "እንኳን ለአለም አቀፍ የሴቶች ቀን አደረሰን",
+      "raw_predicted": "ደስ ያለ ዓለም አቀፍ የሴቶች ቀን!",
+      "predicted": "ደስ ያለ ዓለም አቀፍ የሴቶች ቀን!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 46.413090564007966,
+      "bleu_score": 24.446151121745054,
+      "ter_score": 83.33333333333334,
+      "length_ratio": 0.8148,
+      "latency_s": 0.037,
+      "cost_usd": 0.000115,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 0,
+          "fst_validity_rate": 0.0,
+          "fst_invalid_words": [
+            "ደስ",
+            "ያለ",
+            "ዓለም",
+            "አቀፍ",
+            "የሴቶች",
+            "ቀን"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    }
+  ]
+}

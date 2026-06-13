@@ -1,0 +1,3677 @@
+{
+  "run_id": "run_20260612_125923_google_gemini35flash_naive_all_b25_c184e6",
+  "config": {
+    "dataset": "all",
+    "dataset_id": "",
+    "entry_ids": null,
+    "corpus_path": "datasets/curated/eng-sme-dev-v1.json",
+    "source_file": null,
+    "reference_file": null,
+    "source_field": "source",
+    "target_field": "reference",
+    "source_lang": "English",
+    "target_lang": "Northern Sámi",
+    "segment_names": [],
+    "model": "google/gemini-3.5-flash",
+    "max_tokens": 32768,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": true,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 25,
+    "concurrency": 8,
+    "prompt_version": "naive",
+    "custom_prompt_path": null,
+    "coaching_file": null,
+    "style_profile": null,
+    "post_hooks": [],
+    "fst_retries": 0,
+    "output_dir": "eval/logs/harness",
+    "run_name": null,
+    "temperature": 0.0,
+    "dry_run": false,
+    "assume_yes": true,
+    "method_path": null,
+    "process_name": null,
+    "champollion_config_path": null,
+    "champollion_cards_dir": null,
+    "target_lang_code": "sme",
+    "_model_id": "google/gemini-3.5-flash",
+    "_effective_temperature": 0.0,
+    "_config_hash": "112a8979dec4"
+  },
+  "source_log": "/Users/gamedaysuits/local projects/Champollion copy/arena/eval/logs/harness/run_20260612_125923_google_gemini35flash_naive_all_b25_c184e6.json",
+  "overall": {
+    "total_entries": 58,
+    "error_count": 0,
+    "evaluated": 58,
+    "exact_match_count": 7,
+    "exact_match_rate": 0.1207,
+    "miss_count": 51,
+    "miss_rate": 0.8793,
+    "avg_chrf": 56.01,
+    "avg_bleu": 34.87,
+    "avg_latency_s": 0.257,
+    "total_cost_usd": 0.0969,
+    "total_tool_calls": 0,
+    "corpus_chrf": 56.35,
+    "corpus_bleu": 25.76,
+    "corpus_ter": 51.44,
+    "avg_length_ratio": 1.1599,
+    "comet_score": null,
+    "confidence_intervals": {
+      "corpus_chrf": {
+        "metric_name": "corpus_chrf",
+        "score": 56.3545,
+        "ci_lower": 49.9127,
+        "ci_upper": 61.7919,
+        "ci_width": 11.8792,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 58,
+        "seed": 12345
+      },
+      "corpus_bleu": {
+        "metric_name": "corpus_bleu",
+        "score": 25.7632,
+        "ci_lower": 17.3711,
+        "ci_upper": 33.9124,
+        "ci_width": 16.5413,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 58,
+        "seed": 12345
+      },
+      "exact_match_rate": {
+        "metric_name": "exact_match_rate",
+        "score": 0.1207,
+        "ci_lower": 0.0517,
+        "ci_upper": 0.2069,
+        "ci_width": 0.1552,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 58,
+        "seed": 12345
+      },
+      "composite_score": {
+        "metric_name": "composite_score",
+        "score": 0.437,
+        "ci_lower": 0.3762,
+        "ci_upper": 0.4944,
+        "ci_width": 0.1182,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 58,
+        "seed": 12345
+      }
+    },
+    "confidence_intervals_by_tier": {
+      "1": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier1",
+          "score": 60.475,
+          "ci_lower": 50.226,
+          "ci_upper": 70.0218,
+          "ci_width": 19.7958,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 28,
+          "seed": 12346
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier1",
+          "score": 0.1786,
+          "ci_lower": 0.0357,
+          "ci_upper": 0.3214,
+          "ci_width": 0.2857,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 28,
+          "seed": 12346
+        }
+      },
+      "2": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier2",
+          "score": 54.7872,
+          "ci_lower": 46.5113,
+          "ci_upper": 62.5969,
+          "ci_width": 16.0855,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 27,
+          "seed": 12347
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier2",
+          "score": 0.0741,
+          "ci_lower": 0.0,
+          "ci_upper": 0.1852,
+          "ci_width": 0.1852,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 27,
+          "seed": 12347
+        }
+      }
+    },
+    "plugin_metrics": {
+      "giellalt_fst_validity": {
+        "avg_fst_validity": 0.7313492063492063,
+        "total_words_checked": 224,
+        "total_valid_words": 169,
+        "corpus_validity_rate": 0.7544642857142857
+      },
+      "code_switching": {
+        "avg_code_switching_rate": 0.0,
+        "entries_with_code_switching": 0,
+        "entries_with_code_switching_pct": 0.0,
+        "total_wrong_script_tokens": 0
+      },
+      "hallucination": {
+        "avg_hallucination_rate": 0.15,
+        "max_hallucination_rate": 0.2,
+        "entries_flagged_hallucination": 43,
+        "entries_flagged_hallucination_pct": 0.7414,
+        "avg_length_score": 0.0,
+        "avg_repetition_score": 0.0,
+        "avg_entity_score": 0.75
+      },
+      "terminology": {
+        "avg_terminology_adherence": null,
+        "total_term_matches": 0,
+        "total_term_total": 0,
+        "total_term_misses": 0
+      },
+      "writing_style": {
+        "style_consistency_rate": 1.0,
+        "avg_sentence_length_ratio": 1.127,
+        "avg_formality_score": 0.0,
+        "style_register_distribution": {
+          "undetermined": 58
+        }
+      }
+    }
+  },
+  "by_segment": {
+    "unknown": {
+      "name": "unknown",
+      "count": 58,
+      "exact_match_count": 7,
+      "miss_count": 51,
+      "error_count": 0,
+      "avg_chrf": 56.01,
+      "avg_bleu": 34.87,
+      "avg_latency_s": 0.257,
+      "total_cost_usd": 0.0969,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "name": "difficulty_1",
+      "count": 28,
+      "exact_match_count": 5,
+      "miss_count": 23,
+      "error_count": 0,
+      "avg_chrf": 57.58,
+      "avg_bleu": 39.81,
+      "avg_latency_s": 0.243,
+      "total_cost_usd": 0.0436,
+      "plugin_aggregates": {}
+    },
+    "2": {
+      "name": "difficulty_2",
+      "count": 27,
+      "exact_match_count": 2,
+      "miss_count": 25,
+      "error_count": 0,
+      "avg_chrf": 54.97,
+      "avg_bleu": 31.55,
+      "avg_latency_s": 0.273,
+      "total_cost_usd": 0.0482,
+      "plugin_aggregates": {}
+    },
+    "3": {
+      "name": "difficulty_3",
+      "count": 3,
+      "exact_match_count": 0,
+      "miss_count": 3,
+      "error_count": 0,
+      "avg_chrf": 50.83,
+      "avg_bleu": 18.78,
+      "avg_latency_s": 0.245,
+      "total_cost_usd": 0.0051,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_domain": {
+    "conv": {
+      "name": "conv",
+      "count": 49,
+      "exact_match_count": 7,
+      "miss_count": 42,
+      "error_count": 0,
+      "avg_chrf": 55.04,
+      "avg_bleu": 35.41,
+      "avg_latency_s": 0.21,
+      "total_cost_usd": 0.0737,
+      "plugin_aggregates": {}
+    },
+    "gov": {
+      "name": "gov",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 59.17,
+      "avg_bleu": 42.73,
+      "avg_latency_s": 0.245,
+      "total_cost_usd": 0.0017,
+      "plugin_aggregates": {}
+    },
+    "literary": {
+      "name": "literary",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 47.79,
+      "avg_bleu": 26.27,
+      "avg_latency_s": 0.545,
+      "total_cost_usd": 0.0027,
+      "plugin_aggregates": {}
+    },
+    "marketing": {
+      "name": "marketing",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 57.96,
+      "avg_bleu": 29.06,
+      "avg_latency_s": 0.545,
+      "total_cost_usd": 0.0027,
+      "plugin_aggregates": {}
+    },
+    "support": {
+      "name": "support",
+      "count": 3,
+      "exact_match_count": 0,
+      "miss_count": 3,
+      "error_count": 0,
+      "avg_chrf": 76.76,
+      "avg_bleu": 47.06,
+      "avg_latency_s": 0.545,
+      "total_cost_usd": 0.0081,
+      "plugin_aggregates": {}
+    },
+    "ui": {
+      "name": "ui",
+      "count": 3,
+      "exact_match_count": 0,
+      "miss_count": 3,
+      "error_count": 0,
+      "avg_chrf": 52.21,
+      "avg_bleu": 16.06,
+      "avg_latency_s": 0.545,
+      "total_cost_usd": 0.0081,
+      "plugin_aggregates": {}
+    }
+  },
+  "entries": [
+    {
+      "id": "tatoeba_953265",
+      "source": "Everything's going to be OK.",
+      "expected": "Buot manná bures.",
+      "raw_predicted": "Buot šaddá ortnegii.",
+      "predicted": "Buot šaddá ortnegii.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.68885229633791,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1765,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Buot"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1655579",
+      "source": "I speak English.",
+      "expected": "Human eŋgelasgiela.",
+      "raw_predicted": "Mun hálan eaŋgalsgiela.",
+      "predicted": "Mun hálan eaŋgalsgiela.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.229077037215234,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.2105,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6015388",
+      "source": "I am Ricardo.",
+      "expected": "Mun lean Ricardo.",
+      "raw_predicted": "Mun lean Ricardo.",
+      "predicted": "Mun lean Ricardo.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2055348",
+      "source": "Is your car black?",
+      "expected": "Leago du biila čáhppat?",
+      "raw_predicted": "Leago du biila čáhppat?",
+      "predicted": "Leago du biila čáhppat?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2360542",
+      "source": "I have to know.",
+      "expected": "Ferten diehtit.",
+      "raw_predicted": "Mun ferten diehtit.",
+      "predicted": "Mun ferten diehtit.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 78.41423801086474,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 50.0,
+      "length_ratio": 1.2667,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2684439",
+      "source": "Your friend is here.",
+      "expected": "Du ustit lea dáppe.",
+      "raw_predicted": "Du ustit lea dáppe.",
+      "predicted": "Du ustit lea dáppe.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Du"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_415514",
+      "source": "I will try.",
+      "expected": "Mun iskkan.",
+      "raw_predicted": "Mun geahččalan.",
+      "predicted": "Mun geahččalan.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 23.34906912758805,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.3636,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.5,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2205973",
+      "source": "How is life?",
+      "expected": "Mot manná?",
+      "raw_predicted": "Mo eallin manná?",
+      "predicted": "Mo eallin manná?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 50.287483868090554,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 100.0,
+      "length_ratio": 1.6,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1983741",
+      "source": "She couldn't stop smiling.",
+      "expected": "Son ii sáhttán heaitit moddjámis.",
+      "raw_predicted": "Son ii sáhttán heaitit modjumis.",
+      "predicted": "Son ii sáhttán heaitit modjumis.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 78.83195901614373,
+      "bleu_score": 53.7284965911771,
+      "ter_score": 20.0,
+      "length_ratio": 0.9697,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.6,
+          "fst_invalid_words": [
+            "Son",
+            "modjumis"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2240360",
+      "source": "You killed Tom.",
+      "expected": "Don goddet Toma.",
+      "raw_predicted": "Don goddet Toma.",
+      "predicted": "Don goddet Toma.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Don"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_294029",
+      "source": "He speaks English a little.",
+      "expected": "Son hupmá veahá eŋgelasgiela.",
+      "raw_predicted": "Son hállá veahá eaŋgalsgiela.",
+      "predicted": "Son hállá veahá eaŋgalsgiela.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.00827071479246,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Son"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_24706",
+      "source": "What do you mean?",
+      "expected": "Maid don meidnet?",
+      "raw_predicted": "Maid don oaivvildat?",
+      "predicted": "Maid don oaivvildat?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 42.57618548784209,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.1765,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Maid"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5143986",
+      "source": "He lives here.",
+      "expected": "Son orru dás.",
+      "raw_predicted": "Son orru dáppe.",
+      "predicted": "Son orru dáppe.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 68.72188676228429,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.1538,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Son"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5222639",
+      "source": "She invited me.",
+      "expected": "Son bovdii mu.",
+      "raw_predicted": "Son bovttii mu.",
+      "predicted": "Son bovttii mu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 56.55495229139049,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0714,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Son"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2240359",
+      "source": "You intimidate Tom.",
+      "expected": "Don áittát Toma.",
+      "raw_predicted": "Don balldat Toma.",
+      "predicted": "Don balldat Toma.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.383525238523504,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0625,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.3333333333333333,
+          "fst_invalid_words": [
+            "Don",
+            "balldat"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3313490",
+      "source": "I'm a child.",
+      "expected": "Mun lean mánná.",
+      "raw_predicted": "Mun lean mánná.",
+      "predicted": "Mun lean mánná.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2648823",
+      "source": "How are we doing?",
+      "expected": "Mot manná?",
+      "raw_predicted": "Mo minguin manná?",
+      "predicted": "Mo minguin manná?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 49.480129388397245,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 100.0,
+      "length_ratio": 1.7,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4189350",
+      "source": "How is life treating you?",
+      "expected": "Mot manná?",
+      "raw_predicted": "Mo eallin manná dutnje?",
+      "predicted": "Mo eallin manná dutnje?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.64793490400395,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 200.0,
+      "length_ratio": 2.3,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_62282",
+      "source": "Won't you have some coffee?",
+      "expected": "Jugat go gáfe?",
+      "raw_predicted": "Iko váldde gáfe?",
+      "predicted": "Iko váldde gáfe?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 28.64062818853452,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1429,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Iko"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1784974",
+      "source": "I can't see you.",
+      "expected": "Mun in sáhte oaidnit du.",
+      "raw_predicted": "Mun in oainne du.",
+      "predicted": "Mun in oainne du.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 34.277856850811524,
+      "bleu_score": 24.736929544091932,
+      "ter_score": 40.0,
+      "length_ratio": 0.7083,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5769626",
+      "source": "My name's Ricardo.",
+      "expected": "Mun lean Ricardo.",
+      "raw_predicted": "Mu namma lea Ricardo.",
+      "predicted": "Mu namma lea Ricardo.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 50.664526939628864,
+      "bleu_score": 21.3643503198117,
+      "ter_score": 100.0,
+      "length_ratio": 1.2353,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Mu"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_61842",
+      "source": "Write down your name here.",
+      "expected": "Čále du nama dohko!",
+      "raw_predicted": "Čále namat deike.",
+      "predicted": "Čále namat deike.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.167719629715442,
+      "bleu_score": 12.44023474812678,
+      "ter_score": 75.0,
+      "length_ratio": 0.8947,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Čále"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_38308",
+      "source": "How is it going?",
+      "expected": "Mo hurgá?",
+      "raw_predicted": "Mo manná?",
+      "predicted": "Mo manná?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.154761904761905,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7586794",
+      "source": "When will you come again?",
+      "expected": "Goas don fas boađát?",
+      "raw_predicted": "Goas don boađát fas?",
+      "predicted": "Goas don boađát fas?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 60.797275641025635,
+      "bleu_score": 26.86424829558855,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3312361",
+      "source": "We have to look after ourselves now.",
+      "expected": "Mii galgat dál beroštit alddámet.",
+      "raw_predicted": "Mii fertet fuolahit iežamet dál.",
+      "predicted": "Mii fertet fuolahit iežamet dál.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.778034328874067,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 80.0,
+      "length_ratio": 0.9697,
+      "latency_s": 0.177,
+      "cost_usd": 0.001313,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.8,
+          "fst_invalid_words": [
+            "Mii"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_17150",
+      "source": "Where do you come from?",
+      "expected": "Gos boađát?",
+      "raw_predicted": "Gos don leat eret?",
+      "predicted": "Gos don leat eret?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.455375505283314,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 150.0,
+      "length_ratio": 1.6364,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Gos"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8752663",
+      "source": "We both have almost missed the bus.",
+      "expected": "Moai goasii báziime busses.",
+      "raw_predicted": "Moai letne measta massán bussa.",
+      "predicted": "Moai letne measta massán bussa.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.54726925268964,
+      "bleu_score": 9.652434877402245,
+      "ter_score": 100.0,
+      "length_ratio": 1.1481,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.8,
+          "fst_invalid_words": [
+            "bussa"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3871291",
+      "source": "Do you want to have some coffee?",
+      "expected": "Siđatgo gáfe?",
+      "raw_predicted": "Háliidat go gáfe?",
+      "predicted": "Háliidat go gáfe?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 61.98344287500497,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 100.0,
+      "length_ratio": 1.3077,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Háliidat"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_11260032",
+      "source": "Thank you, buddy.",
+      "expected": "Giitu.",
+      "raw_predicted": "Giitu, skihpár.",
+      "predicted": "Giitu, skihpár.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 44.21206766641198,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 200.0,
+      "length_ratio": 2.5,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.5,
+          "fst_invalid_words": [
+            "Giitu"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_12971127",
+      "source": "Last year I read a hundred books.",
+      "expected": "Mannan jagi lohken čuođi girjji.",
+      "raw_predicted": "Diibmá lohken čuođi girjji.",
+      "predicted": "Diibmá lohken čuođi girjji.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 63.8265749925936,
+      "bleu_score": 54.75182535069452,
+      "ter_score": 40.0,
+      "length_ratio": 0.8438,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Diibmá"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_322433",
+      "source": "You must clean your room every day.",
+      "expected": "Don fertet čorget du lanja juohke beaivvi.",
+      "raw_predicted": "Don fertet čorget iežat lanja juohke beaivve.",
+      "predicted": "Don fertet čorget iežat lanja juohke beaivve.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 74.5856891139596,
+      "bleu_score": 27.05411345269698,
+      "ter_score": 28.57142857142857,
+      "length_ratio": 1.0714,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 7,
+          "fst_valid_words": 6,
+          "fst_validity_rate": 0.8571428571428571,
+          "fst_invalid_words": [
+            "Don"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 7,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7586801",
+      "source": "Because I love you.",
+      "expected": "Danne mon ráhkistan du.",
+      "raw_predicted": "Danne go mun ráhkistan du.",
+      "predicted": "Danne go mun ráhkistan du.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 70.39817157109711,
+      "bleu_score": 32.46679154750989,
+      "ter_score": 50.0,
+      "length_ratio": 1.1304,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.8,
+          "fst_invalid_words": [
+            "Danne"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2569256",
+      "source": "What do you know about Brazil?",
+      "expected": "Maid dieđát Brasilia birra?",
+      "raw_predicted": "Maid don dieđát Brasilia birra?",
+      "predicted": "Maid don dieđát Brasilia birra?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 87.83329199752026,
+      "bleu_score": 53.7284965911771,
+      "ter_score": 25.0,
+      "length_ratio": 1.1481,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.8,
+          "fst_invalid_words": [
+            "Maid"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7586795",
+      "source": "When are you going back?",
+      "expected": "Goas don fas boađát?",
+      "raw_predicted": "Goas don manat ruovttoluotta?",
+      "predicted": "Goas don manat ruovttoluotta?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 34.36038185761882,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 50.0,
+      "length_ratio": 1.45,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_370708",
+      "source": "Where do you live?",
+      "expected": "Gos don orut?",
+      "raw_predicted": "Gos don orut?",
+      "predicted": "Gos don orut?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Gos"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1125674",
+      "source": "Where are you living?",
+      "expected": "Gos don orut?",
+      "raw_predicted": "Gos don dál orut?",
+      "predicted": "Gos don dál orut?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 65.41811769498005,
+      "bleu_score": 30.213753973567677,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.3077,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Gos"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "expected": "Gii don leat?",
+      "raw_predicted": "Gii don leat?",
+      "predicted": "Gii don leat?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 100.00000000000004,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Gii"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7586789",
+      "source": "I saw Nils, too.",
+      "expected": "Oidnen maiddái Niillasa.",
+      "raw_predicted": "Mun oidnen maid Niillasa.",
+      "predicted": "Mun oidnen maid Niillasa.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 59.16641363064991,
+      "bleu_score": 21.3643503198117,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0417,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_410785",
+      "source": "What do you do for a living?",
+      "expected": "Maid don barggat?",
+      "raw_predicted": "Mainna don bargat?",
+      "predicted": "Mainna don bargat?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 45.12712150047712,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0588,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mainna"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2254856",
+      "source": "Who invited you?",
+      "expected": "Gii bovdii du?",
+      "raw_predicted": "Gii bovdiidii du?",
+      "predicted": "Gii bovdiidii du?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 82.49356252026897,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.2143,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.3333333333333333,
+          "fst_invalid_words": [
+            "Gii",
+            "bovdiidii"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5275200",
+      "source": "Who is this?",
+      "expected": "Gii son lea?",
+      "raw_predicted": "Gii dát lea?",
+      "predicted": "Gii dát lea?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.70932539682539,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Gii"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9667695",
+      "source": "Where did you learn Latin?",
+      "expected": "Gos don ohppet latiinnagiela?",
+      "raw_predicted": "Gos don oahppit latiinnagiela?",
+      "predicted": "Gos don oahppit latiinnagiela?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 72.48686772267632,
+      "bleu_score": 30.213753973567677,
+      "ter_score": 25.0,
+      "length_ratio": 1.0345,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Gos"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_11260025",
+      "source": "Oh, thank you.",
+      "expected": "Giitu.",
+      "raw_predicted": "Oi, giitu.",
+      "predicted": "Oi, giitu.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.746786340814225,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.6667,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.5,
+          "fst_invalid_words": [
+            "Oi"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7408252",
+      "source": "They tried to do it by themselves.",
+      "expected": "Sii vigge dan ieža dahkat.",
+      "raw_predicted": "Sii geahččaledje dahkat dan ieža.",
+      "predicted": "Sii geahččaledje dahkat dan ieža.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 48.12222064135076,
+      "bleu_score": 20.412414523193153,
+      "ter_score": 80.0,
+      "length_ratio": 1.2692,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.8,
+          "fst_invalid_words": [
+            "Sii"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_291750",
+      "source": "He can speak a little English.",
+      "expected": "Son hupmá veahá eŋgelasgiela.",
+      "raw_predicted": "Son máhttá veaháš eaŋgalsgiela.",
+      "predicted": "Son máhttá veaháš eaŋgalsgiela.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 36.681434571112085,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 75.0,
+      "length_ratio": 1.069,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Son"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_517410",
+      "source": "Where should we go?",
+      "expected": "Gosa moai vulge?",
+      "raw_predicted": "Gosa mii galgat mannat?",
+      "predicted": "Gosa mii galgat mannat?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.61051954423764,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.4375,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Gosa"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5643977",
+      "source": "I had a neighbor who was blind.",
+      "expected": "Mus lei ránnjá gii lei čalmmeheapme.",
+      "raw_predicted": "Mus lei ránnjá guhte lei čalmeheapme.",
+      "predicted": "Mus lei ránnjá guhte lei čalmeheapme.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 68.27985924471605,
+      "bleu_score": 27.77619034011791,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0278,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 4,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mus",
+            "čalmeheapme"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8755459",
+      "source": "Once I thought I was wrong. Turns out I was mistaken.",
+      "expected": "Oktii gádden ahte ledjen meaddán, muhto feilejin.",
+      "raw_predicted": "Oktii gádden ahte lean boastut. Čájehuvvui ahte ledjen boastut.",
+      "predicted": "Oktii gádden ahte lean boastut. Čájehuvvui ahte ledjen boastut.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 48.09185610346176,
+      "bleu_score": 17.542198478193427,
+      "ter_score": 85.71428571428571,
+      "length_ratio": 1.2857,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 9,
+          "fst_valid_words": 7,
+          "fst_validity_rate": 0.7777777777777778,
+          "fst_invalid_words": [
+            "Oktii",
+            "Čájehuvvui"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 9,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.643,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6309882",
+      "source": "Bill, if you'll come with me, you'll float, too.",
+      "expected": "Bill, jus don boađát mu fárrui, don nai govddut.",
+      "raw_predicted": "Bill, jos boađát mu mielde, de don maid gárvvut.",
+      "predicted": "Bill, jos boađát mu mielde, de don maid gárvvut.",
+      "segment": "",
+      "difficulty": 3,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 36.12861341479762,
+      "bleu_score": 11.016798394984658,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 9,
+          "fst_valid_words": 9,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 9,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_10844721",
+      "source": "I got a letter from the municipality.",
+      "expected": "Mun ožžon reivve suohkanis.",
+      "raw_predicted": "Mun ožžon reivve gielddas.",
+      "predicted": "Mun ožžon reivve gielddas.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "gov",
+      "exact_match": false,
+      "chrf_score": 59.171956457180094,
+      "bleu_score": 42.7287006396234,
+      "ter_score": 25.0,
+      "length_ratio": 0.963,
+      "latency_s": 0.245,
+      "cost_usd": 0.001703,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2240377",
+      "source": "My dad is the best dad in the universe.",
+      "expected": "Áhčán lea buoremus áhčči máilmmiávvosis.",
+      "raw_predicted": "Mu áhčči lea buoremus áhčči univearssas.",
+      "predicted": "Mu áhčči lea buoremus áhčči univearssas.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "literary",
+      "exact_match": false,
+      "chrf_score": 47.787215877550246,
+      "bleu_score": 26.269098944241588,
+      "ter_score": 60.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 6,
+          "fst_valid_words": 5,
+          "fst_validity_rate": 0.8333333333333334,
+          "fst_invalid_words": [
+            "Mu"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.2,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_10894804",
+      "source": "Have you bought a brand-new car?",
+      "expected": "Leatgo don oastán oba ođđa biilla?",
+      "raw_predicted": "Leatgo oastán áibbas ođđa biilla?",
+      "predicted": "Leatgo oastán áibbas ođđa biilla?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "marketing",
+      "exact_match": false,
+      "chrf_score": 57.96366916062694,
+      "bleu_score": 29.05925408079185,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9706,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 5,
+          "fst_validity_rate": 1.0,
+          "fst_invalid_words": []
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.833,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "expected": "Mon dárbbašan veahki.",
+      "raw_predicted": "Mun dárbbašan veahki!",
+      "predicted": "Mun dárbbašan veahki!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 72.2893400781365,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_582309",
+      "source": "I need help.",
+      "expected": "Mon dárbbašan veahki.",
+      "raw_predicted": "Mun dárbbašan veahki.",
+      "predicted": "Mun dárbbašan veahki.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 84.17608051992727,
+      "bleu_score": 59.460355750136046,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_64391",
+      "source": "Shall I help you?",
+      "expected": "Galggango mon veahkehit du?",
+      "raw_predicted": "Galggango veahkehit du?",
+      "predicted": "Galggango veahkehit du?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 73.80842162049514,
+      "bleu_score": 49.76093899250716,
+      "ter_score": 25.0,
+      "length_ratio": 0.8519,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 3,
+          "fst_valid_words": 2,
+          "fst_validity_rate": 0.6666666666666666,
+          "fst_invalid_words": [
+            "Galggango"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1415017",
+      "source": "The money disappeared.",
+      "expected": "Ruđat jávkkaimet.",
+      "raw_predicted": "Ruđat jávke.",
+      "predicted": "Ruđat jávke.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 48.51877663845776,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.7059,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 2,
+          "fst_valid_words": 1,
+          "fst_validity_rate": 0.5,
+          "fst_invalid_words": [
+            "Ruđat"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7872472",
+      "source": "I'm happy today.",
+      "expected": "Mun lean ilus odne.",
+      "raw_predicted": "Mun lean ilolaš odne.",
+      "predicted": "Mun lean ilolaš odne.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 63.278150856817525,
+      "bleu_score": 30.213753973567677,
+      "ter_score": 25.0,
+      "length_ratio": 1.1053,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 4,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.75,
+          "fst_invalid_words": [
+            "Mun"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8564861",
+      "source": "Tom sat down at a table near the window.",
+      "expected": "Tom čohkkedii beavddis láse lahka.",
+      "raw_predicted": "Tom čohkkánii beavvái láskka lahka.",
+      "predicted": "Tom čohkkánii beavvái láskka lahka.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 44.81979329762266,
+      "bleu_score": 17.965205598154213,
+      "ter_score": 60.0,
+      "length_ratio": 1.0294,
+      "latency_s": 0.545,
+      "cost_usd": 0.002689,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "giellalt_fst_validity": {
+          "fst_total_words": 5,
+          "fst_valid_words": 3,
+          "fst_validity_rate": 0.6,
+          "fst_invalid_words": [
+            "čohkkánii",
+            "láskka"
+          ]
+        },
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    }
+  ]
+}

@@ -333,15 +333,6 @@ def verify_corpus_integrity(run_card: dict) -> list[str]:
 
     Returns a list of non-fatal warnings. Raises PublishIntegrityError on a
     hard violation.
-
-    NOT YET ENFORCED HERE (deliberately): entry-count parity against the
-    registry's declared partition (e.g. EdTeKLA's 436-dev vs 486-full). The
-    partition semantics are being reworked alongside the fetch-from-source
-    registry; entry-count enforcement lands WITH that rework so it is built
-    against the final schema rather than a moving one. Until then the DB
-    `evaluated > 0` check (migration 023) plus sha-parity below are the
-    active gates, and the standalone linter (lint_run_reports.py) flags
-    count drift in batch/CI.
     """
     warnings: list[str] = []
     dataset = run_card.get("dataset", {})
@@ -385,6 +376,33 @@ def verify_corpus_integrity(run_card: dict) -> list[str]:
             f"corpus integrity cannot be fully verified (sha-parity will arm "
             f"once the registry is sha-pinned)."
         )
+
+    # 3. Entry-count parity against the registry's declared size.
+    #
+    # When the registry declares a dataset size AND the sha is pinned
+    # (meaning this is a well-known, verified dataset), reject runs that
+    # evaluated fewer than 95% of the expected entries — this catches
+    # accidental partial runs (e.g. 100/436) while allowing the small
+    # tolerance needed for filtered entries or skipped duplicates.
+    #
+    # For unpinned datasets (custom/unregistered): warn only, don't block.
+    registry_size = (entry or {}).get("size")
+    if registry_size and registry_size > 0 and evaluated is not None:
+        coverage = evaluated / registry_size
+        if registry_sha and coverage < 0.95:
+            raise PublishIntegrityError(
+                f"Partial run: evaluated {evaluated}/{registry_size} entries "
+                f"({coverage:.0%}) for sha-pinned dataset '{dataset_id}'. "
+                f"The registry expects ~{registry_size} entries; runs below "
+                f"95% coverage cannot be published. If this is intentional "
+                f"(e.g. a filtered subset), register it as a separate dataset."
+            )
+        elif not registry_sha and coverage < 0.95:
+            warnings.append(
+                f"Partial run: evaluated {evaluated}/{registry_size} entries "
+                f"({coverage:.0%}) for '{dataset_id}'. This will become a "
+                f"hard block once the registry sha is pinned."
+            )
 
     return warnings
 
@@ -579,33 +597,40 @@ def assemble_run_card(
     has_fst = fst_acceptance_rate is not None
 
     # -------------------------------------------------------------------
-    # Extract equivalent_match_rate from CrkLinterMetric plugin (§4.2)
+    # Extract equivalent_match_rate from any equivalence-linter plugin
     #
-    # CrkLinterMetric (crk_linter) computes per-entry variant-class
-    # analysis and aggregates to an equivalent_match_rate: the fraction
-    # of entries that are exact OR acceptable-variant matches.
-    # When available, this replaces the generic null placeholder.
+    # Language-card-declared linter plugins (e.g. CrkLinterMetric for
+    # Plains Cree) emit `is_equivalence_linter: True` plus
+    # `equivalent_match_rate` in their aggregate output. We discover
+    # the FIRST plugin that carries these flags — same generic pattern
+    # used by run_card.py (L253-266). No language is hardcoded.
     # -------------------------------------------------------------------
     equivalent_match_rate = None
     equivalent_match_count = None
 
-    linter_data = plugin_metrics.get("crk_linter", {})
-    if linter_data and not linter_data.get("error"):
-        equivalent_match_rate = linter_data.get("equivalent_match_rate")
-        # Derive count from rate × total entries for the scores block
-        if equivalent_match_rate is not None:
-            evaluated = overall.get("evaluated", 0)
-            equivalent_match_count = round(equivalent_match_rate * evaluated)
+    for _plug_key, _plug_data in plugin_metrics.items():
+        if not isinstance(_plug_data, dict) or _plug_data.get("error"):
+            continue
+        # Match by explicit flag or by shape (rate + variant_class_counts)
+        is_equiv = _plug_data.get("is_equivalence_linter") or (
+            "equivalent_match_rate" in _plug_data
+            and "variant_class_counts" in _plug_data
+        )
+        if is_equiv:
+            equivalent_match_rate = _plug_data.get("equivalent_match_rate")
+            if equivalent_match_rate is not None:
+                evaluated = overall.get("evaluated", 0)
+                equivalent_match_count = round(equivalent_match_rate * evaluated)
+            break  # first match wins (one equivalence linter per language)
 
     # -------------------------------------------------------------------
-    # Extract semantic_score from CrkSemanticMetric plugin (§4.2)
+    # Extract semantic_score from any semantic-validator plugin (§4.2)
     #
-    # CrkSemanticMetric (crk_semantic) produces per-entry verdicts:
-    #   EXACT_MATCH, VALID, GRAMMAR_ISSUES, PARTIAL, INCOMPLETE, WRONG,
-    #   NO_OUTPUT, ERROR
+    # Semantic-validator plugins (e.g. CrkSemanticMetric for Plains Cree)
+    # emit `semantic_verdict_counts` in their aggregate output. We
+    # discover the FIRST plugin carrying this field — no language hardcoded.
     #
-    # We derive a numeric 0.0–1.0 semantic score by assigning each
-    # verdict a weight reflecting semantic fidelity:
+    # Verdict weights reflect semantic fidelity (conservative baseline):
     #   EXACT_MATCH  → 1.0  (identical output)
     #   VALID        → 1.0  (correct lemmas, inflection/order variation)
     #   GRAMMAR_ISSUES  → 0.7  (right lemmas, structural grammar issues)
@@ -614,12 +639,6 @@ def assemble_run_card(
     #   WRONG        → 0.0  (genuinely incorrect lemma choices)
     #   NO_OUTPUT    → 0.0  (nothing generated)
     #   ERROR        → 0.0  (validation itself failed)
-    #
-    # These weights reflect the semantic validator's design: VALID means
-    # identical lemma sets (only inflection differs), GRAMMAR_ISSUES means
-    # correct lemmas but sentence-level grammar issues, PARTIAL means
-    # mixed results. The weights are conservative — community review
-    # remains the ultimate arbiter.
     # -------------------------------------------------------------------
     semantic_score = None
 
@@ -634,9 +653,10 @@ def assemble_run_card(
         "ERROR": 0.0,
     }
 
-    semantic_data = plugin_metrics.get("crk_semantic", {})
-    if semantic_data and not semantic_data.get("error"):
-        verdict_counts = semantic_data.get("semantic_verdict_counts", {})
+    for _sem_key, _sem_data in plugin_metrics.items():
+        if not isinstance(_sem_data, dict) or _sem_data.get("error"):
+            continue
+        verdict_counts = _sem_data.get("semantic_verdict_counts")
         if verdict_counts:
             total_judged = sum(verdict_counts.values())
             if total_judged > 0:
@@ -645,6 +665,7 @@ def assemble_run_card(
                     for verdict, count in verdict_counts.items()
                 )
                 semantic_score = round(weighted_sum / total_judged, 4)
+            break  # first match wins (one semantic validator per language)
 
     # -------------------------------------------------------------------
     # Extract behavioral metrics from plugin aggregates
@@ -1036,12 +1057,14 @@ def _extract_lyss_verdicts(plugin_metrics: dict | None) -> dict:
     non-None values to avoid overwriting NULLs with explicit None
     (Supabase treats them differently).
 
-    Plugin key mapping:
+    Plugin discovery is by output field shape, not by hardcoded plugin
+    name — any language's equivalence linter or semantic validator will
+    be picked up automatically:
         giellalt_fst_validity.fst_validity_rate → fst_valid (bool)
-        crk_linter.equivalent_match → equivalent_match (bool)
-        crk_semantic.semantic_verdict → semantic_verdict (str)
-        code_switching.code_switching_rate → code_switching_detected (bool)
-        hallucination.hallucination_rate → hallucination_detected (bool)
+        <any plugin>.equivalent_match            → equivalent_match (bool)
+        <any plugin>.semantic_verdict             → semantic_verdict (str)
+        code_switching.code_switching_rate        → code_switching_detected (bool)
+        hallucination.hallucination_rate          → hallucination_detected (bool)
     """
     if not plugin_metrics:
         return {}
@@ -1060,15 +1083,17 @@ def _extract_lyss_verdicts(plugin_metrics: dict | None) -> dict:
     if "fst_validity_rate" in fst:
         verdicts["fst_valid"] = fst["fst_validity_rate"] == 1.0
 
-    # Linter equivalence: direct boolean from CrkLinterMetric
-    linter = _get_dict("crk_linter")
-    if "equivalent_match" in linter:
-        verdicts["equivalent_match"] = bool(linter["equivalent_match"])
+    # Linter equivalence: discover any plugin emitting `equivalent_match`.
+    for _pk, _pd in plugin_metrics.items():
+        if isinstance(_pd, dict) and "equivalent_match" in _pd:
+            verdicts["equivalent_match"] = bool(_pd["equivalent_match"])
+            break
 
-    # Semantic verdict: string from CrkSemanticMetric
-    semantic = _get_dict("crk_semantic")
-    if "semantic_verdict" in semantic:
-        verdicts["semantic_verdict"] = semantic["semantic_verdict"]
+    # Semantic verdict: discover any plugin emitting `semantic_verdict`.
+    for _pk, _pd in plugin_metrics.items():
+        if isinstance(_pd, dict) and "semantic_verdict" in _pd:
+            verdicts["semantic_verdict"] = _pd["semantic_verdict"]
+            break
 
     # Code-switching: any rate > 0 means switching detected
     cs = _get_dict("code_switching")
@@ -1356,7 +1381,7 @@ def publish_to_supabase(
         # Full run card JSON — the complete record
         "run_card": run_card,
         "fingerprint_hash": fingerprint_hash,
-        "api_provider": "openrouter",
+        "api_provider": run_card.get("config", {}).get("provider", "openrouter"),
         "run_timestamp": run_card.get("timestamp"),
         # Quality-affecting parameters as top-level columns for
         # leaderboard filtering and sorting. These are also in
@@ -1617,6 +1642,11 @@ def publish_to_supabase(
         print("  ℹ No per-entry data found in report (entries list empty)")
 
     print(f"     https://mtevalarena.org/leaderboard")
+    print()
+    print("  🙏 Thank you for your contribution to the Champollion Project!")
+    print("     Your results are live on the leaderboard immediately.")
+    print("     They will appear in the network mesh visualization by")
+    print("     tomorrow morning (the mesh regenerates nightly).")
     print("=" * 60)
 
     return result

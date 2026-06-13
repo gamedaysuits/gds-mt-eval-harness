@@ -30,9 +30,15 @@ Thumbs.db
 .env
 .env.local
 
-# Harness outputs (generated at runtime, not tracked)
+# Harness outputs (generated at runtime, not tracked by default)
 eval/cache/
-eval/logs/
+# Ignore contents of eval/logs/ except harness report JSONs, which the
+# nightly CI needs to regenerate field.json/graph.json. Git requires
+# un-ignoring each directory level in the chain separately.
+eval/logs/*
+!eval/logs/harness/
+eval/logs/harness/*
+!eval/logs/harness/*_report.json
 eval/probes/
 
 # Demo outputs (may contain third-party corpus data — generate locally)
