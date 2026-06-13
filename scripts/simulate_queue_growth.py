@@ -199,21 +199,27 @@ def rank_items(corpora, registry, results, *, variant="v3"):
 # Metrics
 # ---------------------------------------------------------------------------
 
-def measure(evidence, nodes):
+def measure(evidence, nodes, watch=()):
     strengths = {e: b["s_eff"] for e, b in evidence["edge_bridge"].items()}
     Q = gsq.build_chain_matrix(nodes, strengths, lam=gsq.LAMBDA)
     n = len(nodes)
     phi = (sum(Q[u][v] for u in nodes for v in nodes if u != v)
            / (n * (n - 1))) if n > 1 else 0.0
     tiers = [b["tier"] for b in evidence["edge_bridge"].values()]
-    # equity: the worst-served language's mean chain strength
-    service = [sum(Q[u][v] for v in nodes if v != u) / (n - 1) for u in nodes]
-    return {
+    # per-language service = mean chain strength to every other language
+    svc = {u: sum(Q[u][v] for v in nodes if v != u) / (n - 1) for u in nodes}
+    out = {
         "phi": round(phi, 5),
         "measured": len(tiers),
         "established": sum(1 for t in tiers if t == "established"),
-        "min_service": round(min(service), 5) if service else 0.0,
+        "min_service": round(min(svc.values()), 5) if svc else 0.0,
+        "mean_service": round(sum(svc.values()) / len(svc), 5) if svc else 0.0,
     }
+    # watch-node service (e.g. the prize language) — how well it reaches
+    # the rest of the mesh, the thing a prize is actually trying to buy.
+    for w in watch:
+        out[f"service[{w}]"] = round(svc.get(w, 0.0), 5)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -227,8 +233,41 @@ def observe(truth, key, n, rng):
     return obs, ci_half
 
 
+def prize_run(by_edge, truth, e, attempts, rng):
+    """One method-development attempt on a prize edge.
+
+    Prizes target low-resource, mission-critical pairs (spa→que,
+    eng→crk) — not solved-market pairs. A prize draws skilled effort
+    that ITERATES: coached runs whose achievable quality climbs with
+    sustained method development (better prompts, FST gating, retrieval)
+    toward a ceiling, with diminishing returns. We model that as a
+    method bonus on top of the pair's coached truth:
+
+        bonus(k) = 0.14 · (1 − exp(−k / 8))     # asymptotes ~+0.14
+
+    so a prize pair, under tens of attempts, climbs from provisional to
+    a high-quality, well-replicated (established) bridge — the depth a
+    breadth-first queue never buys on a leaf pair.
+    """
+    ds = max(by_edge[e], key=lambda d: d.get("size") or 0)
+    slug = max(MODEL_OFFSETS, key=MODEL_OFFSETS.get)
+    n = ds.get("size") or 0
+    bonus = 0.14 * (1.0 - math.exp(-attempts / 8.0))
+    base = truth[(e, slug, "coached")]
+    sd = 0.25 / math.sqrt(max(1, n))
+    obs = min(0.98, max(0.02, rng.gauss(min(0.97, base + bonus), sd)))
+    ci = 49.0 / math.sqrt(max(1, n))
+    cost = max(COST_PER_ENTRY[slug] * n, gsq.COST_FLOOR)
+    return {
+        "token": Path(ds["path"]).stem.lower(),
+        "model": gsq.model_short(slug), "condition": "coached",
+        "strength": obs, "n_eval": n, "ci_half": ci,
+    }, cost
+
+
 def simulate(*, runs, seed, mix, variant="v3", rerank_every=10,
-             prize_edges=(), prize_share=0.0):
+             prize_edges=(), prize_share=0.0, prize_mode="divert",
+             watch=()):
     rng = random.Random(seed)
     registry, corpora, nodes = load_universe()
     truth = ground_truth(corpora, rng)
@@ -238,6 +277,7 @@ def simulate(*, runs, seed, mix, variant="v3", rerank_every=10,
         by_edge.setdefault(e, []).append(ds)
 
     results, spend, history = [], 0.0, []
+    prize_attempts = {e: 0 for e in prize_edges}
     items, evidence, gnodes = rank_items(corpora, registry, results,
                                          variant=variant)
 
@@ -258,34 +298,40 @@ def simulate(*, runs, seed, mix, variant="v3", rerank_every=10,
         return gsq.single_edge_gain(gnodes, Q, a, b, s_new,
                                     lam=gsq.LAMBDA) / item["cost"]
 
+    def fire_prize(t):
+        e = prize_edges[rng.randrange(len(prize_edges))]
+        prize_attempts[e] += 1
+        rec, cost = prize_run(by_edge, truth, e, prize_attempts[e], rng)
+        rec["submitted_at"] = f"2026-06-{13 + t // 200:02d}"
+        results.append(rec)
+        return cost
+
     for t in range(runs):
         if t % rerank_every == 0:
             items, evidence, gnodes = rank_items(
                 corpora, registry, results, variant=variant)
             history.append({"run": t, "spend": round(spend, 2),
-                            **measure(evidence, gnodes)})
+                            **measure(evidence, gnodes, watch)})
+
+        # ADDITIVE prize: a funded prize draws NEW effort (the eng→crk
+        # sandbox lane), so prize runs happen ON TOP of normal queue
+        # contribution — the pie grows. Fires before the queue pick.
+        if prize_edges and prize_mode == "additive" and rng.random() < prize_share:
+            spend += fire_prize(t)
+
         open_items = [i for i in items if (
             i["token"], i["model"], i["cond"]) not in {
             (r["token"], r["model"], r["condition"]) for r in results}]
-        if not open_items and not prize_edges:
-            break
 
-        # prize-hunters fire regardless of the queue
-        if prize_edges and rng.random() < prize_share:
-            e = prize_edges[rng.randrange(len(prize_edges))]
-            ds = max(by_edge[e], key=lambda d: d.get("size") or 0)
-            slug = max(MODEL_OFFSETS, key=MODEL_OFFSETS.get)
-            n = ds.get("size") or 0
-            obs, ci = observe(truth, (e, slug, "coached"), n, rng)
-            results.append({
-                "token": Path(ds["path"]).stem.lower(),
-                "model": gsq.model_short(slug), "condition": "coached",
-                "strength": obs, "n_eval": n, "ci_half": ci,
-                "submitted_at": f"2026-06-{13 + t // 200:02d}",
-            })
-            spend += max(COST_PER_ENTRY[slug] * n, gsq.COST_FLOOR)
+        # DIVERSION prize: prize-hunters are drawn from the existing
+        # pool — this tick's contributor grinds the prize pair instead
+        # of following the queue (opportunity cost on breadth).
+        if prize_edges and prize_mode == "divert" and rng.random() < prize_share:
+            spend += fire_prize(t)
             continue
         if not open_items:
+            if prize_edges:
+                continue  # queue exhausted; prize lane may still run
             break
 
         persona = rng.choices(list(mix), weights=list(mix.values()))[0]
@@ -315,7 +361,7 @@ def simulate(*, runs, seed, mix, variant="v3", rerank_every=10,
     items, evidence, gnodes = rank_items(corpora, registry, results,
                                          variant=variant)
     history.append({"run": runs, "spend": round(spend, 2),
-                    **measure(evidence, gnodes)})
+                    **measure(evidence, gnodes, watch)})
     return history
 
 
@@ -326,29 +372,35 @@ def main() -> int:
     ap.add_argument("--out", default="/tmp/sim_results.json")
     args = ap.parse_args()
 
+    MIX = {"follower": .6, "random": .25, "cheapest": .15}
     scenarios = {
-        # 1. growth under the production formula, pure follower
+        # 1. growth under the production formula
         "v3-follower": dict(mix={"follower": 1.0}, variant="v3"),
-        # realistic mixed population
-        "v3-mixed": dict(mix={"follower": .6, "random": .25, "cheapest": .15},
-                         variant="v3"),
+        "v3-mixed": dict(mix=MIX, variant="v3"),
         # 2. alternative incentive designs
         "v2-follower": dict(mix={"follower": 1.0}, variant="v2"),
         "v1ish-follower": dict(mix={"follower": 1.0}, variant="v1ish"),
         "estbonus-follower": dict(mix={"follower": 1.0}, variant="estbonus"),
-        "random-only": dict(mix={"random": 1.0}, variant="v3"),
         "oracle": dict(mix={"oracle": 1.0}, variant="v3"),
     }
+
+    # 3. prizes — pinned to LOW-RESOURCE, mission-critical pairs (the
+    #    real prize lane: spa→que / eng→que, i.e. Quechua), never to
+    #    solved-market majors. `que` is the watched node: a prize is
+    #    really trying to raise that language's service to the mesh.
+    prize_edges = [frozenset(("spa", "que")), frozenset(("eng", "que"))]
+    watch = ("que",)
+    scenarios["v3-noprize"] = dict(mix=MIX, variant="v3", watch=watch)
+    for share in (0.15, 0.30):
+        # diversion: prize pulls effort FROM the queue (opportunity cost)
+        scenarios[f"prize-divert{int(share*100)}"] = dict(
+            mix=MIX, variant="v3", prize_edges=prize_edges,
+            prize_share=share, prize_mode="divert", watch=watch)
+        # additive: a funded prize draws NEW effort (the realistic case)
+        scenarios[f"prize-additive{int(share*100)}"] = dict(
+            mix=MIX, variant="v3", prize_edges=prize_edges,
+            prize_share=share, prize_mode="additive", watch=watch)
     out = {}
-    registry, corpora, _ = load_universe()
-    pairs = sorted({frozenset(d["language_pair"].values()) for d in corpora},
-                   key=lambda e: tuple(sorted(e)))
-    # 3. prize pinned to two pairs (a high-resource and a low-resource one)
-    prize_edges = [frozenset(("eng", "fra")), frozenset(("eng", "fao"))]
-    for share in (0.0, 0.25, 0.5):
-        scenarios[f"v3-mixed-prize{int(share*100)}"] = dict(
-            mix={"follower": .6, "random": .25, "cheapest": .15},
-            variant="v3", prize_edges=prize_edges, prize_share=share)
 
     for name, cfg in scenarios.items():
         seeds_hist = []
