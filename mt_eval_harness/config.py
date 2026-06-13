@@ -803,6 +803,13 @@ class RunConfig:
     model: str = DEFAULT_MODEL  # Short name, resolved via MODEL_REGISTRY
     max_tokens: int = DEFAULT_MAX_TOKENS
 
+    # --- API provider ---
+    # Which LLM API to call. "openrouter" (default) proxies any model.
+    # Direct providers ("openai", "anthropic", "gemini") call vendor APIs
+    # without a proxy. Uses the same vocabulary as the CLI's METHOD_REGISTRY
+    # for consistency: `champollion.config.json` → harness RunConfig.
+    provider: str = "openrouter"
+
     # --- Tool calling ---
     # Individual toggles for each tool (None = all available tools)
     tools_enabled: bool = False
@@ -1055,6 +1062,9 @@ class RunConfig:
             # FST retry count affects the final translation output (retried
             # translations may differ from first-pass ones).
             "fst_retries": self.fst_retries,
+            # Provider affects the exact API used, which can produce different
+            # outputs for the same model/prompt (e.g., OpenRouter vs direct).
+            "provider": self.provider,
         }
         raw = json.dumps(relevant, sort_keys=True)
         return hashlib.sha256(raw.encode()).hexdigest()[:12]

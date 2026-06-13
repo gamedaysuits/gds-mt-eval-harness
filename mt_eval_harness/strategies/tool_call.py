@@ -50,6 +50,8 @@ class ToolCallStrategy:
         system_prompt: str,
         hooks: list,
         cache: ResultCache,
+        provider=None,
+        **kwargs,
     ) -> tuple[list[dict], int]:
         """Execute tool-calling translation for all entries.
 
@@ -76,15 +78,20 @@ class ToolCallStrategy:
             # Execute the multi-round tool-calling loop
             result = await self._translate_with_tools(
                 session, entry, config, system_prompt,
-                api_key, semaphore,
+                api_key, semaphore, provider=provider,
             )
 
             result["raw_predicted"] = result.get("predicted", "")
 
             # Apply post-translation hooks
+            api_fn = (
+                (lambda **kw: provider.call(session=session, **kw))
+                if provider else
+                (lambda **kw: call_openrouter(session=session, **kw))
+            )
             result = await apply_hooks(
                 entry, result, hooks, config,
-                api_fn=lambda **kw: call_openrouter(session=session, **kw),
+                api_fn=api_fn,
             )
 
             cache.put(source_text, result)
@@ -104,6 +111,7 @@ class ToolCallStrategy:
         system_prompt: str,
         api_key: str,
         semaphore: asyncio.Semaphore,
+        provider=None,
     ) -> dict:
         """Execute the multi-round tool-calling loop for a single entry.
 
@@ -133,7 +141,8 @@ class ToolCallStrategy:
         tool_call_count = 0
 
         for round_num in range(config.max_tool_rounds):
-            result = await call_openrouter(
+            api_call = provider.call if provider else call_openrouter
+            result = await api_call(
                 session=session,
                 messages=messages,
                 model_id=config.model_id,

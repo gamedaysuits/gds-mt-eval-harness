@@ -40,6 +40,11 @@ pip install mt-eval-harness
 # Set your API key (supports OpenRouter — any model)
 export OPENROUTER_API_KEY=sk-or-...
 
+# Or use a direct provider API key
+export OPENAI_API_KEY=sk-...        # for --provider openai
+export ANTHROPIC_API_KEY=sk-ant-... # for --provider anthropic
+export GEMINI_API_KEY=AIza-...      # for --provider gemini
+
 # Run a translation experiment with optimal defaults
 # (batch_size=25, max_tokens=32768, concurrency=8, cache=on)
 mt-eval run --corpus data/corpus.json --model gemini-pro
@@ -47,6 +52,10 @@ mt-eval run --corpus data/corpus.json --model gemini-pro
 # Multi-model parallel run — all models execute simultaneously
 mt-eval run --corpus data/corpus.json \
   -m gemini-pro,claude-opus-4.7,gpt-5.5,deepseek-v4-pro
+
+# Direct provider (skip OpenRouter proxy)
+mt-eval run --corpus data/corpus.json \
+  --model openai/gpt-5.5 --provider openai
 
 # Use a standard parallel text corpus (FLORES+, WMT, NTREX)
 mt-eval run \
@@ -113,7 +122,7 @@ Each model gets its own aiohttp session and semaphore. A 14-model benchmark runs
 | **Plugin architecture** | Bring your own methods, metrics, tools | Fixed evaluation pipeline |
 | **Export to production** | Direct champollion plugin export | Evaluation only |
 | **Crowdsource-ready** | Prove your method is better, share it | Researcher-only |
-| **Model-agnostic** | Any OpenRouter model (100+) | Single-vendor |
+| **Model-agnostic** | Any OpenRouter model (100+), or direct OpenAI/Anthropic/Gemini | Single-vendor |
 | **Fast by default** | batch=25, cache=on, parallel multi-model | Manual optimization |
 | **COMET with bootstrap CIs** | Cached per-entry bootstrap — no redundant neural inference | CIs rarely computed |
 | **AfriCOMET auto-selection** | Auto-selects `masakhane/africomet-mtl` for 35 African languages | One model fits all |
@@ -134,9 +143,16 @@ mt_eval_harness/
 │   ├── batch.py           # Multiple entries per call
 │   ├── tool_call.py       # Multi-round tool-calling
 │   └── method_strategy.py # Custom TranslationMethod plugins
+├── providers/             # Multi-provider LLM abstraction
+│   ├── base.py            # LLMProvider ABC — uniform interface
+│   ├── registry.py        # get_provider() factory
+│   ├── openrouter.py      # OpenRouter (default — proxies any model)
+│   ├── openai_provider.py # Direct OpenAI API
+│   ├── anthropic_provider.py  # Direct Anthropic Messages API
+│   └── gemini_provider.py # Direct Google Gemini API
 ├── tester.py              # Offline metric computation
 ├── exporter.py            # champollion plugin packaging
-├── api.py                 # OpenRouter HTTP client
+├── api.py                 # OpenRouter HTTP client (used by openrouter provider)
 ├── cache.py               # Deterministic result caching
 ├── config.py              # Typed configuration + protocols
 ├── language_cards.py      # Language card loader + validation
@@ -196,7 +212,14 @@ mt-eval setup --all
 mt-eval setup --status
 ```
 
-**Requirements:** Python 3.11+ · `OPENROUTER_API_KEY` environment variable
+**Requirements:** Python 3.11+ · At least one API key:
+
+| Provider | Env Var | Flag |
+|----------|---------|------|
+| OpenRouter (default) | `OPENROUTER_API_KEY` | `--provider openrouter` |
+| OpenAI (direct) | `OPENAI_API_KEY` | `--provider openai` |
+| Anthropic (direct) | `ANTHROPIC_API_KEY` | `--provider anthropic` |
+| Gemini (direct) | `GEMINI_API_KEY` or `GOOGLE_API_KEY` | `--provider gemini` |
 
 > **Ship lean, install on consent.** The harness core has minimal dependencies. Optional capabilities (COMET neural metric, FST morphological validation) install interactively via `mt-eval setup` — or on-the-fly when the harness detects they'd improve your eval. You never need to know specific pip commands.
 

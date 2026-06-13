@@ -186,6 +186,12 @@ def export_champollion_config(
             },
         },
     }
+
+    # Include provider only when non-default (keeps OpenRouter exports clean
+    # and backward-compatible; direct provider exports are explicit).
+    provider_name = config.get("provider", "openrouter")
+    if provider_name and provider_name != "openrouter":
+        snippet["provider"] = provider_name
     if method_note:
         snippet["_method_note"] = method_note
 

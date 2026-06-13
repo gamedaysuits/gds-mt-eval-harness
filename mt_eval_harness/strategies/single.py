@@ -43,6 +43,8 @@ class SingleStrategy:
         system_prompt: str,
         hooks: list,
         cache: ResultCache,
+        provider=None,
+        **kwargs,
     ) -> tuple[list[dict], int]:
         """Execute single-entry translation for all entries.
 
@@ -73,7 +75,10 @@ class SingleStrategy:
                 {"role": "user", "content": source_text},
             ]
 
-            result = await call_openrouter(
+            # Use provider.call() if available, else fall back to
+            # call_openrouter for backward compatibility.
+            api_call = provider.call if provider else call_openrouter
+            result = await api_call(
                 session=session,
                 messages=messages,
                 model_id=config.model_id,
@@ -97,9 +102,14 @@ class SingleStrategy:
             translated["raw_predicted"] = translated.get("predicted", "")
 
             # Apply post-translation hooks (e.g., grammar verification)
+            api_fn = (
+                (lambda **kw: provider.call(session=session, **kw))
+                if provider else
+                (lambda **kw: call_openrouter(session=session, **kw))
+            )
             translated = await apply_hooks(
                 entry, translated, hooks, config,
-                api_fn=lambda **kw: call_openrouter(session=session, **kw),
+                api_fn=api_fn,
             )
 
             cache.put(source_text, translated)

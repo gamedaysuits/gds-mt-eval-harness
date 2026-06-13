@@ -4,6 +4,26 @@ All notable changes to the MT Eval Harness (arena) are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [Unreleased]
+
+### Added
+
+- **Multi-provider LLM backend** — New `providers/` package with `LLMProvider` ABC and four implementations: OpenRouter (default), OpenAI, Anthropic, Gemini. Each provider handles message format translation, API key loading, pricing, and retry logic internally. Strategies are completely provider-agnostic. CLI flag: `--provider {openrouter,openai,anthropic,gemini}`.
+- **Provider in config hash** — `RunConfig.config_hash()` now includes the provider, ensuring cache correctness when switching between OpenRouter and direct providers for the same model.
+- **45 provider tests** — Registry, ABC compliance, message format conversion (OpenAI cache_control flattening, Anthropic system extraction, Gemini role mapping), API key loading, prefix stripping, pricing, and RunConfig integration.
+
+### Changed
+
+- **`publish.py` — generic plugin extraction** — Replaced hardcoded `crk_linter`/`crk_semantic` key lookups with flag-based discovery (`is_equivalence_linter`, `semantic_verdict_counts`). LYSS verdict extraction now probes any plugin's metrics dict. Any language with custom linters now gets full leaderboard coverage without code changes.
+- **`publish.py` — entry-count enforcement** — `verify_corpus_integrity()` now enforces 95% entry-count coverage against sha-pinned dataset registry entries. Below-threshold runs are rejected with a clear error message.
+- **`publish.py` — dynamic api_provider** — `api_provider` field in run cards is now pulled from the run config instead of hardcoded `"openrouter"`.
+- **`config_exporter.py` — provider emission** — Export snippets include `provider` when non-default, keeping OpenRouter exports backward-compatible.
+- **`runner.py` — provider-based key loading** — Uses `get_provider(config.provider)` for API key loading and pricing instead of direct `api.py` imports.
+- **Strategies (single, batch, tool_call)** — Accept optional `provider` kwarg; use `provider.call()` when available, fall back to `call_openrouter()` for backward compatibility.
+
+### Fixed
+
+- **`config_exporter.py`** — `defaultMethod` now mapped from harness `prompt_version` via `_PROMPT_VERSION_TO_METHOD` instead of raw passthrough. Non-portable prompt versions (`custom`, `champollion`) emit a `_method_note` caveat. Validation against `_CLI_METHODS` prevents emitting configs that crash the CLI.
 
 ## [3.0.0] — 2026-06-12
 

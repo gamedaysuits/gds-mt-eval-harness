@@ -5,7 +5,7 @@
 **What is this?** A tool that tests how well a machine translation system works. You give it sentence pairs (source + correct translation), it runs your translation method, and tells you how accurate it is.
 
 **What do I need?**
-1. An OpenRouter API key (free to sign up, pay-per-use)
+1. An API key (OpenRouter, OpenAI, Anthropic, or Gemini)
 2. A JSON file with your test sentences
 3. Python 3.11+
 
@@ -116,15 +116,23 @@ pip install -e ".[all]"
 
 ### Environment Setup
 
+Set at least one API key. OpenRouter (default) proxies any model; direct providers skip the proxy.
+
 ```bash
 cp .env.example .env
-# Edit .env and set your OPENROUTER_API_KEY
+# Edit .env and set your API key(s)
 ```
 
 Or export directly:
 
 ```bash
+# Option 1: OpenRouter (default — proxies any model)
 export OPENROUTER_API_KEY=sk-or-v1-your-key-here
+
+# Option 2: Direct provider (skip proxy)
+export OPENAI_API_KEY=sk-...          # for --provider openai
+export ANTHROPIC_API_KEY=sk-ant-...   # for --provider anthropic
+export GEMINI_API_KEY=AIza-...        # for --provider gemini
 ```
 
 ### Requirements
@@ -310,6 +318,7 @@ Every parameter that affects a run is captured in `RunConfig`. The full config i
 | `model` | `--model`, `-m` | `"gemini-pro"` | Model alias, full OpenRouter ID, or comma-separated list for parallel multi-model runs. Aliases defined in `shared/model-aliases.json`. |
 | `max_tokens` | `--max-tokens` | `32768` | Max tokens per API call. Set high to eliminate truncation risk; unused tokens cost nothing |
 | `temperature` | `--temperature` | `0.0` | Sampling temperature (0 = deterministic) |
+| `provider` | `--provider` | `"openrouter"` | LLM API provider: `openrouter` (default, proxies any model), `openai`, `anthropic`, `gemini`. Direct providers call vendor APIs without a proxy. |
 
 ### Execution
 
@@ -1049,7 +1058,7 @@ Champollion ignores unknown metric fields, so this is strictly additive.
 
 ## 13. Troubleshooting
 
-### "OPENROUTER_API_KEY not found"
+### "OPENROUTER_API_KEY not found" (or OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY)
 
 ```bash
 export OPENROUTER_API_KEY=sk-or-v1-your-key

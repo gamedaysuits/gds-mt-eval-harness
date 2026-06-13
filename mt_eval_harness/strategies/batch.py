@@ -77,6 +77,8 @@ class BatchStrategy:
         system_prompt: str,
         hooks: list,
         cache: ResultCache,
+        provider=None,
+        **kwargs,
     ) -> tuple[list[dict], int]:
         """Execute batched translation for all entries.
 
@@ -132,7 +134,8 @@ class BatchStrategy:
                 {"role": "user", "content": user_msg},
             ]
 
-            result = await call_openrouter(
+            api_call = provider.call if provider else call_openrouter
+            result = await api_call(
                 session=session,
                 messages=messages,
                 model_id=config.model_id,
@@ -203,11 +206,14 @@ class BatchStrategy:
                 hooked = []
                 for entry, res in zip(batch, results):
                     if not res.get("error"):
+                        api_fn_hook = (
+                            (lambda **kw: provider.call(session=session, **kw))
+                            if provider else
+                            (lambda **kw: call_openrouter(session=session, **kw))
+                        )
                         res = await hook.process(
                             entry, res, config,
-                            api_fn=lambda **kw: call_openrouter(
-                                session=session, **kw
-                            ),
+                            api_fn=api_fn_hook,
                         )
                     hooked.append(res)
                 results = hooked

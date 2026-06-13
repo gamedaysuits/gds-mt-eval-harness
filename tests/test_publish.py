@@ -786,3 +786,140 @@ class TestUpsertRetry:
             _upsert_with_retry(_make_request())
 
         assert len(attempts) == UPSERT_MAX_ATTEMPTS
+
+
+# ---------------------------------------------------------------------------
+# Entry-count parity enforcement (added 2026-06-13, audit companion)
+# ---------------------------------------------------------------------------
+
+class TestEntryCountEnforcement:
+    """verify_corpus_integrity() blocks partial runs for sha-pinned datasets."""
+
+    def _card(self, **over) -> dict:
+        """Base run card with evaluable defaults."""
+        card = {
+            "dataset": {"id": "test_ds", "sha256": "abc123", "entry_count": 100},
+            "scores": {"evaluated": 100, "total": 100},
+        }
+        card["dataset"].update(over.get("dataset", {}))
+        card["scores"].update(over.get("scores", {}))
+        return card
+
+    def test_full_coverage_passes_with_pinned_sha(self, monkeypatch):
+        """Running all entries of a sha-pinned dataset → no error."""
+        sha = "f" * 64
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": sha, "size": 100},
+        )
+        warnings = publish.verify_corpus_integrity(
+            self._card(dataset={"id": "ds1", "sha256": sha},
+                       scores={"evaluated": 100})
+        )
+        assert not any("Partial run" in w for w in warnings)
+
+    def test_95_percent_coverage_passes(self, monkeypatch):
+        """Evaluating 95% of entries passes (tolerance for filtered entries)."""
+        sha = "f" * 64
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": sha, "size": 100},
+        )
+        warnings = publish.verify_corpus_integrity(
+            self._card(dataset={"id": "ds1", "sha256": sha},
+                       scores={"evaluated": 95})
+        )
+        assert not any("Partial run" in w for w in warnings)
+
+    def test_partial_run_blocked_for_pinned_sha(self, monkeypatch):
+        """Running only 50/436 entries of a sha-pinned dataset → hard fail."""
+        sha = "a" * 64
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": sha, "size": 436},
+        )
+        with pytest.raises(publish.PublishIntegrityError, match="Partial run"):
+            publish.verify_corpus_integrity(
+                self._card(dataset={"id": "edtekla", "sha256": sha, "entry_count": 436},
+                           scores={"evaluated": 50, "total": 436})
+            )
+
+    def test_partial_run_warns_for_unpinned_sha(self, monkeypatch):
+        """Running 50/436 on an unpinned dataset → warning, not error."""
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": None, "size": 436},
+        )
+        warnings = publish.verify_corpus_integrity(
+            self._card(dataset={"id": "unpinned", "sha256": "xyz"},
+                       scores={"evaluated": 50, "total": 436})
+        )
+        assert any("Partial run" in w for w in warnings)
+
+    def test_no_registry_size_skips_check(self, monkeypatch):
+        """Registry entry with no `size` field → check is a no-op."""
+        sha = "f" * 64
+        monkeypatch.setattr(
+            publish, "_lookup_registry_entry",
+            lambda _id: {"sha256": sha},  # no size field
+        )
+        warnings = publish.verify_corpus_integrity(
+            self._card(dataset={"id": "ds_no_size", "sha256": sha},
+                       scores={"evaluated": 10})
+        )
+        # Should pass — no size to check against
+        assert not any("Partial run" in w for w in warnings)
+
+
+# ---------------------------------------------------------------------------
+# Generic plugin metric extraction (refactored 2026-06-13)
+# ---------------------------------------------------------------------------
+
+class TestGenericPluginExtraction:
+    """_extract_lyss_verdicts() discovers plugins by field shape, not name."""
+
+    def test_crk_named_plugins_still_discovered(self):
+        """CRK plugins keyed as 'crk_linter' and 'crk_semantic' are found."""
+        pm = {
+            "crk_linter": {"equivalent_match": True, "lint_verdict": "EXACT"},
+            "crk_semantic": {"semantic_verdict": "VALID"},
+        }
+        result = publish._extract_lyss_verdicts(pm)
+        assert result["equivalent_match"] is True
+        assert result["semantic_verdict"] == "VALID"
+
+    def test_non_crk_named_plugins_discovered(self):
+        """A hypothetical Navajo plugin keyed 'nv_linter' is also found."""
+        pm = {
+            "nv_linter": {"equivalent_match": False, "lint_verdict": "MISS"},
+            "nv_semantic": {"semantic_verdict": "PARTIAL"},
+        }
+        result = publish._extract_lyss_verdicts(pm)
+        assert result["equivalent_match"] is False
+        assert result["semantic_verdict"] == "PARTIAL"
+
+    def test_error_plugins_skipped(self):
+        """Plugins that errored (non-dict or have 'error' key) are skipped."""
+        pm = {
+            "bad_linter": "ImportError: no module",
+            "good_linter": {"equivalent_match": True},
+        }
+        result = publish._extract_lyss_verdicts(pm)
+        assert result["equivalent_match"] is True
+
+    def test_empty_plugin_metrics_returns_empty(self):
+        """None or empty plugin_metrics → empty dict."""
+        assert publish._extract_lyss_verdicts(None) == {}
+        assert publish._extract_lyss_verdicts({}) == {}
+
+    def test_fst_and_behavioral_still_work(self):
+        """FST validity, code-switching, hallucination extraction unchanged."""
+        pm = {
+            "giellalt_fst_validity": {"fst_validity_rate": 1.0},
+            "code_switching": {"code_switching_rate": 0.05},
+            "hallucination": {"hallucination_rate": 0.0},
+        }
+        result = publish._extract_lyss_verdicts(pm)
+        assert result["fst_valid"] is True
+        assert result["code_switching_detected"] is True
+        assert result["hallucination_detected"] is False

@@ -208,3 +208,36 @@ class TestDefaultMethodMapping:
             config_extra={"prompt_version": "naive"},
         )
         assert "inputLocale" not in snippet
+
+
+# ---------------------------------------------------------------------------
+# Provider emission — multi-provider backend
+# ---------------------------------------------------------------------------
+
+class TestProviderExport:
+    def test_default_openrouter_omits_provider(self, tmp_path):
+        """OpenRouter is the default — keep exports clean by omitting it."""
+        snippet = export(
+            tmp_path,
+            {"confidence_intervals": {"composite_score": {"score": 0.4}}},
+            config_extra={"provider": "openrouter"},
+        )
+        assert "provider" not in snippet
+
+    def test_direct_provider_emits_provider(self, tmp_path):
+        """Non-default providers MUST be explicitly recorded."""
+        snippet = export(
+            tmp_path,
+            {"confidence_intervals": {"composite_score": {"score": 0.4}}},
+            config_extra={"provider": "openai"},
+        )
+        assert snippet["provider"] == "openai"
+
+    def test_missing_provider_omits_field(self, tmp_path):
+        """Old configs without a provider field should export cleanly."""
+        snippet = export(
+            tmp_path,
+            {"confidence_intervals": {"composite_score": {"score": 0.4}}},
+        )
+        assert "provider" not in snippet
+

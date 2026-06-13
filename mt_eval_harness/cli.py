@@ -438,6 +438,15 @@ def _add_run_args(parser: argparse.ArgumentParser):
              f"unused tokens cost nothing).",
     )
 
+    # API provider
+    parser.add_argument(
+        "--provider",
+        default="openrouter",
+        choices=["openrouter", "openai", "anthropic", "gemini"],
+        help="LLM API provider. 'openrouter' (default) proxies any model. "
+             "Direct providers call vendor APIs without a proxy.",
+    )
+
     # Tools
     parser.add_argument(
         "--tools",
@@ -669,6 +678,7 @@ def args_to_config(args) -> RunConfig:
         target_lang=args.target_lang if hasattr(args, "target_lang") else "",
         model=args.model,
         max_tokens=args.max_tokens,
+        provider=getattr(args, "provider", "openrouter"),
         tools_enabled=args.tools if hasattr(args, "tools") else False,
         tools_list=tools_list,
         max_tool_rounds=args.max_tool_rounds if hasattr(args, "max_tool_rounds") else DEFAULT_MAX_TOOL_ROUNDS,

@@ -54,6 +54,7 @@ import aiohttp
 from mt_eval_harness.config import RunConfig, TranslationMethod
 from mt_eval_harness.cache import ResultCache
 from mt_eval_harness.api import load_api_key, call_openrouter, fetch_pricing
+from mt_eval_harness.providers import get_provider
 from mt_eval_harness.strategies import resolve_strategy
 from mt_eval_harness.pipeline import (
     enrich_results,
@@ -242,7 +243,13 @@ async def execute_run(
         return {"dry_run": True, "entry_count": len(corpus)}
 
     # --- Load ---
-    api_key = load_api_key()
+    # Use the provider system to load the correct API key.
+    # For "openrouter" (default), this calls the same load_api_key()
+    # from api.py. For direct providers, it loads the vendor-specific key.
+    provider = get_provider(config.provider)
+    api_key = provider.load_api_key()
+    print(f"\n  Provider:    {provider.name}")
+
     corpus, dataset_meta = load_corpus(config)
     print(f"\n  Loaded {len(corpus)} entries")
 
@@ -357,7 +364,7 @@ async def execute_run(
     run_start = time.monotonic()
 
     async with aiohttp.ClientSession() as session:
-        pricing = await fetch_pricing(session, api_key)
+        pricing = await provider.fetch_pricing(session, api_key)
 
         # All strategies return (results, cache_hits)
         results, cache_hits = await strategy.execute(
@@ -369,6 +376,7 @@ async def execute_run(
             system_prompt=system_prompt,
             hooks=active_hooks,
             cache=cache,
+            provider=provider,
         )
 
     elapsed = time.monotonic() - run_start
