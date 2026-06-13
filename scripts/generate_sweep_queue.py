@@ -867,7 +867,7 @@ def build_mesh_snapshot(
         a, b = sorted(e)
         runs = edge_runs.get(e, [])
         bridge = (evidence.get("edge_bridge") or {}).get(e)
-        edges.append({
+        edge_obj = {
             "a": a,
             "b": b,
             "size": pair_size[e],
@@ -878,7 +878,33 @@ def build_mesh_snapshot(
             "reliability": bridge["r"] if bridge else None,
             "tier": bridge["tier"] if bridge else "registered",
             "runs": [[t, c] for t, c in runs],
-        })
+        }
+        # Full factor breakdown for the bridge inspector's per-factor
+        # bars, "what this bridge needs" panel, and lens overlays.
+        if bridge:
+            edge_obj.update({
+                "f_size": bridge["f_size"],
+                "f_rich": bridge["f_rich"],
+                "f_conf": bridge["f_conf"],
+                "f_repl": bridge["f_repl"],
+                "s_eff": bridge["s_eff"],
+                "n_eval": bridge["n_eval"],
+                "eff_words": bridge.get("eff_words"),
+            })
+            # Compute actionable "needs" — what would push each factor
+            # to 1.0 — so the inspector can show "+53 entries" etc.
+            needs = {}
+            if bridge["f_size"] < 1.0:
+                needs["entries"] = RELIABILITY_N_FULL - (bridge["n_eval"] or 0)
+            if bridge["f_rich"] < 1.0 and bridge.get("eff_words") is not None:
+                needs["eff_words_gap"] = round(
+                    RELIABILITY_L_HEALTHY - bridge["eff_words"], 1
+                )
+            if bridge["f_repl"] < 1.0:
+                needs["replications"] = RELIABILITY_RUNS_FULL - bridge["runs"]
+            if needs:
+                edge_obj["needs"] = needs
+        edges.append(edge_obj)
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
