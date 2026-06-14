@@ -373,6 +373,23 @@ class TestFindRegistryExportForCorpus:
             registry_path=tmp_path / "absent.json",
         ) is None
 
+    def test_no_path_uses_layered_load_registry(self, monkeypatch):
+        """With no explicit registry_path, resolution goes through
+        config.load_registry (local→bundled→remote) so a standalone install —
+        where no registry file sits at the in-repo path — can still fetch."""
+        fake = {"registry_version": "3.0.0", "datasets": [{
+            "id": "gv-x", "access": "fetch-from-source",
+            "path": "eval-amh-arb-globalvoices-test-v1.json",
+            "source_export": {"builder": "globalvoices-parallel"},
+        }]}
+        monkeypatch.setattr(
+            "mt_eval_harness.config.load_registry", lambda *a, **k: fake
+        )
+        entry = find_registry_export_for_corpus(
+            "eval-amh-arb-globalvoices-test-v1.json"  # no registry_path
+        )
+        assert entry is not None and entry["id"] == "gv-x"
+
     def test_real_registry_resolves_mesh_corpus(self):
         # The checked-in registry must resolve its own mesh entries.
         entry = find_registry_export_for_corpus(
@@ -514,3 +531,73 @@ class TestLoaderFetchOnMiss:
         config = RunConfig(corpus_path=str(tmp_path / "nope.json"))
         with pytest.raises(FileNotFoundError, match="Corpus not found"):
             load_corpus(config)
+
+
+class TestTatoebaChallengeCardArchiveSha:
+    """Regression: a card's source.sha256 is the BUILT-CORPUS hash, never the
+    archive hash. The builder must verify the downloaded export against the
+    pinned ARCHIVE sha (TEST_TAR_SHA256), not the per-corpus card sha.
+
+    The original bug passed source.sha256 as tar_sha256, so ensure_test_tar
+    verified the 169 MB archive against a per-corpus hash — it always failed,
+    deleted the archive, and re-downloaded the full export for EVERY corpus,
+    so no card-based fetch-from-source could ever succeed.
+    """
+
+    def _adapter(self):
+        corpus_fetch._import_corpora_builder()
+        from corpora_builder.adapters import tatoeba_challenge_adapter
+        return tatoeba_challenge_adapter
+
+    def _capture_tar_sha(self, card, monkeypatch, tmp_path):
+        tca = self._adapter()
+        captured = {}
+
+        def fake_build(dest, **kwargs):
+            captured.update(kwargs)
+            Path(dest).parent.mkdir(parents=True, exist_ok=True)
+            Path(dest).write_text("{}", encoding="utf-8")
+            return Path(dest)
+
+        monkeypatch.setattr(tca, "build_corpus_file", fake_build)
+        monkeypatch.setattr(corpus_fetch, "CACHE_DIR", tmp_path / ".cache")
+        corpus_fetch._build_tatoeba_challenge_from_card(
+            card, tmp_path / "out.json", assume_yes=True,
+        )
+        return captured, tca
+
+    def test_uses_archive_sha_not_corpus_sha(self, monkeypatch, tmp_path):
+        per_corpus_sha = "deadbeef" * 8  # the card's BUILT-CORPUS hash
+        card = {
+            "id": "eval-eng-zul-tatoeba-dev-v1",
+            "pair": {"source": "eng", "target": "zul"},
+            "source": {
+                "builder": "tatoeba-challenge",
+                "repo_url": (
+                    "https://object.pouta.csc.fi/"
+                    "Tatoeba-Challenge-devtest/test-v2023-09-26.tar"
+                ),
+                "sha256": per_corpus_sha,
+                "recipe": {"split": "test"},
+            },
+        }
+        captured, tca = self._capture_tar_sha(card, monkeypatch, tmp_path)
+        # The archive must be verified against the pinned archive hash...
+        assert captured["tar_sha256"] == tca.TEST_TAR_SHA256
+        # ...never the per-corpus card hash (that's the bug).
+        assert captured["tar_sha256"] != per_corpus_sha
+
+    def test_explicit_archive_sha_override_is_honored(self, monkeypatch, tmp_path):
+        card = {
+            "id": "eval-eng-zul-tatoeba-dev-v1",
+            "pair": {"source": "eng", "target": "zul"},
+            "source": {
+                "builder": "tatoeba-challenge",
+                "repo_url": "https://example.org/some-other-release.tar",
+                "sha256": "cafe" * 16,            # corpus hash
+                "archive_sha256": "abcd" * 16,    # explicit archive hash
+                "recipe": {"split": "test"},
+            },
+        }
+        captured, _ = self._capture_tar_sha(card, monkeypatch, tmp_path)
+        assert captured["tar_sha256"] == "abcd" * 16

@@ -45,6 +45,23 @@ export OPENAI_API_KEY=sk-...        # for --provider openai
 export ANTHROPIC_API_KEY=sk-ant-... # for --provider anthropic
 export GEMINI_API_KEY=AIza-...      # for --provider gemini
 
+# ── Zero setup: no corpus files needed ───────────────────────────────
+# The harness ships a dataset registry and downloads corpora on demand.
+
+# 1. See what's available (hundreds of language pairs)
+mt-eval list datasets
+
+# 2. Run by dataset id — the corpus is fetched from its upstream source,
+#    rebuilt + cached locally, and licence-gated (--yes accepts the terms).
+mt-eval run --corpus eval-eng-hau-tatoeba-dev-v1 --model gemini-pro --yes
+
+# 3. Contribute compute on the highest-value pairs. `queue` reads the live
+#    queue (champollion.dev/queue.json, ranked by expected chain value),
+#    fetching each corpus automatically. Spend only what you choose:
+mt-eval queue --budget 2.00        # run from the top until ~$2 of spend
+mt-eval queue --top 5 --dry-run    # preview the 5 best open items
+
+# ── Or bring your own corpus file ────────────────────────────────────
 # Run a translation experiment with optimal defaults
 # (batch_size=25, max_tokens=32768, concurrency=8, cache=on)
 mt-eval run --corpus data/corpus.json --model gemini-pro

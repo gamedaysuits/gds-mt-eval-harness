@@ -58,6 +58,55 @@ class TestLoadRegistry:
         with pytest.raises(FileNotFoundError):
             load_registry(empty_dir / "nonexistent.json")
 
+    # --- Standalone resolution: local → bundled → remote --------------------
+    # These guard the "grab the harness and it just works" path: a pip install
+    # has no in-repo registry, so it must fall back to the bundled copy and then
+    # to the published one. If these break, third-party installs silently lose
+    # the ability to discover/fetch corpora.
+
+    def test_falls_back_to_bundled_registry(self, tmp_path, monkeypatch):
+        """No in-repo registry → load the copy bundled inside the package."""
+        import mt_eval_harness.config as cfg
+        monkeypatch.setattr(cfg, "_REGISTRY_PATH", tmp_path / "nope.json")
+        monkeypatch.setattr(cfg, "_REGISTRY_DIR", tmp_path / "nope_dir")
+        bundled = tmp_path / "data" / "registry.json"
+        bundled.parent.mkdir()
+        bundled.write_text(json.dumps(
+            {"registry_version": "3.0.0", "datasets": [{"id": "bundled-x"}]}
+        ))
+        monkeypatch.setattr(cfg, "_BUNDLED_REGISTRY", bundled)
+        reg = load_registry()
+        assert reg["datasets"][0]["id"] == "bundled-x"
+
+    def test_falls_back_to_remote_registry(self, tmp_path, monkeypatch):
+        """No local + no bundled → fetch the published registry and cache it."""
+        import mt_eval_harness.config as cfg
+        monkeypatch.setattr(cfg, "_REGISTRY_PATH", tmp_path / "nope.json")
+        monkeypatch.setattr(cfg, "_REGISTRY_DIR", tmp_path / "nope_dir")
+        monkeypatch.setattr(cfg, "_BUNDLED_REGISTRY", tmp_path / "nobundle.json")
+        remote = tmp_path / "remote.json"
+        remote.write_text(json.dumps(
+            {"registry_version": "3.0.0", "datasets": [{"id": "remote-x"}]}
+        ))
+        cache = tmp_path / "cache.json"
+        monkeypatch.setattr(cfg, "_REGISTRY_URL", remote.as_uri())
+        monkeypatch.setattr(cfg, "_REGISTRY_CACHE", cache)
+        monkeypatch.delenv("MT_EVAL_NO_REMOTE_REGISTRY", raising=False)
+        reg = load_registry()
+        assert reg["datasets"][0]["id"] == "remote-x"
+        assert cache.is_file()  # cached for the next call (TTL)
+
+    def test_default_raises_when_nothing_available(self, tmp_path, monkeypatch):
+        """Every source exhausted (and remote disabled) → loud, not silent."""
+        import mt_eval_harness.config as cfg
+        monkeypatch.setattr(cfg, "_REGISTRY_PATH", tmp_path / "nope.json")
+        monkeypatch.setattr(cfg, "_REGISTRY_DIR", tmp_path / "nope_dir")
+        monkeypatch.setattr(cfg, "_BUNDLED_REGISTRY", tmp_path / "nobundle.json")
+        monkeypatch.setattr(cfg, "_REGISTRY_CACHE", tmp_path / "nocache.json")
+        monkeypatch.setenv("MT_EVAL_NO_REMOTE_REGISTRY", "1")
+        with pytest.raises(FileNotFoundError):
+            load_registry()
+
 
 class TestResolveDataset:
     """Test dataset resolution: local paths and registry IDs."""

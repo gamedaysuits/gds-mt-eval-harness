@@ -232,8 +232,16 @@ def _build_tatoeba_challenge_from_card(
         cache_dir=CACHE_DIR / "tatoeba-challenge",
         recipe=source.get("recipe"),
         tar_url=source.get("repo_url", tatoeba_challenge_adapter.TEST_TAR_URL),
+        # A card's source.sha256 is the BUILT-CORPUS hash (verified after the
+        # build by fetch_corpus_from_card) — NOT the archive hash. Passing it
+        # here made ensure_test_tar verify the 169 MB archive against a
+        # per-corpus hash: it ALWAYS failed, and on failure the archive is
+        # deleted and re-downloaded — so every corpus re-pulled the full
+        # export and no card-based fetch could ever succeed. The archive hash
+        # is the adapter's pinned TEST_TAR_SHA256; a card may override it with
+        # an explicit source.archive_sha256 if a different release is pinned.
         tar_sha256=source.get(
-            "sha256", tatoeba_challenge_adapter.TEST_TAR_SHA256,
+            "archive_sha256", tatoeba_challenge_adapter.TEST_TAR_SHA256,
         ),
         auto_yes=assume_yes,
     )
@@ -287,17 +295,29 @@ def find_registry_export_for_corpus(
     ``path`` is relative to ``arena/datasets/`` while callers pass
     arbitrary paths, so an entry matches when the requested path ends
     with it (or, as a fallback, shares its filename).
+
+    With no explicit ``registry_path`` the layered resolver
+    (``config.load_registry``: local → bundled → remote) is used, so this
+    works for a standalone install where no registry file sits at the
+    in-repo path — that's what lets a ``pip install``ed harness fetch.
     """
-    registry_path = registry_path or REGISTRY_PATH
-    if not Path(registry_path).is_file():
-        return None
-    try:
-        registry = json.loads(
-            Path(registry_path).read_text(encoding="utf-8")
-        )
-    except (OSError, json.JSONDecodeError) as exc:
-        logger.warning("Cannot read registry %s: %s", registry_path, exc)
-        return None
+    if registry_path is None:
+        try:
+            from mt_eval_harness.config import load_registry
+            registry = load_registry()
+        except (FileNotFoundError, OSError, json.JSONDecodeError, ValueError) as exc:
+            logger.warning("Cannot resolve registry for fetch: %s", exc)
+            return None
+    else:
+        if not Path(registry_path).is_file():
+            return None
+        try:
+            registry = json.loads(
+                Path(registry_path).read_text(encoding="utf-8")
+            )
+        except (OSError, json.JSONDecodeError) as exc:
+            logger.warning("Cannot read registry %s: %s", registry_path, exc)
+            return None
 
     requested = Path(corpus_path)
     requested_posix = requested.as_posix()

@@ -28,6 +28,12 @@ dependencies = [
     "aiohttp>=3.9",
     "python-dotenv>=1.0",
     "sacrebleu>=2.3",
+    # Required for fetch-from-source: the corpora-builder adapters shipped in
+    # this wheel (corpora_builder.adapters.*) download upstream exports with
+    # `requests`. Without it, `mt-eval run --corpus <id>` cannot rebuild a
+    # missing corpus from source on a clean pip install — the core path for
+    # every contributor who runs the public queue.
+    "requests>=2.28",
 ]
 
 [project.optional-dependencies]
