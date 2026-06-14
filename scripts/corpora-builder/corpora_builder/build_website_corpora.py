@@ -42,6 +42,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from corpora_builder import USER_AGENT
 from corpora_builder.adapters.tatoeba_api_adapter import TatoebaAPIAdapter
 from corpora_builder.build_api_corpora import update_registry
 from corpora_builder.licensing import LicenseInfo, confirm_batch_download
@@ -114,7 +115,8 @@ class WebsiteTatoebaAdapter(TatoebaAPIAdapter):
         }
 
         try:
-            resp = _requests.get(url, params=params, timeout=15)
+            resp = _requests.get(url, params=params, timeout=15,
+                                  headers={"User-Agent": USER_AGENT})
             resp.raise_for_status()
         except _requests.RequestException as exc:
             print(f"    ⚠️  API error on page {page}: {exc}")

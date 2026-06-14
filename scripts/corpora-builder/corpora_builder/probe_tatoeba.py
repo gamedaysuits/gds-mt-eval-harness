@@ -23,6 +23,7 @@ from pathlib import Path
 
 import requests
 
+from corpora_builder import USER_AGENT
 from corpora_builder.licensing import build_tatoeba_url
 
 
@@ -72,7 +73,8 @@ def probe_pair(source_lang: str, target_lang: str) -> PairProbe:
     url = build_tatoeba_url(source_lang, target_lang)
 
     try:
-        resp = requests.head(url, timeout=10, allow_redirects=True)
+        resp = requests.head(url, timeout=10, allow_redirects=True,
+                             headers={"User-Agent": USER_AGENT})
         if resp.status_code == 200:
             content_length = resp.headers.get("Content-Length")
             size_bytes = int(content_length) if content_length else None
@@ -312,7 +314,7 @@ def fetch_release_index(
     if path.exists() and not refresh:
         return path
     cache_dir.mkdir(parents=True, exist_ok=True)
-    resp = requests.get(url, timeout=60)
+    resp = requests.get(url, timeout=60, headers={"User-Agent": USER_AGENT})
     resp.raise_for_status()
     path.write_bytes(resp.content)
     return path

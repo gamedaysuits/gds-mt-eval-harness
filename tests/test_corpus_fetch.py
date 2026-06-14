@@ -601,3 +601,32 @@ class TestTatoebaChallengeCardArchiveSha:
         }
         captured, _ = self._capture_tar_sha(card, monkeypatch, tmp_path)
         assert captured["tar_sha256"] == "abcd" * 16
+
+
+class TestUpstreamDownloadsAreAttributable:
+    """Every upstream corpus download must identify Champollion via a named
+    User-Agent, so data creators (Tatoeba, OPUS, etc.) can see and attribute
+    the traffic their work drives. Anonymous fetches are a regression.
+    """
+
+    def test_tatoeba_challenge_download_sets_user_agent(self, monkeypatch, tmp_path):
+        corpus_fetch._import_corpora_builder()
+        from corpora_builder.adapters import tatoeba_challenge_adapter as tca
+        from corpora_builder import USER_AGENT
+
+        captured = {}
+
+        class _Stop(Exception):
+            pass
+
+        def fake_get(url, **kwargs):
+            captured.update(kwargs)
+            raise _Stop()  # abort before download/sha logic — we only want headers
+
+        monkeypatch.setattr(tca.requests, "get", fake_get)
+        with pytest.raises(_Stop):
+            tca.ensure_test_tar(tmp_path, auto_yes=True)
+
+        assert captured.get("headers", {}).get("User-Agent") == USER_AGENT
+        assert "champollion" in USER_AGENT.lower()
+        assert "champollion.dev" in USER_AGENT

@@ -39,6 +39,7 @@ from typing import Any
 import requests
 
 from .base import RawEntry, SourceAdapter
+from corpora_builder import USER_AGENT
 
 logger = logging.getLogger(__name__)
 
@@ -357,7 +358,10 @@ def _download_file(url: str, dest_dir: Path) -> Path:
         logger.info("Downloading %s → %s", url, raw_path)
         dest_dir.mkdir(parents=True, exist_ok=True)
 
-        response = requests.get(url, stream=True, timeout=120)
+        response = requests.get(
+            url, stream=True, timeout=120,
+            headers={"User-Agent": USER_AGENT},
+        )
         response.raise_for_status()
 
         with open(raw_path, "wb") as fh:
@@ -402,7 +406,8 @@ def _stream_tar_to_tsv(url: str, tsv_path: Path) -> Path:
 
     # Check size first with HEAD
     try:
-        head = requests.head(url, timeout=10, allow_redirects=True)
+        head = requests.head(url, timeout=10, allow_redirects=True,
+                             headers={"User-Agent": USER_AGENT})
         content_length = int(head.headers.get("Content-Length", 0))
     except (requests.RequestException, ValueError):
         content_length = 0
@@ -422,7 +427,10 @@ def _stream_tar_to_tsv(url: str, tsv_path: Path) -> Path:
     )
 
     # Stream the tar into memory
-    response = requests.get(url, stream=True, timeout=300)
+    response = requests.get(
+        url, stream=True, timeout=300,
+        headers={"User-Agent": USER_AGENT},
+    )
     response.raise_for_status()
 
     buf = io.BytesIO()

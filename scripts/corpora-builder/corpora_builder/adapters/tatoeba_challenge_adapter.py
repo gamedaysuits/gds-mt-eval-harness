@@ -53,7 +53,7 @@ from typing import Any
 
 import requests
 
-from corpora_builder import __version__
+from corpora_builder import __version__, USER_AGENT
 from corpora_builder.adapters.base import RawEntry
 from corpora_builder.adapters.tatoeba_adapter import _normalise_lang
 from corpora_builder.licensing import LicenseInfo, confirm_download
@@ -209,7 +209,10 @@ def ensure_test_tar(
             )
         cache_dir.mkdir(parents=True, exist_ok=True)
         logger.info("Downloading %s → %s", url, tar_path)
-        resp = requests.get(url, stream=True, timeout=600)
+        resp = requests.get(
+            url, stream=True, timeout=600,
+            headers={"User-Agent": USER_AGENT},
+        )
         resp.raise_for_status()
         tmp_path = tar_path.with_suffix(".part")
         with open(tmp_path, "wb") as fh:

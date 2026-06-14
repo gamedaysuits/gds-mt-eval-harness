@@ -19,6 +19,7 @@ from typing import Any
 import requests
 
 from .base import RawEntry, SourceAdapter
+from corpora_builder import USER_AGENT
 
 logger = logging.getLogger(__name__)
 
@@ -129,7 +130,8 @@ class TatoebaAPIAdapter(SourceAdapter):
         }
 
         try:
-            resp = requests.get(url, params=params, timeout=15)
+            resp = requests.get(url, params=params, timeout=15,
+                                 headers={"User-Agent": USER_AGENT})
             resp.raise_for_status()
         except requests.RequestException as exc:
             logger.warning(
