@@ -228,36 +228,27 @@ Every submission is fingerprinted to a specific configuration and dataset versio
 
 ---
 
-## 💰 Win a Prize
+## Prizes & Competition
 
-**The Founder's Prize: $10,000 CAD** — awarded to the first method that achieves genuinely capable English → Plains Cree (nêhiyawêwin) translation. No expiry. No runner-up awards. The first method that clears *all* thresholds takes it.
+The Arena supports sponsored prize pools for translation breakthroughs. Check the [Prize Specification](/docs/specifications/prizes) for current status — prizes may or may not be active at any given time.
 
-### Threshold Conditions
-
-All must be met simultaneously:
-
-| Condition | Metric | Threshold |
-|-----------|--------|-----------|
-| Composite score | `composite` (weighted blend of all metrics) | **≥ 0.80** |
-| Morphological validity | `fst_acceptance_rate` (GiellaLT FST) | **≥ 99%** |
-| Surface quality | `chrf_plus_plus` (character n-gram) | **≥ 55.0** |
-| Community validation | Human review by bilingual speakers | **≥ 70% "acceptable" or better** |
-| Gold-standard eval | Sandbox execution against secret corpus | **Required** |
-| Reproducibility | Governance org re-run | **Within ±2%** |
+:::tip Contributing compute is the easiest way to help right now
+Even without an active prize, you can make a real impact by running benchmarks from the public queue. Every run adds data to the leaderboard and improves the translation mesh. See [Contributing Compute](/docs/getting-started/contributing-compute).
+:::
 
 ### Anti-Gaming Architecture
 
-You cannot game these benchmarks by training on the evaluation data:
+Whether competing for prizes or benchmarking for the leaderboard, the evaluation architecture prevents gaming:
 
 - **Secret test corpora.** Final evaluation runs against gold-standard data that developers never see. The dev set you practice on is *different* from the secret test set. Overfitting to the dev set won't transfer.
 - **Sandboxed execution.** The governance org runs your method in a controlled environment. You submit the method, not the scores.
-- **Community validation.** Even if your metrics are perfect, bilingual speakers must confirm the output is actually usable. Metric gaming is caught here.
+- **Community validation.** Even if your metrics are perfect, bilingual speakers must confirm the output is actually usable.
 - **Reproducibility check.** The governance org must reproduce your scores within ±2%. One-off lucky runs don't count.
 
-### Practical Path to a Prize Winner
+### Building a Competitive Method
 
 :::tip Where the opportunity is
-The central problem is **morphological hallucination** — LLMs produce strings that look like Cree but aren't real word forms. Current methods score 70-85% FST acceptance. The prize requires 99%+. The gap is solvable with the right approach.
+The central problem is **morphological hallucination** — LLMs produce strings that look like Cree but aren't real word forms. Current methods score 70-85% FST acceptance. Quality thresholds require 99%+. The gap is solvable with the right approach.
 :::
 
 1. **Start with the dev set.** Run baselines against the EdTeKLA corpus to understand current quality:
@@ -277,15 +268,15 @@ The central problem is **morphological hallucination** — LLMs produce strings 
 
 4. **Iterate on the dev set.** The dev set is yours to experiment with freely. Track your composite, FST acceptance, and chrF++ scores.
 
-5. **When you clear the thresholds on dev** — submit your method for gold-standard evaluation. The secret test set determines the real score.
+5. **Submit to the leaderboard** — even without a prize, strong results get visibility and move the field forward.
 
-### What You Keep, What Transfers
+### What Happens If You Win a Prize
 
 - **You keep:** Attribution, publication rights, your name on the leaderboard
 - **Community gets:** The right to use, modify, deploy, and monetize your method for their language
 - **What transfers:** All prompts, coaching data, pipeline code, configuration — the complete recipe. If your method uses a commercial LLM (Class A1), only the recipe transfers; the community can point it at any compatible model.
 
-Full details: [Prize Specification](/docs/specifications/prizes) | [Method Submission Agreement](/docs/specifications/methods#method-validity-and-dependency-classes)
+Full details: [Prize Specification](/docs/specifications/prizes) | [Method Interface](/docs/specifications/methods#method-validity-and-dependency-classes)
 
 ---
 
@@ -316,7 +307,7 @@ mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached -
 
 ## See Also
 
-- [Prize Specification](/docs/specifications/prizes) — **$10,000 CAD active prize**, thresholds, claim process
+- [Prize Specification](/docs/specifications/prizes) — prize pool framework, thresholds, and claim process
 - [Submit a Method](/docs/getting-started/submit-a-method) — step-by-step submission guide
 - [Scoring Specification](/docs/specifications/scoring) — full metric definitions and weights
 - [Harness Specification](/docs/specifications/harness) — architecture and configuration reference
