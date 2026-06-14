@@ -228,6 +228,67 @@ Every submission is fingerprinted to a specific configuration and dataset versio
 
 ---
 
+## 💰 Win a Prize
+
+**The Founder's Prize: $10,000 CAD** — awarded to the first method that achieves genuinely capable English → Plains Cree (nêhiyawêwin) translation. No expiry. No runner-up awards. The first method that clears *all* thresholds takes it.
+
+### Threshold Conditions
+
+All must be met simultaneously:
+
+| Condition | Metric | Threshold |
+|-----------|--------|-----------|
+| Composite score | `composite` (weighted blend of all metrics) | **≥ 0.80** |
+| Morphological validity | `fst_acceptance_rate` (GiellaLT FST) | **≥ 99%** |
+| Surface quality | `chrf_plus_plus` (character n-gram) | **≥ 55.0** |
+| Community validation | Human review by bilingual speakers | **≥ 70% "acceptable" or better** |
+| Gold-standard eval | Sandbox execution against secret corpus | **Required** |
+| Reproducibility | Governance org re-run | **Within ±2%** |
+
+### Anti-Gaming Architecture
+
+You cannot game these benchmarks by training on the evaluation data:
+
+- **Secret test corpora.** Final evaluation runs against gold-standard data that developers never see. The dev set you practice on is *different* from the secret test set. Overfitting to the dev set won't transfer.
+- **Sandboxed execution.** The governance org runs your method in a controlled environment. You submit the method, not the scores.
+- **Community validation.** Even if your metrics are perfect, bilingual speakers must confirm the output is actually usable. Metric gaming is caught here.
+- **Reproducibility check.** The governance org must reproduce your scores within ±2%. One-off lucky runs don't count.
+
+### Practical Path to a Prize Winner
+
+:::tip Where the opportunity is
+The central problem is **morphological hallucination** — LLMs produce strings that look like Cree but aren't real word forms. Current methods score 70-85% FST acceptance. The prize requires 99%+. The gap is solvable with the right approach.
+:::
+
+1. **Start with the dev set.** Run baselines against the EdTeKLA corpus to understand current quality:
+   ```bash
+   mt-eval run --corpus data/edtekla-dev-v1.json -m gemini-2.5-flash
+   mt-eval test eval/logs/your_run.json
+   ```
+
+2. **Study what fails.** Look at the FST-rejected words — these are the hallucinated forms. Understand the morphological patterns the model gets wrong.
+
+3. **Build a hybrid pipeline.** The most promising approaches combine:
+   - **LLM generation** — for translation quality and semantic accuracy
+   - **FST validation** — the GiellaLT FST catches invalid word forms; use it as a filter
+   - **Retry on reject** — regenerate words the FST rejects, possibly with morphological hints
+   - **Coaching data** — inject linguistic rules, paradigm tables, and dictionary entries into the prompt
+   - **Dictionary augmentation** — cross-reference a bilingual dictionary to validate or override LLM choices
+
+4. **Iterate on the dev set.** The dev set is yours to experiment with freely. Track your composite, FST acceptance, and chrF++ scores.
+
+5. **When you clear the thresholds on dev** — submit your method for gold-standard evaluation. The secret test set determines the real score.
+
+### What You Keep, What Transfers
+
+- **You keep:** Attribution, publication rights, your name on the leaderboard
+- **Community gets:** The right to use, modify, deploy, and monetize your method for their language
+- **What transfers:** All prompts, coaching data, pipeline code, configuration — the complete recipe. If your method uses a commercial LLM (Class A1), only the recipe transfers; the community can point it at any compatible model.
+
+Full details: [Prize Specification](/docs/specifications/prizes) | [Method Submission Agreement](/docs/specifications/methods#method-validity-and-dependency-classes)
+
+---
+
 ## Deploy to Production
 
 Proven methods can be deployed via [champollion](https://champollion.dev), the production translation CLI. The same interface that the harness evaluates becomes a plugin that translates real content.
@@ -255,6 +316,7 @@ mt-eval export --report eval/logs/report.json --name crk-v1 --type llm-coached -
 
 ## See Also
 
+- [Prize Specification](/docs/specifications/prizes) — **$10,000 CAD active prize**, thresholds, claim process
 - [Submit a Method](/docs/getting-started/submit-a-method) — step-by-step submission guide
 - [Scoring Specification](/docs/specifications/scoring) — full metric definitions and weights
 - [Harness Specification](/docs/specifications/harness) — architecture and configuration reference

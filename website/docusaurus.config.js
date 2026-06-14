@@ -68,6 +68,13 @@ const config = {
     },
   ],
 
+  // Global meta tags — fallback for pages without explicit descriptions.
+  // Helps search engines and AI crawlers understand the site.
+  metadata: [
+    { name: 'description', content: 'Open, reproducible machine translation benchmarks for low-resource languages. Community-driven evaluation with data sovereignty.' },
+    { name: 'keywords', content: 'machine translation, evaluation, benchmarks, low-resource languages, MT arena, leaderboard, data sovereignty' },
+  ],
+
   // Enable Mermaid diagrams in Markdown
   markdown: {
     mermaid: true,
