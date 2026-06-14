@@ -203,9 +203,9 @@ class TestCorpusLicensePassthrough:
     """corpus_license/corpus_attribution from arena/datasets/registry.json."""
 
     def test_registered_dataset_embeds_license(self, tmp_path, capsys):
-        # 'tatoeba-eng-haw-dev' is a registered dataset (CC-BY-2.0, Tatoeba)
+        # 'eval-eng-haw-tatoeba-dev-v1' is a registered dataset (CC-BY-2.0, Tatoeba)
         report_path = _write_pair(
-            tmp_path, "run1", dataset_id="tatoeba-eng-haw-dev"
+            tmp_path, "run1", dataset_id="eval-eng-haw-tatoeba-dev-v1"
         )
         run_card, _, _ = assemble_run_card(report_path)
 
@@ -215,11 +215,11 @@ class TestCorpusLicensePassthrough:
         assert "not in the" not in capsys.readouterr().out
 
     def test_registered_alias_resolves(self, tmp_path):
-        # 'edtekla-dev' is an alias of 'edtekla-dev-v1' in the registry
+        # 'edtekla-dev' is an alias of 'eval-eng-crk-edtekla-dev-v1' in the registry
         report_path = _write_pair(tmp_path, "run1", dataset_id="edtekla-dev")
         run_card, _, _ = assemble_run_card(report_path)
 
-        assert run_card["corpus_license"] == "CC BY-NC-SA 4.0"
+        assert run_card["corpus_license"] == "CC-BY-NC-SA-4.0"
         assert "University of Alberta" in run_card["corpus_attribution"]
 
     def test_unregistered_dataset_nulls_and_warns(self, tmp_path, capsys):
@@ -239,10 +239,10 @@ class TestCorpusLicensePassthrough:
         assert _lookup_corpus_license("") is None
 
     def test_lookup_registered_id(self):
-        info = _lookup_corpus_license("tatoeba-eng-haw-dev")
+        info = _lookup_corpus_license("eval-eng-haw-tatoeba-dev-v1")
         assert info == {
             "license": "CC-BY-2.0",
-            "attribution": "Tatoeba (https://tatoeba.org)",
+            "attribution": "Tatoeba community (https://tatoeba.org)",
         }
 
 
@@ -263,23 +263,24 @@ class TestResolveDatasetId:
 
     def test_corpus_path_basename_resolves_registry_id(self):
         # curated/eng-ceb-dev-v1.json is the registered path of
-        # 'tatoeba-eng-ceb-dev'; any absolute prefix should still match.
+        # 'eval-eng-ceb-tatoeba-dev-v1'; any absolute prefix should still match.
         config = {
             "dataset_id": "",
             "corpus_path": "/anywhere/datasets/curated/eng-ceb-dev-v1.json",
             "dataset": "all",
         }
-        assert publish._resolve_dataset_id(config) == "tatoeba-eng-ceb-dev"
+        assert publish._resolve_dataset_id(config) == "eval-eng-ceb-tatoeba-dev-v1"
 
     def test_corpus_stem_matches_alias(self):
-        # 'master_corpus' is an alias of 'crk-master-corpus' so local-only
-        # corpora without a registered path still resolve.
+        # 'edtekla-dev' is an alias of 'eval-eng-crk-edtekla-dev-v1', so a
+        # local-only corpus whose filename stem matches the alias still
+        # resolves to the canonical registry id.
         config = {
             "dataset_id": "",
-            "corpus_path": "/somewhere/master_corpus.json",
+            "corpus_path": "/somewhere/edtekla-dev.json",
             "dataset": "all",
         }
-        assert publish._resolve_dataset_id(config) == "crk-master-corpus"
+        assert publish._resolve_dataset_id(config) == "eval-eng-crk-edtekla-dev-v1"
 
     def test_unknown_corpus_falls_back_to_file_stem(self):
         # Ad-hoc corpora with no registry match publish under their file

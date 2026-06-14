@@ -297,14 +297,35 @@ def _oauth_login(provider: str) -> dict:
     auth_url = f"{SUPABASE_URL}/auth/v1/authorize?{params}"
 
     print(f"\n  Opening browser for {provider.title()} sign-in...")
-    webbrowser.open(auth_url)
+    try:
+        webbrowser.open(auth_url)
+    except Exception:
+        pass
+    # Always print the URL: webbrowser.open() silently no-ops on a headless
+    # box, and the contributor needs a way to complete sign-in manually.
+    print("  If the browser didn't open, paste this URL into a browser on")
+    print(f"  THIS machine:\n    {auth_url}")
 
-    # Wait for the callback (timeout after 120 seconds)
-    server.timeout = 120
+    # Wait for the callback, with an overall deadline so a browser-less /
+    # headless machine fails cleanly instead of looping forever (the old
+    # 120s server.timeout only bounded a single handle_request(), not the
+    # loop — with no request it spun indefinitely).
     _CallbackHandler.auth_code = None
     _CallbackHandler.error_message = None
+    server.timeout = 1  # short poll so the deadline is actually checked
+    deadline = time.time() + 180
 
-    while _CallbackHandler.auth_code is None and _CallbackHandler.error_message is None:
+    while (_CallbackHandler.auth_code is None
+           and _CallbackHandler.error_message is None):
+        if time.time() > deadline:
+            server.server_close()
+            raise SystemExit(
+                "\n  Sign-in timed out after 3 minutes (no redirect "
+                "received).\n  This usually means no browser is available on "
+                "this machine.\n  Sign in once on a machine with a browser "
+                "(tokens cache to\n  ~/.mt-eval/auth.json and are reused), or "
+                "re-run there."
+            )
         server.handle_request()
 
     server.server_close()

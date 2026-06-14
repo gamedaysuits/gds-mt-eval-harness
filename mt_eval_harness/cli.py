@@ -199,8 +199,8 @@ def build_parser() -> argparse.ArgumentParser:
             "(champollion.dev/queue.json), which is ranked by expected "
             "chain value — mesh improvement per estimated dollar. Items "
             "run in queue order; the plan and estimated spend are shown "
-            "and confirmed before anything is executed. Afterwards, "
-            "publish your reports with: mt-eval publish <report.json>"
+            "and confirmed before anything is executed. Results are "
+            "auto-published after each run (pass --no-publish to skip)."
         ),
     )
     from mt_eval_harness.queue_runner import add_queue_arguments
@@ -1176,38 +1176,50 @@ def main():
     # --- Multi-model support ---
     # Detect comma-separated models and fan out to execute_multi_run()
     # so each model gets its own aiohttp session and rate-limit semaphore.
-    model_str = config.model
-    if "," in model_str:
-        from mt_eval_harness.runner import execute_multi_run
-        from mt_eval_harness.config import MODEL_REGISTRY, fuzzy_resolve_model
-        from dataclasses import replace
+    try:
+        model_str = config.model
+        if "," in model_str:
+            from mt_eval_harness.runner import execute_multi_run
+            from mt_eval_harness.config import MODEL_REGISTRY, fuzzy_resolve_model
+            from dataclasses import replace
 
-        model_slugs = [m.strip() for m in model_str.split(",") if m.strip()]
-        configs = []
-        for slug in model_slugs:
-            # Resolve short names through the registry, then fuzzy match
-            resolved = MODEL_REGISTRY.get(slug, slug)
-            if "/" not in resolved and slug not in MODEL_REGISTRY:
-                fuzzy = fuzzy_resolve_model(slug)
-                if fuzzy:
-                    print(f"  ℹ Resolved '{slug}' → '{fuzzy}' (fuzzy match)")
-                    resolved = fuzzy
-                else:
-                    print(f"  ERROR: Unknown model '{slug}'. "
-                          f"Available shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
-                          f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4').")
-                    sys.exit(1)
-            model_config = replace(config, model=resolved)
-            configs.append(model_config)
+            model_slugs = [m.strip() for m in model_str.split(",") if m.strip()]
+            configs = []
+            for slug in model_slugs:
+                # Resolve short names through the registry, then fuzzy match
+                resolved = MODEL_REGISTRY.get(slug, slug)
+                if "/" not in resolved and slug not in MODEL_REGISTRY:
+                    fuzzy = fuzzy_resolve_model(slug)
+                    if fuzzy:
+                        print(f"  ℹ Resolved '{slug}' → '{fuzzy}' (fuzzy match)")
+                        resolved = fuzzy
+                    else:
+                        print(f"  ERROR: Unknown model '{slug}'. "
+                              f"Available shortcuts: {', '.join(sorted(MODEL_REGISTRY.keys()))}. "
+                              f"Or pass a full OpenRouter model ID (e.g. 'anthropic/claude-sonnet-4').")
+                        sys.exit(1)
+                model_config = replace(config, model=resolved)
+                configs.append(model_config)
 
-        print(f"\n  Multi-model run: {len(configs)} models")
-        for c in configs:
-            print(f"    • {c.model} → {c.model_id}")
+            print(f"\n  Multi-model run: {len(configs)} models")
+            for c in configs:
+                print(f"    • {c.model} → {c.model_id}")
 
-        asyncio.run(execute_multi_run(configs, prompt_providers=prompt_providers))
-    else:
-        from mt_eval_harness.runner import execute_run
-        asyncio.run(execute_run(config, prompt_providers=prompt_providers))
+            asyncio.run(execute_multi_run(configs, prompt_providers=prompt_providers))
+        else:
+            from mt_eval_harness.runner import execute_run
+            asyncio.run(execute_run(config, prompt_providers=prompt_providers))
+
+    except (RuntimeError, ValueError) as exc:
+        # Clean exit for expected failures: auth errors (401/402/403),
+        # missing corpora/builders, invalid model IDs, etc.
+        # No traceback — just the error message and a hint.
+        sys.stdout.flush()
+        print(f"\n  ✗ {exc}")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("\n  Cancelled.")
+        sys.exit(130)
 
 
 if __name__ == "__main__":

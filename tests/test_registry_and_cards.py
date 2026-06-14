@@ -43,10 +43,20 @@ class TestLoadRegistry:
         assert len(registry["datasets"]) == 1
         assert registry["datasets"][0]["id"] == "test-ds"
 
-    def test_missing_registry_raises(self, tmp_path):
-        """Loading a nonexistent registry should raise FileNotFoundError."""
+    def test_missing_registry_raises(self, tmp_path, monkeypatch):
+        """Loading a nonexistent registry should raise FileNotFoundError.
+
+        The updated load_registry() falls back to searching for split
+        registry-*.json files in the datasets directory. We monkeypatch
+        _REGISTRY_DIR to an empty dir so there's nothing to find.
+        """
+        import mt_eval_harness.config as config_mod
+        empty_dir = tmp_path / "empty_datasets"
+        empty_dir.mkdir()
+        monkeypatch.setattr(config_mod, "_REGISTRY_DIR", empty_dir)
+        monkeypatch.setattr(config_mod, "_REGISTRY_PATH", empty_dir / "registry.json")
         with pytest.raises(FileNotFoundError):
-            load_registry(tmp_path / "nonexistent.json")
+            load_registry(empty_dir / "nonexistent.json")
 
 
 class TestResolveDataset:

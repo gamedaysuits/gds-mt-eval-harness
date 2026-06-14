@@ -452,3 +452,558 @@ class TestSharedSelectionVectors:
             f"Scenario \"{scenario['name']}\": "
             f"expected {scenario['expected_ids']} got {ids}"
         )
+
+
+# ---------------------------------------------------------------------------
+# New tests for the execution-loop improvements (timeout, signal, budget
+# guard, sequential auto-detection, --stop-on-failure wiring).
+#
+# These tests run the full run_from_args path with --no-publish and --yes
+# to bypass auth and confirmation. A mock_provider fixture stubs out the
+# provider subsystem so no real API calls are made.
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def mock_provider(monkeypatch):
+    """Stub provider detection/loading so execution tests skip auth."""
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-test-fake")
+
+    class _FakeProvider:
+        def load_api_key(self):
+            pass
+
+    monkeypatch.setattr(
+        "mt_eval_harness.providers.get_provider",
+        lambda name: _FakeProvider(),
+    )
+
+
+def _make_queue_file(tmp_path, items):
+    """Write a minimal queue.json and return its path."""
+    qfile = tmp_path / "queue.json"
+    qfile.write_text(json.dumps({"items": items}), encoding="utf-8")
+    return str(qfile)
+
+
+class TestTimeoutFlagParsing:
+    """--timeout flag is accepted and parsed correctly."""
+
+    def test_timeout_default(self):
+        from mt_eval_harness.cli import build_parser
+
+        args = build_parser().parse_args(["queue", "--budget", "2"])
+        assert args.timeout == 300
+
+    def test_timeout_explicit(self):
+        from mt_eval_harness.cli import build_parser
+
+        args = build_parser().parse_args(
+            ["queue", "--budget", "2", "--timeout", "60"]
+        )
+        assert args.timeout == 60
+
+    def test_jobs_default_is_none(self):
+        from mt_eval_harness.cli import build_parser
+
+        args = build_parser().parse_args(["queue", "--budget", "2"])
+        # Default is None (auto-detect sequential vs. concurrent)
+        assert args.jobs is None
+
+
+class TestTimeoutHandling:
+    """Per-item timeout kills hung subprocesses and reports them."""
+
+    def test_timeout_kills_hung_item(self, tmp_path, mock_provider, capsys):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        qfile = _make_queue_file(tmp_path, [{
+            "id": "slow", "condition": "naive", "est_cost_usd": 0.01,
+            "language_pair": "eng>xxx", "model": "test/model",
+            "run_command": "sleep 60",
+        }])
+        args = build_parser().parse_args([
+            "queue", "--top", "1", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "2",
+        ])
+        rc = run_from_args(args)
+        out = capsys.readouterr().out
+        assert "timed out" in out
+        assert rc == 1  # timeout is a non-zero exit
+
+
+class TestStopOnFailureWiring:
+    """--stop-on-failure now actually halts the batch (was a dead flag)."""
+
+    def test_stop_on_failure_halts_batch(
+        self, tmp_path, mock_provider, capsys
+    ):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        items = [
+            {"id": "fail1", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": "eng>aaa", "model": "m",
+             "run_command": "exit 1"},
+            {"id": "ok1", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": "eng>bbb", "model": "m",
+             "run_command": "echo ok"},
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "2", "--yes", "--no-publish",
+            "--stop-on-failure",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        rc = run_from_args(args)
+        out = capsys.readouterr().out
+        # The flag should print its halt message
+        assert "--stop-on-failure" in out
+        # Only 1 item should have run (the failing one) because
+        # ≤3 items runs sequentially and first failure halts.
+        assert "eng>aaa" in out
+        assert rc == 1
+
+
+class TestSequentialSmallBatch:
+    """≤3 items run sequentially by default; --jobs overrides."""
+
+    def test_three_items_run_sequential(
+        self, tmp_path, mock_provider, capsys
+    ):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        items = [
+            {"id": f"i{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>x{i}x", "model": "m",
+             "run_command": "true"}
+            for i in range(3)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "3", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        run_from_args(args)
+        out = capsys.readouterr().out
+        assert "sequential" in out
+
+    def test_jobs_explicit_overrides_sequential(
+        self, tmp_path, mock_provider, capsys
+    ):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        items = [
+            {"id": f"i{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>x{i}x", "model": "m",
+             "run_command": "true"}
+            for i in range(3)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "3", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5", "--jobs", "4",
+        ])
+        run_from_args(args)
+        out = capsys.readouterr().out
+        assert "4 concurrent" in out
+
+    def test_four_items_default_concurrent(
+        self, tmp_path, mock_provider, capsys
+    ):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        items = [
+            {"id": f"i{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>x{i}x", "model": "m",
+             "run_command": "true"}
+            for i in range(4)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "4", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        run_from_args(args)
+        out = capsys.readouterr().out
+        # 4 items → should NOT be sequential
+        assert "sequential" not in out
+        assert "concurrent" in out
+
+
+class TestBudgetPreDispatch:
+    """Budget guard prevents over-spending during execution.
+
+    select_items() filters by estimated cost during selection. The
+    pre-dispatch guard in the execution loop catches the case where
+    actual costs (which may differ from estimates) push past the budget.
+    We test the full pipeline here: selection + execution.
+    """
+
+    def test_budget_guard_shown_in_output(
+        self, tmp_path, mock_provider, capsys
+    ):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        items = [
+            {"id": "cheap", "condition": "naive", "est_cost_usd": 0.02,
+             "language_pair": "eng>aaa", "model": "m",
+             "run_command": "true"},
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--budget", "0.05", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        rc = run_from_args(args)
+        out = capsys.readouterr().out
+        # Budget cap is shown in the plan
+        assert "Budget cap: $0.05" in out
+        # Item ran successfully
+        assert "eng>aaa" in out
+        assert rc == 0
+
+    def test_select_items_filters_expensive_before_dispatch(self):
+        """Items that exceed budget are never dispatched."""
+        queue = {"items": [
+            {"id": "cheap", "condition": "naive", "est_cost_usd": 0.02,
+             "language_pair": "eng>aaa", "model": "m",
+             "run_command": "true"},
+            {"id": "pricey", "condition": "naive", "est_cost_usd": 0.50,
+             "language_pair": "eng>bbb", "model": "m",
+             "run_command": "true"},
+            {"id": "cheap2", "condition": "naive", "est_cost_usd": 0.02,
+             "language_pair": "eng>ccc", "model": "m",
+             "run_command": "true"},
+        ]}
+        selected, skipped = select_items(queue, budget=0.05)
+        ids = [i["id"] for i in selected]
+        # Expensive item filtered during selection
+        assert "pricey" not in ids
+        assert "cheap" in ids
+        assert "cheap2" in ids
+        # Verify reason
+        assert ("pricey", "would exceed budget") in skipped
+
+
+# ---------------------------------------------------------------------------
+# Publish-reliability hardening (the curl champollion.dev/give path).
+#
+# These cover the three failure modes that previously kept the headline
+# `--budget 2` flow from reliably publishing:
+#   1. child run subprocesses inheriting the tty and hanging on their own
+#      publish prompt  → fixed with stdin=DEVNULL
+#   2. publish_to_supabase raising SystemExit (4xx / integrity / retries)
+#      aborting the whole batch → fixed with _auto_publish swallowing it
+#   3. concurrent items cross-matching reports in a shared output dir →
+#      fixed with a per-item --output-dir and _find_report_in_dir
+# ---------------------------------------------------------------------------
+
+
+class TestAutoPublish:
+    """_auto_publish must NEVER let a publish failure escape (except Ctrl+C)."""
+
+    def test_swallows_systemexit_returns_false(self, monkeypatch, capsys):
+        from mt_eval_harness import queue_runner
+
+        def boom(*a, **k):
+            raise SystemExit(1)   # what publish does on a 4xx / integrity fail
+
+        monkeypatch.setattr(
+            "mt_eval_harness.publish.publish_to_supabase", boom
+        )
+        ok = queue_runner._auto_publish("/tmp/x_report.json", "eng>zul")
+        assert ok is False
+        out = capsys.readouterr().out
+        assert "Publish failed" in out
+        # Tells the contributor exactly how to recover their paid run.
+        assert "mt-eval publish /tmp/x_report.json" in out
+
+    def test_swallows_generic_exception_returns_false(self, monkeypatch):
+        from mt_eval_harness import queue_runner
+
+        def boom(*a, **k):
+            raise RuntimeError("network down")
+
+        monkeypatch.setattr(
+            "mt_eval_harness.publish.publish_to_supabase", boom
+        )
+        assert queue_runner._auto_publish("/tmp/x_report.json") is False
+
+    def test_returns_true_on_success(self, monkeypatch):
+        from mt_eval_harness import queue_runner
+        monkeypatch.setattr(
+            "mt_eval_harness.publish.publish_to_supabase",
+            lambda *a, **k: {"id": "x"},
+        )
+        assert queue_runner._auto_publish("/tmp/x_report.json") is True
+
+    def test_keyboardinterrupt_propagates(self, monkeypatch):
+        """Ctrl+C must still interrupt — it is NOT a publish failure."""
+        from mt_eval_harness import queue_runner
+
+        def boom(*a, **k):
+            raise KeyboardInterrupt
+
+        monkeypatch.setattr(
+            "mt_eval_harness.publish.publish_to_supabase", boom
+        )
+        with pytest.raises(KeyboardInterrupt):
+            queue_runner._auto_publish("/tmp/x_report.json")
+
+
+class TestFindReportInDir:
+    """_find_report_in_dir reads exactly one item's isolated output."""
+
+    def test_missing_dir_returns_none(self, tmp_path):
+        from mt_eval_harness.queue_runner import _find_report_in_dir
+        assert _find_report_in_dir(tmp_path / "nope") is None
+
+    def test_empty_dir_returns_none(self, tmp_path):
+        from mt_eval_harness.queue_runner import _find_report_in_dir
+        assert _find_report_in_dir(tmp_path) is None
+
+    def test_finds_the_report(self, tmp_path):
+        from mt_eval_harness.queue_runner import _find_report_in_dir
+        (tmp_path / "run_123_report.json").write_text("{}", encoding="utf-8")
+        found = _find_report_in_dir(tmp_path)
+        assert found is not None and found.name == "run_123_report.json"
+
+
+class TestSubprocessIsolation:
+    """Children get DEVNULL stdin and a unique --output-dir."""
+
+    def test_devnull_stdin_and_isolated_output_dir(
+        self, tmp_path, mock_provider, monkeypatch
+    ):
+        from mt_eval_harness import queue_runner
+        from mt_eval_harness.cli import build_parser
+
+        captured = []
+
+        class _FakeProc:
+            returncode = 0
+
+            def communicate(self, timeout=None):
+                return ("", None)
+
+            def kill(self):
+                pass
+
+        def spy(cmd, **kwargs):
+            captured.append((cmd, kwargs))
+            return _FakeProc()
+
+        monkeypatch.setattr(queue_runner.subprocess, "Popen", spy)
+
+        item = {
+            "id": "eng-zul-dev-v1__m__naive", "condition": "naive",
+            "est_cost_usd": 0.01, "language_pair": "eng>zul", "model": "m",
+            "run_command": "mt-eval run --corpus x.json --model m --yes",
+        }
+        qfile = _make_queue_file(tmp_path, [item])
+        args = build_parser().parse_args([
+            "queue", "--top", "1", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        queue_runner.run_from_args(args)
+
+        assert captured, "Popen was never called"
+        cmd, kwargs = captured[0]
+        # (1) the child must not be able to read our terminal
+        assert kwargs.get("stdin") is queue_runner.subprocess.DEVNULL
+        # (3) each item runs in its own report dir
+        assert "--output-dir" in cmd
+
+
+class TestBatchSurvivesPublishFailure:
+    """A publish that raises SystemExit must NOT abort the rest of the batch."""
+
+    def test_systemexit_publish_does_not_abort_batch(
+        self, tmp_path, mock_provider, monkeypatch, capsys
+    ):
+        from mt_eval_harness import queue_runner
+        from mt_eval_harness.cli import build_parser
+
+        out_root = tmp_path / "out"
+        monkeypatch.setattr(queue_runner, "DEFAULT_OUTPUT_DIR", str(out_root))
+
+        # Auth is required on the publish path — stub it so no OAuth happens.
+        monkeypatch.setattr(
+            "mt_eval_harness.auth.get_session",
+            lambda: {"access_token": "x", "user": {}},
+        )
+        monkeypatch.setattr(
+            "mt_eval_harness.auth.get_submitter_name", lambda s: "tester"
+        )
+        # Every publish explodes with SystemExit — the dangerous case.
+        monkeypatch.setattr(
+            "mt_eval_harness.publish.publish_to_supabase",
+            lambda *a, **k: (_ for _ in ()).throw(SystemExit(1)),
+        )
+
+        report = json.dumps({"overall": {"total_cost_usd": 0.01,
+                                         "avg_chrf": 50.0}})
+        items = []
+        for idx, (iid, pair) in enumerate(
+            [("itemA", "eng>zul"), ("itemB", "eng>hau")], 1
+        ):
+            d = out_root / "queue" / f"{idx:03d}_{iid}"
+            cmd = (f"mkdir -p '{d}' && printf '%s' '{report}' "
+                   f"> '{d}/run_{iid}_report.json'")
+            items.append({
+                "id": iid, "condition": "naive", "est_cost_usd": 0.01,
+                "language_pair": pair, "model": "m", "run_command": cmd,
+            })
+        qfile = _make_queue_file(tmp_path, items)
+
+        # 2 items → sequential → deterministic ordering.
+        args = build_parser().parse_args([
+            "queue", "--top", "2", "--yes",
+            "--queue", qfile, "--timeout", "10",
+        ])
+
+        # The whole point: this returns an int, it does NOT raise SystemExit.
+        rc = queue_runner.run_from_args(args)
+        assert isinstance(rc, int)
+
+        out = capsys.readouterr().out
+        # Both items ran...
+        assert "eng>zul" in out and "eng>hau" in out
+        # ...were honestly reported as NOT published...
+        assert "NOT published" in out
+        assert "0/2 published" in out
+        # ...and the contributor is told how to recover their paid runs.
+        assert "mt-eval publish" in out
+
+
+class TestClassifyFailure:
+    """_classify_failure: rate-limit/timeout must NOT read as a bad key."""
+
+    @pytest.mark.parametrize("status,hint,expected", [
+        ("timeout", "",                              "transient"),
+        ("failed",  "HTTP 429: rate limit exceeded", "transient"),
+        ("failed",  "rate_limit reached",            "transient"),
+        ("failed",  "503 Service Unavailable",       "transient"),
+        ("failed",  "connection reset by peer",      "transient"),
+        ("failed",  "HTTP 401: invalid api key",     "auth"),
+        ("failed",  "403 Forbidden",                 "auth"),
+        ("failed",  "User not found.",               "auth"),
+        ("failed",  "something exploded",            "other"),
+        # A 429 body that also mentions a key is STILL a rate limit.
+        ("failed",  "429: too many requests for this api key", "transient"),
+    ])
+    def test_classification(self, status, hint, expected):
+        from mt_eval_harness.queue_runner import _classify_failure
+        assert _classify_failure(status, hint) == expected
+
+
+class TestCircuitBreakerClassification:
+    """Auth failures offer key re-entry; transient ones never stall."""
+
+    def test_transient_failures_do_not_prompt_for_key(
+        self, tmp_path, mock_provider, monkeypatch, capsys
+    ):
+        from mt_eval_harness import queue_runner
+        from mt_eval_harness.cli import build_parser
+
+        prompted = []
+        monkeypatch.setattr(
+            queue_runner, "_prompt_reenter_key",
+            lambda ev: prompted.append(ev) or None,
+        )
+
+        items = [
+            {"id": f"t{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>x{i}", "model": "m",
+             "run_command": "echo 'HTTP 429: rate limit exceeded'; exit 1"}
+            for i in range(6)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "6", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        queue_runner.run_from_args(args)
+        out = capsys.readouterr().out
+
+        # The key-re-entry prompt must NEVER fire for rate limits.
+        assert prompted == []
+        # The user is told it's transient, not an auth problem.
+        assert "not an auth" in out.lower()
+
+    def test_auth_failures_prompt_for_key(
+        self, tmp_path, mock_provider, monkeypatch, capsys
+    ):
+        from mt_eval_harness import queue_runner
+        from mt_eval_harness.cli import build_parser
+
+        prompted = []
+        # Decline re-entry (return None) so the batch then stops.
+        monkeypatch.setattr(
+            queue_runner, "_prompt_reenter_key",
+            lambda ev: prompted.append(ev) or None,
+        )
+
+        items = [
+            {"id": f"a{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>y{i}", "model": "m",
+             "run_command": "echo 'HTTP 401: invalid api key'; exit 1"}
+            for i in range(3)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", "3", "--yes", "--no-publish",
+            "--queue", qfile, "--timeout", "5",
+        ])
+        queue_runner.run_from_args(args)
+
+        # 3 consecutive auth failures → exactly the case that SHOULD prompt.
+        assert prompted, "auth failures should have offered key re-entry"
+
+
+class TestDefaultConcurrencyByProvider:
+    """Direct providers default to gentler concurrency than OpenRouter."""
+
+    def _run(self, tmp_path, monkeypatch, provider, env_var, n=5):
+        from mt_eval_harness.cli import build_parser
+        from mt_eval_harness.queue_runner import run_from_args
+
+        for var in ("OPENROUTER_API_KEY", "OPENAI_API_KEY",
+                    "ANTHROPIC_API_KEY", "GOOGLE_API_KEY"):
+            monkeypatch.delenv(var, raising=False)
+        monkeypatch.setenv(env_var, "sk-test")
+
+        class _FakeProvider:
+            def load_api_key(self):
+                pass
+
+        monkeypatch.setattr(
+            "mt_eval_harness.providers.get_provider",
+            lambda name: _FakeProvider(),
+        )
+        items = [
+            {"id": f"i{i}", "condition": "naive", "est_cost_usd": 0.01,
+             "language_pair": f"eng>x{i}", "model": "m",
+             "run_command": "true"}
+            for i in range(n)
+        ]
+        qfile = _make_queue_file(tmp_path, items)
+        args = build_parser().parse_args([
+            "queue", "--top", str(n), "--yes", "--no-publish",
+            "--provider", provider, "--queue", qfile, "--timeout", "5",
+        ])
+        run_from_args(args)
+
+    def test_openrouter_defaults_to_8(self, tmp_path, monkeypatch, capsys):
+        self._run(tmp_path, monkeypatch, "openrouter", "OPENROUTER_API_KEY")
+        assert "8 concurrent" in capsys.readouterr().out
+
+    def test_direct_provider_defaults_to_4(self, tmp_path, monkeypatch, capsys):
+        self._run(tmp_path, monkeypatch, "anthropic", "ANTHROPIC_API_KEY")
+        assert "4 concurrent" in capsys.readouterr().out

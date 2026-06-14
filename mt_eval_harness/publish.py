@@ -1321,11 +1321,11 @@ def publish_to_supabase(
     totals = run_card["totals"]
 
     # --- Build the Supabase row ---
-    # Percentages: the leaderboard displays these as "X%" so we store 0–100
-    exact_match_pct = _to_percentage(scores["exact_match_rate"])
-    fst_pct = None
-    if scores.get("fst_acceptance_rate") is not None:
-        fst_pct = _to_percentage(scores["fst_acceptance_rate"])
+    # Rate fields (exact_match_rate, fst_acceptance_rate, etc.) are stored
+    # as raw 0.0–1.0 values. Migration 023 enforces CHECK ... [0,1].
+    exact_match_rate = scores.get("exact_match_rate")
+    fst_rate = scores.get("fst_acceptance_rate")
+    equiv_rate = scores.get("equivalent_match_rate")
 
     # Extract CIs from the run card scores (added by tester.py)
     cis = scores.get("confidence_intervals", {})
@@ -1349,13 +1349,10 @@ def publish_to_supabase(
         "harness_version": run_card["harness_version"],
         "chrf_plus_plus": scores.get("chrf_plus_plus"),
         "corpus_bleu": run_card.get("corpus_bleu"),
-        "exact_match_rate": exact_match_pct,
-        "fst_acceptance_rate": fst_pct,
+        "exact_match_rate": exact_match_rate,
+        "fst_acceptance_rate": fst_rate,
         # Equivalent match rate — from CrkLinterMetric (nullable)
-        "equivalent_match_rate": (
-            _to_percentage(scores["equivalent_match_rate"])
-            if scores.get("equivalent_match_rate") is not None else None
-        ),
+        "equivalent_match_rate": equiv_rate,
         # Semantic score — from CrkSemanticMetric (nullable, 0.0–1.0)
         "semantic_score": scores.get("semantic_score"),
         # Composite score and quality tier (§4.2, §5)
@@ -1447,12 +1444,11 @@ def publish_to_supabase(
     if scores.get("comet_score") is not None:
         warning = " ⚠️  low-resource" if scores.get("comet_low_resource_warning") else ""
         print(f"  COMET:         {scores['comet_score']:.4f}{warning}")
-    print(f"  Exact Match:   {exact_match_pct}%")
-    if scores.get("equivalent_match_rate") is not None:
-        equiv_pct = _to_percentage(scores["equivalent_match_rate"])
-        print(f"  Equiv Match:   {equiv_pct}%")
-    if fst_pct is not None:
-        print(f"  FST Accept:    {fst_pct}%")
+    print(f"  Exact Match:   {exact_match_rate:.1%}" if exact_match_rate is not None else "  Exact Match:   —")
+    if equiv_rate is not None:
+        print(f"  Equiv Match:   {equiv_rate:.1%}")
+    if fst_rate is not None:
+        print(f"  FST Accept:    {fst_rate:.1%}")
     if scores.get("semantic_score") is not None:
         print(f"  Semantic:      {scores['semantic_score']:.4f}")
     composite = scores.get("composite")
@@ -1710,8 +1706,14 @@ def _publish_entries(
                 "apikey": SUPABASE_ANON_KEY,
                 "Authorization": f"Bearer {access_token}",
                 "Content-Type": "application/json",
-                # Upsert on (run_card_id, entry_id) for idempotent re-publishes
-                "Prefer": "resolution=merge-duplicates",
+                # Insert-only entries: migration 024 made run_card_entries
+                # INSERT-only (dropped the open authenticated UPDATE policy so
+                # one user can't rewrite another's per-entry rows). Re-publish
+                # stays idempotent via ignore-duplicates (ON CONFLICT DO
+                # NOTHING) — no UPDATE rights required. New cards never
+                # conflict (the duplicate pre-flight returns early), so this
+                # only skips the rare partial-re-publish case.
+                "Prefer": "resolution=ignore-duplicates",
             },
             method="POST",
         )

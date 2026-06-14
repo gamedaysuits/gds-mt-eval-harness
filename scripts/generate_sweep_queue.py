@@ -254,6 +254,46 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def load_registry_for_queue() -> dict:
+    """Load the dev/runnable registry the queue is built from.
+
+    Prefers the merged ``registry.json`` (regenerated from the corpora cards
+    by build_registry.py — the development-segment, runnable corpora). If it
+    is absent, falls back to merging the development-segment entries from the
+    ``registry-*.json`` split files directly, so the queue still regenerates
+    on a fresh checkout where only the split files were built. Contaminated
+    multiway catalogue (FLORES/NTREX/IN22/TICO19, devtest/test segment) is
+    excluded either way — it must never enter the queue or mesh calculations.
+
+    Fails loudly if no registry is found: a queue silently built from nothing
+    is worse than no queue.
+    """
+    if REGISTRY.is_file():
+        return load_json(REGISTRY)
+
+    split_files = sorted((ARENA / "datasets").glob("registry-*.json"))
+    if not split_files:
+        raise SystemExit(
+            f"FATAL: no registry found. Looked for {REGISTRY} and "
+            f"{ARENA / 'datasets'}/registry-*.json. Run "
+            f"`python3 arena/scripts/build_registry.py` first."
+        )
+    merged: dict = {"registry_version": "3.0.0", "datasets": []}
+    for split_path in split_files:
+        source = split_path.stem.replace("registry-", "")
+        reg = json.loads(split_path.read_text(encoding="utf-8"))
+        for ds in reg.get("datasets", []):
+            if ds.get("segment") != "development":
+                continue  # catalogue corpora never reach the queue
+            ds["registry_source"] = source
+            merged["datasets"].append(ds)
+    print(
+        f"  registry.json absent — merged {len(merged['datasets'])} "
+        f"development corpora from {len(split_files)} split files."
+    )
+    return merged
+
+
 def model_short(slug: str) -> str:
     """Normalize a model slug for coverage comparison.
 
@@ -821,6 +861,12 @@ def build_mesh_snapshot(
         lp = ds.get("language_pair")
         if not lp:
             continue
+        # Skip self-pairs (source == target): they collapse to a 1-element
+        # edge and aren't a translation direction. build_registry already
+        # excludes them from the registry; this guards the nightly mesh job
+        # against a stray one ever crashing the whole regeneration.
+        if lp.get("source") == lp.get("target"):
+            continue
         pair = (lp["source"], lp["target"])
         e = frozenset(pair)
         token_pair[ds["id"].lower()] = pair
@@ -948,7 +994,7 @@ def main() -> int:
     )
     args = ap.parse_args()
 
-    registry = load_json(REGISTRY)
+    registry = load_registry_for_queue()
     manifest = load_json(MANIFEST)
 
     corpora = queue_corpora(registry)

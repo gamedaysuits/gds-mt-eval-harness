@@ -228,14 +228,21 @@ def write_run_log(run_log: dict, output_dir: str) -> Path:
 # ---------------------------------------------------------------------------
 
 def report_progress(done: int, total: int) -> None:
-    """Print progress every 10% or when done.
+    """Print a live inline progress bar that updates after every batch.
 
-    Uses simple print() — no dependency on rich/tqdm to keep
-    the harness zero-dependency beyond aiohttp.
+    Uses carriage-return (\r) to overwrite the same line.  When done
+    reaches total, a final newline is printed so subsequent output
+    starts on a fresh line.  No dependency on rich/tqdm — just print().
     """
     if total == 0:
         return
-    step = max(1, total // 10)
-    if done % step == 0 or done == total:
-        pct = round(done / total * 100)
-        print(f"  Progress: {done}/{total} ({pct}%)")
+    pct = done / total
+    bar_width = 30
+    filled = int(bar_width * pct)
+    bar = "█" * filled + "░" * (bar_width - filled)
+    line = f"\r  {bar} {done}/{total} ({pct:.0%})"
+    if done >= total:
+        print(line, flush=True)
+    else:
+        print(line, end="", flush=True)
+

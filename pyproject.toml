@@ -56,5 +56,14 @@ Homepage = "https://github.com/gamedaysuits/gds-mt-eval-harness"
 Repository = "https://github.com/gamedaysuits/gds-mt-eval-harness"
 Issues = "https://github.com/gamedaysuits/gds-mt-eval-harness/issues"
 
+# Ship both the harness AND the corpora-builder adapters — the builders are
+# what turn a registry recipe into a downloaded corpus, so a standalone
+# `pip install` must carry them. They live under scripts/corpora-builder/.
 [tool.setuptools.packages.find]
-include = ["mt_eval_harness*"]
+where = [".", "scripts/corpora-builder"]
+include = ["mt_eval_harness*", "corpora_builder*"]
+
+# Bundle the registry inside the package (the offline fallback for the
+# remote-fetch path). build_registry.py writes mt_eval_harness/data/registry.json.
+[tool.setuptools.package-data]
+mt_eval_harness = ["data/*.json"]

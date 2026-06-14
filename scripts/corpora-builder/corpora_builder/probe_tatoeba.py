@@ -270,11 +270,12 @@ def load_language_codes_from_cards(cards_dir: str | Path) -> list[str]:
 # probe above remains as a fallback for sources without an index.
 
 #: Corpus-size floors from the corpus design spec §6.3 and the fair
-#: scoring policy §5 (docs/TATOEBA_FAIR_SCORING_POLICY.md): below 50
-#: evaluated entries a corpus is diagnostic-only (below the development
-#: floor); 100+ is preferred before orderings mean anything.
-FLOOR_N = 50
-PREFERRED_N = 100
+#: scoring policy §5 (docs/TATOEBA_FAIR_SCORING_POLICY.md): below 100
+#: evaluated entries, paired bootstrap significance tests cannot reliably
+#: detect differences smaller than ~5 chrF++ points. 200+ is preferred
+#: for detecting ~2-point differences at p<0.05.
+FLOOR_N = 100
+PREFERRED_N = 200
 
 #: Fallback estimate of the fraction of raw test-split pairs that
 #: survive the build pipeline (word-count filter, dedup, enrichment).

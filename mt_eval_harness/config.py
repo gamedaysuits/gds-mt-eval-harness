@@ -33,6 +33,7 @@ import hashlib
 import json
 import logging
 import os
+import time
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
@@ -44,28 +45,143 @@ logger = logging.getLogger(__name__)
 # Dataset registry — discover and resolve evaluation datasets
 # ---------------------------------------------------------------------------
 
-# Path to the bundled registry file (relative to package root)
+# Registry resolution. Default order (no explicit path) — local → bundled →
+# remote — is what lets a standalone `pip install` auto-download corpora with
+# NO local files: the wheel ships a bundled registry and refreshes it from the
+# web (always current; new corpora reach users without a harness release).
+#   1. arena/datasets/registry.json        — in-repo checkout / public mirror
+#   2. arena/datasets/registry-*.json       — split files (merged)
+#   3. mt_eval_harness/data/registry.json   — bundled in the wheel (pip, offline)
+#   4. champollion.dev/registry.json        — fetched + cached (pip, current)
 _PACKAGE_DIR = Path(__file__).parent
 _REGISTRY_PATH = _PACKAGE_DIR.parent / "datasets" / "registry.json"
+_REGISTRY_DIR = _PACKAGE_DIR.parent / "datasets"
+_BUNDLED_REGISTRY = _PACKAGE_DIR / "data" / "registry.json"
+
+# Remote registry — published alongside queue.json. Env-overridable for
+# staging/tests; MT_EVAL_NO_REMOTE_REGISTRY=1 disables all network use.
+_REGISTRY_URL = os.environ.get(
+    "MT_EVAL_REGISTRY_URL", "https://champollion.dev/registry.json"
+)
+_REGISTRY_CACHE = Path.home() / ".cache" / "gds-mt-eval" / "registry.json"
+_REGISTRY_CACHE_TTL = 24 * 3600  # seconds — refresh at most once a day
+
+
+def _merge_split_registry(registry_dir: Path) -> dict | None:
+    """Merge every registry-*.json in a dir (tagging registry_source).
+
+    Returns the merged registry, or None when the dir has no split files.
+    """
+    split_files = sorted(registry_dir.glob("registry-*.json"))
+    if not split_files:
+        return None
+    merged: dict = {"registry_version": "3.0.0", "datasets": []}
+    for split_path in split_files:
+        source_name = split_path.stem.replace("registry-", "")
+        reg = json.loads(split_path.read_text(encoding="utf-8"))
+        for ds in reg.get("datasets", []):
+            ds["registry_source"] = source_name
+        merged["datasets"].extend(reg.get("datasets", []))
+    return merged
+
+
+def _load_remote_registry() -> dict | None:
+    """Fetch the registry from the web, cached with a TTL. None on failure.
+
+    A standalone install with no local/bundled registry uses this to stay
+    current. Network failures are non-fatal: a stale cache is reused if
+    present, otherwise None (the caller raises a clear error). Disabled with
+    MT_EVAL_NO_REMOTE_REGISTRY=1 for air-gapped use.
+    """
+    if os.environ.get("MT_EVAL_NO_REMOTE_REGISTRY", "").lower() in ("1", "true", "yes"):
+        return None
+
+    # Fresh cache → use it without touching the network.
+    if _REGISTRY_CACHE.is_file():
+        age = time.time() - _REGISTRY_CACHE.stat().st_mtime
+        if age < _REGISTRY_CACHE_TTL:
+            try:
+                return json.loads(_REGISTRY_CACHE.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                pass  # corrupt cache — refetch below
+
+    import urllib.error
+    import urllib.request
+    try:
+        logger.info("Fetching dataset registry from %s", _REGISTRY_URL)
+        with urllib.request.urlopen(_REGISTRY_URL, timeout=30) as resp:
+            data = resp.read()
+        registry = json.loads(data)
+        _REGISTRY_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        _REGISTRY_CACHE.write_text(data.decode("utf-8"), encoding="utf-8")
+        return registry
+    except (urllib.error.URLError, OSError, json.JSONDecodeError, ValueError) as exc:
+        # Fall back to a stale cache if one exists — better than nothing.
+        if _REGISTRY_CACHE.is_file():
+            logger.warning(
+                "Could not refresh registry from %s (%s); using cached copy.",
+                _REGISTRY_URL, exc,
+            )
+            try:
+                return json.loads(_REGISTRY_CACHE.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                return None
+        logger.warning("Could not fetch registry from %s: %s", _REGISTRY_URL, exc)
+        return None
 
 
 def load_registry(registry_path: Path | None = None) -> dict:
-    """Load the dataset registry from disk.
+    """Load the dataset registry.
 
-    Args:
-        registry_path: Path to registry.json. Defaults to the bundled
-            registry shipped with the harness package.
-
-    Returns:
-        Parsed registry dict with 'registry_version' and 'datasets' keys.
+    An explicit ``registry_path`` (a ``.json`` file or a directory of
+    ``registry-*.json``) is used strictly — no network fallback. With no
+    argument, resolution is local → bundled → remote (see the module-level
+    notes), so a standalone install needs no local files. Entries loaded from
+    split files are tagged with ``registry_source``.
 
     Raises:
-        FileNotFoundError: If the registry file does not exist.
+        FileNotFoundError: only when every source is exhausted.
     """
-    path = registry_path or _REGISTRY_PATH
-    if not path.exists():
-        raise FileNotFoundError(f"Dataset registry not found: {path}")
-    return json.loads(path.read_text(encoding="utf-8"))
+    # --- Explicit path: strict (single file or a dir of split files) ---
+    if registry_path is not None:
+        if registry_path.is_file():
+            return json.loads(registry_path.read_text(encoding="utf-8"))
+        if registry_path.is_dir():
+            merged = _merge_split_registry(registry_path)
+            if merged is not None:
+                return merged
+        # Back-compat: an explicit-but-missing path falls back to the default
+        # single file if present, else raises. No network for explicit paths.
+        if _REGISTRY_PATH.is_file():
+            return json.loads(_REGISTRY_PATH.read_text(encoding="utf-8"))
+        raise FileNotFoundError(
+            f"No dataset registry found at the given path: {registry_path}"
+        )
+
+    # --- Default resolution: local → bundled → remote ---
+    if _REGISTRY_PATH.is_file():                    # (1) in-repo / mirror clone
+        return json.loads(_REGISTRY_PATH.read_text(encoding="utf-8"))
+
+    merged = _merge_split_registry(_REGISTRY_DIR)    # (2) split files
+    if merged is not None:
+        return merged
+
+    if _BUNDLED_REGISTRY.is_file():                  # (3) bundled in the wheel
+        return json.loads(_BUNDLED_REGISTRY.read_text(encoding="utf-8"))
+
+    remote = _load_remote_registry()                 # (4) published, fetched
+    if remote is not None:
+        return remote
+
+    raise FileNotFoundError(
+        "No dataset registry found. Looked for:\n"
+        f"  - {_REGISTRY_PATH} (in-repo / mirror)\n"
+        f"  - {_REGISTRY_DIR}/registry-*.json (split files)\n"
+        f"  - {_BUNDLED_REGISTRY} (bundled in package)\n"
+        f"  - {_REGISTRY_URL} (remote — unreachable or disabled)\n"
+        "Run `python arena/scripts/build_registry.py`, set MT_EVAL_DATA_ROOT, "
+        "or check your network connection."
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -273,18 +389,32 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None,
     # without the FST, linter, and other required tools installed.
     _check_eval_pack(match, assume_yes=assume_yes)
 
-    # Check for a local_path (relative to monorepo root)
+    # Check for a local_path. In an in-repo checkout this is relative to the
+    # monorepo root, but under `pip install` there is no monorepo (the package
+    # lives in site-packages), so the single monorepo-root guess (B4) breaks.
+    # Try several bases plus an env override, then fall through to
+    # fetch-from-source — never hard-fail a pip user who just lacks the file.
     local_path = match.get("local_path")
     if local_path:
-        # Resolve relative to the monorepo root (parent of arena/)
-        monorepo_root = _PACKAGE_DIR.parent.parent
-        resolved = monorepo_root / local_path
-        if resolved.exists():
-            return resolved
-        # Local path declared but file not found — fall through to URL/error
+        candidate_bases = [
+            _PACKAGE_DIR.parent.parent,   # monorepo root (in-repo checkout)
+            _PACKAGE_DIR.parent,          # arena/ (installed-package layouts)
+            _REGISTRY_DIR.parent,         # arena/ via the registry location
+            Path.cwd(),                   # the caller's working directory
+        ]
+        env_root = os.environ.get("MT_EVAL_DATA_ROOT")
+        if env_root:
+            candidate_bases.insert(0, Path(env_root))
+        for base in candidate_bases:
+            resolved = base / local_path
+            if resolved.exists():
+                return resolved
+        # Declared but not found under any base — fall through to URL/fetch.
         logger.debug(
-            "local_path '%s' for dataset '%s' resolved to '%s' but not found",
-            local_path, id_or_path, resolved,
+            "local_path '%s' for dataset '%s' not found under any known base "
+            "(%s); falling through to fetch-from-source",
+            local_path, id_or_path,
+            ", ".join(str(b) for b in candidate_bases),
         )
 
     url = match.get("url")
@@ -310,7 +440,8 @@ def resolve_dataset(id_or_path: str, registry_path: Path | None = None,
         raise ValueError(
             f"Dataset '{id_or_path}' is {access} and has no download URL.{hint}\n"
             f"  {notes}\n"
-            f"  Provide the local path with --corpus instead."
+            f"  Provide the corpus with --corpus <path>, or set MT_EVAL_DATA_ROOT "
+            f"to the directory containing '{local_path or id_or_path}'."
         )
 
     # URL is set — download and cache
