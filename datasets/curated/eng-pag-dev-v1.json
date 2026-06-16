@@ -1,0 +1,1769 @@
+{
+  "corpus_id": "tatoeba-eng-pag-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "pag",
+    "source_name": "English",
+    "target_name": "Pangasinan"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:32:53.893395+00:00",
+  "entry_count": 60,
+  "domains": [
+    "conv",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_7205453",
+      "source": "Sami noticed that.",
+      "reference": "Alikas man nen Sami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7205453",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710673",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7205453",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7205453"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_945295",
+      "source": "It is cold.",
+      "reference": "Ambetal.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "945295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214195",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "945295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/945295"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_692682",
+      "source": "Grant us peace!",
+      "reference": "Igamor ed sikami so kareenan!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "692682",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692762",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "692682",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/692682"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_464592",
+      "source": "What is that?",
+      "reference": "Anto man?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214187",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_392210",
+      "source": "What is this?",
+      "reference": "Anto ya?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "392210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214191",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "392210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/392210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_12655473",
+      "source": "What are you meaning?",
+      "reference": "Anto?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12655473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214155",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12655473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12655473"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_8552448",
+      "source": "We saw a UFO.",
+      "reference": "Akanengneng kami na UFO.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8552448",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11711023",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8552448",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8552448"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_3327425",
+      "source": "Can you handle that?",
+      "reference": "Sarag mo itan?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3327425",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692944",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3327425",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3327425"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2548475",
+      "source": "Where're you going?",
+      "reference": "Iner so laen mo?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548475",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693088",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548475",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548475"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_953176",
+      "source": "Did you say something?",
+      "reference": "Anto?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953176",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214155",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953176",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953176"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_416367",
+      "source": "Where are you going?",
+      "reference": "Iner so laen mo?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "416367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693088",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "416367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/416367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_408293",
+      "source": "What's your name?",
+      "reference": "Anto so ngaran mo?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "408293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693084",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "408293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/408293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_378270",
+      "source": "Do you speak English?",
+      "reference": "Makasalita ka na English?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "378270",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697936",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "378270",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/378270"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_376611",
+      "source": "I don't understand.",
+      "reference": "Agko natalusan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214260",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_370703",
+      "source": "Where are you from?",
+      "reference": "Taga iner ka?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370703",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692498",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370703",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370703"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_349064",
+      "source": "I don't know.",
+      "reference": "Agko amta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "349064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693080",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "349064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/349064"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_70623",
+      "source": "What is your name?",
+      "reference": "Anto so ngaran mo?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "70623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693084",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "70623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/70623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_24706",
+      "source": "What do you mean?",
+      "reference": "Anto?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "5214155",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1622",
+      "source": "What do you want?",
+      "reference": "Anto so labay mo?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1622",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697943",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1622",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1622"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_10614397",
+      "source": "Do you like this one?",
+      "reference": "Gabay mo ya?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10614397",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710540",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10614397",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10614397"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_7070402",
+      "source": "Sami lost Layla's dog.",
+      "reference": "Abalang nen Sami amay aso nen Layla.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7070402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710851",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7070402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7070402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_4692464",
+      "source": "How did her son die?",
+      "reference": "Panon to inatey so anak to?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4692464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4692464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4692464"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4667019",
+      "source": "Tom can't retire yet.",
+      "reference": "Si Tom agni nayarin manritiro.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4667019",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4667019",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4667019"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3907760",
+      "source": "It's bigger than you.",
+      "reference": "Baleg nen sika.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3907760",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693032",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3907760",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3907760"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3120615",
+      "source": "You are bigger than me.",
+      "reference": "Baleg ka nen siak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3120615",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693030",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3120615",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3120615"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2548270",
+      "source": "I'm bigger than you.",
+      "reference": "Baleg ak nen sika.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548270",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693028",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548270",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548270"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2408195",
+      "source": "I think they like me.",
+      "reference": "Anganko labay da ak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2408195",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4712577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2408195",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2408195"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2262213",
+      "source": "It's bigger than Tom.",
+      "reference": "Baleg nen si Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2262213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2262213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2262213"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1963062",
+      "source": "I didn't touch anything.",
+      "reference": "Ag ak nandiwit naq antokaman.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1963062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1963062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1963062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1558697",
+      "source": "China is larger than Japan.",
+      "reference": "Say China et baleg nen say Japan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1558697",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1558697",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1558697"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_1404664",
+      "source": "We saw a flying saucer.",
+      "reference": "Akanengneng kami na UFO.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1404664",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11711023",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1404664",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1404664"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_1196237",
+      "source": "I am not a doctor.",
+      "reference": "Aliwa ak a doctor.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1196237",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697941",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1196237",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1196237"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_1194034",
+      "source": "I'm not a doctor.",
+      "reference": "Aliwa ak a doctor.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1194034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697941",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1194034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1194034"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_853306",
+      "source": "Tom is bigger than me.",
+      "reference": "Si Tom et baleg nen siak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "853306",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693022",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "853306",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/853306"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_506450",
+      "source": "China is bigger than Japan.",
+      "reference": "Say China et baleg nen say Japan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "506450",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "506450",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/506450"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_371443",
+      "source": "Where are you going to?",
+      "reference": "Iner so laen mo?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "371443",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693088",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "371443",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/371443"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_279779",
+      "source": "Tokyo is bigger than Yokohama.",
+      "reference": "Say Tokyo et baleg nen say Yokohama.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "279779",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "279779",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/279779"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_11710723",
+      "source": "When did you login on Facebook?",
+      "reference": "Kapigan ka nan-login ed Facebook?",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11710723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11710723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11710723"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_4666478",
+      "source": "I don't believe in karma.",
+      "reference": "Ag ak manisiya ed karma.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4666478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4666478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4666478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2641567",
+      "source": "You said you were working tomorrow.",
+      "reference": "Imbagam mantrabaho ka nabuas.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2641567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2641567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2641567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_2361189",
+      "source": "I don't have an explanation.",
+      "reference": "Anggapo so paliwawak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2361189",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4712580",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2361189",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2361189"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_752447",
+      "source": "China is much bigger than Japan.",
+      "reference": "Say China et mas baleg nen say Japan.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "752447",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "752447",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/752447"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_239927",
+      "source": "The door bolts on the inside.",
+      "reference": "Say kaput nitalak ed loob.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "239927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692760",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "239927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/239927"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_4612600",
+      "source": "My father's mother is my grandma.",
+      "reference": "Say ina nen amak et si baik.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4612600",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692939",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4612600",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4612600"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3905562",
+      "source": "I told them not to give up.",
+      "reference": "Imbagak ed sikaran ag ira onsuko.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3905562",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3905562",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3905562"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_3806604",
+      "source": "Tigers are bigger and stronger than cats.",
+      "reference": "Saray tigri et baleg tan mabiskeg nen saray pusa.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3806604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693064",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3806604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3806604"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_3610927",
+      "source": "His happiness is bigger than his intellect.",
+      "reference": "Say kaliketan ko et baleg nen say talino to.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3610927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693060",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3610927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3610927"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.14
+      }
+    },
+    {
+      "id": "tatoeba_2738939",
+      "source": "At what time will I see you?",
+      "reference": "No anton oras taka nengnengen?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2738939",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2738939",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2738939"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2644602",
+      "source": "All you had to do was ask.",
+      "reference": "Say gawaen mo labat et nantepet.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2644602",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692928",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2644602",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2644602"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_750668",
+      "source": "China is twenty times bigger than Japan.",
+      "reference": "Say China duamplo ya aminpigan baleg nen say Japan.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "750668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693054",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "750668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/750668"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_323760",
+      "source": "The eye is bigger than the belly.",
+      "reference": "Say mata et baleg nen say eges.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323760",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693045",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323760",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323760"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_67859",
+      "source": "That box is bigger than this one.",
+      "reference": "Aman a kahon et baleg nen saya.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "67859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693042",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "67859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/67859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_55319",
+      "source": "No other dog is bigger than this.",
+      "reference": "Anggapo so arun ya aso so baleg nen saya.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55319",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693039",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55319",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55319"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_11710925",
+      "source": "I lost the keys to the house again.",
+      "reference": "Abalang ko lalamet may tombok na abong.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11710925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11710925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11710925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.38
+      }
+    },
+    {
+      "id": "tatoeba_290124",
+      "source": "He came to London by way of Siberia.",
+      "reference": "Sikato so sinmabi ed London a dinmalan ed Siberia.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "290124",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692756",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "290124",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/290124"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2265885",
+      "source": "Don't worry. I'll take care of that.",
+      "reference": "Agka mapaga. Asikasoen ko itan.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2265885",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4697939",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2265885",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2265885"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2028412",
+      "source": "They don't want a woman for that position.",
+      "reference": "Agda labay so bii ed satan ya betang.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2028412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692761",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2028412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2028412"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1210122",
+      "source": "He was very tall and slim, with long arms and legs.",
+      "reference": "Sikato et atagey tan mayapis, walaan na andukey iran taklay tan bitking.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1210122",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4692920",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1210122",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1210122"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 3.55
+      }
+    },
+    {
+      "id": "tatoeba_11710915",
+      "source": "They did not feel the earthquake, because they were asleep when it happened.",
+      "reference": "Ag da alikas may yegyeg, ta nanaogep ira nen agawa man.",
+      "domain": "ui",
+      "difficulty": 4,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11710915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "11710910",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11710915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11710915"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.77
+      }
+    },
+    {
+      "id": "tatoeba_676254",
+      "source": "People that have experienced so-called 'lucid dreams' often describe them as being 'more real than reality'. They also describe reality after waking up from a 'lucid dream' to be like a 'whimsical dream'.",
+      "reference": "Saray totoon naantaan da so tatawagen a 'malinew iran kugkugip' mabetbet idalatdat da iraya bilang 'matua ni nen say katuaan'. Idadalatdat da met kabangon da manlapu ed 'malinew a kugip' a singa iya 'pangis a kugip'.",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "676254",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pag",
+        "target_sentence_id": "4693001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "676254",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/676254"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 33,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.91
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

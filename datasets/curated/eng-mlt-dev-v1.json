@@ -1,0 +1,3771 @@
+{
+  "corpus_id": "tatoeba-eng-mlt-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "mlt",
+    "source_name": "English",
+    "target_name": "Maltese"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:53:07.269551+00:00",
+  "entry_count": 129,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_12137507",
+      "source": "Today is cold.",
+      "reference": "Il-kesħa llum.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12137507",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388508",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12137507",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12137507"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_11697493",
+      "source": "Tell your doctor.",
+      "reference": "Għid lit-tabib tiegħek.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11697493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11697494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11697493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11697493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_11695559",
+      "source": "Enrico found it.",
+      "reference": "Enrico sabu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11695559",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11695559",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11695559"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11695551",
+      "source": "Enrico found something.",
+      "reference": "Enrico sab xi ħaġa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11695551",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11695551",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11695551"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_11652701",
+      "source": "Paul loves traveling.",
+      "reference": "Paul iħobb jivvjaġġa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11652701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652702",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11652701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11652701"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_11467222",
+      "source": "I voted \"remain\".",
+      "reference": "Ivvutajt biex nibqgħu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11467222",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11467242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11467222",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11467222"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11451706",
+      "source": "Ziri is laughing.",
+      "reference": "Ziri jidħaq.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11451706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11451707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11451706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11451706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_11303316",
+      "source": "Ziri can try.",
+      "reference": "Ziri jista' jipprova.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11303316",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667349",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11303316",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11303316"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_11212526",
+      "source": "Ziri tried again.",
+      "reference": "Ziri reġa' pprova.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11212526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11662555",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11212526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11212526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_11203394",
+      "source": "Ziri can speak.",
+      "reference": "Ziri jista' jitkellem.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11203394",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11203394",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11203394"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11201376",
+      "source": "Ziri tried listening.",
+      "reference": "Ziri pprova jisma.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11201376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11662554",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11201376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11201376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_11177051",
+      "source": "Ziri wants wine.",
+      "reference": "Ziri jrid l-inbid.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11177051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672990",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11177051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11177051"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11176970",
+      "source": "Ziri can work.",
+      "reference": "Ziri jista' jaħdem.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11176970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11176970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11176970"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10993260",
+      "source": "Ziri can quit.",
+      "reference": "Ziri jista' jieqaf.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10993260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667347",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10993260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10993260"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10834249",
+      "source": "Drink a cup.",
+      "reference": "Ixrob tazza.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10834249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964460",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10834249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10834249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_10822138",
+      "source": "Ziri can change.",
+      "reference": "Ziri jista' jinbidel.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10822138",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667343",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10822138",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10822138"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10677583",
+      "source": "Ziri wants ivy.",
+      "reference": "Ziri jrid il-liedna.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10677583",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672988",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10677583",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10677583"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10355998",
+      "source": "Buy a handgun.",
+      "reference": "Ixtri pistola.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10355998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10355998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10355998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10328098",
+      "source": "Hire a guide.",
+      "reference": "Kiri gwida.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10328098",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964451",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10328098",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10328098"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10315857",
+      "source": "Ziri was intelligent.",
+      "reference": "Ziri kien intelliġenti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10315857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10315857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10315857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10241228",
+      "source": "Ziri tried that.",
+      "reference": "Ziri pprova dan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10241228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11662553",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10241228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10241228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10235491",
+      "source": "Ziri can dance.",
+      "reference": "Ziri jista' jiżfen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10235491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667341",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10235491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10235491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10234192",
+      "source": "Ziri always jogged.",
+      "reference": "Ziri kien dejjem jiġri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10234192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11658867",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10234192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10234192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10234187",
+      "source": "Ziri always sang.",
+      "reference": "Ziri kien dejjem jkanta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10234187",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11658854",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10234187",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10234187"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10234186",
+      "source": "Ziri always won.",
+      "reference": "Ziri kien dejjem jirbaħ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10234186",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11658853",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10234186",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10234186"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10234185",
+      "source": "Ziri always lost.",
+      "reference": "Ziri kien dejjem jitlef.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10234185",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11658852",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10234185",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10234185"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10232497",
+      "source": "Ziri can start.",
+      "reference": "Ziri jista' jibda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10232497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667339",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10232497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10232497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10232496",
+      "source": "Ziri can stay.",
+      "reference": "Ziri jista' jibqa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10232496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10232496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10232496"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10232072",
+      "source": "Ziri wants you.",
+      "reference": "Ziri jridek.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10232072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10232072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10232072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10230586",
+      "source": "Ziri wants cupcakes.",
+      "reference": "Ziri jrid kejkijiet żgħar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10230586",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672983",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10230586",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10230586"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10223023",
+      "source": "Ziri tried everything.",
+      "reference": "Ziri pprova kollox.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10223023",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11662552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10223023",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10223023"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_10222051",
+      "source": "Ziri wants sex.",
+      "reference": "Ziri jrid is-sess.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10222051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10222051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10222051"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10221892",
+      "source": "Ziri wants love.",
+      "reference": "Ziri jrid l-imħabba",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10221892",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10221892",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10221892"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10216161",
+      "source": "Ziri can sing.",
+      "reference": "Ziri jista' jkanta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10216161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10216161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10216161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10213910",
+      "source": "Ziri wants that.",
+      "reference": "Ziri jrid dak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10213910",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10213910",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10213910"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10213909",
+      "source": "Ziri wants this.",
+      "reference": "Ziri jrid dan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10213909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10213909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10213909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10213784",
+      "source": "Ziri can go.",
+      "reference": "Ziri jista' jmur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10213784",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10213784",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10213784"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_10213539",
+      "source": "Ziri came back.",
+      "reference": "Ziri reġa’ mar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10213539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652675",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10213539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10213539"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10213271",
+      "source": "Ziri wants money.",
+      "reference": "Ziri jrid l-flus.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10213271",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11672970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10213271",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10213271"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10212823",
+      "source": "Ziri can cook.",
+      "reference": "Ziri jista' jsajjar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10212823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10212823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10212823"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10211163",
+      "source": "Ziri raped Rima.",
+      "reference": "Ziri stupra Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10211163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695565",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10211163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10211163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10210964",
+      "source": "Ziri found Rima.",
+      "reference": "Ziri sab Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10210963",
+      "source": "Ziri left Rima.",
+      "reference": "Ziri telaq lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210963",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210963",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210963"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10210954",
+      "source": "Ziri beat Rima.",
+      "reference": "Ziri sawwat lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210954",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695546",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210954",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210954"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10210952",
+      "source": "Ziri married Rima.",
+      "reference": "Ziri iżżewweġ lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210952",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695544",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210952",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210952"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10210950",
+      "source": "Ziri knew Rima.",
+      "reference": "Ziri kien jaf Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210950",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695540",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210950",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210950"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10210947",
+      "source": "Ziri helped Rima.",
+      "reference": "Ziri għen lil Rima.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210947",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695539",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210947",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210947"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10210946",
+      "source": "Ziri abandoned Rima.",
+      "reference": "Ziri abbanduna Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210946",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210946",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210946"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10210945",
+      "source": "Ziri divorced Rima.",
+      "reference": "Ziri telaq lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210945"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10210943",
+      "source": "Ziri shot Rima.",
+      "reference": "Ziri spara Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695534",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210943"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10210942",
+      "source": "Ziri attacked Rima.",
+      "reference": "Ziri attaka Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210942",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210942",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210942"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10210668",
+      "source": "Ziri thanked Rima.",
+      "reference": "Ziri rringrazzja lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210668"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10210625",
+      "source": "Ziri can leave.",
+      "reference": "Ziri jista' jitlaq.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667331",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210625"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10210424",
+      "source": "Ziri tickled Rima.",
+      "reference": "Ziri għarrex Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210424",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695530",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210424",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210424"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10210393",
+      "source": "Ziri touched Rima.",
+      "reference": "Ziri mess Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210393"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10210348",
+      "source": "Ziri murdered Rima.",
+      "reference": "Ziri qatel lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695520",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10210346",
+      "source": "Ziri hit Rima.",
+      "reference": "Ziri ta daqqa lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695527",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10210341",
+      "source": "Ziri hated Rima.",
+      "reference": "Ziri kien jobgħod lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210341",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695525",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210341",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210341"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10210340",
+      "source": "Ziri loved Rima.",
+      "reference": "Ziri ħabb lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210340",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695522",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210340",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210340"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10210339",
+      "source": "Ziri killed Rima.",
+      "reference": "Ziri qatel lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10210339",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11695520",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10210339",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10210339"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10209329",
+      "source": "Ziri can play.",
+      "reference": "Ziri jista' jilgħab.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667330",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10209328",
+      "source": "Ziri can run.",
+      "reference": "Ziri jista' jiġri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209328",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667329",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209328",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209328"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10209326",
+      "source": "Ziri can swim.",
+      "reference": "Ziri jista' jgħum.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209326",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209326",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209326"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10209325",
+      "source": "Ziri can talk.",
+      "reference": "Ziri jista' jitkellem.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209325",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667324",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209325",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209325"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10209324",
+      "source": "Ziri can write.",
+      "reference": "Ziri jista' jikteb.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667323",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10209323",
+      "source": "Ziri can read.",
+      "reference": "Ziri jistaʼ jaqra.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10209323",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11667322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10209323",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10209323"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10207398",
+      "source": "Ziri called Rima.",
+      "reference": "Ziri ċempel lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10207398",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694694",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10207398",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10207398"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10207386",
+      "source": "Ziri chased Rima.",
+      "reference": "Ziri ġera wara Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10207386",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694690",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10207386",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10207386"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10207382",
+      "source": "Ziri heard Rima.",
+      "reference": "Ziri semaʼ Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10207382",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10207382",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10207382"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10207275",
+      "source": "Ziri came in.",
+      "reference": "Ziri daħal.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10207275",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11451690",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10207275",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10207275"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10206997",
+      "source": "Ziri released Rima.",
+      "reference": "Ziri ħeles lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694687",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10206993",
+      "source": "Ziri saw Rima.",
+      "reference": "Ziri ra Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206993",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206993",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206993"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10206947",
+      "source": "Ziri kissed Rima.",
+      "reference": "Ziri bies Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206947",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206947",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206947"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10206941",
+      "source": "Ziri protected Rima.",
+      "reference": "Ziri pproteġa lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206941"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10206908",
+      "source": "Ziri trusts Rima.",
+      "reference": "Ziri jafda f'Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206908",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694679",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206908",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206908"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10206842",
+      "source": "Ziri assaulted Rima.",
+      "reference": "Ziri attakka lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694677",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10206804",
+      "source": "Ziri met Rima.",
+      "reference": "Ziri ltaqaʼ maʼ Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206804",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206804",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206804"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10206729",
+      "source": "Ziri noticed Rima.",
+      "reference": "Ziri nnota Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694673",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10206720",
+      "source": "Ziri stopped Rima.",
+      "reference": "Ziri waqqaf Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206720",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694672",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206720",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206720"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10206710",
+      "source": "Ziri invited Rima.",
+      "reference": "Ziri stieden lil Rima.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10206710",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11694671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10206710",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10206710"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10204336",
+      "source": "Ziri has changed.",
+      "reference": "Ziri inbidel.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10204336",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10204336",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10204336"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10204259",
+      "source": "Ziri stopped smoking.",
+      "reference": "Ziri waqqaf it-tipjip.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10204259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652705",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10204259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10204259"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10204252",
+      "source": "Ziri never protested.",
+      "reference": "Ziri qatt ma pprotesta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10204252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10204252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10204252"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10189833",
+      "source": "Ziri grew tired.",
+      "reference": "Ziri għejja.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10189833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652699",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10189833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10189833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10189831",
+      "source": "Ziri got lost.",
+      "reference": "Ziri ntilef.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10189831",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11652698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10189831",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10189831"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10108184",
+      "source": "Yanni plays guitar.",
+      "reference": "Yanni jilgħab il-kitarra.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10108184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964403",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10108184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10108184"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_9992384",
+      "source": "Yanni sleeps everywhere.",
+      "reference": "Yanni jorqod kullimkien.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9992384",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964431",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9992384",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9992384"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_9011795",
+      "source": "They just finished.",
+      "reference": "Huma biss lesti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9011795",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "13086017",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9011795",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9011795"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8787149",
+      "source": "Skura lived alone.",
+      "reference": "Skura għexet waħedha.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8787149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964443",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8787149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8787149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8414856",
+      "source": "He eats cheese.",
+      "reference": "Hu jiekol il-ġobon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8414856",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8414856",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8414856"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8394555",
+      "source": "His father drinks.",
+      "reference": "Missieru jixrob.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8394555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964433",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8394555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8394555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8392820",
+      "source": "Pick a name.",
+      "reference": "Agħżel isem.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8392820",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964447",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8392820",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8392820"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8251508",
+      "source": "See your doctor.",
+      "reference": "Ara lit-tabib tiegħek.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8251508",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11697503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8251508",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8251508"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8182800",
+      "source": "He lives upstairs.",
+      "reference": "Huwa jgħix fuq.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8182800",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964425",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8182800",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8182800"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6864986",
+      "source": "Is it snowing?",
+      "reference": "Huwa silġ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6864986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "12392189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6864986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6864986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5719366",
+      "source": "Are they Americans?",
+      "reference": "Huma Amerikani?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5719366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "12392247",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5719366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5719366"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_5699168",
+      "source": "Get off me!",
+      "reference": "Ħallini!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5699168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388497",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5699168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5699168"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Inħobbok.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "3231126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4256130",
+      "source": "Welcome to Wikipedia.",
+      "reference": "Merħba fil-Wikipedija.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4256130",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "4256156",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4256130",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4256130"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3822701",
+      "source": "Stop embarrassing me.",
+      "reference": "Ħallini!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3822701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388497",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3822701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3822701"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3446474",
+      "source": "Goodbye to you.",
+      "reference": "Ċaw!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3446474",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3446474",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3446474"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3331805",
+      "source": "Let me alone!",
+      "reference": "Ħallini!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3331805",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388497",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3331805",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3331805"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3221065",
+      "source": "I am English.",
+      "reference": "Jien Ingliż.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3221065",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "3231188",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3221065",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3221065"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "Irrid immur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "3335180",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2851490",
+      "source": "I found Mary.",
+      "reference": "Sibt Mary.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2851490",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964439",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2851490",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2851490"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2583378",
+      "source": "We think alike.",
+      "reference": "Naqbel miegħek.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2583378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2583378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2583378"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Inħobbok.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "3231126",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2250091",
+      "source": "Thanks very much.",
+      "reference": "Grazzi ħafna!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250091",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250091",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250091"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2245507",
+      "source": "Get in here!",
+      "reference": "Ejja hawn!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245507",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388519",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245507",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245507"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2244957",
+      "source": "Are you nuts?",
+      "reference": "Int miġnun?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244957",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244957",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244957"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1880029",
+      "source": "I am vegetarian.",
+      "reference": "Jien veġetarjan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1880029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388526",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1880029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1880029"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1841588",
+      "source": "See you later.",
+      "reference": "Narak iktar tard!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387665",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1660835",
+      "source": "Tom writes slowly.",
+      "reference": "Tom jikteb bil-mod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1660835",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1660835",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1660835"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1660833",
+      "source": "Tom speaks slowly.",
+      "reference": "Tom jitkellem bil-mod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1660833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964418",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1660833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1660833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1660830",
+      "source": "Tom drives slowly.",
+      "reference": "Tom jsuq bil-mod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1660830",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1660830",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1660830"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1660828",
+      "source": "Tom reads slowly.",
+      "reference": "Tom jaqra bil-mod.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1660828",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "11964421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1660828",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1660828"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1388165",
+      "source": "Come with me!",
+      "reference": "Ejja miegħi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1388165",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1388165",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1388165"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1164098",
+      "source": "I am lost.",
+      "reference": "Intlift.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1164098",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1164098",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1164098"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_1108683",
+      "source": "See you tomorrow!",
+      "reference": "Narak għada.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1108683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1108683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1108683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_859019",
+      "source": "Are you insane?",
+      "reference": "Int miġnun?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "859019",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "859019",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/859019"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_716145",
+      "source": "I know that.",
+      "reference": "Naf.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "716145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388507",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "716145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/716145"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_569283",
+      "source": "How are things?",
+      "reference": "Kif int?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "569283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387515",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "569283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/569283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_534970",
+      "source": "Thanks a lot!",
+      "reference": "Grazzi ħafna!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534970"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_497969",
+      "source": "See you tomorrow.",
+      "reference": "Narak għada.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "497969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1387685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "497969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/497969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_488178",
+      "source": "I am married.",
+      "reference": "Jiena miżżewweġa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "488178",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388129",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "488178",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/488178"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_464592",
+      "source": "What is that?",
+      "reference": "X'inhi din?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388392",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_462578",
+      "source": "The bill, please.",
+      "reference": "Il-kont, jekk jogħġbok.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "462578",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "462578",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/462578"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_436371",
+      "source": "I am happy.",
+      "reference": "Jien kuntenti.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436371",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "2718361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436371",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436371"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_434458",
+      "source": "Come with me.",
+      "reference": "Ejja miegħi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "434458",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "mlt",
+        "target_sentence_id": "1388175",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "434458",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/434458"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

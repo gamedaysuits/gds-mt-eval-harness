@@ -1,0 +1,2091 @@
+{
+  "corpus_id": "tatoeba-eng-tel-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "tel",
+    "source_name": "English",
+    "target_name": "Telugu"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:01:08.968823+00:00",
+  "entry_count": 71,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_4960758",
+      "source": "Are you for real?!",
+      "reference": "ఎమిటీ! ఇది నిజమా?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4960758",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098665",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4960758",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4960758"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1098746",
+      "source": "Go there tomorrow!",
+      "reference": "రేపు అక్కడికి వెళ్లు!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098745",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_70623",
+      "source": "What is your name?",
+      "reference": "నీ పేరు ఏమి?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "70623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "13375135",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "70623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/70623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_486630",
+      "source": "Can you see that?",
+      "reference": "నువ్వు అది చూసావా ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "486630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "486630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/486630"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1098677",
+      "source": "Ramudu came to school.",
+      "reference": "రాముడు బడికి వచ్చాడు.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098677",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098677",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098677"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3355618",
+      "source": "Are you guys OK?",
+      "reference": "మీరు బాగున్నారా ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3355618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3534751",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3355618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3355618"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4999970",
+      "source": "It's very valuable.",
+      "reference": "అది చాలా విలువైనది",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4999970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207813",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4999970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4999970"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_44474",
+      "source": "What's in the box?",
+      "reference": "పెట్టె లో ఏముంది?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "44474",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204849",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "44474",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/44474"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6633637",
+      "source": "I'm hungry again.",
+      "reference": "నాకు మళ్ళా ఆకలి వేస్తుంది",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6633637",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207803",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6633637",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6633637"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3377159",
+      "source": "It's not all your fault.",
+      "reference": "ఇదంతా నీ తప్పు కాదు",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3377159",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217099",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3377159",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3377159"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2271887",
+      "source": "I don't need anything.",
+      "reference": "నాకు ఏమీ అవసరంలేదు.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2271887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "4639448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2271887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2271887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1098687",
+      "source": "Has Lata come?",
+      "reference": "లత వచ్చిందా?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098687",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098686",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098687",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098687"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1098744",
+      "source": "Bring tea immediately!",
+      "reference": "టీ వెంటనే తీసుకురా!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098744",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098743",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098744",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098744"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6608032",
+      "source": "Are you feeling okay?",
+      "reference": "వొంట్లో ఎలా వుంది",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6608032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204109",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6608032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6608032"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1098689",
+      "source": "Has the rose blossomed?",
+      "reference": "గులాబీ పూసిందా?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098689"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_1098625",
+      "source": "My computer is expensive.",
+      "reference": "నా కంప్యూటర్ ఖరీదైనది.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3543074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098625"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_455073",
+      "source": "What time is it now?",
+      "reference": "ఇప్పుడు టైమ్ ఎంత ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "455073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098720",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "455073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/455073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2276241",
+      "source": "I don't trust that guy.",
+      "reference": "నేను వాడిని నమ్మను",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276241",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7210903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276241",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276241"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_7198709",
+      "source": "It isn't all your fault.",
+      "reference": "ఇదంతా నీ తప్పు కాదు",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7198709",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217099",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7198709",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7198709"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_1259876",
+      "source": "What is the time?",
+      "reference": "ఇప్పుడు టైమ్ ఎంత ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1259876",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098720",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1259876",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1259876"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_241983",
+      "source": "I'll let it go this time.",
+      "reference": "నేను ఈసారికి వదిలేస్తాను",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "241983",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217075",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "241983",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/241983"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_3030776",
+      "source": "There's no reason to be afraid.",
+      "reference": "భయపడాల్సిన కారణం ఏమీ లేదు.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3030776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "4642365",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3030776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3030776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_272304",
+      "source": "The baby is crying for milk.",
+      "reference": "పసిపాప పాల కోసం ఏడుస్తుంది",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "272304",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207777",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "272304",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/272304"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3663459",
+      "source": "There are islands in the ocean.",
+      "reference": "సముద్రంలో ద్వీపాలు ఉన్నాయి.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3717202",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_24729",
+      "source": "We need money to do anything.",
+      "reference": "ఏం చెయ్యాలన్నా మనకి డబ్బులు కావాలి",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204248",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_1098778",
+      "source": "Oh! Raju has fallen down the stairs!",
+      "reference": "అయ్యొ! రజు మెట్ల మీద నుంచి పడిపోయాడా!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098778",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098778",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098778"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2644063",
+      "source": "That wasn't easy, you know.",
+      "reference": "అది అంత తేలిక కాదు, తెలుసా",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2644063",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2644063",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2644063"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_5228960",
+      "source": "Yes, you can.",
+      "reference": "నువ్వు చేయగలవు",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5228960",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5228960",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5228960"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_6040259",
+      "source": "Are you prepared to do this?",
+      "reference": "ఇది చెయ్యడానికి సిద్దంగా వున్నావా",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6040259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204227",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6040259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6040259"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_245574",
+      "source": "My sister is crazy about tennis.",
+      "reference": "మా అక్కకి టెన్నిసంటే పిచ్చి",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "245574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "245574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/245574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1098771",
+      "source": "Oh! Is what you said true?",
+      "reference": "ఆ! మీరు చెప్పింది నిజమా?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098769",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_696972",
+      "source": "Have you ever had a heart attack?",
+      "reference": "నీకు ఎప్పుడైనా గుండెపోటు వచ్చిందా",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "696972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207772",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "696972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/696972"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_6666970",
+      "source": "I don't know who won.",
+      "reference": "ఎవరు గెలిచారో నాకు తెలియదు",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6666970",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6666970",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6666970"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_3738721",
+      "source": "What time of day is it?",
+      "reference": "సమయం ఎంత అయ్యింది?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "4546242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_1540880",
+      "source": "How about going out to eat tonight?",
+      "reference": "ఈ రాత్రి బయటకి వెళ్లి తిందామా ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1540880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1540880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1540880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8920035",
+      "source": "Why do you want to come?",
+      "reference": "మీరు ఎందుకు రావాలనుకుంటున్నారు?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8920035",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "9253685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8920035",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8920035"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_12080229",
+      "source": "How can I restore my reputation?",
+      "reference": "నా పరువును ఎలా తిరిగి తెచ్చుకోగలను?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12080229",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "13350015",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12080229",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12080229"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_748737",
+      "source": "This plant has some burnt leaves.",
+      "reference": "ఈ మొక్కకి కొన్ని కాలిన ఆకులు వున్నాయి",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "748737",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "748737",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/748737"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_9368886",
+      "source": "The bus leaves every 10 minutes.",
+      "reference": "ప్రతి పది నిమిషాలకు బస్ బయలుదేరుతుంది.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9368886",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "13350954",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9368886",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9368886"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1098704",
+      "source": "How did you draw this picture?",
+      "reference": "ఈ బొమ్మ ఎలా వేశావు ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098704",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098704",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098704"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4648997",
+      "source": "Where did you put my book?",
+      "reference": "నా పుస్తకం ఎక్కడ పెట్టావ్?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4648997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7216869",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4648997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4648997"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3558051",
+      "source": "Her arms and legs are long.",
+      "reference": "ఆవిడ చేతులు, కాళ్ళు పొడవుగా ఉంటాయి",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3558051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7233125",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3558051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3558051"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3543690",
+      "source": "Tom washed his hands and face.",
+      "reference": "టామ్ తన చేతులు మొహం కడుక్కున్నాడు.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3543690",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3544073",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3543690",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3543690"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3178315",
+      "source": "You must stay where you are.",
+      "reference": "నువ్వు ఎక్కడ ఉన్నవో అక్కడే ఉండు",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3178315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7210924",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3178315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3178315"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1098768",
+      "source": "The picture is nice, well done!",
+      "reference": "శభాష్! బొమ్మ బాగుంది!",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098768",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098767",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098768",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098768"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1098712",
+      "source": "When will uncle come from Vijayawada?",
+      "reference": "మామయ్య విజయవాడ నుంచి ఎప్పుడు వస్తారు?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098712",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098710",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098712",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098712"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_1098706",
+      "source": "When will Sita go to Eluru?",
+      "reference": "సీత ఏలూరు ఎప్పుడు వెళ్తుంది?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098705",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_412469",
+      "source": "Far from eye, far from heart.",
+      "reference": "చూపుకి వెలుపల​, మనసుకి వెలుపల​",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "412469",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "412469",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/412469"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_323741",
+      "source": "Out of sight, out of mind.",
+      "reference": "చూపుకి వెలుపల​, మనసుకి వెలుపల​",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "323741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "323741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/323741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_270867",
+      "source": "You may go swimming or fishing.",
+      "reference": "నువ్వు ఈత కొట్టడానికో లేక చేపలు పట్టడానికో వెళ్ళొచ్చు",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270867",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7204082",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270867",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270867"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_6349189",
+      "source": "You can leave early if you like.",
+      "reference": "నీకు నచ్చితే ముందే వెళ్లిపోవచ్చు",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6349189",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "10568750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6349189",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6349189"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_3543737",
+      "source": "What are you and Tom doing tomorrow?",
+      "reference": "రేపు నువ్వు టామ్ ఏం చేస్తున్నారు.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3543737",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3544068",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3543737",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3543737"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_1098699",
+      "source": "I asked you, \"is the work done?\"",
+      "reference": "నేను చెప్పిన పని పూర్తయిందా?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_483626",
+      "source": "Come, I'll serve some for you.",
+      "reference": "రా, నీకు కూడా కొంచెం పెడతా",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "483626",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7216954",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "483626",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/483626"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_436543",
+      "source": "I don't know where they are.",
+      "reference": "వాళ్ళు ఎక్కడ ఉన్నారో నాకు తెలియదు",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436543",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7233063",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436543",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436543"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3543000",
+      "source": "Only animal products contain cholesterol.",
+      "reference": "జంతు పదార్ధాలు మాత్రమే కొవ్వును కలిగి ఉంటాయి.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3543000",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "3543069",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3543000",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3543000"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.2
+      }
+    },
+    {
+      "id": "tatoeba_12228739",
+      "source": "All the names are in alphabetical order.",
+      "reference": "పేర్లన్నీ అక్షరక్రమంలో ఉన్నాయి.",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12228739",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "13350026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12228739",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12228739"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_1098709",
+      "source": "What is the price of that book?",
+      "reference": "ఆ పుస్తకం వెల ఎంత ?",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098709",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098709",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098709"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_4960774",
+      "source": "Is your homework finished?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4960774",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4960774",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4960774"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4960772",
+      "source": "Is your homework done?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4960772",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4960772",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4960772"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_4960770",
+      "source": "Have you completed your homework?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4960770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4960770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4960770"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.6
+      }
+    },
+    {
+      "id": "tatoeba_69223",
+      "source": "Have you done your homework?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69223",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69223",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69223"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_31331",
+      "source": "Have you finished your homework?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31331"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_1098697",
+      "source": "Did you do yesterday's homework?",
+      "reference": "నిన్నటి హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098697",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098696",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098697",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098697"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.4
+      }
+    },
+    {
+      "id": "tatoeba_635527",
+      "source": "Did you already do your homework?",
+      "reference": "హోమ్‌వర్క్ చేశావా ?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "635527",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "1098684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "635527",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/635527"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_4320401",
+      "source": "Help came too late.",
+      "reference": "సహాయం చాలా ఆలస్యముగా వచ్చింది",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4320401",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217048",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4320401",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4320401"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6374295",
+      "source": "I think that won't help.",
+      "reference": "నేను అనుకునేది అది ఉపయోగపడదు",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6374295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6374295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6374295"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_4502017",
+      "source": "You seem very happy.",
+      "reference": "నువ్వు చాలా సంతోషంగా ఉన్నట్లున్నావ్",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4502017",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7217027",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4502017",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4502017"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3129506",
+      "source": "Did all this really happen?",
+      "reference": "ఇదంతా నిజంగా జరిగిందా ?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3129506",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7210923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3129506",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3129506"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_3082628",
+      "source": "Happy International Women's Day!",
+      "reference": "శుభ అంతర్జాతీయ మహిళల దినోత్సవం!",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3082628",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "4965400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3082628",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3082628"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_3219435",
+      "source": "Are you still afraid something might happen?",
+      "reference": "ఏమైనా అవుతుందని ఇంకా భయపడుతున్నావా ?",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3219435",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tel",
+        "target_sentence_id": "7207696",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3219435",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3219435"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.29
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

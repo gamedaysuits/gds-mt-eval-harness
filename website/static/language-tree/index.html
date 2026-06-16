@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champollion — Language Family Tree</title>
+  <meta name="description" content="Interactive 3D phylogenetic tree of 2,400+ languages. Trace lineages from proto-languages to modern speech.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════
+     * CSS VARIABLES — single source of truth for theming
+     * Brand gold #f0b429 is Champollion's identity color,
+     * chosen to evoke ancient inscription / papyrus tones.
+     * ═══════════════════════════════════════════════════════════ */
+    :root {
+      --bg: #0a0a0a;
+      --scene-bg: #020208;
+      --surface: rgba(13, 17, 23, 0.88);
+      --surface-solid: #0d1117;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #7d8590;
+      --text-dim: #484f58;
+      --gold: #f0b429;
+      --gold-dim: rgba(240, 180, 41, 0.3);
+      --gold-glow: rgba(240, 180, 41, 0.15);
+      --blue: #58a6ff;
+      --filter-proto: #666666;
+      --filter-living: #aaaaaa;
+      --filter-endangered: #88aa44;
+      --filter-extinct: #333333;
+      --filter-supported: #58a6ff;
+      --blur-strength: 12px;
+      --radius-sm: 5px;
+      --radius-md: 6px;
+      --radius-lg: 8px;
+      --radius-pill: 20px;
+      --font-ui: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-display: 'Space Grotesk', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-ui);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── TOP BAR ── */
+    .top-bar {
+      position: relative;
+      z-index: 100;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+      backdrop-filter: blur(var(--blur-strength));
+      -webkit-backdrop-filter: blur(var(--blur-strength));
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .brand-diamond { color: var(--gold); margin-right: 0.3em; }
+
+    .search-wrap {
+      position: relative;
+      flex: 0 1 280px;
+      min-width: 140px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 5px 10px 5px 28px;
+      background: var(--surface-solid);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--text);
+      font-family: var(--font-ui);
+      font-size: 0.78rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--gold-dim);
+      box-shadow: 0 0 0 2px var(--gold-glow);
+    }
+
+    .search-input::placeholder { color: var(--text-dim); }
+
+    .search-icon {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+
+    .stats-strip {
+      display: flex;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .stats-strip strong { color: var(--text-muted); }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      background: var(--surface);
+      backdrop-filter: blur(var(--blur-strength));
+      -webkit-backdrop-filter: blur(var(--blur-strength));
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .filter-pill {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-family: var(--font-ui);
+      font-size: 0.68rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      user-select: none;
+    }
+
+    /* Active state styling is set via JS data-attribute */
+    .filter-pill[data-active="true"] {
+      color: var(--text);
+    }
+
+    .filter-pill:hover {
+      border-color: var(--text-dim);
+    }
+
+    .filter-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .filter-star {
+      font-size: 0.72rem;
+    }
+
+    /* ── MAIN CONTAINER ── */
+    #universe-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: var(--scene-bg);
+    }
+
+    /* ── LEGEND ── */
+    .universe-legend {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(13, 17, 23, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 10px 14px;
+      z-index: 5;
+      font-size: 0.68rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .universe-legend-row { display: flex; align-items: center; gap: 6px; }
+
+    .legend-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── HINT ── */
+    .universe-hint {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-dim);
+      background: rgba(13, 17, 23, 0.7);
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      z-index: 5;
+    }
+
+    /* ── TOOLTIP ── */
+    .universe-tooltip {
+      position: absolute;
+      pointer-events: none;
+      display: none;
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 6px 12px;
+      font-size: 0.72rem;
+      z-index: 10;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+      max-width: 260px;
+      line-height: 1.4;
+    }
+
+    /* ── SEARCH RESULTS BADGE ── */
+    .search-results {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--gold);
+      background: rgba(13, 17, 23, 0.85);
+      border: 1px solid var(--gold-dim);
+      border-radius: var(--radius-sm);
+      padding: 3px 10px;
+      z-index: 15;
+      display: none;
+    }
+
+    /* ── CSS2D LABEL STYLING ── */
+    .tree-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      /* Multiple shadows ensure readability against any branch color */
+      text-shadow: 0 0 6px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9),
+                   0 0 12px rgba(0,0,0,0.7);
+    }
+
+    /* Expand count indicator sits below the node */
+    .expand-label {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: 10px;
+      color: var(--gold);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      text-shadow: 0 0 4px rgba(0,0,0,0.9);
+      cursor: pointer;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .top-bar {
+        flex-wrap: wrap;
+        padding: 0.4rem 0.8rem;
+        gap: 0.4rem;
+      }
+      .search-wrap { flex: 1 1 100%; order: 3; }
+      .filter-bar { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="brand"><span class="brand-diamond">◆</span>Champollion</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="search-input"
+             placeholder="Search languages…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="stats-strip" id="stats-strip"></div>
+  </header>
+
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-pill" data-filter="proto" data-active="true">
+      <span class="filter-dot" style="background: var(--filter-proto)"></span>Proto
+    </button>
+    <button class="filter-pill" data-filter="common" data-active="true">
+      <span class="filter-dot" style="background: var(--filter-living)"></span>Living
+    </button>
+    <button class="filter-pill" data-filter="endangered" data-active="true">
+      <span class="filter-dot" style="background: var(--filter-endangered)"></span>Endangered
+    </button>
+    <button class="filter-pill" data-filter="dead" data-active="true">
+      <span class="filter-dot" style="background: var(--filter-extinct)"></span>Extinct
+    </button>
+    <button class="filter-pill" data-filter="supported" data-active="true">
+      <span class="filter-star">★</span>Supported
+    </button>
+  </div>
+
+  <div id="universe-container">
+    <div class="universe-legend" id="universe-legend"></div>
+    <div class="universe-hint">drag to orbit · scroll to zoom</div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <script src="tree-data.js"></script>
+
+  <script type="module">
+  /* ═══════════════════════════════════════════════════════════════════════
+   * CHAMPOLLION 3D LANGUAGE TREE — Radial Layout
+   *
+   * ARCHITECTURE:
+   *   1. Parse TREE_BACKBONE into a tree of node objects
+   *   2. Layout using the radial algorithm (full 360° arc subdivision)
+   *   3. Build Three.js scene with TubeGeometry branches + glass spheres
+   *   4. Add interaction: expand/collapse, filter, search, hover
+   *   5. Animate growth cascade on load
+   *
+   * WHY RADIAL:
+   *   The radial layout places root at center with families spiraling
+   *   outward. Subtree size proportionally subdivides the arc, so larger
+   *   families (IE, Niger-Congo) get more angular space. Seeded jitter
+   *   prevents mechanical symmetry while keeping the layout reproducible.
+   * ═══════════════════════════════════════════════════════════════════════ */
+
+  import * as THREE from 'three';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+  import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+  import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+  import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+  import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+  (function() {
+
+  /* ── GUARD: data must be present ── */
+  var container = document.getElementById('universe-container');
+  if (!container || !window.TREE_BACKBONE) return;
+
+  /* ══════════════════════════════════════════════════════════
+   * §1 — LAYOUT CONSTANTS
+   *
+   * These match the rosetta mock exactly. LEVEL_H controls
+   * vertical spacing (Y axis = depth), BASE_R + R_GROW control
+   * how far nodes spread radially at each level.
+   * ══════════════════════════════════════════════════════════ */
+  var LEVEL_H = 22;
+  var BASE_R  = 10;
+  var R_GROW  = 20;
+
+  /* Seeded PRNG — identical seed produces identical layout every load.
+   * Uses a linear congruential generator with overflow masking. */
+  var _s = 42;
+  function rand() {
+    _s = (_s * 1664525 + 1013904223) & 0x7fffffff;
+    return _s / 0x7fffffff;
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §2 — FAMILY COLOR MAP
+   *
+   * Each major family gets a distinctive hue. Colors are chosen
+   * to be visually separable at a glance and to avoid the
+   * orange/blue "vibecode" trap the user specifically dislikes.
+   * ══════════════════════════════════════════════════════════ */
+  var FC = {
+    'nos':0x4fc3f7,'ie':0x42a5f5,'ur':0x80cbc4,'kv':0x4db6ac,
+    'dr':0xff8a65,'aa':0xffb74d,'dc':0xba68c8,'st':0xce93d8,
+    'dy':0xab47bc,'aus':0x66bb6a,'an':0x81c784,'aas':0xa5d6a7,
+    'tk':0x4caf50,'eur':0xef5350,'tu':0xe57373,'mo':0xf44336,
+    'jp':0xff7043,'ko':0xff5722,'ea':0x90caf9,'nc':0xffd54f,
+    'ns':0xffe082,'alg':0x26c6da,'ua':0x00acc1,'si':0x0097a7,
+    'ir':0x00838f,'mk':0x00897b,'om':0x43a047,'my':0x7cb342,
+    'aw':0xc0ca33,'cb':0x9ccc65,'tp':0xaed581,'qe':0xdce775,
+    'ay':0xd4e157,'chb':0x26a69a,'sal':0x009688,'con':0x78909c,
+    'bor':0xb0bec5,'kh':0xbcaaa4
+  };
+
+  /* Walk up the ID hierarchy to find the family color.
+   * e.g. 'ie.gmc.w.en' → tries 'ie.gmc.w.en', 'ie.gmc.w', 'ie.gmc', 'ie' → finds 'ie' */
+  function getFC(id) {
+    var parts = id.split('.');
+    for (var i = parts.length; i >= 1; i--) {
+      var key = parts.slice(0, i).join('.');
+      if (FC[key] !== undefined) return FC[key];
+    }
+    /* Khoisan families use a 'kh.' prefix */
+    if (id.indexOf('kh') === 0) return 0xbcaaa4;
+    return 0x546e7a;
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §3 — TREE CONSTRUCTION
+   *
+   * Parse TREE_BACKBONE array into a tree of node objects.
+   * Each node tracks: position, children, subtreeSize,
+   * arc range (for layout), and references to its 3D objects.
+   * ══════════════════════════════════════════════════════════ */
+  var nodeMap = {};
+  var root = null;
+
+  window.TREE_BACKBONE.forEach(function(t) {
+    nodeMap[t[0]] = {
+      id: t[0],
+      name: t[1],
+      parentId: t[2],
+      date: t[3],
+      status: t[4],
+      code: t[5] || null,
+      expandCount: t[6] || 0,
+      children: [],
+      depth: 0,
+      subtreeSize: 1,
+      pos: new THREE.Vector3(),
+      dir: new THREE.Vector3(0, 1, 0),
+      pathLen: 0,
+      /* Arc range stored after layout for re-layout on expand */
+      arcStart: 0,
+      arcEnd: Math.PI * 2,
+      /* 3D object references — populated during rendering */
+      mesh: null,
+      label: null,
+      expandLabel: null,
+      branches: [],       // array of { tube, glow } objects
+      branchParent: null,  // branch TO this node from parent
+      /* Expansion state */
+      expanded: false,
+      expansionChildren: [],
+      /* Filter visibility */
+      filterVisible: true,
+      /* Growth animation timing */
+      growT: 0
+    };
+  });
+
+  /* Link children to parents */
+  Object.keys(nodeMap).forEach(function(id) {
+    var n = nodeMap[id];
+    if (n.parentId === null) {
+      root = n;
+    } else if (nodeMap[n.parentId]) {
+      nodeMap[n.parentId].children.push(n);
+    }
+  });
+
+  /* Compute depth and subtreeSize via DFS */
+  function computeMeta(node, d) {
+    node.depth = d;
+    node.subtreeSize = 1;
+    node.children.forEach(function(c) {
+      computeMeta(c, d + 1);
+      node.subtreeSize += c.subtreeSize;
+    });
+  }
+  computeMeta(root, 0);
+
+  var maxDepth = 0;
+  Object.keys(nodeMap).forEach(function(id) {
+    if (nodeMap[id].depth > maxDepth) maxDepth = nodeMap[id].depth;
+  });
+
+  /* ══════════════════════════════════════════════════════════
+   * §4 — RADIAL LAYOUT (from the rosetta mock)
+   *
+   * Each node's XZ position is on a circle of radius
+   * BASE_R + depth * R_GROW, at the midpoint of its arc.
+   * Children subdivide the parent's arc proportionally by
+   * subtreeSize. Jitter prevents mechanical look.
+   *
+   * Y axis = depth * LEVEL_H (tree grows upward).
+   * ══════════════════════════════════════════════════════════ */
+  function layoutNode(node, aStart, aEnd) {
+    node.arcStart = aStart;
+    node.arcEnd = aEnd;
+
+    if (node.depth === 0) {
+      node.pos.set(0, 0, 0);
+    } else {
+      var r = BASE_R + node.depth * R_GROW;
+      var mid = (aStart + aEnd) / 2;
+      var jr = r * (0.88 + rand() * 0.24);
+      var ja = mid + (rand() - 0.5) * 0.04;
+      node.pos.set(Math.cos(ja) * jr, node.depth * LEVEL_H, Math.sin(ja) * jr);
+    }
+
+    /* Compute direction vector for branch curve departure */
+    if (node.parentId && nodeMap[node.parentId]) {
+      node.dir.copy(node.pos).sub(nodeMap[node.parentId].pos).normalize();
+    }
+
+    var children = node.children;
+    if (children.length === 0) return;
+
+    var totalSize = 0;
+    children.forEach(function(c) { totalSize += c.subtreeSize; });
+
+    /* sw = angular width of this node's arc, minimum 0.04 to prevent
+     * degenerate zero-width arcs for single-child chains */
+    var sw = Math.max(aEnd - aStart, 0.04);
+    var cursor = aStart;
+
+    children.forEach(function(child) {
+      var childArc = (child.subtreeSize / totalSize) * sw;
+      layoutNode(child, cursor, cursor + childArc);
+      cursor += childArc;
+    });
+  }
+
+  layoutNode(root, 0, Math.PI * 2);
+
+  /* Compute pathLen for growth animation timing */
+  function computePathLen(node) {
+    if (node.parentId && nodeMap[node.parentId]) {
+      node.pathLen = nodeMap[node.parentId].pathLen + nodeMap[node.parentId].pos.distanceTo(node.pos);
+    }
+    node.children.forEach(computePathLen);
+  }
+  computePathLen(root);
+
+  var maxPath = 0;
+  Object.keys(nodeMap).forEach(function(id) {
+    if (nodeMap[id].pathLen > maxPath) maxPath = nodeMap[id].pathLen;
+  });
+  if (maxPath === 0) maxPath = 1;
+
+  /* ══════════════════════════════════════════════════════════
+   * §5 — MAJOR FAMILY LABEL LIST
+   *
+   * Only ~33 major nodes + all supported languages get
+   * persistent labels. This prevents label clutter at wide zoom.
+   * ══════════════════════════════════════════════════════════ */
+  var MAJOR_LABEL_IDS = {};
+  [
+    'root','bor','nos','dc','aus','eur',
+    'ie','st','aa','nc','ns','dy',
+    'an','tu','ur','dr','mo','jp','ko','ea',
+    'alg','ua','si','ir','mk','om','my','aw',
+    'tp','qe','chb','sal','con',
+    'aas','tk','kv'
+  ].forEach(function(k) { MAJOR_LABEL_IDS[k] = true; });
+
+  /* ══════════════════════════════════════════════════════════
+   * §6 — THREE.JS SCENE SETUP
+   * ══════════════════════════════════════════════════════════ */
+  var w = container.clientWidth;
+  var h = container.clientHeight || 700;
+
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x020208);
+  scene.fog = new THREE.FogExp2(0x020208, 0.0008);
+
+  var camera = new THREE.PerspectiveCamera(50, w / h, 0.5, 4000);
+  camera.position.set(120, 120, 300);
+
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(w, h);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.3;
+  container.appendChild(renderer.domElement);
+
+  /* CSS2DRenderer for crisp text labels at any zoom */
+  var labelRenderer = new CSS2DRenderer();
+  labelRenderer.setSize(w, h);
+  labelRenderer.domElement.style.position = 'absolute';
+  labelRenderer.domElement.style.top = '0';
+  labelRenderer.domElement.style.pointerEvents = 'none';
+  container.appendChild(labelRenderer.domElement);
+
+  /* Environment map for glass/transmission material reflections.
+   * sigma=0.04 blurs the environment just enough to look like
+   * frosted glass without being distractingly detailed */
+  var pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+  pmrem.dispose();
+
+  /* Camera controls */
+  var controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.4;
+  controls.maxDistance = 1000;
+  controls.minDistance = 15;
+  controls.target.set(0, maxDepth * LEVEL_H / 2, 0);
+
+  /* Post-processing: bloom for the glass glow effect */
+  var composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(
+    new THREE.Vector2(w, h), 1.2, 0.4, 0.15
+  ));
+
+  /* ── LIGHTING ── */
+  scene.add(new THREE.AmbientLight(0x182030, 0.3));
+  var keyLight = new THREE.DirectionalLight(0xddeeff, 0.6);
+  keyLight.position.set(60, 200, 80);
+  scene.add(keyLight);
+  var fillLight = new THREE.DirectionalLight(0xffddbb, 0.2);
+  fillLight.position.set(-40, -20, -60);
+  scene.add(fillLight);
+  /* Warm point light at the root creates the "origin glow" */
+  var rootLight = new THREE.PointLight(0xff8844, 2.0, 180);
+  rootLight.position.set(0, 0, 0);
+  scene.add(rootLight);
+
+  /* ── DUST PARTICLES ──
+   * 2000 particles in a spherical shell create depth cues and
+   * a cosmic atmosphere. Additive blending so they glow softly. */
+  var dustCount = 2000;
+  var dustPositions = new Float32Array(dustCount * 3);
+  for (var di = 0; di < dustCount; di++) {
+    var dRadius = 300 + rand() * 500;
+    var dTheta = rand() * Math.PI * 2;
+    var dPhi = Math.acos(2 * rand() - 1);
+    dustPositions[di * 3]     = dRadius * Math.sin(dPhi) * Math.cos(dTheta);
+    dustPositions[di * 3 + 1] = dRadius * Math.sin(dPhi) * Math.sin(dTheta);
+    dustPositions[di * 3 + 2] = dRadius * Math.cos(dPhi);
+  }
+  var dustGeo = new THREE.BufferGeometry();
+  dustGeo.setAttribute('position', new THREE.BufferAttribute(dustPositions, 3));
+  scene.add(new THREE.Points(dustGeo, new THREE.PointsMaterial({
+    color: 0x1a1a2e, size: 0.4, transparent: true, opacity: 0.4,
+    blending: THREE.AdditiveBlending, depthWrite: false
+  })));
+
+  /* ── ROOT ORB ── the golden seed of all language */
+  var rootOrb = new THREE.Mesh(
+    new THREE.SphereGeometry(2.0, 24, 20),
+    new THREE.MeshPhysicalMaterial({
+      color: 0xf0b429, emissive: 0xf0b429, emissiveIntensity: 2.0,
+      transmission: 0.2, roughness: 0.05, metalness: 0.1,
+      transparent: true, opacity: 0
+    })
+  );
+  scene.add(rootOrb);
+
+  /* ══════════════════════════════════════════════════════════
+   * §7 — MATERIAL FACTORIES
+   *
+   * MeshPhysicalMaterial with transmission creates the "glass orb"
+   * look. Each status category has distinct visual treatment so
+   * users can identify node type at a glance.
+   * ══════════════════════════════════════════════════════════ */
+  function makeMaterial(node) {
+    var familyColor = new THREE.Color(getFC(node.id));
+
+    if (node.code) {
+      /* SUPPORTED: brightest, blue-white glow — these are "our" languages */
+      return new THREE.MeshPhysicalMaterial({
+        color: 0xffffff, emissive: 0x44aaff, emissiveIntensity: 2.0,
+        transmission: 0.8, thickness: 2.0, roughness: 0.0,
+        transparent: true
+      });
+    }
+    if (node.status === 'dead') {
+      /* EXTINCT: dark, high transmission — ghostly, faded */
+      return new THREE.MeshPhysicalMaterial({
+        color: 0x111111, emissive: 0x000000, emissiveIntensity: 0,
+        transmission: 0.92, roughness: 0.15,
+        transparent: true
+      });
+    }
+    if (node.status === 'endangered') {
+      /* ENDANGERED: muted green tint — alive but fragile */
+      return new THREE.MeshPhysicalMaterial({
+        color: 0x88aa44, emissive: 0x334411, emissiveIntensity: 0.4,
+        transmission: 0.75, roughness: 0.1,
+        transparent: true
+      });
+    }
+    if (node.status === 'proto') {
+      /* PROTO: family-colored glass — structural ancestor nodes */
+      return new THREE.MeshPhysicalMaterial({
+        color: familyColor, emissive: familyColor, emissiveIntensity: 0.3,
+        transmission: 0.6, roughness: 0.08,
+        transparent: true
+      });
+    }
+    /* COMMON (living, no code): family-colored with moderate glow */
+    return new THREE.MeshPhysicalMaterial({
+      color: 0xffffff, emissive: familyColor, emissiveIntensity: 0.8,
+      transmission: 0.7, thickness: 1.5, roughness: 0.02,
+      transparent: true
+    });
+  }
+
+  /* Node radius varies by importance — supported languages are biggest
+   * so users can find them easily */
+  function nodeRadius(node) {
+    if (node.code) return 1.0;
+    if (node.status === 'dead') return 0.3;
+    if (node.status === 'proto' && node.depth < 3) return 0.6;
+    if (node.status === 'proto') return 0.15;
+    return 0.5;
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §8 — BRANCH (TUBE) CONSTRUCTION
+   *
+   * Each parent→child connection is a CatmullRomCurve3 tube.
+   * The 4 control points create an organic S-curve:
+   *   1. Parent position
+   *   2. Departure: parent + parent.dir * dist*0.35
+   *   3. Approach: child - approachDir * dist*0.25
+   *   4. Child position
+   *
+   * An outer glow tube at 4× radius with additive blending
+   * creates the neon-in-glass halo effect.
+   * ══════════════════════════════════════════════════════════ */
+  function createBranch(parentNode, childNode) {
+    var fromPos = parentNode.pos;
+    var toPos = childNode.pos;
+    var dist = fromPos.distanceTo(toPos);
+    if (dist < 0.01) return null;
+
+    /* Departure direction: parent's outward direction */
+    var departure = new THREE.Vector3().copy(fromPos).add(
+      new THREE.Vector3().copy(parentNode.dir).multiplyScalar(dist * 0.35)
+    );
+
+    /* Approach direction: from child back toward parent */
+    var approachDir = new THREE.Vector3().copy(toPos).sub(fromPos).normalize();
+    var approach = new THREE.Vector3().copy(toPos).sub(
+      approachDir.multiplyScalar(dist * 0.25)
+    );
+
+    var curve = new THREE.CatmullRomCurve3(
+      [fromPos.clone(), departure, approach, toPos.clone()],
+      false, 'centripetal', 0.5
+    );
+
+    /* Thickness scales with subtree size — big families get thick branches */
+    var thickness = Math.max(0.04, Math.pow(childNode.subtreeSize, 0.45) * 0.1);
+    var tubeSegs = Math.max(8, Math.ceil(dist / 3));
+
+    var familyColor = new THREE.Color(getFC(childNode.id));
+
+    /* Main tube */
+    var tubeGeo = new THREE.TubeGeometry(curve, tubeSegs, thickness, 6, false);
+    var tubeMat = new THREE.MeshPhysicalMaterial({
+      color: familyColor,
+      emissive: familyColor,
+      emissiveIntensity: 0.4,
+      transmission: 0.3,
+      roughness: 0.2,
+      transparent: true,
+      opacity: 0.85
+    });
+    var tubeMesh = new THREE.Mesh(tubeGeo, tubeMat);
+    scene.add(tubeMesh);
+
+    /* Outer glow tube: 4× radius, additive, very faint */
+    var glowGeo = new THREE.TubeGeometry(curve, tubeSegs, thickness * 4, 6, false);
+    var glowMat = new THREE.MeshBasicMaterial({
+      color: familyColor,
+      transparent: true,
+      opacity: 0.06,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+    var glowMesh = new THREE.Mesh(glowGeo, glowMat);
+    scene.add(glowMesh);
+
+    return { tube: tubeMesh, glow: glowMesh, curve: curve, thickness: thickness };
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §9 — BUILD ALL NODES & BRANCHES
+   * ══════════════════════════════════════════════════════════ */
+  var allMeshes = [];     // for raycasting
+  var allLabels = [];     // for LOD and search dimming
+  var allBranches = [];   // for filter dimming
+  var allNodes = [];      // ordered list of all node objects
+
+  function buildNodeVisuals(node) {
+    if (node.depth === 0) {
+      /* Root node uses the rootOrb, no separate mesh */
+      node.mesh = rootOrb;
+      rootOrb.userData = { nodeId: node.id };
+      allMeshes.push(rootOrb);
+      allNodes.push(node);
+      node.children.forEach(buildNodeVisuals);
+      return;
+    }
+
+    var nr = nodeRadius(node);
+    var mat = makeMaterial(node);
+    /* IcosahedronGeometry detail level: higher for bigger/important nodes */
+    var detail = node.code ? 2 : (node.status === 'proto' && node.depth < 3 ? 1 : 0);
+    var mesh = new THREE.Mesh(new THREE.IcosahedronGeometry(nr, detail), mat);
+    mesh.position.copy(node.pos);
+    mesh.userData = { nodeId: node.id };
+    /* Start invisible for growth animation */
+    mesh.scale.set(0, 0, 0);
+    mesh.material.opacity = 0;
+    scene.add(mesh);
+
+    node.mesh = mesh;
+    allMeshes.push(mesh);
+    allNodes.push(node);
+
+    /* ── LABELS ──
+     * ALL backbone nodes get labels. Visibility controlled by LOD:
+     *   Priority 0 (major families):  always visible
+     *   Priority 1 (supported + sub-families):  visible within 300 units
+     *   Priority 2 (all other languages):  visible within 150 units
+     * This ensures you can always read the tree at any zoom level. */
+    var labelPriority, labelColor, labelSize;
+
+    if (MAJOR_LABEL_IDS[node.id]) {
+      /* Major family labels: biggest, always on */
+      labelPriority = 0;
+      var fc = new THREE.Color(getFC(node.id));
+      fc.lerp(new THREE.Color(1, 1, 1), 0.35);
+      labelColor = '#' + fc.getHexString();
+      labelSize = '14px';
+    } else if (node.code) {
+      /* Supported languages: prominent blue, medium zoom range */
+      labelPriority = 1;
+      labelColor = '#58a6ff';
+      labelSize = '12px';
+    } else if (node.status === 'dead') {
+      /* Extinct: dimmer, close zoom only */
+      labelPriority = 2;
+      labelColor = '#555';
+      labelSize = '10px';
+    } else if (node.status === 'proto') {
+      /* Proto sub-families: medium priority */
+      labelPriority = node.depth <= 4 ? 1 : 2;
+      var fcp = new THREE.Color(getFC(node.id));
+      fcp.lerp(new THREE.Color(1, 1, 1), 0.25);
+      labelColor = '#' + fcp.getHexString();
+      labelSize = node.depth <= 4 ? '12px' : '10px';
+    } else {
+      /* Living languages (common): medium zoom */
+      labelPriority = 2;
+      var fcl = new THREE.Color(getFC(node.id));
+      fcl.lerp(new THREE.Color(1, 1, 1), 0.3);
+      labelColor = '#' + fcl.getHexString();
+      labelSize = '11px';
+    }
+
+    var div = document.createElement('div');
+    div.className = 'tree-label';
+    div.textContent = node.name;
+    div.style.fontSize = labelSize;
+    div.style.color = labelColor;
+    /* Start hidden — revealed by growth animation + LOD */
+    div.style.display = 'none';
+    var lbl = new CSS2DObject(div);
+    lbl.position.copy(node.pos);
+    lbl.position.y += nr + 1.5;
+    lbl.userData = { el: div, nodeId: node.id, priority: labelPriority };
+    scene.add(lbl);
+    node.label = lbl;
+    allLabels.push(lbl);
+
+    /* ── EXPAND INDICATOR ── shows "+N" below expandable nodes */
+    if (node.expandCount > 0 && window.TREE_EXPANSIONS && window.TREE_EXPANSIONS[node.id]) {
+      var expDiv = document.createElement('div');
+      expDiv.className = 'expand-label';
+      expDiv.textContent = '+' + node.expandCount;
+      var expLbl = new CSS2DObject(expDiv);
+      expLbl.position.copy(node.pos);
+      expLbl.position.y -= nr + 1.0;
+      expLbl.userData = { el: expDiv };
+      scene.add(expLbl);
+      node.expandLabel = expLbl;
+    }
+
+    /* ── BRANCH FROM PARENT ── */
+    if (node.parentId && nodeMap[node.parentId]) {
+      var branch = createBranch(nodeMap[node.parentId], node);
+      if (branch) {
+        node.branchParent = branch;
+        allBranches.push(branch);
+        /* Start invisible for growth animation */
+        branch.tube.material.opacity = 0;
+        branch.glow.material.opacity = 0;
+      }
+    }
+
+    node.children.forEach(buildNodeVisuals);
+  }
+
+  buildNodeVisuals(root);
+
+  /* ══════════════════════════════════════════════════════════
+   * §10 — LEGEND & STATS
+   * ══════════════════════════════════════════════════════════ */
+  document.getElementById('universe-legend').innerHTML =
+    '<div class="universe-legend-row"><span class="legend-dot" style="background:#666;box-shadow:0 0 4px #333"></span> Proto-family</div>' +
+    '<div class="universe-legend-row"><span class="legend-dot" style="background:#aaa"></span> Living</div>' +
+    '<div class="universe-legend-row"><span class="legend-dot" style="background:#88aa44"></span> Endangered</div>' +
+    '<div class="universe-legend-row"><span class="legend-dot" style="background:#222;border:1px solid #333"></span> Extinct</div>' +
+    '<div class="universe-legend-row"><span class="legend-dot" style="background:#fff;box-shadow:0 0 10px #44aaff,0 0 20px #44aaff"></span> Supported</div>';
+
+  /* Count stats from the backbone data */
+  var nSupported = 0, nDead = 0, nEndangered = 0, nTotal = window.TREE_BACKBONE.length;
+  window.TREE_BACKBONE.forEach(function(t) {
+    if (t[5]) nSupported++;
+    if (t[4] === 'dead') nDead++;
+    if (t[4] === 'endangered') nEndangered++;
+  });
+  /* Add expansion languages to total */
+  var nExpansionTotal = 0;
+  if (window.TREE_EXPANSIONS) {
+    Object.keys(window.TREE_EXPANSIONS).forEach(function(k) {
+      nExpansionTotal += window.TREE_EXPANSIONS[k].length;
+    });
+  }
+
+  document.getElementById('stats-strip').innerHTML =
+    '<span><strong>' + nSupported + '</strong> supported</span>' +
+    '<span>·</span>' +
+    '<span><strong>' + (nTotal + nExpansionTotal) + '</strong> total</span>' +
+    '<span>·</span>' +
+    '<span><strong>' + nDead + '</strong> extinct</span>' +
+    '<span>·</span>' +
+    '<span><strong>' + nEndangered + '</strong> endangered</span>';
+
+  /* ══════════════════════════════════════════════════════════
+   * §11 — TOOLTIP
+   * ══════════════════════════════════════════════════════════ */
+  var tooltip = document.createElement('div');
+  tooltip.className = 'universe-tooltip';
+  container.appendChild(tooltip);
+
+  var raycaster = new THREE.Raycaster();
+  var mouse = new THREE.Vector2(-99, -99);
+  var hoveredNode = null;
+
+  renderer.domElement.addEventListener('mousemove', function(e) {
+    var rect = renderer.domElement.getBoundingClientRect();
+    mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  });
+
+  function formatDate(d) {
+    if (d < 0) return Math.abs(d).toLocaleString() + ' BCE';
+    if (d === 0) return 'Present';
+    return d + ' CE';
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §12 — EXPAND / COLLAPSE
+   *
+   * Clicking a node with expandCount > 0 loads its Glottolog
+   * children from TREE_EXPANSIONS, creates new node objects,
+   * positions them via the layout algorithm within the parent's
+   * arc, and animates them in.
+   * ══════════════════════════════════════════════════════════ */
+  function expandNode(node) {
+    if (!window.TREE_EXPANSIONS || !window.TREE_EXPANSIONS[node.id]) return;
+    if (node.expanded) {
+      collapseNode(node);
+      return;
+    }
+
+    var expansionData = window.TREE_EXPANSIONS[node.id];
+    var newChildren = [];
+
+    expansionData.forEach(function(entry) {
+      var childId = entry[0];
+      /* Avoid duplicates if somehow already exists */
+      if (nodeMap[childId]) return;
+
+      var childNode = {
+        id: childId,
+        name: entry[1],
+        parentId: node.id,
+        date: 0,
+        status: entry[2],
+        code: entry[3] || null,
+        expandCount: 0,
+        children: [],
+        depth: node.depth + 1,
+        subtreeSize: 1,
+        pos: new THREE.Vector3(),
+        dir: new THREE.Vector3(0, 1, 0),
+        pathLen: 0,
+        arcStart: 0, arcEnd: 0,
+        mesh: null, label: null, expandLabel: null,
+        branches: [], branchParent: null,
+        expanded: false, expansionChildren: [],
+        filterVisible: true,
+        growT: 0,
+        isExpansion: true
+      };
+
+      nodeMap[childId] = childNode;
+      newChildren.push(childNode);
+    });
+
+    /* Add new children to parent and re-compute subtree sizes */
+    newChildren.forEach(function(c) {
+      node.children.push(c);
+    });
+
+    /* Recompute subtreeSize from this node upward */
+    function recomputeSize(n) {
+      n.subtreeSize = 1;
+      n.children.forEach(function(c) {
+        recomputeSize(c);
+        n.subtreeSize += c.subtreeSize;
+      });
+    }
+    recomputeSize(node);
+
+    /* Re-layout just this node's subtree within its arc */
+    /* Reset the seed state for consistent sub-layouts */
+    var savedSeed = _s;
+    _s = node.id.length * 1000 + 7; // deterministic per-node seed
+    layoutNode(node, node.arcStart, node.arcEnd);
+    _s = savedSeed;
+
+    /* Recompute pathLen for new children */
+    newChildren.forEach(function(c) {
+      c.pathLen = node.pathLen + node.pos.distanceTo(c.pos);
+    });
+
+    /* Create visuals for new children with animation */
+    var animStart = performance.now();
+    var EXPAND_DUR = 500; // ms
+
+    newChildren.forEach(function(c) {
+      var nr = nodeRadius(c);
+      var mat = makeMaterial(c);
+      var mesh = new THREE.Mesh(new THREE.IcosahedronGeometry(nr, c.code ? 2 : 0), mat);
+      mesh.position.copy(c.pos);
+      mesh.userData = { nodeId: c.id };
+      mesh.scale.set(0, 0, 0);
+      scene.add(mesh);
+      c.mesh = mesh;
+      allMeshes.push(mesh);
+      allNodes.push(c);
+
+      /* Branch from parent */
+      var branch = createBranch(node, c);
+      if (branch) {
+        c.branchParent = branch;
+        allBranches.push(branch);
+        branch.tube.material.opacity = 0;
+        branch.glow.material.opacity = 0;
+      }
+
+      /* Apply current filter state */
+      var effectiveStatus = c.code ? 'supported' : c.status;
+      if (!filterState[effectiveStatus] && !filterState[c.status]) {
+        c.filterVisible = false;
+      }
+    });
+
+    /* Animate expansion */
+    function animateExpand() {
+      var now = performance.now();
+      var t = Math.min((now - animStart) / EXPAND_DUR, 1);
+      var eased = 1 - Math.pow(1 - t, 2.5);
+
+      newChildren.forEach(function(c) {
+        if (c.mesh) {
+          c.mesh.scale.setScalar(eased);
+          if (c.mesh.material.opacity !== undefined) {
+            c.mesh.material.opacity = eased * 0.85;
+          }
+        }
+        if (c.branchParent) {
+          c.branchParent.tube.material.opacity = eased * 0.85;
+          c.branchParent.glow.material.opacity = eased * 0.06;
+        }
+      });
+
+      if (t < 1) requestAnimationFrame(animateExpand);
+    }
+    requestAnimationFrame(animateExpand);
+
+    node.expanded = true;
+    node.expansionChildren = newChildren;
+
+    /* Update the expand label to show "−N" */
+    if (node.expandLabel) {
+      node.expandLabel.userData.el.textContent = '−' + expansionData.length;
+    }
+  }
+
+  function collapseNode(node) {
+    if (!node.expanded) return;
+
+    var animStart = performance.now();
+    var COLLAPSE_DUR = 300;
+    var toRemove = node.expansionChildren.slice();
+
+    function animateCollapse() {
+      var now = performance.now();
+      var t = Math.min((now - animStart) / COLLAPSE_DUR, 1);
+      var eased = 1 - t;
+
+      toRemove.forEach(function(c) {
+        if (c.mesh) {
+          c.mesh.scale.setScalar(eased);
+        }
+        if (c.branchParent) {
+          c.branchParent.tube.material.opacity = eased * 0.85;
+          c.branchParent.glow.material.opacity = eased * 0.06;
+        }
+      });
+
+      if (t >= 1) {
+        /* Actually remove the objects */
+        toRemove.forEach(function(c) {
+          if (c.mesh) { scene.remove(c.mesh); c.mesh.geometry.dispose(); c.mesh.material.dispose(); }
+          if (c.branchParent) {
+            scene.remove(c.branchParent.tube); c.branchParent.tube.geometry.dispose(); c.branchParent.tube.material.dispose();
+            scene.remove(c.branchParent.glow); c.branchParent.glow.geometry.dispose(); c.branchParent.glow.material.dispose();
+            var bi = allBranches.indexOf(c.branchParent);
+            if (bi !== -1) allBranches.splice(bi, 1);
+          }
+          if (c.label) { scene.remove(c.label); }
+
+          var mi = allMeshes.indexOf(c.mesh);
+          if (mi !== -1) allMeshes.splice(mi, 1);
+          var ni = allNodes.indexOf(c);
+          if (ni !== -1) allNodes.splice(ni, 1);
+
+          /* Remove from parent's children */
+          var ci = node.children.indexOf(c);
+          if (ci !== -1) node.children.splice(ci, 1);
+
+          delete nodeMap[c.id];
+        });
+
+        node.subtreeSize = 1;
+        node.children.forEach(function(c) { node.subtreeSize += c.subtreeSize; });
+      } else {
+        requestAnimationFrame(animateCollapse);
+      }
+    }
+    requestAnimationFrame(animateCollapse);
+
+    node.expanded = false;
+    node.expansionChildren = [];
+
+    if (node.expandLabel) {
+      node.expandLabel.userData.el.textContent = '+' + node.expandCount;
+    }
+  }
+
+  /* Click handler for expand/collapse */
+  renderer.domElement.addEventListener('click', function(e) {
+    var rect = renderer.domElement.getBoundingClientRect();
+    var clickMouse = new THREE.Vector2(
+      ((e.clientX - rect.left) / rect.width) * 2 - 1,
+      -((e.clientY - rect.top) / rect.height) * 2 + 1
+    );
+    raycaster.setFromCamera(clickMouse, camera);
+    var hits = raycaster.intersectObjects(allMeshes, false);
+    if (hits.length > 0 && hits[0].object.userData.nodeId) {
+      var clickedNode = nodeMap[hits[0].object.userData.nodeId];
+      if (clickedNode && clickedNode.expandCount > 0) {
+        expandNode(clickedNode);
+      }
+    }
+  });
+
+  /* ══════════════════════════════════════════════════════════
+   * §13 — FILTER TOGGLES
+   *
+   * Each pill button toggles visibility for a status category.
+   * "Supported" is a pseudo-status for nodes with a locale code.
+   * Toggling OFF fades nodes/branches to opacity 0.05 rather
+   * than removing them — this keeps layout stable.
+   * ══════════════════════════════════════════════════════════ */
+  var filterState = {
+    proto: true,
+    common: true,
+    endangered: true,
+    dead: true,
+    supported: true
+  };
+
+  /* Filter pill colors — background when active */
+  var filterColors = {
+    proto: 'var(--filter-proto)',
+    common: 'var(--filter-living)',
+    endangered: 'var(--filter-endangered)',
+    dead: 'var(--filter-extinct)',
+    supported: 'var(--filter-supported)'
+  };
+
+  function updateFilterPills() {
+    document.querySelectorAll('.filter-pill').forEach(function(pill) {
+      var f = pill.getAttribute('data-filter');
+      var active = filterState[f];
+      pill.setAttribute('data-active', active ? 'true' : 'false');
+      if (active) {
+        pill.style.background = filterColors[f];
+        pill.style.borderColor = filterColors[f];
+      } else {
+        pill.style.background = 'transparent';
+        pill.style.borderColor = 'var(--border)';
+      }
+    });
+  }
+
+  function applyFilters() {
+    allNodes.forEach(function(node) {
+      /* Determine the effective filter category */
+      var category = node.code ? 'supported' : node.status;
+      var visible = filterState[category];
+      /* For "supported" nodes, also consider common filter since they are living */
+      if (node.code && !filterState.supported) visible = false;
+
+      node.filterVisible = visible;
+
+      if (node.mesh && node.depth > 0) {
+        if (visible) {
+          node.mesh.material.opacity = node.mesh.userData.origOpacity || 0.85;
+        } else {
+          /* Store original opacity on first filter */
+          if (node.mesh.userData.origOpacity === undefined) {
+            node.mesh.userData.origOpacity = node.mesh.material.opacity;
+          }
+          node.mesh.material.opacity = 0.05;
+        }
+      }
+
+      if (node.branchParent) {
+        if (visible) {
+          node.branchParent.tube.material.opacity = 0.85;
+          node.branchParent.glow.material.opacity = 0.06;
+        } else {
+          node.branchParent.tube.material.opacity = 0.05;
+          node.branchParent.glow.material.opacity = 0.01;
+        }
+      }
+
+      if (node.label) {
+        node.label.userData.el.style.opacity = visible ? '1' : '0.08';
+      }
+    });
+  }
+
+  document.querySelectorAll('.filter-pill').forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      var f = pill.getAttribute('data-filter');
+      filterState[f] = !filterState[f];
+      updateFilterPills();
+      applyFilters();
+    });
+  });
+
+  /* Initialize pill styles */
+  updateFilterPills();
+
+  /* ══════════════════════════════════════════════════════════
+   * §14 — SEARCH
+   *
+   * Debounced search finds matching nodes, computes ancestor
+   * paths from root, dims non-path elements, highlights path
+   * branches with gold. Auto-expands collapsed parents.
+   * ══════════════════════════════════════════════════════════ */
+  var searchInput = document.getElementById('search-input');
+  var searchResultsEl = document.getElementById('search-results');
+  var searchTimer = null;
+  var searchActive = false;
+  var searchOriginals = []; // stored opacity values to restore
+
+  function getAncestorPath(node) {
+    var path = [];
+    var cur = node;
+    while (cur) {
+      path.push(cur.id);
+      if (cur.parentId && nodeMap[cur.parentId]) {
+        cur = nodeMap[cur.parentId];
+      } else {
+        break;
+      }
+    }
+    return path;
+  }
+
+  function clearSearch() {
+    searchActive = false;
+    searchResultsEl.style.display = 'none';
+
+    /* Restore all opacities */
+    allNodes.forEach(function(node) {
+      if (node.mesh && node.depth > 0) {
+        if (node.filterVisible) {
+          node.mesh.material.opacity = node.mesh.userData.origOpacity || 0.85;
+        }
+      }
+      if (node.branchParent && node.filterVisible) {
+        node.branchParent.tube.material.opacity = 0.85;
+        node.branchParent.glow.material.opacity = 0.06;
+        /* Restore branch color */
+        var fc = new THREE.Color(getFC(node.id));
+        node.branchParent.tube.material.color.copy(fc);
+        node.branchParent.tube.material.emissive.copy(fc);
+        node.branchParent.tube.material.emissiveIntensity = 0.4;
+        node.branchParent.glow.material.color.copy(fc);
+      }
+      if (node.label && node.filterVisible) {
+        node.label.userData.el.style.opacity = '1';
+      }
+    });
+  }
+
+  function doSearch(query) {
+    if (query.length < 2) {
+      clearSearch();
+      return;
+    }
+
+    searchActive = true;
+    var q = query.toLowerCase();
+    var matchCount = 0;
+    var pathNodeIds = {};
+
+    /* Find all matches and collect their ancestor paths */
+    Object.keys(nodeMap).forEach(function(id) {
+      var n = nodeMap[id];
+      if (n.name.toLowerCase().indexOf(q) !== -1) {
+        matchCount++;
+        var path = getAncestorPath(n);
+        path.forEach(function(pid) { pathNodeIds[pid] = true; });
+
+        /* Auto-expand if the match is in an expansion group */
+        if (n.isExpansion) {
+          /* Already visible since it's in nodeMap */
+        }
+      }
+    });
+
+    /* Also check TREE_EXPANSIONS for matches in collapsed groups */
+    if (window.TREE_EXPANSIONS) {
+      Object.keys(window.TREE_EXPANSIONS).forEach(function(parentId) {
+        var parentNode = nodeMap[parentId];
+        if (!parentNode || parentNode.expanded) return;
+
+        window.TREE_EXPANSIONS[parentId].forEach(function(entry) {
+          if (entry[1].toLowerCase().indexOf(q) !== -1) {
+            matchCount++;
+            /* Auto-expand this parent */
+            expandNode(parentNode);
+            /* After expansion, add the match's path */
+            setTimeout(function() {
+              var childNode = nodeMap[entry[0]];
+              if (childNode) {
+                var path = getAncestorPath(childNode);
+                path.forEach(function(pid) { pathNodeIds[pid] = true; });
+                /* Re-apply dimming after expansion */
+                applySearchDimming(pathNodeIds);
+              }
+            }, 100);
+          }
+        });
+      });
+    }
+
+    applySearchDimming(pathNodeIds);
+
+    searchResultsEl.textContent = matchCount + ' match' + (matchCount !== 1 ? 'es' : '');
+    searchResultsEl.style.display = matchCount > 0 ? 'block' : 'none';
+  }
+
+  function applySearchDimming(pathNodeIds) {
+    allNodes.forEach(function(node) {
+      var onPath = pathNodeIds[node.id];
+
+      if (node.mesh && node.depth > 0) {
+        if (onPath) {
+          node.mesh.material.opacity = node.mesh.userData.origOpacity || 0.85;
+        } else {
+          node.mesh.material.opacity = 0.08;
+        }
+      }
+
+      if (node.branchParent) {
+        if (onPath) {
+          /* Highlight path branches with gold */
+          node.branchParent.tube.material.color.set(0xf0b429);
+          node.branchParent.tube.material.emissive.set(0xf0b429);
+          node.branchParent.tube.material.emissiveIntensity = 1.2;
+          node.branchParent.tube.material.opacity = 1.0;
+          node.branchParent.glow.material.color.set(0xf0b429);
+          node.branchParent.glow.material.opacity = 0.15;
+        } else {
+          node.branchParent.tube.material.opacity = 0.08;
+          node.branchParent.glow.material.opacity = 0.01;
+        }
+      }
+
+      if (node.label) {
+        node.label.userData.el.style.opacity = onPath ? '1' : '0.1';
+      }
+    });
+  }
+
+  searchInput.addEventListener('input', function() {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function() {
+      var q = searchInput.value.trim();
+      doSearch(q);
+    }, 300);
+  });
+
+  /* ══════════════════════════════════════════════════════════
+   * §15 — GROWTH ANIMATION
+   *
+   * On load, nodes appear in a cascade based on their cumulative
+   * pathLen from root. The root orb fades in first (1.2s), then
+   * nodes grow outward over CASCADE_DUR seconds. Each node's
+   * appearance time = (pathLen / maxPath) * CASCADE_DUR.
+   *
+   * Easing: 1 - (1 - t)^2.5 gives a satisfying deceleration.
+   * ══════════════════════════════════════════════════════════ */
+  var CASCADE_DUR = 5.0;
+  var growthStart = performance.now();
+  var growthComplete = false;
+
+  function updateGrowth(now) {
+    var elapsed = (now - growthStart) / 1000; // seconds
+
+    /* Root orb fades in over 1.2s first */
+    var rootT = Math.min(elapsed / 1.2, 1);
+    rootOrb.material.opacity = rootT * 0.9;
+    rootOrb.scale.setScalar(rootT);
+
+    if (elapsed < 0.3) return; // brief pause before branches start
+
+    var growElapsed = elapsed - 0.3;
+
+    allNodes.forEach(function(node) {
+      if (node.depth === 0) return;
+
+      /* growT = when this node should start appearing (0..CASCADE_DUR) */
+      var nodeGrowT = (node.pathLen / maxPath) * CASCADE_DUR;
+      var localT = (growElapsed - nodeGrowT) / 0.8; // each node takes 0.8s to fully appear
+      localT = Math.max(0, Math.min(1, localT));
+
+      /* Easing function */
+      var eased = 1 - Math.pow(1 - localT, 2.5);
+
+      if (node.mesh) {
+        node.mesh.scale.setScalar(eased);
+        node.mesh.material.opacity = eased * 0.85;
+        /* Store as original opacity for filter restore */
+        if (eased >= 0.99) {
+          node.mesh.userData.origOpacity = 0.85;
+        }
+      }
+
+      if (node.branchParent) {
+        node.branchParent.tube.material.opacity = eased * 0.85;
+        node.branchParent.glow.material.opacity = eased * 0.06;
+
+        /* Animate branch drawRange to "grow" the tube */
+        var tubePosCount = node.branchParent.tube.geometry.attributes.position.count;
+        var indexCount = node.branchParent.tube.geometry.index ?
+                         node.branchParent.tube.geometry.index.count : tubePosCount;
+        node.branchParent.tube.geometry.setDrawRange(0, Math.floor(eased * indexCount));
+        node.branchParent.glow.geometry.setDrawRange(0, Math.floor(eased * indexCount));
+      }
+
+      /* Reveal label once node is mostly visible */
+      if (node.label && eased > 0.5) {
+        node.label.userData.el.style.display = 'block';
+      }
+    });
+
+    /* Check if growth is complete */
+    if (growElapsed > CASCADE_DUR + 1.5) {
+      growthComplete = true;
+      /* Ensure all draw ranges are fully open and labels shown */
+      allNodes.forEach(function(node) {
+        if (node.branchParent) {
+          var indexCount = node.branchParent.tube.geometry.index ?
+                           node.branchParent.tube.geometry.index.count :
+                           node.branchParent.tube.geometry.attributes.position.count;
+          node.branchParent.tube.geometry.setDrawRange(0, indexCount);
+          node.branchParent.glow.geometry.setDrawRange(0, indexCount);
+        }
+        if (node.mesh && node.depth > 0) {
+          node.mesh.scale.setScalar(1);
+          node.mesh.material.opacity = 0.85;
+          node.mesh.userData.origOpacity = 0.85;
+        }
+        if (node.label) {
+          node.label.userData.el.style.display = 'block';
+        }
+      });
+    }
+  }
+
+  /* ══════════════════════════════════════════════════════════
+   * §16 — MAIN ANIMATION LOOP
+   * ══════════════════════════════════════════════════════════ */
+  var animTime = 0;
+
+  function animate() {
+    requestAnimationFrame(animate);
+    animTime += 0.016;
+    controls.update();
+
+    var now = performance.now();
+
+    /* Growth animation (runs once on load) */
+    if (!growthComplete) {
+      updateGrowth(now);
+    }
+
+    /* ── LABEL LOD ──
+     * Show/hide labels based on camera distance to each label position.
+     * Priority 0 (major families): always visible
+     * Priority 1 (sub-families + supported): visible within 300 units
+     * Priority 2 (all named languages): visible within 150 units
+     * Labels also fade in/out smoothly based on distance. */
+    if (growthComplete && !searchActive) {
+      var camPos = camera.position;
+      var LOD_DISTANCES = [Infinity, 300, 150];
+
+      for (var li = 0; li < allLabels.length; li++) {
+        var lbl = allLabels[li];
+        var lblNode = nodeMap[lbl.userData.nodeId];
+        /* Skip labels for filtered-out nodes */
+        if (lblNode && !lblNode.filterVisible) continue;
+
+        var dist = camPos.distanceTo(lbl.position);
+        var maxDist = LOD_DISTANCES[lbl.userData.priority] || 150;
+        var visible = dist < maxDist;
+
+        if (visible) {
+          lbl.userData.el.style.display = 'block';
+          /* Fade: fully opaque at half-distance, fade at edge */
+          var fade = Math.min(1, 2 * (1 - dist / maxDist));
+          lbl.userData.el.style.opacity = Math.max(0.3, fade).toFixed(2);
+        } else {
+          lbl.userData.el.style.display = 'none';
+        }
+      }
+    }
+
+    /* ── TOOLTIP (raycast on hover) ── */
+    raycaster.setFromCamera(mouse, camera);
+    var hits = raycaster.intersectObjects(allMeshes, false);
+
+    if (hits.length > 0 && hits[0].object.userData.nodeId) {
+      var hn = nodeMap[hits[0].object.userData.nodeId];
+      if (hn) {
+        hoveredNode = hn;
+
+        /* Format status label */
+        var statusLabel = hn.code ? 'Supported' :
+          hn.status.charAt(0).toUpperCase() + hn.status.slice(1);
+        var dateStr = formatDate(hn.date);
+
+        tooltip.style.display = 'block';
+        tooltip.innerHTML =
+          '<strong>' + hn.name + '</strong><br>' +
+          '<span style="color:var(--text-muted)">' + statusLabel + '</span>' +
+          (hn.code ? ' <span style="font-family:var(--font-mono);color:var(--blue)">[' + hn.code + ']</span>' : '') +
+          '<br><span style="color:var(--text-dim)">Depth ' + hn.depth + ' · ' + dateStr + '</span>';
+
+        var rect = container.getBoundingClientRect();
+        tooltip.style.left = ((mouse.x + 1) / 2 * rect.width + 14) + 'px';
+        tooltip.style.top = ((1 - mouse.y) / 2 * rect.height - 14) + 'px';
+
+        /* Stop auto-rotate while hovering to let user inspect */
+        controls.autoRotate = false;
+      }
+    } else {
+      if (hoveredNode) {
+        hoveredNode = null;
+      }
+      tooltip.style.display = 'none';
+      controls.autoRotate = true;
+    }
+
+    /* ── RENDER ── */
+    composer.render();
+    labelRenderer.render(scene, camera);
+  }
+
+  animate();
+
+  /* ══════════════════════════════════════════════════════════
+   * §17 — RESIZE HANDLER
+   * ══════════════════════════════════════════════════════════ */
+  window.addEventListener('resize', function() {
+    var nw = container.clientWidth;
+    var nh = container.clientHeight || 700;
+    camera.aspect = nw / nh;
+    camera.updateProjectionMatrix();
+    renderer.setSize(nw, nh);
+    composer.setSize(nw, nh);
+    labelRenderer.setSize(nw, nh);
+  });
+
+  })();
+  </script>
+</body>
+</html>

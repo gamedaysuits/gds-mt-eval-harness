@@ -1,0 +1,4323 @@
+{
+  "corpus_id": "tatoeba-eng-zsm-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "zsm",
+    "source_name": "English",
+    "target_name": "Malay"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:14:08.637012+00:00",
+  "entry_count": 148,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13849842",
+      "source": "Gaman died yesterday.",
+      "reference": "Gaman telah meninggal dunia kelmarin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13849842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "13849843",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13849842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13849842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_12623532",
+      "source": "Please pay here.",
+      "reference": "Sila bayar di sini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12623532",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "12623531",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12623532",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12623532"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_12507042",
+      "source": "Have you plowed?",
+      "reference": "Sudahkah awak membajak?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12507042",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "12507039",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12507042",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12507042"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11429062",
+      "source": "Rima walked slowly.",
+      "reference": "Rima berjalan dengan perlahan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11429062",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11971475",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11429062",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11429062"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11381374",
+      "source": "She is studying.",
+      "reference": "Dia sedang belajar sekarang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11381374",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "751395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11381374",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11381374"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11035980",
+      "source": "Jayjay ate something.",
+      "reference": "Jayjay makan sesuatu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11035980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11035979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11035980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11035980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10796968",
+      "source": "Kaamatan ensouls natural.",
+      "reference": "Kaamatan menjiwai semulajadi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10796968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10796964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10796968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10796968"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_10736546",
+      "source": "He seemed blessed.",
+      "reference": "Dia kelihatan diberkati.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10736546",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10736545",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10736546",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10736546"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10145722",
+      "source": "Jon buys fish.",
+      "reference": "Jon membeli ikan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10145722",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6485315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10145722",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10145722"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10121391",
+      "source": "I am you.",
+      "reference": "Aku adalah kamu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10121391",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10506537",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10121391",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10121391"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_10110249",
+      "source": "Everyone admires him.",
+      "reference": "Semua orang mengaguminya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10110249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4839559",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10110249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10110249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10087668",
+      "source": "Farmers work hard.",
+      "reference": "Para peladang bekerja keras.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10087668",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10729077",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10087668",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10087668"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10081563",
+      "source": "Finish it quickly!",
+      "reference": "Cepatlah bersiap!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10081563",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "2391836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10081563",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10081563"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_9846713",
+      "source": "Everyone went in.",
+      "reference": "Semua orang memasuki tempat itu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9846713",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10688614",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9846713",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9846713"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9846712",
+      "source": "Everybody went in.",
+      "reference": "Semua orang memasuki tempat itu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9846712",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10688614",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9846712",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9846712"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_9844452",
+      "source": "Sami has money.",
+      "reference": "Sami mempunyai wang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9844452",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8677372",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9844452",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9844452"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9419373",
+      "source": "You started it!",
+      "reference": "Awak yang memulakannya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9419373",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10657712",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9419373",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9419373"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9418559",
+      "source": "Tom has hypertension.",
+      "reference": "Tom ada darah tinggi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9418559",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8223035",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9418559",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9418559"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_9190520",
+      "source": "Fold the towel.",
+      "reference": "Lipat tuala.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9190520",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10508974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9190520",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9190520"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8992478",
+      "source": "I hug myself.",
+      "reference": "Saya memeluk diri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8992478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8998274",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8992478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8992478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8978838",
+      "source": "Open those doors.",
+      "reference": "Buka semua pintu-pintu ini.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8978838",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10657782",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8978838",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8978838"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8908157",
+      "source": "Is Tom hoarse?",
+      "reference": "Adakah Tom serak?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8908157",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8908208",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8908157",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8908157"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8830808",
+      "source": "Tom likes milk.",
+      "reference": "Tom gemarkan susu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8830808",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10732652",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8830808",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8830808"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8794857",
+      "source": "Call me, please.",
+      "reference": "Sila hubungi saya.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8794857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "961154",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8794857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8794857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8792954",
+      "source": "She studied abroad.",
+      "reference": "Dia belajar di luar negara.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8792954",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10660018",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8792954",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8792954"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8792932",
+      "source": "They left earlier.",
+      "reference": "Mereka pergi sebelumnya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8792932",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825186",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8792932",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8792932"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8792921",
+      "source": "I left earlier.",
+      "reference": "Saya pergi sebelum itu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8792921",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825176",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8792921",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8792921"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8716821",
+      "source": "A wooden bowl.",
+      "reference": "Semangkuk kayu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8716821",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "2915622",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8716821",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8716821"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8538077",
+      "source": "They attended it.",
+      "reference": "Mereka menghadiri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8538077",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8538224",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8538077",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8538077"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8480570",
+      "source": "He began gasping.",
+      "reference": "Dia mula tersentak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8480570",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9547494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8480570",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8480570"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8480569",
+      "source": "He began dancing.",
+      "reference": "Dia mula menari.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8480569",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9547471",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8480569",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8480569"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8480568",
+      "source": "He became uneasy.",
+      "reference": "Dia menjadi tidak selesa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8480568",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9547450",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8480568",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8480568"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8480564",
+      "source": "He became afraid.",
+      "reference": "Dia menjadi takut.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8480564",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9502125",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8480564",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8480564"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8479454",
+      "source": "He moved closer.",
+      "reference": "Dia semakin mendekati.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8479454",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9695857",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8479454",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8479454"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8479248",
+      "source": "He left earlier.",
+      "reference": "Dia pergi sebelum itu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8479248",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825175",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8479248",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8479248"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8274835",
+      "source": "Malaysia borders Indonesia.",
+      "reference": "Malaysia bersempadan dengan Indonesia.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8274835",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8274850",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8274835",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8274835"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.0
+      }
+    },
+    {
+      "id": "tatoeba_8173563",
+      "source": "Let him wait.",
+      "reference": "Biar dia tunggu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8173563",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9682981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8173563",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8173563"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7627621",
+      "source": "Catch the thief!",
+      "reference": "Tangkap pencuri itu!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7627621",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3936331",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7627621",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7627621"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7593076",
+      "source": "He looks gay.",
+      "reference": "Dia nampak macam pondan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7593076",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "5900233",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7593076",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7593076"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7593068",
+      "source": "Seawater tastes salty.",
+      "reference": "Rasa air laut masin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7593068",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "734497",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7593068",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7593068"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7452228",
+      "source": "That sometimes happens.",
+      "reference": "Ia berlaku kadang-kadang.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7452228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "1476523",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7452228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7452228"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_7279029",
+      "source": "Sami bought everything.",
+      "reference": "Sami membeli kesemuanya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7279029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9689067",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7279029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7279029"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_7150738",
+      "source": "Sami had money.",
+      "reference": "سامي ممڤوڽاي دوئيت.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7150738",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8677368",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7150738",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7150738"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7113992",
+      "source": "I continued speaking.",
+      "reference": "Saya terus bercakap.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7113992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10657670",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7113992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7113992"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_6949882",
+      "source": "There are none.",
+      "reference": "Tidak ada.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6949882",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3936616",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6949882",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6949882"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6672694",
+      "source": "Canada borders Alaska.",
+      "reference": "Kanada bersempadan dengan Alaska.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6672694",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8274821",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6672694",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6672694"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6458279",
+      "source": "Cat eats bread.",
+      "reference": "Kucing makan roti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6458279",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6458278",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6458279",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6458279"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6392981",
+      "source": "Two tickets, please.",
+      "reference": "Berikan saya dua tiket.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6392981",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9724553",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6392981",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6392981"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_6358451",
+      "source": "Is French easy?",
+      "reference": "Adakah Bahasa Perancis mudah dipelajari?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6358451",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10663746",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6358451",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6358451"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6357358",
+      "source": "Tom seemed satisfied.",
+      "reference": "Tom kelihatan puas.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6357358",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10727681",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6357358",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6357358"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_6203836",
+      "source": "Tomorrow is Wednesday.",
+      "reference": "Esok Hari Rabu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6203836",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825140",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6203836",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6203836"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6103699",
+      "source": "Layla remained skeptical.",
+      "reference": "Layla masih ragu-ragu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6103699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10851331",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6103699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6103699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_6095096",
+      "source": "Wealth breeds arrogance.",
+      "reference": "Kekayaan melahirkan kesombongan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6095096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10260876",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6095096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6095096"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_6094795",
+      "source": "Layla wanted love.",
+      "reference": "Laila mahu akan cinta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6094795",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10152833",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6094795",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6094795"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5853267",
+      "source": "I was perplexed.",
+      "reference": "Saya keliru.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5853267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10732615",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5853267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5853267"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5850445",
+      "source": "I kept cleaning.",
+      "reference": "Saya terus membersihkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5850445",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10586285",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5850445",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5850445"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5769646",
+      "source": "I hate tests.",
+      "reference": "Saya benci ujian.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5769646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10509932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5769646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5769646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5758307",
+      "source": "My blood boiled.",
+      "reference": "Darah saya mendidih.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5758307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10656832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5758307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5758307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5401684",
+      "source": "We have eaten.",
+      "reference": "Kami sudah makan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5401684",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4560166",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5401684",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5401684"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5295405",
+      "source": "Advertising is everywhere.",
+      "reference": "Iklan ada di mana jua.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5295405",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9167443",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5295405",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5295405"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_5205264",
+      "source": "It is hot.",
+      "reference": "Panasnya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5205264",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6469709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5205264",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5205264"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Saya sayang awak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3936278",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4833126",
+      "source": "Can they try?",
+      "reference": "Dapatkah mereka cuba?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4833126",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8698064",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4833126",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4833126"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4771536",
+      "source": "Please come in!",
+      "reference": "Silakan masuk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4771536",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "5900235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4771536",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4771536"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4736846",
+      "source": "One more time!",
+      "reference": "Bir kere daha!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4736846",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "5071891",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4736846",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4736846"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4650860",
+      "source": "I like yellow.",
+      "reference": "Saya suka kuning.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4650860",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10512583",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4650860",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4650860"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4609729",
+      "source": "Served you right!",
+      "reference": "Padan Muka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4609729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4609730",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4609729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4609729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_4501200",
+      "source": "Tom immediately obeyed.",
+      "reference": "Tom segera menurut.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4501200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9590918",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4501200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4501200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_4499424",
+      "source": "I hugged Tom.",
+      "reference": "Saya memelukkan Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4499424",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9888991",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4499424",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4499424"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4495417",
+      "source": "Good luck, Tom.",
+      "reference": "Semoga berjaya, Tom.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4495417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10157189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4495417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4495417"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4493755",
+      "source": "We have ponchos.",
+      "reference": "Kami ada poncho.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4493755",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10337841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4493755",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4493755"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4397525",
+      "source": "We all cheered.",
+      "reference": "Kami semua bersorak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397525",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397525",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397525"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4397522",
+      "source": "We belong here.",
+      "reference": "Kami tergolong di sini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186430",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397522"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4397514",
+      "source": "We needed that.",
+      "reference": "Kami memerlukannya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4397513",
+      "source": "We never agree.",
+      "reference": "Kami tidak setuju.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186353",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397513"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4397512",
+      "source": "We were broke.",
+      "reference": "Kami telah dirosak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397512",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186352",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397512",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397512"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4397511",
+      "source": "We were robbed.",
+      "reference": "Kami telah dirompak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397511",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397511",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397511"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4397510",
+      "source": "We will fight.",
+      "reference": "Kita akan berjuang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4397510",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9186340",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4397510",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4397510"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4144766",
+      "source": "Everyone was drunk.",
+      "reference": "Semua orang sedang mabuk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4144766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10655142",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4144766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4144766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_4135286",
+      "source": "Tom hugged me.",
+      "reference": "Tom memeluk saya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4135286",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6402682",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4135286",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4135286"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3970609",
+      "source": "Correct the mistakes.",
+      "reference": "Betulkan kesalahan itu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3970609",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "960612",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3970609",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3970609"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3962745",
+      "source": "He is studying.",
+      "reference": "Dia sedang belajar sekarang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3962745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "751395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3962745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3962745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3921663",
+      "source": "Tom pinched Mary.",
+      "reference": "Tom mencubit Mary.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3921663",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10272833",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3921663",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3921663"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3919561",
+      "source": "Someone attacked us.",
+      "reference": "Seseorang menyerang kami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3919561",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10599390",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3919561",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3919561"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3909259",
+      "source": "We surrounded him.",
+      "reference": "Kami telah mengepungnya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3909259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9713964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3909259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3909259"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3906092",
+      "source": "Talk to them.",
+      "reference": "Cakaplah kepada mereka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3906092",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9576400",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3906092",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3906092"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3904294",
+      "source": "I watched them.",
+      "reference": "Saya memerhatikan mereka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3904294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8898348",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3904294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3904294"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3825044",
+      "source": "Everyone is drunk.",
+      "reference": "Semua orang mabuk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3825044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3942300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3825044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3825044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3824187",
+      "source": "It still happens.",
+      "reference": "Ia masih berlaku.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3824187",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3942060",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3824187",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3824187"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3820477",
+      "source": "Is this suitable?",
+      "reference": "Adakah ini sesuai?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3820477",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11029406",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3820477",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3820477"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3733277",
+      "source": "Nobody will care.",
+      "reference": "Tiada siapa pun akan kisah.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3733277",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9700584",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3733277",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3733277"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3668475",
+      "source": "Montana borders Canada.",
+      "reference": "Montana bersempadan dengan Kanada.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3668475",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8274795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3668475",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3668475"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_3436799",
+      "source": "Tom was insincere.",
+      "reference": "Tom tidak ikhlas dahulu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3436799",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "7776220",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3436799",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3436799"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3430986",
+      "source": "I love love.",
+      "reference": "Saya mencintai cinta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3430986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4839640",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3430986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3430986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3246662",
+      "source": "Enough is enough.",
+      "reference": "Cukup cukup lah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3246662",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "678992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3246662",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3246662"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3172409",
+      "source": "Are you biased?",
+      "reference": "Awak berat sebelah?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3172409",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10973403",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3172409",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3172409"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3095224",
+      "source": "I just ate.",
+      "reference": "Saya baru sudah makan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3095224",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "5900288",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3095224",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3095224"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3014271",
+      "source": "Onwards, to glory!",
+      "reference": "Ke depan, untuk kemuliaan!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3014271",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3014273",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3014271",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3014271"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2981555",
+      "source": "Read and translate.",
+      "reference": "Baca dan menterjemah.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2981555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8652808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2981555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2981555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2955490",
+      "source": "Tom advised caution.",
+      "reference": "Tom dinasihatkan amaran.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2955490",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4623273",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2955490",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2955490"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2873712",
+      "source": "I translated one.",
+      "reference": "Saya menerjemahkan satu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2873712",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8652804",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2873712",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2873712"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2868380",
+      "source": "I play soccer.",
+      "reference": "Saya main bola.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2868380",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9127601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2868380",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2868380"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2867295",
+      "source": "Mary found Tom.",
+      "reference": "Mary menemui Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2867295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11074568",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2867295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2867295"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2855671",
+      "source": "Mary started that.",
+      "reference": "Mary yang memulakannya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2855671",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9689046",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2855671",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2855671"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "reference": "Aku perlu pertolongan.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3351691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2763638",
+      "source": "You lost time.",
+      "reference": "Habislah masa saya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2763638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4589945",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2763638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2763638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2719776",
+      "source": "Is this edible?",
+      "reference": "Ini boleh dimakan kah?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2719776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9933927",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2719776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2719776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2692526",
+      "source": "Everything is ready!",
+      "reference": "Semua dah siap.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2692526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10995052",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2692526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2692526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2594384",
+      "source": "Praise the Lord!",
+      "reference": "Syukur pada Allah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2594384",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10126213",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2594384",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2594384"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2583378",
+      "source": "We think alike.",
+      "reference": "Saya setuju dengan kamu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2583378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "972191",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2583378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2583378"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2465875",
+      "source": "Arabic is difficult!",
+      "reference": "Bahasa arab susah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2465875",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10508972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2465875",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2465875"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2460895",
+      "source": "Are you vegetarian?",
+      "reference": "Adakah anda vegetarian?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2460895",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8569454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2460895",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2460895"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2451686",
+      "source": "I teach French.",
+      "reference": "Saya mengajar bahasa Perancis.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451686",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3351761",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451686",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451686"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2436476",
+      "source": "I regret nothing.",
+      "reference": "Saya tak menyesal langsung.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2436476",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3942251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2436476",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2436476"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2425776",
+      "source": "I am busy.",
+      "reference": "Saya sibuk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2425776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4573764",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2425776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2425776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2373843",
+      "source": "Maria walks slowly.",
+      "reference": "Maria berjalan kaki dengan perlahan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2373843",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "2383982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2373843",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2373843"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Saya sayang awak.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3936278",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2257536",
+      "source": "They both laugh.",
+      "reference": "Mereka berdua ketawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2257536",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11220435",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2257536",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2257536"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2255239",
+      "source": "You started it.",
+      "reference": "Awak yang memulakannya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2255239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10657712",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2255239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2255239"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2254573",
+      "source": "Where is that?",
+      "reference": "Mana dia?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3351796",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2254558",
+      "source": "What has happened?",
+      "reference": "Ada apa?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254558",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10158859",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254558",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254558"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2253855",
+      "source": "Wait one moment.",
+      "reference": "Tunggu sebentar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2253855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3942138",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2253855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2253855"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2249801",
+      "source": "Please look again.",
+      "reference": "Sila lihat kembali.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249801",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8662774",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249801",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249801"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2249560",
+      "source": "Look over there.",
+      "reference": "Tengok disana!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249560",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6485253",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249560",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249560"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2249513",
+      "source": "Knock it off.",
+      "reference": "Hentikan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4688327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249513"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2248435",
+      "source": "Is everyone OK?",
+      "reference": "Semua okey tak?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248435",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "6479732",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248435",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248435"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2247621",
+      "source": "I will translate.",
+      "reference": "Saya akan terjemahkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247621",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8652800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247621",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247621"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2247420",
+      "source": "I tested everything.",
+      "reference": "Saya sudah menguji kesemuanya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247420",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10509930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247420",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247420"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2247392",
+      "source": "I risked everything.",
+      "reference": "Saya mempertaruhkan segala-galanya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247392",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10870570",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247392",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247392"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2246002",
+      "source": "I need cash.",
+      "reference": "Saya perlukan wang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2246002",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8658129",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2246002",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2246002"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2246000",
+      "source": "I need assistance.",
+      "reference": "Saya perlukan bantuan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2246000",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "4839597",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2246000",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2246000"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2245632",
+      "source": "I called earlier.",
+      "reference": "Saya memanggil sebelumnya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245632",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825169",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245632",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245632"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2245408",
+      "source": "Drink some water.",
+      "reference": "Minum air.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245408",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "7776171",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245408",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245408"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2245287",
+      "source": "Does that hurt?",
+      "reference": "Adakah itu menyakitkan?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245287",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "2913032",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245287",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245287"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2245265",
+      "source": "Do come in.",
+      "reference": "Silakan masuk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "5900235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245265"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2245061",
+      "source": "Can you translate?",
+      "reference": "Bolehkah anda menerjemahkan?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245061",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8652796",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245061",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245061"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2245051",
+      "source": "Can you cancel?",
+      "reference": "Bolehkah anda membatalkan?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245051",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10903253",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245051",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245051"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2241410",
+      "source": "We must wait.",
+      "reference": "Kita mesti tunggu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "2913001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241410"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2241159",
+      "source": "We met earlier.",
+      "reference": "Kami bertemu sebelumnya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241159",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8825164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241159",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241159"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2237411",
+      "source": "Tom needed time.",
+      "reference": "Tom perlukan masa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237411",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10732593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237411",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237411"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2237075",
+      "source": "Tom kept cleaning.",
+      "reference": "Tom terus membersihkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10586292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237075"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2236832",
+      "source": "Tom is reluctant.",
+      "reference": "Tom enggan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9029362",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236832"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2236324",
+      "source": "Tom got fired.",
+      "reference": "Tom telah dipecat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10688590",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2213956",
+      "source": "Please translate this.",
+      "reference": "Sila terjemahkan ini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2213956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "8652793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2213956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2213956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_2150279",
+      "source": "I feel powerless.",
+      "reference": "Saya berasa tidak berdaya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2150279",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "11084649",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2150279",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2150279"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2147545",
+      "source": "Where is she?",
+      "reference": "Mana dia?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2147545",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "3351796",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2147545",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2147545"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2126230",
+      "source": "Many admire her.",
+      "reference": "Ramai yang mengaguminya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2126230",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "10870392",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2126230",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2126230"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2115634",
+      "source": "He avoids me.",
+      "reference": "Dia mengelakkan saya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2115634",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zsm",
+        "target_sentence_id": "9133871",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2115634",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2115634"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

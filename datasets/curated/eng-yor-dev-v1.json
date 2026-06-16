@@ -1,0 +1,2000 @@
+{
+  "corpus_id": "tatoeba-eng-yor-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "yor",
+    "source_name": "English",
+    "target_name": "Yoruba"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:33:17.646661+00:00",
+  "entry_count": 68,
+  "domains": [
+    "conv"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_11207167",
+      "source": "I want trousers.",
+      "reference": "Mo fẹ́ ṣòkòtò.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11207167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207166",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11207167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11207167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11207163",
+      "source": "We are Americans.",
+      "reference": "Amẹ́ríkà ni wá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11207163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11207163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11207163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10739161",
+      "source": "Welcome back home.",
+      "reference": "Kaabo padà sí ilé",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10739161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "10739593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10739161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10739161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Mo nifẹẹ rẹ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3808207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3861611",
+      "source": "Water is life.",
+      "reference": "Omi ni ayé.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3861611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "5978173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3861611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3861611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3558092",
+      "source": "He is Portuguese.",
+      "reference": "Ó jẹ́ ọmọ ilẹ̀ Potogí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3558092",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984165",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3558092",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3558092"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3154996",
+      "source": "It surprises me.",
+      "reference": "Ó yà mí l'ẹ́nu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3154996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3154998",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3154996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3154996"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "Mo fẹ́ lọ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3335168",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Mo nifẹẹ rẹ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3808207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2064575",
+      "source": "Who is Emily?",
+      "reference": "Ta ni Emily?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2064575",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3713961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2064575",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2064575"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_773503",
+      "source": "I have brothers.",
+      "reference": "Mo ní àwọn arákunrin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "773503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3714005",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "773503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/773503"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_724453",
+      "source": "It is midday.",
+      "reference": "Agogo mejila ọsan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "724453",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3179086",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "724453",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/724453"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_428379",
+      "source": "Who is it?",
+      "reference": "Ìwọ ta ni?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "428379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "428379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/428379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "Bawo ni?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3348007",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_305344",
+      "source": "They are doctors.",
+      "reference": "Onísègùn ni wọ́n.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "305344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "305344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/305344"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_299788",
+      "source": "He is eating.",
+      "reference": "Ó jẹun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "299788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207169",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "299788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/299788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_247737",
+      "source": "We are doctors.",
+      "reference": "Onísègùn ni wá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "247737",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143498",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "247737",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/247737"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_20105",
+      "source": "You are doctors.",
+      "reference": "Onísègùn ni yín.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20105",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20105",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20105"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "Mo nifẹẹ rẹ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3808207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_13632282",
+      "source": "I'm learning Yoruba.",
+      "reference": "Mo ń kọ́ èdè Yorùbá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13632282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13632282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13632282"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_13189642",
+      "source": "It's my bicycle.",
+      "reference": "Kẹ̀kẹ́ mi ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13189642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13189642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13189642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11978034",
+      "source": "Who's drinking beer?",
+      "reference": "Ta l'ó ńmu ọtí bíà?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11978034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11982199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11978034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11978034"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_11864175",
+      "source": "He answered the question.",
+      "reference": "Ó dáhùn ìbéèré náà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11864175",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11864625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11864175",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11864175"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_11207160",
+      "source": "He came from Lagos.",
+      "reference": "Ó wá láti Èkó.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11207160",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207159",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11207160",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11207160"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_8476699",
+      "source": "He's our son.",
+      "reference": "Ọmọ wa ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8476699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8476699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8476699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5257037",
+      "source": "The horse is white.",
+      "reference": "Ẹṣin jẹ́ funfun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5257037",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143475",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5257037",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5257037"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_5226593",
+      "source": "He's a doctor.",
+      "reference": "Onísègùn ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5226593",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5226593",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5226593"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3143495",
+      "source": "She's a doctor.",
+      "reference": "Onísègùn ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3143495",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3143495",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3143495"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3143490",
+      "source": "You're a doctor.",
+      "reference": "Onísègùn ni ẹ́.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3143490",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3143490",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3143490"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3143478",
+      "source": "This horse is white.",
+      "reference": "Ẹṣin yìí jẹ́ funfun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3143478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143483",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3143478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3143478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2700686",
+      "source": "There is no problem.",
+      "reference": "kò sí wahála.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2700686",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "10726770",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2700686",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2700686"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2360422",
+      "source": "I have three sons.",
+      "reference": "Mo ní ọmọ mẹ́ta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2360422",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2360422",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2360422"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2252661",
+      "source": "There's no problem.",
+      "reference": "kò sí wahála.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2252661",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "10726770",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2252661",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2252661"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1977719",
+      "source": "He wants to go.",
+      "reference": "Ó fẹ́ lọ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1977719",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1977719",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1977719"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_1977717",
+      "source": "I want to go.",
+      "reference": "Mo fẹ́ lọ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1977717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3335168",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1977717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1977717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_1392376",
+      "source": "I bought a hat.",
+      "reference": "Mo rà fìlà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1392376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207165",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1392376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1392376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_758904",
+      "source": "My name's Jack.",
+      "reference": "Jack lorúkọ mi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "758904",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4535812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "758904",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/758904"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_611372",
+      "source": "We want complete sentences.",
+      "reference": "A fẹ́ àwọn ọ̀rọ̀ ní gbólóhùn pípé.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "611372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "8773821",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "611372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/611372"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.75
+      }
+    },
+    {
+      "id": "tatoeba_436293",
+      "source": "I am a doctor.",
+      "reference": "Onísègùn ni mí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143489",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_392339",
+      "source": "The house is pretty.",
+      "reference": "Ilé wà dáadáa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "392339",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984695",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "392339",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/392339"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_309938",
+      "source": "She is a doctor.",
+      "reference": "Onísègùn ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "309938",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "309938",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/309938"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_293611",
+      "source": "He is a doctor.",
+      "reference": "Onísègùn ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_256018",
+      "source": "I'm a doctor.",
+      "reference": "Onísègùn ni mí.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256018",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143489",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256018",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256018"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_64257",
+      "source": "Take care of yourself.",
+      "reference": "Ẹ rọra.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "64257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "10963805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "64257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/64257"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_55617",
+      "source": "This is my bicycle.",
+      "reference": "Kẹ̀kẹ́ mi ni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "55617",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984421",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "55617",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/55617"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_20125",
+      "source": "You are a doctor.",
+      "reference": "Onísègùn ni ẹ́.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20125",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20125",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20125"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1646",
+      "source": "My name is Jack.",
+      "reference": "Jack lorúkọ mi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4535812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1622",
+      "source": "What do you want?",
+      "reference": "Kí l'o fẹ́?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1622",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207156",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1622",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1622"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_13632954",
+      "source": "I don't know Yoruba.",
+      "reference": "N kò mọ̀ èdè Yorùbá.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13632954",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984459",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13632954",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13632954"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11521486",
+      "source": "I do not speak English.",
+      "reference": "N kò gbọ́ èdè Gẹ̀ẹ́sì.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11521486",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11521486",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11521486"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_8776657",
+      "source": "This horse isn't white.",
+      "reference": "Ẹṣin yìí kìí ṣe funfun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8776657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143486",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8776657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8776657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_6110256",
+      "source": "Tom didn't break anything.",
+      "reference": "Tom ko fó nkan kan",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6110256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "10739589",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6110256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6110256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4536799",
+      "source": "I went to the river.",
+      "reference": "Mo lọ sí odò.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4536799",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4536800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4536799",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4536799"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3188277",
+      "source": "The book isn't new.",
+      "reference": "Ìwé kìí ṣe titun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3188277",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3197736",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3188277",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3188277"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_3143476",
+      "source": "The horse is not white.",
+      "reference": "Ẹṣin kìí ṣe funfun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3143476",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3143477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3143476",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3143476"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2703689",
+      "source": "I don't speak English.",
+      "reference": "N kò gbọ́ èdè Gẹ̀ẹ́sì.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2703689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11984454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2703689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2703689"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1098058",
+      "source": "I went to the market.",
+      "reference": "Mo lọ s'ọ́jà.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098058",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "11207168",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098058",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098058"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_5990969",
+      "source": "I'm going to the beach.",
+      "reference": "Mo nlọ s'étí òkun.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5990969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "5975778",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5990969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5990969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_4196266",
+      "source": "I will go to the beach.",
+      "reference": "Mo nlọ s'étí òkun.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4196266",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "5975778",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4196266",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4196266"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_3663249",
+      "source": "There are islands in the sea.",
+      "reference": "Àwọn erékùṣù wà ní òkun.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3713991",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_3180912",
+      "source": "I want to buy a book.",
+      "reference": "Mo fẹ́ rà ìwé.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3180912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3180913",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3180912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3180912"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_3154937",
+      "source": "His money is in the bank.",
+      "reference": "Owó rẹ̀ wà ní bánkì.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3154937",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3154939",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3154937",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3154937"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_4536791",
+      "source": "Did you go to the market yesterday?",
+      "reference": "Ṣé o lọ sọjà ni àna?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4536791",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4536795",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4536791",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4536791"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12930863",
+      "source": "I'm going to go to the beach.",
+      "reference": "Mo nlọ s'étí òkun.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12930863",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "5975778",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12930863",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12930863"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_4694896",
+      "source": "I don't want to go to school!",
+      "reference": "Mi ò fẹ́ lọ sí ilé-ẹ́kọ́.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4694896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3633484",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4694896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4694896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_1860",
+      "source": "I don't want to go to school.",
+      "reference": "Mi ò fẹ́ lọ sí ilé-ẹ́kọ́.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1860",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "3633484",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1860",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1860"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_4697783",
+      "source": "Currently Burj Khalifa is the tallest skyscraper in the world.",
+      "reference": "Burj Khalifa je agbar tó ga ju ni gbògbó ayè.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4697783",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4266589",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4697783",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4697783"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1399479",
+      "source": "Burj Khalifa is currently the tallest skyscraper in the world.",
+      "reference": "Burj Khalifa je agbar tó ga ju ni gbògbó ayè.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1399479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "yor",
+        "target_sentence_id": "4266589",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1399479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1399479"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

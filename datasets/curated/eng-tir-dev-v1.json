@@ -1,0 +1,1601 @@
+{
+  "corpus_id": "tatoeba-eng-tir-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "tir",
+    "source_name": "English",
+    "target_name": "Tigrinya"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:39:52.800815+00:00",
+  "entry_count": 54,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "gov",
+    "legal",
+    "religious",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_2247764",
+      "source": "I'll jump in.",
+      "reference": "ክሕግዝ እየ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10848251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247764"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3253982",
+      "source": "God is everywhere.",
+      "reference": "ኣላህ፡ ኣብ ኲሉ ቦታ ይርከብ እዩ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3253982",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10858494",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3253982",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3253982"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6220074",
+      "source": "Is anyone afraid?",
+      "reference": "ዝፈርሀ ሰብ ኣሎ'ዶ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6220074",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10884503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6220074",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6220074"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1044868",
+      "source": "Is your gun loaded?",
+      "reference": "ሽጉጥካ ጥይት ኣለዋዶ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1044868",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10837333",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1044868",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1044868"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6924067",
+      "source": "We're so weird.",
+      "reference": "ኣዚና ስግንጢራት ኢና።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6924067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10891412",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6924067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6924067"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7926054",
+      "source": "This item is rotten.",
+      "reference": "እዚ ተበላሽዩ እዩ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7926054",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10898428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7926054",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7926054"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8256965",
+      "source": "You don't know?",
+      "reference": "ኣይፈለጥካን?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8256965",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10865967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8256965",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8256965"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2249458",
+      "source": "Just slow down.",
+      "reference": "በቃ ህድእ በል።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249458",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10848276",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249458",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249458"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1079498",
+      "source": "Turn the music up!",
+      "reference": "ነቲ ሙዚቃ ዓው ኣብሎ!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1079498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10837454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1079498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1079498"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3370721",
+      "source": "We respect him.",
+      "reference": "ነኽብሮ ኢና።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3370721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10858956",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3370721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3370721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1939683",
+      "source": "Please wait a minute.",
+      "reference": "ብኽብረትካ ቅሩብ ተጸበ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1939683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10845315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1939683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1939683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_7046379",
+      "source": "What will the trip cost?",
+      "reference": "እዚ መገሻ ኽንደይ ይኽፈሎ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7046379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10891903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7046379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7046379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2886485",
+      "source": "Keep out of sight.",
+      "reference": "ካብ ገጸይ ረሓቐለይ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2886485",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10855241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2886485",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2886485"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3861611",
+      "source": "Water is life.",
+      "reference": "ማይ ህይወት ኢዩ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3861611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "5978172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3861611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3861611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2645112",
+      "source": "Are you wearing lipstick?",
+      "reference": "ሊፒስቲክ ጌርኪ ኣለኺ ዲኺ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2645112",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10852794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2645112",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2645112"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_4501113",
+      "source": "More research is needed.",
+      "reference": "ዝያዳ ምርምራዊ መጽናዕቲ የድሊ እዩ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4501113",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10872260",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4501113",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4501113"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6042769",
+      "source": "Your boat stinks.",
+      "reference": "ጃልባኻ ትጨኑ ኣላ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6042769",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10883932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6042769",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6042769"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6220073",
+      "source": "Is anybody afraid?",
+      "reference": "ዝፈርሀ ሰብ ኣሎ'ዶ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6220073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10884503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6220073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6220073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3821998",
+      "source": "I guess not.",
+      "reference": "ኣይመስለንን።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3821998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10866157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3821998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3821998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_12832993",
+      "source": "This is a phone.",
+      "reference": "እሊ ተለፎን ቱ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12832993",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "13108647",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12832993",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12832993"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8013706",
+      "source": "Your breakfast is ready.",
+      "reference": "ቁርስኻ ተዳልዩ ኣሎ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8013706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10898638",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8013706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8013706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3328689",
+      "source": "Do you speak Tigrinya?",
+      "reference": "ትግርኛ ትዛረብ ዲኻ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3328689",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "3328683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3328689",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3328689"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2545244",
+      "source": "The restaurant was quiet.",
+      "reference": "እቲ ቤት ምግቢ ጽምው ዝበለ ነይሩ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2545244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10850813",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2545244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2545244"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_30047",
+      "source": "Yo, my man!",
+      "reference": "ዝ'ዓርከይ!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "30047",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10807376",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "30047",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/30047"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_7113810",
+      "source": "I sometimes swim, too.",
+      "reference": "ኣነ እውን ሓሓሊፈ እሕምብስ እየ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7113810",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10892051",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7113810",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7113810"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_6629702",
+      "source": "OK, hop to it.",
+      "reference": "ሕራይ፡ ናብኡ ንጠር።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6629702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10888966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6629702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6629702"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_6575381",
+      "source": "Whew, that was close.",
+      "reference": "ኦፍ፡ ቀሪቡ ነይሩ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6575381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10887062",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6575381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6575381"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4338265",
+      "source": "End violence; pursue peace.",
+      "reference": "ዓመጻ የብቅዕ፡ ሰላም ይስዓብ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4338265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10869577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4338265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4338265"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_3665388",
+      "source": "When does that start?",
+      "reference": "መዓስ እዩ ዝጅመር?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3665388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10863891",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3665388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3665388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2198637",
+      "source": "Tell me, tell me.",
+      "reference": "ንገረኒ፡ ንገረኒ እባ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2198637",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10848030",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2198637",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2198637"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1103290",
+      "source": "Hey there, good looking!",
+      "reference": "ሰላም፡ ጽብቕቲ!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1103290",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10837537",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1103290",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1103290"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_807067",
+      "source": "Suddenly, there were gunshots.",
+      "reference": "ሃንደበት፡ ተዂሲ ጠያይቲ ነይሩ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "807067",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10833946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "807067",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/807067"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_431628",
+      "source": "Gentlemen, start your engines.",
+      "reference": "ክቡር ሰብ፡ ንሞተርካ ወልዕ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "431628",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10827536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "431628",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/431628"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.25
+      }
+    },
+    {
+      "id": "tatoeba_351807",
+      "source": "When is the party?",
+      "reference": "እቲ ድግስ መዓስ እዩ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "351807",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10827000",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "351807",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/351807"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_7783997",
+      "source": "This is me, Aunt Wong.",
+      "reference": "ኣነ እየ፡ ኣሞ ዎንግ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7783997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10896474",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7783997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7783997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_7494288",
+      "source": "Where did she hit you?",
+      "reference": "ኣበይ ሃሪማትካ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7494288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10895880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7494288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7494288"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_7074117",
+      "source": "While eating, we chew slowly.",
+      "reference": "እና በላዕና እንከለና፡ መግቢ ቀሰይ ኢልና ኢና ንሕይኮ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7074117",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10891966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7074117",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7074117"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_453381",
+      "source": "He returned from Canada.",
+      "reference": "ንሱ ካብ ካናዳ ተመሊሱ።",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "453381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10827700",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "453381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/453381"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1098205",
+      "source": "Chen is a teacher.",
+      "reference": "ቼን፡ መምህር እያ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098205",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10837505",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098205",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098205"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_567368",
+      "source": "I'm a student.",
+      "reference": "ኣነ ተማሃሪ አየ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "567368",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "7771464",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "567368",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/567368"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_326005",
+      "source": "Take Jennifer for example.",
+      "reference": "ንኣብነት፡ ንጀኒፈር ውሰዳ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "326005",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10825392",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "326005",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/326005"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_7841630",
+      "source": "Eva is a Dutch citizen.",
+      "reference": "ኤቫ፡ ዜጋ ሆላንድ እያ።",
+      "domain": "gov",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7841630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10898182",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7841630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7841630"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_7840911",
+      "source": "Dong is a Korean citizen.",
+      "reference": "ዶንግ፡ ዜጋ ኮርያ እዩ።",
+      "domain": "gov",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7840911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10898168",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7840911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7840911"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7840908",
+      "source": "Sarah is an Indian citizen.",
+      "reference": "ሳራ፡ ህንዳዊት ዜጋ እያ።",
+      "domain": "gov",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7840908",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10898164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7840908",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7840908"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_303653",
+      "source": "He broke the law.",
+      "reference": "ንሱ ሕጊ ጢሒሱ።",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "303653",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10821533",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "303653",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/303653"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2130696",
+      "source": "He loves ritual.",
+      "reference": "ወግዒ እፈቱ እዩ።",
+      "domain": "religious",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2130696",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10847848",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2130696",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2130696"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7733578",
+      "source": "I felt totally helpless.",
+      "reference": "ምሉእ ብምሉእ ሕልናይ ዓሪቡ።",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7733578",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10896241",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7733578",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7733578"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_6010456",
+      "source": "I contacted my mothers.",
+      "reference": "ንኣዴታተይ ተወኪሰየን ነይረ።",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6010456",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10881212",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6010456",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6010456"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_4950723",
+      "source": "We help each other.",
+      "reference": "ንሓድሕድና ንተሓጋገዝ ኢና።",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4950723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10874607",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4950723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4950723"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_5744537",
+      "source": "The airport remains open.",
+      "reference": "እቲ መዓርፎ ነፈርቲ ኽፉት ኣሎ።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5744537",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10878336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5744537",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5744537"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_5166528",
+      "source": "I'm not disappointed.",
+      "reference": "ኣይጐሃኹን።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5166528",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10875099",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5166528",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5166528"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3131023",
+      "source": "Something horrible has happened.",
+      "reference": "ኣዝዩ ሕማቕ ነገር ኣጋጢሙ ኣሎ።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3131023",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10856065",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3131023",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3131023"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_7408716",
+      "source": "They could've saved themselves.",
+      "reference": "ንርእሶም ከድሕኑ ምኽኣሉ ነይሮም።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7408716",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10894453",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7408716",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7408716"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.75
+      }
+    },
+    {
+      "id": "tatoeba_7404711",
+      "source": "She said she would appeal.",
+      "reference": "ይግባይ ክሓትት እየ ኢላ።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7404711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "tir",
+        "target_sentence_id": "10894387",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7404711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7404711"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

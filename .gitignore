@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+
+# Node (website)
+node_modules/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment — API keys must never be committed
+.env
+.env.local
+
+# Harness outputs (generated at runtime, not tracked by default)
+eval/cache/
+# Ignore contents of eval/logs/ except harness report JSONs, which the
+# nightly CI needs to regenerate field.json/graph.json. Git requires
+# un-ignoring each directory level in the chain separately.
+eval/logs/*
+# The baseline sweep manifest is load-bearing CONFIG (model lineup + cost
+# basis) that generate_sweep_queue.py requires — track it, not an artifact.
+!eval/logs/sweep_manifest.json
+!eval/logs/harness/
+eval/logs/harness/*
+!eval/logs/harness/*_report.json
+eval/probes/
+
+# Demo outputs (may contain third-party corpus data — generate locally)
+eval_demo/
+
+# Dashboard output (generated HTML)
+dashboard_output.html
+dashboard.html
+
+# Type checking
+.mypy_cache/
+.pytest_cache/
+website/.docusaurus/

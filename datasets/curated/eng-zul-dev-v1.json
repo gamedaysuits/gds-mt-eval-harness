@@ -1,0 +1,3280 @@
+{
+  "corpus_id": "tatoeba-eng-zul-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "zul",
+    "source_name": "English",
+    "target_name": "Zulu"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:36:10.151929+00:00",
+  "entry_count": 112,
+  "domains": [
+    "conv",
+    "edu",
+    "legal",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_6598692",
+      "source": "Look at us!",
+      "reference": "Sibheke!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6598692",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204500",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6598692",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6598692"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Ngiyakuthanda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3254621",
+      "source": "I like bread.",
+      "reference": "Ngithanda isinkwa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3254621",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3254622",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3254621",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3254621"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "Ngifuna ukuya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3335167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2743304",
+      "source": "I am hungry!",
+      "reference": "Ngilambile.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2743304",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2657746",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2743304",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2743304"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2657766",
+      "source": "I will come.",
+      "reference": "Ngizokuza.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2657766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2657767",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2657766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2657766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Ngiyakuthanda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1764505",
+      "source": "We have wine.",
+      "reference": "Sinewayini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1764505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1764505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1764505"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1496819",
+      "source": "I hate you!",
+      "reference": "Ngiyakuzonda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1496819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887032",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1496819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1496819"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1108683",
+      "source": "See you tomorrow!",
+      "reference": "Sobonana kusasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1108683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9141070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1108683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1108683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_827295",
+      "source": "I hate you.",
+      "reference": "Ngiyakuzonda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "827295",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887032",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "827295",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/827295"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_497969",
+      "source": "See you tomorrow.",
+      "reference": "Sobonana kusasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "497969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9141070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "497969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/497969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_409602",
+      "source": "I am hungry.",
+      "reference": "Ngilambile.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "409602",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2657746",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "409602",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/409602"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_376338",
+      "source": "I feel hungry.",
+      "reference": "Ngilambile.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2657746",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376338"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "Unjani?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2657749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_283629",
+      "source": "I like him.",
+      "reference": "Ngiyamthanda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "283629",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887078",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "283629",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/283629"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "Ngiyakuthanda.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_11864175",
+      "source": "He answered the question.",
+      "reference": "Waphendula umbuzo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11864175",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "11866370",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11864175",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11864175"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_9975213",
+      "source": "I love my girlfriend.",
+      "reference": "Ngiyayithanda intombi yami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9975213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "10946800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9975213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9975213"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_9210341",
+      "source": "These socks are yours.",
+      "reference": "La masokisi awakho.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210341",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210339",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210341",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210341"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_9208678",
+      "source": "You were still asleep.",
+      "reference": "Usalele.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208678"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_9204391",
+      "source": "Where's the mosque?",
+      "reference": "Likuphi isonto lamaSulumani?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204391",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204391",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204391"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_9204372",
+      "source": "Does your knee hurt?",
+      "reference": "Kungabe idolo lakho libuhlungu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204372"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8916810",
+      "source": "Where's my cap?",
+      "reference": "Likuphi ikepisi lami?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8916810",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204377",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8916810",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8916810"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8353332",
+      "source": "Are these your kids?",
+      "reference": "Ngabe izingane zakho lezi?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8353332",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210316",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8353332",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8353332"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8246625",
+      "source": "Where is the mosque?",
+      "reference": "Likuphi isonto lamaSulumani?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8246625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8246625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8246625"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7132170",
+      "source": "Here's the kitchen.",
+      "reference": "Nali igumbi lokuphekela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7132170",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204339",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7132170",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7132170"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_6440604",
+      "source": "Music is my life.",
+      "reference": "Umculo uwukuphila kwami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6440604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "12388529",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6440604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6440604"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3132269",
+      "source": "I'm drinking milk.",
+      "reference": "Ngiyaphuza ubisi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3132269",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316392",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3132269",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3132269"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2886135",
+      "source": "Emily wrote the sentence.",
+      "reference": "Emily ubhale umusho.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2886135",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2888674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2886135",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2886135"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_2880446",
+      "source": "She sang a song.",
+      "reference": "Ucule iculo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2880446",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2880446",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2880446"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2667567",
+      "source": "I drank the wine.",
+      "reference": "Ngiphuze iwayini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2667567",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316399",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2667567",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2667567"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2652577",
+      "source": "I drank the coffee.",
+      "reference": "Ngiphuze ikhofi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2652577",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316398",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2652577",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2652577"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2645555",
+      "source": "Are these your children?",
+      "reference": "Ngabe izingane zakho lezi?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2645555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210316",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2645555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2645555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2626834",
+      "source": "I see a boy.",
+      "reference": "Ngibona umfana.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2626834",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2626834",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2626834"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_2330250",
+      "source": "I see a light.",
+      "reference": "Ngibona ukukhanya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2330250",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316972",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2330250",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2330250"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_1977717",
+      "source": "I want to go.",
+      "reference": "Ngifuna ukuya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1977717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3335167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1977717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1977717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_1912242",
+      "source": "I see a crown.",
+      "reference": "Ngibona umqhele.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1912242",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1912242",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1912242"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_1912224",
+      "source": "I see a queen.",
+      "reference": "Ngibona indlovukazi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1912224",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1912224",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1912224"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_1912219",
+      "source": "I see a star.",
+      "reference": "Ngibona imbasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1912219",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316968",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1912219",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1912219"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_1912214",
+      "source": "I see a rose.",
+      "reference": "Ngibona irozi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1912214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1912214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1912214"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_1895595",
+      "source": "You're my friend.",
+      "reference": "Ungumngane wami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1895595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3305949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1895595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1895595"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1661057",
+      "source": "I am drinking milk.",
+      "reference": "Ngiyaphuza ubisi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1661057",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316392",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1661057",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1661057"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1325177",
+      "source": "She's my wife.",
+      "reference": "Ungumkami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1325177",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2888676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1325177",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1325177"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_871785",
+      "source": "I see a house.",
+      "reference": "Ngibona indlu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "871785",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "871785",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/871785"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_816077",
+      "source": "I see a book.",
+      "reference": "Ngibona incwadi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "816077",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316977",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "816077",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/816077"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_627174",
+      "source": "I brought a book.",
+      "reference": "Ngizise incwadi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "627174",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "627174",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/627174"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_586830",
+      "source": "I see a lion.",
+      "reference": "Ngibona ibhubesi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "586830",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316974",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "586830",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/586830"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.25
+      }
+    },
+    {
+      "id": "tatoeba_567368",
+      "source": "I'm a student.",
+      "reference": "Ngingumfundi.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "567368",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887177",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "567368",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/567368"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_436293",
+      "source": "I am a doctor.",
+      "reference": "Ngingudokotela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "436293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "436293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/436293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_370562",
+      "source": "You are my friend.",
+      "reference": "Ungumngane wami.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370562",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3305949",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370562",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370562"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_261906",
+      "source": "I want to live.",
+      "reference": "Ngifuna ukuhlala.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "261906",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3318155",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "261906",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/261906"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_259069",
+      "source": "I am a teacher.",
+      "reference": "Nginguthisha.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887113",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259069"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_256929",
+      "source": "I'm a teacher.",
+      "reference": "Nginguthisha.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256929",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887113",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256929",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256929"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_256018",
+      "source": "I'm a doctor.",
+      "reference": "Ngingudokotela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256018",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887173",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256018",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256018"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_252287",
+      "source": "I am a student.",
+      "reference": "Ngingumfundi.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252287",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887177",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252287",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252287"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_25095",
+      "source": "Can I help you?",
+      "reference": "Ngingakusiza?",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25095"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_9208667",
+      "source": "I wish you pleasant dreams.",
+      "reference": "Nginifisela amnandi amaphupho.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208667",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208664",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208667",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208667"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_9204563",
+      "source": "We need flour and sugar.",
+      "reference": "Sidinga ufulawa noshukela.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204563",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204557",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204563",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204563"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_9204383",
+      "source": "Where is Jabu’s cap?",
+      "reference": "Likuphi ikepisi likaJabu?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204383",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204383",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204383"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9204348",
+      "source": "Can you see the cat?",
+      "reference": "Uyalibona ikati na?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204347",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_9204345",
+      "source": "Hello. My name is Jabu.",
+      "reference": "Sawubona. Igama lami nginguJabu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204345",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204343",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204345",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204345"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_8953874",
+      "source": "Our laws are very strict.",
+      "reference": "Imithetho yethu iqinile kakhulu.",
+      "domain": "legal",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8953874",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "10946793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8953874",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8953874"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8114728",
+      "source": "Why are you not eating?",
+      "reference": "Kungani ungadli?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8114728",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "10471718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8114728",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8114728"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_6815353",
+      "source": "Do you live by yourself?",
+      "reference": "Ngabe uhlala wedwa?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6815353",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210356",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6815353",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6815353"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_5009667",
+      "source": "This is where we live.",
+      "reference": "Lapha kulapho sihlala khona.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5009667",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204387",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5009667",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5009667"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_5008000",
+      "source": "I will see you tomorrow.",
+      "reference": "Sobonana kusasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5008000",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9141070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5008000",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5008000"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_3315775",
+      "source": "You're going to school.",
+      "reference": "Uya esikoleni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3315775",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3315926",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3315775",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3315775"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_3315771",
+      "source": "I'm going to school.",
+      "reference": "Ngiya esikoleni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3315771",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3315927",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3315771",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3315771"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2423581",
+      "source": "I see a white lion.",
+      "reference": "Ngibona ibhubesi elimhlophe.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2423581",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3316973",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2423581",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2423581"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_1895636",
+      "source": "You're a good friend.",
+      "reference": "Ungumngane omuhle.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1895636",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2889766",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1895636",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1895636"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1830484",
+      "source": "Why aren't you eating?",
+      "reference": "Kungani ungadli?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1830484",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "10471718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1830484",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1830484"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1185641",
+      "source": "I'll see you tomorrow.",
+      "reference": "Sobonana kusasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1185641",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9141070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1185641",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1185641"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_801752",
+      "source": "They are afraid of death.",
+      "reference": "Besaba ukufa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "801752",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887374",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "801752",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/801752"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_396887",
+      "source": "I am going to school.",
+      "reference": "Ngiya esikoleni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "396887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3315927",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "396887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/396887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_316661",
+      "source": "She works for a hospital.",
+      "reference": "Usebenzela isibhedlela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "316661",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887389",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "316661",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/316661"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_257922",
+      "source": "I'm looking for work.",
+      "reference": "Ngifuna umsebenzi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257922",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3313501",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257922",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257922"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_11483210",
+      "source": "She decided to move to Belgium.",
+      "reference": "Wanquma ukuthuthela eBelgium.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11483210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "11491706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11483210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11483210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_9210381",
+      "source": "The meter is set at zero.",
+      "reference": "Imitha ibekwe eqandeni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210381",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210380",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210381",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210381"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_9210351",
+      "source": "Did you make this dish yourself?",
+      "reference": "Ngabe le ndishi uzenzele wena?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210351",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210351",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210351"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9208672",
+      "source": "You are talking like a fool.",
+      "reference": "Wena ukhulumisa okwesilima.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208672",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208672",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208672"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_9204380",
+      "source": "I’m going to wear jeans.",
+      "reference": "Ngizogqoka ijini.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204380",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204379",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204380",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204380"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_9204330",
+      "source": "This is where we watch TV.",
+      "reference": "Lapha kulapho sibuka khona umabonakude.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204330",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204328",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204330",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204330"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3663249",
+      "source": "There are islands in the sea.",
+      "reference": "Zikhona iziqhingi olwandle.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3715536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_3180912",
+      "source": "I want to buy a book.",
+      "reference": "Ngifuna ukuthenga incwadi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3180912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3180923",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3180912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3180912"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.5
+      }
+    },
+    {
+      "id": "tatoeba_9210324",
+      "source": "I met your husband at the shops.",
+      "reference": "Ngihlangane nomyeni wakho ezitolo.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_9204395",
+      "source": "It’s next to the shopping mall.",
+      "reference": "Iseduzane noxhaxha lwezitolo.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204395",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204394",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204395",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204395"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_9204368",
+      "source": "How many people are reading the newspaper?",
+      "reference": "Bangaki abantu abafunda iphephandaba?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204368",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204366",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204368",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204368"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1332122",
+      "source": "I'm a student in a university.",
+      "reference": "Ngingumfundi enyunivesini.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1332122",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887179",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1332122",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1332122"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1164903",
+      "source": "I am a student in a university.",
+      "reference": "Ngingumfundi enyunivesini.",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1164903",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887179",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1164903",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1164903"
+        },
+        "classification_confidence": 0.1429,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_1106301",
+      "source": "I want to live in a castle.",
+      "reference": "Ngifuna ukuhlala enqabeni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1106301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887158",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1106301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1106301"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.86
+      }
+    },
+    {
+      "id": "tatoeba_774900",
+      "source": "I want to live in a town.",
+      "reference": "Ngifuna ukuhlala edolobheni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "774900",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887148",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "774900",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/774900"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.57
+      }
+    },
+    {
+      "id": "tatoeba_655683",
+      "source": "I want to live in the country.",
+      "reference": "Ngifuna ukuhlala emaphandleni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "655683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "2887146",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "655683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/655683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_9210347",
+      "source": "The knife is sharp – don’t cut yourself!",
+      "reference": "Ummese ubukhali – ungazisiki!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210347",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210345",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210347",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210347"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9208696",
+      "source": "You children mustn’t make so much noise!",
+      "reference": "Nina zingane ningabangi umsindo ongaka!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208696",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208695",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208696",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208696"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_9204338",
+      "source": "Can you find all of Niki’s books?",
+      "reference": "Ungazithola zonke izincwadi zikaNiki?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204338"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_4694896",
+      "source": "I don't want to go to school!",
+      "reference": "Angifuni ukuya esikoleni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4694896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3633485",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4694896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4694896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_1860",
+      "source": "I don't want to go to school.",
+      "reference": "Angifuni ukuya esikoleni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1860",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "3633485",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1860",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1860"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_9204583",
+      "source": "How much will they pay for the two cooldrinks?",
+      "reference": "Bazokhokha malini ngalezi ziphuzo ezibandayo ezimbili?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204583",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204583",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204583"
+        },
+        "classification_confidence": 0.1667,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.11
+      }
+    },
+    {
+      "id": "tatoeba_4697783",
+      "source": "Currently Burj Khalifa is the tallest skyscraper in the world.",
+      "reference": "Burj Khalifa yibhilidi elide kwengca wonkhe emhlabeni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4697783",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "4805150",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4697783",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4697783"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1399479",
+      "source": "Burj Khalifa is currently the tallest skyscraper in the world.",
+      "reference": "Burj Khalifa yibhilidi elide kwengca wonkhe emhlabeni.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1399479",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "4805150",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1399479",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1399479"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_9210362",
+      "source": "The government should pay attention to the needs of the youth.",
+      "reference": "Uhulumeni kufanele abheke izidingo zentsha.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210362",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210362",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210362"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.64
+      }
+    },
+    {
+      "id": "tatoeba_9208692",
+      "source": "We wish you a happy Christmas and a happy New Year.",
+      "reference": "Sinifisela uKhisimusi omuhle nonyaka omusha omuhle.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208692",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208692",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208692"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.64
+      }
+    },
+    {
+      "id": "tatoeba_9210375",
+      "source": "The herd of zebras started fleeing when they saw the lions approaching.",
+      "reference": "Umhlambi wamadube uqale ukubaleka ngesikhathi ubona kuza amabhubesi.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210375",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210374",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210375",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210375"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.92
+      }
+    },
+    {
+      "id": "tatoeba_9210331",
+      "source": "When your car suddenly breaks down, your first reaction is often to panic.",
+      "reference": "Uma imoto yakho yephuka ngokushesha, into yokuqala oyenzayo ukungenwa ingebhe.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210331",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210329",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210331",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210331"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_9204540",
+      "source": "Can you find the signs for the mosque, the church and the synagogue?",
+      "reference": "Ungazithola izimpawu zesonto lamaSulumani, isonto kanye nesinagogo?",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204540",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204545",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204540",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204540"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.15
+      }
+    },
+    {
+      "id": "tatoeba_9210385",
+      "source": "Aeroplanes are not usually allowed to fly through the zone above a city centre.",
+      "reference": "Izindiza azivamile ukuvunyelwa ukundiza endaweni engaphezu kwenkaba yedolobha.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.64
+      }
+    },
+    {
+      "id": "tatoeba_9210389",
+      "source": "We believe, as the Zulus say, that no elephant ever found its trunk too heavy.",
+      "reference": "Sikholwa ukuthi, njengoba kusho amaZulu, akukho ndlovu esindwa umboko wayo.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210389",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210389",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210389"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.07
+      }
+    },
+    {
+      "id": "tatoeba_9210372",
+      "source": "He said that in his youth youngsters gave up their bus seats for the elderly.",
+      "reference": "Uthe ebusheni bakhe, abantu abancane babesukumela abantu abadala ebhasini ukuze bahlale.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9210372",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9210371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9210372",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9210372"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.13
+      }
+    },
+    {
+      "id": "tatoeba_9204766",
+      "source": "After a while you start reading with greater care and you realize the author’s true meaning.",
+      "reference": "Emuva kwesikhashana uqala ukufunda ngokucophelela okukhulu bese ubona okuqondwe umbhali.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 16,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_9208701",
+      "source": "Because so many adults have passed away, young people and even children are forced to head up households.",
+      "reference": "Ngenxa yokuthi abantu abadala abaningi sebedlule emhlabeni, abantu abasebasha ngisho nezingane imbala baphoqeleka ukuthi baphathe imizi.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9208701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9208700",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9208701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9208701"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 18,
+        "difficulty_estimated_clauses": 4,
+        "difficulty_avg_word_length": 4.78
+      }
+    },
+    {
+      "id": "tatoeba_9204365",
+      "source": "This dictionary has been designed to help children in their first few years of learning English or IsiZulu as an additional language.",
+      "reference": "Lesi sichazamazwi senzelwe ukusiza izingane ezineminyaka ephansi, ezisaqala ukufunda isiNgisi noma isiZulu njengolimi olwengeziwe.",
+      "domain": "support",
+      "difficulty": 4,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9204365",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "zul",
+        "target_sentence_id": "9204361",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9204365",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9204365"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 22,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.05
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

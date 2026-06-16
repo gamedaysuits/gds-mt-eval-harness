@@ -1,0 +1,1715 @@
+{
+  "corpus_id": "tatoeba-eng-sme-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "sme",
+    "source_name": "English",
+    "target_name": "Northern Sámi"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:56:56.037043+00:00",
+  "entry_count": 58,
+  "domains": [
+    "conv",
+    "gov",
+    "literary",
+    "marketing",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_953265",
+      "source": "Everything's going to be OK.",
+      "reference": "Buot manná bures.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755483",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953265"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_1655579",
+      "source": "I speak English.",
+      "reference": "Human eŋgelasgiela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1655579",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586032",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1655579",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1655579"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6015388",
+      "source": "I am Ricardo.",
+      "reference": "Mun lean Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6015388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7585994",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6015388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6015388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2055348",
+      "source": "Is your car black?",
+      "reference": "Leago du biila čáhppat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2055348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "10894781",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2055348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2055348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2360542",
+      "source": "I have to know.",
+      "reference": "Ferten diehtit.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2360542",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9684946",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2360542",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2360542"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_2684439",
+      "source": "Your friend is here.",
+      "reference": "Du ustit lea dáppe.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2684439",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "13170468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2684439",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2684439"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_415514",
+      "source": "I will try.",
+      "reference": "Mun iskkan.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "415514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755371",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "415514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/415514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2205973",
+      "source": "How is life?",
+      "reference": "Mot manná?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2205973",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4742629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2205973",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2205973"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1983741",
+      "source": "She couldn't stop smiling.",
+      "reference": "Son ii sáhttán heaitit moddjámis.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1983741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "10894836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1983741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1983741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2240360",
+      "source": "You killed Tom.",
+      "reference": "Don goddet Toma.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240360",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9686475",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240360",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240360"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_294029",
+      "source": "He speaks English a little.",
+      "reference": "Son hupmá veahá eŋgelasgiela.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "294029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "294029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/294029"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_24706",
+      "source": "What do you mean?",
+      "reference": "Maid don meidnet?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24706",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755440",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24706",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24706"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_5143986",
+      "source": "He lives here.",
+      "reference": "Son orru dás.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5143986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586816",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5143986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5143986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5222639",
+      "source": "She invited me.",
+      "reference": "Son bovdii mu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5222639",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8800025",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5222639",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5222639"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2240359",
+      "source": "You intimidate Tom.",
+      "reference": "Don áittát Toma.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240359",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9686460",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240359",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240359"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3313490",
+      "source": "I'm a child.",
+      "reference": "Mun lean mánná.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3313490",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7194137",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3313490",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3313490"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2648823",
+      "source": "How are we doing?",
+      "reference": "Mot manná?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2648823",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4742629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2648823",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2648823"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_4189350",
+      "source": "How is life treating you?",
+      "reference": "Mot manná?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4189350",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4742629",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4189350",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4189350"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_62282",
+      "source": "Won't you have some coffee?",
+      "reference": "Jugat go gáfe?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "62282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4851855",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "62282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/62282"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_1784974",
+      "source": "I can't see you.",
+      "reference": "Mun in sáhte oaidnit du.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1784974",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8762933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1784974",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1784974"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5769626",
+      "source": "My name's Ricardo.",
+      "reference": "Mun lean Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5769626",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7585994",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5769626",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5769626"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_61842",
+      "source": "Write down your name here.",
+      "reference": "Čále du nama dohko!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "61842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "10844873",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "61842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/61842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_38308",
+      "source": "How is it going?",
+      "reference": "Mo hurgá?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38308",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586885",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38308",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38308"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7586794",
+      "source": "When will you come again?",
+      "reference": "Goas don fas boađát?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7586794",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7586794",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7586794"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3312361",
+      "source": "We have to look after ourselves now.",
+      "reference": "Mii galgat dál beroštit alddámet.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3312361",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8808438",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3312361",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3312361"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_17150",
+      "source": "Where do you come from?",
+      "reference": "Gos boađát?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17150",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586807",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17150",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17150"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_8752663",
+      "source": "We both have almost missed the bus.",
+      "reference": "Moai goasii báziime busses.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8752663",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586797",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8752663",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8752663"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3871291",
+      "source": "Do you want to have some coffee?",
+      "reference": "Siđatgo gáfe?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3871291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7585964",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3871291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3871291"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_11260032",
+      "source": "Thank you, buddy.",
+      "reference": "Giitu.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7585969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260032"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_12971127",
+      "source": "Last year I read a hundred books.",
+      "reference": "Mannan jagi lohken čuođi girjji.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12971127",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "11929262",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12971127",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12971127"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_322433",
+      "source": "You must clean your room every day.",
+      "reference": "Don fertet čorget du lanja juohke beaivvi.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9681667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7586801",
+      "source": "Because I love you.",
+      "reference": "Danne mon ráhkistan du.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7586801",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586800",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7586801",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7586801"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2569256",
+      "source": "What do you know about Brazil?",
+      "reference": "Maid dieđát Brasilia birra?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2569256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8808561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2569256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2569256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7586795",
+      "source": "When are you going back?",
+      "reference": "Goas don fas boađát?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7586795",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7586795",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7586795"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_370708",
+      "source": "Where do you live?",
+      "reference": "Gos don orut?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370708",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4364448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370708",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370708"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1125674",
+      "source": "Where are you living?",
+      "reference": "Gos don orut?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1125674",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4364448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1125674",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1125674"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "reference": "Gii don leat?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "4363602",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7586789",
+      "source": "I saw Nils, too.",
+      "reference": "Oidnen maiddái Niillasa.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7586789",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586786",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7586789",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7586789"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_410785",
+      "source": "What do you do for a living?",
+      "reference": "Maid don barggat?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "410785",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8753951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "410785",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/410785"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2254856",
+      "source": "Who invited you?",
+      "reference": "Gii bovdii du?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254856",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8800023",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254856",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254856"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5275200",
+      "source": "Who is this?",
+      "reference": "Gii son lea?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5275200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8753952",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5275200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5275200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_9667695",
+      "source": "Where did you learn Latin?",
+      "reference": "Gos don ohppet latiinnagiela?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9667695",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9684992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9667695",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9667695"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_11260025",
+      "source": "Oh, thank you.",
+      "reference": "Giitu.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11260025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7585969",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11260025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11260025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7408252",
+      "source": "They tried to do it by themselves.",
+      "reference": "Sii vigge dan ieža dahkat.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7408252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8808429",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7408252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7408252"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_291750",
+      "source": "He can speak a little English.",
+      "reference": "Son hupmá veahá eŋgelasgiela.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "291750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586817",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "291750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/291750"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_517410",
+      "source": "Where should we go?",
+      "reference": "Gosa moai vulge?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "517410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755408",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "517410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/517410"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_5643977",
+      "source": "I had a neighbor who was blind.",
+      "reference": "Mus lei ránnjá gii lei čalmmeheapme.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5643977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8767312",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5643977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5643977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_8755459",
+      "source": "Once I thought I was wrong. Turns out I was mistaken.",
+      "reference": "Oktii gádden ahte ledjen meaddán, muhto feilejin.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8755459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8755459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8755459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.73
+      }
+    },
+    {
+      "id": "tatoeba_6309882",
+      "source": "Bill, if you'll come with me, you'll float, too.",
+      "reference": "Bill, jus don boađát mu fárrui, don nai govddut.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6309882",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "6309998",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6309882",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6309882"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10844721",
+      "source": "I got a letter from the municipality.",
+      "reference": "Mun ožžon reivve suohkanis.",
+      "domain": "gov",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10844721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "10844718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10844721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10844721"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_2240377",
+      "source": "My dad is the best dad in the universe.",
+      "reference": "Áhčán lea buoremus áhčči máilmmiávvosis.",
+      "domain": "literary",
+      "difficulty": 2,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2240377",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9686631",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2240377",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2240377"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10894804",
+      "source": "Have you bought a brand-new car?",
+      "reference": "Leatgo don oastán oba ođđa biilla?",
+      "domain": "marketing",
+      "difficulty": 2,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10894804",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "10894650",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10894804",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10894804"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "reference": "Mon dárbbašan veahki.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_582309",
+      "source": "I need help.",
+      "reference": "Mon dárbbašan veahki.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "582309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8755552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "582309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/582309"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_64391",
+      "source": "Shall I help you?",
+      "reference": "Galggango mon veahkehit du?",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "64391",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8964382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "64391",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/64391"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1415017",
+      "source": "The money disappeared.",
+      "reference": "Ruđat jávkkaimet.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1415017",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "8800326",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1415017",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1415017"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7872472",
+      "source": "I'm happy today.",
+      "reference": "Mun lean ilus odne.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7872472",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "7586808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7872472",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7872472"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8564861",
+      "source": "Tom sat down at a table near the window.",
+      "reference": "Tom čohkkedii beavddis láse lahka.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8564861",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "sme",
+        "target_sentence_id": "9685124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8564861",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8564861"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.44
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

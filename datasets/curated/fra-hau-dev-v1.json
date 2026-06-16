@@ -1,0 +1,4902 @@
+{
+  "corpus_id": "tatoeba-fra-hau-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "fra",
+    "target": "hau",
+    "source_name": "French",
+    "target_name": "Hausa"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:35:18.658275+00:00",
+  "entry_count": 168,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_10694885",
+      "source": "Salutations chaleureuses !",
+      "reference": "Gaisuwa mai daɗi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10694885",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10881186",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10694885",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10694885"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 11.5
+      }
+    },
+    {
+      "id": "tatoeba_10505574",
+      "source": "Crève, racaille !",
+      "reference": "Mutu, ƙazami!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505574"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_10505573",
+      "source": "Crève, ordure !",
+      "reference": "Mutu, ƙazami!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_10505572",
+      "source": "Meurs, racaille !",
+      "reference": "Mutu, ƙazami!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505572",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505572",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505572"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_10505571",
+      "source": "Meurs, ordure !",
+      "reference": "Mutu, ƙazami!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505571",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505571",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505571"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_10505537",
+      "source": "Grands dieux !",
+      "reference": "Ikon Allaah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505537",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505537",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505537"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_10064419",
+      "source": "Quelle galère !",
+      "reference": "Abun haushi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10064419",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10064419",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10064419"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_9745755",
+      "source": "Quel calme !",
+      "reference": "Yaya zaman lafiya!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9745755",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10875267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9745755",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9745755"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_8267435",
+      "source": "En route !",
+      "reference": "Tafi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8267435",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10837757",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8267435",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8267435"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_7956642",
+      "source": "Une autre !",
+      "reference": "Kuma!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7956641",
+      "source": "Un autre !",
+      "reference": "Kuma!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956641",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956641",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956641"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6576611",
+      "source": "Pas encore !",
+      "reference": "A'a ina!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6576611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10831468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6576611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6576611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_6152356",
+      "source": "Restez calme !",
+      "reference": "Kwantar da hankalinka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6152356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10889516",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6152356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6152356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_6003532",
+      "source": "Chers camarades !",
+      "reference": "Mai girma kwamared!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6003532",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10881162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6003532",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6003532"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_4626019",
+      "source": "Quel couillon !",
+      "reference": "Haduwa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4626019",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4626019",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4626019"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_4626007",
+      "source": "Quelle perte !",
+      "reference": "Babban rashi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4626007",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848336",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4626007",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4626007"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_4578513",
+      "source": "Regarde là !",
+      "reference": "Kai, ikon Allah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4578513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10835055",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4578513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4578513"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3640585",
+      "source": "Allez, essayons !",
+      "reference": "Ki zo, mu gwada.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3640585",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10863784",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3640585",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3640585"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_3624193",
+      "source": "Reste fort !",
+      "reference": "Zamo mai ƙwarn gwiwa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3624193",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878018",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3624193",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3624193"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_2219304",
+      "source": "Bonsoir Mesdames !",
+      "reference": "Asuba ta gari, 'yan mata.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2219304",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848072",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2219304",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2219304"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.5
+      }
+    },
+    {
+      "id": "tatoeba_1951925",
+      "source": "Très bien !",
+      "reference": "Abin mamaki!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1951925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10827557",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1951925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1951925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1846301",
+      "source": "Par ici !",
+      "reference": "Nan wajen!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1846301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10850916",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1846301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1846301"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1830880",
+      "source": "À genoux !",
+      "reference": "Tsuguna!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1830880",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10855226",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1830880",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1830880"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1719439",
+      "source": "Quelle journée !",
+      "reference": "Wannan rana ce mai kyau.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1719439",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878352",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1719439",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1719439"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.5
+      }
+    },
+    {
+      "id": "tatoeba_1483736",
+      "source": "Quelle merveille !",
+      "reference": "Abin mamaki!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1483736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10827557",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1483736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1483736"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.5
+      }
+    },
+    {
+      "id": "tatoeba_1483733",
+      "source": "Prenez garde !",
+      "reference": "Ka lura da kanka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1483733",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847781",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1483733",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1483733"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_1306496",
+      "source": "Quelle andouille !",
+      "reference": "Haduwa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1306496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848395",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1306496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1306496"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.5
+      }
+    },
+    {
+      "id": "tatoeba_1084010",
+      "source": "Quel boulet !",
+      "reference": "Abun haushi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1084010",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1084010",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1084010"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_450678",
+      "source": "Quelle connerie !",
+      "reference": "Wannan wane irin abu ne!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "450678",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10837382",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "450678",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/450678"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_435206",
+      "source": "Bon voyage !",
+      "reference": "Adawo kafiya!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "435206",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10827599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "435206",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/435206"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_139433",
+      "source": "Quelle surprise !",
+      "reference": "Kai Gee, na kasa yarda!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "139433",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10813876",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "139433",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/139433"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_13768254",
+      "source": "Nous sommes samedi.",
+      "reference": "Yau Asabar ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13768254",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10820587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13768254",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13768254"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_13561149",
+      "source": "Elle se suicida.",
+      "reference": "Ta kashe kanta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13561149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10824918",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13561149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13561149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_12712376",
+      "source": "Festoyez avec style !",
+      "reference": "Gudanar da biki cikin salo!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12712376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10827619",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12712376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12712376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_12455620",
+      "source": "Elle fait tache.",
+      "reference": "Ta zama kamar wani ita ce.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12455620",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10877688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12455620",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12455620"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_12301151",
+      "source": "On les tient.",
+      "reference": "Mun samo su saman ganga.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12301151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10878215",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12301151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12301151"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_12219810",
+      "source": "Ne bougez pas !",
+      "reference": "Kar ka motsa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12219810",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847804",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12219810",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12219810"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_12160832",
+      "source": "Dieu est bon.",
+      "reference": "Allah shi ne abin dogaro.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12160832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872753",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12160832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12160832"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_12077451",
+      "source": "Il déteste halloween.",
+      "reference": "Yana ƙyamar Halloween.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12077451",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10855162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12077451",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12077451"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_11964400",
+      "source": "Prends tes pilules.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964400",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964400",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964400"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11964399",
+      "source": "Prenez vos pilules.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964399",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964399",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964399"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11964398",
+      "source": "Prends tes cachets.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964398",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964398",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964398"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11964396",
+      "source": "Prenez vos cachets.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964396",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964396",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964396"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11964393",
+      "source": "Prends tes médicaments.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964393"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_11964390",
+      "source": "Prenez vos médicaments.",
+      "reference": "Ka sha maganin ka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11964390",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11964390",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11964390"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_11837750",
+      "source": "Les blessures guérissent.",
+      "reference": "Raunukan suna warkewa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11837750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10842651",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11837750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11837750"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_11790307",
+      "source": "Tu vas adorer.",
+      "reference": "Za ka so shi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11790307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10858902",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11790307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11790307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_11778375",
+      "source": "Calme-toi maintenant !",
+      "reference": "Nutsu yanzu!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11778375",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10898466",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11778375",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11778375"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 9.5
+      }
+    },
+    {
+      "id": "tatoeba_11677623",
+      "source": "Il est sérieux.",
+      "reference": "Da gaskiya yake fa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11677623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10875120",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11677623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11677623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11464945",
+      "source": "Vous pouvez entrer.",
+      "reference": "Za ka iya shiga.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11464945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848345",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11464945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11464945"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11199021",
+      "source": "Ça explique tout.",
+      "reference": "Wannan ya bayyana komai.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11199021",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10858973",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11199021",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11199021"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10766214",
+      "source": "Tu as promis !",
+      "reference": "Ka yi alƙawari!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10766214",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10877692",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10766214",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10766214"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10706161",
+      "source": "Vous mangez trop.",
+      "reference": "Kana da ci da yawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10706161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10866162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10706161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10706161"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10706160",
+      "source": "Tu manges trop.",
+      "reference": "Kana da ci da yawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10706160",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10866162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10706160",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10706160"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10690216",
+      "source": "Elle était britannique.",
+      "reference": "Ita 'yar Burtaniya ce.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10690216",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10891546",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10690216",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10690216"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_10676521",
+      "source": "Honte à toi.",
+      "reference": "Ka ji kunya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10676521",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10852841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10676521",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10676521"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_10676520",
+      "source": "Honte à vous.",
+      "reference": "Ka ji kunya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10676520",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10852841",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10676520",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10676520"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10673459",
+      "source": "Bien le bonjour !",
+      "reference": "Gaisuwa mai daɗi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10673459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10881186",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10673459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10673459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10505539",
+      "source": "Dieu du ciel !",
+      "reference": "Ikon Allaah!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10505539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872644",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10505539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10505539"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_10270851",
+      "source": "Bouche cette fuite.",
+      "reference": "Rufe inda yake yoyo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10270851",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10896370",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10270851",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10270851"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10052994",
+      "source": "Voici Mademoiselle Curtis.",
+      "reference": "Wannan Miss Curtis ce.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10052994",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10813642",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10052994",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10052994"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_9977070",
+      "source": "Elles me connaissaient.",
+      "reference": "Sun sanni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9977070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848205",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9977070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9977070"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_9977069",
+      "source": "Ils me connaissaient.",
+      "reference": "Sun sanni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9977069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848205",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9977069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9977069"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_9840746",
+      "source": "Chut ! Il dort.",
+      "reference": "Shiru! Yana bacci.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9840746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10889404",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9840746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9840746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_9821779",
+      "source": "Ferme le capot.",
+      "reference": "Rufe ƙahon.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9821779",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10887118",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9821779",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9821779"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9462262",
+      "source": "Ton bateau pue.",
+      "reference": "Kwale-kwalen ka ɗoyi ya ke.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9462262",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10883930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9462262",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9462262"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9462261",
+      "source": "Votre bateau pue.",
+      "reference": "Kwale-kwalen ka ɗoyi ya ke.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9462261",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10883930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9462261",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9462261"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9190990",
+      "source": "Je te tiens !",
+      "reference": "Na kama ka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9190990",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10834993",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9190990",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9190990"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_9155367",
+      "source": "Nous sommes matures.",
+      "reference": "Mun balagaggu ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9155367",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848047",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9155367",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9155367"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_9020403",
+      "source": "Ah, peu importe.",
+      "reference": "Ah, koma yaya.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9020403",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10833538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9020403",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9020403"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9020041",
+      "source": "Merci, ma chère.",
+      "reference": "Nagode, hon.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9020041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10845199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9020041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9020041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9020040",
+      "source": "Merci, mon cher.",
+      "reference": "Nagode, hon.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9020040",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10845199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9020040",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9020040"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9019998",
+      "source": "Cesse de pousser.",
+      "reference": "Ka dena turawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9019998",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9019998",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9019998"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9019997",
+      "source": "Cessez de pousser.",
+      "reference": "Ka dena turawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9019997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9019997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9019997"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_9019995",
+      "source": "Arrête de pousser.",
+      "reference": "Ka dena turawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9019995",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9019995",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9019995"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_9019994",
+      "source": "Arrêtez de pousser.",
+      "reference": "Ka dena turawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9019994",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847793",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9019994",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9019994"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8738883",
+      "source": "Il était Britannique.",
+      "reference": "Shi dan Burtaniya ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8738883",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840522",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8738883",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8738883"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8738881",
+      "source": "Elle était Britannique.",
+      "reference": "Ita 'yar Burtaniya ce.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8738881",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10891546",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8738881",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8738881"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_8724352",
+      "source": "Il sait pourquoi.",
+      "reference": "Yasan meyasa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8724352",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10853667",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8724352",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8724352"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8718865",
+      "source": "Bonne année, Louise !",
+      "reference": "Barka da sabuwar shekara, Louise!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8718865",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10818538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8718865",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8718865"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8703835",
+      "source": "Ils sont jeunes.",
+      "reference": "Suna cikin kurciya.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8703835",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10869666",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8703835",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8703835"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8690325",
+      "source": "Sellez mon cheval.",
+      "reference": "Sanyawa doki na sirdi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8690325",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10855625",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8690325",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8690325"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8678717",
+      "source": "Détruis le château.",
+      "reference": "Rusa babban ginin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8678717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10880927",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8678717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8678717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8678716",
+      "source": "Détruisez le château.",
+      "reference": "Rusa babban ginin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8678716",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10880927",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8678716",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8678716"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8659313",
+      "source": "Joshua est homosexuel.",
+      "reference": "Joshua Dan luwaɗi ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8659313",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10842892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8659313",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8659313"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8659312",
+      "source": "Joshua est gay.",
+      "reference": "Joshua Dan luwaɗi ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8659312",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10842892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8659312",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8659312"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8619887",
+      "source": "Prends ta retraite.",
+      "reference": "Kammala aiki.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8619887",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10884221",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8619887",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8619887"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8619886",
+      "source": "Prenez votre retraite.",
+      "reference": "Kammala aiki.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8619886",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10884221",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8619886",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8619886"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8609158",
+      "source": "Les sirènes retentissent.",
+      "reference": "Jiniyar na ta kururuwa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8609158",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8609158",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8609158"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_8609157",
+      "source": "Les sirènes hurlent.",
+      "reference": "Jiniyar na ta kururuwa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8609157",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840496",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8609157",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8609157"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_8508768",
+      "source": "Faites vos jeux.",
+      "reference": "Sanya caca.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8508768",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10852743",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8508768",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8508768"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8165613",
+      "source": "La nourriture refroidit.",
+      "reference": "Abincin na hucewa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8165613",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10818502",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8165613",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8165613"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_8142413",
+      "source": "Elle est Britannique.",
+      "reference": "Ita 'yar Burtaniya ce.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8142413",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10891546",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8142413",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8142413"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8090766",
+      "source": "Présentez vos excuses.",
+      "reference": "Yanzu dai yi hakuri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8090766",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10837680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8090766",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8090766"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8090765",
+      "source": "Présente tes excuses.",
+      "reference": "Yanzu dai yi hakuri.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8090765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10837680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8090765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8090765"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8090750",
+      "source": "Espèce de canaille !",
+      "reference": "Mara mutunci!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8090750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10884102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8090750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8090750"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8067962",
+      "source": "Confirmez la commande.",
+      "reference": "Tabbatar da odar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8067962",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872724",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8067962",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8067962"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7956644",
+      "source": "Encore une autre !",
+      "reference": "Kuma!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956644"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7956643",
+      "source": "Encore un autre !",
+      "reference": "Kuma!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956643",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956643",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956643"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7956640",
+      "source": "Bande de bâtards !",
+      "reference": "Yan iska!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956640",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956640",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956640"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7956638",
+      "source": "Bande de salauds !",
+      "reference": "Yan iska!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7956638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10895980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7956638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7956638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7773530",
+      "source": "Quel gros gâteau !",
+      "reference": "Wannan ƙaton kek haka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7773530",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10865886",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7773530",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7773530"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7771122",
+      "source": "Je vous détestais.",
+      "reference": "Na tsane ka a da.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7771122",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10866838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7771122",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7771122"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7771121",
+      "source": "Je te détestais.",
+      "reference": "Na tsane ka a da.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7771121",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10866838",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7771121",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7771121"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7761437",
+      "source": "Il cuisine bien.",
+      "reference": "Ya ƙware a girki.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7761437",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10824506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7761437",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7761437"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7563250",
+      "source": "Les arbres bourgeonnent.",
+      "reference": "Itatuwa suna toho.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7563250",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10825277",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7563250",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7563250"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_7562986",
+      "source": "La sonnerie retentissait.",
+      "reference": "Mai karar ya kara.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7562986",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10809141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7562986",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7562986"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_7562985",
+      "source": "La sonnerie retentit.",
+      "reference": "Mai karar ya kara.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7562985",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10809141",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7562985",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7562985"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_7482699",
+      "source": "Nous répétons beaucoup.",
+      "reference": "Muna yawan aiwatarwa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7482699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10874695",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7482699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7482699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_7482644",
+      "source": "Nous allons aider.",
+      "reference": "Zamu taimaka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7482644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847782",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7482644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7482644"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7477621",
+      "source": "Je te tiens.",
+      "reference": "Na kama ka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7477621",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10834993",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7477621",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7477621"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7370002",
+      "source": "Restez à proximité.",
+      "reference": "Tsaya kusa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7370002",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7370002",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7370002"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7370001",
+      "source": "Reste à proximité.",
+      "reference": "Tsaya kusa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7370001",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847794",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7370001",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7370001"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7369867",
+      "source": "On part maintenant.",
+      "reference": "Yanzu za mu tafi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7369867",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7369867",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7369867"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7355625",
+      "source": "Gardez votre calme.",
+      "reference": "Kwantar da hankalinka!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7355625",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10889516",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7355625",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7355625"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7306681",
+      "source": "Pleurer est normal.",
+      "reference": "Kuka ba wani abu bane.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7306681",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10893832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7306681",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7306681"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_7204852",
+      "source": "Tu es fatiguée.",
+      "reference": "Ka gaji.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7204852",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10898350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7204852",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7204852"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7204851",
+      "source": "Tu es fatigué.",
+      "reference": "Ka gaji.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7204851",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10898350",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7204851",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7204851"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7142165",
+      "source": "Ferme la trappe.",
+      "reference": "Rufe ƙyallen.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7142165",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7142165",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7142165"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7142164",
+      "source": "Fermez la trappe.",
+      "reference": "Rufe ƙyallen.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7142164",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7142164",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7142164"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7136099",
+      "source": "Elles sont venues.",
+      "reference": "Sun zo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7136099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10896445",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7136099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7136099"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_7136096",
+      "source": "Ils sont venus.",
+      "reference": "Sun zo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7136096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10896445",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7136096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7136096"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_7105670",
+      "source": "Tout est naze.",
+      "reference": "Komai ya nutse.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7105670",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10850047",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7105670",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7105670"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6978527",
+      "source": "Les bébés crient.",
+      "reference": "Jariran suna ihu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6978527",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10842598",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6978527",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6978527"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6940694",
+      "source": "Ils réfléchissent trop.",
+      "reference": "Suna tunani sosai.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6940694",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10891458",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6940694",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6940694"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_6774333",
+      "source": "Toutes mes salutations.",
+      "reference": "Gaisuwa mai yawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6774333",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10837670",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6774333",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6774333"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_6631064",
+      "source": "Nous vous recontacterons.",
+      "reference": "Za mu dawo gare ku.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6631064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10858749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6631064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6631064"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_6563388",
+      "source": "Dans sa gueule !",
+      "reference": "A fuskar shi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6563388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10887106",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6563388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6563388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6479811",
+      "source": "Débranche la prise.",
+      "reference": "Tura filogi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6479811",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848288",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6479811",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6479811"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_6474162",
+      "source": "Je ferais pareil.",
+      "reference": "Ni ma irin haka zan yi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6474162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10875231",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6474162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6474162"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6465900",
+      "source": "Quel beau vélo !",
+      "reference": "Wancan babur ne mai kyau!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6465900",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10886828",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6465900",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6465900"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6463395",
+      "source": "Ne trichez pas.",
+      "reference": "Kada ka yi cuta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6463395",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6463395",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6463395"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6463393",
+      "source": "Ne triche pas.",
+      "reference": "Kada ka yi cuta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6463393",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847805",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6463393",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6463393"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6210358",
+      "source": "Elle était plate.",
+      "reference": "A shimfide yake.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6210358",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10850877",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6210358",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6210358"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6210357",
+      "source": "Il était plat.",
+      "reference": "A shimfide yake.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6210357",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10850877",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6210357",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6210357"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5972073",
+      "source": "Nous devons partir !",
+      "reference": "Dole mu tafi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5972073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10889353",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5972073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5972073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_5666906",
+      "source": "Dors bien, Sean.",
+      "reference": "Ka yi barci mai dadi, Sean.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5666906",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10813735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5666906",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5666906"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5552225",
+      "source": "Je vous épouserai.",
+      "reference": "Zan aureka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5552225",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10858218",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5552225",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5552225"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5545307",
+      "source": "Je suis britannique.",
+      "reference": "Ni ɗan Burtaniya ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5545307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10863447",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5545307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5545307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_5437856",
+      "source": "Quelle fâcheuse coïncidence !",
+      "reference": "Wannan abin takaici ne!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5437856",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10842645",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5437856",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5437856"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.33
+      }
+    },
+    {
+      "id": "tatoeba_5290930",
+      "source": "Je veux participer.",
+      "reference": "Ina so in shiga.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5290930",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10875405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5290930",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5290930"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_5158315",
+      "source": "Salut les gars!",
+      "reference": "Sannu fellas!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5158315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10869462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5158315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5158315"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5105535",
+      "source": "Il vient seul.",
+      "reference": "Yana zuwa shi kadai.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5105535",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10877598",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5105535",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5105535"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4961541",
+      "source": "Ne bougez pas !",
+      "reference": "Kar ka motsa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4961541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847804",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4961541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4961541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4864844",
+      "source": "Elles attendent toutes.",
+      "reference": "Duk suna jira.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4864844",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848206",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4864844",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4864844"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_4842569",
+      "source": "Ne flipe pas !",
+      "reference": "Kada ku firgita.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4842569",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4842569",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4842569"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4839181",
+      "source": "Pas vrai ?",
+      "reference": "Ba gaskiya bane?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4839181",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10858269",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4839181",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4839181"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_4805474",
+      "source": "Nous sommes synchronisées.",
+      "reference": "Mun daidaita.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4805474",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4805474",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4805474"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_4805473",
+      "source": "Nous sommes synchronisés.",
+      "reference": "Mun daidaita.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4805473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4805473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4805473"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_4801683",
+      "source": "Nous partons maintenant.",
+      "reference": "Yanzu za mu tafi.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4801683",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4801683",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4801683"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_4779650",
+      "source": "Nous devrions attendre.",
+      "reference": "Za mu jira.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4779650",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10859047",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4779650",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4779650"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_4625941",
+      "source": "Appelle un médecin !",
+      "reference": "Kira likita.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4625941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848216",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4625941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4625941"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_4610745",
+      "source": "Vous pouvez aider.",
+      "reference": "Za ka iya taimakawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4610745",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4610745",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4610745"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4601833",
+      "source": "Tu peux aider.",
+      "reference": "Za ka iya taimakawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4601833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10848342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4601833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4601833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4580483",
+      "source": "Ne bouge pas !",
+      "reference": "Kar ka motsa!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4580483",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10847804",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4580483",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4580483"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4533899",
+      "source": "Maman a pleuré.",
+      "reference": "Mama tayi kuka.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4533899",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10840340",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4533899",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4533899"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4402284",
+      "source": "Cherche ; trouve ; découvre !",
+      "reference": "Bincike; samu; gano!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4402284",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10851036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4402284",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4402284"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_4323068",
+      "source": "Je comprends pas.",
+      "reference": "Ban gane ba.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4323068",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "2909151",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4323068",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4323068"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_4320560",
+      "source": "On est samedi.",
+      "reference": "Yau Asabar ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4320560",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10820587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4320560",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4320560"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4271028",
+      "source": "Alan est poète.",
+      "reference": "Alan mai rubuta baiti na waƙa ne.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4271028",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10831294",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4271028",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4271028"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4236792",
+      "source": "Allez, dis-moi !",
+      "reference": "Kai, giya mun mana!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4236792",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10853099",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4236792",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4236792"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_4021918",
+      "source": "Quelle merveilleuse nouvelle!",
+      "reference": "Wannan labari ne mai daɗi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4021918",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10869171",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4021918",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4021918"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.67
+      }
+    },
+    {
+      "id": "tatoeba_3672064",
+      "source": "Laisse-moi réessayer !",
+      "reference": "Bari in sake gwadawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3672064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10855732",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3672064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3672064"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 9.5
+      }
+    },
+    {
+      "id": "tatoeba_3672063",
+      "source": "Laissez-moi réessayer !",
+      "reference": "Bari in sake gwadawa.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3672063",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10855732",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3672063",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3672063"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 10.0
+      }
+    },
+    {
+      "id": "tatoeba_3666213",
+      "source": "Fermez cette porte !",
+      "reference": "Rufe wannan ƙofar!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3666213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872656",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3666213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3666213"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3666212",
+      "source": "Ferme cette porte !",
+      "reference": "Rufe wannan ƙofar!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3666212",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10872656",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3666212",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3666212"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3647294",
+      "source": "Interdiction de fumer.",
+      "reference": "Ban da shan taba.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3647294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10845819",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3647294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3647294"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_3640586",
+      "source": "Allez, tentons-le !",
+      "reference": "Ki zo, mu gwada.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3640586",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "fra",
+        "target_lang": "hau",
+        "target_sentence_id": "10863784",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3640586",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3640586"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 2,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 7.5
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

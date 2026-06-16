@@ -1,0 +1,44 @@
+#!/bin/sh
+# ──────────────────────────────────────────────────────────────────────
+# Pre-commit hook: champollion dogfooding (Arena site)
+#
+# Translates the Arena doc site using champollion before every commit.
+# Runs sync-ssot.js first to ensure SSOT docs are fresh, then translates.
+#
+# Setup (run once after cloning):
+#   git config core.hooksPath .githooks
+#
+# Requires OPENROUTER_API_KEY in environment or .env file.
+# ──────────────────────────────────────────────────────────────────────
+
+set -e
+
+# ── Check for API key ──
+if [ -z "$OPENROUTER_API_KEY" ] && [ -f .env ]; then
+  export $(grep -v '^#' .env | grep OPENROUTER_API_KEY | xargs)
+fi
+
+if [ -z "$OPENROUTER_API_KEY" ]; then
+  echo "⚠️  OPENROUTER_API_KEY not set — skipping i18n sync"
+  echo "   Set it in .env or export it to enable pre-commit translation."
+  exit 0
+fi
+
+# ── Check if any docs or locale files changed ──
+DOCS_CHANGED=$(git diff --cached --name-only --diff-filter=ACMR -- \
+  'website/docs/' 'website/i18n/en/' 'website/src/' 'website/docusaurus.config.js' \
+  2>/dev/null | head -1)
+
+if [ -z "$DOCS_CHANGED" ]; then
+  exit 0
+fi
+
+echo "🌐 champollion pre-commit: translating changed Arena docs..."
+
+# Translate
+(cd website && npx champollion sync --content 2>&1 | tail -5)
+
+# Stage translated files
+git add website/i18n/
+
+echo "✅ Arena i18n sync complete"

@@ -1,0 +1,438 @@
+{
+  "theme.ErrorPageContent.title": {
+    "message": "หน้านี้เกิดข้อผิดพลาด",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "เลื่อนกลับขึ้นด้านบน",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "คลังบทความ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "คลังบทความ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "การนำทางรายการบล็อก",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "รายการใหม่กว่า",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "รายการเก่ากว่า",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "การนำทางหน้าบทความบล็อก",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "บทความใหม่กว่า",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "บทความเก่ากว่า",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "โหมดระบบ",
+    "description": "The name for the system color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "โหมดสว่าง",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "โหมดมืด",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "สลับระหว่างโหมดมืดและโหมดสว่าง (ปัจจุบัน: {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "ดูแท็กทั้งหมด",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "หน้าเอกสาร",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "ก่อนหน้า",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "ถัดไป",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "เอกสาร 1 รายการที่ถูกแท็ก|เอกสาร {count} รายการที่ถูกแท็ก",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} ที่มีแท็ก \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "นี่คือเอกสารที่ยังไม่เผยแพร่สำหรับ {siteTitle} เวอร์ชัน {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "นี่คือเอกสารสำหรับ {siteTitle} {versionLabel} ซึ่งไม่ได้รับการดูแลรักษาอย่างต่อเนื่องแล้ว",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "สำหรับเอกสารที่เป็นปัจจุบัน โปรดดู {latestVersionLink} ({versionLabel})",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "เวอร์ชันล่าสุด",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "เวอร์ชัน: {versionLabel}"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "ลิงก์โดยตรงไปยัง {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " เมื่อ {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " โดย {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "อัปเดตล่าสุด{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.editThisPage": {
+    "message": "แก้ไขหน้านี้",
+    "description": "The link label to edit the current page"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "เวอร์ชัน",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "ไม่พบหน้านี้",
+    "description": "The title of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "ปิด",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.admonition.caution": {
+    "message": "ข้อควรระวัง",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "อันตราย",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "ข้อมูล",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "หมายเหตุ",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "เคล็ดลับ",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "คำเตือน",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "แท็ก:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "การนำทางบทความล่าสุดในบล็อก",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "ขยายหมวดหมู่ใน sidebar '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "ยุบหมวดหมู่ใน sidebar '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(เปิดในแท็บใหม่)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "หลัก",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "ไม่พบเนื้อหาที่คุณกำลังค้นหา",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "กรุณาติดต่อเจ้าของเว็บไซต์ที่ลิงก์คุณมายัง URL นี้ และแจ้งให้ทราบว่าลิงก์ดังกล่าวใช้งานไม่ได้",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "ในหน้านี้",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "ภาษา",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "อ่าน {readingTime} นาที",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "คัดลอก",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "คัดลอกแล้ว",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "คัดลอกโค้ดไปยังคลิปบอร์ด",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "สลับการตัดบรรทัด",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.blog.post.readMore": {
+    "message": "อ่านเพิ่มเติม",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "อ่านเพิ่มเติมเกี่ยวกับ {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "แถบด้านข้างเอกสาร",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "หน้าหลัก",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "ย่อแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "ย่อแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ปิดแถบนำทาง",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "สลับแถบนำทาง",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "ขยายเมนูดรอปดาวน์",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "ย่อเมนูดรอปดาวน์",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← กลับไปเมนูหลัก",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} โพสต์",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} รายการที่แท็กด้วย \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "ผู้เขียน",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "ดูผู้เขียนทั้งหมด",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "ผู้เขียนรายนี้ยังไม่มีโพสต์",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "หน้าที่ไม่ได้ลงรายการ",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "หน้านี้ไม่ได้อยู่ในรายการ เครื่องมือค้นหาจะไม่จัดทำดัชนี และมีเพียงผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่สามารถเข้าถึงได้",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "หน้าฉบับร่าง",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "หน้านี้เป็นฉบับร่าง จะปรากฏเฉพาะในโหมด dev และจะถูกยกเว้นจาก production build",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 รายการ|{count} รายการ",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "ลองอีกครั้ง",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "ข้ามไปยังเนื้อหาหลัก",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "แท็ก",
+    "description": "The title of the tag list page"
+  },
+  "homepage.hero.subtext": {
+    "message": "เกณฑ์มาตรฐานอิสระสำหรับการแปลด้วยเครื่องสำหรับภาษาที่มีทรัพยากรน้อย — คอร์ปัสพัฒนา 48 ชุด รายการเมตริกการให้คะแนน 19 รายการ bootstrap confidence intervals และการตรวจสอบทางสัณฐานวิทยาด้วย FST สำหรับภาษาที่บริการเชิงพาณิชย์จะไม่รองรับ"
+  },
+  "homepage.cta.docs": {
+    "message": "อ่านเอกสาร"
+  },
+  "homepage.cta.github": {
+    "message": "ดูบน GitHub"
+  },
+  "homepage.pitch.benchmarks.title": {
+    "message": "เกณฑ์มาตรฐานที่เป็นมาตรฐานเดียวกัน"
+  },
+  "homepage.pitch.benchmarks.description": {
+    "message": "การประเมินที่ทำซ้ำได้ด้วย chrF++, exact match, FST acceptance, semantic scoring และ bootstrap confidence intervals ทุก run จะถูกบันทึก fingerprint"
+  },
+  "homepage.pitch.sovereignty.title": {
+    "message": "อำนาจอธิปไตยของชุมชน"
+  },
+  "homepage.pitch.sovereignty.description": {
+    "message": "วิธีการที่ชนะจะโอนความเป็นเจ้าของให้แก่ชุมชนภาษา ยึดหลัก OCAP® ชุมชนควบคุมข้อมูล วิธีการ และรายได้ของตนเอง"
+  },
+  "homepage.pitch.plugin.title": {
+    "message": "สถาปัตยกรรม Plugin แบบเปิด"
+  },
+  "homepage.pitch.plugin.description": {
+    "message": "นำวิธีการใดก็ได้มาใช้: coached LLM, fine-tuned model, FST-gated pipeline หรือ custom plugin หากสามารถสร้างคำแปลได้ harness จะให้คะแนนได้"
+  },
+  "homepage.pitch.bridge.title": {
+    "message": "Deployment Bridge"
+  },
+  "homepage.pitch.bridge.description": {
+    "message": "วิธีการที่ผ่านการพิสูจน์แล้วจะ deploy สู่ production ผ่าน champollion นักพัฒนาใช้งานผ่าน API และรายได้จะไหลกลับสู่ชุมชน"
+  },
+  "homepage.benchmarks.title": {
+    "message": "เกณฑ์มาตรฐานปัจจุบัน"
+  },
+  "homepage.benchmarks.language": {
+    "message": "ภาษา:"
+  },
+  "homepage.benchmarks.edtekla.language": {
+    "message": "English → Plains Cree (SRO)"
+  },
+  "homepage.benchmarks.entries": {
+    "message": "รายการ:"
+  },
+  "homepage.benchmarks.edtekla.entries": {
+    "message": "คู่ที่คัดสรรแล้ว 486+ คู่"
+  },
+  "homepage.benchmarks.license": {
+    "message": "สัญญาอนุญาต:"
+  },
+  "homepage.benchmarks.source": {
+    "message": "แหล่งที่มา:"
+  },
+  "homepage.benchmarks.edtekla.source": {
+    "message": "University of Alberta"
+  },
+  "homepage.benchmarks.languages": {
+    "message": "ภาษา:"
+  },
+  "homepage.benchmarks.flores.languages": {
+    "message": "อังกฤษ → 39 ภาษา"
+  },
+  "homepage.benchmarks.flores.entries": {
+    "message": "รายการ:"
+  },
+  "homepage.benchmarks.flores.entryCount": {
+    "message": "1,012 ประโยคต่อภาษา"
+  },
+  "homepage.benchmarks.flores.license": {
+    "message": "สัญญาอนุญาต:"
+  },
+  "homepage.benchmarks.flores.source": {
+    "message": "แหล่งที่มา:"
+  },
+  "homepage.links.submit": {
+    "message": "ส่ง Method"
+  },
+  "homepage.links.sovereignty": {
+    "message": "Data Sovereignty"
+  },
+  "homepage.links.economic": {
+    "message": "รูปแบบเศรษฐกิจ"
+  },
+  "homepage.links.communities": {
+    "message": "สำหรับชุมชนภาษา"
+  },
+  "homepage.links.leaderboard": {
+    "message": "Leaderboard"
+  },
+  "homepage.links.cli": {
+    "message": "champollion CLI"
+  },
+  "homepage.links.title": {
+    "message": "เรียนรู้เพิ่มเติม"
+  },
+  "homepage.layout.title": {
+    "message": "The MT Eval Arena"
+  },
+  "homepage.layout.description": {
+    "message": "แพลตฟอร์ม benchmarking แบบเปิดสำหรับวิธีการแปลด้วยเครื่อง โดยมุ่งเน้นภาษาที่บริการเชิงพาณิชย์ไม่รองรับ"
+  },
+  "homepage.hero.hub": {
+    "message": "MT Eval Arena คือ evaluation engine ของโครงการ {champollionLink}"
+  },
+  "theme.docs.relatedRail.title": {
+    "message": "หากคุณสนใจเนื้อหานี้ →",
+    "description": "Heading of the related-content rail at the bottom of a doc page"
+  }
+}

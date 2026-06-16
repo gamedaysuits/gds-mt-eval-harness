@@ -1,0 +1,2005 @@
+{
+  "corpus_id": "tatoeba-eng-pan-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "pan",
+    "source_name": "English",
+    "target_name": "Punjabi"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:06:02.231390+00:00",
+  "entry_count": 68,
+  "domains": [
+    "conv",
+    "edu",
+    "literary",
+    "support",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_1289",
+      "source": "That was an evil bunny.",
+      "reference": "ਓਹ ਖਰਗੋਸ਼ ਭੈੜਾ ਸੀ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1289",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3794110",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1289",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1289"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3738718",
+      "source": "How late is it?",
+      "reference": "ਕਿੰਨੇ ਵੱਜੇ ਹਨ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738718",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "4546239",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738718",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738718"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_2238669",
+      "source": "Tom spoke calmly.",
+      "reference": "ਟੋਮ ਸ਼ਾਂਤੀ ਨਾਲ ਬੋਲਿਆ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2238669",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786207",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2238669",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2238669"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_593670",
+      "source": "I'll be back right away.",
+      "reference": "ਮੈਂ ਛੇਤੀ ਪਰਤਾਂਗੀ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "593670",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3793960",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "593670",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/593670"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_289161",
+      "source": "He is always joking.",
+      "reference": "ਓਹ ਹਰ ਵੇਲੇ ਮਖੌਲ ਕਰਦਾ ਰਿਹੰਦਾ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "289161",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797737",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "289161",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/289161"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_757376",
+      "source": "What's the time?",
+      "reference": "ਕਿੰਨੇ ਵੱਜੇ ਹਨ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "757376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "4546239",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "757376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/757376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1312015",
+      "source": "I have no words.",
+      "reference": "ਮੈਂ ਲਾਜਵਾਬ ਹੋ ਗਿਆ ਹਾਂ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1312015",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3793984",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1312015",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1312015"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3178387",
+      "source": "What must we do?",
+      "reference": "ਅਸੀਂ ਕੀ ਕਰਿਅੇ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3178387",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3827710",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3178387",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3178387"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3801915",
+      "source": "Tom slowly drew back.",
+      "reference": "ਟੌਮ ਹੌਲੀ-ਹੌਲੀ ਪਿੱਛੇ ਹਟਿਅਾ ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3801915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3801921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3801915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3801915"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2713044",
+      "source": "I'm getting married next month.",
+      "reference": "ਮੇਰਾ ਅਗਲੇ ਮਹੀਨੇ ਵਿਆਹ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713044",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713044",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713044"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_1801832",
+      "source": "I don't like kids.",
+      "reference": "ਮੈਨੂੰ ਬੱਚੇ ਚੰਗੇ ਨਹੀਂ ਲਗਦੇ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1801832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2057547",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1801832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1801832"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6358260",
+      "source": "Tom was a soldier.",
+      "reference": "ਟੋਮ ਪਿਹਲਾਂ ਸਿਪਾਹੀ ਹੋਇਆ ਕਰਦਾ ਸੀ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6358260",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797291",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6358260",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6358260"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_258131",
+      "source": "I had my watch fixed.",
+      "reference": "ਮੈਂ ਆਪਣੀ ਘੜੀ ਦੀ ਮੁਰੰਮਤ ਕਰਵਾਈ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258131",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "13224738",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258131",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258131"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2761064",
+      "source": "Tom accidentally swallowed a coin.",
+      "reference": "ਟੌਮ ਗਲਤੀ ਨਾਲ ਇਕ ਸਿੱਕਾ ਲੰਘਾ ਗਿਅਾ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2761064",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3801903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2761064",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2761064"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.8
+      }
+    },
+    {
+      "id": "tatoeba_2237623",
+      "source": "Tom rescued Mary.",
+      "reference": "ਟੌਮ ਨੇ ਮੈਰੀ ਨੂੰ ਬਚਾੲਿਅਾ ।",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788640",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1841725",
+      "source": "Do you trust me?",
+      "reference": "ਕੀ ਤੁਹਾਨੂੰ ਮੇਰੇ ਉੱਤੇ ਭਰੋਸਾ ਹੈ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841725",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786284",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841725",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841725"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3178389",
+      "source": "What do we have to do?",
+      "reference": "ਅਸੀਂ ਕੀ ਕਰਿਅੇ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3178389",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3827710",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3178389",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3178389"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1286",
+      "source": "I'm at a loss for words.",
+      "reference": "ਮੈਂ ਲਾਜਵਾਬ ਹੋ ਗਿਆ ਹਾਂ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1286",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3793984",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1286",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1286"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3786239",
+      "source": "Denial is one of the strongest human defence mechanisms.",
+      "reference": "ਅਸਵੀਕਾਰ ਕਰਨਾ ਇਨਸਾਨ ਦਾ ਬਚਾਓ ਕਰਨ ਦੇ ਸਬ ਤੋ ਤਕੜੇ ਤਰੀਕਿਆਂ ਵਿਚੋਂ ਇਕ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3786239",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786248",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3786239",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3786239"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.22
+      }
+    },
+    {
+      "id": "tatoeba_3787959",
+      "source": "And if she is wrong?",
+      "reference": "ਅਤੇ ਜੇ ਓਹ ਗ਼ਲਤ ਹੋਈ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3787959",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788131",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3787959",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3787959"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2538632",
+      "source": "Tom showed Mary the book he had written.",
+      "reference": "ਟੋਮ ਨੇ ਮੈਰੀ ਨੂੰ ਆਪਣੀ ਲਿਖੀ ਹੋਈ ਪੁਸਤਕ ਦਿਖਾਈ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2538632",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786257",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2538632",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2538632"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3330440",
+      "source": "I gave Tom a huge hug.",
+      "reference": "ਮੈਂ ਟੋਮ ਨੂੰ ਘੁੱਟ ਕੇ ਜਫ੍ਹੀ ਪਾਈ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3330440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3330440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3330440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2956497",
+      "source": "Tom didn't give me time to think.",
+      "reference": "ਟੌਮ ਨੇ ਮੈਨੁੰ ਸੋਚਣ ਦਾ ਮੌਕਾ ਨਹੀਂ ਦਿੱਤਾ ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2956497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788487",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2956497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2956497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_1308275",
+      "source": "How many Chinese friends do you have?",
+      "reference": "ਤੁਹਾਡੇ ਕਿੰਨੇ ਚੀਨੀ ਦੋਸਤ ਹਨ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1308275",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788129",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1308275",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1308275"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_3201025",
+      "source": "You used to tell me everything.",
+      "reference": "ਤੁਸੀਂ ਮੈਨੂੰ ਸਬ ਕੁਛ ਦਸਦੇ ਹੁੰਦੇ ਸੀ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3201025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3201025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3201025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_281913",
+      "source": "I never thought they would accept me.",
+      "reference": "ਮੈਂ ਕਦੇ ਨਹੀਂ ਸੀ ਸੋਚੇਆ ਕੇ ਓਹ ਮੈਨੂੰ ਪਰਵਾਨ ਕਰ ਲੈਣਗੇ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "281913",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2066065",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "281913",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/281913"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_2451464",
+      "source": "Do you have a French dictionary?",
+      "reference": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਫ੍ਰੇੰਚ ਜ਼ੁਬਾਨ ਦਾ ਸ਼ਬਦਕੋਸ਼ ਹੈ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2451464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797276",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2451464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2451464"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_20459",
+      "source": "Get back, get back!",
+      "reference": "ਮੁੜ ਆ, ਮੁੜ ਆ!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2066097",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3738721",
+      "source": "What time of day is it?",
+      "reference": "ਕਿੰਨੇ ਵੱਜੇ ਹਨ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "4546239",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_1027897",
+      "source": "Tom told Mary that she was wrong.",
+      "reference": "ਟੌਮ ਨੇ ਮੈਰੀ ਨੂੰ ਦੱਸਿਅਾ ਕਿ ਓਹ ਗ਼ਲਤ ਸੀ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1027897",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3790682",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1027897",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1027897"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.71
+      }
+    },
+    {
+      "id": "tatoeba_1277",
+      "source": "I have to go to sleep.",
+      "reference": "ਮੈਨੂੰ ਸੌਣਾਂ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1277",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3792917",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1277",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1277"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_1288",
+      "source": "I just don't know what to say.",
+      "reference": "ਮੈਨੂੰ ਨਹੀਂ ਪਤਾ ਮੈਂ ਕੀ ਕਹਾਂ।",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3794029",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1288"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_361522",
+      "source": "Well, I'll only take toast and coffee.",
+      "reference": "ਖੈਰ, ਮੈਂ ਤਾ ਸਿਰਫ਼ ਟੋਸਟ ਅਤੇ ਕਾਫ਼ੀ ਲਵਾਂਗਾ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "361522",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788105",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "361522",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/361522"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_284265",
+      "source": "I'll tell him so when he comes.",
+      "reference": "ਜਦੋਂ ਓਹ ਆਏਗਾ ਤਾ ਮੈਂ ਉਸਨੂੰ ਦੱਸ ਦੇਵਾਂਗੀ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "284265",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2066044",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "284265",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/284265"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_17717",
+      "source": "What would you do if you were in my place?",
+      "reference": "ਜੇ ਤੁਸੀਂ ਮੇਰੀ ਥਾਂ ਤੇ ਹੁੰਦੇ ਤਾ ਕੀ ਕਰਦੇ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17717",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2057549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17717",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17717"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_3788443",
+      "source": "Mario, stop calling me gay! I'm straight!",
+      "reference": "ਮਾਰੀਓ, ਮੈਨੂੰ ਸਮਲੈੰਗਿਕ ਕਹਣਾ ਬੰਦ ਕਰ! ਮੈਂ ਸਿੱਧਾ ਹਾਂ!",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3788443",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788602",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3788443",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3788443"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.57
+      }
+    },
+    {
+      "id": "tatoeba_2396272",
+      "source": "Last night was great, wasn't it?",
+      "reference": "ਕਲ ਰਾਤ ਵਧੀਅਾ ਬੀਤੀ, ਹੈ ਨਾ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2396272",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788741",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2396272",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2396272"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_3786202",
+      "source": "Tears of joy streamed down Mary's face as Tom said, \"I do.\"",
+      "reference": "ਜਦੋਂ ਟੋਮ ਨੇ \"ਹਾਂ\" ਤਾਂ ਮੇਰੀ ਦੀਆਂ ਅੱਖਾਂ ਤੋਂ ਖ਼ੁਸ਼ੀ ਦੇ ਹੰਜੂ ਕਿਰ ਪਏ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3786202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786206",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3786202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3786202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_12371547",
+      "source": "The weather is warm and sunny today.",
+      "reference": "ਅੱਜ ਮੌਸਮ ਨਿੱਘਾ ਅਤੇ ਸੂਰਜਮਈ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12371547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "13224744",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12371547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12371547"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.14
+      }
+    },
+    {
+      "id": "tatoeba_299428",
+      "source": "He can't even read, let alone write.",
+      "reference": "ਲਿਖਣ ਦੀ ਛੱਡੋ, ੳੁਸ ਨੂੰ ਤਾਂ ਪੜਨਾ ਵੀ ਨਹੀਂ ਅਾੳੁਂਦਾ ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "299428",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788515",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "299428",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/299428"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6870915",
+      "source": "If I'd wanted to go, I would have said so.",
+      "reference": "ਜੇ ਮੈਂ ਜਾਣਾ ਹੁੰਦਾ ਤਾਂ ਮੈਂ ਕਹਾਣੀ ਦੇਣਾ ਸੀ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6870915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6870915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6870915"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.1
+      }
+    },
+    {
+      "id": "tatoeba_31092",
+      "source": "If you were in my place, what would you do?",
+      "reference": "ਜੇ ਤੁਸੀਂ ਮੇਰੀ ਥਾਂ ਤੇ ਹੁੰਦੇ ਤਾ ਕੀ ਕਰਦੇ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "31092",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2057549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "31092",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/31092"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_534781",
+      "source": "I was saying that I didn't think that it was weird at all.",
+      "reference": "ਮੈਂ ਇਹ ਕਹ ਰਿਹਾ ਸੀ ਕੇ ਮੈਨੂੰ ਓਹ ਅਜੀਬ ਨਹੀ ਲਗਾ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "534781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "2057552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "534781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/534781"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.46
+      }
+    },
+    {
+      "id": "tatoeba_9328473",
+      "source": "We see him now and then.",
+      "reference": "ਸਾਨੂੰ ਉਹ ਇੱਧਰ-ਉੱਧਰ ਦਿਖਦਾ ਰਹਿੰਦਾ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9328473",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "13224762",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9328473",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9328473"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3801927",
+      "source": "Will you still be here when I get back?",
+      "reference": "ਮੇਰੇ ਵਾਪਸ ਅਾੳੁਣ ਤੇ ਕੀ ਤੁਸੀਂ ਇੱਥੇ ਹੋਵੋਗੇ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3801927",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3801932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3801927",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3801927"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_251893",
+      "source": "My little sister has been suffering from a toothache since last night.",
+      "reference": "ਮੇਰੀ ਛੋਟੀ ਭੈਣ ਕਲ ਰਾਤ ਤੋਂ ਹੀ ਦੰਦ ਦੇ ਦਰਦ ਤੋਂ ਦੁਖੀ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "251893",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786214",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "251893",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/251893"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_3788666",
+      "source": "If I want to go, I'll let you know.",
+      "reference": "ਜੇ ਮੈਂ ਜਾਣਾ ਹੋੲਿਅਾ ਤਾਂ ਤੁਹਾਨੂੰ ਦਸ ਦੇਵਾਂਗਾ ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3788666",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788678",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3788666",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3788666"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.78
+      }
+    },
+    {
+      "id": "tatoeba_1095660",
+      "source": "Tom can do whatever he wants as far as I'm concerned.",
+      "reference": "ਮੇਰੇ ਵਲੋਂ ਟੌਮ ਜੋ ਚਾਹੇ ਓਹ ਕਰ ਸਕਦਾ ਹੈ।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1095660",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788762",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1095660",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1095660"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.82
+      }
+    },
+    {
+      "id": "tatoeba_2028685",
+      "source": "When I grow up, I want to be just like you.",
+      "reference": "ਮੈਂ ਵੱਡਾ ਹੋ ਕੇ ਤੇਰੇ ਵਰਗਾ ਬਣਨਾ ਚਾਹੁੰਦਾ ਹਾਂ।",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2028685",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786199",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2028685",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2028685"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.82
+      }
+    },
+    {
+      "id": "tatoeba_67852",
+      "source": "If I had taken that plane, I would be dead now.",
+      "reference": "ਜੇ ਮੈਂ ਓਹ ਹਵਾੲੀ ਜਹਾਜ ਤੇ ਸਫ਼ਰ ਕਰਦੀ ਤਾਂ ਹੁਣ ਤੱਕ ਮਰੀ ਹੋਣਾ ਸੀ ।",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "67852",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3827715",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "67852",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/67852"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.18
+      }
+    },
+    {
+      "id": "tatoeba_3790416",
+      "source": "If I ever turn into an alcoholic, I'll surely go on vacation to Antalya.",
+      "reference": "ਜੇ ਮੈਂ ਕਦੇ ਸ਼ਰਾਬ ਦਾ ਅਾਦੀ ਹੋੲਿਅਾ ਤਾਂ ਲਾਜ਼ਮੀ ਛੁੱਟੀਅਾਂ ਤੇ ਅੰਤਾਲਿਅਾ ਜਾਵਾਂਗਾ ।",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3790416",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3790689",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3790416",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3790416"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 14,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.07
+      }
+    },
+    {
+      "id": "tatoeba_3786250",
+      "source": "If you say exactly what's on your mind all the time, you're likely to upset a lot of people.",
+      "reference": "ਜੇ ਤੁਸੀੰ ਹਮੇਸ਼ਾ ਆਪਣੇ ਦਿਲ ਦੀ ਗੱਲ ਕਹੋਂਗੇ ਤਾਂ ਹੋ ਸਕਦਾ ਹੈ ਬਹੁਤ ਸਾਰੇ ਲੋਕਾਂ ਨੂੰ ਨਰਾਜ਼ ਕਰੋਗੇ।",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3786250",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3786250",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3786250"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 19,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 3.79
+      }
+    },
+    {
+      "id": "tatoeba_2548960",
+      "source": "Tom was a teacher.",
+      "reference": "ਟੋਮ ਇਕ ਅਧਿਆਪਕ ਹੁੰਦਾ ਸੀ।",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2548960",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2548960",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2548960"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3408992",
+      "source": "Tom used to be a teacher.",
+      "reference": "ਟੋਮ ਇਕ ਅਧਿਆਪਕ ਹੁੰਦਾ ਸੀ।",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3408992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797327",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3408992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3408992"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_3786173",
+      "source": "As far as we know, we humans are alone in the universe.",
+      "reference": "ਜਿਥੋਂ ਤਕ ਮੈਨੂੰ ਗ੍ਯਾਨ ਹੈ ਇੰਸਾਨ ਏਸ ਸ੍ਰਿਸ਼ਟੀ ਵਿੱਚ ਕੱਲੇ ਹਨ।",
+      "domain": "literary",
+      "difficulty": 3,
+      "register": "literary",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3786173",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786271",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3786173",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3786173"
+        },
+        "classification_confidence": 0.1,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_582309",
+      "source": "I need help.",
+      "reference": "ਮੈਨੂੰ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਹੈ।",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "582309",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788043",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "582309",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/582309"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2407817",
+      "source": "I think I need help.",
+      "reference": "ਲਗਦਾ ਹੈ ਮੈਨੂੰ ਮਦਦ ਦੀ ਲੋੜ ਹੈ।",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2407817",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788633",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2407817",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2407817"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_13224729",
+      "source": "I have no contact with her.",
+      "reference": "ਮੇਰਾ ੳੁਸ ਨਾਲ ਹੁਣ ਕੋੲੀ ਰਾਬਤਾ ਨਹੀਂ ।",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13224729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3880080",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13224729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13224729"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3705505",
+      "source": "All German nouns are written with the first letter capitalized.",
+      "reference": "ਜਰਮਨ ਜ਼ੁਬਾਨ ਵਿੱਚ ਸਾਰੇ ਨਾਵਾਂ ਨੂੰ ਵੱਡੇ ਅੱਖਰ ਨਾਲ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3705505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3786233",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3705505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3705505"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.3
+      }
+    },
+    {
+      "id": "tatoeba_3897143",
+      "source": "What is WhatsApp?",
+      "reference": "ਵਟਸਅੈਪ ਹੈਗਾ?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3897143",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3897143",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3897143"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3795257",
+      "source": "Not everyone was happy.",
+      "reference": "ਹਰ ਕੋਈ ਖੁਸ਼ ਨਹੀਂ ਸੀ।",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3795257",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3797166",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3795257",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3795257"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_3791649",
+      "source": "I approve his suggestion.",
+      "reference": "ਮੈਂ ੳੁਸ ਦਾ ਸੁਝਾਵ ਮੰਜੂਰ ਕਰਦੀ ਹਾਂ।",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3791649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3799781",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3791649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3791649"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.25
+      }
+    },
+    {
+      "id": "tatoeba_2545686",
+      "source": "Were the windows closed?",
+      "reference": "ਕੀ ਬਾਰੀਅਾਂ ਬੰਦ ਸਨ?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2545686",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788493",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2545686",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2545686"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1283",
+      "source": "The password is \"Muiriel\".",
+      "reference": "ਪਾਸਵਰਡ \"ਮਿਯੂਰੀਅਲ\" ਹੈ।",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3793892",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1283"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_3788671",
+      "source": "I want to know as soon as anything happens.",
+      "reference": "ਜਦੋਂ ਵੀ ਕੁਝ ਹੋਵੇ ਤਾਂ ਮੈਂ ਜਾਨਣਾ ਚਾਹਾਂਗੀ।",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3788671",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788674",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3788671",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3788671"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_2833972",
+      "source": "Two glasses of apple juice, please.",
+      "reference": "ਕਿਰਪਾ ਕਰਕੇ ਦੋ ਸੇਬ ਰਸ ਦੇ ਗਲਾਸ ਦੇਣਾ।",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2833972",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3788050",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2833972",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2833972"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3801997",
+      "source": "A lot's happened while you've been away.",
+      "reference": "ਤੁਹਾਡੀ ਗੈਰਹਾਜ਼ਰੀ ਵਿਚ ਬਹੁਤ ਕੁਝ ਵਾਪਰ ਚੁਕਿਅਾ ਹੈ ।",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3801997",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "3802001",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3801997",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3801997"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_11934707",
+      "source": "Vladimir appeared with a red cloth and started to distract the bull away from Anna.",
+      "reference": "ਵਲਾਦਿਮੀਰ ਇੱਕ ਲਾਲ ਕੱਪੜਾ ਲੈ ਕੇ ਆਇਆ ਅਤੇ ਸਾਨ੍ਹ ਦਾ ਧਿਆਨ ਐਨਾ ਤੋਂ ਭਟਕਾਉਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲੱਗਾ।",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11934707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "pan",
+        "target_sentence_id": "13224783",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11934707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11934707"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.53
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

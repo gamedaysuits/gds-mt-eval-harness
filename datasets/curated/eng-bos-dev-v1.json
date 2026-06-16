@@ -1,0 +1,1886 @@
+{
+  "corpus_id": "tatoeba-eng-bos-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "bos",
+    "source_name": "English",
+    "target_name": "Bosnian"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:38:33.000177+00:00",
+  "entry_count": 64,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13700980",
+      "source": "You too, Brutus?",
+      "reference": "I ti, Brut?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13700980",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "478011",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13700980",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13700980"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_13412485",
+      "source": "Smile and learn!",
+      "reference": "Smiješi se i uči!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13412485",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "13412479",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13412485",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13412485"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_13205343",
+      "source": "One coffee, please.",
+      "reference": "Kafu, molim.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13205343",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11186201",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13205343",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13205343"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_12121462",
+      "source": "What woke you?",
+      "reference": "Šta te je probudilo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12121462",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12121462",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12121462"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_11158196",
+      "source": "Pineapple juice, please.",
+      "reference": "Sok od ananasa, molim.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11158196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11158334",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11158196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11158196"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_8013488",
+      "source": "Just get lost.",
+      "reference": "Odjebi!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8013488",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183563",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8013488",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8013488"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7414225",
+      "source": "She loves you.",
+      "reference": "Ona te voli.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7414225",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "7414232",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7414225",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7414225"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_7302731",
+      "source": "Is someone here?",
+      "reference": "Je li neko tu?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7302731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11185249",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7302731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7302731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6672709",
+      "source": "Neymar is Brazilian.",
+      "reference": "Neymar je Brazilac.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6672709",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "6673591",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6672709",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6672709"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_6664654",
+      "source": "Maybe Tom forgot.",
+      "reference": "Možda je Tom zaboravio.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6664654",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183749",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6664654",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6664654"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6577258",
+      "source": "Not a chance!",
+      "reference": "Nema šanse!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6577258",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "10198916",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6577258",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6577258"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6015388",
+      "source": "I am Ricardo.",
+      "reference": "Ja sam Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6015388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "6824267",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6015388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6015388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_6004005",
+      "source": "I trust science.",
+      "reference": "Vjerujem znanosti.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6004005",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11185245",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6004005",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6004005"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5928497",
+      "source": "Women like attention.",
+      "reference": "Žene vole pozornost.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5928497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183147",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5928497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5928497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_5883163",
+      "source": "Everybody was laughing.",
+      "reference": "Svi su se smijali.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5883163",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11182997",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5883163",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5883163"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_5699168",
+      "source": "Get off me!",
+      "reference": "Ostavi me na miru!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5699168",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5699168",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5699168"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_5340402",
+      "source": "To your health!",
+      "reference": "Živjeli!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5340402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "7788372",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5340402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5340402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5144996",
+      "source": "Are you English?",
+      "reference": "Jeste li vi Engleskinja?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5144996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11185519",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5144996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5144996"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4917135",
+      "source": "He is good.",
+      "reference": "On je dobar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4917135",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183046",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4917135",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4917135"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_4879969",
+      "source": "All three died.",
+      "reference": "Sva trojica su umrla.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4879969",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4879969",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4879969"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4870573",
+      "source": "Is breakfast included?",
+      "reference": "Jel doručak uračunat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4870573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11186208",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4870573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4870573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_4669315",
+      "source": "It is late.",
+      "reference": "Kasno je.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4669315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183123",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4669315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4669315"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_4430565",
+      "source": "Enjoy your food.",
+      "reference": "Prijatno!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4430565",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183890",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4430565",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4430565"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3861611",
+      "source": "Water is life.",
+      "reference": "Voda je život.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3861611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "5978196",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3861611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3861611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3822701",
+      "source": "Stop embarrassing me.",
+      "reference": "Ostavi me na miru!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3822701",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3822701",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3822701"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3732523",
+      "source": "Tom seemed annoyed.",
+      "reference": "Tom je djelovao iznervirano.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3732523",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "7785658",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3732523",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3732523"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3522075",
+      "source": "Good. And you?",
+      "reference": "Dobro. A vi?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3522075",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "476815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3522075",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3522075"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3388202",
+      "source": "I am thirty.",
+      "reference": "Imam tridest godina.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3388202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "3388971",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3388202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3388202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3331805",
+      "source": "Let me alone!",
+      "reference": "Ostavi me na miru!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3331805",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3331805",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3331805"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3304449",
+      "source": "I drink milk.",
+      "reference": "Pijem mlijeko.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3304449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "3140518",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3304449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3304449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3256233",
+      "source": "My throat hurts.",
+      "reference": "Boli me grlo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3256233",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11182903",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3256233",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3256233"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3125918",
+      "source": "You are American.",
+      "reference": "On je Amerikanac.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3125918",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "481657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3125918",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3125918"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3013965",
+      "source": "This is Copacabana!",
+      "reference": "Ovo je Copacabana!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3013965",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "3013976",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3013965",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3013965"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2922539",
+      "source": "Emily is English.",
+      "reference": "Emily je Engleskinja.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2922539",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2923083",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2922539",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2922539"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2920711",
+      "source": "I study mathematics.",
+      "reference": "Studiram matematiku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2920711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2923102",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2920711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2920711"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "Želim ići.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "3335235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2854682",
+      "source": "You were scared.",
+      "reference": "Vi ste bili uplašeni.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2854682",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "3188778",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2854682",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2854682"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "reference": "Trebam pomoć!",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11185462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2778806",
+      "source": "I am here.",
+      "reference": "Ja sam ovdje.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2778806",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2503149",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2778806",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2778806"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2764192",
+      "source": "I called him.",
+      "reference": "Zvao sam ga.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2764192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2764223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2764192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2764192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2764179",
+      "source": "I never sleep.",
+      "reference": "Nikada ne spavam.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2764179",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2764225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2764179",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2764179"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2734099",
+      "source": "I speak Bosnian.",
+      "reference": "Govorim bosanski.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2734099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2734100",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2734099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2734099"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2592582",
+      "source": "I love France.",
+      "reference": "Volim Francusku.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2592582",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "6933608",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2592582",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2592582"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2583378",
+      "source": "We think alike.",
+      "reference": "Slažem se s tobom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2583378",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11182740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2583378",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2583378"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2582926",
+      "source": "I am trying.",
+      "reference": "Ja probam.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2582926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2507695",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2582926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2582926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2564058",
+      "source": "I was jealous.",
+      "reference": "Bio sam ljubomoran.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2564058",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2923090",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2564058",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2564058"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2523975",
+      "source": "I am fat.",
+      "reference": "Ja sam debeo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2523975",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2503808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2523975",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2523975"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.0
+      }
+    },
+    {
+      "id": "tatoeba_2499490",
+      "source": "Where is Laurie?",
+      "reference": "Gdje je Laurie?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2499490",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2503159",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2499490",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2499490"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2498649",
+      "source": "Health is wealth.",
+      "reference": "Zdravlje je bogatstvo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2498649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2503174",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2498649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2498649"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2422228",
+      "source": "I am Gregor.",
+      "reference": "Ja sam Gregor.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2422228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2149783",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2422228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2422228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2309345",
+      "source": "She loves flowers.",
+      "reference": "Ona voli cvijeće.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2309345",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2342022",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2309345",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2309345"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2306464",
+      "source": "Are you Catholic?",
+      "reference": "Da li ste katolik?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2306464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2342023",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2306464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2306464"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2249765",
+      "source": "Please accompany me.",
+      "reference": "Molim te radi mi društvo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249765"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2248817",
+      "source": "It was destroyed.",
+      "reference": "Uništeno je.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248817",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "7785682",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248817",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248817"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2248459",
+      "source": "Is it good?",
+      "reference": "Je li fino?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248459",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183331",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248459",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248459"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2248429",
+      "source": "Is anyone there?",
+      "reference": "Je li neko tamo?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248429",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183012",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248429",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248429"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2244964",
+      "source": "Are you scared?",
+      "reference": "Bojiš li se?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183701",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2243024",
+      "source": "They all laughed.",
+      "reference": "Svi su se smijali.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11182997",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243024"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2241045",
+      "source": "We can try.",
+      "reference": "Možemo pokušati.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2241045",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2591504",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2241045",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2241045"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2239806",
+      "source": "Tom was hospitalized.",
+      "reference": "Tom je primljen u bolnicu.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2239806",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "11183641",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2239806",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2239806"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2238072",
+      "source": "No one came.",
+      "reference": "Niko nije došao.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2238072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "10198912",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2238072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2238072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2236731",
+      "source": "Tom is in.",
+      "reference": "Tom je ovdje.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2421416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2236651",
+      "source": "Tom is diabetic.",
+      "reference": "Tom je dijabetičar.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2236651",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2506818",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2236651",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2236651"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2202940",
+      "source": "Tom is here.",
+      "reference": "Tom je ovdje.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2202940",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "bos",
+        "target_sentence_id": "2421416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2202940",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2202940"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

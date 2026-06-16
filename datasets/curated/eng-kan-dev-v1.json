@@ -1,0 +1,1802 @@
+{
+  "corpus_id": "tatoeba-eng-kan-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "kan",
+    "source_name": "English",
+    "target_name": "Kannada"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:02:12.040176+00:00",
+  "entry_count": 61,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "legal",
+    "marketing",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_61911",
+      "source": "What's going on here?",
+      "reference": "ಇಲ್ಲಿ ಏನು ನಡಿತಾಯಿದೆ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "61911",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "5387062",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "61911",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/61911"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_464592",
+      "source": "What is that?",
+      "reference": "ಏನದು?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "464592",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12481165",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "464592",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/464592"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8529941",
+      "source": "She understands Kannada.",
+      "reference": "ಅವಳಿಗೆ ಕನ್ನಡ ಗೊತ್ತು.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8529941",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13224101",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8529941",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8529941"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_2566189",
+      "source": "My name is Emily.",
+      "reference": "ನನ್ನ ಹೆಸರು ಎಮಿಲಿ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2566189",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "3714390",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2566189",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2566189"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3570954",
+      "source": "That is your beauty.",
+      "reference": "ಅದೇ ನಿನ್ನ ಸೌಂದರ್ಯ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3570954",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774672",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3570954",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3570954"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3858718",
+      "source": "I saw the girl.",
+      "reference": "ನಾನು ಹುಡುಗಿಯನ್ನು ನೋಡಿದ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3858718",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "3858719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3858718",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3858718"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_17421",
+      "source": "I believe you.",
+      "reference": "ನಾನು ನಿನ್ನ ಮೇಲೆ ನಂಬಿಕೆ ಇಟ್ಟಿದ್ದೇನೆ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17421",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4784822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17421",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17421"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1623505",
+      "source": "Is it possible?",
+      "reference": "ಇದು ಸಾಧ್ಯವೇ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1623505",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12487668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1623505",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1623505"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2358934",
+      "source": "I've always believed that.",
+      "reference": "ನಾನು ಎಂದಿಗೂ ಅದನ್ನೇ ನಂಬಿದ್ದೇನೆ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2358934",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776867",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2358934",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2358934"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_2043700",
+      "source": "Give me half.",
+      "reference": "ಅರ್ಧ ನನಗೆ ಕೊಡು.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2043700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776542",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2043700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2043700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1012692",
+      "source": "What are you doing tomorrow?",
+      "reference": "ನಾಳೆ ನೀನು ಏನು ಮಾಡ್ತಾ ಇದ್ದೀಯ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1012692",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12484394",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1012692",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1012692"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_12481729",
+      "source": "The flowers were in bloom.",
+      "reference": "ಹೂಗಳು ಅರಳುತ್ತಿದ್ದವು.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12481729",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12482868",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12481729",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12481729"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_6884371",
+      "source": "How about it?",
+      "reference": "ನಿಮಗೆ ಏನು ಅನ್ನಿಸುತ್ತೆ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6884371",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "8903002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6884371",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6884371"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7306022",
+      "source": "That is nice.",
+      "reference": "ಚೆನ್ನಾಗಿದೆ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7306022",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13224416",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7306022",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7306022"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1996919",
+      "source": "This is correct.",
+      "reference": "ಇದು ಸರಿ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1996919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12487645",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1996919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1996919"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4609657",
+      "source": "Her voice is better.",
+      "reference": "ಅವಳ ಧ್ವನಿ ಉತ್ತಮವಾಗಿದೆ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4609657",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774188",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4609657",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4609657"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3738718",
+      "source": "How late is it?",
+      "reference": "ಗಂಟೆ ಎಷ್ಟು?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738718",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4546226",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738718",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738718"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_3431003",
+      "source": "Tom left three hours ago.",
+      "reference": "ಟಾಮ್ ಮೂರು ಗಂಟೆಯ ಮುಂಚೇನೇ ಹೋದ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3431003",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774652",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3431003",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3431003"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_547389",
+      "source": "This is not a sentence.",
+      "reference": "ಇದು ವಾಕ್ಯ ಅಲ್ಲ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "547389",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "3583162",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "547389",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/547389"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_3286976",
+      "source": "There's nothing in the bucket.",
+      "reference": "ಬಾದಲಿಯಲ್ಲಿ ಏನೂ ಇಲ್ಲ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3286976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4784797",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3286976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3286976"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2007628",
+      "source": "Let's greet our guests.",
+      "reference": "ನಮ್ಮ ಅತಿಥಿಗಳನ್ನು ಸ್ವಾಗತಿಸೋಣ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2007628",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774678",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2007628",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2007628"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_6220114",
+      "source": "You must tell Tom.",
+      "reference": "ನೀವು ಟಾಮಿಗೆ ಹೇಳಲೇಬೇಕು.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6220114",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4783932",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6220114",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6220114"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_12482695",
+      "source": "Don't go there. Stay here.",
+      "reference": "ಅಲ್ಲಿಗೆ ಹೋಗಬೇಡ. ಇಲ್ಲೇ ಇರು.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12482695",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12482771",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12482695",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12482695"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_5379348",
+      "source": "How did you get that scar?",
+      "reference": "ಆ ಗಾಯ ಹೇಗೆ ಸಿಕ್ಕಿತು?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5379348",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "5387071",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5379348",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5379348"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_13245475",
+      "source": "I am forever indebted to him.",
+      "reference": "ಅವರಿಗೆ ನಾನು ಚಿರಋಣಿ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13245475",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13245470",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13245475",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13245475"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_5296395",
+      "source": "I went inside to drink coffee.",
+      "reference": "ಒಂದು ಕಾಫಿ ಕುಡಿಯುವುದಕ್ಕೆ ಹೊರಗೆ ಹೋಗುತ್ತೇನೆ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5296395",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "2909783",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5296395",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5296395"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2642770",
+      "source": "Do you need something to drink?",
+      "reference": "ಕುಡಿಯೋಕ್ಕೆ ಏನಾದ್ರು ಬೇಕಾ ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2642770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "8902995",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2642770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2642770"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_13224120",
+      "source": "It has rained a lot here.",
+      "reference": "ಇಲ್ಲಿ ತುಂಬಾ ಮಳೆಯಾಗಿದೆ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13224120",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13224119",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13224120",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13224120"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_10075410",
+      "source": "\"Why?\" \"Just because.\"",
+      "reference": "\"ಯಾಕೆ?\" \"ಸುಮ್ಮನೆ.\"",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10075410",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13226251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10075410",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10075410"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3342770",
+      "source": "You let me down, Tom.",
+      "reference": "ನೀನು ನನ್ನನು ನಿರಾಶೆ ಮಾಡುತ್ತೀಯ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3342770",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3342770",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3342770"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5371599",
+      "source": "A few firefighters suffered minor injuries.",
+      "reference": "ಕೆಲವೊಂದು ಅಗ್ನಿಶಾಮಕರು ಗಾಯ ಪಟ್ಟರು.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5371599",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "5387094",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5371599",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5371599"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.17
+      }
+    },
+    {
+      "id": "tatoeba_10932945",
+      "source": "Don't watch me, watch Tom.",
+      "reference": "ನನ್ನನ್ನು ನೋಡಬೇಡಿ, ಟಾಮ್ ಅನ್ನು ನೋಡಿ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10932945",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "11791425",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10932945",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10932945"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2030096",
+      "source": "How did it go last night?",
+      "reference": "ನೆನ್ನೆ ರಾತ್ರಿ ಹೇಗೆ ನಡೆಯಿತು?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2030096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4783940",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2030096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2030096"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_6607646",
+      "source": "Look, there's my friend.",
+      "reference": "ನೋಡು, ನನ್ನ ಸ್ನೇಹಿತ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6607646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "8901615",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6607646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6607646"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_13245478",
+      "source": "I am forever indebted to her.",
+      "reference": "ಅವರಿಗೆ ನಾನು ಚಿರಋಣಿ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13245478",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13245470",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13245478",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13245478"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_2541034",
+      "source": "I wondered the same thing myself.",
+      "reference": "ಅದೇ ಪ್ರಶ್ನೆ ನನ್ನನ್ನೇ ಕೇಳಿದೆ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2541034",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4783951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2541034",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2541034"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_1852508",
+      "source": "Get some sleep, okay?",
+      "reference": "ನಿದ್ದೆ ಮಾಡಿ. ಆಯ್ತಾ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1852508",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12484484",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1852508",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1852508"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12228460",
+      "source": "Where is his book?",
+      "reference": "ಪುಸ್ತಕ ಎಲ್ಲಿದೆ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12228460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776859",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12228460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12228460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6486481",
+      "source": "The accident created a traffic jam.",
+      "reference": "ಅಪಘಾತದ ಕಾರಣದಿಂದ ಸಂಚಾರ ಸ್ತಂಭನ ಇತ್ತು.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6486481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4788530",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6486481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6486481"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_3330440",
+      "source": "I gave Tom a huge hug.",
+      "reference": "ನಾನು ಟೊಮನ್ನು ಬಿಗಿಯಾಗಿ ತಬ್ಬಿಕೊಂಡೆ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3330440",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774620",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3330440",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3330440"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2648982",
+      "source": "See you at 2:30.",
+      "reference": "ಎರಡು ವರೆಗೆ (೨.೩೦ ಗೆ) ನಿನ್ನನ್ನು ನೋಡುತ್ತೇನೆ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2648982",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4775449",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2648982",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2648982"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2390878",
+      "source": "I really owe you an apology.",
+      "reference": "ನಿಜವಾಗಿಯೂ ನಾನು ನಿಮಗೆ ಕ್ಷಮೆ ಕೋರಬೇಕು.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2390878",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774664",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2390878",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2390878"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4011833",
+      "source": "What could possibly have gone wrong?",
+      "reference": "ತಪ್ಪು ಆಗುವುದಕ್ಕೆ ಹೇಗೆ ಸಾಧ್ಯ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4011833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774770",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4011833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4011833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_12485520",
+      "source": "Could you make me some tea?",
+      "reference": "ನನಗೆ ಸ್ವಲ್ಪ ಚಹಾ ಮಾಡಿಕೊಡುತ್ತೀಯ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12485520",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "12487641",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12485520",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12485520"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2136",
+      "source": "Where is the bathroom?",
+      "reference": "ಟಾಯ್ಲೆಟ್ ಎಲ್ಲಿದೆ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13226252",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2136"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5379492",
+      "source": "I loved going to the beach.",
+      "reference": "ನಾನು ದಡಕ್ಕೆ ಹೋಗಲು ಇಷ್ಟಪಡುತ್ತಿದೆ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5379492",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "5387074",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5379492",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5379492"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_8909669",
+      "source": "This wheel wobbles when it turns.",
+      "reference": "ಈ ಚಕ್ರ ಓಡೋವಾಗ ಅಲ್ಲಾಡುತ್ತೆ",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8909669",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "8909666",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8909669",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8909669"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_5296385",
+      "source": "Where will we find the truth?",
+      "reference": "ನಾವು ಸತ್ಯವನ್ನು ಎಲ್ಲಿ ಕಂಡುಹಿಡಿಯಬಹುದು?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5296385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774634",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5296385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5296385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_5296338",
+      "source": "Actually, I do not really know.",
+      "reference": "ಪ್ರಾಮಾಣಿಕವಾಗಿ ಹೇಳಬೇಕೆಂದರೆ, ನಾನು ಗೊತ್ತಿಲ್ಲ",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5296338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4969643",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5296338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5296338"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2744171",
+      "source": "Last night, I read a book.",
+      "reference": "ನೆನ್ನೆ ರಾತ್ರಿ ನಾನು ಒಂದು ಪುಸ್ತಕವನ್ನು ಓದಿದೆ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2744171",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4784789",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2744171",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2744171"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_1818293",
+      "source": "Where can we find the truth?",
+      "reference": "ನಾವು ಸತ್ಯವನ್ನು ಎಲ್ಲಿ ಕಂಡುಹಿಡಿಯಬಹುದು?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1818293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774634",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1818293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1818293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1093340",
+      "source": "Tom knew who the killer was.",
+      "reference": "ಟಾಮಿಗೆ ಯಾರು ಕೊಲೆಗಾರ ಅಂತ ಗೊತ್ತಿತ್ತು.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1093340",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4783929",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1093340",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1093340"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_13246996",
+      "source": "The price decreased.",
+      "reference": "ಬೆಲೆ ಕಡಿಮೆಯಾಯಿತು.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13246996",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13246995",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13246996",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13246996"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2301299",
+      "source": "I can recommend a good lawyer.",
+      "reference": "ನಾನು ನಿಮಗೆ ಒಳ್ಳೆಯ ವಕೀಲರನ್ನು ಸೊಚಿಸಬಹುದು.",
+      "domain": "legal",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2301299",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776871",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2301299",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2301299"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9649530",
+      "source": "They've announced their engagement.",
+      "reference": "ಅವರು ಅವರ ನಿಶ್ಚಿತಾರ್ಥದವನ್ನು ಪ್ರಕಟಿಸಿದ್ದಾರೆ.",
+      "domain": "marketing",
+      "difficulty": 1,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9649530",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776797",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9649530",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9649530"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.75
+      }
+    },
+    {
+      "id": "tatoeba_72812",
+      "source": "They have announced their engagement.",
+      "reference": "ಅವರು ಅವರ ನಿಶ್ಚಿತಾರ್ಥದವನ್ನು ಪ್ರಕಟಿಸಿದ್ದಾರೆ.",
+      "domain": "marketing",
+      "difficulty": 1,
+      "register": "persuasive",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72812",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776797",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72812",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72812"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.4
+      }
+    },
+    {
+      "id": "tatoeba_2389548",
+      "source": "I only wish to help you.",
+      "reference": "ನಿಮ್ಮನ್ನು ಸಹಾಯ ಮಾಡುವುದಕ್ಕೆ ಆಶಿಸುತ್ತೇನೆ.",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2389548",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4775511",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2389548",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2389548"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_13246994",
+      "source": "It happened ten minutes ago.",
+      "reference": "ಹತ್ತು ನಿಮಿಷ ಮುಂಚೆ ಯಾಗಿ ಆಯಿತು.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13246994",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "13246993",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13246994",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13246994"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_8909651",
+      "source": "Oh!! I just saw an apparition!!",
+      "reference": "ಅಯ್ಯೋ !! ಈಗ ತಾನೇ ನಾನು ದೆವ್ವದ ರೂಪ ನೋಡಿದೆ !!",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8909651",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "8909649",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8909651",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8909651"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3790966",
+      "source": "Open your book on page nine.",
+      "reference": "ನಿಮ್ಮ ಪುಸ್ತಕವನ್ನು ಒಂಬತ್ತನೆಯ ಪುಟಕ್ಕೆ ತೆರೆಯಿರಿ.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3790966",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4774189",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3790966",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3790966"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2958227",
+      "source": "Tom stared sadly out the window.",
+      "reference": "ಟಾಮ್ ಕಿಟಕಿಯ ಹೊರಗೆ ದುಃಖದಿಂದ ನೋಡುತ್ತಲಿರುತ್ತಿದ್ದನು.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2958227",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kan",
+        "target_sentence_id": "4776865",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2958227",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2958227"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

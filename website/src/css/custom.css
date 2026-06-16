@@ -1,0 +1,257 @@
+/**
+ * MT Eval Arena — "Field Notes / Arena" theme
+ *
+ * Sibling to the Champollion "Field Notes" theme (cli/website/DESIGN.md):
+ * same scholarly teal primary on ink/paper neutrals, with the vitality
+ * triad's coral as the Arena-specific accent — the competitive edge of
+ * the shared palette.
+ */
+
+/* ---------- Light mode (paper) ---------- */
+:root {
+  /* Primary — scholarly teal (shared with champollion.dev) */
+  --ifm-color-primary: #0F766E;
+  --ifm-color-primary-dark: #0D685F;
+  --ifm-color-primary-darker: #0C6259;
+  --ifm-color-primary-darkest: #0A514A;
+  --ifm-color-primary-light: #12847B;
+  --ifm-color-primary-lighter: #138A81;
+  --ifm-color-primary-lightest: #2BA095;
+
+  /* Accent — coral, the vitality triad's "endangered" hue (Arena-specific) */
+  --arena-accent: #E2606B;
+  --arena-accent-soft: rgba(226, 96, 107, 0.08);
+
+  /* Shared accent tints (mirrors champollion design tokens) */
+  --accent-subtle: rgba(15, 118, 110, 0.1);
+
+  /* Vitality triad (mirrors cli/website design tokens) — used here only
+     architecturally: the "triad rule" hairline, never data encoding */
+  --vital-safe: #0E9594;
+  --vital-vulnerable: #C98A04;
+  --vital-endangered: #E2606B;
+
+  --ifm-background-color: #FBFAF8;
+  --ifm-background-surface-color: #F3F1EC;
+  --ifm-toc-border-color: #E5E2D9;
+  --ifm-font-color-base: #1F2421;
+  --ifm-font-color-secondary: #5B6661;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter Variable', 'Inter', 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Noto Serif', serif;
+  --ifm-heading-font-weight: 600;
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Noto Serif', serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --docusaurus-highlighted-code-line-bg: rgba(15, 118, 110, 0.08);
+}
+
+/* ---------- Dark mode (ink) ---------- */
+[data-theme='dark'] {
+  --ifm-color-primary: #3FC1C0;
+  --ifm-color-primary-dark: #2EB5B4;
+  --ifm-color-primary-darker: #28ACAB;
+  --ifm-color-primary-darkest: #1F908F;
+  --ifm-color-primary-light: #58CAC9;
+  --ifm-color-primary-lighter: #6BD0CF;
+  --ifm-color-primary-lightest: #93DEDD;
+
+  --arena-accent: #F08A93;
+  --arena-accent-soft: rgba(240, 138, 147, 0.1);
+
+  --accent-subtle: rgba(63, 193, 192, 0.15);
+
+  /* Vitality triad — dark variants */
+  --vital-safe: #3FC1C0;
+  --vital-vulnerable: #E8B339;
+  --vital-endangered: #F08A93;
+
+  --ifm-background-color: #101312;
+  --ifm-background-surface-color: #181C1A;
+  --ifm-toc-border-color: #2A322E;
+  --ifm-font-color-base: #E8EAE8;
+  --ifm-font-color-secondary: #9AA5A0;
+
+  --docusaurus-highlighted-code-line-bg: rgba(63, 193, 192, 0.1);
+}
+
+/* ---------- Typography ----------
+   Self-hosted variable fonts (no runtime font CDNs — mirrors
+   cli/website/DESIGN.md §3; licenses in static/fonts/LICENSES.md).
+   Latin subsets only; other scripts fall through to system faces. */
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/inter-latin-opsz-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/fraunces-latin-opsz-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/fonts/fraunces-latin-opsz-italic.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Headings: Fraunces at display sizes; metadata headings stay in the UI face */
+h1, h2, h3 {
+  font-optical-sizing: auto;
+}
+h4, h5, h6 {
+  font-family: var(--ifm-font-family-base);
+}
+
+.navbar__title {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* ---------- Global refinements ---------- */
+
+/* Sidebar border */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Footer links */
+.footer__link-item {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+.footer__link-item:hover {
+  opacity: 1;
+}
+
+/* ---------- Code block copy button ---------- */
+.theme-code-block {
+  border-radius: 10px;
+  border: 1px solid var(--ifm-toc-border-color);
+}
+
+.clean-btn[class*="copyButton"] {
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.clean-btn[class*="copyButton"]:hover {
+  opacity: 1;
+  background: var(--accent-subtle);
+}
+
+/* ---------- Admonitions ---------- */
+.admonition {
+  border-radius: 10px;
+  border-left-width: 4px;
+}
+
+/* danger admonitions use the arena accent color */
+.admonition-danger {
+  border-left-color: var(--arena-accent);
+}
+
+/* ---------- Tabs ---------- */
+.tabs__item--active {
+  border-bottom-color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ---------- Sidebar active item ---------- */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 3px solid var(--ifm-color-primary);
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) - 3px);
+}
+
+/* ---------- Smooth scrolling ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Table styling ---------- */
+table {
+  font-size: 0.92rem;
+}
+
+table thead th {
+  background: var(--accent-subtle);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- Docs reading rhythm (mirrors champollion.dev) ---------- */
+.theme-doc-markdown {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.theme-doc-markdown > h2 {
+  margin-top: 2.6rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  letter-spacing: -0.01em;
+}
+
+.theme-doc-markdown > h3 {
+  margin-top: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.theme-doc-markdown .alert {
+  border: 1px solid var(--ifm-toc-border-color);
+  border-left-width: 4px;
+  border-radius: 10px;
+  box-shadow: none;
+  background: var(--ifm-background-surface-color);
+}
+
+.theme-doc-markdown blockquote {
+  border-left: 3px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  border-radius: 0 10px 10px 0;
+  padding: 0.8rem 1.1rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.pagination-nav__link {
+  border-radius: 12px;
+  transition: border-color 0.15s ease;
+}
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+}

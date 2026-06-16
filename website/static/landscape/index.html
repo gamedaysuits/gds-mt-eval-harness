@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champollion — The MT Landscape</title>
+  <meta name="description" content="Interactive comparison of 20+ MT projects, benchmarks, and tools — showing where Champollion fills the gap no one else built for.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ── Navigation ─────────────────────────────────────────────── -->
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="Champollion home">
+        <span class="brand-icon">◆</span> Champollion
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#why" role="menuitem">Why</a></li>
+        <li role="none"><a href="#landscape" role="menuitem">Landscape</a></li>
+        <li role="none"><a href="#compare" role="menuitem">Compare</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────────── -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">The Machine Translation Landscape</p>
+      <h1>Every language deserves<br>accurate translation.</h1>
+      <p class="subtitle">There are benchmarks, models, and eval tools — but nothing that ties them together. Champollion is the missing layer: a single test–verify–deploy framework that works for any language and any method, from LLMs to rule-based pipelines.</p>
+      <a href="#landscape" class="hero-cta" aria-label="Explore the landscape">Explore the landscape ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── Why Section ───────────────────────────────────────────── -->
+    <section class="why-section reveal-section" id="why">
+      <div class="container">
+        <h2>The Gap Nobody Filled</h2>
+        <p class="section-lead">There are benchmarks, models, and eval tools — but nothing that ties them together for the languages that need MT most.</p>
+        <div class="why-grid">
+          <div class="why-card" data-accent="purple">
+            <div class="why-icon">📊</div>
+            <h3>Benchmarks exist. Harnesses don't.</h3>
+            <p>FLORES-200 and Tatoeba provide <em>test data</em>. But there's no open framework to run arbitrary translation methods — LLM, NMT, pipeline, hybrid — against the same data and compare them fairly. You train your model, score it yourself, and submit a number to a markdown file.</p>
+          </div>
+          <div class="why-card" data-accent="blue">
+            <div class="why-icon">🔤</div>
+            <h3>Metrics are blind to morphology.</h3>
+            <p>chrF and BLEU count character/word overlaps. COMET uses XLM-R embeddings trained mostly on European languages. None of them can tell you whether <code>nikî-nipân</code> is a structurally valid Plains Cree word. For polysynthetic languages, structural validity is the first question — and no metric asks it.</p>
+          </div>
+          <div class="why-card" data-accent="teal">
+            <div class="why-icon">🔐</div>
+            <h3>Open-source ≠ sovereignty.</h3>
+            <p>Tatoeba is CC-BY. FLORES is Meta-controlled. Neither framework has a concept of community-owned data, encrypted test sets, or governance-org key custody. OCAP principles and open benchmarking are structurally incompatible — unless you design for sovereignty from the ground up.</p>
+          </div>
+          <div class="why-card highlight-card" data-accent="gold">
+            <div class="why-icon">⚡</div>
+            <h3>Champollion connects all of this.</h3>
+            <p>Not a competitor to WMT or Tatoeba — a catalyst. One framework that plugs into existing benchmarks, eval tools, and methods. Test any translation approach against community-governed data, verify with morphological validation and human judgment, deploy to production. For any language pair, any method type.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Filter Controls ───────────────────────────────────────── -->
+    <section class="controls-section reveal-section" id="landscape">
+      <div class="container">
+        <h2>Explore the Landscape</h2>
+        <p class="section-lead">Each entry below represents a project, tool, or initiative in the MT space. Toggle between card view and matrix view. The colored badges show capability dimensions — hover for explanations.</p>
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label id="category-label">Category</label>
+            <div class="filter-chips" id="category-filters" role="group" aria-labelledby="category-label">
+              <button class="chip active" data-filter="all">All</button>
+              <button class="chip" data-filter="benchmark">Benchmarks</button>
+              <button class="chip" data-filter="eval-tool">Eval Tools</button>
+              <button class="chip" data-filter="model">Models</button>
+              <button class="chip" data-filter="community">Community</button>
+              <button class="chip" data-filter="commercial">Commercial</button>
+              <button class="chip" data-filter="platform">Platforms</button>
+              <button class="chip" data-filter="framework">Frameworks</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label id="capability-label">Show only</label>
+            <div class="filter-chips" id="capability-filters" role="group" aria-labelledby="capability-label">
+              <button class="chip cap-chip" data-cap="doesMT">Does MT</button>
+              <button class="chip cap-chip" data-cap="methodAgnostic">Method-Agnostic</button>
+              <button class="chip cap-chip" data-cap="morphAware">Morphology-Aware</button>
+              <button class="chip cap-chip" data-cap="ocap">Data Sovereignty</button>
+              <button class="chip cap-chip" data-cap="openSource">Open Source</button>
+              <button class="chip cap-chip" data-cap="lrlSupport">LRL Support</button>
+              <button class="chip cap-chip" data-cap="algonquian">Algonquian</button>
+              <button class="chip cap-chip" data-cap="humanEval">Human Eval</button>
+            </div>
+          </div>
+          <div class="filter-group sort-group">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select">
+              <option value="relevance">Relevance to Champollion</option>
+              <option value="name">Name (A-Z)</option>
+              <option value="capabilities">Total Capabilities</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+          <div class="filter-group view-group">
+            <label>View</label>
+            <div class="view-toggle" role="radiogroup" aria-label="View mode">
+              <button class="view-btn active" data-view="cards" role="radio" aria-checked="true">◫ Cards</button>
+              <button class="view-btn" data-view="table" role="radio" aria-checked="false">☰ Table</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Project Grid / Table (toggled via view buttons) ────────── -->
+    <section class="grid-section">
+      <div class="container">
+        <div class="project-grid" id="project-grid">
+          <!-- Populated by JS -->
+        </div>
+        <div class="table-scroll" id="table-view" style="display:none;">
+          <table id="comparison-table" role="grid">
+            <thead><tr id="table-header"></tr></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+        <div class="no-results" id="no-results" style="display:none;" role="status">
+          <p>No projects match the current filters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Radar Section ─────────────────────────────────────────── -->
+    <section class="radar-section reveal-section" id="compare">
+      <div class="container">
+        <h2>Side-by-Side Comparison</h2>
+        <p class="section-lead">The radar chart overlays two projects' capability profiles. A larger polygon means broader coverage. Select any two projects to see how they compare across all twelve dimensions.</p>
+        <div class="radar-controls">
+          <select id="radar-select-a" aria-label="First project to compare"></select>
+          <span class="vs-label">vs</span>
+          <select id="radar-select-b" aria-label="Second project to compare"></select>
+        </div>
+        <div class="radar-container">
+          <canvas id="radar-canvas" width="500" height="500"></canvas>
+          <div class="radar-legend" id="radar-legend"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Custom tooltip element (positioned by JS) ─────────────── -->
+  <div class="custom-tooltip" id="custom-tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <!-- ── Footer ──────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-icon">◆</span> Champollion
+      </div>
+      <p>MT evaluation infrastructure for low-resource and Indigenous languages.</p>
+      <div class="footer-links">
+        <a href="https://mtevalarena.org" target="_blank" rel="noopener">mtevalarena.org</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="https://champollion.dev" target="_blank" rel="noopener">champollion.dev</a>
+      </div>
+      <p class="footer-note">Data current as of June 2026.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

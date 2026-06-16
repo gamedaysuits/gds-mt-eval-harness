@@ -1,0 +1,5009 @@
+{
+  "run_id": "run_20260612_130823_google_gemini35flash_naive_all_b25_150c5f",
+  "config": {
+    "dataset": "all",
+    "dataset_id": "",
+    "entry_ids": null,
+    "corpus_path": "datasets/curated/spa-que-dev-v1.json",
+    "source_file": null,
+    "reference_file": null,
+    "source_field": "source",
+    "target_field": "reference",
+    "source_lang": "Spanish",
+    "target_lang": "Quechua",
+    "segment_names": [],
+    "model": "google/gemini-3.5-flash",
+    "max_tokens": 32768,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": true,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 25,
+    "concurrency": 8,
+    "prompt_version": "naive",
+    "custom_prompt_path": null,
+    "coaching_file": null,
+    "style_profile": null,
+    "post_hooks": [],
+    "fst_retries": 0,
+    "output_dir": "eval/logs/harness",
+    "run_name": null,
+    "temperature": 0.0,
+    "dry_run": false,
+    "assume_yes": true,
+    "method_path": null,
+    "process_name": null,
+    "champollion_config_path": null,
+    "champollion_cards_dir": null,
+    "target_lang_code": "",
+    "_model_id": "google/gemini-3.5-flash",
+    "_effective_temperature": 0.0,
+    "_config_hash": "70b577a6cc55"
+  },
+  "source_log": "/Users/gamedaysuits/local projects/Champollion copy/arena/eval/logs/harness/run_20260612_130823_google_gemini35flash_naive_all_b25_150c5f.json",
+  "overall": {
+    "total_entries": 95,
+    "error_count": 0,
+    "evaluated": 95,
+    "exact_match_count": 2,
+    "exact_match_rate": 0.0211,
+    "miss_count": 93,
+    "miss_rate": 0.9789,
+    "avg_chrf": 39.87,
+    "avg_bleu": 11.34,
+    "avg_latency_s": 0.19,
+    "total_cost_usd": 0.1109,
+    "total_tool_calls": 0,
+    "corpus_chrf": 39.81,
+    "corpus_bleu": 4.12,
+    "corpus_ter": 104.78,
+    "avg_length_ratio": 1.272,
+    "comet_score": null,
+    "confidence_intervals": {
+      "corpus_chrf": {
+        "metric_name": "corpus_chrf",
+        "score": 39.8082,
+        "ci_lower": 36.4017,
+        "ci_upper": 43.5736,
+        "ci_width": 7.1719,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 95,
+        "seed": 12345
+      },
+      "corpus_bleu": {
+        "metric_name": "corpus_bleu",
+        "score": 4.119,
+        "ci_lower": 2.4226,
+        "ci_upper": 5.5031,
+        "ci_width": 3.0806,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 95,
+        "seed": 12345
+      },
+      "exact_match_rate": {
+        "metric_name": "exact_match_rate",
+        "score": 0.0211,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0526,
+        "ci_width": 0.0526,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 95,
+        "seed": 12345
+      },
+      "composite_score": {
+        "metric_name": "composite_score",
+        "score": 0.2904,
+        "ci_lower": 0.264,
+        "ci_upper": 0.3235,
+        "ci_width": 0.0595,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 95,
+        "seed": 12345
+      }
+    },
+    "confidence_intervals_by_tier": {
+      "1": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier1",
+          "score": 39.9156,
+          "ci_lower": 35.6924,
+          "ci_upper": 44.5138,
+          "ci_width": 8.8215,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 69,
+          "seed": 12346
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier1",
+          "score": 0.029,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0725,
+          "ci_width": 0.0725,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 69,
+          "seed": 12346
+        }
+      },
+      "2": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier2",
+          "score": 39.3785,
+          "ci_lower": 33.0791,
+          "ci_upper": 45.7169,
+          "ci_width": 12.6378,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 26,
+          "seed": 12347
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier2",
+          "score": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "ci_width": 0.0,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 26,
+          "seed": 12347
+        }
+      }
+    },
+    "plugin_metrics": {
+      "code_switching": {
+        "avg_code_switching_rate": 0.0,
+        "entries_with_code_switching": 0,
+        "entries_with_code_switching_pct": 0.0,
+        "total_wrong_script_tokens": 0
+      },
+      "hallucination": {
+        "avg_hallucination_rate": 0.1646,
+        "max_hallucination_rate": 0.2,
+        "entries_flagged_hallucination": 77,
+        "entries_flagged_hallucination_pct": 0.8105,
+        "avg_length_score": 0.0,
+        "avg_repetition_score": 0.0,
+        "avg_entity_score": 0.8228
+      },
+      "terminology": {
+        "avg_terminology_adherence": null,
+        "total_term_matches": 0,
+        "total_term_total": 0,
+        "total_term_misses": 0
+      },
+      "writing_style": {
+        "style_consistency_rate": 1.0,
+        "avg_sentence_length_ratio": 1.21,
+        "avg_formality_score": 0.0,
+        "style_register_distribution": {
+          "undetermined": 95
+        }
+      }
+    }
+  },
+  "by_segment": {
+    "unknown": {
+      "name": "unknown",
+      "count": 95,
+      "exact_match_count": 2,
+      "miss_count": 93,
+      "error_count": 0,
+      "avg_chrf": 39.87,
+      "avg_bleu": 11.34,
+      "avg_latency_s": 0.19,
+      "total_cost_usd": 0.1109,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "name": "difficulty_1",
+      "count": 69,
+      "exact_match_count": 2,
+      "miss_count": 67,
+      "error_count": 0,
+      "avg_chrf": 40.61,
+      "avg_bleu": 10.17,
+      "avg_latency_s": 0.167,
+      "total_cost_usd": 0.0777,
+      "plugin_aggregates": {}
+    },
+    "2": {
+      "name": "difficulty_2",
+      "count": 26,
+      "exact_match_count": 0,
+      "miss_count": 26,
+      "error_count": 0,
+      "avg_chrf": 37.92,
+      "avg_bleu": 14.42,
+      "avg_latency_s": 0.254,
+      "total_cost_usd": 0.0332,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_domain": {
+    "conv": {
+      "name": "conv",
+      "count": 93,
+      "exact_match_count": 2,
+      "miss_count": 91,
+      "error_count": 0,
+      "avg_chrf": 40.1,
+      "avg_bleu": 11.58,
+      "avg_latency_s": 0.188,
+      "total_cost_usd": 0.1083,
+      "plugin_aggregates": {}
+    },
+    "edu": {
+      "name": "edu",
+      "count": 2,
+      "exact_match_count": 0,
+      "miss_count": 2,
+      "error_count": 0,
+      "avg_chrf": 29.24,
+      "avg_bleu": 0.0,
+      "avg_latency_s": 0.297,
+      "total_cost_usd": 0.0027,
+      "plugin_aggregates": {}
+    }
+  },
+  "entries": [
+    {
+      "id": "tatoeba_1107288",
+      "source": "El gato es negro.",
+      "expected": "Michiqa yanam.",
+      "raw_predicted": "Michiqa yanami.",
+      "predicted": "Michiqa yanami.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 75.6580672918952,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0714,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3069108",
+      "source": "Yo como carne.",
+      "expected": "Ñuqa aychatam mikuni.",
+      "raw_predicted": "Ñuqa aychata mikuni.",
+      "predicted": "Ñuqa aychata mikuni.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 76.34333718068663,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 0.9524,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8359498",
+      "source": "¿Cuántos años tienen?",
+      "expected": "¿Hayk'a watayuqmi paykuna kanku?",
+      "raw_predicted": "Hayka watayuqtaq kanku?",
+      "predicted": "Hayka watayuqtaq kanku?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.234065055404024,
+      "bleu_score": 24.880469496253564,
+      "ter_score": 75.0,
+      "length_ratio": 0.7188,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_963095",
+      "source": "No te vayas.",
+      "expected": "Ama riychischu.",
+      "raw_predicted": "Ama riychu.",
+      "predicted": "Ama riychu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 53.50841851257173,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.7333,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1143627",
+      "source": "Te veo mañana.",
+      "expected": "Paqarinkama.",
+      "raw_predicted": "Paqarinñam rikusqayki.",
+      "predicted": "Paqarinñam rikusqayki.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.092567434387924,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 1.8333,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1190137",
+      "source": "¿Tú eres médico?",
+      "expected": "Kanka hambinayuk kankichu?",
+      "raw_predicted": "Qam hampiqchu kanki?",
+      "predicted": "Qam hampiqchu kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.927377017831738,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 0.7692,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2220698",
+      "source": "Ahí está lloviendo.",
+      "expected": "Parasan.",
+      "raw_predicted": "Chaypi parachkanmi.",
+      "predicted": "Chaypi parachkanmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.101835990864068,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 2.375,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3666894",
+      "source": "¿Quién es usted?",
+      "expected": "Pitaq kankichu?",
+      "raw_predicted": "Pitaq kanki?",
+      "predicted": "Pitaq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 60.38465598759095,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.8,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5027460",
+      "source": "¿De dónde eres tú?",
+      "expected": "Imamantataq hamunki?",
+      "raw_predicted": "Maymantataq kanki?",
+      "predicted": "Maymantataq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.70090360001373,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.9,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4742426",
+      "source": "¿Vos sos estadounidense?",
+      "expected": "Ustadus Unidusmanta hamusankichu?",
+      "raw_predicted": "Qam estadounidensechu kanki?",
+      "predicted": "Qam estadounidensechu kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.816865216131163,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 0.8485,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1509015",
+      "source": "Juanito tiene cuatro hermanas.",
+      "expected": "Juanitoqa tawa paninkunayuq kan.",
+      "raw_predicted": "Juanitoqa tawa panayuqmi.",
+      "predicted": "Juanitoqa tawa panayuqmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 58.515120097770044,
+      "bleu_score": 27.534765745159184,
+      "ter_score": 50.0,
+      "length_ratio": 0.7812,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_10664205",
+      "source": "¿Cuántos hijos tiene usted?",
+      "expected": "Hayka warmakunayuq kankichu?",
+      "raw_predicted": "Hayka wawayuqtaq kanki?",
+      "predicted": "Hayka wawayuqtaq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.957673294418306,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.8214,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251980",
+      "source": "¿No me oye?",
+      "expected": "Mana uyarkankichu?",
+      "raw_predicted": "Manachu uyarichkawanki?",
+      "predicted": "Manachu uyarichkawanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 34.33214838071334,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.2778,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7258216",
+      "source": "¿Dónde te alojas?",
+      "expected": "Imapi tianki?",
+      "raw_predicted": "Maypitaq qurpachakunki?",
+      "predicted": "Maypitaq qurpachakunki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.56997844234422,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.7692,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4587004",
+      "source": "¡Nos vemos mañana!",
+      "expected": "Paqarinkama.",
+      "raw_predicted": "¡Paqarin kama!",
+      "predicted": "¡Paqarin kama!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 65.4212408874229,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 1.1667,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1210062",
+      "source": "Está nevando aquí.",
+      "expected": "Ritimusan.",
+      "raw_predicted": "Kaypi ritichkanmi.",
+      "predicted": "Kaypi ritichkanmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.313429076016295,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 1.8,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1165945",
+      "source": "¡Te veo luego!",
+      "expected": "Huk ratukama!",
+      "raw_predicted": "¡Tupananchiskama!",
+      "predicted": "¡Tupananchiskama!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 23.084086167768657,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.3077,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251958",
+      "source": "Ella tiene tres hermanas.",
+      "expected": "Payka kimsa ñañakunata charin.",
+      "raw_predicted": "Payqa kimsa ñañayuqmi.",
+      "predicted": "Payqa kimsa ñañayuqmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.764495391736794,
+      "bleu_score": 14.794015674776452,
+      "ter_score": 75.0,
+      "length_ratio": 0.7333,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1310950",
+      "source": "Mi dinero fue robado.",
+      "expected": "Ñuka kullkita shuwarkan.",
+      "raw_predicted": "Qullqiymi suwasqa karqan.",
+      "predicted": "Qullqiymi suwasqa karqan.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.324509362723898,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.0417,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_687369",
+      "source": "¿Cómo se llama usted?",
+      "expected": "Ima sutiyki?",
+      "raw_predicted": "¿Imataq sutiyki?",
+      "predicted": "¿Imataq sutiyki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 64.95538897835162,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.3333,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2874556",
+      "source": "Los aztecas hablaban náhuatl.",
+      "expected": "Mishikakunaqa Nawa simita rimarqanku.",
+      "raw_predicted": "Azteca runakunaqa náhuatl simitam rimaqku.",
+      "predicted": "Azteca runakunaqa náhuatl simitam rimaqku.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.78804690430611,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 125.0,
+      "length_ratio": 1.1351,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1327954",
+      "source": "Los veo mañana.",
+      "expected": "Paqarinkama.",
+      "raw_predicted": "Paqarinñam rikusqaykichik.",
+      "predicted": "Paqarinñam rikusqaykichik.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.075591117210124,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 2.1667,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_962828",
+      "source": "Me gusta mi casa.",
+      "expected": "Munasani wasiyta.",
+      "raw_predicted": "Wasiytam munani.",
+      "predicted": "Wasiytam munani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.90541144773644,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.9412,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_11760618",
+      "source": "¿Cuántos hijos tienen ustedes?",
+      "expected": "Hayka warmakunayuq kankichu?",
+      "raw_predicted": "¿Hayka wawayuqtaq kankichik?",
+      "predicted": "¿Hayka wawayuqtaq kankichik?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.38023299164604,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1210059",
+      "source": "Está nevando allí.",
+      "expected": "Ritisan.",
+      "raw_predicted": "Chaypi ritichkanmi.",
+      "predicted": "Chaypi ritichkanmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.101835990864068,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 2.375,
+      "latency_s": 0.167,
+      "cost_usd": 0.001078,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8011501",
+      "source": "¿De dónde es usted?",
+      "expected": "Imamantataq hamunki?",
+      "raw_predicted": "Maymantataq kanki?",
+      "predicted": "Maymantataq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.70090360001373,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.9,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_943537",
+      "source": "Dos mujeres cantan.",
+      "expected": "Iskay warmikuna takisanku.",
+      "raw_predicted": "Iskay warmikunam takinku.",
+      "predicted": "Iskay warmikunam takinku.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 57.5073108871963,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9615,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_10055501",
+      "source": "Encantado de conocerlos.",
+      "expected": "Kusikusani reqsisuspay.",
+      "raw_predicted": "Anchatam kusikuni riqsisqaykichikmanta.",
+      "predicted": "Anchatam kusikuni riqsisqaykichikmanta.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 23.78504095232504,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.6957,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1989702",
+      "source": "¿Sabes hablar japonés?",
+      "expected": "Nihun shimita rimankichu?",
+      "raw_predicted": "Japones simita rimayta yachankichu?",
+      "predicted": "Japones simita rimayta yachankichu?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.70814906614007,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.4,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1019890",
+      "source": "María tiene cuatro hermanos.",
+      "expected": "Maríaqa tawa turinkunayuq kan.",
+      "raw_predicted": "Mariyaqa tawa turiyuqmi.",
+      "predicted": "Mariyaqa tawa turiyuqmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.48929287276574,
+      "bleu_score": 14.794015674776452,
+      "ter_score": 75.0,
+      "length_ratio": 0.8,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_562079",
+      "source": "Hasta la vista.",
+      "expected": "Tupananchiskama!",
+      "raw_predicted": "Tupananchiskama.",
+      "predicted": "Tupananchiskama.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 75.60299075924077,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1615425",
+      "source": "Yo tengo una casa.",
+      "expected": "Noqapaq wasiy kasan.",
+      "raw_predicted": "Ñuqaqa huk wasiyuqmi kani.",
+      "predicted": "Ñuqaqa huk wasiyuqmi kani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.687616546372666,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.3,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2002086",
+      "source": "Me gusta comer.",
+      "expected": "Mikuyta munasani.",
+      "raw_predicted": "Mikhuytam munani.",
+      "predicted": "Mikhuytam munani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.13484432234432,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1206328",
+      "source": "Estoy encantado de conocerte.",
+      "expected": "Riqsinakuymanta anchatam kusikuni.",
+      "raw_predicted": "Ancha kusisqam kani riqsisqaymanta.",
+      "predicted": "Ancha kusisqam kani riqsisqaymanta.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.757440358122956,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.0294,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_615650",
+      "source": "Encantada de conocerlo.",
+      "expected": "Riqsinakuymanta anchatam kusikuni.",
+      "raw_predicted": "Ancha kusisqam kani riqsisqaymanta.",
+      "predicted": "Ancha kusisqam kani riqsisqaymanta.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.757440358122956,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.0294,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_950306",
+      "source": "Tengo una casa grande.",
+      "expected": "Noqapaq hatun wasiy kasan.",
+      "raw_predicted": "Hatun wasiyuqmi kani.",
+      "predicted": "Hatun wasiyuqmi kani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.963862520980683,
+      "bleu_score": 12.44023474812678,
+      "ter_score": 75.0,
+      "length_ratio": 0.8077,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1131089",
+      "source": "Yo soy de Holanda.",
+      "expected": "Holandamanta hamusani.",
+      "raw_predicted": "Ñuqaqa Holandamantam kani.",
+      "predicted": "Ñuqaqa Holandamantam kani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 49.34354851911029,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.1818,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_436260",
+      "source": "¿Cómo te va?",
+      "expected": "Imanalla",
+      "raw_predicted": "Imaynallam kachkanki?",
+      "predicted": "Imaynallam kachkanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 34.671471085692986,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 2.625,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3885064",
+      "source": "Yo quiero pan.",
+      "expected": "Ñuqa t'antatam munani.",
+      "raw_predicted": "Ñuqaqa tantatam munani.",
+      "predicted": "Ñuqaqa tantatam munani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 67.38696025719169,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0455,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_540310",
+      "source": "Compré un libro.",
+      "expected": "Huk liwruta rantirqani.",
+      "raw_predicted": "Huk maytutam rantirqani.",
+      "predicted": "Huk maytutam rantirqani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 54.60603275097478,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0435,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_562035",
+      "source": "¿Cuántos hermanos tienes?",
+      "expected": "¿Hayk'an wawqiykikuna?",
+      "raw_predicted": "Hayka wawqiyuqtaq kanki?",
+      "predicted": "Hayka wawqiyuqtaq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.618557128944754,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.0909,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1083282",
+      "source": "Cuatro hombres cantan.",
+      "expected": "Tawa runakuna takisanku.",
+      "raw_predicted": "Tawa qarikunam takinku.",
+      "predicted": "Tawa qarikunam takinku.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.09558664618268,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9583,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251949",
+      "source": "House es médico.",
+      "expected": "House hambinayukmi kan.",
+      "raw_predicted": "Houseqa hampiqmi.",
+      "predicted": "Houseqa hampiqmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.050392416704604,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.7391,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7255082",
+      "source": "Ulises ama a Penélope.",
+      "expected": "Uliseska Penelopetami kuyan.",
+      "raw_predicted": "Ulisesqa Penélopetam kuyan.",
+      "predicted": "Ulisesqa Penélopetam kuyan.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 51.465530595573895,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.9643,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2522313",
+      "source": "¿De dónde es?",
+      "expected": "Imamantataq hamunki?",
+      "raw_predicted": "Maymantataq pay?",
+      "predicted": "Maymantataq pay?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.953352506808468,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_449153",
+      "source": "¿Cómo te llamas?",
+      "expected": "Ima shuti kanki?",
+      "raw_predicted": "Imataq sutiyki?",
+      "predicted": "Imataq sutiyki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.041335835005064,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.9375,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4998452",
+      "source": "¿Es una llama?",
+      "expected": "Llamachu?",
+      "raw_predicted": "Llamachu?",
+      "predicted": "Llamachu?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_854588",
+      "source": "Yo soy guapo.",
+      "expected": "Ñuqa k'acham.",
+      "raw_predicted": "Ñuqaqa sumaq qarim kani.",
+      "predicted": "Ñuqaqa sumaq qarim kani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.04380144740495,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 200.0,
+      "length_ratio": 1.8462,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_536849",
+      "source": "Encantado de conocerte.",
+      "expected": "Riqsinakuymanta anchatam kusikuni.",
+      "raw_predicted": "Anchatam kusikuni riqsisqaymanta.",
+      "predicted": "Anchatam kusikuni riqsisqaymanta.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 51.68297561495538,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 100.0,
+      "length_ratio": 0.9706,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_927348",
+      "source": "Un placer conocerte.",
+      "expected": "Riqsinakuymanta anchatam kusikuni.",
+      "raw_predicted": "Ancha kusikuymi riqsisqaymanta.",
+      "predicted": "Ancha kusikuymi riqsisqaymanta.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 33.1957770917841,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 0.9118,
+      "latency_s": 0.163,
+      "cost_usd": 0.001133,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_5124516",
+      "source": "Me pica el bagre.",
+      "expected": "Yarqawachkan.",
+      "raw_predicted": "Yarqawanmi.",
+      "predicted": "Yarqawanmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 41.51572708888446,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8462,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_550492",
+      "source": "No me acuerdo.",
+      "expected": "Mana yuyarinichu.",
+      "raw_predicted": "Manam yuyanichu.",
+      "predicted": "Manam yuyanichu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 39.941711833175596,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.9412,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_562145",
+      "source": "¿Quién es aquel hombre?",
+      "expected": "Pitaq chay runa?",
+      "raw_predicted": "Pitaq haqay qari?",
+      "predicted": "Pitaq haqay qari?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 28.151081102499482,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0625,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_8666662",
+      "source": "¿Tú quién eres?",
+      "expected": "Pitaq kankichu?",
+      "raw_predicted": "Qamqa pitaq kanki?",
+      "predicted": "Qamqa pitaq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 45.02755695159817,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.2,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_618952",
+      "source": "¿Cuándo te vas?",
+      "expected": "Haykaqtaq ripunki?",
+      "raw_predicted": "Haykaqtaq ripunki?",
+      "predicted": "Haykaqtaq ripunki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": true,
+      "chrf_score": 100.0,
+      "bleu_score": 0.0,
+      "ter_score": 0.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2879289",
+      "source": "Odio las matemáticas.",
+      "expected": "Yupay yachayta chiqnini.",
+      "raw_predicted": "Yupay yachaytam chiqnini.",
+      "predicted": "Yupay yachaytam chiqnini.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 77.61785192854725,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0417,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_436178",
+      "source": "¿Cuánto le debo?",
+      "expected": "Haykatataq manuyki?",
+      "raw_predicted": "Haykatataq manuyki kani?",
+      "predicted": "Haykatataq manuyki kani?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 85.43236211445213,
+      "bleu_score": 35.35533905932737,
+      "ter_score": 100.0,
+      "length_ratio": 1.2632,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2117893",
+      "source": "Perdí mi billetera.",
+      "expected": "Ñuka istallata ch'ingachirkani.",
+      "raw_predicted": "Qullqi churanaytam chinkachini.",
+      "predicted": "Qullqi churanaytam chinkachini.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.957096543303443,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251952",
+      "source": "Adele es cantante.",
+      "expected": "Adele takijmi kan.",
+      "raw_predicted": "Adeleqa takiqmi.",
+      "predicted": "Adeleqa takiqmi.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 28.870050897121217,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8889,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_10261566",
+      "source": "No hablo tu idioma.",
+      "expected": "Ñukaka mana kanpak shimita rimanichu.",
+      "raw_predicted": "Manam rimayniykita rimanichu.",
+      "predicted": "Manam rimayniykita rimanichu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 39.926352168274384,
+      "bleu_score": 19.37692912686648,
+      "ter_score": 80.0,
+      "length_ratio": 0.7838,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.6,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7254177",
+      "source": "Ella es de Quito.",
+      "expected": "Payka Quitomantami kan.",
+      "raw_predicted": "Payqa Quitomantam.",
+      "predicted": "Payqa Quitomantam.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 47.68398397565977,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.7826,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.667,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_9990749",
+      "source": "Me peiné el pelo.",
+      "expected": "Ñuka ñakcharirkani.",
+      "raw_predicted": "Chukchaytam ñaqchakurqani.",
+      "predicted": "Chukchaytam ñaqchakurqani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 23.77624097138736,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.3684,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251942",
+      "source": "-Mucho gusto. -Igualmente.",
+      "expected": "-Kushikuni. -Kushikunipish.",
+      "raw_predicted": "-Ancha kusikuy. -Chaynallataq.",
+      "predicted": "-Ancha kusikuy. -Chaynallataq.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 15.353327948694739,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 150.0,
+      "length_ratio": 1.1111,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1350944",
+      "source": "¿Cuántos niños tienes?",
+      "expected": "Hayka warmakunayuq kankichu?",
+      "raw_predicted": "Hayka wawayuqtaq kanki?",
+      "predicted": "Hayka wawayuqtaq kanki?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.957673294418306,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 0.8214,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_943539",
+      "source": "Dos mujeres están cantando.",
+      "expected": "Iskay warmikuna takisanku.",
+      "raw_predicted": "Iskay warmikunam takichkanku.",
+      "predicted": "Iskay warmikunam takichkanku.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 58.46596787076715,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1154,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1167675",
+      "source": "Vayámonos a casa.",
+      "expected": "Wasinchisman risun.",
+      "raw_predicted": "Wasiman ripusun.",
+      "predicted": "Wasiman ripusun.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.235982617527146,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.8421,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_670923",
+      "source": "Yo soy bonito.",
+      "expected": "Ñuqa k'acham.",
+      "raw_predicted": "Ñuqaqa sumaqmi kani.",
+      "predicted": "Ñuqaqa sumaqmi kani.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.97609524120589,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.5385,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7255114",
+      "source": "Óyeme, por favor.",
+      "expected": "Uyapaway.",
+      "raw_predicted": "Uyariway, ama hina kaychu.",
+      "predicted": "Uyariway, ama hina kaychu.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 20.143345348993968,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 400.0,
+      "length_ratio": 2.8889,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7255110",
+      "source": "Oye, por favor.",
+      "expected": "Uyapay",
+      "raw_predicted": "Uyariy, ama hina kaychu.",
+      "predicted": "Uyariy, ama hina kaychu.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 15.376800150990178,
+      "bleu_score": 0.0,
+      "ter_score": 400.0,
+      "length_ratio": 4.0,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251970",
+      "source": "Buenas noches, papá.",
+      "expected": "Alli tuta, tayta.",
+      "raw_predicted": "Allin tuta, taytáy.",
+      "predicted": "Allin tuta, taytáy.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 57.313396206554856,
+      "bleu_score": 23.643540225079395,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1176,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2857728",
+      "source": "Por favor, siéntate.",
+      "expected": "Tiyaripay.",
+      "raw_predicted": "Ama hina kaychu, tiyaykuy.",
+      "predicted": "Ama hina kaychu, tiyaykuy.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 16.945721177979905,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 400.0,
+      "length_ratio": 2.6,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1664902",
+      "source": "Sí, estoy casado.",
+      "expected": "Arí, warmiyuq kani.",
+      "raw_predicted": "Arí, warmiyuqmi kani.",
+      "predicted": "Arí, warmiyuqmi kani.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 75.48567357777877,
+      "bleu_score": 30.213753973567677,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.1053,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1664901",
+      "source": "Sí, estoy casada.",
+      "expected": "Arí, warmiyuq kani.",
+      "raw_predicted": "Arí, qusayuqmi kani.",
+      "predicted": "Arí, qusayuqmi kani.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.39556521533643,
+      "bleu_score": 30.213753973567677,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0526,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1508262",
+      "source": "¡Ayúdame, por favor!",
+      "expected": "Yanapaway!",
+      "raw_predicted": "¡Yanapaway, ama hina kaychu!",
+      "predicted": "¡Yanapaway, ama hina kaychu!",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 51.34434945732145,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 400.0,
+      "length_ratio": 2.8,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_859545",
+      "source": "¿Cómo estás, Mike?",
+      "expected": "Allillanchu, Mike?",
+      "raw_predicted": "Imaynallam kachkanki, Mike?",
+      "predicted": "Imaynallam kachkanki, Mike?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.72895966626892,
+      "bleu_score": 39.76353643835254,
+      "ter_score": 100.0,
+      "length_ratio": 1.5,
+      "latency_s": 0.156,
+      "cost_usd": 0.001163,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_859243",
+      "source": "Ven, por favor.",
+      "expected": "Shamupay.",
+      "raw_predicted": "Ama hina kaspa, hamuy.",
+      "predicted": "Ama hina kaspa, hamuy.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.24142895277183,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 400.0,
+      "length_ratio": 2.4444,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_803646",
+      "source": "Por favor, ayúdeme.",
+      "expected": "Yanapaway!",
+      "raw_predicted": "Ama hina kaspa, yanapaway.",
+      "predicted": "Ama hina kaspa, yanapaway.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 40.02064400740292,
+      "bleu_score": 0.0,
+      "ter_score": 400.0,
+      "length_ratio": 2.6,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_620177",
+      "source": "Ayúdame, por favor.",
+      "expected": "Yanapaway!",
+      "raw_predicted": "Yanapaway, ama hina kaspa.",
+      "predicted": "Yanapaway, ama hina kaspa.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 52.190451520585476,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 400.0,
+      "length_ratio": 2.6,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251978",
+      "source": "Este gorro, ¿cuánto vale?",
+      "expected": "Kay muchikuka mashna kan?",
+      "raw_predicted": "Kay ch'ulu, hayk'ataq chanin?",
+      "predicted": "Kay ch'ulu, hayk'ataq chanin?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 17.59594387721795,
+      "bleu_score": 9.652434877402245,
+      "ter_score": 75.0,
+      "length_ratio": 1.16,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251975",
+      "source": "Hola, amigos, ¿cómo están?",
+      "expected": "Imanalla, mashikuna.",
+      "raw_predicted": "Allillanchu masiykuna, imaynallataq kachkankichik?",
+      "predicted": "Allillanchu masiykuna, imaynallataq kachkankichik?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 25.288250329183438,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 200.0,
+      "length_ratio": 2.5,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251974",
+      "source": "Amigo Guaman, ¿adónde vas?",
+      "expected": "Mashi Guaman, Mayman rigunki?",
+      "raw_predicted": "Waman masi, maytataq richkanki?",
+      "predicted": "Waman masi, maytataq richkanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.697090157048848,
+      "bleu_score": 9.652434877402245,
+      "ter_score": 100.0,
+      "length_ratio": 1.069,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_7251971",
+      "source": "Buenos días, amiga Sandra.",
+      "expected": "Alli punlla, mashi Sandra.",
+      "raw_predicted": "Allin p'unchaw, Sandra masi.",
+      "predicted": "Allin p'unchaw, Sandra masi.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 32.12075040576615,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 100.0,
+      "length_ratio": 1.0769,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6457203",
+      "source": "Por favor, ¿podría ayudarme?",
+      "expected": "Allichu yanapawankikumanchu?",
+      "raw_predicted": "Ama hina kaspa, yanapawankimanchu?",
+      "predicted": "Ama hina kaspa, yanapawankimanchu?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.468776985244055,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 200.0,
+      "length_ratio": 1.2143,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2843736",
+      "source": "Come feliz, duerme feliz.",
+      "expected": "Mikhuq kusikun puñuq kusikun.",
+      "raw_predicted": "Kusisqa mikuy, kusisqa puñuy.",
+      "predicted": "Kusisqa mikuy, kusisqa puñuy.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.800279376834613,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1979788",
+      "source": "¿Tienes un hermano, Pedro?",
+      "expected": "Wawkeyuq kankichu, Pidru?",
+      "raw_predicted": "Pedro, wawqiyuqchu kanki?",
+      "predicted": "Pedro, wawqiyuqchu kanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.43546861224207,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1210044",
+      "source": "Mientras canto, estoy caminando.",
+      "expected": "Puristin takisani.",
+      "raw_predicted": "Takispaymi purichkani.",
+      "predicted": "Takispaymi purichkani.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.222053006619063,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.2222,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1173911",
+      "source": "¿Podrías ayudarme, por favor?",
+      "expected": "Allichu yanapawankikumanchu?",
+      "raw_predicted": "Yanapawankimanchu, ama hina kaspa?",
+      "predicted": "Yanapawankimanchu, ama hina kaspa?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 37.51097437902553,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 200.0,
+      "length_ratio": 1.2143,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1071855",
+      "source": "Lucía, ¿tienes una hermana?",
+      "expected": "Ñañayuq kankichu, Lucia?",
+      "raw_predicted": "Lucía, ñañayuqchu kanki?",
+      "predicted": "Lucía, ñañayuqchu kanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.834832736922515,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1068761",
+      "source": "¿Tenés una hermana, Lucia?",
+      "expected": "Ñañayuq kankichu, Lucia?",
+      "raw_predicted": "Lucia, ñañayuqchu kanki?",
+      "predicted": "Lucia, ñañayuqchu kanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.35372466370919,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_849995",
+      "source": "\"¿Cómo estás?\" \"Bien, gracias.\"",
+      "expected": "\"Imaynallam kachkanki?\" \"Allillanmi, añayki.\"",
+      "raw_predicted": "—Imaynallataq kachkanki? —Allillanmi, añay.",
+      "predicted": "—Imaynallataq kachkanki? —Allillanmi, añay.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 52.402517808283314,
+      "bleu_score": 8.820727472213227,
+      "ter_score": 100.0,
+      "length_ratio": 0.9556,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_790021",
+      "source": "Ana, ¿tienes un hermano?",
+      "expected": "Turiyuq kankichu, Ana?",
+      "raw_predicted": "Ana, turiyuqchu kanki?",
+      "predicted": "Ana, turiyuqchu kanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 41.031185500515996,
+      "bleu_score": 14.058533129758727,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_730079",
+      "source": "¡Hola, John! ¿Cómo estás?",
+      "expected": "Rimaykullayki, John! Allillanchu?",
+      "raw_predicted": "¡Allillanchu, John! ¿Imaynallataq kachkanki?",
+      "predicted": "¡Allillanchu, John! ¿Imaynallataq kachkanki?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 48.57979946061908,
+      "bleu_score": 26.269098944241588,
+      "ter_score": 100.0,
+      "length_ratio": 1.3333,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1333,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.6667,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_578959",
+      "source": "Hasta la vista, Sayoko.",
+      "expected": "Tupananchiskama, Sayoko.",
+      "raw_predicted": "Tupananchikkama, Sayoko.",
+      "predicted": "Tupananchikkama, Sayoko.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 79.28663679950866,
+      "bleu_score": 59.460355750136046,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_6701205",
+      "source": "Se lo agradezco.",
+      "expected": "Yupaychani.",
+      "raw_predicted": "Añaychaykin.",
+      "predicted": "Añaychaykin.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 28.950466693562554,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0909,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_534195",
+      "source": "Te lo agradezco.",
+      "expected": "Yupaychani.",
+      "raw_predicted": "Añaychayki.",
+      "predicted": "Añaychayki.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "edu",
+      "exact_match": false,
+      "chrf_score": 29.531926406926402,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.297,
+      "cost_usd": 0.001329,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    }
+  ]
+}

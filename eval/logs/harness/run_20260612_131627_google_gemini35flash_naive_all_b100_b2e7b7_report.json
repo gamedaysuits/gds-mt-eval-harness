@@ -1,0 +1,2683 @@
+{
+  "run_id": "run_20260612_131627_google_gemini35flash_naive_all_b100_b2e7b7",
+  "config": {
+    "dataset": "all",
+    "dataset_id": "",
+    "entry_ids": null,
+    "corpus_path": "datasets/curated/eng-pam-dev-v1.json",
+    "source_file": null,
+    "reference_file": null,
+    "source_field": "source",
+    "target_field": "reference",
+    "source_lang": "English",
+    "target_lang": "Kapampangan",
+    "segment_names": [],
+    "model": "google/gemini-3.5-flash",
+    "max_tokens": 32768,
+    "tools_enabled": false,
+    "tools_list": null,
+    "max_tool_rounds": 8,
+    "cache_enabled": false,
+    "cache_dir": "eval/cache/harness",
+    "batch_size": 100,
+    "concurrency": 8,
+    "prompt_version": "naive",
+    "custom_prompt_path": null,
+    "coaching_file": null,
+    "style_profile": null,
+    "post_hooks": [],
+    "fst_retries": 0,
+    "output_dir": "eval/logs/harness",
+    "run_name": null,
+    "temperature": 0.0,
+    "dry_run": false,
+    "assume_yes": true,
+    "method_path": null,
+    "process_name": null,
+    "champollion_config_path": null,
+    "champollion_cards_dir": null,
+    "target_lang_code": "",
+    "_model_id": "google/gemini-3.5-flash",
+    "_effective_temperature": 0.0,
+    "_config_hash": "ca374b81afb8"
+  },
+  "source_log": "/Users/gamedaysuits/local projects/Champollion copy/arena/eval/logs/harness/run_20260612_131627_google_gemini35flash_naive_all_b100_b2e7b7.json",
+  "overall": {
+    "total_entries": 48,
+    "error_count": 0,
+    "evaluated": 48,
+    "exact_match_count": 0,
+    "exact_match_rate": 0.0,
+    "miss_count": 48,
+    "miss_rate": 1.0,
+    "avg_chrf": 32.01,
+    "avg_bleu": 14.64,
+    "avg_latency_s": 0.094,
+    "total_cost_usd": 0.0321,
+    "total_tool_calls": 0,
+    "corpus_chrf": 31.72,
+    "corpus_bleu": 11.42,
+    "corpus_ter": 84.77,
+    "avg_length_ratio": 1.0828,
+    "comet_score": null,
+    "confidence_intervals": {
+      "corpus_chrf": {
+        "metric_name": "corpus_chrf",
+        "score": 31.7182,
+        "ci_lower": 28.1299,
+        "ci_upper": 35.9268,
+        "ci_width": 7.7969,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 48,
+        "seed": 12345
+      },
+      "corpus_bleu": {
+        "metric_name": "corpus_bleu",
+        "score": 11.422,
+        "ci_lower": 5.5214,
+        "ci_upper": 18.7197,
+        "ci_width": 13.1983,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 48,
+        "seed": 12345
+      },
+      "exact_match_rate": {
+        "metric_name": "exact_match_rate",
+        "score": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 48,
+        "seed": 12345
+      },
+      "composite_score": {
+        "metric_name": "composite_score",
+        "score": 0.2266,
+        "ci_lower": 0.2009,
+        "ci_upper": 0.2566,
+        "ci_width": 0.0557,
+        "n_bootstrap": 1000,
+        "confidence_level": 0.95,
+        "n_entries": 48,
+        "seed": 12345
+      }
+    },
+    "confidence_intervals_by_tier": {
+      "1": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier1",
+          "score": 32.7924,
+          "ci_lower": 28.4543,
+          "ci_upper": 37.0148,
+          "ci_width": 8.5605,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 42,
+          "seed": 12346
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier1",
+          "score": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "ci_width": 0.0,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 42,
+          "seed": 12346
+        }
+      },
+      "2": {
+        "corpus_chrf": {
+          "metric_name": "corpus_chrf_tier2",
+          "score": 26.4298,
+          "ci_lower": 19.6964,
+          "ci_upper": 33.699,
+          "ci_width": 14.0026,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 6,
+          "seed": 12347
+        },
+        "exact_match_rate": {
+          "metric_name": "exact_match_rate_tier2",
+          "score": 0.0,
+          "ci_lower": 0.0,
+          "ci_upper": 0.0,
+          "ci_width": 0.0,
+          "n_bootstrap": 1000,
+          "confidence_level": 0.95,
+          "n_entries": 6,
+          "seed": 12347
+        }
+      }
+    },
+    "plugin_metrics": {
+      "code_switching": {
+        "avg_code_switching_rate": 0.0,
+        "entries_with_code_switching": 0,
+        "entries_with_code_switching_pct": 0.0,
+        "total_wrong_script_tokens": 0
+      },
+      "hallucination": {
+        "avg_hallucination_rate": 0.1854,
+        "max_hallucination_rate": 0.2,
+        "entries_flagged_hallucination": 42,
+        "entries_flagged_hallucination_pct": 0.875,
+        "avg_length_score": 0.0,
+        "avg_repetition_score": 0.0,
+        "avg_entity_score": 0.9271
+      },
+      "terminology": {
+        "avg_terminology_adherence": null,
+        "total_term_matches": 0,
+        "total_term_total": 0,
+        "total_term_misses": 0
+      },
+      "writing_style": {
+        "style_consistency_rate": 1.0,
+        "avg_sentence_length_ratio": 1.081,
+        "avg_formality_score": 0.0,
+        "style_register_distribution": {
+          "undetermined": 48
+        }
+      }
+    }
+  },
+  "by_segment": {
+    "unknown": {
+      "name": "unknown",
+      "count": 48,
+      "exact_match_count": 0,
+      "miss_count": 48,
+      "error_count": 0,
+      "avg_chrf": 32.01,
+      "avg_bleu": 14.64,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0321,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_difficulty": {
+    "1": {
+      "name": "difficulty_1",
+      "count": 42,
+      "exact_match_count": 0,
+      "miss_count": 42,
+      "error_count": 0,
+      "avg_chrf": 32.79,
+      "avg_bleu": 15.37,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0281,
+      "plugin_aggregates": {}
+    },
+    "2": {
+      "name": "difficulty_2",
+      "count": 6,
+      "exact_match_count": 0,
+      "miss_count": 6,
+      "error_count": 0,
+      "avg_chrf": 26.51,
+      "avg_bleu": 9.51,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.004,
+      "plugin_aggregates": {}
+    }
+  },
+  "by_domain": {
+    "conv": {
+      "name": "conv",
+      "count": 39,
+      "exact_match_count": 0,
+      "miss_count": 39,
+      "error_count": 0,
+      "avg_chrf": 30.79,
+      "avg_bleu": 13.69,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0261,
+      "plugin_aggregates": {}
+    },
+    "news": {
+      "name": "news",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 26.06,
+      "avg_bleu": 0.0,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0007,
+      "plugin_aggregates": {}
+    },
+    "support": {
+      "name": "support",
+      "count": 1,
+      "exact_match_count": 0,
+      "miss_count": 1,
+      "error_count": 0,
+      "avg_chrf": 15.29,
+      "avg_bleu": 15.97,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0007,
+      "plugin_aggregates": {}
+    },
+    "ui": {
+      "name": "ui",
+      "count": 7,
+      "exact_match_count": 0,
+      "miss_count": 7,
+      "error_count": 0,
+      "avg_chrf": 42.03,
+      "avg_bleu": 21.84,
+      "avg_latency_s": 0.094,
+      "total_cost_usd": 0.0047,
+      "plugin_aggregates": {}
+    }
+  },
+  "entries": [
+    {
+      "id": "tatoeba_4573418",
+      "source": "It is too risky.",
+      "expected": "Masyádung dilikádu.",
+      "raw_predicted": "Masyadung mapanganib.",
+      "predicted": "Masyadung mapanganib.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 19.949655291916788,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.1053,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243125",
+      "source": "They found Tom.",
+      "expected": "Ápayntún de i Tom.",
+      "raw_predicted": "Ikit de i Tom.",
+      "predicted": "Ikit de i Tom.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 48.32478429856836,
+      "bleu_score": 66.87403049764218,
+      "ter_score": 25.0,
+      "length_ratio": 0.7778,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3374198",
+      "source": "Hide that book.",
+      "expected": "Isalikút me ing librúng yan.",
+      "raw_predicted": "Isalikut mu itang libru.",
+      "predicted": "Isalikut mu itang libru.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.219105482308066,
+      "bleu_score": 8.745825313180632,
+      "ter_score": 100.0,
+      "length_ratio": 0.8571,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3374787",
+      "source": "Why would that be?",
+      "expected": "Óbat makanyán?",
+      "raw_predicted": "Bakit kaya?",
+      "predicted": "Bakit kaya?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 13.44574108024256,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 0.7857,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243049",
+      "source": "They arrested her.",
+      "expected": "Dékap de.",
+      "raw_predicted": "Dekap de.",
+      "predicted": "Dekap de.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 60.69940476190476,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243060",
+      "source": "They both giggled.",
+      "expected": "Paréu lang gínalikgík.",
+      "raw_predicted": "Parehu lang mipakayli.",
+      "predicted": "Parehu lang mipakayli.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.00987917096663,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243070",
+      "source": "They bought it.",
+      "expected": "Séli de.",
+      "raw_predicted": "Sinali de.",
+      "predicted": "Sinali de.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 49.07946117357234,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.25,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243117",
+      "source": "They finally left.",
+      "expected": "Bandáng tawlí méko la.",
+      "raw_predicted": "King wakas, meko na la.",
+      "predicted": "King wakas, meko na la.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.983150625333213,
+      "bleu_score": 13.134549472120794,
+      "ter_score": 100.0,
+      "length_ratio": 1.0455,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.25,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3378136",
+      "source": "I do not know.",
+      "expected": "Éku bálû.",
+      "raw_predicted": "E ku balu.",
+      "predicted": "E ku balu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 17.415261609515372,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.1111,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.0,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243127",
+      "source": "They gave up.",
+      "expected": "Sínúku la.",
+      "raw_predicted": "Suku na la.",
+      "predicted": "Suku na la.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 29.84422559161624,
+      "bleu_score": 31.947155212313625,
+      "ter_score": 100.0,
+      "length_ratio": 1.1,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3916161",
+      "source": "Can you get her?",
+      "expected": "Ápapuntán me?",
+      "raw_predicted": "Akua me?",
+      "predicted": "Akua me?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.425520823549306,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 0.6154,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2867029",
+      "source": "We have a kid.",
+      "expected": "Atín kamíng anák.",
+      "raw_predicted": "Atin kaming anak.",
+      "predicted": "Atin kaming anak.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.197344322344325,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_42849",
+      "source": "What is it?",
+      "expected": "Nánu ya?",
+      "raw_predicted": "Nanu ita?",
+      "predicted": "Nanu ita?",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 16.89015962190119,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.125,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2249414",
+      "source": "Just get back.",
+      "expected": "Bastá mibálik ka.",
+      "raw_predicted": "Mibalik ka mu.",
+      "predicted": "Mibalik ka mu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.057089309076787,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 100.0,
+      "length_ratio": 0.8235,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1718",
+      "source": "Call the police!",
+      "expected": "Máus kang pulís!",
+      "raw_predicted": "Ausan mo reng pulis!",
+      "predicted": "Ausan mo reng pulis!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 24.28378294206623,
+      "bleu_score": 10.682175159905853,
+      "ter_score": 133.33333333333331,
+      "length_ratio": 1.25,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1532316",
+      "source": "Tom is clueless.",
+      "expected": "Alá yang kabalú-bálû i Tom.",
+      "raw_predicted": "Alang balu i Tom.",
+      "predicted": "Alang balu i Tom.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.362960030806104,
+      "bleu_score": 32.55563013321615,
+      "ter_score": 60.0,
+      "length_ratio": 0.6296,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2931766",
+      "source": "You are ill.",
+      "expected": "Másakít ka.",
+      "raw_predicted": "Masakit ka.",
+      "predicted": "Masakit ka.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.00099206349206,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3171614",
+      "source": "Tom drank milk.",
+      "expected": "Mínum yang gátas i Tom.",
+      "raw_predicted": "Minum yang gatas i Tom.",
+      "predicted": "Minum yang gatas i Tom.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 62.89960501744558,
+      "bleu_score": 32.46679154750989,
+      "ter_score": 40.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2248831",
+      "source": "It was freezing.",
+      "expected": "Mágyélu.",
+      "raw_predicted": "Masyadung marimla.",
+      "predicted": "Masyadung marimla.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 13.420245398773007,
+      "bleu_score": 0.0,
+      "ter_score": 200.0,
+      "length_ratio": 2.25,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243072",
+      "source": "They burned themselves.",
+      "expected": "Sílab da ing saríli da.",
+      "raw_predicted": "Mesunog la reng sarili ra.",
+      "predicted": "Mesunog la reng sarili ra.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.88666958933495,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 100.0,
+      "length_ratio": 1.1304,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243068",
+      "source": "They both work.",
+      "expected": "Paréu lang mágóbra.",
+      "raw_predicted": "Parehu lang magtrabahu.",
+      "predicted": "Parehu lang magtrabahu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.360175297189443,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.2105,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_305535",
+      "source": "They stopped talking.",
+      "expected": "Tínuknáng lang sásabi.",
+      "raw_predicted": "Tinuknang lang magsalita.",
+      "predicted": "Tinuknang lang magsalita.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 30.929711250648843,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.1364,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "expected": "Kalugurán daká.",
+      "raw_predicted": "Kaluguran daka.",
+      "predicted": "Kaluguran daka.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 43.03606116106116,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2856813",
+      "source": "They will change it.",
+      "expected": "Alilán de.",
+      "raw_predicted": "Alilan de.",
+      "predicted": "Alilan de.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 46.37896825396826,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_31582",
+      "source": "That will do.",
+      "expected": "Ustú na.",
+      "raw_predicted": "Sapat na ita.",
+      "predicted": "Sapat na ita.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 17.930784663397233,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 150.0,
+      "length_ratio": 1.625,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243077",
+      "source": "They can change.",
+      "expected": "Mályári lang magbáyu.",
+      "raw_predicted": "Malyari lang magbayu.",
+      "predicted": "Malyari lang magbayu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 46.66033189591625,
+      "bleu_score": 18.99589214128981,
+      "ter_score": 66.66666666666666,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_4500689",
+      "source": "Some people never listen.",
+      "expected": "Éla mákiramdám deng áliwang táu.",
+      "raw_predicted": "Atin talagang taung e makiramdam.",
+      "predicted": "Atin talagang taung e makiramdam.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.422729064051584,
+      "bleu_score": 8.116697886877475,
+      "ter_score": 100.0,
+      "length_ratio": 1.0312,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3825844",
+      "source": "I want that cat.",
+      "expected": "Burí ke ing púsang yan.",
+      "raw_predicted": "Buri ke itang pusa.",
+      "predicted": "Buri ke itang pusa.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 21.937952204922,
+      "bleu_score": 10.40059768900531,
+      "ter_score": 80.0,
+      "length_ratio": 0.8261,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.8,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3286808",
+      "source": "We are doing something.",
+      "expected": "Atíng keng gagáwan.",
+      "raw_predicted": "Atin kaming gagawan.",
+      "predicted": "Atin kaming gagawan.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.446973534398953,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 1.0526,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1660902",
+      "source": "Tom is swimming.",
+      "expected": "Kákawé ya i Tom.",
+      "raw_predicted": "Kakalung i Tom.",
+      "predicted": "Kakalung i Tom.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 35.635986838880555,
+      "bleu_score": 46.30777161991026,
+      "ter_score": 50.0,
+      "length_ratio": 0.9375,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.75,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243071",
+      "source": "They buried it.",
+      "expected": "Kitkút de.",
+      "raw_predicted": "Kinitkut de.",
+      "predicted": "Kinitkut de.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 41.25635498247229,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.2,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1222816",
+      "source": "Horses are animals.",
+      "expected": "Animál la reng kabáyu.",
+      "raw_predicted": "Deng kabayu animal la.",
+      "predicted": "Deng kabayu animal la.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 31.127904012482187,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_1862",
+      "source": "It is raining.",
+      "expected": "Múmurán.",
+      "raw_predicted": "Mumuran.",
+      "predicted": "Mumuran.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 23.065476190476193,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 1,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243040",
+      "source": "They already left.",
+      "expected": "Méko na la.",
+      "raw_predicted": "Meko na la.",
+      "predicted": "Meko na la.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 69.20634920634922,
+      "bleu_score": 59.460355750136046,
+      "ter_score": 33.33333333333333,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2168",
+      "source": "Where are you?",
+      "expected": "Núkarín ka?",
+      "raw_predicted": "Nukarin ka?",
+      "predicted": "Nukarin ka?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 38.00099206349206,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2837804",
+      "source": "Rack off, hairy legs!",
+      "expected": "Mabáting ka!",
+      "raw_predicted": "Mako ka keni, mabulbul a bitis!",
+      "predicted": "Mako ka keni, mabulbul a bitis!",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 18.14398003950317,
+      "bleu_score": 6.567274736060396,
+      "ter_score": 300.0,
+      "length_ratio": 2.5833,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 2.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2746754",
+      "source": "Are you home, too?",
+      "expected": "Atyú ka murín king kékayó?",
+      "raw_predicted": "Ati ka mu naman bale?",
+      "predicted": "Ati ka mu naman bale?",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 15.25553191945002,
+      "bleu_score": 9.652434877402245,
+      "ter_score": 80.0,
+      "length_ratio": 0.8077,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2745136",
+      "source": "I like candy, too.",
+      "expected": "Yáku man burí ku ing kéndi.",
+      "raw_predicted": "Buri ku mu naman ing kendi.",
+      "predicted": "Buri ku mu naman ing kendi.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 26.061460469355207,
+      "bleu_score": 8.643019616048525,
+      "ter_score": 83.33333333333334,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2745133",
+      "source": "I, too, like candy.",
+      "expected": "Yáku man maburí kung kéndi.",
+      "raw_predicted": "Aku naman, buri ku ing kendi.",
+      "predicted": "Aku naman, buri ku ing kendi.",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "conv",
+      "exact_match": false,
+      "chrf_score": 22.582383150422846,
+      "bleu_score": 5.522397783539471,
+      "ter_score": 120.0,
+      "length_ratio": 1.0741,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 6,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.2,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_3079700",
+      "source": "According to you.",
+      "expected": "Agpáng kéka.",
+      "raw_predicted": "Agpang keka.",
+      "predicted": "Agpang keka.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "news",
+      "exact_match": false,
+      "chrf_score": 26.060606060606062,
+      "bleu_score": 0.0,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243078",
+      "source": "They can help.",
+      "expected": "Makásáup la.",
+      "raw_predicted": "Malyari lang sumaup.",
+      "predicted": "Malyari lang sumaup.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "support",
+      "exact_match": false,
+      "chrf_score": 15.288335541136691,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 150.0,
+      "length_ratio": 1.6667,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.5,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2243042",
+      "source": "They appear dead.",
+      "expected": "Lúpa lang mété na.",
+      "raw_predicted": "Balamu mete na la.",
+      "predicted": "Balamu mete na la.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 16.199633699633697,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_436371",
+      "source": "I am happy.",
+      "expected": "Masayá ku.",
+      "raw_predicted": "Masaya ku.",
+      "predicted": "Masaya ku.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 48.87896825396826,
+      "bleu_score": 0.0,
+      "ter_score": 50.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 2,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_361350",
+      "source": "Happy New Year!",
+      "expected": "Masáplálang Báyung Banwá!",
+      "raw_predicted": "Masayang Bayung Banua!",
+      "predicted": "Masayang Bayung Banua!",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 29.529249054958846,
+      "bleu_score": 15.97357760615681,
+      "ter_score": 100.0,
+      "length_ratio": 0.88,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_323768",
+      "source": "Open your eyes.",
+      "expected": "Imulágat mo reng matá mu.",
+      "raw_predicted": "Ibulat mu reng mata mu.",
+      "predicted": "Ibulat mu reng mata mu.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 37.53111173930611,
+      "bleu_score": 17.965205598154213,
+      "ter_score": 60.0,
+      "length_ratio": 0.92,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 5,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2858393",
+      "source": "She saw the file.",
+      "expected": "Ikít ne ing file.",
+      "raw_predicted": "Ikit ne ing file.",
+      "predicted": "Ikit ne ing file.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 77.10830835830836,
+      "bleu_score": 66.87403049764218,
+      "ter_score": 25.0,
+      "length_ratio": 1.0,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.0,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_2745109",
+      "source": "It only happened once.",
+      "expected": "Mísan mu milyári.",
+      "raw_predicted": "Minsan mu milyari ita.",
+      "predicted": "Minsan mu milyari ita.",
+      "segment": "",
+      "difficulty": 1,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 45.97543885166381,
+      "bleu_score": 12.70331870386537,
+      "ter_score": 100.0,
+      "length_ratio": 1.2941,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 4,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.2,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 1.0,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 1.333,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    },
+    {
+      "id": "tatoeba_355041",
+      "source": "Happy birthday, Muiriel!",
+      "expected": "Máyap a aldó kébaytán, Muiriel!",
+      "raw_predicted": "Masayang kebaitan, Muiriel!",
+      "predicted": "Masayang kebaitan, Muiriel!",
+      "segment": "",
+      "difficulty": 2,
+      "domain": "ui",
+      "exact_match": false,
+      "chrf_score": 39.0083105759199,
+      "bleu_score": 26.654295575896295,
+      "ter_score": 80.0,
+      "length_ratio": 0.871,
+      "latency_s": 0.094,
+      "cost_usd": 0.000668,
+      "tool_call_count": 0,
+      "error": null,
+      "plugin_metrics": {
+        "code_switching": {
+          "code_switching_rate": 0.0,
+          "cs_wrong_script_tokens": 0,
+          "cs_total_tokens": 3,
+          "cs_untranslated_run_tokens": 0
+        },
+        "hallucination": {
+          "hallucination_rate": 0.1,
+          "hall_length_score": 0.0,
+          "hall_repetition_score": 0.0,
+          "hall_entity_score": 0.5,
+          "hall_echo_score": 0.0
+        },
+        "terminology": {
+          "terminology_adherence": null,
+          "term_matches": 0,
+          "term_total": 0,
+          "term_misses": []
+        },
+        "writing_style": {
+          "style_register_match": true,
+          "style_sentence_length_ratio": 0.6,
+          "style_formality_score": null,
+          "style_predicted_register": "undetermined",
+          "style_target_register": "none",
+          "style_verdict": "UNDETERMINED",
+          "style_prohibited_terms_found": [],
+          "style_required_terms_missing": []
+        }
+      }
+    }
+  ]
+}

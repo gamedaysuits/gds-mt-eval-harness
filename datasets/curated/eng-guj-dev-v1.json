@@ -1,0 +1,4815 @@
+{
+  "corpus_id": "tatoeba-eng-guj-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "guj",
+    "source_name": "English",
+    "target_name": "Gujarati"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:04:05.252634+00:00",
+  "entry_count": 165,
+  "domains": [
+    "conv",
+    "tech",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "હું તને પ્રેમ કરુ છુ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3636463",
+      "source": "Why is that?",
+      "reference": "શા માટે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3636463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5685977",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3636463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3636463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3570618",
+      "source": "Ajay is bad.",
+      "reference": "અજય ગરીબ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3570618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3341723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3570618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3570618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3341721",
+      "source": "Ajay is poor.",
+      "reference": "અજય ગરીબ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3341721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3341723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3341721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3341721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2481707",
+      "source": "I eat meat.",
+      "reference": "હું માંસ ખાય છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2481707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185710",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2481707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2481707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2481696",
+      "source": "I eat cheese.",
+      "reference": "હું ચીઝ ખાય છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2481696",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3186323",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2481696",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2481696"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2425776",
+      "source": "I am busy.",
+      "reference": "હું વ્યસ્ત છું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2425776",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238168",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2425776",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2425776"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "હું તને પ્રેમ કરુ છુ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2066956",
+      "source": "She is American.",
+      "reference": "તે અમેરિકન છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2066956",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238163",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2066956",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2066956"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_428379",
+      "source": "Who is it?",
+      "reference": "કોણ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "428379",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268807",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "428379",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/428379"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_399354",
+      "source": "Are you alone?",
+      "reference": "તું એકલો છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "399354",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "399354",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/399354"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_387550",
+      "source": "He is American.",
+      "reference": "તે અમેરિકન છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "387550",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238163",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "387550",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/387550"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_373320",
+      "source": "How are you?",
+      "reference": "કેમ્ છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "373320",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3234747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "373320",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/373320"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_356200",
+      "source": "Who are you?",
+      "reference": "કોણ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "356200",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268807",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "356200",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/356200"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_313573",
+      "source": "She is happy.",
+      "reference": "તે ખુશ છે.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "313573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "313573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/313573"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_296294",
+      "source": "He is happy.",
+      "reference": "તે ખુશ છે.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "296294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238164",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "296294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/296294"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_35029",
+      "source": "Where is Paris?",
+      "reference": "પૅરિસ ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "35029",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268825",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "35029",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/35029"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1434",
+      "source": "I love you.",
+      "reference": "હું તને પ્રેમ કરુ છુ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1434",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1434",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1434"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_6170622",
+      "source": "Is everyone the same?",
+      "reference": "શું બધા સરખા છે ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170622",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171983",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170622",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170622"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3953825",
+      "source": "My name's Henry.",
+      "reference": "મારું નામ હેનરી છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3953825",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3953825",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3953825"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3850035",
+      "source": "My name is Rahul.",
+      "reference": "મારું નામ રાહુલ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3850035",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3936565",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3850035",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3850035"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_3738718",
+      "source": "How late is it?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738718",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738718",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738718"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_3636377",
+      "source": "How are things going?",
+      "reference": "કેમ્ છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3636377",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3234747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3636377",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3636377"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2883715",
+      "source": "Where's your school?",
+      "reference": "તમારી શાળા ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2883715",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2883715",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2883715"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2713779",
+      "source": "I'm busy today.",
+      "reference": "આજ હું વ્યસ્ત છું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2713779",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2713779",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2713779"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2649132",
+      "source": "It was on sale.",
+      "reference": "એ વેચાણ માટે હતું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2649132",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683525",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2649132",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2649132"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_2334139",
+      "source": "I hate to complain.",
+      "reference": "હુ ફરિયાદ ને ધિક્કારુ છું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2334139",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683540",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2334139",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2334139"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1849719",
+      "source": "How're you doing?",
+      "reference": "કેમ્ છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1849719",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3234747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1849719",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1849719"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1259876",
+      "source": "What is the time?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1259876",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1259876",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1259876"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_1208402",
+      "source": "She is an American.",
+      "reference": "તે અમેરિકન છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1208402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238163",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1208402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1208402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_1069252",
+      "source": "My name is Sascha.",
+      "reference": "મારું નામ સાશા છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1069252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1069252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1069252"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_953176",
+      "source": "Did you say something?",
+      "reference": "શું?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "953176",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "953176",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/953176"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_758904",
+      "source": "My name's Jack.",
+      "reference": "મારું નામ જેક છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "758904",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "758904",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/758904"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_757376",
+      "source": "What's the time?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "757376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "757376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/757376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_567334",
+      "source": "My name is Sasha.",
+      "reference": "મારું નામ સાશા છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "567334",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "567334",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/567334"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_456449",
+      "source": "My name is Henry.",
+      "reference": "મારું નામ હેનરી છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "456449",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242680",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "456449",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/456449"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_435255",
+      "source": "What's your age?",
+      "reference": "તારી ઉમર કેટલી છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "435255",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238184",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "435255",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/435255"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_428402",
+      "source": "What time is it?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "428402",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "428402",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/428402"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_408293",
+      "source": "What's your name?",
+      "reference": "તારુ નામ શું છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "408293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184219",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "408293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/408293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_389935",
+      "source": "What is your age?",
+      "reference": "તારી ઉમર કેટલી છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "389935",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238184",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "389935",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/389935"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_378663",
+      "source": "My name is Andrea.",
+      "reference": "મારું નામ એન્ડ્રીયા છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "378663",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242684",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "378663",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/378663"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_378270",
+      "source": "Do you speak English?",
+      "reference": "શું તું અંગ્રેજી બોલી શકે છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "378270",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238180",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "378270",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/378270"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_376611",
+      "source": "I don't understand.",
+      "reference": "હું સમજતો નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184226",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_376610",
+      "source": "I do not understand.",
+      "reference": "હું સમજતો નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "376610",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184226",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "376610",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/376610"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_374852",
+      "source": "My name is Wang.",
+      "reference": "મારું નામ વાંગ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "374852",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242679",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "374852",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/374852"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_370708",
+      "source": "Where do you live?",
+      "reference": "તુ ક્યાં રહે છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "370708",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242690",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "370708",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/370708"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_322937",
+      "source": "What's its name?",
+      "reference": "તમારુ નામ શું છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "322937",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184220",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "322937",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/322937"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_318167",
+      "source": "Where's the museum?",
+      "reference": "સંગ્રહાલય ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "318167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "318167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/318167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_312698",
+      "source": "Does she speak English?",
+      "reference": "શું તેણી અંગ્રેજી બોલી શકે છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "312698",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238181",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "312698",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/312698"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_288859",
+      "source": "He is an American.",
+      "reference": "તે અમેરિકન છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "288859",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238163",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "288859",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/288859"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_287637",
+      "source": "What is his name?",
+      "reference": "તમારુ નામ શું છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "287637",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184220",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "287637",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/287637"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_282553",
+      "source": "Where is the museum?",
+      "reference": "સંગ્રહાલય ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "282553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "282553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/282553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_242977",
+      "source": "I am busy today.",
+      "reference": "આજ હું વ્યસ્ત છું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "242977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238167",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "242977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/242977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_70623",
+      "source": "What is your name?",
+      "reference": "તારુ નામ શું છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "70623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184219",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "70623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/70623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_38926",
+      "source": "How are you doing?",
+      "reference": "કેમ્ છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38926",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3234747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38926",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38926"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_38308",
+      "source": "How is it going?",
+      "reference": "કેમ્ છો?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38308",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3234747",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38308",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38308"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_26170",
+      "source": "Can you speak English?",
+      "reference": "શું તું અંગ્રેજી બોલી શકે છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "26170",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238180",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "26170",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/26170"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_23532",
+      "source": "My name is Hopkins.",
+      "reference": "મારું નામ હોપકિન્સ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23532",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242672",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23532",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23532"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_17283",
+      "source": "Where is your school?",
+      "reference": "તમારી શાળા ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_1646",
+      "source": "My name is Jack.",
+      "reference": "મારું નામ જેક છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1646",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1646",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1646"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_7737519",
+      "source": "Where is your school located?",
+      "reference": "તમારી શાળા ક્યાં છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7737519",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7737519",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7737519"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_6171192",
+      "source": "You're a good sibling.",
+      "reference": "તમે સારા ભાઈ-બહેન છો.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171281",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3570619",
+      "source": "Ajay is a bad boy.",
+      "reference": "અજય ગરીબ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3570619",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3341723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3570619",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3570619"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.6
+      }
+    },
+    {
+      "id": "tatoeba_1887562",
+      "source": "I made a few changes.",
+      "reference": "મે થોડા ફેરફાર કર્યા છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1887562",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683528",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1887562",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1887562"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1308463",
+      "source": "I don't have change.",
+      "reference": "મારી પાસે છુટ્ટા નથી.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1308463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268767",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1308463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1308463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_1098721",
+      "source": "What is the time now?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1098721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1098721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1098721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_1086213",
+      "source": "What's the time now?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1086213",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1086213",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1086213"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_877850",
+      "source": "My name is Maria Sara.",
+      "reference": "મારું નામ મારિયા સારા છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "877850",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242681",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "877850",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/877850"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_637201",
+      "source": "That's all she wrote.",
+      "reference": "વાર્તા પુરી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "637201",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688568",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "637201",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/637201"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_551304",
+      "source": "What are you hinting at?",
+      "reference": "કોની પાછળ આંઘળો થ્યો છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "551304",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "551304",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/551304"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_455073",
+      "source": "What time is it now?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "455073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "455073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/455073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_40043",
+      "source": "Hold your horses, young man.",
+      "reference": "લોહિ ચટ્કા ભરે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40043",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688557",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40043",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40043"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_38392",
+      "source": "I don't get it.",
+      "reference": "હું સમજતો નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "38392",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3184226",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "38392",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/38392"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_25525",
+      "source": "Be my right-hand man.",
+      "reference": "મારો ખાસ માણસ",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25525",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688530",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25525",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25525"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_24596",
+      "source": "What time do you have?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "24596",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "24596",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/24596"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_16307",
+      "source": "What are you driving at?",
+      "reference": "કોની પાછળ આંઘળો થ્યો છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2096",
+      "source": "He disappeared without a trace.",
+      "reference": "અદ્રષ્ય થઇ ગ્યો.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2096",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683574",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2096",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2096"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_9342059",
+      "source": "It did not make any sense.",
+      "reference": "તેનો કોઈ અર્થ નથી.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9342059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171297",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9342059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9342059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8831832",
+      "source": "What time do you make it?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8831832",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8831832",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8831832"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_6170550",
+      "source": "I am by nature majorly pessimistic.",
+      "reference": "હું સ્વભાવથી થોડો આળશું છું",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170550",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171984",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170550",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170550"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_5680852",
+      "source": "Tom and Mary seemed happy together.",
+      "reference": "ટોમ અને મેરી સાથે ખુસ દેખાય છે.",
+      "domain": "ui",
+      "difficulty": 3,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5680852",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680930",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5680852",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5680852"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.83
+      }
+    },
+    {
+      "id": "tatoeba_3738721",
+      "source": "What time of day is it?",
+      "reference": "કેટલા વાગ્યા છે?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3738721",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4546223",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3738721",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3738721"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_3707501",
+      "source": "Ram's table is besides mine.",
+      "reference": "રામનું ટેબલ મારી બાજુમાં જ છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3707501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3707501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3707501"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.6
+      }
+    },
+    {
+      "id": "tatoeba_3663249",
+      "source": "There are islands in the sea.",
+      "reference": "સમુદ્ર માં ટાપુઓ છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3774254",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_3616307",
+      "source": "The sky is above the earth.",
+      "reference": "ધરતી ઉપર આકાશ છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3616307",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570664",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3616307",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3616307"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3616303",
+      "source": "My house is near her house.",
+      "reference": "મારું ઘર તેના ઘરની પાસે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3616303",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570659",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3616303",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3616303"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2276503",
+      "source": "It doesn't bother me anymore.",
+      "reference": "તે મને વધારે હેરાન નહીં કરે",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171310",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276503"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.8
+      }
+    },
+    {
+      "id": "tatoeba_2276502",
+      "source": "It doesn't belong to you.",
+      "reference": "તે તારા આધારે નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276502",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171309",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276502",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276502"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2276501",
+      "source": "It doesn't belong to me.",
+      "reference": "તે મારા આધારે નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171307",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276501"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2276500",
+      "source": "It doesn't belong there either.",
+      "reference": "તે તેનો આધાર આમ પણ રાખતો નથી",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276500",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171300",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276500",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276500"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.2
+      }
+    },
+    {
+      "id": "tatoeba_2276499",
+      "source": "It didn't seem that important.",
+      "reference": "તે એટલું મહત્વનું ન દેખાયું",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171299",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276499"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2276498",
+      "source": "It didn't make me sad.",
+      "reference": "તેણે મને પાગલ નથી બનાવ્યો.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276498",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171298",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276498",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276498"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_2276497",
+      "source": "It didn't make any sense.",
+      "reference": "તેનો કોઈ અર્થ નથી.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171297",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2276496",
+      "source": "It didn't look that easy.",
+      "reference": "તે એટલું સરળ ન હતું",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171296",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276496"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2276495",
+      "source": "It didn't hurt a bit.",
+      "reference": "તેણે જરાય નુકશાન ન કર્યું",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276495",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171294",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276495",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276495"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_2276494",
+      "source": "It didn't go that well.",
+      "reference": "એ એટલો સારો ન હતો",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276494",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276494",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276494"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2276493",
+      "source": "It didn't get that bad.",
+      "reference": "મને તે લૂખો મળ્યો નથી.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171291",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2011780",
+      "source": "I want to go to Boston.",
+      "reference": "મારે બોસ્ટન જવું છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2011780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2011780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2011780"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_1396417",
+      "source": "Where in Turkey do you live?",
+      "reference": "તમે તુર્કીમાં ક્યાં રહો છો?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1396417",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242688",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1396417",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1396417"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1346613",
+      "source": "The Earth revolves around the Sun.",
+      "reference": "પૃથ્વી સૂર્યની આજુબાજુ ફરે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1346613",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1346613",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1346613"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_665819",
+      "source": "It's none of your business!",
+      "reference": "તું તારુ કર",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "665819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "665819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/665819"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_499751",
+      "source": "I'm in love with you.",
+      "reference": "હું તને પ્રેમ કરુ છુ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "499751",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185636",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "499751",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/499751"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_277137",
+      "source": "The earth goes around the sun.",
+      "reference": "પૃથ્વી સૂર્યની આજુબાજુ ફરે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "277137",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "277137",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/277137"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_249837",
+      "source": "That was all Chinese to me.",
+      "reference": "મારા માટે કાળા અક્ષર કુવાડે માર્યા બરાબર.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "249837",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "249837",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/249837"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_42807",
+      "source": "It is none of your business.",
+      "reference": "તું તારુ કર",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42807",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42807",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42807"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_40862",
+      "source": "He is just pulling your leg.",
+      "reference": "તારી ખેચે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40862",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688561",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40862",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40862"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_25496",
+      "source": "I have her in my pocket.",
+      "reference": "મારું કહ્યું કરે",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "25496",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688454",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "25496",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/25496"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_17344",
+      "source": "You're on the right track.",
+      "reference": "સાચે રસ્તે છો.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17344",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17344",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17344"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_17202",
+      "source": "I don't quite follow you.",
+      "reference": "આંધળુ અનુકરણ નહિ કરું.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "17202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683599",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "17202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/17202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_16994",
+      "source": "It's none of your business.",
+      "reference": "તું તારુ કર",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16994",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683593",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16994",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16994"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_10976",
+      "source": "You are treading on her corns.",
+      "reference": "પારકા ખંભે બંદુક ફોડે",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688467",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10976"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6133",
+      "source": "I can't believe my eyes.",
+      "reference": "માન્યામા નથી આવતુ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6133",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683581",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6133",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6133"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2089",
+      "source": "He's sleeping like a baby.",
+      "reference": "બિન્દાસ સુતો છે.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2089",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683575",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2089",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2089"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_12094555",
+      "source": "I am not in love with you.",
+      "reference": "હું તો તને પ્રેમ કરું છું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12094555",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3185685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12094555",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12094555"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.71
+      }
+    },
+    {
+      "id": "tatoeba_5680851",
+      "source": "I'm so tired of keeping secrets.",
+      "reference": "હું રહસ્ય રાખીને ઘણો થાકી ગયો છું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5680851",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680935",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5680851",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5680851"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5680850",
+      "source": "Tom and Mary talked the whole time.",
+      "reference": "ટોમ અને મેરી પુરો સમય વાતો કરી હતી.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5680850",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680940",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5680850",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5680850"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3733456",
+      "source": "I'm very worried about my future.",
+      "reference": "હું મારા ભવિષ્ય વિષે ખૂબ ચિંતિત છું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3733456",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3186031",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3733456",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3733456"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_3707503",
+      "source": "I am very worried about my future.",
+      "reference": "હું મારા ભવિષ્ય વિષે ખૂબ ચિંતિત છું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3707503",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3186031",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3707503",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3707503"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.86
+      }
+    },
+    {
+      "id": "tatoeba_3515288",
+      "source": "The world does not revolve around you.",
+      "reference": "તારા કિધે જગ નથી હાલતુ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3515288",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3515288",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3515288"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_3244334",
+      "source": "Ahmedabad is the largest city in Gujarat.",
+      "reference": "અમદાવાદ ગુજરાતનું સૌથી મોટુ શહેર છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3244334",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3244338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3244334",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3244334"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.86
+      }
+    },
+    {
+      "id": "tatoeba_3024202",
+      "source": "I'd like to go to Boston.",
+      "reference": "મારે બોસ્ટન જવું છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3024202",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3024202",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3024202"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_2276491",
+      "source": "I'm afraid I don't know.",
+      "reference": "હું બી ગયો છું, મને ખબર નથી.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2276491",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171289",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2276491",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2276491"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.8
+      }
+    },
+    {
+      "id": "tatoeba_2044750",
+      "source": "I'm going to make myself happy.",
+      "reference": "હવે થી હુ મને ખુસ બનાવીશ.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2044750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683552",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2044750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2044750"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_2044744",
+      "source": "I have never seen Tom so happy.",
+      "reference": "મે ટોમ ને આવો ખુસ કયારેય જોયો નથી.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2044744",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2044744",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2044744"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_2044702",
+      "source": "I've never seen Tom so happy.",
+      "reference": "મે ટોમ ને આવો ખુસ કયારેય જોયો નથી.",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2044702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2044702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2044702"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_1761404",
+      "source": "Algeria is a country in North Africa.",
+      "reference": "ઉત્તર આફ્રિકામાં અલજીર્યા એક દેશ છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1761404",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1761404",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1761404"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_1195312",
+      "source": "Mexico is a country in North America.",
+      "reference": "મેક્સિકો ઉત્તર્ અમેરિકાનો એક દેશ છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1195312",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1195312",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1195312"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_321302",
+      "source": "I'm as hungry as a horse.",
+      "reference": "હું ભુખ્યો ડાંહ છું",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688563",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_270899",
+      "source": "Hydrogen and oxygen combine to form water.",
+      "reference": "ઉદજન અને પ્રાણવાયુ મિશ્રણ કરીને પાણી બને છે।",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "270899",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "2047560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "270899",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/270899"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_72063",
+      "source": "He is buttering up to his boss.",
+      "reference": "માલિક ને મસકા મારે છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72063",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688479",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72063",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72063"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.43
+      }
+    },
+    {
+      "id": "tatoeba_37857",
+      "source": "I'm as hungry as a bear.",
+      "reference": "ભુખ્યો ડાંહ",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "37857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688472",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "37857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/37857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_16637",
+      "source": "You've got a lot of guts.",
+      "reference": "ભણતર સાથે ગણતર",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "16637",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683588",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "16637",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/16637"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_2101",
+      "source": "The world doesn't revolve around you.",
+      "reference": "તારા કિધે જગ નથી હાલતુ.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2101",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683577",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2101",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2101"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.17
+      }
+    },
+    {
+      "id": "tatoeba_7217450",
+      "source": "I'm afraid that I don't know.",
+      "reference": "હું બી ગયો છું, મને ખબર નથી.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7217450",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171289",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7217450",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7217450"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_6171303",
+      "source": "A niece is the daughter of a sister.",
+      "reference": "બહેનની પુત્રી ને ભાણેજ ક્હેવાય",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171303",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171322",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171303",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171303"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_6171302",
+      "source": "A niece is the daughter of a brother.",
+      "reference": "ભાઈની પુત્રી ને ભત્રીજી ક્હેવાય",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171319",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_6171301",
+      "source": "A niece is the daughter of a sibling.",
+      "reference": "ભાઈ કે બહેનની પુત્રી ને ભત્રીજી ક્હેવાય",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171301",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171317",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171301",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171301"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_6171280",
+      "source": "A nephew is the son of a sibling.",
+      "reference": "ભાઈ કે બહેનના દીકરાને ભત્રીજો કહેવાય",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171280",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171287",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171280",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171280"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.12
+      }
+    },
+    {
+      "id": "tatoeba_4639385",
+      "source": "Ram and Sita were very fond of Hanuman.",
+      "reference": "રામ અને સીતાને હનુમાનજી ખૂબ પ્રિય હતા.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4639385",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3570653",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4639385",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4639385"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_2952561",
+      "source": "I want to go to Boston with you.",
+      "reference": "મારે તમારી સાથે બોસ્ટન જવું છે.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2952561",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3268755",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2952561",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2952561"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2824553",
+      "source": "Rajendra Prasad was the first president of India.",
+      "reference": "રાજેન્દ્ર પ્રસાદ ભારતનાં પ્રથમ રાષ્ટ્રપતિ હતા.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2824553",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238310",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2824553",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2824553"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.12
+      }
+    },
+    {
+      "id": "tatoeba_6171174",
+      "source": "He gave blood in order to save his sibling.",
+      "reference": "તેણે પોતાની બહેનને બચાવવા લોહી આપ્યું",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171174",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171174",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171174"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_6171173",
+      "source": "She gave blood in order to save her sibling.",
+      "reference": "તેણીએ પોતાના ભાઈને બચાવવા લોહી આપ્યું",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171173",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171173",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171173"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.89
+      }
+    },
+    {
+      "id": "tatoeba_6171136",
+      "source": "He gave blood in order to save his brother.",
+      "reference": "તેણે પોતાના ભાઈને બચાવવા લોહી આપ્યું",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171136",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171980",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171136",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171136"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_6171133",
+      "source": "She gave blood in order to save her sister.",
+      "reference": "તેણીએ પોતાની બહેનને બચાવવા લોહી આપ્યું",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6171133",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6171133",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6171133"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.78
+      }
+    },
+    {
+      "id": "tatoeba_5680853",
+      "source": "I'm sorry I can't tell you more.",
+      "reference": "ખુબ દિલગીર છું, હું તને વધુ નહિ કહું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5680853",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680925",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5680853",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5680853"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_5680849",
+      "source": "I'm so sorry for what I've done.",
+      "reference": "મારા વર્તન માટે હુ ખુબ દિલગીર છું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5680849",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5680849",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5680849"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.57
+      }
+    },
+    {
+      "id": "tatoeba_2824542",
+      "source": "Jawaharlal Nehru was the first prime minister of India.",
+      "reference": "જવાહરલાલ નેહરુ ભારતના પ્રથમ વડાપ્રધાન હતા.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2824542",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238313",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2824542",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2824542"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.11
+      }
+    },
+    {
+      "id": "tatoeba_410150",
+      "source": "He's not the only fish in the sea.",
+      "reference": "તારા કુક્ડે સવાર નથી પડતું",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "410150",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "410150",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/410150"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_67989",
+      "source": "He is not the only pebble on the beach.",
+      "reference": "તારા કુક્ડે સવાર નથી પડતું",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "67989",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "67989",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/67989"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 9,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7185968",
+      "source": "I'm sorry that I can't tell you more.",
+      "reference": "ખુબ દિલગીર છું, હું તને વધુ નહિ કહું.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7185968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5680925",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7185968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7185968"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.62
+      }
+    },
+    {
+      "id": "tatoeba_6170245",
+      "source": "Tom married someone who was in prison for three years.",
+      "reference": "ટોમ એવા કોઈ ને પરણ્યો જે ત્રણ વર્ષથી જેલ માં છે",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170245",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6172008",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170245",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170245"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.4
+      }
+    },
+    {
+      "id": "tatoeba_622303",
+      "source": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred.",
+      "reference": "દસ, વીસ, ત્રીસ, ચાલીસ, પચાસ, સાઇઠ, સિત્તેર, એંસી, નેવું, સો.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "622303",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "622303",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/622303"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 10,
+        "difficulty_avg_word_length": 5.6
+      }
+    },
+    {
+      "id": "tatoeba_487594",
+      "source": "Mumbai is the capital of the Indian state of Maharashtra.",
+      "reference": "મુંબઈ ભારતનાં મહારાષ્ટ્ર રાજ્યનું પાટનગર છે.",
+      "domain": "tech",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "487594",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238316",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "487594",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/487594"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.7
+      }
+    },
+    {
+      "id": "tatoeba_413731",
+      "source": "One, two, three, four, five, six, seven, eight, nine, ten.",
+      "reference": "એક, બે, ત્રણ, ચાર, પાંચ, છ, સાત, આઠ, નવ, દસ.",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "413731",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238178",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "413731",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/413731"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 10,
+        "difficulty_avg_word_length": 3.9
+      }
+    },
+    {
+      "id": "tatoeba_42533",
+      "source": "It is like looking for a needle in a haystack.",
+      "reference": "ઘાંસના ગંજ માં સોય શોધાવા જેવું",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "42533",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5683603",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "42533",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/42533"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_2025467",
+      "source": "Zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "reference": "શૂન્ય, એક, બે, ત્રણ, ચાર, પાંચ, છ, સાત, આઠ, નવ, દસ.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2025467",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3238179",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2025467",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2025467"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 11,
+        "difficulty_avg_word_length": 3.91
+      }
+    },
+    {
+      "id": "tatoeba_637619",
+      "source": "Ten, twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "reference": "દસ, વીસ, ત્રીસ, ચાલીસ, પચાસ, સાઇઠ, સિત્તેર, એંસી, નેવું, સો.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "637619",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "3242698",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "637619",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/637619"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 10,
+        "difficulty_avg_word_length": 5.36
+      }
+    },
+    {
+      "id": "tatoeba_72038",
+      "source": "Nobody likes him, because he is always blowing his own horn.",
+      "reference": "તે કોઇને ગમતો નથી, હંમેશા પોતાની ડીંગ હાકે છે.",
+      "domain": "conv",
+      "difficulty": 4,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "72038",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688485",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "72038",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/72038"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.36
+      }
+    },
+    {
+      "id": "tatoeba_23861",
+      "source": "It was as clear as day that Shinji would die from hunger.",
+      "reference": "દિવા જેવું ચોક્ખું",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "23861",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "5688448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "23861",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/23861"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_6170248",
+      "source": "It won't be difficult to find somebody to do that for you.",
+      "reference": "કોઈ પણ એક તારા માટે તે કરે તે શોધવું અઘરું નથી",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170248",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171987",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170248",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170248"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_6170247",
+      "source": "It won't be hard to find someone to do that for you.",
+      "reference": "કોઈ પણ એક તારા માટે તે કરે તે શોધવું અઘરું નથી",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170247",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171987",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170247",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170247"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 12,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4638840",
+      "source": "What was your relationship with your father like when you were a kid?",
+      "reference": "તમે નાના હતા ત્યારે તમારા પિતા સાથે તમારો સંબંધ કેવો હતો?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4638840",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "4639431",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4638840",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4638840"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.31
+      }
+    },
+    {
+      "id": "tatoeba_6170644",
+      "source": "The population of Japanese people is at least 300,000 fewer than last year.",
+      "reference": "જાપાનની વસ્તી 300000 હતી, ગયા વર્ષ થી થોડી ઓછી હતી",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170644"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 13,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.77
+      }
+    },
+    {
+      "id": "tatoeba_6170127",
+      "source": "This must always be here; this is the place for it. Have you understood it?",
+      "reference": "આ અહીંયા જ રહેવું જોઈએ; આ તેની જગ્યા છે. તને તે સમજાણું ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6170127",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "guj",
+        "target_sentence_id": "6171985",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6170127",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6170127"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 15,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.87
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

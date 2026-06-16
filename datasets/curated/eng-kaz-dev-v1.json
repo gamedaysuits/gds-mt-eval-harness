@@ -1,0 +1,3307 @@
+{
+  "corpus_id": "tatoeba-eng-kaz-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "kaz",
+    "source_name": "English",
+    "target_name": "Kazakh"
+  },
+  "segment": "development",
+  "created": "2026-06-05T11:22:45.964418+00:00",
+  "entry_count": 113,
+  "domains": [
+    "conv",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_12789561",
+      "source": "Someone commited suicide.",
+      "reference": "Біреу өзін-өзі өлтірді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12789561",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "12794122",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12789561",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12789561"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_12326470",
+      "source": "A dog ran.",
+      "reference": "Ит жүгіріп келе жатты.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12326470",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "13915119",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12326470",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12326470"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_12129031",
+      "source": "Was Tom armed?",
+      "reference": "Том қарулы болды ма?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12129031",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871306",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12129031",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12129031"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_11987573",
+      "source": "He threatened us.",
+      "reference": "Ол бізді қорқытты.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11987573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868705",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11987573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11987573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_11852723",
+      "source": "Who married her?",
+      "reference": "Оған кім үйленді?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11852723",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "11853051",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11852723",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11852723"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11477857",
+      "source": "The fog lifted.",
+      "reference": "Тұман ыдырап серпілді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11477857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1558492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11477857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11477857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_11477856",
+      "source": "The fog cleared.",
+      "reference": "Тұман ыдырап серпілді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11477856",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1558492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11477856",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11477856"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_11200166",
+      "source": "Is Mum home?",
+      "reference": "Мамаң үйде ме?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11200166",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1550004",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11200166",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11200166"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_11065291",
+      "source": "Are they afraid?",
+      "reference": "Олар қорқа ма?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11065291",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "11065643",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11065291",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11065291"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10815115",
+      "source": "Children like yogurt.",
+      "reference": "Балалар йогуртты жақсы көреді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10815115",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10817228",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10815115",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10815115"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10741573",
+      "source": "Nothing was missing.",
+      "reference": "Барлығы орнында болды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10741573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "11087242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10741573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10741573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_10665303",
+      "source": "It became habit.",
+      "reference": "Бұл әдетке енді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10665303",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1520967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10665303",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10665303"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10632631",
+      "source": "Long live Ukraine!",
+      "reference": "Украина жасасын!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10632631",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "13117979",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10632631",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10632631"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10476907",
+      "source": "Facebook is dead.",
+      "reference": "Фейсбук өлі.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10476907",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10476933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10476907",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10476907"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10053300",
+      "source": "Ladies and gentlemen!",
+      "reference": "Ханымдар мен мырзалар!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053300",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1526942",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053300",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053300"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10053290",
+      "source": "I write books.",
+      "reference": "Мен кітаптарымды жазамын.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053290",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1520216",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053290",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053290"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10053283",
+      "source": "Relax your hand.",
+      "reference": "Қолыңызды босаңсытыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053283",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9869112",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053283",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053283"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_10053282",
+      "source": "They were smiling.",
+      "reference": "Олар күлді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053282",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871600",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053282",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053282"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10053274",
+      "source": "Mary was coughing.",
+      "reference": "Мэри жөтелді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053274",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053274",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053274"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10053267",
+      "source": "Did you blush?",
+      "reference": "Сіз қызардыңыз ба?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10053267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9869124",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10053267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10053267"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10038809",
+      "source": "Trust your heart!",
+      "reference": "Өз жүрегіңізге сеніңіз!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10038809",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868558",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10038809",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10038809"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9964901",
+      "source": "She is nodding.",
+      "reference": "Ол басын изейді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9964901",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1534096",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9964901",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9964901"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_9935679",
+      "source": "Death arrives uninvited.",
+      "reference": "Ажал айтып келмейді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9935679",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1566455",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9935679",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9935679"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_9934011",
+      "source": "The snow melted.",
+      "reference": "Қар еріді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9934011",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1520947",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9934011",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9934011"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9583274",
+      "source": "How farest thou?",
+      "reference": "Сәлеметсіз бе!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9583274",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3552562",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9583274",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9583274"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8991674",
+      "source": "He is fat.",
+      "reference": "Ол семіз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8991674",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10875765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8991674",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8991674"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_8977025",
+      "source": "Is this fruit?",
+      "reference": "Бұл жеміс пе?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8977025",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10875723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8977025",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8977025"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8913726",
+      "source": "Do it carefully.",
+      "reference": "Мұқият жасаңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8913726",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871787",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8913726",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8913726"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8820919",
+      "source": "I want help.",
+      "reference": "Маған көмек керек.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8820919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1549933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8820919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8820919"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_8803781",
+      "source": "He eats meat.",
+      "reference": "Ол ет жеп жатыр.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8803781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8783148",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8803781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8803781"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8803780",
+      "source": "She eats meat.",
+      "reference": "Ол ет жеп жатыр.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8803780",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8783148",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8803780",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8803780"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8802977",
+      "source": "The days shortened.",
+      "reference": "Күндер қысқарды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8802977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10478986",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8802977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8802977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8477098",
+      "source": "He swims well.",
+      "reference": "Ол жақсы малтиды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8477098",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1564148",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8477098",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8477098"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8391644",
+      "source": "You eat meat.",
+      "reference": "Sen et jeısiń.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8391644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8544352",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8391644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8391644"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8160082",
+      "source": "I offend her.",
+      "reference": "Ол маған қыртиып жүр.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8160082",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1565601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8160082",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8160082"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_7992604",
+      "source": "Sami went blind.",
+      "reference": "Сами соқыр болып қалды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7992604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10717685",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7992604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7992604"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7781095",
+      "source": "It is food.",
+      "reference": "Бұл тамақ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7781095",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "438601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7781095",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7781095"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_7289819",
+      "source": "My tooth aches.",
+      "reference": "Тісім ауырады.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7289819",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1566506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7289819",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7289819"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6811396",
+      "source": "I cannot sleep.",
+      "reference": "Ұйықтай алмаймын.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6811396",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9642359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6811396",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6811396"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6583541",
+      "source": "I love cheese!",
+      "reference": "Men irimshikti jaqsy kóremin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6583541",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8542117",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6583541",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6583541"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6488925",
+      "source": "Lending spoils relationships.",
+      "reference": "Қарыз қатынас бұзады.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6488925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "4685855",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6488925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6488925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.67
+      }
+    },
+    {
+      "id": "tatoeba_6488897",
+      "source": "Peace and love.",
+      "reference": "Бейбітшілік пен махаббат.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6488897",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5126064",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6488897",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6488897"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_6440598",
+      "source": "Tom is trembling.",
+      "reference": "Том қалтырайды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6440598",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6440598",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6440598"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6274184",
+      "source": "Yesterday was cold.",
+      "reference": "Кеше суық болды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6274184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1535263",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6274184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6274184"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_6203833",
+      "source": "Tomorrow is Monday.",
+      "reference": "Ертең дүйсенбі.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6203833",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "13754201",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6203833",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6203833"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_5840439",
+      "source": "I like cheese.",
+      "reference": "Men irimshikti jaqsy kóremin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5840439",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8542117",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5840439",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5840439"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5790264",
+      "source": "Spring had came.",
+      "reference": "Көктем келді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5790264",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1520951",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5790264",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5790264"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5752356",
+      "source": "This changes nothing.",
+      "reference": "Бұл ештеңені де өзгертпейді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5752356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358719",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5752356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5752356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_5628577",
+      "source": "It is Monday.",
+      "reference": "Бүгін Дүйсенбі.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5628577",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1519694",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5628577",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5628577"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_5464857",
+      "source": "Children love Halloween.",
+      "reference": "Balalar Hellouindy öte jaqsy köredı.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5464857",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "13363295",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5464857",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5464857"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_5278342",
+      "source": "I got tired.",
+      "reference": "Мен шаршадым.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5278342",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1550931",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5278342",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5278342"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5140699",
+      "source": "I heart you.",
+      "reference": "Мен сені сүйемін.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5140699",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358888",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5140699",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5140699"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5126128",
+      "source": "Happy birthday, Muriel!",
+      "reference": "Туған күніңмен, Мюриэл!",
+      "domain": "ui",
+      "difficulty": 2,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5126128",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5126128",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5126128"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_4980513",
+      "source": "We eat apples.",
+      "reference": "Біз алмалар жеміз.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4980513",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1518657",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4980513",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4980513"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_4499184",
+      "source": "What happened afterwards?",
+      "reference": "Сосын не болды?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4499184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1558504",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4499184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4499184"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_4496711",
+      "source": "Please come quickly.",
+      "reference": "Өтінемін, тезірек келіңіз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4496711",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9959939",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4496711",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4496711"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_4381595",
+      "source": "Thanks a bunch.",
+      "reference": "Рахмет!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4381595",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3594303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4381595",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4381595"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3861611",
+      "source": "Water is life.",
+      "reference": "Тіршілік арқауы — су.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3861611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5978198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3861611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3861611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_3824254",
+      "source": "Are you handicapped?",
+      "reference": "Сіз мүгедексіз бе?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3824254",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10195701",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3824254",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3824254"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3822915",
+      "source": "This is love.",
+      "reference": "Бұл махаббат.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3822915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5126060",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3822915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3822915"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3822343",
+      "source": "Yesterday was Monday.",
+      "reference": "Кеше дүйсенбі болды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3822343",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868799",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3822343",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3822343"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3763306",
+      "source": "She works alone.",
+      "reference": "Ол әйел жалғыз өзі жұмыс істейді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3763306",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "7889573",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3763306",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3763306"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3721634",
+      "source": "The mist cleared.",
+      "reference": "Тұман ыдырап серпілді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3721634",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1558492",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3721634",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3721634"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3651741",
+      "source": "I like chicken.",
+      "reference": "Маған тауық еті ұнайды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3651741",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3758598",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3651741",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3651741"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3636463",
+      "source": "Why is that?",
+      "reference": "Неге?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3636463",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "809901",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3636463",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3636463"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3573700",
+      "source": "I doubt that.",
+      "reference": "Бұл туралы күдігім бар.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3573700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1575456",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3573700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3573700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3551575",
+      "source": "Translate the word.",
+      "reference": "Сөзді аударыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3551575",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3551576",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3551575",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3551575"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3518073",
+      "source": "All rights reserved.",
+      "reference": "Барлық құқықтар қорғалған.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3518073",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8310574",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3518073",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3518073"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3492736",
+      "source": "Yes, my love.",
+      "reference": "Иә, менің махаббатым.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3492736",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5126077",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3492736",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3492736"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3492735",
+      "source": "No, my love.",
+      "reference": "Жоқ, менің махаббатым.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3492735",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5126080",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3492735",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3492735"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3359919",
+      "source": "He melts copper.",
+      "reference": "Ол мыс қорытады.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3359919",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1527310",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3359919",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3359919"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3173665",
+      "source": "Millie loves me.",
+      "reference": "Милли мені жақсы көреді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3173665",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871767",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3173665",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3173665"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3120149",
+      "source": "You are welcome!",
+      "reference": "Қош келдіңіздер!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3120149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "437434",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3120149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3120149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3053024",
+      "source": "Is this you?",
+      "reference": "Бұл сенсің бе?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3053024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10476490",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3053024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3053024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2958184",
+      "source": "Tom spoke quickly.",
+      "reference": "Том тез сөйледі.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2958184",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868966",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2958184",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2958184"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2870908",
+      "source": "Nobody called Mary.",
+      "reference": "Мэриға ешкім қоңырау шалған жоқ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2870908",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10195718",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2870908",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2870908"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2862412",
+      "source": "You bore me.",
+      "reference": "Сен маған зеріктіріп жібердің.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2862412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1558526",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2862412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2862412"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2851412",
+      "source": "Mary called you.",
+      "reference": "Мэри сені шақырды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2851412",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868623",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2851412",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2851412"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2795088",
+      "source": "I need help!",
+      "reference": "Маған көмек керек.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2795088",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1549933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2795088",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2795088"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2649240",
+      "source": "Here you are.",
+      "reference": "Сәлем.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2649240",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "509821",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2649240",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2649240"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2568707",
+      "source": "Her body ached.",
+      "reference": "Оның бүкіл денесі ауырып тұрды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2568707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10195764",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2568707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2568707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2527458",
+      "source": "You are right.",
+      "reference": "Сенікі дұрыс.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2527458",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358931",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2527458",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2527458"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2481696",
+      "source": "I eat cheese.",
+      "reference": "Мен ірімшік жеймiн.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2481696",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3839160",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2481696",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2481696"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2365642",
+      "source": "I love you!",
+      "reference": "Мен сені сүйемін.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2365642",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358888",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2365642",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2365642"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2255285",
+      "source": "You were sleeping.",
+      "reference": "Сіз ұйықтадыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2255285",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9943198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2255285",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2255285"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2255256",
+      "source": "You were asleep.",
+      "reference": "Сіз ұйықтадыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2255256",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9943198",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2255256",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2255256"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2254558",
+      "source": "What has happened?",
+      "reference": "Не болып қалды?",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2254558",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358872",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2254558",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2254558"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2250091",
+      "source": "Thanks very much.",
+      "reference": "Рахмет!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250091",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3594303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250091",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250091"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2250090",
+      "source": "Thanks so much.",
+      "reference": "Рахмет!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250090",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3594303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250090",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250090"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2250081",
+      "source": "Thanks a million.",
+      "reference": "Рахмет!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2250081",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3594303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2250081",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2250081"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2249763",
+      "source": "Pick him up.",
+      "reference": "Оған жол беріңіз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249763"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2248839",
+      "source": "It was here.",
+      "reference": "Ол мұнда еді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2248839",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8545359",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2248839",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2248839"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2247574",
+      "source": "I will help.",
+      "reference": "Мен көмек беремін.",
+      "domain": "support",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247574",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "4700231",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247574",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247574"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2247573",
+      "source": "I will go.",
+      "reference": "Кеттім.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2247573",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358750",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2247573",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2247573"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.33
+      }
+    },
+    {
+      "id": "tatoeba_2245943",
+      "source": "I like this.",
+      "reference": "Бұл маған ұнап тұр.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245943",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1520242",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245943",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245943"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2245030",
+      "source": "Call the police.",
+      "reference": "Полиция шақырыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2245030",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871292",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2245030",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2245030"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2243363",
+      "source": "They went outside.",
+      "reference": "Олар далаға шықты.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243363",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "10195669",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243363",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243363"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2243246",
+      "source": "They love that.",
+      "reference": "Олар оны жақсы көреді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243246",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9959937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243246",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243246"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2243244",
+      "source": "They love it.",
+      "reference": "Олар оны жақсы көреді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2243244",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9959937",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2243244",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2243244"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2239777",
+      "source": "Tom was drunk.",
+      "reference": "Том мас болды.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2239777",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2239777",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2239777"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2238072",
+      "source": "No one came.",
+      "reference": "Ешкім келмеді.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2238072",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "5262182",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2238072",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2238072"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2237191",
+      "source": "Tom looked inside.",
+      "reference": "Том ішке қарады.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2237191",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9868834",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2237191",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2237191"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2233709",
+      "source": "This is mine.",
+      "reference": "Бұл менікі.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2233709",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1518407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2233709",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2233709"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2233700",
+      "source": "This is interesting.",
+      "reference": "Бұл қызық.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2233700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358835",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2233700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2233700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2176388",
+      "source": "Who is that?",
+      "reference": "Мынау кім?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2176388",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "438587",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2176388",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2176388"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2151983",
+      "source": "I love cheese.",
+      "reference": "Men irimshikti jaqsy kóremin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2151983",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "8542117",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2151983",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2151983"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2102665",
+      "source": "Made in Russia.",
+      "reference": "Ресейде өндірілген.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2102665",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "2102663",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2102665",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2102665"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2057655",
+      "source": "Thanks a lot.",
+      "reference": "Рахмет!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2057655",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "3594303",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2057655",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2057655"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1887294",
+      "source": "I feel nauseous.",
+      "reference": "Жүрегім айнып тұр.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1887294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "11601002",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1887294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1887294"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1880024",
+      "source": "I am speechless.",
+      "reference": "Менде айтатын сөзім жоқ.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1880024",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1358696",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1880024",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1880024"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1841537",
+      "source": "What was it?",
+      "reference": "Не болды?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1841537",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "7889635",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1841537",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1841537"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1789253",
+      "source": "Take a seat.",
+      "reference": "Отырыңыз.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1789253",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "9871459",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1789253",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1789253"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1770346",
+      "source": "I am tired!",
+      "reference": "Мен шаршадым.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1770346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "kaz",
+        "target_sentence_id": "1550931",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1770346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1770346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

@@ -1,0 +1,2149 @@
+{
+  "corpus_id": "tatoeba-eng-amh-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "eng",
+    "target": "amh",
+    "source_name": "English",
+    "target_name": "Amharic"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:40:55.910231+00:00",
+  "entry_count": 73,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "support",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_1830484",
+      "source": "Why aren't you eating?",
+      "reference": "ለምን አትበላም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1830484",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "10471309",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1830484",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1830484"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.5
+      }
+    },
+    {
+      "id": "tatoeba_12975760",
+      "source": "What is my name?",
+      "reference": "ስሜ ማን ነው፧",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12975760",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12977438",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12975760",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12975760"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_3143543",
+      "source": "Are you Ethiopian?",
+      "reference": "ኢትዮጵያዊ ነህ?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3143543",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3143544",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3143543",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3143543"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_321793",
+      "source": "I'm never late for school.",
+      "reference": "ዘግይቼ እትምሀርት ቤት ምን ጊዜም አልደርስም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "321793",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2722320",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "321793",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/321793"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.2
+      }
+    },
+    {
+      "id": "tatoeba_1792649",
+      "source": "I'm not dead.",
+      "reference": "ሙት አይደለሁም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1792649",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3743799",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1792649",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1792649"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2009658",
+      "source": "She isn't young.",
+      "reference": "ወጣት አይደለችም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2009658",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3644981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2009658",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2009658"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2249346",
+      "source": "It's truly frightening.",
+      "reference": "በውነት ያስፈራል።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2249346",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2722306",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2249346",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2249346"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_8386788",
+      "source": "I am learning French.",
+      "reference": "ፈረንሳይኛን እየተመርኩ ነው።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8386788",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3642401",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8386788",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8386788"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_2476143",
+      "source": "I don't know the truth.",
+      "reference": "ሐቁን አላውቅም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2476143",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3864405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2476143",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2476143"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.6
+      }
+    },
+    {
+      "id": "tatoeba_20097",
+      "source": "You are beautiful.",
+      "reference": "አንቺ ቆንጆ ነሽ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20097",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3143549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20097",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20097"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_257922",
+      "source": "I'm looking for work.",
+      "reference": "ስራ እየፈለግሁኝ ነው።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "257922",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3311779",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "257922",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/257922"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_3642356",
+      "source": "I'm also learning Amharic.",
+      "reference": "እሱም አማርኛን እየተመርኩ ነው።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3642356",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3642370",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3642356",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3642356"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.5
+      }
+    },
+    {
+      "id": "tatoeba_528533",
+      "source": "Yesterday was Thursday.",
+      "reference": "ትናንት ሐሙስ ነበር።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "528533",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12975601",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "528533",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/528533"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_2646059",
+      "source": "How're you doing today?",
+      "reference": "አንተ ዛሬ እንዴት ነህ፧",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2646059",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12975624",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2646059",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2646059"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_253017",
+      "source": "I am an American.",
+      "reference": "አሜሪካዊ ነኝ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "253017",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3143536",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "253017",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/253017"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.25
+      }
+    },
+    {
+      "id": "tatoeba_2869460",
+      "source": "I wanna go.",
+      "reference": "መሄድ እፈልጋለሁ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2869460",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3335183",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2869460",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2869460"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2870519",
+      "source": "She wants you.",
+      "reference": "ትፈልግሃለች።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2870519",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3668885",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2870519",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2870519"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_415514",
+      "source": "I will try.",
+      "reference": "እሞክራለሁ።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "415514",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3644999",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "415514",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/415514"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_2388149",
+      "source": "I never loved you.",
+      "reference": "ከቶ አልወደድኩህም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2388149",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12405448",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2388149",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2388149"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2239888",
+      "source": "Tom wasn't fighting.",
+      "reference": "ቶም እየተዋጋ አልነበረም።",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2239888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12975477",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2239888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2239888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_873615",
+      "source": "You're going in the wrong direction.",
+      "reference": "የምትሄደው በተሳሳተ አቅጣጫ ነው።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "873615",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3316506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "873615",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/873615"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4694896",
+      "source": "I don't want to go to school!",
+      "reference": "ወደ ትምህርት ቤት መሄድ አልፈልግም።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4694896",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3466632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4694896",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4694896"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.14
+      }
+    },
+    {
+      "id": "tatoeba_698966",
+      "source": "Where is he?",
+      "reference": "እርሱ ወዴት ነው፧",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "698966",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "4925897",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "698966",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/698966"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_12378409",
+      "source": "This content is not available in your country.",
+      "reference": "ይህ ይዘት በእርስዎ አገር ውስጥ አይገኝም።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12378409",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12344096",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12378409",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12378409"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.75
+      }
+    },
+    {
+      "id": "tatoeba_11491159",
+      "source": "I am going to the store.",
+      "reference": "ወደ ሱቅ እሄዳለሁ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11491159",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3085594",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11491159",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11491159"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_13087338",
+      "source": "I updated the software to the latest version.",
+      "reference": "ሶፍትዌሩን ወደ የቅርብ ጊዜው ስሪት አዘምነዋለሁ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13087338",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "13102671",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13087338",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13087338"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.62
+      }
+    },
+    {
+      "id": "tatoeba_9145960",
+      "source": "Is the railroad station far from here?",
+      "reference": "ባቡር ጣቢያው ክዚህ ሩቅ ነው?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9145960",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "9145959",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9145960",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9145960"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_5765446",
+      "source": "I do not know the truth.",
+      "reference": "ሐቁን አላውቅም።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5765446",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3864405",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5765446",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5765446"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_4748872",
+      "source": "You are going in the wrong direction.",
+      "reference": "የምትሄደው በተሳሳተ አቅጣጫ ነው።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4748872",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3316506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4748872",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4748872"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.29
+      }
+    },
+    {
+      "id": "tatoeba_2968339",
+      "source": "He is a very good doctor.",
+      "reference": "እሱ በጣም ጥሩ ሐኪም ነው።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2968339",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968340",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2968339",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2968339"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_2147545",
+      "source": "Where is she?",
+      "reference": "እርሱ ወዴት ነው፧",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2147545",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "4925897",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2147545",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2147545"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_9145962",
+      "source": "Where is a good hotel?",
+      "reference": "ደህና ሆቴል የት አለ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9145962",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "9145961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9145962",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9145962"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_40912",
+      "source": "Flying a kite can be dangerous.",
+      "reference": "ወላንዶን ማብረር አደገኛ ሊሆን ይችላል።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "40912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12403457",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "40912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/40912"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_11483210",
+      "source": "She decided to move to Belgium.",
+      "reference": "ወደ ቤልጂየም ለመሄድ ወሰነች።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11483210",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "11491781",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11483210",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11483210"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.17
+      }
+    },
+    {
+      "id": "tatoeba_1027181",
+      "source": "Tom always drinks coffee in the morning.",
+      "reference": "ቶም ሁልጊዜ ጧት ቡና ይጠጣል",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1027181",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "4451308",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1027181",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1027181"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_6026",
+      "source": "Where have you been?",
+      "reference": "የት ነበርክ፧",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6026",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12975606",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6026",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6026"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4555682",
+      "source": "Who broke the bottle?",
+      "reference": "ጠርሙሱን ማን ሰበረ?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4555682",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "13594035",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4555682",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4555682"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.25
+      }
+    },
+    {
+      "id": "tatoeba_481895",
+      "source": "Where is her house?",
+      "reference": "ቤቱ የት ነው?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "481895",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "13594036",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "481895",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/481895"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_12975481",
+      "source": "My sisters love to talk about science.",
+      "reference": "እህቶቼ ስለ ሳይንስ ማውራት ይወዳሉ።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12975481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "12975503",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12975481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12975481"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.43
+      }
+    },
+    {
+      "id": "tatoeba_6261272",
+      "source": "I didn't want to go to school.",
+      "reference": "ወደ ትምህርት ቤት መሄድ አልፈልግም።",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6261272",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3466632",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6261272",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6261272"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.29
+      }
+    },
+    {
+      "id": "tatoeba_2122322",
+      "source": "In mathematics, he is an ace.",
+      "reference": "በሒሳብ በጣም ጐበዝ ነው።",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2122322",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2722286",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2122322",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2122322"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1886618",
+      "source": "Where do you want to eat?",
+      "reference": "የት መብላት ተፈልጋለህ?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1886618",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2722295",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1886618",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1886618"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.17
+      }
+    },
+    {
+      "id": "tatoeba_9145949",
+      "source": "Excuse me, where is the American Embassy?",
+      "reference": "እባክዎ፣ ያሜሪካን ኤምባሲ የት ነው?",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9145949",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "9145948",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9145949",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9145949"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 4.71
+      }
+    },
+    {
+      "id": "tatoeba_9145955",
+      "source": "Go straight ahead and turn to the left.",
+      "reference": "ወደፊት ይህዱና ወደ ግራ ይዙሩ።",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9145955",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "9145954",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9145955",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9145955"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 8,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.88
+      }
+    },
+    {
+      "id": "tatoeba_731863",
+      "source": "My native language is the most beautiful gift from my mother.",
+      "reference": "የእናት ቋንቋዬ ከእናቴ የተቀበልኩት በጣም ደጉ በረከት ነው።",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "731863",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "4451457",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "731863",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/731863"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 11,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.55
+      }
+    },
+    {
+      "id": "tatoeba_272763",
+      "source": "Last week, I mailed him some souvenirs from the U.S.",
+      "reference": "ባለፈው ሳምንት ከአሜሪካ አንዳንድ ማስታወሻ ላኩለት።",
+      "domain": "conv",
+      "difficulty": 3,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "272763",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2722289",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "272763",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/272763"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 10,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.1
+      }
+    },
+    {
+      "id": "tatoeba_338182",
+      "source": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "reference": "የሰው ልጅ ሁሉ ሲወለድ ነጻና በክብርና በመብትም እኩልነት ያለው ነው። የተፈጥሮ የማስተዋልና ሕሊናው አንዱ ሌላውን በወንድማማችነት መንፍስ መመልከት የገባዋል።",
+      "domain": "conv",
+      "difficulty": 5,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "338182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3346039",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "338182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/338182"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 30,
+        "difficulty_estimated_clauses": 5,
+        "difficulty_avg_word_length": 4.63
+      }
+    },
+    {
+      "id": "tatoeba_3316425",
+      "source": "What would you like to order?",
+      "reference": "ምን ማዘዝ ትፈልጋለህ?",
+      "domain": "ecommerce",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3316425",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3316428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3316425",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3316425"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.83
+      }
+    },
+    {
+      "id": "tatoeba_248532",
+      "source": "We are students.",
+      "reference": "ተማሪዎች ነን።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "248532",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3143550",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "248532",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/248532"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_20099",
+      "source": "You are teachers.",
+      "reference": "አስተማሪዎች ናችሁ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "20099",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3143558",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "20099",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/20099"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2968334",
+      "source": "You're a teacher.",
+      "reference": "አንተ አስተማሪ ነህ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2968334",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2968334",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2968334"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1163562",
+      "source": "You are a student.",
+      "reference": "አንተ ተማሪ ነህ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1163562",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3108373",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1163562",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1163562"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_567368",
+      "source": "I'm a student.",
+      "reference": "ተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "567368",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "567368",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/567368"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_432340",
+      "source": "I was a teacher.",
+      "reference": "አስተማሪ ነበርኩ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "432340",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "13594037",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "432340",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/432340"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_259069",
+      "source": "I am a teacher.",
+      "reference": "አስተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968321",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259069"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_256929",
+      "source": "I'm a teacher.",
+      "reference": "አስተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "256929",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968321",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "256929",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/256929"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_252287",
+      "source": "I am a student.",
+      "reference": "ተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "252287",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968315",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "252287",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/252287"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.75
+      }
+    },
+    {
+      "id": "tatoeba_69521",
+      "source": "Are you a student?",
+      "reference": "አንተ ተማሪ ነህ?",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69521",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968344",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69521",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69521"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_69155",
+      "source": "You are a teacher.",
+      "reference": "አንተ አስተማሪ ነህ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "69155",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968335",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "69155",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/69155"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_3144667",
+      "source": "She is a good student.",
+      "reference": "ጥሩ ተማሪ ነች።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3144667",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3144668",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3144667",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3144667"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_2764451",
+      "source": "I'm also a teacher.",
+      "reference": "እኔም አስተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2764451",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3764070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2764451",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2764451"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.75
+      }
+    },
+    {
+      "id": "tatoeba_2332108",
+      "source": "I'm not a teacher.",
+      "reference": "አስተማሪ የለሁም።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2332108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968329",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2332108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2332108"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_1354298",
+      "source": "I am not a student.",
+      "reference": "ተማሪ አይደለሁም።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1354298",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3644428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1354298",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1354298"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_293224",
+      "source": "He is a good student.",
+      "reference": "ጥሩ ተማሪ ነው።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "293224",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3144664",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "293224",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/293224"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.2
+      }
+    },
+    {
+      "id": "tatoeba_259070",
+      "source": "I am not a teacher.",
+      "reference": "አስተማሪ የለሁም።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "259070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "2968329",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "259070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/259070"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_258994",
+      "source": "I'm not a student.",
+      "reference": "ተማሪ አይደለሁም።",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "258994",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3644428",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "258994",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/258994"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.5
+      }
+    },
+    {
+      "id": "tatoeba_2764444",
+      "source": "I, too, am a teacher.",
+      "reference": "እኔም አስተማሪ ነኝ።",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2764444",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3764070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2764444",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2764444"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.8
+      }
+    },
+    {
+      "id": "tatoeba_3784764",
+      "source": "I'm a student. And you?",
+      "reference": "እኔ ተማሪ ነኝ። እርስዎስ?",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3784764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3784765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3784764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3784764"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 5,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.4
+      }
+    },
+    {
+      "id": "tatoeba_2546806",
+      "source": "I used to be a teacher.",
+      "reference": "አስተማሪ ነበርኩ።",
+      "domain": "edu",
+      "difficulty": 2,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2546806",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "13594037",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2546806",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2546806"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_3864277",
+      "source": "I am a student, and you?",
+      "reference": "እኔ ተማሪ ነኝ። እርስዎስ?",
+      "domain": "edu",
+      "difficulty": 3,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3864277",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3784765",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3864277",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3864277"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 6,
+        "difficulty_estimated_clauses": 3,
+        "difficulty_avg_word_length": 2.83
+      }
+    },
+    {
+      "id": "tatoeba_3904461",
+      "source": "Do you want her to help you?",
+      "reference": "እሷ እንድትረዳህ ትፈልጋለህ?",
+      "domain": "support",
+      "difficulty": 2,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3904461",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "4451452",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3904461",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3904461"
+        },
+        "classification_confidence": 0.0909,
+        "difficulty_word_count": 7,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_244928",
+      "source": "I'm from Sapporo.",
+      "reference": "እኔ ከሳፖሮ ነኝ።",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "244928",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "3644108",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "244928",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/244928"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3082628",
+      "source": "Happy International Women's Day!",
+      "reference": "እንኳን ለአለም አቀፍ የሴቶች ቀን አደረሰን",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3082628",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "eng",
+        "target_lang": "amh",
+        "target_sentence_id": "6804707",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3082628",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3082628"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 4,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}

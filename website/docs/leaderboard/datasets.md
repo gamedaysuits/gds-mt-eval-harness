@@ -1,0 +1,212 @@
+---
+sidebar_position: 3
+title: Evaluation Datasets
+related:
+  - label: "Corpus Design Framework"
+    to: /docs/specifications/corpus-design
+    kind: spec
+    note: "How evaluation corpora are constructed"
+  - label: "Cookbook: Corpus Creation"
+    to: /docs/tutorials/corpus-creation
+    kind: cookbook
+    note: "Build a corpus for your language"
+  - label: "Benchmark Specification"
+    to: /docs/specifications/benchmark
+    kind: spec
+  - label: "What Counts as a Language Here?"
+    to: /docs/context/what-counts-as-a-language
+    kind: doc
+---
+
+# Evaluation Datasets
+
+> **Executive Summary.** This page describes the evaluation datasets available for benchmarking, including the corpus entry schema, difficulty tiers (1–5), and provenance requirements. Currently available: EDTeKLA Dev v1 (Plains Cree, 548 total entries: 486 textbook + 62 gold standard) and FLORES+ Devtest (39 languages, 1,012 entries each).
+
+Datasets are the fixed targets that the harness runs against. Each dataset is a JSON file containing source→target pairs with gold-standard references. The harness scores model outputs against these references — it never modifies them.
+
+:::danger DO NOT TRAIN on evaluation data
+
+⚠️ **These datasets are evaluation-only.** Methods trained, fine-tuned, few-shot-prompted, or otherwise exposed to evaluation data will produce artificially inflated scores and will be **disqualified from the leaderboard.**
+
+Use separate corpora for training. Evaluation sets must remain unseen by your model during development.
+:::
+
+---
+
+## Dataset Format
+
+Every dataset follows the same JSON schema:
+
+```json
+{
+  "dataset": {
+    "id": "dataset-slug",
+    "version": "1.0",
+    "language_pair": "EN→CRK",
+    "description": "Human-readable description of the dataset",
+    "source_language": "en",
+    "target_language": "crk",
+    "created": "2025-05-01",
+    "license": "CC-BY-NC-4.0",
+    "provenance": ["gold_standard", "textbook"]
+  },
+  "entries": [
+    {
+      "id": 1,
+      "source": "Hello",
+      "reference": "tânisi",
+      "difficulty": 1,
+      "provenance": "gold_standard",
+      "register": "conversational",
+      "context": "greeting",
+      "notes": "Common greeting, SRO orthography"
+    }
+  ]
+}
+```
+
+:::info Canonical Schema
+The [Benchmark Specification](/docs/specifications/benchmark) defines the canonical corpus and entry schema. This page documents available datasets and how to create new ones.
+:::
+
+### Top-Level `dataset` Block
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | `string` | Unique dataset identifier (used in run cards and leaderboard) |
+| `version` | `string` | Semantic version. Incrementing this invalidates prior run card comparisons |
+| `language_pair` | `string` | Display label (e.g., `EN→CRK`) |
+| `description` | `string` | Optional. Human-readable summary |
+| `source_language` | `string` | BCP 47 source language code |
+| `target_language` | `string` | BCP 47 target language code |
+| `created` | `string` | ISO 8601 creation date |
+| `license` | `string` | SPDX license identifier |
+| `provenance` | `string[]` | List of provenance tags used across entries |
+
+### Entry Fields
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `id` | `integer` | ✅ | Unique entry identifier within the corpus |
+| `source` | `string` | ✅ | The source text to translate |
+| `reference` | `string` | ✅ | The gold-standard reference translation |
+| `difficulty` | `integer` | ✅ | Difficulty tier 1–5 (see below) |
+| `provenance` | `string` | ✅ | Origin of this entry (e.g., `gold_standard`, `textbook`, `elicited`) |
+| `register` | `string` | ✅ | Register/formality level (e.g., `conversational`, `formal`, `ceremonial`) |
+| `context` | `string` | ✅ | Communicative function (e.g., `greeting`, `declaration`, `instruction`) |
+| `notes` | `string` | ❌ | Optional context for human reviewers |
+| `morphological_analysis` | `string` | ❌ | Gold-standard morphological breakdown |
+| `variant_class` | `string` | ❌ | Class label grouping acceptable translation variants |
+
+---
+
+## Available Datasets
+
+### EDTeKLA Development Set v1
+
+The first evaluation dataset, built for English→Plains Cree (SRO) translation. Created by the [EdTeKLA research group](https://spaces.facsci.ualberta.ca/edtekla/) at the University of Alberta.
+
+| Property | Value |
+|----------|-------|
+| **ID** | `edtekla-dev-v1` |
+| **Version** | `1.0` |
+| **Language pair** | EN → CRK (Plains Cree, SRO orthography) |
+| **Entry count** | 548 total (486 textbook + 62 gold standard). The canonical dev corpus is `textbook_dev.json` (436 entries — the full textbook dev split from 486 total: 436 dev + 50 held-out test) |
+| **Difficulty distribution** | Easy, Medium, Hard |
+| **Provenance** | `gold_standard` (verified by speakers), `textbook` (published educational materials) |
+| **License** | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
+
+**What it tests:**
+
+- Basic greetings and common phrases
+- Noun animacy and obviation
+- Verb conjugation across persons and tenses
+- Locative constructions
+- Possessive paradigms
+- Complex sentence structures
+
+:::tip Corpus structure
+The full EdTeKLA collection has 548 curated entries: 486 from the textbook corpus (436 dev + 50 held-out) and 62 from the itwêwina gold standard. The canonical dev corpus is `textbook_dev.json` with 436 entries — the full textbook dev split. Each entry was verified by fluent speakers or sourced from published Cree language textbooks. A smaller, high-quality dataset with verified gold standards is more useful than a large, noisy one — especially for a low-resource language where "close enough" translations are often morphologically invalid.
+:::
+
+---
+
+## Creating a New Dataset
+
+To create a dataset for a new language pair or domain:
+
+### 1. Structure the JSON
+
+Follow the [Dataset Format](#dataset-format) schema. Every entry must have `source`, `reference`, `difficulty`, `provenance`, `register`, and `context`.
+
+### 2. Assign a unique ID
+
+Use a descriptive slug: `{project}-{split}-v{version}` (e.g., `edtekla-dev-v1`, `quechua-test-v1`).
+
+### 3. Verify gold standards
+
+Every `reference` value must be verified by a fluent speaker or sourced from a published, peer-reviewed resource. Machine-generated references defeat the purpose of evaluation.
+
+### 4. Set difficulty tiers
+
+Assign each entry an integer difficulty level:
+
+| Tier | Description | Examples |
+|------|-------------|----------|
+| 1 — Basic vocabulary | Single words, common greetings, numbers | "hello" → "tânisi" |
+| 2 — Simple sentences | Subject-verb or SVO, present tense | "I see the dog" |
+| 3 — Moderate complexity | Past/future tense, possessives, animacy | "I saw his dog yesterday" |
+| 4 — Complex morphology | Obviation, passive voice, conjunct order | "the woman whose son went to the store" |
+| 5 — Advanced | Multi-clause, formal register, ceremonial, idiomatic | Full paragraph with register-appropriate tone |
+
+### 5. Tag provenance
+
+Each entry should indicate where it came from. Common tags:
+
+- `gold_standard` — Verified by fluent speakers
+- `textbook` — From published educational materials
+- `elicited` — Produced through structured elicitation sessions
+- `corpus` — Extracted from a parallel corpus
+
+### 6. Validate the file
+
+Run the harness against your dataset with any model to verify the JSON is well-formed and all required fields are present:
+
+```bash
+python eval/baseline_experiment.py --dataset path/to/your-dataset.json
+```
+
+The harness will error on missing fields, duplicate indices, or schema violations.
+
+### 7. Submit for inclusion
+
+Open a pull request against the [eval harness repository](https://github.com/gamedaysuits/arena) with your dataset file in the `data/` directory. Include documentation of your verification methodology and provenance sources.
+
+---
+
+## FLORES+ Devtest
+
+A broad-coverage multilingual benchmark maintained by the [Open Language Data Initiative (OLDI)](https://huggingface.co/datasets/openlanguagedata/flores_plus). Used for champollion's multi-model frontier benchmark.
+
+| Property | Value |
+|----------|-------|
+| **ID** | `flores-plus-devtest` |
+| **Language pairs** | EN → 39 languages (all champollion registered natural languages) |
+| **Entry count** | 1,012 sentences per language |
+| **License** | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| **Source** | Originally Meta FLORES-200, now OLDI-maintained |
+| **Location** | Pre-extracted fixtures at `test/benchmark/fixtures/` in the main champollion repo |
+
+:::danger Evaluation only
+FLORES+ is intended solely for evaluation. The curators explicitly request that it **not be used as training data**. Ensure its contents are excluded from any training corpora.
+:::
+
+---
+
+## See Also
+
+- [MT Evaluation](/docs/leaderboard/rules) — overview of the evaluation framework and leaderboard
+- [Eval Harness](/docs/specifications/harness) — how to run evaluations against these datasets
+- [Run Card Specification](/docs/specifications/run-card) — the JSON schema for recording results
+- [Method Leaderboard](https://champollion.dev/leaderboard) — live benchmark scores
+- [EdTeKLA Project](https://spaces.facsci.ualberta.ca/edtekla/) — the University of Alberta research group behind the Cree dataset

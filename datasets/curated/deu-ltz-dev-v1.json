@@ -1,0 +1,5222 @@
+{
+  "corpus_id": "tatoeba-deu-ltz-dev",
+  "version": "0.1.0",
+  "language_pair": {
+    "source": "deu",
+    "target": "ltz",
+    "source_name": "German",
+    "target_name": "Luxembourgish"
+  },
+  "segment": "development",
+  "created": "2026-06-05T10:51:04.771734+00:00",
+  "entry_count": 179,
+  "domains": [
+    "conv",
+    "ecommerce",
+    "edu",
+    "ui"
+  ],
+  "entries": [
+    {
+      "id": "tatoeba_13716444",
+      "source": "Sie ist verbissen.",
+      "reference": "Si ass stuer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13716444",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13716444",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13716444"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_13716442",
+      "source": "Sie ist starrköpfig.",
+      "reference": "Si ass stuer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13716442",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13716442",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13716442"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_13606400",
+      "source": "Sie sind Helden.",
+      "reference": "Dir sidd Helden.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13606400",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13478026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13606400",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13606400"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_13595842",
+      "source": "Sonst noch was?",
+      "reference": "Soss nach eppes?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13595842",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8385213",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13595842",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13595842"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_13525055",
+      "source": "Was trägst du?",
+      "reference": "Wat hues du un?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13525055",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8407728",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13525055",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13525055"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_13494572",
+      "source": "Anna ist Polin.",
+      "reference": "D'Anna ass polnesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13494572",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13490278",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13494572",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13494572"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_13494568",
+      "source": "Ich spreche Polnisch.",
+      "reference": "Ech schwätze Polnesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13494568",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13490277",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13494568",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13494568"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_13477201",
+      "source": "Ihr seid Helden.",
+      "reference": "Dir sidd Helden.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13477201",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13478026",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13477201",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13477201"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_13406526",
+      "source": "Es ist neun.",
+      "reference": "Et ass néng Auer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13406526",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8472864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13406526",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13406526"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_13372499",
+      "source": "Ich lerne Tibetisch.",
+      "reference": "Ech léiere Tibetanesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13372499",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13372506",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13372499",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13372499"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_13048886",
+      "source": "Ich bin Luxemburgerin.",
+      "reference": "Ech si Lëtzebuergerin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13048886",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13048886",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13048886"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_13048885",
+      "source": "Ich bin Koch.",
+      "reference": "Ech si Kach.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13048885",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315833",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13048885",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13048885"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_13048877",
+      "source": "Das ist praktisch.",
+      "reference": "Dat ass praktesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13048877",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315858",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13048877",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13048877"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_13048873",
+      "source": "Einmal im Jahr.",
+      "reference": "Eemol d'Joer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "13048873",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12317370",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "13048873",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/13048873"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12631336",
+      "source": "Woher sind Sie?",
+      "reference": "Vu wou kënns du?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12631336",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8417415",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12631336",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12631336"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_12598915",
+      "source": "Er ist Pole.",
+      "reference": "Hien ass polnesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12598915",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "13490279",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12598915",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12598915"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_12125512",
+      "source": "Wir waren Könige.",
+      "reference": "Mir ware Kinneken.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12125512",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8985627",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12125512",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12125512"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_12125446",
+      "source": "Möhre oder Banane?",
+      "reference": "Wuerzel oder Banann?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12125446",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9685788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12125446",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12125446"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_12125224",
+      "source": "Tom hasst Pizza.",
+      "reference": "Tom haasst Pizza.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12125224",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9056365",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12125224",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12125224"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_12058644",
+      "source": "Feiert Vera Ostern?",
+      "reference": "Feiert d'Vera Ouschteren?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "12058644",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453844",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "12058644",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/12058644"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_11818107",
+      "source": "Ich bin Ingenieurin.",
+      "reference": "Ech sinn Ingenieur.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11818107",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447690",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11818107",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11818107"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_11813366",
+      "source": "Du bist Tom?",
+      "reference": "Bass du den Tom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11813366",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11813366",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11813366"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_11616531",
+      "source": "Wonach schmeckt das?",
+      "reference": "Wéi schmaacht et?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11616531",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11616531",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11616531"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_11599134",
+      "source": "Er heißt Muhammad.",
+      "reference": "Hien heescht Muhammad.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "11599134",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "11599157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "11599134",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/11599134"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10900933",
+      "source": "Yanni hasst Pizza.",
+      "reference": "Yanni haasst Pizza.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10900933",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9056338",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10900933",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10900933"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_10700767",
+      "source": "Ziga spricht Schlesisch.",
+      "reference": "Ziga schwätzt Schleesesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10700767",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "10746941",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10700767",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10700767"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_10088781",
+      "source": "Sie kochen jetzt.",
+      "reference": "Si kachen elo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10088781",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169542",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10088781",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10088781"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_10072750",
+      "source": "Liest du gern?",
+      "reference": "Lies du gär?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10072750",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315879",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10072750",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10072750"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_10072748",
+      "source": "Liest du gerne?",
+      "reference": "Lies du gär?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10072748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315879",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10072748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10072748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10052931",
+      "source": "Können Hunde träumen?",
+      "reference": "Dreemen Hënn?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10052931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9769096",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10052931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10052931"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_10033630",
+      "source": "Sie sind Ärztinnen.",
+      "reference": "Si sinn Dokteren.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10033630",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169479",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10033630",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10033630"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_10033604",
+      "source": "Ich bin Ärztin.",
+      "reference": "Ech sinn Dokter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10033604",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169313",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10033604",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10033604"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10033550",
+      "source": "Du bist Ärztin.",
+      "reference": "Du bass Dokter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10033550",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10033550",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10033550"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_10033547",
+      "source": "Sie sind Ärztin.",
+      "reference": "Du bass Dokter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "10033547",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169473",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "10033547",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/10033547"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9998803",
+      "source": "Ich entschuldige mich.",
+      "reference": "Et deet mir leed.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9998803",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473399",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9998803",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9998803"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_9998606",
+      "source": "Wie schmeckt das?",
+      "reference": "Wéi schmaacht et?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9998606",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315934",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9998606",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9998606"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9849987",
+      "source": "Was ist Freiheit?",
+      "reference": "Wat ass Fräiheet?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9849987",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9845878",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9849987",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9849987"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_9496124",
+      "source": "Ich liebe Texas!",
+      "reference": "Ech hunn Texas gär!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9496124",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9496538",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9496124",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9496124"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_9243427",
+      "source": "Ich hasse Erdbeeren.",
+      "reference": "Ech haassen Äerdbieren.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "9243427",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9243442",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "9243427",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/9243427"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_8652611",
+      "source": "Du brauchst Wasser.",
+      "reference": "Dir braucht Waasser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8652611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8652611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8652611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8493109",
+      "source": "Ich bin Zahnärztin.",
+      "reference": "Ech sinn Zänndokter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8493109",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8493152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8493109",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8493109"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8493108",
+      "source": "Ich bin Zahnarzt.",
+      "reference": "Ech sinn Zänndokter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8493108",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8493152",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8493108",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8493108"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8485647",
+      "source": "Was gibts Neues?",
+      "reference": "Wat gëtt et Neits?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8485647",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8485646",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8485647",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8485647"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8478809",
+      "source": "Er verliert immer.",
+      "reference": "Hie verléiert ëmmer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8478809",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8478809",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8478809"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8478369",
+      "source": "Ihr braucht Wasser.",
+      "reference": "Dir braucht Waasser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8478369",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8478369",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8478369"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8478267",
+      "source": "Sie brauchen Wasser.",
+      "reference": "Dir braucht Waasser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8478267",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478337",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8478267",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8478267"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_8478167",
+      "source": "Sie braucht Wasser.",
+      "reference": "Si brauch Waasser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8478167",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478235",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8478167",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8478167"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8478041",
+      "source": "Er braucht Wasser.",
+      "reference": "Hie brauch Waasser.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8478041",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8478070",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8478041",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8478041"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8473593",
+      "source": "Ich bin Holländer.",
+      "reference": "Ech sinn Hollänner.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473593",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473593",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473593"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8473591",
+      "source": "Ich bin Niederländer.",
+      "reference": "Ech sinn Hollänner.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473591",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473592",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473591",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473591"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8473341",
+      "source": "Ist das Zucker?",
+      "reference": "Ass dat Zocker?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473341",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473342",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473341",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473341"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8473259",
+      "source": "Tom ist Türke.",
+      "reference": "Den Tom ass Tierk.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473259",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453967",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473259",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473259"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8473252",
+      "source": "Sind Sie überrascht?",
+      "reference": "Sidd Dir iwwerrascht?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473252",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473251",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473252",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473252"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_8473249",
+      "source": "Seid ihr überrascht?",
+      "reference": "Sidd dir iwwerrascht?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473249",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473248",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473249",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473249"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_8473237",
+      "source": "Sie kocht jetzt.",
+      "reference": "Si kacht elo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473237",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169549",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473237",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473237"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8473219",
+      "source": "Er kocht jetzt.",
+      "reference": "Hie kacht elo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8473219",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169548",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8473219",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8473219"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8465176",
+      "source": "Ja, das stimmt.",
+      "reference": "Jo, dat stëmmt.",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8465176",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8465172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8465176",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8465176"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8463389",
+      "source": "Ich bin gehörlos.",
+      "reference": "Ech sinn daf.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8463389",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8463388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8463389",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8463389"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8461814",
+      "source": "Italiener essen Nudeln.",
+      "reference": "Italieener iesse Pasta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8461814",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8461812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8461814",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8461814"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.67
+      }
+    },
+    {
+      "id": "tatoeba_8461807",
+      "source": "Italiener essen Pasta.",
+      "reference": "Italieener iesse Pasta.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8461807",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8461812",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8461807",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8461807"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8453165",
+      "source": "Kommen Sie mit?",
+      "reference": "Geet Dir mat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453165",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453146",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453165",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453165"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8453162",
+      "source": "Gehen Sie mit?",
+      "reference": "Geet Dir mat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453162",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453146",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453162",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453162"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8453157",
+      "source": "Gehst du mit?",
+      "reference": "Gees du mat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453157",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453143",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453157",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453157"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8453152",
+      "source": "Geht ihr mit?",
+      "reference": "Geet dir mat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453152",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453144",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453152",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453152"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8453151",
+      "source": "Kommt ihr mit?",
+      "reference": "Geet dir mat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453151",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453144",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453151",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453151"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8453010",
+      "source": "Sind Sie Mary?",
+      "reference": "Sidd Dir d'Mary?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453010",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453021",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453010",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453010"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8453009",
+      "source": "Bist du Mary?",
+      "reference": "Bass du d'Mary?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8453009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453019",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8453009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8453009"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_8447802",
+      "source": "Ich bin Biologe.",
+      "reference": "Ech si Biologin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447802",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447802",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447802"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8447800",
+      "source": "Ich bin Biologin.",
+      "reference": "Ech si Biologin.",
+      "domain": "ui",
+      "difficulty": 1,
+      "register": "technical",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447800",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473468",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447800",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447800"
+        },
+        "classification_confidence": 0.0588,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_8447753",
+      "source": "Wir fordern Gerechtigkeit.",
+      "reference": "Mir fuerdere Gerechtegkeet.",
+      "domain": "ecommerce",
+      "difficulty": 1,
+      "register": "functional",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447753",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447752",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447753",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447753"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_8447748",
+      "source": "Wir haben Donnerstag.",
+      "reference": "Et ass Donneschdeg.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447748",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447748",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447748"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_8447746",
+      "source": "Es ist Donnerstag.",
+      "reference": "Et ass Donneschdeg.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447746",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447746",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447746"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8447708",
+      "source": "Das ist super!",
+      "reference": "Dat ass tipptopp!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447708",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447708",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447708"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8447707",
+      "source": "Das ist prima!",
+      "reference": "Dat ass tipptopp!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8447707",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447706",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8447707",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8447707"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_8445704",
+      "source": "Sprechen Sie Luxemburgisch?",
+      "reference": "Schwätzt Dir Lëtzebuergesch?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8445704",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445703",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8445704",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8445704"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 8.0
+      }
+    },
+    {
+      "id": "tatoeba_8445702",
+      "source": "Sprecht ihr Luxemburgisch?",
+      "reference": "Schwätzt dir Lëtzebuergesch?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8445702",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445701",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8445702",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8445702"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_8445700",
+      "source": "Sprichst du Luxemburgisch?",
+      "reference": "Schwätz du Lëtzebuergesch?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8445700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445699",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8445700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8445700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.67
+      }
+    },
+    {
+      "id": "tatoeba_8444302",
+      "source": "Ja, warum nicht?",
+      "reference": "Jo, firwat net?",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8444302",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444304",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8444302",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8444302"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8444182",
+      "source": "Sie haben Recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8444182",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8444182",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8444182"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_8444173",
+      "source": "Ihr habt Recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8444173",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8444173",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8444173"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8444171",
+      "source": "Ihr habt recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8444171",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8444171",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8444171"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_8443855",
+      "source": "Haben Sie Facebook?",
+      "reference": "Hutt Dir Facebook?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8443855",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8443866",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8443855",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8443855"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_8443846",
+      "source": "Habt ihr Facebook?",
+      "reference": "Hutt dir Facebook?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8443846",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8443864",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8443846",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8443846"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_8438590",
+      "source": "Ich bin Feuerwehrfrau.",
+      "reference": "Ech sinn e Pompjee.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8438590",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8440788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8438590",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8438590"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8438588",
+      "source": "Ich bin Feuerwehrmann.",
+      "reference": "Ech sinn e Pompjee.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8438588",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8440788",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8438588",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8438588"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_8326992",
+      "source": "Ich bin hungrig.",
+      "reference": "Ech hunn Honger.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "8326992",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470988",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "8326992",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/8326992"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7806228",
+      "source": "Ich esse Birnen.",
+      "reference": "Ech iesse Bieren.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7806228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473390",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7806228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7806228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7500230",
+      "source": "Könnt ihr lesen?",
+      "reference": "Kënnt dir liesen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7500230",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473234",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7500230",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7500230"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7500229",
+      "source": "Können Sie lesen?",
+      "reference": "Kënnt Dir liesen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7500229",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473236",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7500229",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7500229"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7500228",
+      "source": "Kannst du lesen?",
+      "reference": "Kanns du liesen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7500228",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473225",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7500228",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7500228"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_7328552",
+      "source": "Tom ist Finanzberater.",
+      "reference": "Tom ass Finanzberoder.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7328552",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8508756",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7328552",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7328552"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_7281070",
+      "source": "Ich hasse Boston.",
+      "reference": "Ech haasse Boston.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7281070",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447713",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7281070",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7281070"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7277196",
+      "source": "Sie sind Vettern.",
+      "reference": "Si si Cousinen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7277196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7277196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7277196"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7277191",
+      "source": "Sie sind Cousins.",
+      "reference": "Si si Cousinen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7277191",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447683",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7277191",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7277191"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_7064803",
+      "source": "Tom liebt Schokolade.",
+      "reference": "Den Tom huet Schockela gär.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "7064803",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447675",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "7064803",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/7064803"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_6939264",
+      "source": "Maria ist Türkin.",
+      "reference": "D'Mary ass Tierkin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6939264",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453970",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6939264",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6939264"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6929866",
+      "source": "Ich bin Richard.",
+      "reference": "Ech sinn de Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6929866",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "6824281",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6929866",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6929866"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6644764",
+      "source": "Ich benutze das.",
+      "reference": "Ech benotzen dat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6644764",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8571635",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6644764",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6644764"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6643888",
+      "source": "Ich verwende das.",
+      "reference": "Ech benotzen dat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6643888",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8571635",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6643888",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6643888"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_6615455",
+      "source": "Tom ging weiter.",
+      "reference": "Ech si weider gaang.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6615455",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9226560",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6615455",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6615455"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_6600429",
+      "source": "Was meint ihr?",
+      "reference": "Wéi mengs du dat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6600429",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8463357",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6600429",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6600429"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_6295280",
+      "source": "Tom ist Geschäftsmann.",
+      "reference": "Den Tom ass Geschäftsmann.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6295280",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9243518",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6295280",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6295280"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_6005481",
+      "source": "Du bist süß.",
+      "reference": "Du bass aarteleg.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "6005481",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "6447285",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "6005481",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/6005481"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5826493",
+      "source": "Er weiß das.",
+      "reference": "Hie weess dat.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5826493",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8466465",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5826493",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5826493"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_5769623",
+      "source": "Ich heiße Ricardo.",
+      "reference": "Ech heesche Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5769623",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8463290",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5769623",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5769623"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_5691884",
+      "source": "Ich trinke Bier.",
+      "reference": "Ech drénke Béier.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5691884",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473372",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5691884",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5691884"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5501464",
+      "source": "Bist du hungrig?",
+      "reference": "Hues du Honger?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5501464",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5501464",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5501464"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5501376",
+      "source": "Bist du durstig?",
+      "reference": "Hues du Duuscht?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5501376",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470996",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5501376",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5501376"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_5445700",
+      "source": "Willkommen auf Wikipedia.",
+      "reference": "Wëllkomm op der Wikipedia.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5445700",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "4256157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5445700",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5445700"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_5364009",
+      "source": "Sie hat recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5364009",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5364009",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5364009"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_5246916",
+      "source": "Sie sind Lesben.",
+      "reference": "Si sinn Lesben.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "5246916",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453961",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "5246916",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/5246916"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4948792",
+      "source": "Ich bin Ricardo.",
+      "reference": "Ech sinn de Ricardo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4948792",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "6824281",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4948792",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4948792"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4934512",
+      "source": "Sie kochen gerade.",
+      "reference": "Si kachen elo.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4934512",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169542",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4934512",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4934512"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_4803294",
+      "source": "Ich koche gern.",
+      "reference": "Ech kache gär.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4803294",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315870",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4803294",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4803294"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4803293",
+      "source": "Ich tanze gern.",
+      "reference": "Ech danze gär.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4803293",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12317424",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4803293",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4803293"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4787909",
+      "source": "Wir haben Wein.",
+      "reference": "Mir hu Wäin.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4787909",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447714",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4787909",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4787909"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_4770104",
+      "source": "Sie haben recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4770104",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4770104",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4770104"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_4748765",
+      "source": "Ich mag dich!",
+      "reference": "Ech hunn dech gär!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4748765",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447759",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4748765",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4748765"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_4561102",
+      "source": "Alle haben gelacht.",
+      "reference": "Jiddereen huet gelaacht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4561102",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445789",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4561102",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4561102"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_4256145",
+      "source": "Willkommen bei Wikipedia.",
+      "reference": "Wëllkomm op der Wikipedia.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4256145",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "4256157",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4256145",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4256145"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.33
+      }
+    },
+    {
+      "id": "tatoeba_4162991",
+      "source": "Das überrascht mich.",
+      "reference": "Et iwwerrascht mech.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "4162991",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169305",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "4162991",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/4162991"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_3850315",
+      "source": "Ich nehme Antibiotika.",
+      "reference": "Ech huelen Antibiotiquen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3850315",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8454169",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3850315",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3850315"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_3743968",
+      "source": "Hast du Facebook?",
+      "reference": "Hues du Facebook?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3743968",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8443861",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3743968",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3743968"
+        },
+        "classification_confidence": 0.0833,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3686026",
+      "source": "Wo ist Tom?",
+      "reference": "Wou ass den Tom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3686026",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447723",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3686026",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3686026"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 2.67
+      }
+    },
+    {
+      "id": "tatoeba_3663324",
+      "source": "Fröhliche Weihnachten, Tatoeba!",
+      "reference": "Schéi Chrëschtdeeg, Tatoeba!",
+      "domain": "conv",
+      "difficulty": 2,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3663324",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "9535882",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3663324",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3663324"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 2,
+        "difficulty_avg_word_length": 9.0
+      }
+    },
+    {
+      "id": "tatoeba_3609141",
+      "source": "Tom spielt draußen.",
+      "reference": "Tom spillt dobaussen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3609141",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "7064013",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3609141",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3609141"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_3545837",
+      "source": "Schneide die Kartoffeln!",
+      "reference": "Schneit d'Gromperen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3545837",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "7077827",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3545837",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3545837"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 7.0
+      }
+    },
+    {
+      "id": "tatoeba_3421334",
+      "source": "Er liest gerade.",
+      "reference": "Hie liest.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3421334",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "3169491",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3421334",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3421334"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3383785",
+      "source": "Woher kommt ihr?",
+      "reference": "Vu wou kommt dir?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3383785",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8417423",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3383785",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3383785"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_3346158",
+      "source": "Heute ist Donnerstag.",
+      "reference": "Et ass Donneschdeg.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3346158",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447740",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3346158",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3346158"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_3286146",
+      "source": "Was sagten Sie?",
+      "reference": "Wat hues du gesot?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3286146",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452922",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3286146",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3286146"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_3072400",
+      "source": "Wer hat gewonnen?",
+      "reference": "Wien huet gewonnen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3072400",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453799",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3072400",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3072400"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_3054080",
+      "source": "Er heißt Tom.",
+      "reference": "Hien heescht Tom.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3054080",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "5131462",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3054080",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3054080"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_3014321",
+      "source": "Ich schreibe Gedichte.",
+      "reference": "Ech schreiwe Gedichter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "3014321",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447709",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "3014321",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/3014321"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.33
+      }
+    },
+    {
+      "id": "tatoeba_2914777",
+      "source": "Ich habe Fragen.",
+      "reference": "Ech hu Froen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2914777",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445746",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2914777",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2914777"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2902638",
+      "source": "Was sagtest du?",
+      "reference": "Wat hues du gesot?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2902638",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452922",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2902638",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2902638"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2808925",
+      "source": "Bist du überrascht?",
+      "reference": "Bass du iwwerrascht?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2808925",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8473246",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2808925",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2808925"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2800263",
+      "source": "Ich benötige Hilfe!",
+      "reference": "Ech brauch Hëllef!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2800263",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "2795089",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2800263",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2800263"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2730977",
+      "source": "Ich bin taub.",
+      "reference": "Ech sinn daf.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2730977",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8463388",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2730977",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2730977"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2638564",
+      "source": "Wo wohnt ihr?",
+      "reference": "Wou wunns du?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2638564",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8391078",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2638564",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2638564"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_2608231",
+      "source": "Ich bin Christin.",
+      "reference": "Ech si Chrëscht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2608231",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8466512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2608231",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2608231"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2608227",
+      "source": "Ich bin Christ.",
+      "reference": "Ech si Chrëscht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2608227",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8466512",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2608227",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2608227"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2559659",
+      "source": "Wer hat Hunger?",
+      "reference": "Wien huet Honger?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2559659",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8462921",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2559659",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2559659"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2499137",
+      "source": "Was meinen Sie?",
+      "reference": "Wéi mengs du dat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2499137",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8463357",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2499137",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2499137"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2418640",
+      "source": "Tom ist stark.",
+      "reference": "Tom ass staark.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2418640",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453802",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2418640",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2418640"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2383245",
+      "source": "Tom ist Journalist.",
+      "reference": "Den Tom ass Reporter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2383245",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453852",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2383245",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2383245"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2379441",
+      "source": "Ich mag nichts.",
+      "reference": "Ech hunn näischt gär.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2379441",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "7077837",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2379441",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2379441"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2366396",
+      "source": "Tom ist eifersüchtig.",
+      "reference": "Den Tom ass jalous.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2366396",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315933",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2366396",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2366396"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_2324931",
+      "source": "Ich lese gerne.",
+      "reference": "Ech liese gär.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2324931",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315880",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2324931",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2324931"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2260826",
+      "source": "Tom trinkt nicht.",
+      "reference": "Den Tom drénkt net.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2260826",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447676",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2260826",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2260826"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2244501",
+      "source": "Sie waren tot.",
+      "reference": "Si waren dout.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2244501",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8454982",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2244501",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2244501"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_2204192",
+      "source": "Tom hört zu.",
+      "reference": "Den Tom lauschtert.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2204192",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8446822",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2204192",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2204192"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_2201558",
+      "source": "Ich war überrascht.",
+      "reference": "Ech war gewonnert.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2201558",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453815",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2201558",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2201558"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_2161775",
+      "source": "Nichts zu danken!",
+      "reference": "Gär geschitt!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2161775",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "7772696",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2161775",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2161775"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_2144069",
+      "source": "Wo studierst du?",
+      "reference": "Wou studéiers du?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2144069",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452973",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2144069",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2144069"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2095976",
+      "source": "Ich habe Hunger.",
+      "reference": "Ech hunn Honger.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2095976",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470988",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2095976",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2095976"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_2075858",
+      "source": "Ich liebe dich.",
+      "reference": "Ech hunn dech gär!",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2075858",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447759",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2075858",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2075858"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.0
+      }
+    },
+    {
+      "id": "tatoeba_2054597",
+      "source": "Wann schlafen Eulen?",
+      "reference": "Wéini schlofen Eilen?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2054597",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447735",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2054597",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2054597"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.67
+      }
+    },
+    {
+      "id": "tatoeba_2036951",
+      "source": "Die Sonne strahlt.",
+      "reference": "D'Sonn schéngt.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2036951",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447694",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2036951",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2036951"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_2023361",
+      "source": "Kochst du gerne?",
+      "reference": "Kachs du gär?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "2023361",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12317425",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "2023361",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/2023361"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1998497",
+      "source": "Wie funktioniert das?",
+      "reference": "Wéi funktionnéiert dat?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1998497",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447808",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1998497",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1998497"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1941122",
+      "source": "Tom ist Reporter.",
+      "reference": "Den Tom ass Reporter.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1941122",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453852",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1941122",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1941122"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1940964",
+      "source": "Tom braucht Hilfe.",
+      "reference": "Den Tom brauch Hëllef.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1940964",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447693",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1940964",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1940964"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1940751",
+      "source": "Tom ist arm.",
+      "reference": "Den Tom ass aarm.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1940751",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453803",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1940751",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1940751"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1888584",
+      "source": "Ich will bleiben.",
+      "reference": "Ech wëll bleiwen.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1888584",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8454911",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1888584",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1888584"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1880032",
+      "source": "Ich bin Vegetarierin.",
+      "reference": "Ech iesse kee Fleesch.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1880032",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8445776",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1880032",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1880032"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 6.0
+      }
+    },
+    {
+      "id": "tatoeba_1835912",
+      "source": "Wie war das?",
+      "reference": "Wat gelift?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1835912",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447736",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1835912",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1835912"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1819632",
+      "source": "Er hat Recht.",
+      "reference": "Dir hutt Recht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1819632",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8444172",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1819632",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1819632"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1771611",
+      "source": "Ich suchte Arbeit.",
+      "reference": "Ech sichen eng Aarbecht.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1771611",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "12315836",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1771611",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1771611"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1688109",
+      "source": "Ich bin unschuldig.",
+      "reference": "Ech sinn onschëlleg.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1688109",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8447691",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1688109",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1688109"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    },
+    {
+      "id": "tatoeba_1611274",
+      "source": "Bist du zehn?",
+      "reference": "Bass du zéng Joer al?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1611274",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8462913",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1611274",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1611274"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1538198",
+      "source": "Ich bin Studentin.",
+      "reference": "Ech si Studentin.",
+      "domain": "edu",
+      "difficulty": 1,
+      "register": "formal",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1538198",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470407",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1538198",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1538198"
+        },
+        "classification_confidence": 0.0714,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1538197",
+      "source": "Ich bin Schülerin.",
+      "reference": "Ech si Student.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1538197",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470406",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1538197",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1538197"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.0
+      }
+    },
+    {
+      "id": "tatoeba_1538196",
+      "source": "Ich bin Schüler.",
+      "reference": "Ech si Student.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1538196",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470406",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1538196",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1538196"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.33
+      }
+    },
+    {
+      "id": "tatoeba_1499114",
+      "source": "Haben Sie Hunger?",
+      "reference": "Hues du Honger?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1499114",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8470992",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1499114",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1499114"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 4.67
+      }
+    },
+    {
+      "id": "tatoeba_1495922",
+      "source": "Sind Sie Tom?",
+      "reference": "Sidd Dir den Tom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1495922",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452981",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1495922",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1495922"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.33
+      }
+    },
+    {
+      "id": "tatoeba_1495921",
+      "source": "Bist du Tom?",
+      "reference": "Bass du den Tom?",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1495921",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8452978",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1495921",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1495921"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.0
+      }
+    },
+    {
+      "id": "tatoeba_1494874",
+      "source": "Tom ist Rabbi.",
+      "reference": "Den Tom ass Rabbiner.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1494874",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453806",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1494874",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1494874"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 3.67
+      }
+    },
+    {
+      "id": "tatoeba_1341329",
+      "source": "Sie ist hartnäckig.",
+      "reference": "Si ass stuer.",
+      "domain": "conv",
+      "difficulty": 1,
+      "register": "conversational",
+      "provenance": {
+        "source_name": "tatoeba",
+        "source_id": "1341329",
+        "license": "unknown",
+        "url": ""
+      },
+      "metadata": {
+        "source_lang": "deu",
+        "target_lang": "ltz",
+        "target_sentence_id": "8453832",
+        "provenance": {
+          "source_name": "tatoeba",
+          "source_id": "1341329",
+          "license": "CC-BY-2.0",
+          "url": "https://tatoeba.org/en/sentences/show/1341329"
+        },
+        "classification_confidence": 0.0,
+        "difficulty_word_count": 3,
+        "difficulty_estimated_clauses": 1,
+        "difficulty_avg_word_length": 5.33
+      }
+    }
+  ],
+  "provenance": {
+    "builder": "champollion-corpora-builder",
+    "builder_version": "0.1.0",
+    "source_adapter": "tatoeba-api",
+    "seed": 42,
+    "min_words": 3,
+    "max_words": 50,
+    "license": "CC-BY-2.0",
+    "source_url": "https://tatoeba.org"
+  }
+}
